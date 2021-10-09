@@ -1,0 +1,21 @@
+# Turn off MultiViews
+Options -MultiViews
+
+# Directive to ensure *.rdf files served as appropriate content type,
+# if not present in main apache config
+AddType application/rdf+xml .rdf
+AddType application/rdf+xml .owl
+
+# Rewrite engine setup
+RewriteEngine On
+RewriteBase /.
+
+
+# Choose the default response
+# ---------------------------
+
+# Rewrite rule to serve the RDF/XML content from the vocabulary URI by default
+RewriteRule ^load/example_1$ http://ec2-18-117-253-200.us-east-2.compute.amazonaws.com/vebjs/?inputscene=https://difactory.github.io/repository/scenes/examples/example_1.json [R=302,NE,L]
+
+
+
