@@ -1,0 +1,89 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "bottle.1",
+        "bottle.2",
+        "bottle.3"
+    ],
+    "assets": [
+        {
+            "id": "bottle.1",
+            "descr": "bottle",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "representations": [
+                {
+                    "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
+                    "unit": 1
+                }
+            ]
+        },
+        {
+            "id": "bottle.2",
+            "descr": "bottle",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "representations": [
+                {
+                    "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                50,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "bottle.3",
+            "descr": "bottle",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "representations": [
+                {
+                    "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                50
+            ]
+        }
+    ],
+    "cameras": [
+        {
+            "id": "camera.1",
+            "type": "FlyCamera",
+            "position": [
+                133.65946097494611,
+                92.63437661778377,
+                268.7779819679474
+            ],
+            "rotation": [
+                0.2834081873466877,
+                -2.7153015228918784,
+                0
+            ],
+            "speed": 8
+        },
+        {
+            "id": "camera.2",
+            "type": "FreeCamera",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                1.4922565104551517,
+                -1.1132976022761496,
+                0
+            ],
+            "speed": 1
+        }
+    ]
+}
