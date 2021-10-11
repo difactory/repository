@@ -4,9 +4,9 @@
         "RepoPath":"https://difactory.github.io/repository/"
     },
     "nodes": [
-        {
-            "name": "bottle.1",
-            "id": "bottle.1",
+		{
+			"name": "camera.1",
+            "id": "camera.1",
             "actions": [
                 {
                     "trigger": {
@@ -16,13 +16,48 @@
                     "event": {
                         "type": "show",
                         "position": [
-                            0.0,
-                            0.0,
-                            0.0
+							800,
+							500,
+							400
+						],
+						"rotation": [
+							0.22727027861221719,
+							-2.5945189232171546,
+							0
+						]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "animations/example_3/camera_move.txt"
+                    }
+                }
+            ]
+		},
+        {
+            "name": "Trolley.1",
+            "id": "Trolley.1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            200,
+                            0,
+                            -500
                         ],
                         "rotation": [
                             0,
-                            0,
+                            1.5707963267949,
                             0
                         ]
                     }
@@ -33,15 +68,86 @@
                         "data": "1000"
                     },
                     "event": {
+                        "type": "animationAdditive",
+                        "data": "animations/example_3/trolley_move.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "moving"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trolley.2",
+            "id": "Trolley.2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
                         "type": "show",
                         "position": [
-                            0.0,
-                            60,
-                            0.0
+                            200,
+                            0,
+                            -1000
                         ],
                         "rotation": [
                             0,
+                            1.5707963267949,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "animations/example_3/trolley_move.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "moving"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trolley.3",
+            "id": "Trolley.3",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            200,
                             0,
+                            -1500
+                        ],
+                        "rotation": [
+                            0,
+                            1.5707963267949,
                             0
                         ]
                     }
@@ -52,8 +158,8 @@
                         "data": "2000"
                     },
                     "event": {
-                        "type": "animation",
-                        "data": "https://raw.githubusercontent.com/wterkaj/RepoExample/main/example_1/bottle_fall.txt"
+                        "type": "animationAdditive",
+                        "data": "animations/example_3/trolley_move.txt"
                     }
                 },
                 {
@@ -63,25 +169,10 @@
                     },
                     "event": {
                         "type": "state",
-                        "descr": "falling_down"
+                        "descr": "moving"
                     }
-                },                
-                {
-                    "trigger": {
-                        "type": "timestamp",
-                        "data": "4000"
-                    },
-                    "event": {
-                        "type": "hide"
-                    }
-                }         
+                }
             ]
-        }
-    ],
-    "bookmarks": [
-        {
-            "name": "bookmark_0",
-            "time": "0"
         }
     ]
 }
