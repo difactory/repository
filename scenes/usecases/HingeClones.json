@@ -1,0 +1,86 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": "https://difactory.github.io/repository/"
+    },
+    "scene": [
+        "Hinge_1",
+        "Hinge_2",
+        "Hinge_3"
+    ],
+    "assets": [
+        {
+            "id": "Hinge_1",
+            "type": "http://www.ontoeng.com/factory#Artifact",
+            "representations": [
+                {
+                    "file": "models/GLTF/Hinge.glb",
+                    "unit": 1
+                }
+            ]
+        },
+        {
+            "id": "Hinge_2",
+            "type": "http://www.ontoeng.com/factory#Artifact",
+            "representations": [
+                {
+                    "file": "models/GLTF/Hinge.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                100,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "Hinge_3",
+            "type": "http://www.ontoeng.com/factory#Artifact",
+            "representations": [
+                {
+                    "file": "models/GLTF/Hinge.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                200,
+                0,
+                0
+            ]
+        }
+    ],
+    "cameras": [
+        {
+            "id": "camera.1",
+            "type": "FlyCamera",
+            "position": [
+                328.9470241532494,
+                165.86235570107883,
+                392.23189090117376
+            ],
+            "rotation": [
+                0.32745368297531635,
+                -2.747328143654074,
+                -0.000462446676016581
+            ],
+            "speed": 8
+        },
+        {
+            "id": "camera.2",
+            "type": "FreeCamera",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                1.4922565104551517,
+                -1.1132976022761496,
+                0
+            ],
+            "speed": 1
+        }
+    ]
+}
