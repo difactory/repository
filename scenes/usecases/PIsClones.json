@@ -18,7 +18,7 @@
             "type": "http://www.ontoeng.com/factory#MachineTool",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb",
+                    "file": "models/GLB/Pin_Insertion_Station.glb",
                     "unit": 1
                 }
             ]
@@ -28,7 +28,7 @@
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb#PI_Machine_Static",
+                    "file": "models/GLB/Pin_Insertion_Station.glb#PI_Machine_Static",
                     "unit": 1
                 }
             ],
@@ -44,7 +44,7 @@
             "type": "http://www.ontoeng.com/factory#MachineTool",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb",
+                    "file": "models/GLB/Pin_Insertion_Station.glb",
                     "unit": 1
                 }
             ],
@@ -59,7 +59,7 @@
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb#PI_Machine_Static",
+                    "file": "models/GLB/Pin_Insertion_Station.glb#PI_Machine_Static",
                     "unit": 1
                 }
             ],
@@ -75,7 +75,7 @@
             "type": "http://www.ontoeng.com/factory#MachineTool",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb",
+                    "file": "models/GLB/Pin_Insertion_Station.glb",
                     "unit": 1
                 }
             ],
@@ -90,7 +90,7 @@
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "models/GLTF/Pin_Insertion_Station.glb#PI_Machine_Static",
+                    "file": "models/GLB/Pin_Insertion_Station.glb#PI_Machine_Static",
                     "unit": 1
                 }
             ],

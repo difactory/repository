@@ -14,7 +14,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb",
+                    "file": "models/GLB/Hinge.glb",
                     "unit": 1
                 }
             ]
@@ -24,7 +24,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Box",
+                    "file": "models/GLB/Hinge.glb#Box",
                     "unit": 1
                 }
             ],
@@ -40,7 +40,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Hook",
+                    "file": "models/GLB/Hinge.glb#Hook",
                     "unit": 1
                 }
             ],
@@ -56,7 +56,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb",
+                    "file": "models/GLB/Hinge.glb",
                     "unit": 1
                 }
             ],
@@ -71,7 +71,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Box",
+                    "file": "models/GLB/Hinge.glb#Box",
                     "unit": 1
                 }
             ],
@@ -87,7 +87,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Connector1",
+                    "file": "models/GLB/Hinge.glb#Connector1",
                     "unit": 1
                 }
             ],
@@ -103,7 +103,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Connector2",
+                    "file": "models/GLB/Hinge.glb#Connector2",
                     "unit": 1
                 }
             ],
@@ -119,7 +119,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Hook",
+                    "file": "models/GLB/Hinge.glb#Hook",
                     "unit": 1
                 }
             ],
@@ -135,7 +135,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Pin1-1",
+                    "file": "models/GLB/Hinge.glb#Pin1-1",
                     "unit": 1
                 }
             ],
@@ -151,7 +151,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Pin1-2",
+                    "file": "models/GLB/Hinge.glb#Pin1-2",
                     "unit": 1
                 }
             ],
@@ -167,7 +167,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Pin1-3",
+                    "file": "models/GLB/Hinge.glb#Pin1-3",
                     "unit": 1
                 }
             ],
@@ -183,7 +183,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb#Spring",
+                    "file": "models/GLB/Hinge.glb#Spring",
                     "unit": 1
                 }
             ],

@@ -15,7 +15,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb",
+                    "file": "models/GLB/Hinge.glb",
                     "unit": 1
                 }
             ]
@@ -25,7 +25,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb",
+                    "file": "models/GLB/Hinge.glb",
                     "unit": 1
                 }
             ],
@@ -40,7 +40,7 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLTF/Hinge.glb",
+                    "file": "models/GLB/Hinge.glb",
                     "unit": 1
                 }
             ],
