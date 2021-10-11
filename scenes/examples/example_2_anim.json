@@ -1,0 +1,149 @@
+{
+    "context": {
+        "assetTrail": false,
+        "RepoPath":"https://difactory.github.io/repository/"
+    },
+    "nodes": [
+        {
+            "name": "Trolley.1",
+            "id": "Trolley.1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            200,
+                            0,
+                            -500
+                        ],
+                        "rotation": [
+                            0,
+                            1.5707963267949,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "animations/example_2/trolley_move.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "moving"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trolley.2",
+            "id": "Trolley.2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            200,
+                            0,
+                            -1000
+                        ],
+                        "rotation": [
+                            0,
+                            1.5707963267949,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "animations/example_2/trolley_move.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "moving"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trolley.3",
+            "id": "Trolley.3",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            200,
+                            0,
+                            -1500
+                        ],
+                        "rotation": [
+                            0,
+                            1.5707963267949,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "animations/example_2/trolley_move.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "moving"
+                    }
+                }
+            ]
+        }
+    ],
+    "bookmarks": [
+        {
+            "name": "bookmark_0",
+            "time": "0"
+        }
+    ]
+}
