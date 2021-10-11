@@ -1,0 +1,87 @@
+{
+    "context": {
+        "assetTrail": false,
+        "RepoPath":"https://difactory.github.io/repository/"
+    },
+    "nodes": [
+        {
+            "name": "bottle.1",
+            "id": "bottle.1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0.0,
+                            0.0,
+                            0.0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0.0,
+                            60,
+                            0.0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "https://raw.githubusercontent.com/wterkaj/RepoExample/main/example_1/bottle_fall.txt"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "falling_down"
+                    }
+                },                
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "4000"
+                    },
+                    "event": {
+                        "type": "hide"
+                    }
+                }         
+            ]
+        }
+    ],
+    "bookmarks": [
+        {
+            "name": "bookmark_0",
+            "time": "0"
+        }
+    ]
+}

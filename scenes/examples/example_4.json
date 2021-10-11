@@ -1,0 +1,187 @@
+{
+  "context": {
+    "UnitOfMeasureScale": 0.01,
+    "Zup": false,
+    "RepoPath": "https://difactory.github.io/repository/"
+  },
+  "scene": [
+    "default_building",
+    "WS01",
+    "WS02",
+    "WS03",
+    "Trolley.1",
+    "Trolley.2",
+    "Trolley.3"
+  ],
+  "assets": [
+    {
+      "id": "default_building",
+      "descr": "Plant building. This is the building hosting a factory and the related facilities.",
+      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding"
+    },
+    {
+      "id": "WorkstationTypeA",
+      "descr": "Machining center",
+      "type": "http://www.ontoeng.com/factory#MachineToolType",
+      "representations": [
+        {
+          "file": "models/machines/TC108/TC108.obj",
+          "unit": 0.01
+        }
+      ]
+    },
+    {
+      "id": "WorkstationTypeB",
+      "descr": "Machining center",
+      "type": "http://www.ontoeng.com/factory#MachineToolType",
+      "representations": [
+        {
+          "file": "models/machines/TC52/tc52.obj",
+          "unit": 0.01
+        }
+      ]
+    },
+    {
+      "id": "TrolleyTypeA",
+      "descr": "Manual trolley",
+      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElementType",
+      "representations": [
+        {
+          "file": "models/elements/trolley/trolley.obj",
+          "unit": 0.01
+        }
+      ]
+    },
+    {
+      "id": "WS01",
+      "descr": "Workstation 01",
+      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "model": "WorkstationTypeA",
+      "position": [
+        0,
+        0,
+        -500
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    },
+    {
+      "id": "WS02",
+      "descr": "Workstation 02",
+      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "model": "WorkstationTypeA",
+      "position": [
+        0,
+        0,
+        -1000
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    },
+    {
+      "id": "WS03",
+      "descr": "Workstation 03",
+      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "model": "WorkstationTypeB",
+      "position": [
+        0,
+        0,
+        -1500
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    },
+    {
+      "id": "Trolley.1",
+      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "model": "TrolleyTypeA",
+      "position": [
+        200,
+        0,
+        -860
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    },
+    {
+      "id": "Trolley.2",
+      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "model": "TrolleyTypeA",
+      "position": [
+        200,
+        0,
+        -1360
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    },
+    {
+      "id": "Trolley.3",
+      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "model": "TrolleyTypeA",
+      "position": [
+        200,
+        0,
+        -1860
+      ],
+      "rotation": [
+        0,
+        1.5707963267949,
+        0
+      ],
+      "placementRelTo": "default_building"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "camera.1",
+      "type": "FlyCamera",
+      "position": [
+        869.0234004460561,
+        465.8264491702689,
+        428.9417165201511
+      ],
+      "rotation": [
+        0.22727027861221719,
+        -2.5945189232171546,
+        0
+      ],
+      "speed": 8
+    },
+    {
+      "id": "camera.2",
+      "type": "FreeCamera",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        1.4922565104551517,
+        -1.1132976022761496,
+        0
+      ],
+      "speed": 1
+    }
+  ]
+}
