@@ -6003,7 +6003,7 @@
             ],
             "placementRelTo": "http://www.ontoeng.com/VFLibBuilding#default_building",
             "connectedTo": [
-                "http://www.ontoeng.com/VFLab#PP1.PPs_FloatingY"
+                "http://www.ontoeng.com/VFLab#PI1"
             ]
         },
         {
