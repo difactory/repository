@@ -530,7 +530,7 @@
             "descr": "Default building",
             "representations": [
                 {
-                    "file": "models/PBR/Warehouse.glb",
+                    "file": "models/PBR/Warehouse_noFloor.glb",
                     "unit": 0.001
                 }
             ],
