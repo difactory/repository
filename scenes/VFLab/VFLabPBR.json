@@ -530,8 +530,8 @@
             "descr": "Default building",
             "representations": [
                 {
-                    "file": "models/buildings/buildingP/building.obj",
-                    "unit": 0.001
+                    "file": "models/PBR/Warehouse.glb",
+                    "unit": 1
                 }
             ],
             "position": [
