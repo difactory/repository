@@ -10755,5 +10755,37 @@
             "placementRelTo": "http://www.ontoeng.com/VFLab#Hinge_10",
             "parentObject": "http://www.ontoeng.com/VFLab#Hinge_10"
         }
+    ],
+    "cameras": [
+        {
+            "id": "camera.1",
+            "type": "FlyCamera",
+            "position": [
+                65.02626429163702,
+                91.87089773222195,
+                350.2377737352361
+            ],
+            "rotation": [
+                0.4740371070337498,
+                -0.608655098944841,
+                -0.0047221928782685664
+            ],
+            "speed": 1
+        },
+        {
+            "id": "camera.2",
+            "type": "FreeCamera",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                1.4922565104551517,
+                -1.1132976022761496,
+                0
+            ],
+            "speed": 1
+        }
     ]
 }
