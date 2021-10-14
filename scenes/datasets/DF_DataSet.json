@@ -2,7 +2,7 @@
     "context": {
         "UnitOfMeasureScale": 0.01,
         "Zup": false,
-        "RepoPath": "/repository/"
+        "RepoPath": "https://difactory.github.io/repository/"
     },
     "scene": [
         "http://www.ontoeng.com/DF_DataSet#PP1.PPs_FloatingY",
