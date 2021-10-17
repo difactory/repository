@@ -1,0 +1,33 @@
+{
+    "cameras": [
+        {
+            "id": "camera.1",
+            "type": "FlyCamera",
+            "position": [
+                125.79404887450825,
+                92.6269627018009,
+                208.6420551652344
+            ],
+            "rotation": [
+                0.284514732619381,
+                -2.7155331110105245,
+                0
+            ],
+            "speed": 4
+        }
+    ],
+    "lights":[
+        {
+            "id": "light.1",
+            "type": "HemisphericLight",
+            "direction": [ 1, 1, 1 ],
+            "intensity": 1
+        },
+        {
+            "id": "light.2",
+            "type": "PointLight",
+            "position": [ 0, 10000, 0 ],
+            "intensity": 4
+        }
+    ]
+}

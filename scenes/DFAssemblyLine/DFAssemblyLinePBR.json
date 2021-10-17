@@ -331,8 +331,8 @@
             "descr": "Default building",
             "representations": [
                 {
-                    "file": "models/buildings/buildingP/building.obj",
-                    "unit": 0.001
+                    "file": "models/PBR/Warehouse.glb",
+                    "unit": 1.0
                 }
             ],
             "position": [
@@ -9241,27 +9241,6 @@
             ],
             "placementRelTo": "http://www.ontoeng.com/DFLibStations#CollectionBox_Station",
             "parentObject": "http://www.ontoeng.com/DFLibStations#CollectionBox_Station"
-        },
-        {
-            "id": "http://www.ontoeng.com/DFLibBuilding#default_building2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
-            "descr": "Default building",
-            "representations": [
-                {
-                    "file": "models/PBR/Warehouse.glb",
-                    "unit": 1.0
-                }
-            ],
-            "position": [
-                0.0,
-                0.0,
-                -0.0
-            ],
-            "rotation": [
-                0.0,
-                -0.0,
-                0.0
-            ]
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#pallet_09.Pal_Workholding",
