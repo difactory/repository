@@ -29,5 +29,10 @@
             "position": [ 0, 10000, 0 ],
             "intensity": 1
         }
-    ]
+    ],
+    "shadows": {
+        "darkness": 0.3,
+        "bias": 0.001,
+        "environmentIntensity": 0.3
+    }
 }

@@ -39,8 +39,8 @@
     }
   ],
   "shadows": {
-      "darkness": 0.7,
-      "bias": 0,
-      "environmentIntensity": 0.2
-  }
+    "darkness": 0.7,
+    "bias": 0.001,
+    "environmentIntensity": 0.2
+}
 }
