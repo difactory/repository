@@ -2,7 +2,7 @@
     "cameras": [
         {
             "id": "camera.1",
-            "type": "FlyCamera",
+            "type": "UniversalCamera",
             "position": [
                 134,
                 93,
