@@ -14,6 +14,21 @@
                 0
             ],
             "speed": 8
+        },
+        {
+            "id": "camera.2",
+            "type": "UniversalCamera",
+            "position": [
+                134,
+                93,
+                269
+            ],
+            "rotation": [
+                0.2834081873466877,
+                -2.7153015228918784,
+                0
+            ],
+            "speed": 8
         }
     ],
     "lights":[

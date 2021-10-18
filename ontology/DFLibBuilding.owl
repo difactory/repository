@@ -40,7 +40,6 @@
      xmlns:IFC4_ADD1_extension="http://www.ontoeng.com/IFC4_ADD1_extension#">
     <owl:Ontology rdf:about="http://www.ontoeng.com/DFLibBuilding">
         <owl:imports rdf:resource="http://www.ontoeng.com/factory"/>
-        <rdfs:comment>Serialized using C++ RDF library by Walter Terkaj based on Redland API C library. Mon Jul 19 16:51:27 2021</rdfs:comment>
     </owl:Ontology>
     
 
@@ -89,35 +88,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#DFLibBuilding">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProjectLibrary"/>
-        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#7b30e12d-1e28-448b-9c22-293e22444411"/>
-        <ifc:unitsInContext_IfcContext rdf:resource="http://www.ontoeng.com/DFLibBuilding#74e2bc00-890c-46eb-8b29-658897290802"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#0475268d-d7ef-4c1d-8c96-1ffb1347b40e"/>
+        <ifc:unitsInContext_IfcContext rdf:resource="http://www.ontoeng.com/DFLibBuilding#7c36e30a-2774-498f-86ef-033b0ebf1242"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#a31309c2-3f72-43c7-8e71-f16b73514646 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#a0a60c89-2d1a-4cd7-8985-d5861bbba625 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#a31309c2-3f72-43c7-8e71-f16b73514646">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#GRAM"/>
-        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#KILO"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MASSUNIT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#b680658c-7e7f-4451-98d6-190eab707fef -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#b680658c-7e7f-4451-98d6-190eab707fef">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
-        <list:hasContents rdf:resource="http://www.ontoeng.com/DFLibBuilding#0c868143-a3a4-476c-8b5e-37a6bfd02b4c"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#ba7caffa-6928-4635-b815-f384ca5d2ce1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#ba7caffa-6928-4635-b815-f384ca5d2ce1">
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#a0a60c89-2d1a-4cd7-8985-d5861bbba625">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
         <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MILLI"/>
@@ -126,21 +105,30 @@
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#c731ccb7-63cf-4733-995c-c3d22226d57c -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#a903dfcf-d7e7-4b7d-9faf-bc0d0b5e5232 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#c731ccb7-63cf-4733-995c-c3d22226d57c">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
-        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#b680658c-7e7f-4451-98d6-190eab707fef"/>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#a903dfcf-d7e7-4b7d-9faf-bc0d0b5e5232">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SQUARE_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#AREAUNIT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#d6ae372b-d594-4e46-aafd-6f7523b47027 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#b62fc262-d37e-486c-96c9-2672bc185605 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#d6ae372b-d594-4e46-aafd-6f7523b47027">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#CUBIC_METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#VOLUMEUNIT"/>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#b62fc262-d37e-486c-96c9-2672bc185605">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">models/GLB/Warehouse.glb</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFLibBuilding#be728bd3-df96-4b56-9706-a3381c313990 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#be728bd3-df96-4b56-9706-a3381c313990">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default_building</expr:hasString>
     </owl:NamedIndividual>
     
 
@@ -149,63 +137,72 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#default_building">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding"/>
-        <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#3ccda1e2-ac73-4fc0-85b0-c4603a449df3"/>
-        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#e099e42a-af42-4ba8-8a4f-5c884b402c56"/>
-        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/DFLibBuilding#930d61cb-edc0-4638-8991-bdac7791d892"/>
+        <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#f108c9ab-17ba-440d-827d-bce9e7380513"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#be728bd3-df96-4b56-9706-a3381c313990"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/DFLibBuilding#3fd59639-51c8-422e-a652-0a4134cdaaa0"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#default_building2 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#df6fb426-9240-438b-bf54-a9358205553f -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#default_building2">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding"/>
-        <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#34e7cb7d-6653-4982-8ef5-154d9a94e352"/>
-        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFLibBuilding#4db5fb4a-91bd-4ca8-bfef-3bc3409b7e67"/>
-        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/DFLibBuilding#c731ccb7-63cf-4733-995c-c3d22226d57c"/>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#df6fb426-9240-438b-bf54-a9358205553f">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/DFLibBuilding#b62fc262-d37e-486c-96c9-2672bc185605"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/DFLibBuilding#71c227cf-9cce-4d75-b341-1e0f29365020"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#e099e42a-af42-4ba8-8a4f-5c884b402c56 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#f108c9ab-17ba-440d-827d-bce9e7380513 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#e099e42a-af42-4ba8-8a4f-5c884b402c56">
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#f108c9ab-17ba-440d-827d-bce9e7380513">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default building</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFLibBuilding#0475268d-d7ef-4c1d-8c96-1ffb1347b40e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#0475268d-d7ef-4c1d-8c96-1ffb1347b40e">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default_building</expr:hasString>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFLibBuilding</expr:hasString>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#e916abf9-3fd0-4f1c-a669-7c1415c2ddc1 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#3fd59639-51c8-422e-a652-0a4134cdaaa0 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#e916abf9-3fd0-4f1c-a669-7c1415c2ddc1">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">models/GLB/Warehouse.glb</expr:hasString>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#3fd59639-51c8-422e-a652-0a4134cdaaa0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#52742dd4-a885-4cdb-9b87-6711872689b5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#ef44e8ec-bcfe-46c7-8732-7a80e0a31e41 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#5eb715f2-3d78-41f0-8c62-c7cdb9fdff8a -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#ef44e8ec-bcfe-46c7-8732-7a80e0a31e41">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">models/buildings/buildingP/building.obj</expr:hasString>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#5eb715f2-3d78-41f0-8c62-c7cdb9fdff8a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#CUBIC_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#VOLUMEUNIT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#0c868143-a3a4-476c-8b5e-37a6bfd02b4c -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#52742dd4-a885-4cdb-9b87-6711872689b5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#0c868143-a3a4-476c-8b5e-37a6bfd02b4c">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
-        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#701dec4e-b582-4031-bda4-780917cdb7c1"/>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#52742dd4-a885-4cdb-9b87-6711872689b5">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/DFLibBuilding#7410f282-5cbb-429d-a1e9-2d8c08cb9153"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#04befcb6-7ad6-49db-be95-7cc3bd86b062 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#60c5e471-1393-4096-b71f-c1da716f00d1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#04befcb6-7ad6-49db-be95-7cc3bd86b062">
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#60c5e471-1393-4096-b71f-c1da716f00d1">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SECOND"/>
         <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#TIMEUNIT"/>
@@ -213,129 +210,45 @@
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#06ed54ae-21a6-4cb3-ab30-9257d4593cf3 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#63d22c16-78a8-4990-b7c4-5465b2b11df5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#06ed54ae-21a6-4cb3-ab30-9257d4593cf3">
-        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
-        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/DFLibBuilding#ef44e8ec-bcfe-46c7-8732-7a80e0a31e41"/>
-        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/DFLibBuilding#ba7caffa-6928-4635-b815-f384ca5d2ce1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#258ab715-efab-46ec-99f1-7f0a85161f0c -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#258ab715-efab-46ec-99f1-7f0a85161f0c">
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#63d22c16-78a8-4990-b7c4-5465b2b11df5">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
-        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MILLI"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#GRAM"/>
+        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#KILO"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MASSUNIT"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#29a38d65-096a-433b-9669-b6cb79d0ae73 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#7c36e30a-2774-498f-86ef-033b0ebf1242 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#29a38d65-096a-433b-9669-b6cb79d0ae73">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#3ccda1e2-ac73-4fc0-85b0-c4603a449df3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#3ccda1e2-ac73-4fc0-85b0-c4603a449df3">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default building</expr:hasString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#34e7cb7d-6653-4982-8ef5-154d9a94e352 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#34e7cb7d-6653-4982-8ef5-154d9a94e352">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default building</expr:hasString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#4db5fb4a-91bd-4ca8-bfef-3bc3409b7e67 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#4db5fb4a-91bd-4ca8-bfef-3bc3409b7e67">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default_building2</expr:hasString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#6343fdd1-ab96-470e-8e52-386142743ff4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#6343fdd1-ab96-470e-8e52-386142743ff4">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
-        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#06ed54ae-21a6-4cb3-ab30-9257d4593cf3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#7b30e12d-1e28-448b-9c22-293e22444411 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#7b30e12d-1e28-448b-9c22-293e22444411">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
-        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFLibBuilding</expr:hasString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#7dec28da-d490-4609-b989-ae83650efff9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#7dec28da-d490-4609-b989-ae83650efff9">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SQUARE_METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#AREAUNIT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#701dec4e-b582-4031-bda4-780917cdb7c1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#701dec4e-b582-4031-bda4-780917cdb7c1">
-        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
-        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/DFLibBuilding#e916abf9-3fd0-4f1c-a669-7c1415c2ddc1"/>
-        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/DFLibBuilding#29a38d65-096a-433b-9669-b6cb79d0ae73"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#73b8ea50-4df2-4b66-9971-a1916d3a612d -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#73b8ea50-4df2-4b66-9971-a1916d3a612d">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
-        <list:hasContents rdf:resource="http://www.ontoeng.com/DFLibBuilding#6343fdd1-ab96-470e-8e52-386142743ff4"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFLibBuilding#74e2bc00-890c-46eb-8b29-658897290802 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#74e2bc00-890c-46eb-8b29-658897290802">
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#7c36e30a-2774-498f-86ef-033b0ebf1242">
         <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcUnitAssignment"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#a31309c2-3f72-43c7-8e71-f16b73514646"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#d6ae372b-d594-4e46-aafd-6f7523b47027"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#04befcb6-7ad6-49db-be95-7cc3bd86b062"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#258ab715-efab-46ec-99f1-7f0a85161f0c"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#7dec28da-d490-4609-b989-ae83650efff9"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#a0a60c89-2d1a-4cd7-8985-d5861bbba625"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#a903dfcf-d7e7-4b7d-9faf-bc0d0b5e5232"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#5eb715f2-3d78-41f0-8c62-c7cdb9fdff8a"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#60c5e471-1393-4096-b71f-c1da716f00d1"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/DFLibBuilding#63d22c16-78a8-4990-b7c4-5465b2b11df5"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.ontoeng.com/DFLibBuilding#930d61cb-edc0-4638-8991-bdac7791d892 -->
+    <!-- http://www.ontoeng.com/DFLibBuilding#71c227cf-9cce-4d75-b341-1e0f29365020 -->
 
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#930d61cb-edc0-4638-8991-bdac7791d892">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
-        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#73b8ea50-4df2-4b66-9971-a1916d3a612d"/>
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#71c227cf-9cce-4d75-b341-1e0f29365020">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFLibBuilding#7410f282-5cbb-429d-a1e9-2d8c08cb9153 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFLibBuilding#7410f282-5cbb-429d-a1e9-2d8c08cb9153">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/DFLibBuilding#df6fb426-9240-438b-bf54-a9358205553f"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
