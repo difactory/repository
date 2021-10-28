@@ -2,7 +2,7 @@
     "context": {
         "UnitOfMeasureScale": 0.001,
         "Zup": false,
-        "RepoPath": "https://difactory.github.io/repository/"
+        "RepoPath": "https://difactory.github.io/repository/models/GLB/"
     },
     "scene": [
         "Hinge_1",
@@ -14,9 +14,14 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb",
+                    "file": "Hinge.glb",
                     "unit": 1
                 }
+            ],
+            "position": [
+                0,
+                0,
+                0
             ]
         },
         {
@@ -24,39 +29,31 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Box",
+                    "file": "Hinge.glb#Box",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_1",
-            "position": [
-                0,
-                -0.22000000171829015,
-                -47.109998762607574
-            ]
+            "parentObject": "Hinge_1"
         },
         {
             "id": "Hinge_1.Hook",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Hook",
+                    "file": "Hinge.glb#Hook",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_1",
-            "position": [
-                -1.0000000474974513,
-                22.019999101758003,
-                -44.179998338222504
-            ]
+            "parentObject": "Hinge_1"
         },
         {
             "id": "Hinge_2",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb",
+                    "file": "Hinge.glb",
                     "unit": 1
                 }
             ],
@@ -71,128 +68,96 @@
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Box",
+                    "file": "Hinge.glb#Box",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                -0.22000000171829015,
-                -47.109998762607574
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Connector1",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Connector1",
+                    "file": "Hinge.glb#Connector1",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                8.419999852776527,
-                -45.43000087141991
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Connector2",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Connector2",
+                    "file": "Hinge.glb#Connector2",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                12.260000221431255,
-                -37.34999895095825
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Hook",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Hook",
+                    "file": "Hinge.glb#Hook",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                -1.0000000474974513,
-                22.019999101758003,
-                -44.179998338222504
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Pin1-1",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Pin1-1",
+                    "file": "Hinge.glb#Pin1-1",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                5.70000009611249,
-                12.000000104308128
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Pin1-2",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Pin1-2",
+                    "file": "Hinge.glb#Pin1-2",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                2.0000000949949026,
-                -35.00000014901161
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Pin1-3",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Pin1-3",
+                    "file": "Hinge.glb#Pin1-3",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                9.499999694526196,
-                -25.00000037252903
-            ]
+            "parentObject": "Hinge_2"
         },
         {
             "id": "Hinge_2.Spring",
             "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
-                    "file": "models/GLB/Hinge.glb#Spring",
+                    "file": "Hinge.glb#Spring",
                     "unit": 1
                 }
             ],
             "placementRelTo": "Hinge_2",
-            "position": [
-                0,
-                6.2500000931322575,
-                -38.68111968040466
-            ]
+            "parentObject": "Hinge_2"
         }
     ]
 }
