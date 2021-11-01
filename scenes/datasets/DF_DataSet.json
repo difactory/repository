@@ -1397,7 +1397,7 @@
             "descr": "Pallet for the main hinge assembly",
             "representations": [
                 {
-                    "file": "Pallet.glb",
+                    "file": "pallet_bevel_steel_forato.glb",
                     "unit": 1.0
                 }
             ]
