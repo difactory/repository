@@ -128,6 +128,7 @@
         <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/DFAssemblyLine#fe941c70-ce13-44d6-af4f-56b1f9304711"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01.CB5_Conveyor"/>
+        <ssn:hasProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01_blev"/>
         <ssn:hasProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01_cap"/>
     </owl:NamedIndividual>
     
@@ -193,6 +194,23 @@
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#BufferRestingPosition"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/DFAssemblyLine#c180965f-d7fe-4331-b780-6d58e2fc4fb4"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01.CB5_Pos4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#B01_blev -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#B01_blev">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#BufferLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#B01_blev_var -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#B01_blev_var">
+        <rdf:type rdf:resource="http://www.ontoeng.com/expression#Variable"/>
+        <osph:representsProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01_blev"/>
     </owl:NamedIndividual>
     
 
@@ -3659,6 +3677,7 @@
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_LateralConveyor"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Static"/>
         <osph:hasStateMachine rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01_stM"/>
+        <ssn:hasProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev"/>
     </owl:NamedIndividual>
     
 
@@ -4079,6 +4098,23 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PP01_stM_workState.1">
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolWorkingState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineWipLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev_var -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev_var">
+        <rdf:type rdf:resource="http://www.ontoeng.com/expression#Variable"/>
+        <osph:representsProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev"/>
     </owl:NamedIndividual>
     
 
@@ -5835,6 +5871,7 @@
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Static"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_VibratingBowl"/>
         <osph:hasStateMachine rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM"/>
+        <ssn:hasProperty rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_wiplev"/>
     </owl:NamedIndividual>
     
 
@@ -6186,6 +6223,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1">
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolStartOperationType"/>
+        <IFC4_ADD1_extension:typesObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -6264,6 +6310,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_workState.1">
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolWorkingState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#PPW01_wiplev -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_wiplev">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineWipLevel"/>
     </owl:NamedIndividual>
     
 
@@ -13300,6 +13354,103 @@
     
 
 
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseController"/>
+        <osph:hasStateMachine rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_condTrIdleRel -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_condTrIdleRel">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseCondition"/>
+        <osph:hasConditionExpression rdf:resource="http://www.ontoeng.com/DFAssemblyLine#policy01_BinExpr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_entryAction -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_entryAction">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#EventGeneration"/>
+        <osph:generatesEvent rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_guardTrIdleRel -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_guardTrIdleRel">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseGuard"/>
+        <fsm:GuardCondition rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_condTrIdleRel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_idleSt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_idleSt">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#RControllerIdleState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_reg -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_reg">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Region"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_condTrIdleRel"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_guardTrIdleRel"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_idleSt"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_relSt"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trIdleRel"/>
+        <fsm:hasStateMachineElement rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trRelIdle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_relSt -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_relSt">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#RControllerReleaseState"/>
+        <fsm:Entry rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_entryAction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trIdleRel -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trIdleRel">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseTransition"/>
+        <fsm:Source rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_idleSt"/>
+        <fsm:Target rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_relSt"/>
+        <fsm:TransitionGuard rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_guardTrIdleRel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trRelIdle -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_trRelIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_relSt"/>
+        <fsm:Target rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_idleSt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#controlpol01_stM -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#controlpol01_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controlpol01_PPW01_reg"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.ontoeng.com/DFAssemblyLine#d0000aa9-46e9-4043-9f2d-fb9996045fd5 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#d0000aa9-46e9-4043-9f2d-fb9996045fd5">
@@ -19206,6 +19357,46 @@
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#pallet_10.Pal_Workholding">
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#WorkholdingPosition"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/DFAssemblyLine#6240224b-fd7a-4795-9950-1793d411de50"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#policy01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#policy01">
+        <rdf:type rdf:resource="http://www.ontoeng.com/controlSystem#ConwipControlPolicy"/>
+        <controlSystem:hasPolicyExpression rdf:resource="http://www.ontoeng.com/DFAssemblyLine#policy01_BinExpr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#policy01_BinExpr -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#policy01_BinExpr">
+        <rdf:type rdf:resource="http://www.ontoeng.com/expression#BinaryExpression"/>
+        <expression:hasLhsOperand rdf:resource="http://www.ontoeng.com/DFAssemblyLine#policy01_IterBExpr"/>
+        <expression:hasOperator rdf:resource="http://www.ontoeng.com/expression#LESSTHANOREQUAL"/>
+        <expression:hasRhsOperand rdf:resource="http://www.ontoeng.com/DFAssemblyLine#policy01_Thr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#policy01_IterBExpr -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#policy01_IterBExpr">
+        <rdf:type rdf:resource="http://www.ontoeng.com/expression#IteratedBinaryExpression"/>
+        <expression:hasOperands rdf:resource="http://www.ontoeng.com/DFAssemblyLine#B01_blev_var"/>
+        <expression:hasOperands rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PP01_wiplev_var"/>
+        <expression:hasOperator rdf:resource="http://www.ontoeng.com/expression#ADDITION"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/DFAssemblyLine#policy01_Thr -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#policy01_Thr">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcPositiveInteger"/>
+        <expr:hasInteger rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</expr:hasInteger>
     </owl:NamedIndividual>
     
 
