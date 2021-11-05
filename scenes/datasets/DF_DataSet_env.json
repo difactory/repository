@@ -68,8 +68,8 @@
             "betaMin": 0,
             "betaMax": 70,
             "betaStep": 35,
-            "radiusFactorMin": 1,
-            "radiusFactorMax": 2,
+            "radiusFactorMin": 1.1,
+            "radiusFactorMax": 2.1,
             "radiusFactorStep": 1
         }
     }
