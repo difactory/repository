@@ -9,15 +9,15 @@
                 438
             ],
             "rotation": [
-                0.5776272945509733,
-                -2.72836859508764,
+                0.5844230091570228,
+                -2.7326849799279236,
                 0
             ],
             "speed": 1
         },
         {
             "id": "camera.2",
-            "type": "UniversalCamera",
+            "type": "FreeCamera",
             "position": [
                 39,
                 70,
@@ -31,18 +31,24 @@
             "speed": 1
         }
     ],
-    "lights":[
+    "lights": [
         {
             "id": "light.0",
             "type": "HemisphericLight",
-            "direction": [ 1, 0.3, 0.1 ],
+            "direction": [
+                1,
+                0.3,
+                0.1
+            ],
             "intensity": 0.2
         },
         {
             "id": "light.1",
             "type": "PointLight",
             "position": [
-                0,150,400
+                0,
+                150,
+                400
             ],
             "intensity": 2
         },
@@ -50,7 +56,9 @@
             "id": "light.2",
             "type": "PointLight",
             "position": [
-                0,150,0
+                0,
+                150,
+                0
             ],
             "intensity": 2
         }
@@ -60,18 +68,22 @@
         "bias": 0.001,
         "environmentIntensity": 0.3
     },
-    "datagen":{
-        "cam":{
+    "datagen": {
+        "cam": {
             "alphaMin": 0,
             "alphaMax": 360,
             "alphaStep": 60,
             "betaMin": 0,
             "betaMax": 70,
             "betaStep": 35,
-            "radiusFactorMin": 1.2,
-            "radiusFactorMax": 2.2,
+            "radiusFactorMin": 1.5,
+            "radiusFactorMax": 2.5,
             "radiusFactorStep": 1
         }
+    },
+    "env": {
+        "skyboxTexture": "textures/studio.env",
+        "backgroundColor": [0.2,0.2,0.3],
+        "groundTexture": "textures/Concrete.jpg"
     }
-
 }
