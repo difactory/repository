@@ -1,0 +1,2607 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontoeng.com/VFLibProduct#"
+     xml:base="http://www.ontoeng.com/VFLibProduct"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xmlns:ifc="http://ifcowl.openbimstandards.org/IFC4_ADD1#"
+     xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rss="http://purl.org/rss/1.0/"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:expr="https://w3id.org/express#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:list="https://w3id.org/list#"
+     xmlns:osph="http://www.ontoeng.com/osph#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+     xmlns:schema="http://schema.org/"
+     xmlns:factory="http://www.ontoeng.com/factory#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:expression="http://www.ontoeng.com/expression#"
+     xmlns:statistics="http://www.ontoeng.com/statistics#"
+     xmlns:VFLibProduct="http://www.ontoeng.com/VFLibProduct#"
+     xmlns:controlSystem="http://www.ontoeng.com/controlSystem#"
+     xmlns:IFC4_ADD1_rules="http://ifcowl.openbimstandards.org/IFC4_ADD1_rules#"
+     xmlns:IFC4_ADD1_extension="http://www.ontoeng.com/IFC4_ADD1_extension#">
+    <owl:Ontology rdf:about="http://www.ontoeng.com/VFLibProduct">
+        <owl:imports rdf:resource="http://www.ontoeng.com/factory"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Box -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Box">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#24d2d2e0-505c-4e82-ac21-d883861001ef"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#ec0bab81-e6f9-43bf-9648-da8e3c6e2cd6"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#18100abb-9470-4258-8e85-39cdb70c1ec3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Clip -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Clip">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#067c80de-4835-45ad-b37c-c94b443cb9a8"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#05bb5d7b-5fa6-43bf-9695-fe8db2d45c32"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#c3db64ae-4a71-4490-9a5f-ba7debc70ef9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Collection -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Collection">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#UnloadingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#dc228bce-6971-4ff3-abe7-9825ae7208db"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Collection_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res190"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Collection_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Collection_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#903a69ba-49ba-4c9f-adc8-26cda0181f3b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Connector1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Connector1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#c3a26cb5-101f-47a8-b1c5-71b60366ad21"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#4cb286d1-294f-433e-8c99-bc79b9df69ef"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#891e29df-e347-43f9-8480-4c581f6e4edb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Connector2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Connector2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#c9bdd4fe-83de-4cd3-b001-fb3a8d8bfd27"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#483727c7-8afe-4831-a6bb-2d83389d22e4"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#566e1975-f6c3-4bee-a00d-8077b20e7bf0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Hinge -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Hinge">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ArtifactType"/>
+        <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#12364b3b-2804-4c49-9001-afab5fc20251"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#fb708994-0631-4034-8b7a-581695da618a"/>
+        <ifc:representationMaps_IfcTypeProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#d0dad8d0-cae9-4453-ab26-12359d6a6bb7"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#HingeProcessPlan"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Box"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Clip"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Connector1"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Connector2"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Hook"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-1"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-2"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-3"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Spring"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Wing"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#WingScrew"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#HingeProcessPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#HingeProcessPlan">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ManufacturingTaskType"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#79ced90b-4f74-496a-8c9d-91e202437b61"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Wing"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Collection"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Inspection"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion1"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion2"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion3"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion4"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting1"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting2"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting3"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting4"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Tightening"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#URPickandPlace"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#2DPickandPlace1"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#2DPickandPlace2"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace1"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace2"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace3"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace4"/>
+        <IFC4_ADD1_extension:isNestedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Hook -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Hook">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#63d74874-e382-48e5-87a9-e9d02da06a2b"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#48fb04bd-5a4f-460c-8cf7-a8976fa1e50e"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#8a76d87e-c6cc-487c-b1b0-2a86098ccc55"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Inspection -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Inspection">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#QualityControlTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#b1f50936-f6c1-445b-8592-a7c5e85e0182"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Inspection_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res180"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Collection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Inspection_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Inspection_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#8373e598-db13-4e5a-8b6d-979189318d04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Pal_Workholding -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Pal_Workholding">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#WorkholdingPosition"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#a6894471-428b-4c75-a764-a92bca4ba53d"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#aad49764-6f7e-436d-b51a-19e5722d7871"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PalletA -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PalletA">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#PalletType"/>
+        <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#461bd038-c854-4be1-9f3f-baa8c805eb4c"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#64a8b9a6-f391-4f0d-a648-eb2462fe2671"/>
+        <ifc:representationMaps_IfcTypeProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#77603e20-880d-4e5d-af9a-32f3d4f0ec06"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pal_Workholding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Pin1-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Pin1-1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#90db5745-468d-491c-b461-89c3ef0ecfe6"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#58dd7269-433c-4bda-8ad5-42396b449c8a"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#f077a901-7731-4cf9-babd-1e61f488df26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Pin1-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Pin1-2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#ffb40c26-c786-41a4-9c97-8c7b97f968fe"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#33c9dae4-b325-4748-8325-5f0eafa9cf8c"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#ddf84b0b-2497-41a8-ae66-be42cc345467"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Pin1-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Pin1-3">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#e5377488-cf7b-4fc3-aa9b-1a59b8613d0c"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#a5457e29-213f-4b14-b221-3717c3666508"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#fc19a4bd-690f-4669-bd6d-5bfcd391f7e6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#c3e2c221-e191-4e98-9261-40a4ac18db9a"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion1_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-1"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res60"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion1_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion1_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#8a94d254-7392-4306-b76c-775385e63225"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#59b70c4d-8479-4db0-b7d9-133143122f52"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion2_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-2"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res100"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion2_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion2_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#70506db9-7075-4d05-bda1-7ee7c9b6da20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion3">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#ec1d5b90-df19-4f0a-adac-1cdfbfbe6395"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion3_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Pin1-3"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res130"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion3_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion3_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#0895ff60-239d-4d94-a0f7-6bb9567ec400"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion4">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#de302f80-90eb-4d97-bb2a-8e5b2fc356d1"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion4_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Hook"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res160"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#PinInsertion4_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#PinInsertion4_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#440e9d11-e39e-4e69-a673-a5b289d930eb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ManufacturingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#6d0c9db6-e089-43e4-8850-7e1e974e36f0"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting1_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res70"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting1_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting1_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#1c2f95d2-fd4d-43ee-9a12-6c3f2827609c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ManufacturingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#2a637b6b-9a4a-4bd3-ae87-3b24f5f94145"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting2_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res110"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting2_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting2_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#9c9e7f1c-b8d5-4754-8859-25d64f7197ff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting3">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ManufacturingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#0d24a7a9-274a-4fd6-8201-fce299aea53f"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting3_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res140"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting3_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting3_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#5e26f550-0d8a-40c8-af7c-42ea9d30b5a9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting4">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ManufacturingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#b27108b3-7dfb-455a-9535-e8a7a3d9527e"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Riveting4_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res170"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Inspection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Riveting4_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Riveting4_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#c7ee9480-07a4-4c72-a214-58e0b847c41b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Spring -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Spring">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#34fed1d8-0bcc-4da9-a105-408a9f46b146"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#ee94272b-a292-472b-856c-54e72766f686"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#a5e1ea6a-ae65-40cf-bdda-0bb636c347db"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Tightening -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Tightening">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#44e435a6-d4b4-449a-92f5-8d941be8a7aa"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#Tightening_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#WingScrew"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res20"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#2DPickandPlace2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Tightening_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Tightening_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#2f99b612-992d-4764-bf7e-b775346cbeb0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#URPickandPlace -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#URPickandPlace">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MaterialHandlingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#e90bf7ca-0674-46be-be72-0849793dab44"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#URPickandPlace_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res40"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res40pal"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#URPickandPlace_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#URPickandPlace_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#7a3421e1-cfe5-4553-a69d-5c88c26698ea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#VFLibProduct -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#VFLibProduct">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProjectLibrary"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#0e070602-c887-4d93-8bca-d2349e2aa51d"/>
+        <ifc:unitsInContext_IfcContext rdf:resource="http://www.ontoeng.com/VFLibProduct#c48299de-1dc4-4e3c-81ed-ef87fbec3083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#Wing -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#Wing">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#f0f9b62b-a848-4f3e-a5e5-c5589fe65163"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#f45e623a-21be-47c8-9e16-a6eb5341038b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#WingScrew -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#WingScrew">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#Artifact"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#e071e83b-6ef8-487b-891b-bdac51cf3d01"/>
+        <ifc:objectPlacement_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#53334bba-1f55-4439-a86c-cf13c81fa7ff"/>
+        <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibProduct#beb354c6-9e88-489e-9733-d0c2e087e7d8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a0d9a280-af2e-487c-8baf-f73112dc0397 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a0d9a280-af2e-487c-8baf-f73112dc0397">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT8S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a19df45a-5f52-4046-9adf-5478a33d9ecd -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a19df45a-5f52-4046-9adf-5478a33d9ecd">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDocumentInformation"/>
+        <ifc:electronicFormat_IfcDocumentInformation rdf:resource="http://www.ontoeng.com/VFLibProduct#4dd3b78c-263d-40d2-89b2-b932887229ab"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a290d58b-4bf2-4f14-b593-42ed7bff67f7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a290d58b-4bf2-4f14-b593-42ed7bff67f7">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 -12 5.7</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a38b4d91-74a3-4560-b9bd-d083191153c4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a38b4d91-74a3-4560-b9bd-d083191153c4">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#9c5b6a1c-8070-4a7f-af4d-e4591d4ddd73"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a4724f64-f418-4fb2-86a8-01ab4effe58b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a4724f64-f418-4fb2-86a8-01ab4effe58b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#95dcbd6c-b292-4fc5-8492-dca4bd3bb33d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a5457e29-213f-4b14-b221-3717c3666508 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a5457e29-213f-4b14-b221-3717c3666508">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#9c2d3d4a-c8ee-452c-bab7-5e3aaf61a977"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a5e1ea6a-ae65-40cf-bdda-0bb636c347db -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a5e1ea6a-ae65-40cf-bdda-0bb636c347db">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#ef2933ca-65e5-41c0-bf60-11ead8688159"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#a6894471-428b-4c75-a764-a92bca4ba53d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#a6894471-428b-4c75-a764-a92bca4ba53d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pal_Workholding</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#aad49764-6f7e-436d-b51a-19e5722d7871 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#aad49764-6f7e-436d-b51a-19e5722d7871">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#9e40429e-d1d1-41ce-8ec4-2e39447faf8c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#abff88b9-6c76-4b06-b2b3-2c37df0848d4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#abff88b9-6c76-4b06-b2b3-2c37df0848d4">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res30</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#adc0a876-cb6b-4c05-bf6a-fcecd7fd066a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#adc0a876-cb6b-4c05-bf6a-fcecd7fd066a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#266dee7d-9c38-4254-93e0-198c0ec5b5aa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b070147c-3cbd-4c22-b541-9b4d33bf62ee -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b070147c-3cbd-4c22-b541-9b4d33bf62ee">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res40pal</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b1f50936-f6c1-445b-8592-a7c5e85e0182 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b1f50936-f6c1-445b-8592-a7c5e85e0182">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspection</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b27108b3-7dfb-455a-9535-e8a7a3d9527e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b27108b3-7dfb-455a-9535-e8a7a3d9527e">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riveting4</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b3a86428-5edd-40a3-97b0-798a12668920 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b3a86428-5edd-40a3-97b0-798a12668920">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b5a4e7c8-02b2-4da3-9a3a-a1519b186b12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b5a4e7c8-02b2-4da3-9a3a-a1519b186b12">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res90</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b85514d2-0fb7-4c5f-a074-d1cce3429a09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b85514d2-0fb7-4c5f-a074-d1cce3429a09">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#9670438b-46fd-490f-8e2b-0c0a68941ced"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#46075a88-b5f3-4480-90f9-1e25ca523b3d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#b947a1da-9cc8-442d-b749-691d1ff895d5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#b947a1da-9cc8-442d-b749-691d1ff895d5">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#baaa6ae1-c841-4a59-bdd9-dcc402ab615a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#baaa6ae1-c841-4a59-bdd9-dcc402ab615a">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#2debdbfb-4411-4900-b7c4-0c5865a2aef1"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#034bf9f2-a142-464c-bde3-5ab0ed444eed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#beb354c6-9e88-489e-9733-d0c2e087e7d8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#beb354c6-9e88-489e-9733-d0c2e087e7d8">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#eaacd5fe-8d42-4edf-af85-92dd4bc020b7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c1247297-ea85-4cf4-b483-1a4206ff9302 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c1247297-ea85-4cf4-b483-1a4206ff9302">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#f1b6d7a4-4c31-4590-82d2-383367a11e3c"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#3564755b-f16c-4b86-9689-67d4f23cf795"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c232e3c4-7c1c-4b4c-821f-5ab8a662a261 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c232e3c4-7c1c-4b4c-821f-5ab8a662a261">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#00348050-3f83-4b1f-8737-8594d52c3abc"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#c7797c03-8fe4-4275-bf90-5f7d768c272f"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c3a26cb5-101f-47a8-b1c5-71b60366ad21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c3a26cb5-101f-47a8-b1c5-71b60366ad21">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connector1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c3db64ae-4a71-4490-9a5f-ba7debc70ef9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c3db64ae-4a71-4490-9a5f-ba7debc70ef9">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#d6fab5f9-12ba-4d26-a14f-0085ba94a026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c3e2c221-e191-4e98-9261-40a4ac18db9a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c3e2c221-e191-4e98-9261-40a4ac18db9a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PinInsertion1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c48299de-1dc4-4e3c-81ed-ef87fbec3083 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c48299de-1dc4-4e3c-81ed-ef87fbec3083">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcUnitAssignment"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibProduct#df005349-c714-4bad-b398-123d866f5f37"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibProduct#442fc4f2-87d9-4fe3-ba39-684dc20f650e"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibProduct#82ee7caa-a86b-4a9d-9412-04f44595b735"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibProduct#9fefb943-badb-4934-9973-d824c473f825"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibProduct#945ab9ae-7fa8-4ccf-9449-67ebaee54bb7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c7797c03-8fe4-4275-bf90-5f7d768c272f -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c7797c03-8fe4-4275-bf90-5f7d768c272f">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c7ee9480-07a4-4c72-a214-58e0b847c41b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c7ee9480-07a4-4c72-a214-58e0b847c41b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c99ebff4-4c08-491f-9349-9c47b890b58c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c99ebff4-4c08-491f-9349-9c47b890b58c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res110</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#c9bdd4fe-83de-4cd3-b001-fb3a8d8bfd27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#c9bdd4fe-83de-4cd3-b001-fb3a8d8bfd27">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connector2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#caf44605-6ed4-4f89-a19b-d955b06ec44a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#caf44605-6ed4-4f89-a19b-d955b06ec44a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res160</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d07f72eb-9055-4f64-9769-a3edc7ffe6f6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d07f72eb-9055-4f64-9769-a3edc7ffe6f6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 9.5 5.5</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d0dad8d0-cae9-4453-ab26-12359d6a6bb7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d0dad8d0-cae9-4453-ab26-12359d6a6bb7">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentationMap_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#461c231f-f7b6-471e-9ad7-65142f0d1973"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d11d04ca-a75f-4d76-a6be-8c2db34a4594 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d11d04ca-a75f-4d76-a6be-8c2db34a4594">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#9e890c81-de5e-4d76-b023-e9d41e243dc2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d204a280-b250-4bd5-ab94-113ed408057a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d204a280-b250-4bd5-ab94-113ed408057a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#74b142ea-9397-4194-8d71-6b7a7526f6a8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d6fab5f9-12ba-4d26-a14f-0085ba94a026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d6fab5f9-12ba-4d26-a14f-0085ba94a026">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#d11d04ca-a75f-4d76-a6be-8c2db34a4594"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#d8476e01-1a79-4fc9-bc89-8ef82249ff3e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#d8476e01-1a79-4fc9-bc89-8ef82249ff3e">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res60</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#dc228bce-6971-4ff3-abe7-9825ae7208db -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#dc228bce-6971-4ff3-abe7-9825ae7208db">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ddf84b0b-2497-41a8-ae66-be42cc345467 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ddf84b0b-2497-41a8-ae66-be42cc345467">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#4ad2d979-dedf-4562-8ddc-daa2d96c4c3f"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#de302f80-90eb-4d97-bb2a-8e5b2fc356d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#de302f80-90eb-4d97-bb2a-8e5b2fc356d1">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PinInsertion4</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#df005349-c714-4bad-b398-123d866f5f37 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#df005349-c714-4bad-b398-123d866f5f37">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SECOND"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#TIMEUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#df2b0d68-244d-4145-ae93-45b235a3738c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#df2b0d68-244d-4145-ae93-45b235a3738c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#e05605e1-6af9-4c7a-bb37-eb9cda197345 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#e05605e1-6af9-4c7a-bb37-eb9cda197345">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#e071e83b-6ef8-487b-891b-bdac51cf3d01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#e071e83b-6ef8-487b-891b-bdac51cf3d01">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WingScrew</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#e5377488-cf7b-4fc3-aa9b-1a59b8613d0c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#e5377488-cf7b-4fc3-aa9b-1a59b8613d0c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pin1-3</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#e90bf7ca-0674-46be-be72-0849793dab44 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#e90bf7ca-0674-46be-be72-0849793dab44">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URPickandPlace</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#eaacd5fe-8d42-4edf-af85-92dd4bc020b7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#eaacd5fe-8d42-4edf-af85-92dd4bc020b7">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#7ac7e156-2a56-4e08-b223-e7543e807727"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ec0bab81-e6f9-43bf-9648-da8e3c6e2cd6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ec0bab81-e6f9-43bf-9648-da8e3c6e2cd6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#5516fd3f-082f-4ce8-80b9-c834404e6494"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ec1d5b90-df19-4f0a-adac-1cdfbfbe6395 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ec1d5b90-df19-4f0a-adac-1cdfbfbe6395">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PinInsertion3</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#eced4527-3809-4ac1-82a5-92a9d2cb4029 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#eced4527-3809-4ac1-82a5-92a9d2cb4029">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res140</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ee94272b-a292-472b-856c-54e72766f686 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ee94272b-a292-472b-856c-54e72766f686">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#17f716a4-5d87-4b8c-9fe7-0becaf2c4566"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ef2933ca-65e5-41c0-bf60-11ead8688159 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ef2933ca-65e5-41c0-bf60-11ead8688159">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#22ba21b3-808c-4d59-a966-8af73e6b4d33"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ef94cedb-5584-4710-86ef-e6575aa9b8fc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ef94cedb-5584-4710-86ef-e6575aa9b8fc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f077a901-7731-4cf9-babd-1e61f488df26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f077a901-7731-4cf9-babd-1e61f488df26">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#4eaee598-acbf-4580-85ac-21c58efb2915"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f0f9b62b-a848-4f3e-a5e5-c5589fe65163 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f0f9b62b-a848-4f3e-a5e5-c5589fe65163">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wing</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f1b588c9-75b6-4d02-830e-2385c330dfeb -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f1b588c9-75b6-4d02-830e-2385c330dfeb">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3DPickandPlace3</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f1b6d7a4-4c31-4590-82d2-383367a11e3c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f1b6d7a4-4c31-4590-82d2-383367a11e3c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Connector1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f2cc3259-be4b-4cf5-afaf-0ec3f8041650 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f2cc3259-be4b-4cf5-afaf-0ec3f8041650">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res70</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f45e623a-21be-47c8-9e16-a6eb5341038b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f45e623a-21be-47c8-9e16-a6eb5341038b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#35c87960-2e62-4ffa-8ca4-ad71929706a4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#f8d0ae56-aac4-4d6f-b6e8-6ac5ee099116 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#f8d0ae56-aac4-4d6f-b6e8-6ac5ee099116">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res150</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#fb708994-0631-4034-8b7a-581695da618a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#fb708994-0631-4034-8b7a-581695da618a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#fc19a4bd-690f-4669-bd6d-5bfcd391f7e6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#fc19a4bd-690f-4669-bd6d-5bfcd391f7e6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#7cef3d1b-717b-4e48-a37f-4dd9955caab0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#fd5cbdef-3284-4cfc-b1fe-61161375eac0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#fd5cbdef-3284-4cfc-b1fe-61161375eac0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res50</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#ffb40c26-c786-41a4-9c97-8c7b97f968fe -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#ffb40c26-c786-41a4-9c97-8c7b97f968fe">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pin1-2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res10">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#36b5442a-5b70-49fd-9004-04fda928aebc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res100">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#0952c659-eb7a-439b-a309-8ab7a9d3d9ed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res110 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res110">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#c99ebff4-4c08-491f-9349-9c47b890b58c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res120 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res120">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#336f1547-215e-4837-b5c0-5957f2b51a8d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res130 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res130">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#7ffb0131-9b72-453f-bbb2-7f62472bd639"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res140 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res140">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#eced4527-3809-4ac1-82a5-92a9d2cb4029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res150 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res150">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#f8d0ae56-aac4-4d6f-b6e8-6ac5ee099116"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res160 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res160">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#caf44605-6ed4-4f89-a19b-d955b06ec44a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res170 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res170">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#5a82e7a9-3e9d-408a-ae21-4d5d0b97d138"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res180 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res180">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#2d0f1cd7-9406-497a-9af4-5b39c4203c0b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res190 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res190">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#15c59e85-345a-4b8d-9332-a425a9a0c3fa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res20">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#2c026d27-6be5-48de-8fbf-5625270ebfd8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res30">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#abff88b9-6c76-4b06-b2b3-2c37df0848d4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res40 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res40">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#63134e21-1a65-4d98-ab2f-9fe8366d9877"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res40pal -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res40pal">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#b070147c-3cbd-4c22-b541-9b4d33bf62ee"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#PalletA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res50">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#fd5cbdef-3284-4cfc-b1fe-61161375eac0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res60">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#d8476e01-1a79-4fc9-bc89-8ef82249ff3e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res70">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#f2cc3259-be4b-4cf5-afaf-0ec3f8041650"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res80 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res80">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#0058e59b-f717-4b31-b063-54ccf2fb2647"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#res90 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#res90">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#ProductionResource"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#b5a4e7c8-02b2-4da3-9a3a-a1519b186b12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0d24a7a9-274a-4fd6-8201-fce299aea53f -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0d24a7a9-274a-4fd6-8201-fce299aea53f">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riveting3</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0e070602-c887-4d93-8bca-d2349e2aa51d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0e070602-c887-4d93-8bca-d2349e2aa51d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFLibProduct</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0e599d55-ce1b-4da6-92c6-d999afc9c248 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0e599d55-ce1b-4da6-92c6-d999afc9c248">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2DPickandPlace2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0f4c4364-9121-4be9-9436-4d886628569c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0f4c4364-9121-4be9-9436-4d886628569c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#00348050-3f83-4b1f-8737-8594d52c3abc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#00348050-3f83-4b1f-8737-8594d52c3abc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Wing</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0058e59b-f717-4b31-b063-54ccf2fb2647 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0058e59b-f717-4b31-b063-54ccf2fb2647">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res80</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#034bf9f2-a142-464c-bde3-5ab0ed444eed -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#034bf9f2-a142-464c-bde3-5ab0ed444eed">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#05bb5d7b-5fa6-43bf-9695-fe8db2d45c32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#05bb5d7b-5fa6-43bf-9695-fe8db2d45c32">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#7f0c4063-36be-4334-82cf-b927afd6655c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0568baff-8dcb-4adc-aa89-6f0c7cc0d2f6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0568baff-8dcb-4adc-aa89-6f0c7cc0d2f6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Pin1-1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#067c80de-4835-45ad-b37c-c94b443cb9a8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#067c80de-4835-45ad-b37c-c94b443cb9a8">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clip</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#07f78e8f-198c-48be-a3a0-981281f7b240 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#07f78e8f-198c-48be-a3a0-981281f7b240">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#8cf818e3-ebb5-4634-9726-2432dc36fe5d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#08057d0a-5483-4fe8-9e68-060a44191fe3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#08057d0a-5483-4fe8-9e68-060a44191fe3">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDocumentInformation"/>
+        <ifc:electronicFormat_IfcDocumentInformation rdf:resource="http://www.ontoeng.com/VFLibProduct#2ee6c4a1-0e90-4d12-83ec-65d9c031bb4d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0895ff60-239d-4d94-a0f7-6bb9567ec400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0895ff60-239d-4d94-a0f7-6bb9567ec400">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#0952c659-eb7a-439b-a309-8ab7a9d3d9ed -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#0952c659-eb7a-439b-a309-8ab7a9d3d9ed">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res100</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#1c2f95d2-fd4d-43ee-9a12-6c3f2827609c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#1c2f95d2-fd4d-43ee-9a12-6c3f2827609c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#12a12843-771e-4c30-84d0-a5a7227a9186 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#12a12843-771e-4c30-84d0-a5a7227a9186">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT8S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#12364b3b-2804-4c49-9001-afab5fc20251 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#12364b3b-2804-4c49-9001-afab5fc20251">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#1241df85-ad95-47c6-bf55-552123a004dc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#1241df85-ad95-47c6-bf55-552123a004dc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#391074e6-7bd3-47bc-a637-048c2bb139cc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#13b091c8-b05b-4a2b-8938-8824746dcacb -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#13b091c8-b05b-4a2b-8938-8824746dcacb">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#76ea20d9-f0a8-4461-b05e-cab543c4f01e"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#15c59e85-345a-4b8d-9332-a425a9a0c3fa -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#15c59e85-345a-4b8d-9332-a425a9a0c3fa">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res190</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#17f716a4-5d87-4b8c-9fe7-0becaf2c4566 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#17f716a4-5d87-4b8c-9fe7-0becaf2c4566">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 38.68 6.25</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#18100abb-9470-4258-8e85-39cdb70c1ec3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#18100abb-9470-4258-8e85-39cdb70c1ec3">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#1241df85-ad95-47c6-bf55-552123a004dc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#1936da1d-6aaa-44c8-8a48-ddea5a4ab0fd -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#1936da1d-6aaa-44c8-8a48-ddea5a4ab0fd">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#13b091c8-b05b-4a2b-8938-8824746dcacb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2DPickandPlace1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2DPickandPlace1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MaterialHandlingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#75a8bd53-12a0-4adb-a8d7-134d1b137606"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#2DPickandPlace1_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res10"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#Tightening"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2DPickandPlace1_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2DPickandPlace1_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#83390831-630f-4ea2-941a-8d6606f7cc19"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2DPickandPlace2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2DPickandPlace2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MaterialHandlingTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#0e599d55-ce1b-4da6-92c6-d999afc9c248"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#2DPickandPlace2_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res30"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#URPickandPlace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2DPickandPlace2_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2DPickandPlace2_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#859eef16-f5f4-4d59-b9c1-5cc0d11270b8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2a637b6b-9a4a-4bd3-ae87-3b24f5f94145 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2a637b6b-9a4a-4bd3-ae87-3b24f5f94145">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riveting2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2c026d27-6be5-48de-8fbf-5625270ebfd8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2c026d27-6be5-48de-8fbf-5625270ebfd8">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res20</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2c6d0f03-97c1-48ff-afa6-3fb56f52ffd6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2c6d0f03-97c1-48ff-afa6-3fb56f52ffd6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Clip</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2d0f1cd7-9406-497a-9af4-5b39c4203c0b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2d0f1cd7-9406-497a-9af4-5b39c4203c0b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res180</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2d73809d-ff31-4142-8620-451c59eba7f5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2d73809d-ff31-4142-8620-451c59eba7f5">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#b85514d2-0fb7-4c5f-a074-d1cce3429a09"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2debdbfb-4411-4900-b7c4-0c5865a2aef1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2debdbfb-4411-4900-b7c4-0c5865a2aef1">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Pin1-3</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2ee6c4a1-0e90-4d12-83ec-65d9c031bb4d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2ee6c4a1-0e90-4d12-83ec-65d9c031bb4d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcIdentifier"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLB</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#2f99b612-992d-4764-bf7e-b775346cbeb0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#2f99b612-992d-4764-bf7e-b775346cbeb0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#22ba21b3-808c-4d59-a966-8af73e6b4d33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#22ba21b3-808c-4d59-a966-8af73e6b4d33">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#5c907081-6956-4ff2-9d40-0b96b54e4b3f"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#24d2d2e0-505c-4e82-ac21-d883861001ef -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#24d2d2e0-505c-4e82-ac21-d883861001ef">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#266dee7d-9c38-4254-93e0-198c0ec5b5aa -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#266dee7d-9c38-4254-93e0-198c0ec5b5aa">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#29bd8fac-45cb-4c73-97a4-2dce55ead5cf"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#7307c9ee-93a6-4ecd-992f-88058e1e57c4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#29bd8fac-45cb-4c73-97a4-2dce55ead5cf -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#29bd8fac-45cb-4c73-97a4-2dce55ead5cf">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Pin1-2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace1">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#7c4378a5-16ee-44df-941b-9dee609df77e"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace1_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Clip"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res50"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace1_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace1_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#57fa304d-0146-4978-a4a4-535a8f92bf9a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#63c36c8d-cf16-446e-96c1-182d29deb1dc"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace2_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Connector1"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res80"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace2_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace2_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#a0d9a280-af2e-487c-8baf-f73112dc0397"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace3">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#f1b588c9-75b6-4d02-830e-2385c330dfeb"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace3_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Spring"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res90"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace3_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace3_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#8e323488-56bd-482f-a7b4-4c62bac1eee1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace4">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#67e3d512-a54f-4d5c-96a0-98ee56c4c167"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlace4_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Connector2"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res120"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlace4_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlace4_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#12a12843-771e-4c30-84d0-a5a7227a9186"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox">
+        <rdf:type rdf:resource="http://www.ontoeng.com/factory#AssemblyTask"/>
+        <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibProduct#52d42ca8-a0fb-490f-87bf-d637a48d022c"/>
+        <ifc:taskTime_IfcTask rdf:resource="http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox_time"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#Box"/>
+        <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/VFLibProduct#res150"/>
+        <IFC4_ADD1_extension:isPredecessorToProcess rdf:resource="http://www.ontoeng.com/VFLibProduct#PinInsertion4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3DPickandPlaceBox_time">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTaskTime"/>
+        <ifc:scheduleDuration_IfcTaskTime rdf:resource="http://www.ontoeng.com/VFLibProduct#34fd23f7-bf3a-4f16-8869-21fba9ad3568"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3dac1c72-8975-485a-ad2d-53314cf142e5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3dac1c72-8975-485a-ad2d-53314cf142e5">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Spring</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#31a98a9d-7de4-41bd-9768-d4c4e05c95eb -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#31a98a9d-7de4-41bd-9768-d4c4e05c95eb">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#31bdbdfe-7e6c-4092-9155-d00cdd8ea3b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#31bdbdfe-7e6c-4092-9155-d00cdd8ea3b2">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Box</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#32563b75-2354-41cd-a54b-ec4cd99092d1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#32563b75-2354-41cd-a54b-ec4cd99092d1">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pallet.glb</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#33c9dae4-b325-4748-8325-5f0eafa9cf8c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#33c9dae4-b325-4748-8325-5f0eafa9cf8c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#7dc3f11f-7388-4de8-9330-9dd9a2b79a8d"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#333bdeef-ab83-440c-9620-7b58012b889c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#333bdeef-ab83-440c-9620-7b58012b889c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentationMap"/>
+        <ifc:mappedRepresentation_IfcRepresentationMap rdf:resource="http://www.ontoeng.com/VFLibProduct#a4724f64-f418-4fb2-86a8-01ab4effe58b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#336f1547-215e-4837-b5c0-5957f2b51a8d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#336f1547-215e-4837-b5c0-5957f2b51a8d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res120</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#34fd23f7-bf3a-4f16-8869-21fba9ad3568 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#34fd23f7-bf3a-4f16-8869-21fba9ad3568">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT8S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#34fed1d8-0bcc-4da9-a105-408a9f46b146 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#34fed1d8-0bcc-4da9-a105-408a9f46b146">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spring</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#35c87960-2e62-4ffa-8ca4-ad71929706a4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#35c87960-2e62-4ffa-8ca4-ad71929706a4">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#42430e69-be8e-497f-8dfc-5466482dddea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#3564755b-f16c-4b86-9689-67d4f23cf795 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#3564755b-f16c-4b86-9689-67d4f23cf795">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#36b5442a-5b70-49fd-9004-04fda928aebc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#36b5442a-5b70-49fd-9004-04fda928aebc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res10</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#391074e6-7bd3-47bc-a637-048c2bb139cc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#391074e6-7bd3-47bc-a637-048c2bb139cc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#53281092-9a0a-4dd8-baf6-7ff9615c961c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#4ad2d979-dedf-4562-8ddc-daa2d96c4c3f -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#4ad2d979-dedf-4562-8ddc-daa2d96c4c3f">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#adc0a876-cb6b-4c05-bf6a-fcecd7fd066a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#4cb286d1-294f-433e-8c99-bc79b9df69ef -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#4cb286d1-294f-433e-8c99-bc79b9df69ef">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#819ee336-44a0-4bdb-b180-0ca2bcbad215"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#4dd3b78c-263d-40d2-89b2-b932887229ab -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#4dd3b78c-263d-40d2-89b2-b932887229ab">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcIdentifier"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLB</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#4eaee598-acbf-4580-85ac-21c58efb2915 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#4eaee598-acbf-4580-85ac-21c58efb2915">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#07f78e8f-198c-48be-a3a0-981281f7b240"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#421f9be4-a007-4aef-80c5-358ac7b8a930 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#421f9be4-a007-4aef-80c5-358ac7b8a930">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#baaa6ae1-c841-4a59-bdd9-dcc402ab615a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#42430e69-be8e-497f-8dfc-5466482dddea -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#42430e69-be8e-497f-8dfc-5466482dddea">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#c232e3c4-7c1c-4b4c-821f-5ab8a662a261"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#44e435a6-d4b4-449a-92f5-8d941be8a7aa -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#44e435a6-d4b4-449a-92f5-8d941be8a7aa">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tightening</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#440e9d11-e39e-4e69-a673-a5b289d930eb -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#440e9d11-e39e-4e69-a673-a5b289d930eb">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#442fc4f2-87d9-4fe3-ba39-684dc20f650e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#442fc4f2-87d9-4fe3-ba39-684dc20f650e">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#CUBIC_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#VOLUMEUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#46075a88-b5f3-4480-90f9-1e25ca523b3d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#46075a88-b5f3-4480-90f9-1e25ca523b3d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#460924f9-2657-4c74-9daf-b308f8afdc1c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#460924f9-2657-4c74-9daf-b308f8afdc1c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#461bd038-c854-4be1-9f3f-baa8c805eb4c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#461bd038-c854-4be1-9f3f-baa8c805eb4c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pallet for the main hinge assembly</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#461c231f-f7b6-471e-9ad7-65142f0d1973 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#461c231f-f7b6-471e-9ad7-65142f0d1973">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentationMap"/>
+        <ifc:mappedRepresentation_IfcRepresentationMap rdf:resource="http://www.ontoeng.com/VFLibProduct#d204a280-b250-4bd5-ab94-113ed408057a"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#4786c24a-0b34-41d2-9e94-229d9974505c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#4786c24a-0b34-41d2-9e94-229d9974505c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#2d73809d-ff31-4142-8620-451c59eba7f5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#48fb04bd-5a4f-460c-8cf7-a8976fa1e50e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#48fb04bd-5a4f-460c-8cf7-a8976fa1e50e">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#8201aa03-699c-404b-b5b2-c3b51b4eeaa7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#483727c7-8afe-4831-a6bb-2d83389d22e4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#483727c7-8afe-4831-a6bb-2d83389d22e4">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#5a287ec4-f7d0-4a21-b0c4-f0eac6c754a3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#5a287ec4-f7d0-4a21-b0c4-f0eac6c754a3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#5a287ec4-f7d0-4a21-b0c4-f0eac6c754a3">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 37.35 12.26</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#5a82e7a9-3e9d-408a-ae21-4d5d0b97d138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#5a82e7a9-3e9d-408a-ae21-4d5d0b97d138">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res170</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#5c907081-6956-4ff2-9d40-0b96b54e4b3f -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#5c907081-6956-4ff2-9d40-0b96b54e4b3f">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#3dac1c72-8975-485a-ad2d-53314cf142e5"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#460924f9-2657-4c74-9daf-b308f8afdc1c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#5e26f550-0d8a-40c8-af7c-42ea9d30b5a9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#5e26f550-0d8a-40c8-af7c-42ea9d30b5a9">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#52d42ca8-a0fb-490f-87bf-d637a48d022c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#52d42ca8-a0fb-490f-87bf-d637a48d022c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3DPickandPlaceBox</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#53281092-9a0a-4dd8-baf6-7ff9615c961c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#53281092-9a0a-4dd8-baf6-7ff9615c961c">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#31bdbdfe-7e6c-4092-9155-d00cdd8ea3b2"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#b947a1da-9cc8-442d-b749-691d1ff895d5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#53334bba-1f55-4439-a86c-cf13c81fa7ff -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#53334bba-1f55-4439-a86c-cf13c81fa7ff">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#d07f72eb-9055-4f64-9769-a3edc7ffe6f6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#5516fd3f-082f-4ce8-80b9-c834404e6494 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#5516fd3f-082f-4ce8-80b9-c834404e6494">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 47.11 -0.22</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#566e1975-f6c3-4bee-a00d-8077b20e7bf0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#566e1975-f6c3-4bee-a00d-8077b20e7bf0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#1936da1d-6aaa-44c8-8a48-ddea5a4ab0fd"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#57fa304d-0146-4978-a4a4-535a8f92bf9a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#57fa304d-0146-4978-a4a4-535a8f92bf9a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT9S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#58dd7269-433c-4bda-8ad5-42396b449c8a -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#58dd7269-433c-4bda-8ad5-42396b449c8a">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLocalPlacement"/>
+        <ifc:relativePlacement_IfcLocalPlacement rdf:resource="http://www.ontoeng.com/VFLibProduct#a290d58b-4bf2-4f14-b593-42ed7bff67f7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#59b70c4d-8479-4db0-b7d9-133143122f52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#59b70c4d-8479-4db0-b7d9-133143122f52">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PinInsertion2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#6d0c9db6-e089-43e4-8850-7e1e974e36f0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#6d0c9db6-e089-43e4-8850-7e1e974e36f0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riveting1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#63c36c8d-cf16-446e-96c1-182d29deb1dc -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#63c36c8d-cf16-446e-96c1-182d29deb1dc">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3DPickandPlace2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#63d74874-e382-48e5-87a9-e9d02da06a2b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#63d74874-e382-48e5-87a9-e9d02da06a2b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hook</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#63134e21-1a65-4d98-ab2f-9fe8366d9877 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#63134e21-1a65-4d98-ab2f-9fe8366d9877">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res40</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#64a8b9a6-f391-4f0d-a648-eb2462fe2671 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#64a8b9a6-f391-4f0d-a648-eb2462fe2671">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PalletA</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#67e3d512-a54f-4d5c-96a0-98ee56c4c167 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#67e3d512-a54f-4d5c-96a0-98ee56c4c167">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3DPickandPlace4</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7a3421e1-cfe5-4553-a69d-5c88c26698ea -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7a3421e1-cfe5-4553-a69d-5c88c26698ea">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT4S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7ac7e156-2a56-4e08-b223-e7543e807727 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7ac7e156-2a56-4e08-b223-e7543e807727">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#8fe49708-9fa2-4fe6-815e-0527a79c1815"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7c4378a5-16ee-44df-941b-9dee609df77e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7c4378a5-16ee-44df-941b-9dee609df77e">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3DPickandPlace1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7cef3d1b-717b-4e48-a37f-4dd9955caab0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7cef3d1b-717b-4e48-a37f-4dd9955caab0">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#421f9be4-a007-4aef-80c5-358ac7b8a930"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7dc3f11f-7388-4de8-9330-9dd9a2b79a8d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7dc3f11f-7388-4de8-9330-9dd9a2b79a8d">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 35 2</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7f0c4063-36be-4334-82cf-b927afd6655c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7f0c4063-36be-4334-82cf-b927afd6655c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 -8 3</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7f93937c-f2d4-48e7-aec1-273079d1d285 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7f93937c-f2d4-48e7-aec1-273079d1d285">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#WingScrew</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7ffb0131-9b72-453f-bbb2-7f62472bd639 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7ffb0131-9b72-453f-bbb2-7f62472bd639">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">res130</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#70506db9-7075-4d05-bda1-7ee7c9b6da20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#70506db9-7075-4d05-bda1-7ee7c9b6da20">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#7307c9ee-93a6-4ecd-992f-88058e1e57c4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#7307c9ee-93a6-4ecd-992f-88058e1e57c4">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#74b142ea-9397-4194-8d71-6b7a7526f6a8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#74b142ea-9397-4194-8d71-6b7a7526f6a8">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#e05605e1-6af9-4c7a-bb37-eb9cda197345"/>
+        <ifc:referencedDocument_IfcDocumentReference rdf:resource="http://www.ontoeng.com/VFLibProduct#08057d0a-5483-4fe8-9e68-060a44191fe3"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#31a98a9d-7de4-41bd-9768-d4c4e05c95eb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#75a8bd53-12a0-4adb-a8d7-134d1b137606 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#75a8bd53-12a0-4adb-a8d7-134d1b137606">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2DPickandPlace1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#76ea20d9-f0a8-4461-b05e-cab543c4f01e -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#76ea20d9-f0a8-4461-b05e-cab543c4f01e">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#83142297-43c4-44ef-babf-2bb57894a2b2"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#894caf10-c679-42ac-85f9-4b0cddad22c6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#77603e20-880d-4e5d-af9a-32f3d4f0ec06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#77603e20-880d-4e5d-af9a-32f3d4f0ec06">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentationMap_List"/>
+        <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibProduct#333bdeef-ab83-440c-9620-7b58012b889c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#79ced90b-4f74-496a-8c9d-91e202437b61 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#79ced90b-4f74-496a-8c9d-91e202437b61">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HingeProcessPlan</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8a76d87e-c6cc-487c-b1b0-2a86098ccc55 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8a76d87e-c6cc-487c-b1b0-2a86098ccc55">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#4786c24a-0b34-41d2-9e94-229d9974505c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8a94d254-7392-4306-b76c-775385e63225 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8a94d254-7392-4306-b76c-775385e63225">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8cf818e3-ebb5-4634-9726-2432dc36fe5d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8cf818e3-ebb5-4634-9726-2432dc36fe5d">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#0568baff-8dcb-4adc-aa89-6f0c7cc0d2f6"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#ef94cedb-5584-4710-86ef-e6575aa9b8fc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8e323488-56bd-482f-a7b4-4c62bac1eee1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8e323488-56bd-482f-a7b4-4c62bac1eee1">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT8S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8fe49708-9fa2-4fe6-815e-0527a79c1815 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8fe49708-9fa2-4fe6-815e-0527a79c1815">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#7f93937c-f2d4-48e7-aec1-273079d1d285"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#b3a86428-5edd-40a3-97b0-798a12668920"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#819ee336-44a0-4bdb-b180-0ca2bcbad215 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#819ee336-44a0-4bdb-b180-0ca2bcbad215">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 45.43 8.42</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#82ee7caa-a86b-4a9d-9412-04f44595b735 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#82ee7caa-a86b-4a9d-9412-04f44595b735">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SQUARE_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#AREAUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8201aa03-699c-404b-b5b2-c3b51b4eeaa7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8201aa03-699c-404b-b5b2-c3b51b4eeaa7">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1 44.18 22.02</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#83142297-43c4-44ef-babf-2bb57894a2b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#83142297-43c4-44ef-babf-2bb57894a2b2">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Connector2</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#83390831-630f-4ea2-941a-8d6606f7cc19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#83390831-630f-4ea2-941a-8d6606f7cc19">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT7S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#8373e598-db13-4e5a-8b6d-979189318d04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#8373e598-db13-4e5a-8b6d-979189318d04">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#859eef16-f5f4-4d59-b9c1-5cc0d11270b8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#859eef16-f5f4-4d59-b9c1-5cc0d11270b8">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT7S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#891e29df-e347-43f9-8480-4c581f6e4edb -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#891e29df-e347-43f9-8480-4c581f6e4edb">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#a38b4d91-74a3-4560-b9bd-d083191153c4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#894caf10-c679-42ac-85f9-4b0cddad22c6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#894caf10-c679-42ac-85f9-4b0cddad22c6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9c2d3d4a-c8ee-452c-bab7-5e3aaf61a977 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9c2d3d4a-c8ee-452c-bab7-5e3aaf61a977">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 25 9.5</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9c5b6a1c-8070-4a7f-af4d-e4591d4ddd73 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9c5b6a1c-8070-4a7f-af4d-e4591d4ddd73">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibProduct#c1247297-ea85-4cf4-b483-1a4206ff9302"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9c9e7f1c-b8d5-4754-8859-25d64f7197ff -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9c9e7f1c-b8d5-4754-8859-25d64f7197ff">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT2S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9e40429e-d1d1-41ce-8ec4-2e39447faf8c -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9e40429e-d1d1-41ce-8ec4-2e39447faf8c">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 -7.5 52</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 0 0; 0 1 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9e890c81-de5e-4d76-b023-e9d41e243dc2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9e890c81-de5e-4d76-b023-e9d41e243dc2">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#2c6d0f03-97c1-48ff-afa6-3fb56f52ffd6"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#df2b0d68-244d-4145-ae93-45b235a3738c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9fefb943-badb-4934-9973-d824c473f825 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9fefb943-badb-4934-9973-d824c473f825">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#GRAM"/>
+        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#KILO"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MASSUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#90db5745-468d-491c-b461-89c3ef0ecfe6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#90db5745-468d-491c-b461-89c3ef0ecfe6">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pin1-1</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#903a69ba-49ba-4c9f-adc8-26cda0181f3b -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#903a69ba-49ba-4c9f-adc8-26cda0181f3b">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcDuration"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PT5S</expr:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#945ab9ae-7fa8-4ccf-9449-67ebaee54bb7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#945ab9ae-7fa8-4ccf-9449-67ebaee54bb7">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
+        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MILLI"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#95dcbd6c-b292-4fc5-8492-dca4bd3bb33d -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#95dcbd6c-b292-4fc5-8492-dca4bd3bb33d">
+        <rdf:type rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <ifc:location_IfcExternalReference rdf:resource="http://www.ontoeng.com/VFLibProduct#32563b75-2354-41cd-a54b-ec4cd99092d1"/>
+        <ifc:referencedDocument_IfcDocumentReference rdf:resource="http://www.ontoeng.com/VFLibProduct#a19df45a-5f52-4046-9adf-5478a33d9ecd"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="http://www.ontoeng.com/VFLibProduct#0f4c4364-9121-4be9-9436-4d886628569c"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontoeng.com/VFLibProduct#9670438b-46fd-490f-8e2b-0c0a68941ced -->
+
+    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibProduct#9670438b-46fd-490f-8e2b-0c0a68941ced">
+        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hinge.glb#Hook</expr:hasString>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
