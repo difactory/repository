@@ -1,0 +1,57 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX stat: <http://www.ontoeng.com/statistics#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX dm: <http://www.ontoeng.com/dmanufacturing#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+select distinct  ?task ?taskclass ?timeDet ?timeStoch (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
+
+WHERE{
+
+  ## The selected process plan is a user-defined parameter
+  #VALUES ?taskstr {"#task#"} 
+  #BIND(URI(?taskstr) AS ?task) .   
+  BIND(URI("#task#") AS ?task) . 
+
+  # get class of task
+  ?task rdf:type ?taskclass.
+  FILTER ( ?taskclass != owl:NamedIndividual ) . 
+  
+  # get input parts
+  OPTIONAL{ 
+    ?task ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?inputpart . 
+    ?inputpart rdf:type/rdfs:subClassOf* factory:Artifact .
+  }
+  
+  # get successors
+  OPTIONAL{ ?task ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?succ . }
+  
+  # get resources where the task can be executed (it can be a resource or a resource type)
+  OPTIONAL{ 
+    ?task (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+  	?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+  	#?restype ifcext:typesObject|^ifcext:isDefinedByType ?res .  
+    ?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?resource .
+    ?resource rdf:type/rdfs:subClassOf* factory:MachineTool .
+  }  
+  
+  
+  # get default processing time (deterministic)
+  OPTIONAL{?task ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime/express:hasString ?timeDet.}
+  # get default processing time (stochastic)
+  OPTIONAL{
+    ?task ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?timeStoch.
+    ?timeStoch rdf:type ?stochDistr.
+    FILTER ( ?stochDistr != owl:NamedIndividual ) .
+  }
+} GROUP BY ?task ?taskclass ?timeDet ?timeStoch
+

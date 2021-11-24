@@ -1,0 +1,77 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX dm: <http://www.ontoeng.com/dmanufacturing#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+select distinct ?parttype ?pplan ?task ?taskclass ?succ  ?timeDet ?timeStoch ?stochDistr ?durationDet ?durationStoch ?usage  (count(?allsucc)-1 as ?Nallsucc) ?resource ?resourcetype # ?restype ?res 
+
+WHERE{
+
+  ## The selected process plan is a user-defined parameter
+  BIND(URI("#processplan#") AS ?pplan) .   
+
+  # get process plans
+  ?pplan rdf:type owl:NamedIndividual .
+  ?pplan rdf:type/rdfs:subClassOf* ifc:IfcTaskType .
+  ?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan . 
+  ?parttype rdf:type/rdfs:subClassOf* factory:ArtifactType .
+
+  # get tasks in a process plan
+  ?pplan ifcext:isNestedByObject|^ifcext:nestsObject ?task. 
+
+  # get class of task
+  ?task rdf:type ?taskclass.
+  FILTER ( ?taskclass != owl:NamedIndividual ) . 
+  
+  # get successors
+  OPTIONAL{ ?task ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?succ . }
+  
+  # get all successors (direct + indirect)
+  OPTIONAL{ ?task (ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess)* ?allsucc . }
+
+  # get default processing time (deterministic)
+  OPTIONAL{?task ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime/express:hasString ?timeDet.}
+  # get default processing time (stochastic)
+  OPTIONAL{
+    ?task ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?timeStoch.
+    ?timeStoch rdf:type ?stochDistr.
+    FILTER ( ?stochDistr != owl:NamedIndividual ) .
+  }
+
+  # get resources where the task can be executed (it can be a resource or a resource type)
+  ?task (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+  ?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+  #?restype ifcext:typesObject|^ifcext:isDefinedByType ?res .
+  
+  OPTIONAL{
+    ?res ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?resource .
+    ?resource rdf:type/rdfs:subClassOf* ifc:IfcElement .
+  }
+  OPTIONAL{
+    ?res ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?resourcetype .
+    ?resourcetype rdf:type/rdfs:subClassOf* ifc:IfcElementType .   
+    # ?resourcetype ifcext:typesObject|^ifcext:isDefinedByType ?resource .
+  }  
+
+  # get resource time and usage
+  OPTIONAL{
+    ?res factory:usage_ProductionResource ?restime.
+    # get resource consumption overriding the default processing time (deterministic)
+    OPTIONAL{ ?restime ifc:scheduleWork_IfcResourceTime/express:hasString ?durationDet . }  
+    # get resource consumption overriding the default processing time (stochastic)
+    OPTIONAL{ ?restime ifcext:hasStochasticWork/osph:isQuantitySampledFrom ?durationStoch . }
+    # get resource usage
+    OPTIONAL{ ?restime ifc:scheduleUsage_IfcResourceTime/express:hasDouble ?usage . }  
+  }
+} 
+GROUPBY ?parttype ?pplan ?task ?taskclass ?succ  ?timeDet ?timeStoch ?stochDistr ?durationDet ?durationStoch ?usage ?resource ?resourcetype
+ORDER BY DESC(?Nallsucc)

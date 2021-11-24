@@ -1,0 +1,7 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+     
+INSERT DATA { 
+	GRAPH <#graph#> { 
+		<#ontouri#> owl:imports <#importeduri#> . 
+	}
+}

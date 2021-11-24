@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX stat: <http://www.ontoeng.com/statistics#>
+select distinct ?stochDistr ?p1 ?p2 ?p3
+WHERE { 
+	# The selected element is a user-defined parameter
+	BIND(URI("#stochasticValue#") AS ?stochValue) . 	
+
+    ?stochValue rdf:type ?stochDistr.
+    FILTER ( ?stochDistr != owl:NamedIndividual ) .
+	
+	#EXPONENTIAL
+	OPTIONAL{
+		?stochValue stat:hasLambda_ExponentialDistr ?p1.
+	}
+	#NORMAL
+	OPTIONAL{
+		?stochValue stat:hasMi_NormalDistr ?p2.
+		?stochValue stat:hasSigma_NormalDistr ?p3.
+	}	
+}

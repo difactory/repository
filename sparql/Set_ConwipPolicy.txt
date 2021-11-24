@@ -1,0 +1,77 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+DELETE{
+	GRAPH ?g { 
+		?rhs express:hasInteger ?thresholddt .
+	}
+}
+INSERT { 
+	GRAPH <#graph#> { 
+	
+		?conwippol cs:hasPolicyExpression ?exprNew .
+		
+		?exprNew a owl:NamedIndividual , ex:BinaryExpression .
+		?expr ex:hasRhsOperand ?rhsNew . 
+		?exprNew ex:hasRhsOperand ?rhsNew . 
+		?expr ex:hasLhsOperand ?lhsNew . 
+		?exprNew ex:hasLhsOperand ?lhsNew . 
+		?expr ex:hasOperator ex:LESSTHANOREQUAL .  
+		?exprNew ex:hasOperator ex:LESSTHANOREQUAL .  
+		
+		?rhsNew a owl:NamedIndividual , ifc:IfcPositiveInteger .
+		?lhsNew a owl:NamedIndividual , ex:IteratedBinaryExpression .
+		?lhsNew ex:hasOperator ex:ADDITION .	
+
+		?rhs express:hasInteger ?thresholddtNew .
+		?rhsNew express:hasInteger ?thresholddtNew .
+		
+		?lhs ex:hasOperands ?machVarNew .
+		?lhsNew ex:hasOperands ?machVarNew .
+		
+		?lhs ex:hasOperands ?buffVarNew .
+		?lhsNew ex:hasOperands ?buffVarNew .		
+
+		?machine ssn:hasProperty ?machPropNew .
+		?machPropNew a owl:NamedIndividual , factory:MachineWipLevel .
+		?machVarNew osph:representsProperty ?machPropNew .
+		?machVarNew a owl:NamedIndividual , ex:Variable .
+		
+		?buffer ssn:hasProperty ?buffPropNew .
+		?buffPropNew a owl:NamedIndividual , factory:BufferLevel .
+		?buffVarNew osph:representsProperty ?buffPropNew .
+		?buffVarNew a owl:NamedIndividual , ex:Variable .
+	}
+}
+WHERE {
+BIND(URI("#conwippol#") AS ?conwippol) . 	
+BIND("#threshold#" AS ?threshold) . 
+BIND(URI("#mach#") AS ?machine) . 	
+BIND(URI("#buff#") AS ?buffer) . 	
+GRAPH ?g
+{
+?conwippol rdf:type cs:ConwipControlPolicy .
+OPTIONAL {?conwippol cs:hasPolicyExpression ?expr. 
+	OPTIONAL {?expr ex:hasRhsOperand ?rhs . }
+	OPTIONAL {?expr ex:hasLhsOperand ?lhs . }
+	OPTIONAL {?rhs express:hasInteger ?thresholddt . }
+}
+}
+
+  BIND(IF(bound(?expr),URI("") ,URI(CONCAT(STR(?conwippol),"_BinExpr")) ) AS ?exprNew ) .  
+  BIND(IF(bound(?rhs),URI("") ,URI(CONCAT(STR(?conwippol),"_Thr")) ) AS ?rhsNew ) .  
+  BIND(IF(bound(?lhs), URI(""),URI(CONCAT(STR(?conwippol),"_IterBExpr")) ) AS ?lhsNew ) .  
+  BIND(STRDT(?threshold, xsd:integer) AS ?thresholddtNew) .
+  BIND(IF(bound(?machine), URI(CONCAT(STR(?machine),"_wiplev")),URI("")) AS ?machPropNew ) .
+  BIND(IF(bound(?machine), URI(CONCAT(STR(?machine),"_wiplev_var")),URI("")) AS ?machVarNew ) .
+  BIND(IF(bound(?buffer), URI(CONCAT(STR(?buffer),"_blev")),URI("")) AS ?buffPropNew ) .
+  BIND(IF(bound(?buffer), URI(CONCAT(STR(?buffer),"_blev_var")),URI("")) AS ?buffVarNew ) .  
+}

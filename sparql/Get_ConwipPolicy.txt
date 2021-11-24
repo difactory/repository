@@ -1,0 +1,39 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX dm: <http://www.ontoeng.com/dmanufacturing#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX stat: <http://www.ontoeng.com/statistics#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+select distinct ?threshold ?machine ?buffer
+WHERE { 
+  # The selected policy is a user-defined parameter
+  BIND(URI("#conwippol#") AS ?conwippol) . 	
+  ?conwippol rdf:type cs:ConwipControlPolicy . 
+  ?conwippol cs:hasPolicyExpression ?expr .
+  ?expr ex:hasRhsOperand/express:hasInteger ?threshold . 
+  ?expr ex:hasOperator ex:LESSTHANOREQUAL .  
+  ?expr ex:hasLhsOperand ?lhs . 
+  ?lhs rdf:type ex:IteratedBinaryExpression .
+  ?lhs ex:hasOperator ex:ADDITION .
+  OPTIONAL{
+	?lhs ex:hasOperands/osph:representsProperty ?prop1 .
+ 	?machine ssn:hasProperty ?prop1 .
+    ?machine rdf:type/rdfs:subClassOf* factory:MachineTool .
+  }    
+  OPTIONAL{
+    ?lhs ex:hasOperands/osph:representsProperty ?prop2 .
+ 	?buffer ssn:hasProperty ?prop2 .
+    ?buffer rdf:type/rdfs:subClassOf* factory:BufferElement .
+  }    
+} 

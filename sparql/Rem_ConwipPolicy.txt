@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+DELETE{
+	GRAPH ?g { 
+		?lhs ex:hasOperands ?var .
+	}
+}
+WHERE {
+	BIND(URI("#conwippol#") AS ?conwippol) . 		
+	BIND(URI("#removed#") AS ?removed) . 	
+	GRAPH ?g {
+		?conwippol rdf:type cs:ConwipControlPolicy .
+		?conwippol cs:hasPolicyExpression ?expr. 
+		?expr ex:hasLhsOperand ?lhs .
+		?lhs ex:hasOperands ?var . 
+		GRAPH ?h {
+			?removed ssn:hasProperty ?prop .
+			?var osph:representsProperty ?prop .
+		}	
+	}
+}
