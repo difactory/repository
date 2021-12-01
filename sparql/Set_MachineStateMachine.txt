@@ -1,0 +1,82 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+INSERT { 
+	GRAPH ?g { 
+		?stM a owl:NamedIndividual , fsm:StateMachine .
+		?machine osph:hasStateMachine ?stM .
+		
+		?trWorkIdle a owl:NamedIndividual , fsm:Transition .
+		?trInitCompIdle a owl:NamedIndividual , fsm:Transition .
+		?trIdleWork a owl:NamedIndividual , fsm:Transition .
+		?initSt a owl:NamedIndividual , fsm:Initial .
+		?workState a owl:NamedIndividual , factory:MachineToolWorkinigState .
+		?idleComp a owl:NamedIndividual , fsm:Composite .
+		?guardTrIdleWork a owl:NamedIndividual , fsm:Guard .
+		?startOp a owl:NamedIndividual , factory:MachineToolStartOperationType .
+		
+		?initInIdleComp a owl:NamedIndividual , fsm:Initial .
+		?blockedSt a owl:NamedIndividual , factory:MachineToolBlockedState .
+		?starvedSt a owl:NamedIndividual , factory:MachineToolStarvedState .
+		?idleSt a owl:NamedIndividual , factory:MachineToolIdleState .
+		?trInitIdle a owl:NamedIndividual , fsm:Transition .
+		
+		?stM fsm:contains ?trWorkIdle .
+		?stM fsm:contains ?trInitCompIdle .
+		?stM fsm:contains ?trIdleWork .
+		?stM fsm:contains ?initSt .
+		?stM fsm:contains ?guardTrIdleWork .
+		?stM fsm:contains ?workState .
+		?stM fsm:contains ?idleComp .
+		
+		?trWorkIdle fsm:Source ?workState .
+		?trWorkIdle fsm:Target ?idleComp .
+		?trInitCompIdle fsm:Source ?initSt .
+		?trInitCompIdle fsm:Target ?idleComp .
+		?trIdleWork fsm:Source ?idleComp .
+		?trIdleWork fsm:Target ?workState .
+		
+		?trIdleWork fsm:TransitionGuard ?guardTrIdleWork .
+		?guardTrIdleWork fsm:GuardEvent ?startOp .
+
+		?idleComp fsm:hasStateMachineElement ?initInIdleComp .
+		?idleComp fsm:hasStateMachineElement ?blockedSt .
+		?idleComp fsm:hasStateMachineElement ?starvedSt .
+		?idleComp fsm:hasStateMachineElement ?idleSt .
+		?trInitIdle fsm:Source ?initInIdleComp .
+		?trInitIdle fsm:Target ?idleSt .
+	}
+}
+WHERE {
+	BIND(URI("#mach#") AS ?machine) . 	
+	GRAPH ?g
+	{
+		?machine rdf:type/rdfs:subClassOf* factory:MachineTool .
+
+	}
+	BIND(URI(CONCAT(STR(?machine),"_stM")) AS ?stM ) .  
+	BIND(URI(CONCAT(STR(?machine),"_stM_trWorkIdle")) AS ?trWorkIdle ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_trInitCompIdle")) AS ?trInitCompIdle ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_initSt")) AS ?initSt ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_guardTrIdleWork")) AS ?guardTrIdleWork ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_workState")) AS ?workState ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_trIdleWork")) AS ?trIdleWork ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_idleComp")) AS ?idleComp ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_startOp")) AS ?startOp ) . 
+
+	BIND(URI(CONCAT(STR(?machine),"_stM_initInIdleComp")) AS ?initInIdleComp ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_idleSt")) AS ?idleSt ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_starvedSt")) AS ?starvedSt ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_blockedSt")) AS ?blockedSt ) . 
+	BIND(URI(CONCAT(STR(?machine),"_stM_trInitIdle")) AS ?trInitIdle ) . 
+}

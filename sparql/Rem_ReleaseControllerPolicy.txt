@@ -1,0 +1,45 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?condTrIdleRel osph:hasConditionExpression ?condexpr .
+	}
+}
+WHERE {
+	BIND(URI("#policy#") AS ?policy) . 	
+	BIND(URI("#controller#") AS ?controller) . 	
+	BIND(URI("#mach#") AS ?machine) . 	
+	GRAPH ?g {
+		?controller osph:hasStateMachine ?stM .
+		?stM fsm:contains ?region .
+		?region fsm:hasStateMachineElement ?idleSt .
+		?region fsm:hasStateMachineElement ?relSt .		
+		?idleSt rdf:type cs:RControllerIdleState .
+		?relSt rdf:type cs:RControllerReleaseState .
+		
+		?trRelIdle fsm:Target ?idleSt .
+		?trIdleRel fsm:Source ?idleSt .
+		
+		?relSt fsm:Entry ?entryAction .
+		?entryAction osph:generatesEvent ?startOp .
+		?eventType ifcext:typesObject ?startOp .
+		
+		?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
+		?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
+		?condTrIdleRel osph:hasConditionExpression ?condexpr .
+	}
+	GRAPH ?h {
+ 		?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+	}
+}

@@ -1,0 +1,79 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+
+DELETE{
+}
+INSERT { 
+	GRAPH <#graph#> { 
+		?contrStMNew a owl:NamedIndividual , fsm:StateMachine .
+		?controller osph:hasStateMachine ?contrStMNew .
+			
+		?contrStM fsm:contains ?contrRegion .
+		?contrStMNew fsm:contains ?contrRegion .
+		
+		?contrRegion a owl:NamedIndividual , fsm:Region .
+		?trRelIdle a owl:NamedIndividual , fsm:Transition .
+		?trIdleRel a owl:NamedIndividual , cs:ReleaseTransition .
+		?idleSt a owl:NamedIndividual , cs:RControllerIdleState .
+		?relSt a owl:NamedIndividual , cs:RControllerReleaseState .
+		?guardTrIdleRel a owl:NamedIndividual , cs:ReleaseGuard .
+		?condTrIdleRel a owl:NamedIndividual , cs:ReleaseCondition .
+		?entryAction a owl:NamedIndividual , osph:EventGeneration .
+		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
+		
+		?contrRegion fsm:hasStateMachineElement ?trRelIdle .
+		?contrRegion fsm:hasStateMachineElement ?trIdleRel .
+		?contrRegion fsm:hasStateMachineElement ?idleSt .
+		?contrRegion fsm:hasStateMachineElement ?relSt .
+		?contrRegion fsm:hasStateMachineElement ?guardTrIdleRel .
+		?contrRegion fsm:hasStateMachineElement ?condTrIdleRel .
+		
+		?trRelIdle fsm:Source ?relSt .
+		?trRelIdle fsm:Target ?idleSt .
+		?trIdleRel fsm:Source ?idleSt .
+		?trIdleRel fsm:Target ?relSt .
+		
+		?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
+		?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
+		
+		?relSt fsm:Entry ?entryAction .
+		?entryAction osph:generatesEvent ?startOp .
+		
+		?eventType ifcext:typesObject ?startOp .
+	}
+}
+WHERE {
+	BIND(URI("#controller#") AS ?controller) . 	
+	BIND(URI("#mach#") AS ?machine) . 	
+	GRAPH ?g {
+		?controller rdf:type cs:ReleaseController .
+		OPTIONAL {
+			?controller osph:hasStateMachine ?contrStM .
+		}
+	}
+	GRAPH ?h {
+ 		?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+	}
+	BIND(IF(bound(?contrStM),URI("") ,URI(CONCAT(STR(?controller),"_stM")) ) AS ?contrStMNew ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_reg")) AS ?contrRegion ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trRelIdle")) AS ?trRelIdle ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_idleSt")) AS ?idleSt ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_relSt")) AS ?relSt ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_guardTrIdleRel")) AS ?guardTrIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trIdleRel")) AS ?trIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_condTrIdleRel")) AS ?condTrIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_entryAction")) AS ?entryAction ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_startOp_1")) AS ?startOp ) .  
+
+}
