@@ -5,10 +5,7 @@ PREFIX list: <https://w3id.org/list#>
 PREFIX express: <https://w3id.org/express#> 
 PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
 PREFIX osph: <http://www.ontoeng.com/osph#>
-PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX sosa: <http://www.w3.org/ns/sosa/>
 
 
 SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding

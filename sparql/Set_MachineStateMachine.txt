@@ -1,14 +1,8 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX express: <https://w3id.org/express#> 
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
 PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
-PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
-PREFIX ex: <http://www.ontoeng.com/expression#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 
 INSERT { 

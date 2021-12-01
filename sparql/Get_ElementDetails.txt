@@ -1,17 +1,10 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX list: <https://w3id.org/list#> 
-PREFIX express: <https://w3id.org/express#> 
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
 PREFIX factory: <http://www.ontoeng.com/factory#>
-PREFIX dm: <http://www.ontoeng.com/dmanufacturing#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX sosa: <http://www.w3.org/ns/sosa/>
-PREFIX stat: <http://www.ontoeng.com/statistics#>
 
 select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?conn) as ?connectedTo)
 WHERE { 

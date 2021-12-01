@@ -6,35 +6,34 @@ PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
 DELETE{
 	GRAPH ?g {
-		?stM fsm:contains ?region .
+		?controller osph:hasStateMachine ?stM .
+		
+		?stM fsm:contains ?region .		
+		?stM a owl:NamedIndividual , fsm:StateMachine .	
 		
 		?region a owl:NamedIndividual , fsm:Region .
 		?elem ?b1 ?c1 .
 		?a2 ?b2 ?elem .
-		
 		# redundant, but added for backward compatibility
 		?entryAction a owl:NamedIndividual , osph:EventGeneration .
 		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
 		?entryAction osph:generatesEvent ?startOp .
-		?eventType ifcext:typesObject ?startOp .	
+		?eventType ifcext:typesObject ?startOp .
 	}
 }
 WHERE {
 	BIND(URI("#controller#") AS ?controller) . 	
-	BIND(URI("#mach#") AS ?machine) . 	
 	GRAPH ?g {
 		?controller osph:hasStateMachine ?stM .
 		?stM fsm:contains ?region .		
 		?region fsm:hasStateMachineElement ?elem .
 		OPTIONAL {?elem ?b1 ?c1 . }
-		OPTIONAL {?a2 ?b2 ?elem . }
-		
+		OPTIONAL {?a2 ?b2 ?elem . }		
 		# redundant, but added for backward compatibility
-		?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
-		?entryAction osph:generatesEvent ?startOp .
-		?eventType ifcext:typesObject ?startOp .
-	}
-	GRAPH ?h {
- 		?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+		OPTIONAL{
+			?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
+			?entryAction osph:generatesEvent ?startOp .
+			?eventType ifcext:typesObject ?startOp .
+		}	
 	}
 }

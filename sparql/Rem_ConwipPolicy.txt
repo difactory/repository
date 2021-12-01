@@ -14,8 +14,7 @@ WHERE {
 	BIND(URI("#removed#") AS ?removed) . 	
 	GRAPH ?g {
 		?conwippol rdf:type cs:ConwipControlPolicy .
-		?conwippol cs:hasPolicyExpression ?expr. 
-		?expr ex:hasLhsOperand ?lhs .
+		?conwippol cs:hasPolicyExpression/ex:hasLhsOperand ?lhs .
 		?lhs ex:hasOperands ?var . 
 		GRAPH ?h {
 			?removed ssn:hasProperty ?prop .
