@@ -12,8 +12,6 @@ select distinct  ?task ?taskclass ?timeDet ?timeStoch (group_concat(distinct ?su
 WHERE{
 
   ## The selected process plan is a user-defined parameter
-  #VALUES ?taskstr {"#task#"} 
-  #BIND(URI(?taskstr) AS ?task) .   
   BIND(URI("#task#") AS ?task) . 
 
   # get class of task

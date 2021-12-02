@@ -1,0 +1,15 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?pstepFrom ifcext:isPredecessorToProcess ?pstepTo .
+		?pstepTo ifcext:isSuccessorFromProcess ?pstepFrom .
+	}
+}
+WHERE {
+	BIND(URI("#pstepFrom#") AS ?pstepFrom) . 	
+	BIND(URI("#pstepTo#") AS ?pstepTo) . 	
+	GRAPH ?g {
+		?pstepFrom ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?pstepTo .
+	}
+}

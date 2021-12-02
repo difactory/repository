@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g { 
+		?res ?b1 ?c1 .
+		?a2 ?b2 ?res .
+	}
+}
+INSERT { 
+	GRAPH <#graph#> { 
+		?pstep ifcext:hasAssignedObject ?resNew .
+		?resNew a owl:NamedIndividual , factory:ProductionResource .
+		?resNew ifcext:hasAssignedObject ?elem .
+	}
+}
+WHERE {
+	BIND(URI("#pstep#") AS ?pstep) . 	
+	BIND(URI("#elem#") AS ?elem) . 	
+	#GRAPH ?g {	
+	#	?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo) ?res .
+	#	?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+	#	OPTIONAL {?res ?b1 ?c1 . }
+	#	OPTIONAL {?a2 ?b2 ?res .}
+	#}
+	BIND(URI(CONCAT(STR(?pstep),"_res")) AS ?resNew ) .  
+}

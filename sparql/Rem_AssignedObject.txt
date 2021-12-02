@@ -1,0 +1,15 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?subject ifcext:hasAssignedObject ?assignedobj .
+		?elemTo ifcext:hasAssignmentTo ?subject .
+	}
+}
+WHERE {
+	BIND(URI("#subject#") AS ?subject) . 	
+	BIND(URI("#assignedobj#") AS ?assignedobj) . 	
+	GRAPH ?g {
+		?subject ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?assignedobj .
+	}
+}
