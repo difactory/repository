@@ -1,0 +1,52 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+DELETE{
+	GRAPH ?h0{?guardevent ifcext:hasTimeToHappen ?ttfvalue .}
+	GRAPH ?h1{?ttfvalue ?b1 ?c1 .}
+	GRAPH ?h2{?ttfpdistr ?b2 ?c2 . }
+}
+INSERT { 
+	GRAPH ?g { 
+		?guardNew a owl:NamedIndividual , fsm:Guard .
+		?guardeventNew a owl:NamedIndividual , factory:MachineToolFailureType .
+		?intr fsm:TransitionGuard ?guardNew .
+		?guardNew fsm:GuardEvent ?guardeventNew .
+		
+		?guardevent ifcext:hasTimeToHappen ?ttf .
+		?guardeventNew ifcext:hasTimeToHappen ?ttf .
+	}
+}
+WHERE {
+	BIND(URI("#failstate#") AS ?failstate) . 
+	BIND(URI("#ttf#") AS ?ttf) . 	
+	GRAPH ?g{
+		?failstate rdf:type owl:NamedIndividual .
+	}
+	
+	?intr fsm:Target ?failstate .
+	OPTIONAL {
+		?intr fsm:TransitionGuard ?guard .
+		?guard fsm:GuardEvent ?guardevent .
+		OPTIONAL{
+			GRAPH ?h0{?guardevent ifcext:hasTimeToHappen ?ttfvalue .}
+			OPTIONAL {
+				GRAPH ?h1{?ttfvalue ?b1 ?c1 .}
+				OPTIONAL {
+					?ttfvalue osph:isQuantitySampledFrom ?ttfpdistr.
+					GRAPH ?h2{?ttfpdistr ?b2 ?c2 . }
+				}
+			}
+		}
+	}
+
+
+	BIND(IF(bound(?guard),URI("") ,URI(CONCAT(STR(?failstate),"_guardTrWorkFailed")) ) AS ?guardNew ) .  
+	BIND(IF(bound(?guardevent),URI("") ,URI(CONCAT(STR(?failstate),"_failureEvent")) ) AS ?guardeventNew ) .  
+
+}

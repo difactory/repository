@@ -1,0 +1,63 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g1{?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .}
+	GRAPH ?g2{?duration ?b1 ?c1 . }
+	GRAPH ?g3{?tasktime ifcext:hasStochasticDuration ?stochdur .}
+	GRAPH ?g4{?stochdur ?b2 ?c2 .}
+	GRAPH ?g5{?timestoch ?b3 ?c3.}
+}
+INSERT { 
+	GRAPH ?g{
+		?pstep ifc:taskTime_IfcTask ?tasktimeNew .
+		?tasktimeNew a owl:NamedIndividual , ifc:IfcTaskTime .
+	}
+	GRAPH <#graph#> { 		
+		?tasktime ifc:scheduleDuration_IfcTaskTime ?durationNew .			
+		?tasktime ifcext:hasStochasticDuration ?stochdurNew .
+		?tasktimeNew ifc:scheduleDuration_IfcTaskTime ?durationNew .			
+		?tasktimeNew ifcext:hasStochasticDuration ?stochdurNew .
+	}
+}
+WHERE {
+	BIND(URI("#pstep#") AS ?pstep) . 	
+	BIND(URI("#proctime#") AS ?proctime) . 	
+	GRAPH ?g{
+		?pstep rdf:type owl:NamedIndividual .
+	}
+	OPTIONAL {?pstep ifc:taskTime_IfcTask ?tasktime . 
+		OPTIONAL {
+			GRAPH ?g1{?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .}
+			OPTIONAL{ GRAPH ?g2{?duration ?b1 ?c1 . }}
+		}
+		OPTIONAL{
+			GRAPH ?g3{?tasktime ifcext:hasStochasticDuration ?stochdur .}
+			OPTIONAL{
+				GRAPH ?g4{?stochdur ?b2 ?c2 .}
+				OPTIONAL{
+					?stochdur osph:isQuantitySampledFrom ?timestoch .
+					GRAPH ?g5 {?timestoch ?b3 ?c3.} 
+				}
+			}
+		}	
+	}
+	GRAPH ?j {
+		?proctime a ?timeclass .
+		FILTER ( ?timeclass != owl:NamedIndividual ) .		
+	}
+	
+	BIND(IF(bound(?tasktime),URI("") ,URI(CONCAT(STR(?pstep),"_time")) ) AS ?tasktimeNew ) .  
+	
+	BIND(IF(CONTAINS(STR(?timeclass),"IfcDuration"),?proctime,URI("") ) AS ?durationNew ) .  
+	BIND(IF(CONTAINS(STR(?timeclass),"StochasticQuantityTime"),?proctime,URI("") ) AS ?stochdurNew ) .  
+}

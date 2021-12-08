@@ -4,23 +4,18 @@ PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
-select distinct ?ttftime ?ttfstoch ?ttrtime ?ttrstoch
+select distinct ?ttftime ?ttrtime
 WHERE { 
 	# The selected element is a user-defined parameter
-	BIND(URI("#failuremode#") AS ?failstate) . 	
+	BIND(URI("#failstate#") AS ?failstate) . 	
 	?intr fsm:Target ?failstate .
-	?intr fsm:TransitionGuard/fsm:GuardEvent/ifcext:hasTimeToHappen ?ttf .
-	?failstate osph:do/ifc:taskTime_IfcTask ?ttr .
 	optional{
-		?ttf osph:isQuantitySampledFrom ?ttfstoch.
+		?intr fsm:TransitionGuard/fsm:GuardEvent ?ttfguardev .
+		?ttfguardev ifcext:hasTimeToHappen ?ttftime.
 	}
 	optional{
-		?ttf express:hasDouble ?ttftime .
-	}
-	optional{
-		?ttr ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?ttrstoch.
-	}
-	optional{
-		?ttr ifc:scheduleDuration_IfcTaskTime/express:hasString ?ttrtime .
+		?failstate osph:do/ifc:taskTime_IfcTask ?ttr .
+		optional{ ?ttr ifcext:hasStochasticDuration ?ttrtime. }
+		optional{ ?ttr ifc:scheduleDuration_IfcTaskTime ?ttrtime . }	
 	}
 }

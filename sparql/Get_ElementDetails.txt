@@ -5,19 +5,25 @@ PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
-select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?conn) as ?connectedTo)
+select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?conn) as ?connectedTo) ?buffCap
 WHERE { 
-  # The selected element is a user-defined parameter
-  BIND(URI("#element#") AS ?elem) . 	
-  ?elem rdf:type ?elemclass . 
-  FILTER ( ?elemclass != owl:NamedIndividual ) .
-  optional{
-	?elem osph:hasStateMachine ?stm .
-	?stm fsm:contains ?failstate .
-	?failstate rdf:type/rdfs:subClassOf* factory:MachineToolFailedState . 
+	# The selected element is a user-defined parameter
+	BIND(URI("#element#") AS ?elem) . 	
+	?elem rdf:type ?elemclass . 
+	FILTER ( ?elemclass != owl:NamedIndividual ) .
+	optional{
+		?elem ssn:hasProperty ?buffprop .
+		?buffprop rdf:type factory:BufferCapacity .
+		?buffprop osph:hasPropertySimpleValue ?buffCap .
 	}
 	optional{
-	?elem ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?conn .
+		?elem osph:hasStateMachine ?stm .
+		?stm fsm:contains ?failstate .
+		?failstate rdf:type/rdfs:subClassOf* factory:MachineToolFailedState . 
 	}
-} GROUP BY ?elem ?elemclass
+	optional{
+		?elem ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?conn .
+	}
+} GROUP BY ?elem ?elemclass ?buffCap

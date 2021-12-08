@@ -2,7 +2,6 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT distinct ?class WHERE { 
-  BIND(URI("#individ#") AS ?individ) . 
-  ?individ rdf:type ?class .
+  <#individ#> rdf:type ?class .
   FILTER ( ?class != owl:NamedIndividual ) .
 }

@@ -1,14 +1,11 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 PREFIX factory: <http://www.ontoeng.com/factory#> 
 select distinct ?elem ?elemclass
 WHERE { 
 	## The selected system is a user-defined parameter
-	BIND(URI("#system#") AS ?system) . 	
-	?system rdf:type/rdfs:subClassOf* factory:TransformationSystem . 
-	?system ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?elem .	
+	<#system#> ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?elem .	
 	?elem rdf:type ?elemclass . 
 	FILTER ( ?elemclass != owl:NamedIndividual ) .
 }

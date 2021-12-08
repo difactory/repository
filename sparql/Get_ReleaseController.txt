@@ -7,8 +7,7 @@ SELECT distinct ?controlledMach ?region ?controlPolicy
 
 WHERE { 
   # The selected controller is a user-defined parameter
-  BIND(URI("#controller#") AS ?controller) . 	  
-  ?controller osph:hasStateMachine ?stM .
+  <#controller#> osph:hasStateMachine ?stM .
   ?stM fsm:contains ?region .
   ?region fsm:hasStateMachineElement ?relState .
   ?relState fsm:Entry/osph:generatesEvent ?event .

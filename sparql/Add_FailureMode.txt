@@ -1,0 +1,39 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+
+INSERT { 
+	GRAPH ?g { 
+		?failedstate a owl:NamedIndividual , factory:MachineToolFailedState .
+		?stM fsm:contains ?failedstate .
+
+		?trFailedIdle a owl:NamedIndividual , fsm:Transition .
+		?stM fsm:contains ?trFailedIdle .
+		?trFailedIdle fsm:Source ?failedstate .
+		?trFailedIdle fsm:Target ?idleComp .
+
+		?trWorkFailed a owl:NamedIndividual , fsm:Transition .
+		?stM fsm:contains ?trWorkFailed .
+		?trWorkFailed fsm:Source ?workState .
+		?trWorkFailed fsm:Target ?failedstate .
+	}
+}
+WHERE {
+	BIND(URI("#mach#") AS ?machine) . 	
+	BIND(URI("#failedstate#") AS ?failedstate) . 	
+	GRAPH ?g
+	{
+		?machine osph:hasStateMachine ?stM .
+	}	
+	?stM fsm:contains ?workState .
+	?workState a factory:MachineToolWorkinigState .
+	?stM fsm:contains ?idleComp .
+	?idleComp a fsm:Composite .
+		
+	BIND(URI(CONCAT(STR(?failedstate),"_trFailedIdle")) AS ?trFailedIdle ) .  
+	BIND(URI(CONCAT(STR(?failedstate),"_trWorkFailed")) AS ?trWorkFailed ) .  
+
+}

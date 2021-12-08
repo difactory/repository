@@ -1,0 +1,72 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX stat: <http://www.ontoeng.com/statistics#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX express: <https://w3id.org/express#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+INSERT { 
+	GRAPH <#graph#> { 
+		
+		?timeInd a owl:NamedIndividual , ifc:IfcTimeMeasure .
+		?timeInd express:hasDouble ?timedt.			
+		
+		?durationInd a owl:NamedIndividual , ifc:IfcDuration .
+		?durationInd express:hasString ?durationdt.		
+
+		?stochQTime a owl:NamedIndividual , ifcext:StochasticQuantityTime .
+		?stochQTime osph:isQuantitySampledFrom ?expDistr .
+		?stochQTime osph:isQuantitySampledFrom ?normDistr .
+		?stochQTime osph:isQuantitySampledFrom ?lognormDistr .
+		?stochQTime osph:isQuantitySampledFrom ?triDistr .
+		?stochQTime osph:isQuantitySampledFrom ?unifDistr .
+		
+		?expDistr a owl:NamedIndividual , stat:ExponentialDistribution .
+		?expDistr stat:hasLambda_ExponentialDistr ?p1dt.
+
+		?normDistr a owl:NamedIndividual , stat:NormalDistribution .
+		?normDistr stat:hasMi_NormalDistr ?p1dt.
+		?normDistr stat:hasSigma_NormalDistr ?p2dt.
+		
+		?lognormDistr a owl:NamedIndividual , stat:LognormalDistribution .
+		?lognormDistr stat:hasMi_LognormalDistr ?p1dt.
+		?lognormDistr stat:hasSigma_LognormalDistr ?p2dt.
+		
+		?triDistr a owl:NamedIndividual , stat:TriangularDistribution .
+		?triDistr stat:hasLowerLimit_TriangularDistr ?p1dt .
+		?triDistr stat:hasMode_TriangularDistr ?p2dt .		
+		?triDistr stat:hasUpperLimit_TriangularDistr ?p3dt .
+		
+		?unifDistr a owl:NamedIndividual , stat:UniformContinuousDistribution .
+		?unifDistr stat:hasLowerLimit_UniformContinuousDistr ?p1dt.
+		?unifDistr stat:hasUpperLimit_UniformContinuousDistr ?p2dt.
+	}
+}
+WHERE {
+	BIND(URI("#subject#") AS ?subject) . 	
+	
+	BIND("#time#" AS ?time) . 	
+	BIND("#dur#" AS ?dur) . 	
+	BIND("#distr#" AS ?distr) . 	
+	BIND("#p1#" AS ?p1) . 	
+	BIND("#p2#" AS ?p2) . 	
+	BIND("#p3#" AS ?p3) . 	
+
+	BIND(IF(strlen(?time)>0,?subject,URI("") ) AS ?timeInd ) .  
+	BIND(IF(strlen(?dur)>0,?subject,URI("") ) AS ?durationInd ) .  
+	
+	BIND(IF(strlen(?distr)>0, ?subject ,URI("")) AS ?stochQTime ) . 
+	BIND(IF(CONTAINS(?distr,"Exponential"),URI(CONCAT(STR(?subject),"_pdistr")),URI("") ) AS ?expDistr ) .  
+	BIND(IF(CONTAINS(?distr,"Normal"),URI(CONCAT(STR(?subject),"_pdistr")),URI("") ) AS ?normDistr ) .  
+	BIND(IF(CONTAINS(?distr,"Lognormal"),URI(CONCAT(STR(?subject),"_pdistr")),URI("") ) AS ?lognormDistr ) .  
+	BIND(IF(CONTAINS(?distr,"Triangular"),URI(CONCAT(STR(?subject),"_pdistr")),URI("") ) AS ?triDistr ) .  
+	BIND(IF(CONTAINS(?distr,"Uniform"),URI(CONCAT(STR(?subject),"_pdistr")),URI("") ) AS ?unifDistr ) .  
+		 
+ 	BIND(IF(strlen(?time)>0,STRDT(?time, xsd:double),URI("") ) AS ?timedt ) . 
+ 	BIND(IF(strlen(?dur)>0,STRDT(?dur, xsd:string),URI("") ) AS ?durationdt ) . 
+
+	BIND(IF(strlen(?p1)>0,STRDT(?p1, xsd:double),URI("") ) AS ?p1dt ) . 
+	BIND(IF(strlen(?p2)>0,STRDT(?p2, xsd:double),URI("") ) AS ?p2dt ) . 
+	BIND(IF(strlen(?p3)>0,STRDT(?p3, xsd:double),URI("") ) AS ?p3dt ) . 
+}

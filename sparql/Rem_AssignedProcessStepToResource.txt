@@ -10,20 +10,22 @@ PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 DELETE{
 	GRAPH ?h { 
 		?res ?b1 ?c1 .
-		?a2 ?b2 ?res .
 	}
+	GRAPH ?j { 
+		?a2 ?b2 ?res .
+	}	
 }
 WHERE {
 	BIND(URI("#pstep#") AS ?pstep) . 	
 	BIND(URI("#elem#") AS ?elem) . 	
-	GRAPH ?g1 {	
-		?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
-	}
-	GRAPH ?g3 {	
-		?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?elem .
-	}
+
+	?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+	?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?elem .
+
 	GRAPH ?h{
 		OPTIONAL {?res ?b1 ?c1 . }
+	}
+	GRAPH ?j{
 		OPTIONAL {?a2 ?b2 ?res .}
 	}
 }

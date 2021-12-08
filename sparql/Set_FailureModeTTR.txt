@@ -1,0 +1,64 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+DELETE{
+	GRAPH ?h3{ ?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrvalueDet.}
+	GRAPH ?h4{ ?ttrvalueDet ?b4 ?c4 . }
+	GRAPH ?h5{ ?mainttasktime ifcext:hasStochasticDuration ?ttrvalueStoch.}
+	GRAPH ?h6{ ?ttrvalueStoch ?b6 ?c6 . }
+	GRAPH ?h7{ ?ttrpdistr ?b7 ?c7 . }
+}
+INSERT { 
+	GRAPH ?g { 
+		?mainttaskNew a owl:NamedIndividual , factory:MaintenanceTask .
+		?mainttasktimeNew a owl:NamedIndividual , ifc:IfcTaskTime .
+		?failstate osph:do ?mainttaskNew .
+		?mainttaskNew ifc:taskTime_IfcTask ?mainttasktimeNew .
+	
+		?mainttasktime ifcext:hasStochasticDuration ?ttrStoch .
+		?mainttasktimeNew ifcext:hasStochasticDuration ?ttrStoch .	
+		?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrDet .
+		?mainttasktimeNew ifc:scheduleDuration_IfcTaskTime ?ttrDet .
+	}
+}
+WHERE {
+	BIND(URI("#failstate#") AS ?failstate) . 
+	BIND(URI("#ttr#") AS ?ttr) . 	
+	GRAPH ?g{
+		?failstate rdf:type owl:NamedIndividual .
+	}
+	
+	?ttr a ?ttrclass .
+	FILTER ( ?ttrclass != owl:NamedIndividual ) .	
+	BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"IfcDuration"),?ttr,URI("")) AS ?ttrDet ) . 
+	BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"StochasticQuantityTime"),?ttr,URI("")) AS ?ttrStoch ) . 	
+		
+	OPTIONAL {	
+		?failstate osph:do ?mainttask .
+		?mainttask ifc:taskTime_IfcTask ?mainttasktime .
+		OPTIONAL{
+			GRAPH ?h3{ ?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrvalueDet.}
+			OPTIONAL{
+				GRAPH ?h4{ ?ttrvalueDet ?b4 ?c4 . }
+			}
+		}
+		OPTIONAL {
+			GRAPH ?h5{ ?mainttasktime ifcext:hasStochasticDuration ?ttrvalueStoch.}
+			OPTIONAL {
+				GRAPH ?h6{ ?ttrvalueStoch ?b6 ?c6 . }
+				OPTIONAL {
+					?ttrvalueStoch osph:isQuantitySampledFrom ?ttrpdistr.
+					GRAPH ?h7{?ttrpdistr ?b7 ?c7 . }
+				}	
+			}
+		}
+	}
+
+	BIND(IF(bound(?mainttask),URI("") ,URI(CONCAT(STR(?failstate),"_repairTask")) ) AS ?mainttaskNew ) .  
+	BIND(IF(bound(?mainttasktime),URI("") ,URI(CONCAT(STR(?failstate),"_repairTask_time")) ) AS ?mainttasktimeNew ) .  
+}

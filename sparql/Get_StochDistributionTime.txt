@@ -1,0 +1,55 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX stat: <http://www.ontoeng.com/statistics#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX express: <https://w3id.org/express#> 
+select distinct ?time ?dur ?stochDistr ?p1 ?p2 ?p3
+WHERE { 
+	# The selected element is a user-defined parameter
+	BIND(URI("#stochasticValue#") AS ?timeValue) . 	
+
+	# TIME (deterministic)
+	OPTIONAL{
+		?timeValue a ifc:IfcTimeMeasure .
+		?timeValue express:hasDouble ?time.			
+	} 
+	# DURATION (deterministic)
+	OPTIONAL{
+		?timeValue a ifc:IfcDuration .
+		?timeValue express:hasString ?dur.			
+	}
+	#DISTRIBUTIONS
+	OPTIONAL{
+		?timeValue osph:isQuantitySampledFrom ?probdistr .
+		?probdistr rdf:type ?stochDistr.
+		FILTER ( ?stochDistr != owl:NamedIndividual ) . 
+		
+		#EXPONENTIAL
+		OPTIONAL{
+			?probdistr stat:hasLambda_ExponentialDistr ?p1.
+		}
+		#NORMAL
+		OPTIONAL{
+			?probdistr stat:hasMi_NormalDistr ?p1.
+			?probdistr stat:hasSigma_NormalDistr ?p2.
+		}	
+		#LOGNORMAL
+		OPTIONAL{
+			?probdistr stat:hasMi_LognormalDistr ?p1.
+			?probdistr stat:hasSigma_LognormalDistr ?p2.
+		}			
+		#TRIANGULAR
+		OPTIONAL{		
+			?probdistr stat:hasLowerLimit_TriangularDistr ?p1 .
+			?probdistr stat:hasMode_TriangularDistr ?p2 .		
+			?probdistr stat:hasUpperLimit_TriangularDistr ?p3 .
+		}	
+		#UNIFORM CONTINUOUS
+		OPTIONAL{		
+			?probdistr stat:hasLowerLimit_UniformContinuousDistr ?p1 .
+			?probdistr stat:hasUpperLimit_UniformContinuousDistr ?p2 .
+		}
+	}
+}

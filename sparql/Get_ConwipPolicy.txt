@@ -10,9 +10,8 @@ PREFIX ex: <http://www.ontoeng.com/expression#>
 select distinct ?threshold ?machine ?buffer
 WHERE { 
   # The selected policy is a user-defined parameter
-  BIND(URI("#conwippol#") AS ?conwippol) . 	
-  ?conwippol rdf:type cs:ConwipControlPolicy . 
-  ?conwippol cs:hasPolicyExpression ?expr .
+  <#conwippol#> rdf:type cs:ConwipControlPolicy . 
+  <#conwippol#> cs:hasPolicyExpression ?expr .
   ?expr ex:hasRhsOperand/express:hasInteger ?threshold . 
   ?expr ex:hasOperator ex:LESSTHANOREQUAL .  
   ?expr ex:hasLhsOperand ?lhs . 

@@ -7,7 +7,7 @@ PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
-select distinct  ?task ?taskclass ?timeDet ?timeStoch (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
+select distinct  ?task ?taskclass ?time (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
 
 WHERE{
 
@@ -38,12 +38,12 @@ WHERE{
   
   
   # get default processing time (deterministic)
-  OPTIONAL{?task ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime/express:hasString ?timeDet.}
+  OPTIONAL{?task ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime ?time .}
   # get default processing time (stochastic)
   OPTIONAL{
-    ?task ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?timeStoch.
-    ?timeStoch rdf:type ?stochDistr.
-    FILTER ( ?stochDistr != owl:NamedIndividual ) .
+    ?task ifc:taskTime_IfcTask/ifcext:hasStochasticDuration ?time .
+    #?task ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?time .
   }
-} GROUP BY ?task ?taskclass ?timeDet ?timeStoch
+} GROUP BY ?task ?taskclass ?time
+#?timeDet ?timeStoch
 

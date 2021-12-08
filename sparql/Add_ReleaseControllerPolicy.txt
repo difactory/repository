@@ -14,27 +14,25 @@ WHERE {
 	BIND(URI("#policy#") AS ?policy) . 	
 	BIND(URI("#controller#") AS ?controller) . 	
 	BIND(URI("#mach#") AS ?machine) . 	
-	GRAPH ?g {
-		?controller osph:hasStateMachine ?stM .
-		?stM fsm:contains ?region .
-		?region fsm:hasStateMachineElement ?idleSt .
-		?region fsm:hasStateMachineElement ?relSt .		
-		?idleSt rdf:type cs:RControllerIdleState .
-		?relSt rdf:type cs:RControllerReleaseState .
-		
-		?trIdleRel fsm:Source ?idleSt .
-		
-		?relSt fsm:Entry ?entryAction .
-		?entryAction osph:generatesEvent ?startOp .
-		?eventType ifcext:typesObject ?startOp .
-		
-		?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
-		?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
-	}
-	GRAPH ?h {
- 		?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
-	}
-	GRAPH ?j {
-		?policy cs:hasPolicyExpression ?condexpr .
-	}
+
+	?controller osph:hasStateMachine ?stM .
+	?stM fsm:contains ?region .
+	?region fsm:hasStateMachineElement ?idleSt .
+	?region fsm:hasStateMachineElement ?relSt .		
+	?idleSt rdf:type cs:RControllerIdleState .
+	?relSt rdf:type cs:RControllerReleaseState .
+	
+	?trIdleRel fsm:Source ?idleSt .
+	
+	?relSt fsm:Entry ?entryAction .
+	?entryAction osph:generatesEvent ?startOp .
+	?eventType ifcext:typesObject ?startOp .
+	
+	?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
+	?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
+
+	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+
+	?policy cs:hasPolicyExpression ?condexpr .
+
 }

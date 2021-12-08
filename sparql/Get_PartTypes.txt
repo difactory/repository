@@ -1,7 +1,11 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX factory: <http://www.ontoeng.com/factory#> 
-select distinct ?parttype 
+select distinct ?parttype (group_concat(distinct ?components) as ?allcomponents)
 WHERE { 
 	?parttype rdf:type/rdfs:subClassOf* factory:ArtifactType . 
+	OPTIONAL{
+		?parttype (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?components. 
+	}
 }
+GROUPBY ?parttype

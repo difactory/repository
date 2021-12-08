@@ -7,8 +7,6 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
 
-DELETE{
-}
 INSERT { 
 	GRAPH <#graph#> { 
 		?contrStMNew a owl:NamedIndividual , fsm:StateMachine .
@@ -53,15 +51,13 @@ INSERT {
 WHERE {
 	BIND(URI("#controller#") AS ?controller) . 	
 	BIND(URI("#mach#") AS ?machine) . 	
-	GRAPH ?g {
-		?controller rdf:type cs:ReleaseController .
-		OPTIONAL {
-			?controller osph:hasStateMachine ?contrStM .
-		}
-	}
-	GRAPH ?h {
- 		?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
-	}
+	?controller rdf:type cs:ReleaseController .
+	OPTIONAL {
+		?controller osph:hasStateMachine ?contrStM .
+	}	
+	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+	?eventType rdf:type factory:MachineToolStartOperationType .
+	
 	BIND(IF(bound(?contrStM),URI("") ,URI(CONCAT(STR(?controller),"_stM")) ) AS ?contrStMNew ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_reg")) AS ?contrRegion ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trRelIdle")) AS ?trRelIdle ) .  

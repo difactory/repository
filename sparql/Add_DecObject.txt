@@ -1,0 +1,7 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+     
+INSERT DATA { 
+	GRAPH <#graph#> { 
+		<#subject#> ifcext:isDecomposedByObject <#decobj#> .
+	}
+}
