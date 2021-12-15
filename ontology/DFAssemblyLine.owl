@@ -19418,6 +19418,7 @@
         <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/DFAssemblyLine#40227453-9b4b-44fd-81b6-287e1dccc3da"/>
         <IFC4_ADD1_extension:hasAssignedObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#AssemblyLine"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#productionSchedule"/>
+        <controlSystem:hasExecutionController rdf:resource="http://www.ontoeng.com/DFAssemblyLine#controller01"/>
     </owl:NamedIndividual>
     
 
