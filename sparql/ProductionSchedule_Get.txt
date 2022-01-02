@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+SELECT distinct ?prodsched ?parttype ?quantity ?procplan
+
+WHERE { 
+  ?prodsched rdf:type factory:ProductionSchedule .
+  # part type
+  OPTIONAL{
+	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?parttype .
+	?parttype rdf:type/rdfs:subClassOf* factory:ArtifactType .
+  }  
+  # process plan
+  OPTIONAL{
+	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?procplan .
+	?procplan rdf:type/rdfs:subClassOf* ifc:IfcTaskType .
+  }  
+  # quantity
+  OPTIONAL{
+	?prodsched ssn:hasProperty/osph:hasPropertySimpleValue ?quantity .
+  }
+
+}

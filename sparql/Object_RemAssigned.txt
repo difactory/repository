@@ -1,0 +1,13 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?subject ifcext:hasAssignedObject ?assignedobj .
+		?elemTo ifcext:hasAssignmentTo ?subject .
+	}
+}
+WHERE {
+	GRAPH ?g {
+		?subject ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?assignedobj .
+	}
+}

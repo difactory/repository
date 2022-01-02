@@ -1,0 +1,69 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+DELETE{
+	GRAPH ?g1{ ?elem ?b1 ?c1 .} 
+	GRAPH ?g2{ ?a2 ?b2 ?elem .} 
+	GRAPH ?g3{ ?prop ?b3 ?c3 .} 
+	GRAPH ?g4{ ?a4 ?b4 ?prop .} 
+	GRAPH ?g5{?stM ?b5 ?c5 . } 
+	GRAPH ?g6{?stmelem1 ?b6 ?c6 . } 
+	GRAPH ?g7{?a7 ?b7 ?stmelem1 . } 
+	GRAPH ?g8{?stmelem2 ?b8 ?c8 . } 
+	GRAPH ?g9{?a9 ?b9 ?stmelem2 . }
+	GRAPH ?g10 { ?var ?b10 ?c10 .}
+	GRAPH ?g11 { ?a11 ?b11 ?var .}
+	GRAPH ?g12{?region ?b12 ?c12 . } 
+	GRAPH ?g13{?a13 ?b13 ?region . } 
+	GRAPH ?g14{?stmelem3 ?b14 ?c14 . } 
+	GRAPH ?g15{?a15 ?b15 ?stmelem3 . } 
+}
+WHERE { 
+
+	?elemclass rdfs:subClassOf* ifc:IfcElement .
+	?elem rdf:type ?elemclass . 
+	
+	{ GRAPH ?g1{ ?elem ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?elem .} }	
+	UNION{
+		?elem ssn:hasProperty ?prop .
+		{ GRAPH ?g3{ ?prop ?b3 ?c3 .} }
+		UNION { GRAPH ?g4{ ?a4 ?b4 ?prop .} } 
+		UNION{	
+			?var osph:representsProperty ?prop .
+			{GRAPH ?g10 { ?var ?b10 ?c10 .}	}
+			UNION { GRAPH ?g11 { ?a11 ?b11 ?var .} }
+		}
+	}
+	UNION{
+		?elem osph:hasStateMachine ?stM .
+		{ GRAPH ?g5{?stM ?b5 ?c5 . } }
+		UNION{
+			?stM fsm:contains ?stmelem1 .		
+			{ GRAPH ?g6{?stmelem1 ?b6 ?c6 . } }
+			UNION { GRAPH ?g7{?a7 ?b7 ?stmelem1 . } }
+			UNION {
+				?stmelem1 fsm:hasStateMachineElement ?stmelem2 .
+				{ GRAPH ?g8{?stmelem2 ?b8 ?c8 . } }
+				UNION { GRAPH ?g9{?a9 ?b9 ?stmelem2 . } }
+			}
+		}
+		# controlled machine
+		UNION{
+			?elem osph:hasStateMachine/fsm:contains/fsm:GuardEvent/ifcext:typesObject ?startOp .
+			?region fsm:hasStateMachineElement/fsm:Entry/osph:generatesEvent ?startOp .
+			?region fsm:hasStateMachineElement ?stmelem3 .
+			{ GRAPH ?g12{?region ?b12 ?c12 . } }
+			UNION { GRAPH ?g13{?a13 ?b13 ?region . } } 
+			UNION { GRAPH ?g14{?stmelem3 ?b14 ?c14 . } }
+			UNION { GRAPH ?g15{?a15 ?b15 ?stmelem3 . } }
+		}
+	}
+}

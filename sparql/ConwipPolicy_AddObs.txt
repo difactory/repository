@@ -1,0 +1,69 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+INSERT { 
+	GRAPH ?graph { 
+	
+		?conwippol cs:hasPolicyExpression ?exprNew .
+		
+		?exprNew a owl:NamedIndividual , ex:BinaryExpression .
+		?expr ex:hasLhsOperand ?lhsNew . 
+		?exprNew ex:hasLhsOperand ?lhsNew . 
+		?expr ex:hasOperator ex:LESSTHANOREQUAL .  
+		?exprNew ex:hasOperator ex:LESSTHANOREQUAL .  
+		
+		?lhsNew a owl:NamedIndividual , ex:IteratedBinaryExpression .
+		?lhsNew ex:hasOperator ex:ADDITION .	
+	
+		?lhs ex:hasOperands ?machVar .
+		?lhsNew ex:hasOperands ?machVar .
+		
+		?lhs ex:hasOperands ?buffVar .
+		?lhsNew ex:hasOperands ?buffVar .		
+
+		?machine ssn:hasProperty ?machPropNew .
+		?machPropNew a owl:NamedIndividual , factory:MachineWipLevel .
+		?machVar osph:representsProperty ?machPropNew .
+		?machVar osph:representsProperty ?machPropOld .
+		?machVar a owl:NamedIndividual , ex:Variable .
+		
+		?buffer ssn:hasProperty ?buffPropNew .
+		?buffPropNew a owl:NamedIndividual , factory:BufferLevel .
+		?buffVar osph:representsProperty ?buffPropNew .
+		?buffVar osph:representsProperty ?buffPropOld .
+		?buffVar a owl:NamedIndividual , ex:Variable .
+	}
+}
+WHERE {
+
+	BIND(IF(bound(?machine), ?machine, IRI("")) AS ?mach ) .
+	BIND(IF(bound(?buffer), ?buffer, IRI("")) AS ?buff ) .
+	
+	?conwippol rdf:type cs:ConwipControlPolicy .
+	OPTIONAL {?conwippol cs:hasPolicyExpression ?expr. 
+		OPTIONAL {?expr ex:hasLhsOperand ?lhs . }
+	}
+	OPTIONAL{
+		?mach ssn:hasProperty ?machPropOld .
+		?machPropOld a factory:MachineWipLevel .		
+	}
+	OPTIONAL{
+		?buff ssn:hasProperty ?buffPropOld .
+		?buffPropOld a factory:BufferLevel .		
+	}
+	
+	BIND(IF(bound(?expr),?null ,URI(CONCAT(STR(?conwippol),"_BinExpr")) ) AS ?exprNew ) .  
+	BIND(IF(bound(?lhs), ?null,URI(CONCAT(STR(?conwippol),"_IterBExpr")) ) AS ?lhsNew ) .  
+	BIND(IF(!bound(?machPropOld), URI(CONCAT(STR(?machine),"_wiplev")),?null) AS ?machPropNew ) .
+	BIND(IF(bound(?machine), URI(CONCAT(STR(?machine),"_wiplev_var")),?null) AS ?machVar ) .
+	BIND(IF(!bound(?buffPropOld), URI(CONCAT(STR(?buffer),"_blev")),?null) AS ?buffPropNew ) .
+	BIND(IF(bound(?buffer), URI(CONCAT(STR(?buffer),"_blev_var")),?null) AS ?buffVar ) .  
+}

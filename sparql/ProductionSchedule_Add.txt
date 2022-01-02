@@ -1,0 +1,17 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+
+INSERT { 
+	GRAPH ?graph { 
+		?prodplan ifcext:isDecomposedByObject ?prodsched .
+		?prodsched ifcext:hasAssignedObject ?parttype .
+	}
+}
+WHERE {
+	?prodplan rdf:type factory:ProductionPlan .
+	?prodsched rdf:type factory:ProductionSchedule .
+	?parttype rdf:type ?partclass .
+	?partclass rdfs:subClassOf* factory:ArtifactType .
+}

@@ -1,0 +1,12 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+DELETE {
+	GRAPH ?graph { ?a ?b ?c. }
+}  
+WHERE { 
+	GRAPH ?graph { 
+		?a ?b ?c.
+		FILTER ( ?c != owl:Ontology ) .
+		FILTER ( ?b != owl:imports ) .
+	}
+}

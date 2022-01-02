@@ -1,0 +1,79 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE { 
+
+	GRAPH ?g1{ ?failedstate ?b1 ?c1 .} 
+	GRAPH ?g2{ ?a2 ?b2 ?failedstate .} 
+	GRAPH ?g3{ ?trFailedIdle ?b3 ?c3 .} 
+	GRAPH ?g4{ ?a4 ?b4 ?trFailedIdle .} 
+	GRAPH ?g5{ ?trWorkFailed ?b5 ?c5 .} 
+	GRAPH ?g6{ ?a6 ?b6 ?trWorkFailed .} 
+
+	GRAPH ?g7{ ?guard ?b7 ?c7 .} 
+	GRAPH ?g8{ ?guardevent ?b8 ?c8 .} 
+	GRAPH ?g9{ ?ttfvalue ?b9 ?c9 .} 
+	GRAPH ?g10{?ttfpdistr ?b10 ?c10 .}
+	GRAPH ?g100{?mainttask ?b100 ?c100 .}
+	GRAPH ?g11{?tasktime ?b11 ?c11 .}
+	GRAPH ?g12{?duration ?b12 ?c12 . }
+	GRAPH ?g13{?stochdur ?b13 ?c13 .}
+	GRAPH ?g14{?timestoch ?b14 ?c14 .}
+}
+WHERE {
+	
+	?failedstate rdf:type factory:MachineToolFailedState .
+
+	{ GRAPH ?g1{ ?failedstate ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?failedstate .} }
+	UNION{
+		?trFailedIdle fsm:Source ?failedstate .
+		{ GRAPH ?g3{ ?trFailedIdle ?b3 ?c3 .} }
+		UNION { GRAPH ?g4{ ?a4 ?b4 ?trFailedIdle .} }
+	}
+	UNION{
+		?trWorkFailed fsm:Target ?failedstate .
+		{ GRAPH ?g5{ ?trWorkFailed ?b5 ?c5 .} }
+		UNION { GRAPH ?g6{ ?a6 ?b6 ?trWorkFailed .} }
+		UNION {
+			?trWorkFailed fsm:TransitionGuard ?guard .
+			?guard fsm:GuardEvent ?guardevent .
+			{ GRAPH ?g7{ ?guard ?b7 ?c7 .} }
+			UNION { GRAPH ?g8{ ?guardevent ?b8 ?c8 .} }
+			UNION{
+				?guardevent ifcext:hasTimeToHappen ?ttfvalue .
+				{GRAPH ?g9{?ttfvalue ?b9 ?c9 .} }
+				UNION {
+					?ttfvalue osph:isQuantitySampledFrom ?ttfpdistr.
+					GRAPH ?g10{?ttfpdistr ?b10 ?c10 . }
+				}
+			}
+		}
+	}	
+	UNION {	
+		?failedstate osph:do ?mainttask .
+		{GRAPH ?g100{?mainttask ?b100 ?c100 .}}
+		UNION{
+			?mainttask ifc:taskTime_IfcTask ?tasktime . 
+			{GRAPH ?g11{?tasktime ?b11 ?c11 .}}
+			UNION {
+				?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .
+				GRAPH ?g12{?duration ?b12 ?c12 . }
+			}
+			UNION{
+				?tasktime ifcext:hasStochasticDuration ?stochdur .
+				{GRAPH ?g13{?stochdur ?b13 ?c13 .}}
+				UNION{
+					?stochdur osph:isQuantitySampledFrom ?timestoch .
+					GRAPH ?g14 {?timestoch ?b14 ?c14 .} 
+				}
+			}	
+		}
+	}	
+}

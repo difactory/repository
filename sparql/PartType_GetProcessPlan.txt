@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#> 
+PREFIX factory: <http://www.ontoeng.com/factory#> 
+select distinct ?parttype ?pplan 
+WHERE { 
+	?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
+	?itsClass rdfs:subClassOf* factory:ArtifactType . 
+	?parttype rdf:type ?itsClass .
+	?pplan rdf:type/rdfs:subClassOf* ifc:IfcTaskType .
+}

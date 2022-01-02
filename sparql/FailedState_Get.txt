@@ -1,0 +1,24 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+
+select distinct ?failedstate ?ttftime ?ttrtime
+WHERE { 
+	?itsClass rdfs:subClassOf* factory:MachineToolFailedState . 
+	?failedstate rdf:type ?itsClass .
+	?intr fsm:Target ?failedstate .
+	optional{
+		?intr fsm:TransitionGuard/fsm:GuardEvent ?ttfguardev .
+		?ttfguardev ifcext:hasTimeToHappen ?ttftime.
+	}
+	optional{
+		?failedstate osph:do/ifc:taskTime_IfcTask ?ttr .
+		optional{ ?ttr ifcext:hasStochasticDuration ?ttrtime. }
+		optional{ ?ttr ifc:scheduleDuration_IfcTaskTime ?ttrtime . }	
+	}
+}

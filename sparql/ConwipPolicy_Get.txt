@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+select distinct ?conwippol ?threshold (group_concat(distinct ?machine) as ?allmachines) (group_concat(distinct ?buffer) as ?allbuffers)
+WHERE { 
+  ?conwippol rdf:type cs:ConwipControlPolicy . 
+  ?conwippol cs:hasPolicyExpression ?expr .
+  ?expr ex:hasOperator ex:LESSTHANOREQUAL .  
+  OPTIONAL{
+	  ?expr ex:hasRhsOperand/express:hasInteger ?threshold . 
+  }
+  OPTIONAL{
+	  ?expr ex:hasLhsOperand ?lhs . 
+	  ?lhs rdf:type ex:IteratedBinaryExpression .
+	  ?lhs ex:hasOperator ex:ADDITION .
+	  OPTIONAL{
+		?lhs ex:hasOperands/osph:representsProperty ?prop1 .
+		?machine ssn:hasProperty ?prop1 .
+		?machine rdf:type/rdfs:subClassOf* factory:MachineTool .
+	  }    
+	  OPTIONAL{
+		?lhs ex:hasOperands/osph:representsProperty ?prop2 .
+		?buffer ssn:hasProperty ?prop2 .
+		?buffer rdf:type/rdfs:subClassOf* factory:BufferElement .
+	  }    
+  }
+} 
+GROUP BY ?conwippol ?threshold

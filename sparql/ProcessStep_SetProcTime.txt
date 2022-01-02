@@ -1,0 +1,59 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g1{?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .}
+	GRAPH ?g2{?duration ?b1 ?c1 . }
+	GRAPH ?g3{?tasktime ifcext:hasStochasticDuration ?stochdur .}
+	GRAPH ?g4{?stochdur ?b2 ?c2 .}
+	GRAPH ?g5{?timestoch ?b3 ?c3.}
+}
+INSERT { 
+	GRAPH ?g{
+		?pstep ifc:taskTime_IfcTask ?tasktimeNew .
+		?tasktimeNew a owl:NamedIndividual , ifc:IfcTaskTime .
+	}
+	GRAPH ?graph { 		
+		?tasktime ifc:scheduleDuration_IfcTaskTime ?durationNew .			
+		?tasktime ifcext:hasStochasticDuration ?stochdurNew .
+		?tasktimeNew ifc:scheduleDuration_IfcTaskTime ?durationNew .			
+		?tasktimeNew ifcext:hasStochasticDuration ?stochdurNew .
+	}
+}
+WHERE {
+	
+	GRAPH ?g{
+		?pstep rdf:type owl:NamedIndividual .
+	}
+	?taskclass rdfs:subClassOf* ifc:IfcTask .   
+	?pstep rdf:type ?taskclass .
+	FILTER ( ?taskclass != owl:NamedIndividual ) .
+	OPTIONAL {?pstep ifc:taskTime_IfcTask ?tasktime . 
+		OPTIONAL {
+			GRAPH ?g1{?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .}
+			OPTIONAL{ GRAPH ?g2{?duration ?b1 ?c1 . }}
+		}
+		OPTIONAL{
+			GRAPH ?g3{?tasktime ifcext:hasStochasticDuration ?stochdur .}
+			OPTIONAL{
+				GRAPH ?g4{?stochdur ?b2 ?c2 .}
+				OPTIONAL{
+					?stochdur osph:isQuantitySampledFrom ?timestoch .
+					GRAPH ?g5 {?timestoch ?b3 ?c3.} 
+				}
+			}
+		}	
+	}
+	?proctime a ?timeclass .
+	FILTER ( ?timeclass != owl:NamedIndividual ) .		
+
+	
+	BIND(IF(bound(?tasktime),?null ,URI(CONCAT(STR(?pstep),"_time")) ) AS ?tasktimeNew ) .  
+	
+	BIND(IF(CONTAINS(STR(?timeclass),"IfcDuration"),?proctime,?null ) AS ?durationNew ) .  
+	BIND(IF(CONTAINS(STR(?timeclass),"StochasticQuantityTime"),?proctime,?null ) AS ?stochdurNew ) .  
+}

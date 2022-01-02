@@ -1,0 +1,10 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+     
+INSERT { 
+	GRAPH ?graph { 
+		?subject ifcext:hasAssignedObject ?assignedobj .
+	}
+}
+WHERE{
+
+}

@@ -1,0 +1,7 @@
+INSERT { GRAPH ?graphCopy {?s1 ?p1 ?o1 .}  } 
+WHERE { 
+	GRAPH ?graphSource {?s ?p ?o .} 
+	BIND(URI(REPLACE(STR(?s), STR(?graphSource), STR(?graphCopy) )) AS ?s1).
+	BIND(URI(REPLACE(STR(?p), STR(?graphSource), STR(?graphCopy) )) AS ?p1).
+	BIND(IF(isIRI(?o),URI(REPLACE(STR(?o), STR(?graphSource), STR(?graphCopy) )),?o) AS ?o1).
+}

@@ -1,0 +1,36 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+DELETE{
+	GRAPH ?h {?buffprop osph:hasPropertySimpleValue ?buffCap .}	
+}
+INSERT { 
+	GRAPH ?graph { 
+	
+		?buffpropNew a owl:NamedIndividual , factory:BufferCapacity .
+		?buffer ssn:hasProperty ?buffpropNew .
+		?buffpropNew osph:hasPropertySimpleValue ?capdt .
+	}
+}
+WHERE {
+
+	?bufferclass rdfs:subClassOf* factory:BufferElement .   
+	?buffer rdf:type ?bufferclass .
+	FILTER ( ?bufferclass != owl:NamedIndividual ) .
+
+	OPTIONAL {
+		?buffer ssn:hasProperty ?buffprop .
+		OPTIONAL {
+			?buffprop rdf:type factory:BufferCapacity .
+			GRAPH ?h {?buffprop osph:hasPropertySimpleValue ?buffCap .}	
+		}
+	}		
+	
+	BIND(IF(strlen(?cap)>0,STRDT(?cap, xsd:integer),?null ) AS ?capdt ) . 	
+	BIND(IF(bound(?buffprop),?buffprop ,URI(CONCAT(STR(?buffer),"_cap")) ) AS ?buffpropNew ) .  
+}

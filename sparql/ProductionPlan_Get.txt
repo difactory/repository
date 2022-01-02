@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+
+SELECT distinct ?prodplan ?time (group_concat(distinct ?sys) as ?allsys) (group_concat(distinct ?contr) as ?allcontr) (group_concat(distinct ?prodsched) as ?allprodsched)
+
+WHERE { 
+  ?prodplan rdf:type factory:ProductionPlan .
+  # duration
+  OPTIONAL{
+	?prodplan ifc:duration_IfcWorkControl ?time .
+  }
+  # systems
+  OPTIONAL{
+	?prodplan ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?sys .
+	?sys rdf:type/rdfs:subClassOf* factory:TransformationSystem .
+  }  
+  # controllers
+  OPTIONAL{
+	?prodplan cs:hasExecutionController ?contr .
+	?contr rdf:type/rdfs:subClassOf* cs:ControllerFB .
+  }
+  # production batches
+  OPTIONAL{
+	?prodplan ifcext:isDecomposedByObject|^ifcext:decomposesObject ?prodsched .
+	?prodsched rdf:type/rdfs:subClassOf* factory:ProductionSchedule .
+  }
+}
+GROUP BY ?prodplan ?time

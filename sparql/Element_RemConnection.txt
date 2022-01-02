@@ -1,0 +1,14 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?elemFrom ifcext:isConnectedToElement ?elemTo .
+		?elemTo ifcext:isConnectedFromElement ?elemFrom .
+	}
+}
+WHERE {
+
+	GRAPH ?g {
+		?elemFrom ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?elemTo .
+	}
+}

@@ -1,0 +1,11 @@
+DELETE {
+ GRAPH ?g{ 
+   ?indiv ?b ?c .
+   ?c ?d ?indiv .
+ } 
+}
+WHERE {
+ GRAPH ?g {
+    { ?indiv ?b ?c .} UNION { ?c ?d ?indiv .}
+ }
+}

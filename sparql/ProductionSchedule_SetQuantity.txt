@@ -1,0 +1,35 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+DELETE{
+	GRAPH ?g {?prodschedprop osph:hasPropertySimpleValue ?schedQuantity .}	
+}
+INSERT { 
+	GRAPH ?graph { 
+	
+		?prodschedpropNew a owl:NamedIndividual , factory:ScheduledQuantity .
+		?prodsched ssn:hasProperty ?prodschedpropNew .
+		?prodschedpropNew osph:hasPropertySimpleValue ?quantitydt .
+	}
+}
+WHERE {
+
+	?prodsched rdf:type factory:ProductionSchedule .
+
+	OPTIONAL {
+		?prodsched ssn:hasProperty ?prodschedprop .
+		OPTIONAL {
+			?prodschedprop rdf:type factory:ScheduledQuantity .
+			GRAPH ?g {?prodschedprop osph:hasPropertySimpleValue ?schedQuantity .}	
+		}
+	}		
+	
+	BIND(IF(strlen(?quantity)>0,STRDT(?quantity, xsd:integer),?null ) AS ?quantitydt ) . 	
+	BIND(IF(bound(?prodschedprop),?prodschedprop ,URI(CONCAT(STR(?prodsched),"_quantity")) ) AS ?prodschedpropNew ) .  
+}
+
+

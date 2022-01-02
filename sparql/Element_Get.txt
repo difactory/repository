@@ -1,0 +1,49 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) (count(distinct ?wPos) as ?nServ) (group_concat(distinct ?taskclass) as ?taskclasses)
+WHERE { 
+
+	?elemclass rdfs:subClassOf* ifc:IfcElement .
+	?elem rdf:type ?elemclass . 
+	FILTER ( ?elemclass != owl:NamedIndividual ) .
+	optional{
+		?elem ssn:hasProperty ?buffprop .
+		?buffprop rdf:type factory:BufferCapacity .
+		?buffprop osph:hasPropertySimpleValue ?buffCap .
+	}
+	optional{
+		?elem osph:hasStateMachine ?stm .
+		?stm fsm:contains ?failstate .
+		?failstate rdf:type/rdfs:subClassOf* factory:MachineToolFailedState . 
+	}
+	optional{
+		?elem ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?connTo .
+	}
+	optional{
+		?elem ifcext:isConnectedFromElement|^ifcext:isConnectedToElement ?connFrom .
+	}
+    optional{
+      ?elem ifcext:isDecomposedByObject* ?wPos .
+      ?wPos rdf:type factory:BufferWorkingPosition .
+    }
+	optional{
+		?elem (ifcext:isDecomposedByObject|^ifcext:DecomposesObject)* ?buffrestpos .
+		?buffrestpos rdf:type/rdfs:subClassOf* factory:BufferRestingPosition .
+	}
+    # get tasks assigned to element
+    OPTIONAL{ 
+      ?elem (ifcext:isDefinedByType|^ifcext:typesObject)*/(ifcext:hasAssignmentTo|^ifcext:hasAssignedObject) ?res .
+      ?res (ifcext:isDefinedByType|^ifcext:typesObject)*/(ifcext:hasAssignmentTo|^ifcext:hasAssignedObject) ?task .
+      ?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+      ?task rdf:type ?taskclass.
+      FILTER ( ?taskclass != owl:NamedIndividual ) .
+    }  	
+} GROUP BY ?elem ?elemclass ?buffCap

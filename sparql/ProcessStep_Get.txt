@@ -1,0 +1,52 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+select distinct  ?pstep ?pstepclass ?time (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?pred) as ?allpred) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
+
+WHERE{
+
+  # get pstep
+  ?pstepclass rdfs:subClassOf* ifc:IfcTask .   
+  ?pstep rdf:type ?pstepclass .
+  FILTER ( ?pstepclass != owl:NamedIndividual ) .
+  
+  # get input parts
+  OPTIONAL{ 
+    ?pstep ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?inputpart . 
+    ?inputpart rdf:type/rdfs:subClassOf* factory:Artifact .
+  }
+
+  # get predecessors
+  OPTIONAL{ ?pstep ifcext:isSuccessorFromProcess|^ifcext:isPredecessorToProcess ?pred . }
+  
+  # get successors
+  OPTIONAL{ ?pstep ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?succ . }
+  
+  # get resources where the pstep can be executed (it can be a resource or a resource type)
+  OPTIONAL{ 
+    ?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+  	?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+  	#?restype ifcext:typesObject|^ifcext:isDefinedByType ?res .  
+    ?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?resource .
+    ?resource rdf:type ?resClass .
+	?resClass rdfs:subClassOf* ifc:IfcElement .
+	?system ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?resource .
+  }  
+  
+  
+  # get default processing time (deterministic)
+  OPTIONAL{?pstep ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime ?time .}
+  # get default processing time (stochastic)
+  OPTIONAL{
+    ?pstep ifc:taskTime_IfcTask/ifcext:hasStochasticDuration ?time .
+    #?pstep ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?time .
+  }
+} GROUP BY ?pstep ?pstepclass ?time
+
+

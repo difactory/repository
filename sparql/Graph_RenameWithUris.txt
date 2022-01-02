@@ -1,0 +1,16 @@
+
+
+
+DELETE  { GRAPH ?graphOld {?s ?p ?o .}  } 
+
+INSERT { GRAPH ?graphNew {?s1 ?p1 ?o1 .}  } 
+
+WHERE { GRAPH ?graphOld {?s ?p ?o .} 
+
+	BIND(URI(REPLACE(STR(?s), STR(?graphOld), STR(?graphNew) )) AS ?s1).
+
+	BIND(URI(REPLACE(STR(?p), STR(?graphOld), STR(?graphNew) )) AS ?p1).
+
+	BIND(IF(isIRI(?o),URI(REPLACE(STR(?o), STR(?graphOld), STR(?graphNew) )),?o) AS ?o1).
+
+} 

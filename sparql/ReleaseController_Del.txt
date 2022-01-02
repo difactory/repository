@@ -1,0 +1,41 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+
+DELETE{
+	GRAPH ?g1{ ?controller ?b1 ?c1 .} 
+	GRAPH ?g2{ ?a2 ?b2 ?controller .} 
+	GRAPH ?g3{?stM ?b3 ?c3 . }
+	GRAPH ?g4{?region ?b4 ?c4 . }
+	GRAPH ?g5{?elem ?b5 ?c5 . }
+	GRAPH ?g6{?a6 ?b6 ?elem . }
+	GRAPH ?g7{?entryAction ?b7 ?c7 . }
+	GRAPH ?g8{?startOp ?b8 ?c8 . }
+	GRAPH ?g9{?a9 ?b9 ?startOp . }
+}
+WHERE {
+	?controller rdf:type cs:ReleaseController .
+	{ GRAPH ?g1{ ?controller ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?controller .} }	
+	UNION {
+		?controller osph:hasStateMachine ?stM .
+		?stM fsm:contains ?region .		
+		?region fsm:hasStateMachineElement ?elem .
+		
+		{ GRAPH ?g3{?stM ?b3 ?c3 . } } 
+		UNION { GRAPH ?g4{?region ?b4 ?c4 . } }
+		UNION { GRAPH ?g5{?elem ?b5 ?c5 . } }
+		UNION { GRAPH ?g6{?a6 ?b6 ?elem . } }
+		# redundant, but added for backward compatibility
+		UNION {
+          ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
+          ?entryAction osph:generatesEvent ?startOp .
+          ?eventType ifcext:typesObject ?startOp .
+          { ?entryAction ?b7 ?c7 . } UNION { ?startOp ?b8 ?c8 . } UNION { ?a9 ?b9 ?startOp . } 			
+		}	
+	}
+}

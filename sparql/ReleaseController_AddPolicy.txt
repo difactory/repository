@@ -1,0 +1,36 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+
+INSERT { 
+	GRAPH ?graph { 
+		?condTrIdleRel osph:hasConditionExpression ?condexpr .
+	}
+}
+
+WHERE {
+
+	?controller osph:hasStateMachine ?stM .
+	?stM fsm:contains ?region .
+	?region fsm:hasStateMachineElement ?idleSt .
+	?region fsm:hasStateMachineElement ?relSt .		
+	?idleSt rdf:type cs:RControllerIdleState .
+	?relSt rdf:type cs:RControllerReleaseState .
+	
+	?trIdleRel fsm:Source ?idleSt .
+	
+	?relSt fsm:Entry ?entryAction .
+	?entryAction osph:generatesEvent ?startOp .
+	?eventType ifcext:typesObject ?startOp .
+	
+	?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
+	?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
+
+	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+
+	?policy cs:hasPolicyExpression ?condexpr .
+
+}

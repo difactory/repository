@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+select distinct ?pplan ?pstep ?pstepclass (group_concat(distinct ?input) as ?allinput) (count(?allsucc)-1 as ?Nallsucc) (group_concat(distinct ?succ) as ?alldirsucc)
+
+WHERE{
+
+  # get process plans
+  ?ppClass rdfs:subClassOf* ifc:IfcTaskType .   
+  ?pplan rdf:type ?ppClass .
+  FILTER ( ?ppClass != owl:NamedIndividual ) .
+  
+  # get input of process plan
+  OPTIONAL{ ?pplan ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?input . }
+
+  # get tasks in a process plan
+  ?pplan ifcext:isNestedByObject|^ifcext:nestsObject ?pstep. 
+
+  # get class of task
+  ?pstep rdf:type ?pstepclass.
+  FILTER ( ?pstepclass != owl:NamedIndividual ) . 
+  
+  # get successors
+  OPTIONAL{ ?pstep ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?succ . }
+  
+  # get all successors (direct + indirect)
+  OPTIONAL{ ?pstep (ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess)* ?allsucc . }
+
+} 
+GROUPBY ?pplan ?pstep ?pstepclass
+ORDER BY DESC(?Nallsucc)

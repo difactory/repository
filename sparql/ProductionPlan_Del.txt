@@ -1,0 +1,27 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+DELETE{
+	GRAPH ?g1{ ?name ?b1 ?c1 .}
+	GRAPH ?g2{ ?duration ?b2 ?c2 .}
+	GRAPH ?g3{ ?prodplan ?b3 ?c3 .}
+	GRAPH ?g4{ ?a4 ?b4 ?prodplan .}
+}
+WHERE { 
+	?prodplan rdf:type factory:ProductionPlan .	
+	OPTIONAL{
+		?prodplan ifc:name_IfcRoot ?name .
+		OPTIONAL{ GRAPH ?g1{ ?name ?b1 ?c1 .} }
+	}
+	# duration
+	OPTIONAL{
+		?prodplan ifc:duration_IfcWorkControl ?duration .
+		OPTIONAL{ GRAPH ?g2{ ?duration ?b2 ?c2 .} }
+	}
+	OPTIONAL{ GRAPH ?g3{ ?prodplan ?b3 ?c3 .} }
+	OPTIONAL{ GRAPH ?g4{ ?a4 ?b4 ?prodplan .} }	
+}

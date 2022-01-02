@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+DELETE  { GRAPH ?graphOld {?s ?p ?o.} } 
+
+INSERT { GRAPH ?g {?s ?p ?o .}  } 
+
+WHERE { 
+	GRAPH ?graphOld {?s ?p ?o .}  
+	GRAPH ?graphOld {?g rdf:type owl:Ontology .}
+}

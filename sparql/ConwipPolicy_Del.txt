@@ -1,0 +1,35 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+
+DELETE{
+GRAPH ?g1{ ?expr ?b1 ?c1 . }
+GRAPH ?g2{ ?a2 ?b2 ?expr .}
+GRAPH ?g3{ ?rhs ?b3 ?c3 . }
+GRAPH ?g4{ ?a4 ?b4 ?rhs .}
+GRAPH ?g5{ ?lhs ?b5 ?c5 . }
+GRAPH ?g6{ ?a6 ?b6 ?lhs .}
+GRAPH ?g7{ ?conwippol ?b7 ?c7 . }
+GRAPH ?g8{ ?a8 ?b8 ?conwippol .}
+}
+WHERE {
+
+	?conwippol rdf:type cs:ConwipControlPolicy . 
+	
+	{GRAPH ?g7{ ?conwippol ?b7 ?c7 . }}
+	UNION {GRAPH ?g8{ ?a8 ?b8 ?conwippol .}}	
+	UNION {
+		?conwippol cs:hasPolicyExpression ?expr. 	
+		{GRAPH ?g1{ ?expr ?b1 ?c1 . }}
+		UNION {GRAPH ?g2{ ?a2 ?b2 ?expr .}}
+		UNION {?expr ex:hasRhsOperand ?rhs . 
+			OPTIONAL {GRAPH ?g3{ ?rhs ?b3 ?c3 . }}
+			OPTIONAL {GRAPH ?g4{ ?a4 ?b4 ?rhs .}}		
+		}
+		UNION {?expr ex:hasLhsOperand ?lhs . 
+			OPTIONAL {GRAPH ?g5{ ?lhs ?b5 ?c5 . }}
+			OPTIONAL {GRAPH ?g6{ ?a6 ?b6 ?lhs .}}			
+		}
+	}
+}

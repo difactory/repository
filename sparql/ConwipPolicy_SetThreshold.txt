@@ -1,0 +1,45 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX ex: <http://www.ontoeng.com/expression#>
+
+DELETE{
+	GRAPH ?g { 
+		?rhsOld express:hasInteger ?thresholddt .
+	}
+}
+INSERT { 
+	GRAPH ?graph { 
+		?conwippol cs:hasPolicyExpression ?exprNew .
+		
+		?exprNew a owl:NamedIndividual , ex:BinaryExpression .
+		?expr ex:hasRhsOperand ?rhsNew . 
+		?exprNew ex:hasRhsOperand ?rhsNew . 
+		?expr ex:hasOperator ex:LESSTHANOREQUAL .  
+		?exprNew ex:hasOperator ex:LESSTHANOREQUAL .  
+		
+		?rhsNew a owl:NamedIndividual , ifc:IfcPositiveInteger .
+
+		?rhs express:hasInteger ?thresholddtNew .
+		?rhsNew express:hasInteger ?thresholddtNew .
+	}
+}
+WHERE {
+
+	?conwippol rdf:type cs:ConwipControlPolicy .
+	OPTIONAL {?conwippol cs:hasPolicyExpression ?expr. 
+		OPTIONAL {?expr ex:hasRhsOperand ?rhs . 
+			OPTIONAL { GRAPH ?g{?rhs express:hasInteger ?thresholddt .}}
+		}
+	}
+	BIND(IF(bound(?expr),?null ,URI(CONCAT(STR(?conwippol),"_BinExpr")) ) AS ?exprNew ) .  
+	BIND(IF(bound(?rhs),?null ,URI(CONCAT(STR(?conwippol),"_Thr")) ) AS ?rhsNew ) .  
+	BIND(IF(bound(?rhs) && bound(?threshold),?rhs,?null  ) AS ?rhsOld ) . 
+	BIND(STRDT(?threshold, xsd:integer) AS ?thresholddtNew) .
+}

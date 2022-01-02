@@ -1,0 +1,62 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g1 {?pstep ?b1 ?c1 .} 
+	GRAPH ?g2 {?a2 ?b2 ?pstep .} 
+	GRAPH ?g3 {?tasktime ?b3 ?c3 .}
+	GRAPH ?g4 {?duration ?b4 ?c4 .}
+	GRAPH ?g5 {?stochdur ?b5 ?c5 .}
+	GRAPH ?g6 {?timestoch ?b6 ?c6.} 
+	GRAPH ?g7 {?res1 ?b7 ?c7 .} 
+	GRAPH ?g8 {?a8 ?b8 ?res1 .} 
+	GRAPH ?g9 {?res2 ?b9 ?c9 .}
+	GRAPH ?g10{?a10 ?b10 ?res2 .}
+}
+WHERE{
+
+	# get pstep
+	?pstepclass rdfs:subClassOf* ifc:IfcTask .   
+	?pstep rdf:type ?pstepclass .
+	{ GRAPH ?g1{ ?pstep ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?pstep .} }		
+	# time
+	UNION {
+		?pstep ifc:taskTime_IfcTask ?tasktime . 
+		{GRAPH ?g3{?tasktime ?b3 ?c3 .}}
+		UNION {
+			?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .
+			GRAPH ?g4{?duration ?b4 ?c4 . }
+		}
+		UNION{
+			?tasktime ifcext:hasStochasticDuration ?stochdur .
+			{GRAPH ?g5{?stochdur ?b5 ?c5 .}}
+			UNION{
+				?stochdur osph:isQuantitySampledFrom ?timestoch .
+				GRAPH ?g6 {?timestoch ?b6 ?c6.} 
+			}
+		}	
+	}
+	# get resources where the pstep can be executed (it can be a resource or a resource type)
+	UNION { 
+		?pstep ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?res1 .
+		
+		{?res1 rdf:type/rdfs:subClassOf* factory:ProductionResource .} 
+		UNION {?res1 rdf:type/rdfs:subClassOf* factory:ProductionResourceType .}
+		
+		{GRAPH ?g7{?res1 ?b7 ?c7 .} }
+		UNION {GRAPH ?g8{?a8 ?b8 ?res1 .} }
+		UNION{ 
+			?res1 ifcext:typesObject|^ifcext:isDefinedByType ?res2 .  
+			{GRAPH ?g9{?res2 ?b9 ?c9 .}}
+			UNION {GRAPH ?g10{?a10 ?b10 ?res2 .}}
+		}
+	}  
+}
+

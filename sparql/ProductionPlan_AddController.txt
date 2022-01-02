@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+
+INSERT { 
+	GRAPH ?graph { 
+		?prodplan cs:hasExecutionController ?contr .
+	}
+}
+WHERE {
+	?prodplan rdf:type factory:ProductionPlan .
+	?contr rdf:type ?contrClass .
+	?contrClass rdfs:subClassOf* cs:ControllerFB .
+}

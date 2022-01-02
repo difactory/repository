@@ -1,0 +1,23 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+
+SELECT distinct ?controller ?controlledMach ?controlPolicy
+
+WHERE { 
+  ?controller rdf:type cs:ReleaseController .
+  OPTIONAL{
+	  ?controller osph:hasStateMachine ?stM .
+	  ?stM fsm:contains ?region .
+	  ?region fsm:hasStateMachineElement ?relState .
+	  ?relState fsm:Entry/osph:generatesEvent ?event .
+	  ?controlledMach osph:hasStateMachine/fsm:contains/fsm:GuardEvent/ifcext:typesObject ?event .
+	  ?relTransition fsm:Target ?relState .
+	  OPTIONAL{
+		?relTransition fsm:TransitionGuard/fsm:GuardCondition/osph:hasConditionExpression ?condexpr .
+		?controlPolicy cs:hasPolicyExpression ?condexpr .
+	  }
+  }
+}

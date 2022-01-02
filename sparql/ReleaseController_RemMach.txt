@@ -1,0 +1,35 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g1 {?stM fsm:contains ?region .}	
+	GRAPH ?g2{ ?region ?b0 ?c0 .}
+	GRAPH ?g3{?elem1 ?b1 ?c1 . }
+	GRAPH ?g4{?a2 ?b2 ?elem2 . }
+
+	# redundant, but added for backward compatibility
+	GRAPH ?g5{ ?entryAction ?b3 ?c3 .}
+	GRAPH ?g6{ ?startOp ?b4 ?c4 .}
+	GRAPH ?g7{ ?eventType ifcext:typesObject ?startOp .}
+}
+WHERE {
+	
+    ?controller osph:hasStateMachine ?stM .
+    GRAPH ?g1 {?stM fsm:contains ?region .}
+    ?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+    ?eventType rdf:type factory:MachineToolStartOperationType .
+    ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
+    ?entryAction osph:generatesEvent ?startOp .  
+	GRAPH ?g7{ ?eventType ifcext:typesObject ?startOp .}
+   
+	{GRAPH ?g2{ ?region ?b0 ?c0 .}} 
+	UNION {?region fsm:hasStateMachineElement ?elem1 . GRAPH ?g3{?elem1 ?b1 ?c1 . }} 
+	UNION {?region fsm:hasStateMachineElement ?elem2 . GRAPH ?g4{?a2 ?b2 ?elem2 . }}
+	# redundant, but added for backward compatibility
+	UNION {OPTIONAL {GRAPH ?g5{ ?entryAction ?b3 ?c3 .}}} 
+	UNION {OPTIONAL{ GRAPH ?g6{ ?startOp ?b4 ?c4 .}} }
+}

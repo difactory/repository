@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+
+DELETE{
+	GRAPH ?g1{?prodplan ifc:duration_IfcWorkControl ?duration .}
+	GRAPH ?g2{?duration ?b1 ?c1 . }
+}
+INSERT { 
+	GRAPH ?graph { 		
+		?prodplan ifc:duration_IfcWorkControl ?durationNew .			
+	}
+}
+WHERE {
+	
+	?prodplan rdf:type factory:ProductionPlan .
+	OPTIONAL {
+		GRAPH ?g1{?prodplan ifc:duration_IfcWorkControl ?duration .}
+		OPTIONAL{ GRAPH ?g2{?duration ?b1 ?c1 . }}
+	}	
+	?dur a ?durclass .
+	FILTER ( ?durclass != owl:NamedIndividual ) .			
+	BIND(IF(CONTAINS(STR(?durclass),"IfcDuration"),?dur,URI("") ) AS ?durationNew ) .  
+}

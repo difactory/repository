@@ -1,0 +1,20 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g { 
+		?res ?b1 ?c1 .
+		?a2 ?b2 ?res .
+	}
+}
+INSERT { 
+	GRAPH ?graph { 
+		?pstep ifcext:hasAssignedObject ?resNew .
+		?resNew a owl:NamedIndividual , factory:ProductionResource .
+		?resNew ifcext:hasAssignedObject ?elem .
+	}
+}
+WHERE {
+	BIND(URI(CONCAT(STR(?pstep),"_res")) AS ?resNew ) .  
+}

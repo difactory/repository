@@ -1,0 +1,6 @@
+SELECT distinct (if (count(?a), "true", "false") as ?check)
+
+WHERE { 
+  {?uri ?b ?a .} UNION {?a ?b ?uri} .
+}
+GROUP BY ?a

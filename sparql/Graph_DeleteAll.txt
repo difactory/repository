@@ -1,0 +1,6 @@
+DELETE {
+	GRAPH ?g { ?a ?b ?c. }
+}  
+WHERE { 
+	GRAPH ?g { ?a ?b ?c.}
+}

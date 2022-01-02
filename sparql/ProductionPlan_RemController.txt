@@ -1,0 +1,12 @@
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+
+DELETE { 
+	GRAPH ?g { 
+		?prodplan cs:hasExecutionController ?contr .
+	}
+}
+WHERE {
+	GRAPH ?g { 
+		?prodplan cs:hasExecutionController ?contr .
+	}
+}
