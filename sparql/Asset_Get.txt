@@ -7,39 +7,47 @@ PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
-SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding
+SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem)
 
 WHERE { 
 
-  ?asset rdf:type ?itsType .
+	?itsType rdfs:subClassOf* ifc:IfcObjectDefinition .
+	?asset rdf:type ?itsType .
   
-  {?itsType rdfs:subClassOf* ifc:IfcProduct .
-   OPTIONAL{ ?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
+  
+  OPTIONAL{
+    {
+    ?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
      OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
      ?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc . 
-	 }
-  } UNION {?itsType rdfs:subClassOf* ifc:IfcTypeProduct .
-   OPTIONAL{ ?asset ifc:representationMaps_IfcTypeProduct/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
-       OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
-      ?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
-    }
+	  } UNION {
+		?asset ifc:representationMaps_IfcTypeProduct/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
+		   OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
+		  ?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
+	  }
   }
     
     FILTER ( ?itsType != owl:NamedIndividual ) . 
 	OPTIONAL { ?asset ifc:description_IfcRoot/express:hasString ?itsDescr } .
     OPTIONAL { ?asset ifcext:isDefinedByType|^ifcext:typesObject ?itsModel} .
+    OPTIONAL { ?asset ifcext:isDefinedByObject|^ifcext:declaresObject ?itsModel} .
+    OPTIONAL { ?asset ifcext:typesObject|^ifcext:isDefinedByType ?itsModeled} .
+    OPTIONAL { ?asset ifcext:declaresObject|^ifcext:isDefinedByObject ?itsModeled} .
     OPTIONAL { ?asset (ifcext:isContainedInStructure|^ifcext:containsProduct) ?itsBuilding } .
+    OPTIONAL { ?asset (ifcext:containsProduct|^ifcext:isContainedInStructure) ?containedElem } .
     OPTIONAL { ?asset (ifcext:decomposesObject|^ifcext:isDecomposedByObject) ?itsParent } .
-  OPTIONAL{ ?asset ifc:objectPlacement_IfcProduct ?objplace . 
-    OPTIONAL{
-      ?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace .
-		OPTIONAL{ ?relplace ifcext:hasRotationMatrix ?itsRot . }
-		OPTIONAL{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRot . }
-		OPTIONAL{ ?relplace ifcext:hasQuaternion ?itsRot . }
-    	OPTIONAL{ ?relplace ifcext:hasLocation ?itsPos . }
-    }
-    OPTIONAL{ 
-      	?objplace ifc:placementRelTo_IfcLocalPlacement/^ifc:objectPlacement_IfcProduct ?itsRelTo .
-    }
-  }
-}
+    OPTIONAL { ?asset (ifcext:nestsObject|^ifcext:isNestedByObject) ?itsParent } .
+	OPTIONAL { ?asset (ifcext:hasAssignmentTo|^ifcext:hasAssignedObject) ?itsAssignments } .
+	OPTIONAL{ ?asset ifc:objectPlacement_IfcProduct ?objplace . 
+		OPTIONAL{
+		  ?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace .
+			OPTIONAL{ ?relplace ifcext:hasRotationMatrix ?itsRot . }
+			OPTIONAL{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRot . }
+			OPTIONAL{ ?relplace ifcext:hasQuaternion ?itsRot . }
+			OPTIONAL{ ?relplace ifcext:hasLocation ?itsPos . }
+		}
+		OPTIONAL{ 
+			?objplace ifc:placementRelTo_IfcLocalPlacement/^ifc:objectPlacement_IfcProduct ?itsRelTo .
+		}
+	}
+} GROUP BY ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding
