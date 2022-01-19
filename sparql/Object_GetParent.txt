@@ -1,0 +1,8 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#> 
+
+select distinct ?parent 
+WHERE { 
+	{?parent ifcext:isDecomposedByObject|^ifcext:decomposesObject ?child .}
+	UNION
+	{?parent ifcext:isNestedByObject|^ifcext:nestsObject ?child .}
+}

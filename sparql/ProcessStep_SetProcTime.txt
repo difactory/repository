@@ -52,7 +52,7 @@ WHERE {
 	FILTER ( ?timeclass != owl:NamedIndividual ) .		
 
 	
-	BIND(IF(bound(?tasktime),?null ,URI(CONCAT(STR(?pstep),"_time")) ) AS ?tasktimeNew ) .  
+	BIND(IF(bound(?tasktime),?null ,URI(CONCAT(STR(?pstep),"_tasktime")) ) AS ?tasktimeNew ) .  
 	
 	BIND(IF(CONTAINS(STR(?timeclass),"IfcDuration"),?proctime,?null ) AS ?durationNew ) .  
 	BIND(IF(CONTAINS(STR(?timeclass),"StochasticQuantityTime"),?proctime,?null ) AS ?stochdurNew ) .  

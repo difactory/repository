@@ -1,0 +1,13 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+	GRAPH ?g {
+		?prod ifcext:isContainedInStructure ?container .
+		?container ifcext:containsProduct ?prod .
+	}
+}
+WHERE {
+	GRAPH ?g {
+		?prod ifcext:isContainedInStructure|^ifcext:containsProduct ?container .	
+	}
+}

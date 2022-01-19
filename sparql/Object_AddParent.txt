@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+
+
+INSERT { 
+	GRAPH ?graph { 
+		?parent ifcext:isDecomposedByObject ?childDec .
+		?parent ifcext:isNestedByObject ?childNest .
+	}
+}
+WHERE{
+
+	OPTIONAL{
+		?child rdf:type ?childclassNest .    	
+    	?childclassNest rdfs:subClassOf* ifc:IfcProcess .  
+		FILTER ( ?childclassNest != owl:NamedIndividual ) .
+	}
+	OPTIONAL{
+    	?child rdf:type ?childclassDec .
+    	?childclassDec rdfs:subClassOf* ifc:IfcObject .   	
+		FILTER ( ?childclassDec != owl:NamedIndividual ) .
+	}
+	
+	# CHECK child has not already a parent ... or remove current parent!
+	
+	BIND(IF(bound(?childclassNest), ?child, ?null ) AS ?childNest ) . 
+	BIND(IF(!bound(?childclassNest) && bound(?childclassDec), ?child, ?null ) AS ?childDec ) . 
+	
+}

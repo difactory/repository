@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX express: <https://w3id.org/express#> 
+
+DELETE{
+	GRAPH ?h{ ?descrUri express:hasString ?descrOrig . }
+}
+INSERT { 
+	GRAPH ?g { 
+	
+		?descrUriNew a owl:NamedIndividual , ifc:IfcText .
+		?asset ifc:description_IfcRoot ?descrUriNew .
+		?descrUriNew express:hasString ?descrdt .
+	}
+}
+WHERE {
+
+	?assetclass rdfs:subClassOf* ifc:IfcObjectDefinition .   
+	GRAPH ?g{ ?asset rdf:type ?assetclass .}
+	FILTER ( ?assetclass != owl:NamedIndividual ) .
+
+	OPTIONAL { 
+		?asset ifc:description_IfcRoot ?descrUri .
+		OPTIONAL { GRAPH ?h{?descrUri express:hasString ?descrOrig . }}
+	}
+	
+	BIND(IF(strlen(?descr)>0,STRDT(?descr, xsd:string),?null ) AS ?descrdt ) . 	
+	BIND(IF(bound(?descrUri),?descrUri ,URI(CONCAT(STR(?asset),"_descr")) ) AS ?descrUriNew ) .  
+}

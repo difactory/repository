@@ -1,0 +1,135 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX list: <https://w3id.org/list#> 
+
+DELETE{
+	GRAPH ?g1{ ?elemChild ?b1 ?c1 .} 
+	GRAPH ?g2{ ?a2 ?b2 ?elemChild .} 
+	GRAPH ?g3{ ?prop ?b3 ?c3 .} 
+	GRAPH ?g4{ ?a4 ?b4 ?prop .} 
+	GRAPH ?g5{?stM ?b5 ?c5 . } 
+	GRAPH ?g6{?stmelem1 ?b6 ?c6 . } 
+	GRAPH ?g7{?a7 ?b7 ?stmelem1 . } 
+	GRAPH ?g8{?stmelem2 ?b8 ?c8 . } 
+	GRAPH ?g9{?a9 ?b9 ?stmelem2 . }
+	GRAPH ?g10 { ?var ?b10 ?c10 .}
+	GRAPH ?g11 { ?a11 ?b11 ?var .}
+	GRAPH ?g12{?region ?b12 ?c12 . } 
+	GRAPH ?g13{?a13 ?b13 ?region . } 
+	GRAPH ?g14{?stmelem3 ?b14 ?c14 . } 
+	GRAPH ?g15{?a15 ?b15 ?stmelem3 . } 
+	GRAPH ?g16{?objplace ?b16 ?c16 . }
+	GRAPH ?g17{?a17 ?b17 ?objplace . }
+	GRAPH ?g18{?relplace ?b18 ?c18 . }
+	
+	GRAPH ?g20{?prodrepr ?b20 ?c20 . }
+	GRAPH ?g21{?reprlist ?b21 ?c21 . }
+	GRAPH ?g22{?shaperepr ?b22 ?c22 . }
+	GRAPH ?g23{?extrepr ?b23 ?c23 . }
+	GRAPH ?g24{?extref ?b24 ?c24 . }
+	GRAPH ?g25{?reprLU ?b25 ?c25 . }
+	
+	GRAPH ?g30{?reprmaps ?b30 ?c30 . }
+	GRAPH ?g31{?reprmapitem ?b31 ?c31 . }
+	
+	GRAPH ?g35{?descr ?b35 ?c35 . }
+}
+WHERE { 
+
+	#?elemclass rdfs:subClassOf* ifc:IfcElement .
+	#?elem rdf:type ?elemclass . 
+	
+	# Get all children
+	{?elem (ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?elemChild .}
+	UNION{?elem (ifcext:isNestedByObject|^ifcext:nestsObject)* ?elemChild. }
+	
+	{ GRAPH ?g1{ ?elemChild ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?elemChild .} }	
+	UNION{
+		?elemChild ssn:hasProperty ?prop .
+		{ GRAPH ?g3{ ?prop ?b3 ?c3 .} }
+		UNION { GRAPH ?g4{ ?a4 ?b4 ?prop .} } 
+		UNION{	
+			?var osph:representsProperty ?prop .
+			{GRAPH ?g10 { ?var ?b10 ?c10 .}	}
+			UNION { GRAPH ?g11 { ?a11 ?b11 ?var .} }
+		}
+	}
+	# StateMachine
+	UNION{
+		?elemChild osph:hasStateMachine ?stM .
+		{ GRAPH ?g5{?stM ?b5 ?c5 . } }
+		UNION{
+			?stM fsm:contains ?stmelem1 .		
+			{ GRAPH ?g6{?stmelem1 ?b6 ?c6 . } }
+			UNION { GRAPH ?g7{?a7 ?b7 ?stmelem1 . } }
+			UNION {
+				?stmelem1 fsm:hasStateMachineElement ?stmelem2 .
+				{ GRAPH ?g8{?stmelem2 ?b8 ?c8 . } }
+				UNION { GRAPH ?g9{?a9 ?b9 ?stmelem2 . } }
+			}
+		}
+		# controlled machine
+		UNION{
+			?elemChild osph:hasStateMachine/fsm:contains/fsm:GuardEvent/ifcext:typesObject ?startOp .
+			?region fsm:hasStateMachineElement/fsm:Entry/osph:generatesEvent ?startOp .
+			?region fsm:hasStateMachineElement ?stmelem3 .
+			{ GRAPH ?g12{?region ?b12 ?c12 . } }
+			UNION { GRAPH ?g13{?a13 ?b13 ?region . } } 
+			UNION { GRAPH ?g14{?stmelem3 ?b14 ?c14 . } }
+			UNION { GRAPH ?g15{?a15 ?b15 ?stmelem3 . } }
+		}
+	}
+	# Placement
+	UNION{
+		?elemChild ifc:objectPlacement_IfcProduct ?objplace .
+		{ GRAPH ?g16{?objplace ?b16 ?c16 . } }
+		UNION { GRAPH ?g17{?a17 ?b17 ?objplace . } }
+		UNION { 
+			?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace . 
+			GRAPH ?g18{?relplace ?b18 ?c18 . }
+		}
+	}
+	# Representation
+	UNION{
+		?elemChild ifc:representation_IfcProduct ?prodrepr .
+		?prodrepr ifc:representations_IfcProductRepresentation ?reprlist .
+		?reprlist list:hasContents ?shaperepr .
+		?shaperepr osph:hasExternalRepresentation ?extrepr .	
+		?extrepr ifc:location_IfcExternalReference ?extref .
+		?extrepr osph:hasRepresentationLengthUnit ?reprLU . 
+		{ GRAPH ?g20{?prodrepr ?b20 ?c20 . } }
+		UNION { GRAPH ?g21{?reprlist ?b21 ?c21 . } } 
+		UNION { GRAPH ?g22{?shaperepr ?b22 ?c22 . } }
+		UNION { GRAPH ?g23{?extrepr ?b23 ?c23 . } }
+		UNION { GRAPH ?g24{?extref ?b24 ?c24 . } }
+		UNION { GRAPH ?g25{?reprLU ?b25 ?c25 . } }
+	}
+	UNION{
+		?elemChild ifc:representationMaps_IfcTypeProduct ?reprmaps .
+		?reprmaps list:hasContents ?reprmapitem .
+		?reprmapitem ifc:mappedRepresentation_IfcRepresentationMap ?shaperepr .
+		?shaperepr osph:hasExternalRepresentation ?extrepr .
+		?extrepr ifc:location_IfcExternalReference ?extref .
+		?extrepr osph:hasRepresentationLengthUnit ?reprLU . 
+		{ GRAPH ?g30{?reprmaps ?b30 ?c30 . } }
+		UNION { GRAPH ?g31{?reprmapitem ?b31 ?c31 . } } 
+		UNION { GRAPH ?g22{?shaperepr ?b22 ?c22 . } }
+		UNION { GRAPH ?g23{?extrepr ?b23 ?c23 . } }
+		UNION { GRAPH ?g24{?extref ?b24 ?c24 . } }
+		UNION { GRAPH ?g25{?reprLU ?b25 ?c25 . } }			
+	}
+	# Description
+	UNION{
+		?elemChild ifc:description_IfcRoot ?descr .
+		{ GRAPH ?g35{?descr ?b35 ?c35 . } }
+	}	
+}

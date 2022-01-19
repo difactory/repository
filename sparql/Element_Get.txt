@@ -35,7 +35,7 @@ WHERE {
       ?wPos rdf:type factory:BufferWorkingPosition .
     }
 	optional{
-		?elem (ifcext:isDecomposedByObject|^ifcext:DecomposesObject)* ?buffrestpos .
+		?elem (ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?buffrestpos .
 		?buffrestpos rdf:type/rdfs:subClassOf* factory:BufferRestingPosition .
 	}
     # get tasks assigned to element

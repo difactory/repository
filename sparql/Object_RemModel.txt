@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+
+DELETE{
+	GRAPH ?g1 {?asset ifcext:isDefinedByType ?itsModel .}
+	GRAPH ?g1 {?itsModel ifcext:ifcext:typesObject ?asset .}
+    GRAPH ?g2 {?asset ifcext:isDefinedByObject ?itsModel .}
+    GRAPH ?g2 {?itsModel ifcext:ifcext:declaresObject ?asset .}
+}
+WHERE { 
+	
+	OPTIONAL { GRAPH ?g1 {?asset ifcext:isDefinedByType|^ifcext:typesObject ?itsModel .}}
+    OPTIONAL { GRAPH ?g2 {?asset ifcext:isDefinedByObject|^ifcext:declaresObject ?itsModel .}}
+
+}

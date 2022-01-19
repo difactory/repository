@@ -8,7 +8,7 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 
 INSERT { 
 	GRAPH ?g { 
-		#?failedstate a owl:NamedIndividual , factory:MachineToolFailedState .
+		?failedstateNew a owl:NamedIndividual , factory:MachineToolFailedState .
 		?stM fsm:contains ?failedstate .
 
 		?trFailedIdle a owl:NamedIndividual , fsm:Transition .
@@ -24,8 +24,10 @@ INSERT {
 }
 WHERE {
 	
-	?failClass rdfs:subClassOf* factory:MachineToolFailedState . 
-	?failedstate rdf:type ?failClass .
+	OPTIONAL{
+		?failClass rdfs:subClassOf* factory:MachineToolFailedState . 
+		?failedstate rdf:type ?failClass .
+	}
 	?machineClass rdfs:subClassOf* factory:MachineTool . 
 	?machine rdf:type ?machineClass .
 	GRAPH ?g
@@ -37,6 +39,7 @@ WHERE {
 	?stM fsm:contains ?idleComp .
 	?idleComp a fsm:Composite .
 		
+	BIND(IF(!bound(?failClass),?failedstate,?null ) AS ?failedstateNew ) .  
 	BIND(URI(CONCAT(STR(?failedstate),"_trFailedIdle")) AS ?trFailedIdle ) .  
 	BIND(URI(CONCAT(STR(?failedstate),"_trWorkFailed")) AS ?trWorkFailed ) .  
 

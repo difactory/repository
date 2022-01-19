@@ -6,13 +6,23 @@ PREFIX express: <https://w3id.org/express#>
 PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
 
 INSERT {
 	GRAPH ?graph{
-		?a rdf:type ?b .
-		?a rdf:type owl:NamedIndividual .
+		# individual and class
+		?asset rdf:type owl:NamedIndividual .
+		?asset rdf:type ?assetclass .
+		# description
+		?descrUriNew a owl:NamedIndividual , ifc:IfcText .
+		?asset ifc:description_IfcRoot ?descrUriNew .
+		?descrUriNew express:hasString ?descrdt .	
 	}
 }
 WHERE { 
 
+	# description
+	BIND(IF(bound(?descr),STRDT(?descr, xsd:string),?null ) AS ?descrdt ) . 	
+	BIND(IF(bound(?descr),URI(CONCAT(STR(?asset),"_descr")),?null ) AS ?descrUriNew ) .  
 }

@@ -1,0 +1,96 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX list: <https://w3id.org/list#> 
+
+DELETE{
+	graph ?g1 {?extref express:hasString ?reprLoc . }
+	graph ?g2{ ?reprLU ifc:prefix_IfcSIUnit ?reprLUp .}
+}
+INSERT { 
+	graph ?g0{
+		?prodreprNew a owl:NamedIndividual , ifc:IfcProductDefinitionShape .	
+		?reprlistNew a owl:NamedIndividual , ifc:IfcRepresentation_List .
+		
+		?reprmapsNew a owl:NamedIndividual , ifc:IfcRepresentationMap_List .
+		?reprmapitemNew a owl:NamedIndividual , ifc:IfcRepresentationMap .
+			
+		?shapereprNew a owl:NamedIndividual , ifc:IfcShapeRepresentation .
+		?extreprNew a owl:NamedIndividual , osph:RepresentationReference .
+		?extrefNew a owl:NamedIndividual , ifc:IfcURIReference .
+		?reprLUNew a owl:NamedIndividual , ifc:IfcSIUnit .
+	
+	
+		?asset ifc:representation_IfcProduct ?prodreprNew .
+		?prodreprNew ifc:representations_IfcProductRepresentation ?reprlistNew .
+		?reprlistNew list:hasContents ?shapereprNew .
+			
+		?asset ifc:representationMaps_IfcTypeProduct ?reprmapsNew .
+		?reprmapsNew list:hasContents ?reprmapitemNew .
+		?reprmapitemNew ifc:mappedRepresentation_IfcRepresentationMap ?shapereprNew .
+
+		?shapereprNew osph:hasExternalRepresentation ?extreprNew .
+		?extreprNew ifc:location_IfcExternalReference ?extrefNew .
+		?extreprNew osph:hasRepresentationLengthUnit ?reprLUNew . 
+		?reprLUNew ifc:unitType_IfcNamedUnit ifc:LENGTHUNIT .
+		?reprLUNew ifc:name_IfcSIUnit ifc:METRE .
+		
+		?extrefNew express:hasString ?locationdt .
+		?reprLUNew ifc:prefix_IfcSIUnit ?unitprefix .		
+	}
+}
+WHERE {
+
+	# ?asset ?location ?unitprefix
+	
+	OPTIONAL{
+		graph ?g0 {?asset rdf:type ?assetclassOcc . }
+    	?assetclassOcc rdfs:subClassOf* ifc:IfcProduct .  
+		FILTER ( ?assetclassOcc != owl:NamedIndividual ) .
+		OPTIONAL{
+			?asset ifc:representation_IfcProduct ?prodrepr .
+			?prodrepr ifc:representations_IfcProductRepresentation ?reprlist .
+			?reprlist list:hasContents ?shaperepr .
+			?shaperepr osph:hasExternalRepresentation ?extrepr .
+			?extrepr ifc:location_IfcExternalReference ?extref .
+			graph ?g1 {?extref express:hasString ?reprLoc . }
+			?extrepr osph:hasRepresentationLengthUnit ?reprLU . 
+			OPTIONAL { graph ?g2{ ?reprLU ifc:prefix_IfcSIUnit ?reprLUp .} }
+		}
+	}
+	OPTIONAL{
+		graph ?g0 {?asset rdf:type ?assetclassType . } 	
+    	?assetclassType rdfs:subClassOf* ifc:IfcTypeProduct .  
+		FILTER ( ?assetclassType != owl:NamedIndividual ) .
+		
+		OPTIONAL{
+			?asset ifc:representationMaps_IfcTypeProduct ?reprmaps .
+			?reprmaps list:hasContents ?reprmapitem .
+			?reprmapitem ifc:mappedRepresentation_IfcRepresentationMap ?shaperepr .
+			?shaperepr osph:hasExternalRepresentation ?extrepr .
+			?extrepr ifc:location_IfcExternalReference ?extref .
+			graph ?g1 {?extref express:hasString ?reprLoc . }
+			?extrepr osph:hasRepresentationLengthUnit ?reprLU . 
+			OPTIONAL { graph ?g2{ ?reprLU ifc:prefix_IfcSIUnit ?reprLUp .} }
+		}
+	}  
+  
+	BIND(STRDT(?location, xsd:string) AS ?locationdt ) . 	
+	
+	BIND(IF(bound(?assetclassOcc),IF(bound(?prodrepr),?prodrepr ,URI(CONCAT(STR(?asset),"_prodrepr"))),?null) AS ?prodreprNew ) .  
+	BIND(IF(bound(?assetclassOcc),IF(bound(?reprlist),?reprlist ,URI(CONCAT(STR(?asset),"_reprlist"))),?null) AS ?reprlistNew ) .  
+	
+	BIND(IF(bound(?assetclassType),IF(bound(?reprmaps),?reprmaps ,URI(CONCAT(STR(?asset),"_reprmaps"))),?null) AS ?reprmapsNew ) .  
+	BIND(IF(bound(?assetclassType),IF(bound(?reprmapitem),?reprmapitem ,URI(CONCAT(STR(?asset),"_reprmapitem"))),?null) AS ?reprmapitemNew ) .  
+	
+	BIND(IF(bound(?shaperepr),?shaperepr ,URI(CONCAT(STR(?asset),"_shaperepr")) ) AS ?shapereprNew ) .  	
+	BIND(IF(bound(?extrepr),?extrepr ,URI(CONCAT(STR(?asset),"_extrepr")) ) AS ?extreprNew ) .  	
+	BIND(IF(bound(?extref),?extref ,URI(CONCAT(STR(?asset),"_extref")) ) AS ?extrefNew ) .  	
+	BIND(IF(bound(?reprLU),?reprLU ,URI(CONCAT(STR(?asset),"_reprLU")) ) AS ?reprLUNew ) .  	
+	
+}

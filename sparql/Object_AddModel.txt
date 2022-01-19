@@ -1,0 +1,109 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+
+DELETE{
+	GRAPH ?g0 {?asset rdf:type ?assetclass .}
+	GRAPH ?g1 {?asset ifcext:isDefinedByType ?itsModel .}
+	GRAPH ?g1 {?itsModel ifcext:ifcext:typesObject ?asset .}
+    GRAPH ?g2 {?asset ifcext:isDefinedByObject ?itsModel .}
+    GRAPH ?g2 {?itsModel ifcext:ifcext:declaresObject ?asset .}
+}
+INSERT {
+	GRAPH ?graph{
+		?asset rdf:type ?occClassByType ;
+			ifcext:isDefinedByType ?modelByType .
+		?asset rdf:type ?occClassByObject ; 
+			ifcext:isDefinedByObject ?modelByObject .
+			
+		?assetchild rdf:type owl:NamedIndividual, ?childclass .
+		?assetchild ifcext:isDefinedByObject ?child .
+		
+		?assetchilddirparDec ifcext:isDecomposedByObject ?assetchild .
+		?assetchilddirparNest ifcext:isNestedByObject ?assetchild .
+		
+		?assetchild ifcext:isConnectedToElement ?assetchildconn .
+		?assetchild ifcext:isPredecessorToProcess ?assetchildsucc .
+		
+		?assetchilddirparDecplace a owl:NamedIndividual , ifc:IfcLocalPlacement .
+		?assetchildplace a owl:NamedIndividual , ifc:IfcLocalPlacement .		
+		?assetchilddirparDec ifc:objectPlacement_IfcProduct ?assetchilddirparDecplace .
+		?assetchild ifc:objectPlacement_IfcProduct ?assetchildplace .
+		?assetchildplace ifc:placementRelTo_IfcLocalPlacement ?assetchilddirparDecplace .
+		?assetchildrelplace a owl:NamedIndividual , ifc:IfcAxis2Placement3D .
+		?assetchildplace ifc:relativePlacement_IfcLocalPlacement ?assetchildrelplace .	
+		?assetchildrelplace ifcext:hasRotationMatrix ?itsRot .
+		?assetchildrelplace ifcext:hasEulerAnglesYXZ ?itsRot .
+		?assetchildrelplace ifcext:hasQuaternion ?itsRot .
+		?assetchildrelplace ifcext:hasLocation ?itsPos .
+	}
+}
+WHERE {  
+
+	# type
+	OPTIONAL{
+		GRAPH ?g0 {?asset rdf:type ?assetclass .}
+		FILTER ( ?assetclass != owl:NamedIndividual ) .
+	}
+	OPTIONAL { GRAPH ?g1 {?asset ifcext:isDefinedByType|^ifcext:typesObject ?itsModel .}}
+    OPTIONAL { GRAPH ?g2 {?asset ifcext:isDefinedByObject|^ifcext:declaresObject ?itsModel .}}	
+  
+	# model
+	{
+    	?model rdf:type/rdfs:subClassOf ?restr .
+		?restr owl:onProperty ifcext:typesObject .
+    	?restr owl:allValuesFrom ?occClassByType .
+	} 
+	UNION {
+    	?model rdf:type/rdfs:subClassOf ?restr .
+		?restr owl:onProperty ifcext:declaresObject .
+    	?restr owl:allValuesFrom ?occClassByObject .
+	}
+	UNION{
+		{
+			?model (ifcext:isDecomposedByObject|^ifcext:decomposesObject)+ ?child .
+			?childdirparDec (ifcext:isDecomposedByObject|^ifcext:decomposesObject) ?child .
+			
+			# replicate placement ######################
+			OPTIONAL{ ?child ifc:objectPlacement_IfcProduct ?childplace . 
+				OPTIONAL{
+				  ?childplace ifc:relativePlacement_IfcLocalPlacement ?childrelplace .
+					OPTIONAL{ ?childrelplace ifcext:hasRotationMatrix ?itsRot . }
+					OPTIONAL{ ?childrelplace ifcext:hasEulerAnglesYXZ ?itsRot . }
+					OPTIONAL{ ?childrelplace ifcext:hasQuaternion ?itsRot . }
+					OPTIONAL{ ?childrelplace ifcext:hasLocation ?itsPos . }
+				}
+			}
+			# Connection
+			OPTIONAL{?child ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?childconn .}			
+		}
+		UNION {
+			?model (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?child .
+			?childdirparNest (ifcext:isNestedByObject|^ifcext:nestsObject) ?child .
+			
+			# Successors
+			OPTIONAL{?child ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?childsucc . }
+		}	
+		
+        ?child rdf:type ?childclass .
+    	FILTER ( ?childclass != owl:NamedIndividual ) .
+	}
+
+	# model
+	BIND(IF(bound(?occClassByType),?model,?null ) AS ?modelByType ) . 
+	BIND(IF(bound(?occClassByObject),?model,?null ) AS ?modelByObject ) . 
+  
+  	BIND( URI(CONCAT(STR(?asset),".",STRAFTER(STR(?child),"#")))  AS ?assetchild) .
+	
+  	BIND(IF(SAMETERM(?model,?childdirparDec),?asset,URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childdirparDec),"#"))) ) AS ?assetchilddirparDec ) . 
+  	BIND(IF(SAMETERM(?model,?childdirparNest),?asset,URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childdirparNest),"#"))) ) AS ?assetchilddirparNest ) . 
+  	BIND(URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childconn),"#")))  AS ?assetchildconn ) . 
+  	BIND(URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childsucc),"#")))  AS ?assetchildsucc ) . 
+	
+	BIND(IF(bound(?childplace),URI(CONCAT(STR(?assetchild),"_objplace")),?null ) AS ?assetchildplace ) . 
+	BIND(IF(bound(?childplace),URI(CONCAT(STR(?assetchilddirparDec),"_objplace")),?null ) AS ?assetchilddirparDecplace ) . 
+	BIND(IF(bound(?childrelplace),URI(CONCAT(STR(?assetchild),"_relplace")),?null ) AS ?assetchildrelplace ) . 
+	
+} 

@@ -1,0 +1,21 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+DELETE{
+	GRAPH ?g {
+		?parent ifcext:isDecomposedByObject ?child .
+		?child ifcext:decomposesObject ?parent .
+		?parent ifcext:isNestedByObject ?child .
+		?child ifcext:nestsObject ?parent .		
+	}
+}
+WHERE {
+
+	#?parent ifcext:isDecomposedByObject|^ifcext:decomposesObject ?child .
+	#?parent ifcext:isNestedByObject|^ifcext:nestsObject ?child .
+
+	GRAPH ?g {
+		{?parent ifcext:isDecomposedByObject ?child .}
+		UNION{?child ifcext:decomposesObject ?parent .}
+		UNION{?parent ifcext:isNestedByObject ?child .}
+		UNION{?child ifcext:nestsObject ?parent .}
+	}	
+}

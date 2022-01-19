@@ -1,0 +1,74 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+
+
+DELETE{
+	graph ?g1{ ?relplace ifcext:hasLocation ?itsPos . } 
+	graph ?g2{ ?relplace ifcext:hasRotationMatrix ?itsRotMat . } 
+	graph ?g3{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRotEul . } 
+	graph ?g4{ ?relplace ifcext:hasQuaternion ?itsRotQuat . } 
+	graph ?g5{ ?objplace ifc:placementRelTo_IfcLocalPlacement ?itsRelToPlace .}
+}
+INSERT { 
+	graph ?g0{
+		?objplaceNew a owl:NamedIndividual , ifc:IfcLocalPlacement .
+		?relplaceNew a owl:NamedIndividual , ifc:IfcAxis2Placement3D .
+		
+		?prod ifc:objectPlacement_IfcProduct ?objplaceNew .
+		?objplaceNew ifc:relativePlacement_IfcLocalPlacement ?relplaceNew .	
+	}
+	graph ?g6{
+		?relToPlaceNew a owl:NamedIndividual , ifc:IfcLocalPlacement .
+		?reltoprod ifc:objectPlacement_IfcProduct ?relToPlaceNew .
+	}
+	GRAPH ?graph { 		
+		?relplaceNew ifcext:hasLocation ?posdt . 
+		?relplaceNew ifcext:hasRotationMatrix ?rotmatdt . 
+		?relplaceNew ifcext:hasEulerAnglesYXZ ?roteuldt . 
+		?relplaceNew ifcext:hasQuaternion ?rotquatdt . 
+		
+		?objplaceNew ifc:placementRelTo_IfcLocalPlacement ?relToPlace .
+		?objplaceNew ifc:placementRelTo_IfcLocalPlacement ?relToPlaceNew .
+	}
+}
+WHERE {
+
+	BIND(IF(bound(?relto), ?relto, "") AS ?reltoprod ) .
+
+
+	?prodclass rdfs:subClassOf* ifc:IfcProduct .   
+	graph ?g0{?prod rdf:type ?prodclass .}
+	FILTER ( ?prodclass != owl:NamedIndividual ) .
+
+	OPTIONAL{ ?prod ifc:objectPlacement_IfcProduct ?objplace . 
+		OPTIONAL{
+		  ?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace .
+			OPTIONAL{ graph ?g1{ ?relplace ifcext:hasLocation ?itsPos . } }
+			OPTIONAL{ graph ?g2{ ?relplace ifcext:hasRotationMatrix ?itsRotMat . } }
+			OPTIONAL{ graph ?g3{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRotEul . } }
+			OPTIONAL{ graph ?g4{ ?relplace ifcext:hasQuaternion ?itsRotQuat . } }
+		}
+		OPTIONAL{ 
+			graph ?g5{ ?objplace ifc:placementRelTo_IfcLocalPlacement ?itsRelToPlace .}
+		}
+	}
+	OPTIONAL{
+        graph ?g6{?reltoprod rdf:type ?reltoprodclass .}
+    	OPTIONAL{?reltoprod ifc:objectPlacement_IfcProduct ?relToPlace .}
+		FILTER ( ?reltoprodclass != owl:NamedIndividual ) .
+	}	
+	
+	BIND(IF(strlen(?pos)>0,STRDT(?pos, xsd:string),?null ) AS ?posdt ) . 	
+	BIND(IF(strlen(?rotmat)>0,STRDT(?rotmat, xsd:string),?null ) AS ?rotmatdt ) . 	
+	BIND(IF(strlen(?roteul)>0,STRDT(?roteul, xsd:string),?null ) AS ?roteuldt ) . 	
+	BIND(IF(strlen(?rotquat)>0,STRDT(?rotquat, xsd:string),?null ) AS ?rotquatdt ) . 	
+	
+	BIND(IF(bound(?objplace),?objplace ,URI(CONCAT(STR(?prod),"_objplace")) ) AS ?objplaceNew ) .  
+	BIND(IF(bound(?relplace),?relplace ,URI(CONCAT(STR(?prod),"_relplace")) ) AS ?relplaceNew ) .  
+	
+	BIND(IF(bound(?relto) && !bound(?relToPlace), URI(CONCAT(STR(?reltoprod),"_objplace")),?null ) AS ?relToPlaceNew ) . 
+}
