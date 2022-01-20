@@ -3,11 +3,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX list: <https://w3id.org/list#> 
 PREFIX express: <https://w3id.org/express#> 
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
 
-SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem)
+SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) 
 
 WHERE { 
 
@@ -15,17 +18,18 @@ WHERE {
 	?asset rdf:type ?itsType .
   
   
-  OPTIONAL{
-    {
-    ?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
-     OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
-     ?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc . 
-	  } UNION {
-		?asset ifc:representationMaps_IfcTypeProduct/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
-		   OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
-		  ?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
-	  }
-  }
+	OPTIONAL{
+		{
+			?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
+			OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
+			?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc . 
+		} 
+		UNION {
+			?asset ifc:representationMaps_IfcTypeProduct/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
+			OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
+			?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
+		}
+	}
     
     FILTER ( ?itsType != owl:NamedIndividual ) . 
 	OPTIONAL { ?asset ifc:description_IfcRoot/express:hasString ?itsDescr } .
@@ -38,6 +42,18 @@ WHERE {
     OPTIONAL { ?asset (ifcext:decomposesObject|^ifcext:isDecomposedByObject) ?itsParent } .
     OPTIONAL { ?asset (ifcext:nestsObject|^ifcext:isNestedByObject) ?itsParent } .
 	OPTIONAL { ?asset (ifcext:hasAssignmentTo|^ifcext:hasAssignedObject) ?itsAssignments } .
+	OPTIONAL { ?asset (ifcext:isConnectedToElement|^ifcext:isConnectedFromElement) ?connTo . }	.
+
+	OPTIONAL{
+		?asset osph:hasStateMachine ?stm .
+		?stm fsm:contains ?failstate .
+		?failstate rdf:type/rdfs:subClassOf* factory:MachineToolFailedState . 
+	}
+	OPTIONAL{
+		?asset ssn:hasProperty ?buffprop .
+		?buffprop rdf:type factory:BufferCapacity .
+		?buffprop osph:hasPropertySimpleValue ?buffCap .
+	}	
 	OPTIONAL{ ?asset ifc:objectPlacement_IfcProduct ?objplace . 
 		OPTIONAL{
 		  ?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace .
@@ -50,4 +66,4 @@ WHERE {
 			?objplace ifc:placementRelTo_IfcLocalPlacement/^ifc:objectPlacement_IfcProduct ?itsRelTo .
 		}
 	}
-} GROUP BY ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding
+} GROUP BY ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap 

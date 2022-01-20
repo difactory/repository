@@ -41,6 +41,17 @@ DELETE{
 	GRAPH ?g31{?reprmapitem ?b31 ?c31 . }
 	
 	GRAPH ?g35{?descr ?b35 ?c35 . }
+	
+	GRAPH ?g47{?guard ?b47 ?c47 . } 
+	GRAPH ?g48{?guardevent ?b48 ?c48 . } 
+	GRAPH ?g49{?ttfvalue ?b49 ?c49 . } 
+	GRAPH ?g50{?ttfpdistr ?b50 ?c50 . }
+	GRAPH ?g55{?mainttask ?b55 ?c55 . }
+	GRAPH ?g51{?tasktime ?b51 ?c51 . }
+	GRAPH ?g52{?duration ?b52 ?c52 . }
+	GRAPH ?g53{?stochdur ?b53 ?c53 . }
+	GRAPH ?g54{?timestoch ?b54 ?c54 . }
+	
 }
 WHERE { 
 
@@ -76,6 +87,42 @@ WHERE {
 				{ GRAPH ?g8{?stmelem2 ?b8 ?c8 . } }
 				UNION { GRAPH ?g9{?a9 ?b9 ?stmelem2 . } }
 			}
+			## TTF
+			UNION {
+				?stmelem1 fsm:TransitionGuard ?guard .
+				?guard fsm:GuardEvent ?guardevent .
+				{ GRAPH ?g47{ ?guard ?b47 ?c47 .} }
+				UNION { GRAPH ?g48{ ?guardevent ?b48 ?c48 .} }
+				UNION{
+					?guardevent ifcext:hasTimeToHappen ?ttfvalue .
+					{GRAPH ?g49{?ttfvalue ?b49 ?c49 .} }
+					UNION {
+						?ttfvalue osph:isQuantitySampledFrom ?ttfpdistr.
+						GRAPH ?g50{?ttfpdistr ?b50 ?c50 . }
+					}
+				}
+			}
+			## TTR
+			UNION {	
+				?stmelem1 osph:do ?mainttask .
+				{GRAPH ?g55{?mainttask ?b55 ?c55 .}}
+				UNION{
+					?mainttask ifc:taskTime_IfcTask ?tasktime . 
+					{GRAPH ?g51{?tasktime ?b51 ?c51 .}}
+					UNION {
+						?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .
+						GRAPH ?g52{?duration ?b52 ?c52 . }
+					}
+					UNION{
+						?tasktime ifcext:hasStochasticDuration ?stochdur .
+						{GRAPH ?g53{?stochdur ?b53 ?c53 .}}
+						UNION{
+							?stochdur osph:isQuantitySampledFrom ?timestoch .
+							GRAPH ?g54 {?timestoch ?b54 ?c54 .} 
+						}
+					}	
+				}
+			}	
 		}
 		# controlled machine
 		UNION{

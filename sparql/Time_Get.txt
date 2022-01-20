@@ -5,7 +5,7 @@ PREFIX stat: <http://www.ontoeng.com/statistics#>
 PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX express: <https://w3id.org/express#> 
-select distinct ?time ?dur ?stochDistr ?p1 ?p2 ?p3
+select distinct ?timeValue ?time ?dur ?stochDistr ?p1 ?p2 ?p3
 WHERE { 
 	# The selected element is a user-defined parameter
 	# BIND(URI("#stochasticValue#") AS ?timeValue) . 	

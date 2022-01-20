@@ -66,6 +66,10 @@ WHERE {
 			?model (ifcext:isDecomposedByObject|^ifcext:decomposesObject)+ ?child .
 			?childdirparDec (ifcext:isDecomposedByObject|^ifcext:decomposesObject) ?child .
 			
+			?child rdf:type ?childclassprod .
+			?childclassprod rdfs:subClassOf* ifc:IfcProduct .
+			FILTER ( ?childclassprod != owl:NamedIndividual ) .
+			
 			# replicate placement ######################
 			OPTIONAL{ ?child ifc:objectPlacement_IfcProduct ?childplace . 
 				OPTIONAL{
@@ -102,8 +106,8 @@ WHERE {
   	BIND(URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childconn),"#")))  AS ?assetchildconn ) . 
   	BIND(URI(CONCAT(STR(?asset),".",STRAFTER(STR(?childsucc),"#")))  AS ?assetchildsucc ) . 
 	
-	BIND(IF(bound(?childplace),URI(CONCAT(STR(?assetchild),"_objplace")),?null ) AS ?assetchildplace ) . 
-	BIND(IF(bound(?childplace),URI(CONCAT(STR(?assetchilddirparDec),"_objplace")),?null ) AS ?assetchilddirparDecplace ) . 
+	BIND(IF(bound(?childclassprod),URI(CONCAT(STR(?assetchild),"_objplace")),?null ) AS ?assetchildplace ) . 
+	BIND(IF(bound(?childclassprod),URI(CONCAT(STR(?assetchilddirparDec),"_objplace")),?null ) AS ?assetchilddirparDecplace ) . 
 	BIND(IF(bound(?childrelplace),URI(CONCAT(STR(?assetchild),"_relplace")),?null ) AS ?assetchildrelplace ) . 
 	
 } 
