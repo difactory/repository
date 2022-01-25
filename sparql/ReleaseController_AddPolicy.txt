@@ -24,7 +24,7 @@ WHERE {
 	
 	?relSt fsm:Entry ?entryAction .
 	?entryAction osph:generatesEvent ?startOp .
-	?eventType ifcext:typesObject ?startOp .
+	?eventType ifcext:typesObject|ifcext:declaresObject ?startOp .
 	
 	?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .
 	?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .

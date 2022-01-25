@@ -14,7 +14,7 @@ DELETE{
 INSERT { 
 	GRAPH ?g { 
 		?guardNew a owl:NamedIndividual , fsm:Guard .
-		?guardeventNew a owl:NamedIndividual , factory:MachineToolFailureType .
+		?guardeventNew a owl:NamedIndividual , factory:MachineToolFailure .
 		?intr fsm:TransitionGuard ?guardNew .
 		?guardNew fsm:GuardEvent ?guardeventNew .
 		

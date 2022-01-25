@@ -1,0 +1,63 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+SELECT Distinct ?statemach ?state (group_concat(distinct ?target) as ?targets) 
+ 
+WHERE {
+
+	?statemach rdf:type fsm:StateMachine .
+	OPTIONAL{
+		?statemach fsm:contains ?state .
+    	{?state rdf:type/rdfs:subClassOf* fsm:Simple .} 
+        UNION {?state rdf:type/rdfs:subClassOf* fsm:Composite .} 
+      OPTIONAL{
+        ?tr fsm:Source ?state .
+        ?tr fsm:Target ?target .		
+      }
+	}
+	
+#	OPTIONAL{
+#		?statemach fsm:contains ?trWorkIdle .
+#		?trWorkIdle a fsm:Transition .
+#		?statemach fsm:contains ?trInitCompIdle .
+#		?trInitCompIdle a fsm:Transition .
+#		?statemach fsm:contains ?trIdleWork .
+#		?trIdleWork a fsm:Transition .
+#		?statemach fsm:contains ?initSt .
+#		?initSt a fsm:Initial .
+#		?statemach fsm:contains ?guardTrIdleWork .
+#		?guardTrIdleWork a fsm:Guard .
+#		?statemach fsm:contains ?workState .
+#		?workState a factory:MachineToolWorkingState .
+
+#		
+#		?trWorkIdle fsm:Source ?workState .
+#		?trWorkIdle fsm:Target ?idleComp .
+#		?trInitCompIdle fsm:Source ?initSt .
+#		?trInitCompIdle fsm:Target ?idleComp .
+#		?trIdleWork fsm:Source ?idleComp .
+#		?trIdleWork fsm:Target ?workState .
+#		
+#		?trIdleWork fsm:TransitionGuard ?guardTrIdleWork .
+#		?guardTrIdleWork fsm:GuardEvent ?startOp .
+#		{?startOp a factory:MachineToolStartOperationType .}
+#		UNION {?startOp a factory:MachineToolStartOperation .}
+#
+#		?idleComp fsm:hasStateMachineElement ?initInIdleComp .
+#		?initInIdleComp a fsm:Initial .
+#		?idleComp fsm:hasStateMachineElement ?blockedSt .
+#		?blockedSt a factory:MachineToolBlockedState .
+#		?idleComp fsm:hasStateMachineElement ?starvedSt .
+#		?starvedSt a factory:MachineToolStarvedState .
+#		?idleComp fsm:hasStateMachineElement ?idleSt .
+#		?idleSt a factory:MachineToolIdleState .
+#		?trInitIdle fsm:Source ?initInIdleComp .
+#		?trInitIdle fsm:Target ?idleSt .	
+#		?trInitIdle a fsm:Transition .
+#	}
+}
+GROUP BY ?statemach ?state

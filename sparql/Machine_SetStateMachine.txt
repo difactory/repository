@@ -14,10 +14,10 @@ INSERT {
 		?trInitCompIdle a owl:NamedIndividual , fsm:Transition .
 		?trIdleWork a owl:NamedIndividual , fsm:Transition .
 		?initSt a owl:NamedIndividual , fsm:Initial .
-		?workState a owl:NamedIndividual , factory:MachineToolWorkinigState .
+		?workState a owl:NamedIndividual , factory:MachineToolWorkingState .
 		?idleComp a owl:NamedIndividual , fsm:Composite .
 		?guardTrIdleWork a owl:NamedIndividual , fsm:Guard .
-		?startOp a owl:NamedIndividual , factory:MachineToolStartOperationType .
+		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
 		
 		?initInIdleComp a owl:NamedIndividual , fsm:Initial .
 		?blockedSt a owl:NamedIndividual , factory:MachineToolBlockedState .
@@ -72,7 +72,7 @@ WHERE {
 		?stM_ fsm:contains ?guardTrIdleWork_ .
 		?guardTrIdleWork_ a fsm:Guard .
 		?stM_ fsm:contains ?workState_ .
-		?workState_ a factory:MachineToolWorkinigState .
+		?workState_ a factory:MachineToolWorkingState .
 		?stM_ fsm:contains ?idleComp_ .
 		?idleComp_ a fsm:Composite .
 		
@@ -85,12 +85,13 @@ WHERE {
 		
 		?trIdleWork_ fsm:TransitionGuard ?guardTrIdleWork_ .
 		?guardTrIdleWork_ fsm:GuardEvent ?startOp_ .
-		?startOp_ a factory:MachineToolStartOperationType .
+		{?startOp_ a factory:MachineToolStartOperationType .}
+		UNION {?startOp_ a factory:MachineToolStartOperation .}
 
 		?idleComp_ fsm:hasStateMachineElement ?initInIdleComp_ .
 		?initInIdleComp_ a fsm:Initial .
 		?idleComp_ fsm:hasStateMachineElement ?blockedSt_ .
-		?blockedSt_ a factory:MachineToolBlockedState_ .
+		?blockedSt_ a factory:MachineToolBlockedState .
 		?idleComp_ fsm:hasStateMachineElement ?starvedSt_ .
 		?starvedSt_ a factory:MachineToolStarvedState .
 		?idleComp_ fsm:hasStateMachineElement ?idleSt_ .
@@ -101,18 +102,18 @@ WHERE {
 	}
 
 	BIND(IF(bound(?stM_),?stM_ ,URI(CONCAT(STR(?machine),"_stM")) ) AS ?stM ) .  
-	BIND(IF(bound(?trWorkIdle_),?trWorkIdle_ ,URI(CONCAT(STR(?machine),"_stM_trWorkIdle")) ) AS ?trWorkIdle ) . 
-	BIND(IF(bound(?trInitCompIdle_),?trInitCompIdle_ ,URI(CONCAT(STR(?machine),"_stM_trInitCompIdle")) ) AS ?trInitCompIdle ) . 
-	BIND(IF(bound(?initSt_),?initSt_ ,URI(CONCAT(STR(?machine),"_stM_initSt")) ) AS ?initSt ) . 
-	BIND(IF(bound(?guardTrIdleWork_),?guardTrIdleWork_ ,URI(CONCAT(STR(?machine),"_stM_guardTrIdleWork")) ) AS ?guardTrIdleWork ) . 
-	BIND(IF(bound(?workState_),?workState_ ,URI(CONCAT(STR(?machine),"_stM_workState")) ) AS ?workState ) . 
-	BIND(IF(bound(?trIdleWork_),?trIdleWork_ ,URI(CONCAT(STR(?machine),"_stM_trIdleWork")) ) AS ?trIdleWork ) . 
-	BIND(IF(bound(?idleComp_),?idleComp_ ,URI(CONCAT(STR(?machine),"_stM_idleComp")) ) AS ?idleComp ) . 
-	BIND(IF(bound(?startOp_),?startOp_ ,URI(CONCAT(STR(?machine),"_stM_startOp")) ) AS ?startOp ) . 
+	BIND(IF(bound(?trWorkIdle_),?trWorkIdle_ ,URI(CONCAT(STR(?machine),"_trWorkIdle")) ) AS ?trWorkIdle ) . 
+	BIND(IF(bound(?trInitCompIdle_),?trInitCompIdle_ ,URI(CONCAT(STR(?machine),"_trInitCompIdle")) ) AS ?trInitCompIdle ) . 
+	BIND(IF(bound(?initSt_),?initSt_ ,URI(CONCAT(STR(?machine),"_initSt")) ) AS ?initSt ) . 
+	BIND(IF(bound(?guardTrIdleWork_),?guardTrIdleWork_ ,URI(CONCAT(STR(?machine),"_guardTrIdleWork")) ) AS ?guardTrIdleWork ) . 
+	BIND(IF(bound(?workState_),?workState_ ,URI(CONCAT(STR(?machine),"_workState")) ) AS ?workState ) . 
+	BIND(IF(bound(?trIdleWork_),?trIdleWork_ ,URI(CONCAT(STR(?machine),"_trIdleWork")) ) AS ?trIdleWork ) . 
+	BIND(IF(bound(?idleComp_),?idleComp_ ,URI(CONCAT(STR(?machine),"_idleComp")) ) AS ?idleComp ) . 
+	BIND(IF(bound(?startOp_),?null ,URI(CONCAT(STR(?machine),"_startOp")) ) AS ?startOp ) . 
 
-	BIND(IF(bound(?initInIdleComp_),?initInIdleComp_ ,URI(CONCAT(STR(?machine),"_stM_initInIdleComp")) ) AS ?initInIdleComp ) . 
-	BIND(IF(bound(?idleSt_),?idleSt_ ,URI(CONCAT(STR(?machine),"_stM_idleSt")) ) AS ?idleSt ) . 
-	BIND(IF(bound(?starvedSt_),?starvedSt_ ,URI(CONCAT(STR(?machine),"_stM_starvedSt")) ) AS ?starvedSt ) . 
-	BIND(IF(bound(?blockedSt_),?blockedSt_ ,URI(CONCAT(STR(?machine),"_stM_blockedSt")) ) AS ?blockedSt ) . 
-	BIND(IF(bound(?trInitIdle_),?trInitIdle_ ,URI(CONCAT(STR(?machine),"_stM_trInitIdle")) ) AS ?trInitIdle ) . 
+	BIND(IF(bound(?initInIdleComp_),?initInIdleComp_ ,URI(CONCAT(STR(?machine),"_initInIdleComp")) ) AS ?initInIdleComp ) . 
+	BIND(IF(bound(?idleSt_),?idleSt_ ,URI(CONCAT(STR(?machine),"_idleSt")) ) AS ?idleSt ) . 
+	BIND(IF(bound(?starvedSt_),?starvedSt_ ,URI(CONCAT(STR(?machine),"_starvedSt")) ) AS ?starvedSt ) . 
+	BIND(IF(bound(?blockedSt_),?blockedSt_ ,URI(CONCAT(STR(?machine),"_blockedSt")) ) AS ?blockedSt ) . 
+	BIND(IF(bound(?trInitIdle_),?trInitIdle_ ,URI(CONCAT(STR(?machine),"_trInitIdle")) ) AS ?trInitIdle ) . 
 }

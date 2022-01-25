@@ -6223,16 +6223,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1">
         <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolStartOperationType"/>
-        <IFC4_ADD1_extension:typesObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1"/>
         <IFC4_ADD1_extension:typesObject rdf:resource="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.ontoeng.com/DFAssemblyLine#PPW01_stM_startOp.1.1">
-        <rdf:type rdf:resource="http://www.ontoeng.com/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 

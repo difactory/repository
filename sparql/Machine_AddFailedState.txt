@@ -35,7 +35,7 @@ WHERE {
 		?machine osph:hasStateMachine ?stM .
 	}	
 	?stM fsm:contains ?workState .
-	?workState a factory:MachineToolWorkinigState .
+	?workState a factory:MachineToolWorkingState .
 	?stM fsm:contains ?idleComp .
 	?idleComp a fsm:Composite .
 		

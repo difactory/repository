@@ -45,7 +45,7 @@ INSERT {
 		?relSt fsm:Entry ?entryAction .
 		?entryAction osph:generatesEvent ?startOp .
 		
-		?eventType ifcext:typesObject ?startOp .
+		?eventType ifcext:declaresObject ?startOp .
 	}
 }
 WHERE {
@@ -54,7 +54,8 @@ WHERE {
 		?controller osph:hasStateMachine ?contrStM .
 	}	
 	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
-	?eventType rdf:type factory:MachineToolStartOperationType .
+	{?eventType rdf:type factory:MachineToolStartOperationType .}
+	UNION {?eventType rdf:type factory:MachineToolStartOperation .}
 	
 	BIND(IF(bound(?contrStM),?null ,URI(CONCAT(STR(?controller),"_stM")) ) AS ?contrStMNew ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_reg")) AS ?contrRegion ) .  
