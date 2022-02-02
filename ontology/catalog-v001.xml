@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/DFAssemblyLine" uri="DFAssemblyLine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/DFLibBuilding" uri="DFLibBuilding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/DFLibProduct" uri="DFLibProduct.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/DFLibStations" uri="DFLibStations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/VFLab" uri="VFLab.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/VFLibBuilding" uri="VFLibBuilding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/VFLibProduct" uri="VFLibProduct.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1642883489606" name="http://www.ontoeng.com/VFLibStations" uri="VFLibStations.owl"/>
+    </group>
+</catalog>

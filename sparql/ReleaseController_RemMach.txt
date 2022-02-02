@@ -21,7 +21,7 @@ WHERE {
 	
     ?controller osph:hasStateMachine ?stM .
     GRAPH ?g1 {?stM fsm:contains ?region .}
-    ?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+    ?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
     {?eventType rdf:type factory:MachineToolStartOperationType .} 
 	UNION {?eventType rdf:type factory:MachineToolStartOperation .} 
     ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .

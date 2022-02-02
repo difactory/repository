@@ -8,22 +8,14 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 
 DELETE{
-	GRAPH ?h { 
-		?res ?b1 ?c1 .
-	}
-	GRAPH ?j { 
-		?a2 ?b2 ?res .
-	}	
+	GRAPH ?h {?res ?y1 ?z1 . }
+	GRAPH ?j {?x2 ?y2 ?res .}	
 }
 WHERE {
 
 	?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
 	?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?elem .
 
-	GRAPH ?h{
-		OPTIONAL {?res ?b1 ?c1 . }
-	}
-	GRAPH ?j{
-		OPTIONAL {?a2 ?b2 ?res .}
-	}
-}
+	{ GRAPH ?h {?res ?y1 ?z1 . } } UNION  { GRAPH ?j {?x2 ?y2 ?res .} }	
+
+} 

@@ -1,0 +1,42 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE{
+
+	GRAPH ?g7{ ?guard ?b7 ?c7 .} 
+	GRAPH ?g8{?a8 ?b8 ?guard .}
+	GRAPH ?g9{ ?event ?b9 ?c9 .} 
+	GRAPH ?g10{?a10 ?b10 ?event .}
+	GRAPH ?g1{?newWorkState ?b1 ?c1 .} 
+	GRAPH ?g2{?a2 ?b2 ?newWorkState .}
+	GRAPH ?g3{?doPStep ?b3 ?c3 .} 
+	GRAPH ?g4{?a4 ?b4 ?doPStep .}
+	GRAPH ?g5{?tr ?b5 ?c5 .} 
+	GRAPH ?g6{?a6 ?b6 ?tr .}
+}
+WHERE {
+
+	?elem osph:hasStateMachine ?stM .		
+	?stM fsm:contains/fsm:hasStateMachineElement ?newWorkState .
+	?newWorkState osph:do ?doPStep .
+	?doPStep ifcext:isDefinedByObject ?pstep .		
+	{?tr fsm:Source ?newWorkState .} UNION { ?tr fsm:Target ?newWorkState .}
+
+	{GRAPH ?g1{?newWorkState ?b1 ?c1 .}} UNION {GRAPH ?g2{?a2 ?b2 ?newWorkState .}}
+	UNION {GRAPH ?g3{?doPStep ?b3 ?c3 .}} UNION {GRAPH ?g4{?a4 ?b4 ?doPStep .}}
+	UNION {GRAPH ?g5{?tr ?b5 ?c5 .}} UNION {GRAPH ?g6{?a6 ?b6 ?tr .}}    
+	UNION{
+		?tr fsm:TransitionGuard ?guard .
+		{GRAPH ?g7{ ?guard ?b7 ?c7 .}} #UNION {GRAPH ?g8{?a8 ?b8 ?guard .}}
+		UNION{
+			?guard fsm:GuardEvent ?event .
+			{GRAPH ?g9{ ?event ?b9 ?c9 .}} UNION {GRAPH ?g10{?a10 ?b10 ?event .}}
+		}
+	}
+} 

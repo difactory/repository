@@ -25,14 +25,14 @@ INSERT {
 		?entryAction a owl:NamedIndividual , osph:EventGeneration .
 		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
 		
-		?contrRegion fsm:hasStateMachineElement ?trRelIdle .
-		?contrRegion fsm:hasStateMachineElement ?trIdleRel .
-		?contrRegion fsm:hasStateMachineElement ?idleSt .
-		?contrRegion fsm:hasStateMachineElement ?relSt .
-		?contrRegion fsm:hasStateMachineElement ?guardTrIdleRel .
-		?contrRegion fsm:hasStateMachineElement ?condTrIdleRel .
-		?contrRegion fsm:hasStateMachineElement ?entryAction .
-		?contrRegion fsm:hasStateMachineElement ?startOp .
+		?contrRegion fsm:hasStateMachineElement ?trRelIdle ,
+			?trIdleRel ,
+			?idleSt ,
+			?relSt ,
+			?guardTrIdleRel ,
+			?condTrIdleRel ,
+			?entryAction ,
+			?startOp .
 		
 		?trRelIdle fsm:Source ?relSt .
 		?trRelIdle fsm:Target ?idleSt .
@@ -53,7 +53,9 @@ WHERE {
 	OPTIONAL {
 		?controller osph:hasStateMachine ?contrStM .
 	}	
-	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+	#?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
+	?tr fsm:Target ?workstate .
+	?tr fsm:TransitionGuard/fsm:GuardEvent ?eventType .
 	{?eventType rdf:type factory:MachineToolStartOperationType .}
 	UNION {?eventType rdf:type factory:MachineToolStartOperation .}
 	
@@ -64,7 +66,7 @@ WHERE {
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_relSt")) AS ?relSt ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_guardTrIdleRel")) AS ?guardTrIdleRel ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trIdleRel")) AS ?trIdleRel ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_condTrIdleRel")) AS ?condTrIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_cond")) AS ?condTrIdleRel ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_entryAction")) AS ?entryAction ) .  
 	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_startOp_1")) AS ?startOp ) .  
 

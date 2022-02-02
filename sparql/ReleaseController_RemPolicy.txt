@@ -4,6 +4,7 @@ PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX cs: <http://www.ontoeng.com/controlSystem#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
 
 DELETE{
 	GRAPH ?g {
@@ -28,5 +29,7 @@ WHERE {
 	GRAPH ?g {
 		?condTrIdleRel osph:hasConditionExpression ?condexpr .
 	}
- 	?machine osph:hasStateMachine/fsm:contains/fsm:GuardEvent ?eventType .
+ 	?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
+	{?eventType rdf:type factory:MachineToolStartOperationType .}
+	UNION {?eventType rdf:type factory:MachineToolStartOperation .}
 }

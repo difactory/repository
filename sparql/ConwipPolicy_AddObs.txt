@@ -62,8 +62,8 @@ WHERE {
 	
 	BIND(IF(bound(?expr),?null ,URI(CONCAT(STR(?conwippol),"_BinExpr")) ) AS ?exprNew ) .  
 	BIND(IF(bound(?lhs), ?null,URI(CONCAT(STR(?conwippol),"_IterBExpr")) ) AS ?lhsNew ) .  
-	BIND(IF(!bound(?machPropOld), URI(CONCAT(STR(?machine),"_wiplev")),?null) AS ?machPropNew ) .
-	BIND(IF(bound(?machine), URI(CONCAT(STR(?machine),"_wiplev_var")),?null) AS ?machVar ) .
-	BIND(IF(!bound(?buffPropOld), URI(CONCAT(STR(?buffer),"_blev")),?null) AS ?buffPropNew ) .
-	BIND(IF(bound(?buffer), URI(CONCAT(STR(?buffer),"_blev_var")),?null) AS ?buffVar ) .  
+	BIND(IF(!bound(?machPropOld), URI(CONCAT(STR(?machine),"_lev")),?null) AS ?machPropNew ) .
+	BIND(IF(bound(?machine), URI(CONCAT(STR(?machine),"_lev_var")),?null) AS ?machVar ) .
+	BIND(IF(!bound(?buffPropOld), URI(CONCAT(STR(?buffer),"_lev")),?null) AS ?buffPropNew ) .
+	BIND(IF(bound(?buffer), URI(CONCAT(STR(?buffer),"_lev_var")),?null) AS ?buffVar ) .  
 }

@@ -34,10 +34,14 @@ WHERE {
 	{
 		?machine osph:hasStateMachine ?stM .
 	}	
-	?stM fsm:contains ?workState .
-	?workState a factory:MachineToolWorkingState .
 	?stM fsm:contains ?idleComp .
 	?idleComp a fsm:Composite .
+	?stM fsm:contains ?workState .
+	{ ?workState a factory:MachineToolWorkingState .}
+	UNION{ ?workState a fsm:Composite . }
+	?trWorkIdle fsm:Source ?workState .
+	?trWorkIdle fsm:Target ?idleComp .
+
 		
 	BIND(IF(!bound(?failClass),?failedstate,?null ) AS ?failedstateNew ) .  
 	BIND(URI(CONCAT(STR(?failedstate),"_trFailedIdle")) AS ?trFailedIdle ) .  

@@ -5,6 +5,12 @@ PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 
+DELETE {
+	GRAPH ?g {
+		?workState_ a factory:MachineToolWorkingState .	
+		?trIdleWork_ fsm:Source ?idleComp_ .		
+	}
+}
 INSERT { 
 	GRAPH ?g { 
 		?stM a owl:NamedIndividual , fsm:StateMachine .
@@ -14,7 +20,9 @@ INSERT {
 		?trInitCompIdle a owl:NamedIndividual , fsm:Transition .
 		?trIdleWork a owl:NamedIndividual , fsm:Transition .
 		?initSt a owl:NamedIndividual , fsm:Initial .
-		?workState a owl:NamedIndividual , factory:MachineToolWorkingState .
+		# ?workState a owl:NamedIndividual , factory:MachineToolWorkingState .
+		?workState a owl:NamedIndividual , fsm:Composite .
+		?workFinal a owl:NamedIndividual , fsm:Final .
 		?idleComp a owl:NamedIndividual , fsm:Composite .
 		?guardTrIdleWork a owl:NamedIndividual , fsm:Guard .
 		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
@@ -24,33 +32,53 @@ INSERT {
 		?starvedSt a owl:NamedIndividual , factory:MachineToolStarvedState .
 		?idleSt a owl:NamedIndividual , factory:MachineToolIdleState .
 		?trInitIdle a owl:NamedIndividual , fsm:Transition .
+		?trStarvedIdle a owl:NamedIndividual , fsm:Transition .
+		?trIdleStarved a owl:NamedIndividual , fsm:Transition .
+		?trBlockedIdle a owl:NamedIndividual , fsm:Transition .
+		?trIdleBlocked a owl:NamedIndividual , fsm:Transition .
 		
-		?stM fsm:contains ?trWorkIdle .
-		?stM fsm:contains ?trInitCompIdle .
-		?stM fsm:contains ?trIdleWork .
-		?stM fsm:contains ?initSt .
-		?stM fsm:contains ?guardTrIdleWork .
-		?stM fsm:contains ?workState .
-		?stM fsm:contains ?idleComp .
-		?stM fsm:contains ?startOp .
+		?stM fsm:contains ?trWorkIdle , 
+			?trInitCompIdle ,
+			?trIdleWork ,
+			?initSt ,
+			?guardTrIdleWork ,
+			?workState ,
+			?idleComp ,
+			?startOp .
 		
 		?trWorkIdle fsm:Source ?workState .
 		?trWorkIdle fsm:Target ?idleComp .
 		?trInitCompIdle fsm:Source ?initSt .
 		?trInitCompIdle fsm:Target ?idleComp .
-		?trIdleWork fsm:Source ?idleComp .
+		?trIdleWork fsm:Source ?idleSt .
 		?trIdleWork fsm:Target ?workState .
 		
 		?trIdleWork fsm:TransitionGuard ?guardTrIdleWork .
 		?guardTrIdleWork fsm:GuardEvent ?startOp .
+		
+		?workState fsm:hasStateMachineElement ?workFinal .
 
-		?idleComp fsm:hasStateMachineElement ?initInIdleComp .
-		?idleComp fsm:hasStateMachineElement ?blockedSt .
-		?idleComp fsm:hasStateMachineElement ?starvedSt .
-		?idleComp fsm:hasStateMachineElement ?idleSt .
-		?idleComp fsm:hasStateMachineElement ?trInitIdle .
+		?idleComp fsm:hasStateMachineElement ?initInIdleComp ,
+			?blockedSt ,
+			?starvedSt ,
+			?idleSt ,
+			?trInitIdle ,
+			?trStarvedIdle ,
+			?trIdleStarved ,
+			?trBlockedIdle ,
+			?trIdleBlocked .
+		
 		?trInitIdle fsm:Source ?initInIdleComp .
 		?trInitIdle fsm:Target ?idleSt .
+		
+		?trStarvedIdle fsm:Source ?starvedSt .
+		?trStarvedIdle fsm:Target ?idleSt .
+		?trIdleStarved fsm:Source ?idleSt .
+		?trIdleStarved fsm:Target ?starvedSt .
+		?trBlockedIdle fsm:Source ?blockedSt .
+		?trBlockedIdle fsm:Target ?idleSt .
+		?trIdleBlocked fsm:Source ?idleSt .
+		?trIdleBlocked fsm:Target ?blockedSt .
 	}
 }
 WHERE {
@@ -71,22 +99,23 @@ WHERE {
 		?initSt_ a fsm:Initial .
 		?stM_ fsm:contains ?guardTrIdleWork_ .
 		?guardTrIdleWork_ a fsm:Guard .
-		?stM_ fsm:contains ?workState_ .
-		?workState_ a factory:MachineToolWorkingState .
 		?stM_ fsm:contains ?idleComp_ .
 		?idleComp_ a fsm:Composite .
 		
-		?trWorkIdle_ fsm:Source ?workState_ .
 		?trWorkIdle_ fsm:Target ?idleComp_ .
 		?trInitCompIdle_ fsm:Source ?initSt_ .
 		?trInitCompIdle_ fsm:Target ?idleComp_ .
-		?trIdleWork_ fsm:Source ?idleComp_ .
-		?trIdleWork_ fsm:Target ?workState_ .
-		
+		{?trIdleWork_ fsm:Source ?idleComp_ .} UNION {?trIdleWork_ fsm:Source ?idleSt_ .}
 		?trIdleWork_ fsm:TransitionGuard ?guardTrIdleWork_ .
 		?guardTrIdleWork_ fsm:GuardEvent ?startOp_ .
 		{?startOp_ a factory:MachineToolStartOperationType .}
 		UNION {?startOp_ a factory:MachineToolStartOperation .}
+		
+		?stM_ fsm:contains ?workState_ .
+		?trWorkIdle_ fsm:Source ?workState_ .
+		?trIdleWork_ fsm:Target ?workState_ .	
+		{ ?workState_ a factory:MachineToolWorkingState . }
+		UNION { ?workState_ a fsm:Composite . }		
 
 		?idleComp_ fsm:hasStateMachineElement ?initInIdleComp_ .
 		?initInIdleComp_ a fsm:Initial .
@@ -106,14 +135,20 @@ WHERE {
 	BIND(IF(bound(?trInitCompIdle_),?trInitCompIdle_ ,URI(CONCAT(STR(?machine),"_trInitCompIdle")) ) AS ?trInitCompIdle ) . 
 	BIND(IF(bound(?initSt_),?initSt_ ,URI(CONCAT(STR(?machine),"_initSt")) ) AS ?initSt ) . 
 	BIND(IF(bound(?guardTrIdleWork_),?guardTrIdleWork_ ,URI(CONCAT(STR(?machine),"_guardTrIdleWork")) ) AS ?guardTrIdleWork ) . 
-	BIND(IF(bound(?workState_),?workState_ ,URI(CONCAT(STR(?machine),"_workState")) ) AS ?workState ) . 
+	BIND(IF(bound(?workState_),?workState_ ,URI(CONCAT(STR(?machine),"_workComp")) ) AS ?workState ) . 
+	BIND(IF(bound(?workFinal_),?workFinal_ ,URI(CONCAT(STR(?machine),"_finished")) ) AS ?workFinal ) . 
 	BIND(IF(bound(?trIdleWork_),?trIdleWork_ ,URI(CONCAT(STR(?machine),"_trIdleWork")) ) AS ?trIdleWork ) . 
 	BIND(IF(bound(?idleComp_),?idleComp_ ,URI(CONCAT(STR(?machine),"_idleComp")) ) AS ?idleComp ) . 
 	BIND(IF(bound(?startOp_),?null ,URI(CONCAT(STR(?machine),"_startOp")) ) AS ?startOp ) . 
 
 	BIND(IF(bound(?initInIdleComp_),?initInIdleComp_ ,URI(CONCAT(STR(?machine),"_initInIdleComp")) ) AS ?initInIdleComp ) . 
-	BIND(IF(bound(?idleSt_),?idleSt_ ,URI(CONCAT(STR(?machine),"_idleSt")) ) AS ?idleSt ) . 
-	BIND(IF(bound(?starvedSt_),?starvedSt_ ,URI(CONCAT(STR(?machine),"_starvedSt")) ) AS ?starvedSt ) . 
-	BIND(IF(bound(?blockedSt_),?blockedSt_ ,URI(CONCAT(STR(?machine),"_blockedSt")) ) AS ?blockedSt ) . 
+	BIND(IF(bound(?idleSt_),?idleSt_ ,URI(CONCAT(STR(?machine),"_idle")) ) AS ?idleSt ) . 
+	BIND(IF(bound(?starvedSt_),?starvedSt_ ,URI(CONCAT(STR(?machine),"_starved")) ) AS ?starvedSt ) . 
+	BIND(IF(bound(?blockedSt_),?blockedSt_ ,URI(CONCAT(STR(?machine),"_blocked")) ) AS ?blockedSt ) . 
 	BIND(IF(bound(?trInitIdle_),?trInitIdle_ ,URI(CONCAT(STR(?machine),"_trInitIdle")) ) AS ?trInitIdle ) . 
+	BIND(IF(bound(?trIdleBlocked_),?trIdleBlocked_ ,URI(CONCAT(STR(?machine),"_trIdleBlocked")) ) AS ?trIdleBlocked ) . 
+	BIND(IF(bound(?trBlockedIdle_),?trBlockedIdle_ ,URI(CONCAT(STR(?machine),"_trBlockedIdle")) ) AS ?trBlockedIdle ) . 
+	BIND(IF(bound(?trIdleStarved_),?trIdleStarved_ ,URI(CONCAT(STR(?machine),"_trIdleStarved")) ) AS ?trIdleStarved ) . 
+	BIND(IF(bound(?trStarvedIdle_),?trStarvedIdle_ ,URI(CONCAT(STR(?machine),"_trStarvedIdle")) ) AS ?trStarvedIdle ) . 
+
 }

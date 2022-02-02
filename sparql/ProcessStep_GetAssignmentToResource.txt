@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+select distinct  ?pstep ?elem
+
+WHERE{
+
+  # get pstep
+  ?pstepclass rdfs:subClassOf* ifc:IfcTask .   
+  ?pstep rdf:type ?pstepclass .
+  FILTER ( ?pstepclass != owl:NamedIndividual ) .
+
+  ?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+  ?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+  #?restype ifcext:typesObject|^ifcext:isDefinedByType ?res .  
+  ?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?elem .
+  ?elem rdf:type ?elemClass .
+  ?elemClass rdfs:subClassOf* ifc:IfcElement .
+  
+}
+
+

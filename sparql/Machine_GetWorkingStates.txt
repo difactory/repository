@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+SELECT Distinct ?machine ?statemach ?state
+WHERE {
+	?machine osph:hasStateMachine ?statemach .
+	?statemach rdf:type fsm:StateMachine .
+
+	?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
+	{?state a factory:MachineToolWorkingState .}
+	UNION 
+	{
+		?state fsm:contains|fsm:hasStateMachineElement ?child .
+		?child a factory:MachineToolWorkingState .
+	}
+	UNION
+	{
+		?state fsm:hasStateMachineElement ?finalSt .
+		?finalSt a fsm:Final .
+	}
+	#UNION{
+	#	?trWorkIdle fsm:Source ?state .	
+	#	?trWorkIdle fsm:Target ?idleComp .	
+	#	?idleComp fsm:hasStateMachineElement ?idleSt .
+	#	?idleSt a factory:MachineToolIdleState .
+	#}
+}

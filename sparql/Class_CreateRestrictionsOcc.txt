@@ -1,0 +1,35 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+
+INSERT {
+	GRAPH <http://www.ontoeng.com/factory> {
+    	?occClass rdfs:subClassOf
+          [ a owl:Restriction ;
+            owl:onProperty ifcext:declaresObject ;
+            owl:allValuesFrom ?occClass
+          ] ,
+          [ a owl:Restriction ;
+            owl:onProperty ifcext:isDefinedByObject ;
+            owl:allValuesFrom ?occClass
+          ] .
+	}
+}
+#SELECT ?occClass
+#FROM <http://ifcowl.openbimstandards.org/IFC4_ADD1>
+#FROM <http://www.ontoeng.com/factory>
+#FROM NAMED <http://www.ontoeng.com/factory>
+USING <http://ifcowl.openbimstandards.org/IFC4_ADD1>
+USING <http://www.ontoeng.com/factory>
+USING NAMED <http://www.ontoeng.com/factory>
+
+WHERE { 
+  ?occClass rdfs:subClassOf* ifc:IfcProduct .
+  FILTER ( ?occClass != owl:NamedIndividual ) . 
+  GRAPH <http://www.ontoeng.com/factory> {
+    ?occClass a owl:Class .
+  }
+}  

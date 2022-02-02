@@ -42,5 +42,5 @@ WHERE {
 		}
 	}
 	BIND(IF(bound(?guard),?null ,URI(CONCAT(STR(?failedstate),"_guardTrWorkFailed")) ) AS ?guardNew ) .  
-	BIND(IF(bound(?guardevent),?null ,URI(CONCAT(STR(?failedstate),"_failureEvent")) ) AS ?guardeventNew ) .  
+	BIND(IF(bound(?guardevent),?null ,URI(CONCAT(STR(?failedstate),"_ev")) ) AS ?guardeventNew ) .  
 }

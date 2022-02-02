@@ -57,6 +57,6 @@ WHERE {
 		}
 	}
 
-	BIND(IF(bound(?mainttask),?null ,URI(CONCAT(STR(?failedstate),"_repairTask")) ) AS ?mainttaskNew ) .  
+	BIND(IF(bound(?mainttask),?null ,URI(CONCAT(STR(?failedstate),"_repair")) ) AS ?mainttaskNew ) .  
 	BIND(IF(bound(?mainttasktime),?null ,URI(CONCAT(STR(?failedstate),"_repairTask_time")) ) AS ?mainttasktimeNew ) .  
 }

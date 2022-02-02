@@ -1,0 +1,29 @@
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+
+DELETE  { 
+	GRAPH ?g1 {?s1 ?p1 ?uriChild .}  
+	GRAPH ?g2 {?uriChild ?p2 ?o2 .}
+} 
+
+INSERT { 
+	GRAPH ?g1 {?s1 ?p1 ?newUriChild .}  
+	GRAPH ?g2 {?newUriChild ?p2 ?o2 .}
+} 
+
+WHERE { 
+
+	# Get all children
+  	GRAPH ?h{
+      {?oldUri (ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?uriChild .}
+      UNION{?oldUri (ifcext:isNestedByObject|^ifcext:nestsObject)* ?uriChild. }
+	}
+	
+	{GRAPH ?g1 {?s1 ?p1 ?uriChild .}}
+	UNION 
+	{GRAPH ?g2 {?uriChild ?p2 ?o2 .}}
+	
+
+
+	BIND(URI(REPLACE(STR(?uriChild), CONCAT("#",STRAFTER(STR(?oldUri),"#")), CONCAT("#",?newLocalUri) )) AS ?newUriChild).
+
+} 

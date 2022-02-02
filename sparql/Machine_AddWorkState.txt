@@ -9,11 +9,6 @@ PREFIX osph: <http://www.ontoeng.com/osph#>
 DELETE{
 }
 INSERT { 
-	GRAPH ?graph { 
-		?pstep ifcext:hasAssignedObject ?resNew .
-		?resNew a owl:NamedIndividual , factory:ProductionResource .
-		?resNew ifcext:hasAssignedObject ?elem .
-	}
 	GRAPH ?h { 
 		?newWorkState a owl:NamedIndividual , factory:MachineToolWorkingState .
 		?trIdleWork a owl:NamedIndividual , fsm:Transition .
@@ -40,28 +35,33 @@ INSERT {
 WHERE {
 
 	# State machine of elem
+	?itsClass rdfs:subClassOf* factory:MachineTool .
+	GRAPH ?h { ?elem rdf:type ?itsClass . }
+	?elem osph:hasStateMachine ?stM .	
+	
+	?stM fsm:contains ?workState , ?idleComp, ?trWorkIdle .
+	?idleComp a fsm:Composite .
+	?workState a fsm:Composite . 			
+	?trWorkIdle a fsm:Transition .
+	?trWorkIdle fsm:Source ?workState .
+	?trWorkIdle fsm:Target ?idleComp .	
 	OPTIONAL{
-		?itsClass rdfs:subClassOf* factory:MachineTool .
-		GRAPH ?h { ?elem rdf:type ?itsClass . }
-		?elem osph:hasStateMachine ?stM .	
-		
-		?stM fsm:contains ?workState , ?idleComp, ?trWorkIdle .
-		?idleComp a fsm:Composite .
-		?workState a fsm:Composite . 			
-		?trWorkIdle a fsm:Transition .
-		?trWorkIdle fsm:Source ?workState .
-		?trWorkIdle fsm:Target ?idleComp .	
-		OPTIONAL{
-			?workState fsm:hasStateMachineElement ?finalSt .
-			?finalSt a fsm:Final .
-		}
-
-		?idleComp fsm:hasStateMachineElement ?idleSt .
-		?idleSt a factory:MachineToolIdleState .
+		?workState fsm:hasStateMachineElement ?finalSt .
+		?finalSt a fsm:Final .
 	}
+
+	?idleComp fsm:hasStateMachineElement ?idleSt .
+	?idleSt a factory:MachineToolIdleState .
+
 	?pstep a ?pstepClass .
 	FILTER ( ?pstepClass != owl:NamedIndividual ) .
 
-	BIND(URI(CONCAT(STR(?pstep),"_res")) AS ?resNew ) .  	
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_",STRAFTER(STR(?pstep),"#"))),?null) AS ?newWorkState ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_do_",STRAFTER(STR(?pstep),"#"))),?null) AS ?doPStep ) . 
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_start_",STRAFTER(STR(?pstep),"#"))),?null) AS ?startOp ) . 
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_trIdleWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trIdleWork ) . 
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_guardIdleWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?guardTrIdleWork ) . 
+	BIND(IF(bound(?finalSt), URI(CONCAT(STR(?elem),"_trFinalWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trWorkFinal ) . 
+	
 
 }
