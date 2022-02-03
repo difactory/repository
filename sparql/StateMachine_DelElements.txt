@@ -1,0 +1,86 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX list: <https://w3id.org/list#> 
+
+DELETE{
+	GRAPH ?g5{?statemach ?b5 ?c5 . } 
+	GRAPH ?g6{?statemachelem1 ?b6 ?c6 . } 
+	GRAPH ?g7{?a7 ?b7 ?statemachelem1 . } 
+	
+	GRAPH ?g47{?guard ?b47 ?c47 . } 
+	GRAPH ?g48{?guardevent ?b48 ?c48 . } 
+	GRAPH ?g49{?ttfvalue ?b49 ?c49 . } 
+	GRAPH ?g50{?ttfpdistr ?b50 ?c50 . }
+	GRAPH ?g55{?task ?b55 ?c55 . }
+	GRAPH ?g51{?tasktime ?b51 ?c51 . }
+	GRAPH ?g52{?duration ?b52 ?c52 . }
+	GRAPH ?g53{?stochdur ?b53 ?c53 . }
+	GRAPH ?g54{?timestoch ?b54 ?c54 . }
+	
+	GRAPH ?g12{?region ?b12 ?c12 . } 
+	GRAPH ?g13{?a13 ?b13 ?region . } 
+	GRAPH ?g14{?stmelem3 ?b14 ?c14 . } 
+	GRAPH ?g15{?a15 ?b15 ?stmelem3 . } 
+}
+WHERE { 
+	
+	?statemach a fsm:StateMachine.
+	?statemach fsm:contains/fsm:hasStateMachineElement* ?statemachelem1 .
+	{	
+		{ GRAPH ?g6{?statemachelem1 ?b6 ?c6 . } }
+		UNION { GRAPH ?g7{?a7 ?b7 ?statemachelem1 . } }
+		UNION {
+			?statemachelem1 fsm:TransitionGuard ?guard .
+			?guard fsm:GuardEvent ?guardevent .
+			{ GRAPH ?g47{ ?guard ?b47 ?c47 .} }
+			UNION { GRAPH ?g48{ ?guardevent ?b48 ?c48 .} }
+			UNION{
+				?guardevent ifcext:hasTimeToHappen ?ttfvalue .
+				{GRAPH ?g49{?ttfvalue ?b49 ?c49 .} }
+				UNION {
+					?ttfvalue osph:isQuantitySampledFrom ?ttfpdistr.
+					GRAPH ?g50{?ttfpdistr ?b50 ?c50 . }
+				}
+			}
+		}
+		UNION {	
+			?statemachelem1 osph:do ?task .
+			{GRAPH ?g55{?task ?b55 ?c55 .}}
+			UNION{
+				?task ifc:taskTime_IfcTask ?tasktime . 
+				{GRAPH ?g51{?tasktime ?b51 ?c51 .}}
+				UNION {
+					?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .
+					GRAPH ?g52{?duration ?b52 ?c52 . }
+				}
+				UNION{
+					?tasktime ifcext:hasStochasticDuration ?stochdur .
+					{GRAPH ?g53{?stochdur ?b53 ?c53 .}}
+					UNION{
+						?stochdur osph:isQuantitySampledFrom ?timestoch .
+						GRAPH ?g54 {?timestoch ?b54 ?c54 .} 
+					}
+				}	
+			}
+		}	
+	}
+	# controller
+	UNION{
+		?statemachelem1 fsm:GuardEvent/(ifcext:typesObject|ifcext:declaresObject) ?startOp .
+		?region fsm:hasStateMachineElement/fsm:Entry/osph:generatesEvent ?startOp .
+		?region fsm:hasStateMachineElement ?statemachelem3 .
+		{ GRAPH ?g12{?region ?b12 ?c12 . } }
+		UNION { GRAPH ?g13{?a13 ?b13 ?region . } } 
+		UNION { GRAPH ?g14{?statemachelem3 ?b14 ?c14 . } }
+		UNION { GRAPH ?g15{?a15 ?b15 ?statemachelem3 . } }
+	}
+
+}
