@@ -1,0 +1,100 @@
+{
+    "cameras": [
+        {
+            "id": "camera.d1",
+            "type": "FlyCamera",
+            "position": [
+                -6528.775072313881,
+                3546.6687703548023,
+                611.1496156178619
+            ],
+            "rotation": [
+                0.47409249452923885,
+                1.534649508434072,
+                0.0004419759650818447
+            ],
+            "speed": 256
+        },
+        {
+            "id": "camera.d2",
+            "type": "FreeCamera",
+            "position": [
+                39,
+                70,
+                438
+            ],
+            "rotation": [
+                1.4922565104551517,
+                -1.1132976022761496,
+                0
+            ],
+            "speed": 1
+        },
+        {
+            "id": "camera.d3",
+            "type": "WebVRFreeCamera",
+            "position": [
+                39,
+                70,
+                438
+            ],
+            "rotation": [
+                1.4922565104551517,
+                -1.1132976022761496,
+                0
+            ],
+            "speed": 1
+        }
+    ],
+    "lights":[
+        {
+            "id": "light.0",
+            "type": "HemisphericLight",
+            "direction": [ 1, 0.3, 0.1 ],
+            "intensity": 0.2
+        },
+        {
+            "id": "light.1",
+            "type": "PointLight",
+            "position": [
+                0,150,500
+            ],
+            "intensity": 2
+        },
+        {
+            "id": "light.2",
+            "type": "PointLight",
+            "position": [
+                0,150,-1500
+            ],
+            "intensity": 2
+        }
+    ],
+    "shadows": {
+        "darkness": 0.3,
+        "bias": 0.001,
+        "environmentIntensity": 0.3
+    },
+    "datagen": {
+        "cam": {
+            "alphaMin": 0,
+            "alphaMax": 360,
+            "alphaStep": 60,
+            "betaMin": 0,
+            "betaMax": 70,
+            "betaStep": 35,
+            "radiusFactorMin": 1.7,
+            "radiusFactorMax": 2.7,
+            "radiusFactorStep": 1
+        }
+    },
+    "env": {
+        "skyboxTexture": "textures/studio.env",
+        "backgroundColor": [
+            0.2,
+            0.2,
+            0.3
+        ],
+        "groundTexture": ""
+    }
+}

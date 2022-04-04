@@ -1,0 +1,898 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": "repository/models/ProdCell/"
+    },
+    "scene": [
+        "building",
+        "Robot_Arm",
+        "RA_Static",
+        "RA_Base",
+        "RA_J1",
+        "RA_J2",
+        "RA_J3",
+        "RA_J4",
+        "RA_J5",
+        "RA_EndEffector",
+        "RA_Gripper1",
+        "RA_Gripper2",
+        "RA_Gripper3",
+        "RA_Workholding1",
+        "RA_Workholding2",
+        "RA_Workholding3",
+        "Pallet_Table",
+        "Changeover_Jig_Cleaning",
+        "Changeover_Jig",
+        "Dust_Cleaning_Machine",
+        "Changeover_Jig_Buffer",
+        "Dust_Cleaning_Machine_Buffer",
+        "Lathe_Machine1",
+        "Lathe_Machine1_Static",
+        "Lathe_Machine1_Rotating",
+        "Lathe_Machine1_Workholding",
+        "Chips_Cleaning_Machine",
+        "Chips_Cleaning_Workholding",
+        "Poka_Yoka",
+        "Poka_Yoka_Workholding",
+        "MeasurementTable",
+        "MeasurementTable_Buffer",
+        "Lathe_Machine2",
+        "Lathe_Machine2_Static",
+        "Lathe_Machine2_Rotating",
+        "Lathe_Machine2_Workholding",
+        "shaft.1",
+        "shaft.2",
+        "shaft.3",
+        "shaft.4",
+        "shaft.5",
+        "shaft.6",
+        "shaft.7",
+        "shaft.8"
+    ],
+    "assets": [
+        {
+            "id": "building",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "representations": [
+                {
+                    "file": "Warehouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "Manufacturing Cell",
+            "assignmentTo": [
+                "productionPlan"
+            ]
+        },
+        {
+            "id": "productionPlan",
+            "type": "http://www.ontoeng.com/factory#ProductionPlan"
+        },
+        {
+            "id": "productionSchedule",
+            "type": "http://www.ontoeng.com/factory#ProductionSchedule",
+            "parentObject": "productionPlan"
+        },
+        {
+            "id": "Robot_Arm",
+            "descr": "Robot Arm",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "model": "M710iC-50",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -2600,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "RA_Static",
+            "descr": "Robot Arm Base for elevation",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_Static",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Robot_Arm",
+            "parentObject": "Robot_Arm"
+        },
+        {
+            "id": "RA_Base",
+            "descr": "Robot Arm Base",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_Base",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -38.5,
+                400,
+                1
+            ],
+            "placementRelTo": "RA_Static",
+            "parentObject": "RA_Static"
+        },
+        {
+            "id": "RA_J1",
+            "descr": "Robot Arm Joint 1",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_J1",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                42.5,
+                266,
+                -1
+            ],
+            "placementRelTo": "RA_Base",
+            "parentObject": "RA_Base"
+        },
+        {
+            "id": "RA_J2",
+            "descr": "Robot Arm Joint 2",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_J2",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                120.1,
+                299,
+                151.1
+            ],
+            "placementRelTo": "RA_J1",
+            "parentObject": "RA_J1"
+        },
+        {
+            "id": "RA_J3",
+            "descr": "Robot Arm Joint 3",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_J3",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                15.6,
+                867.155,
+                -70.1
+            ],
+            "placementRelTo": "RA_J2",
+            "parentObject": "RA_J2"
+        },
+        {
+            "id": "RA_J4",
+            "descr": "Robot Arm Joint 4",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_J4",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -139,
+                170.96,
+                288.72
+            ],
+            "placementRelTo": "RA_J3",
+            "parentObject": "RA_J3"
+        },
+        {
+            "id": "RA_J5",
+            "descr": "Robot Arm Joint 5",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_J5",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -59.5,
+                1.95,
+                728.51
+            ],
+            "placementRelTo": "RA_J4",
+            "parentObject": "RA_J4"
+        },
+        {
+            "id": "RA_EndEffector",
+            "descr": "Robot Arm End Effector",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_EndEffector",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                51.24,
+                0.74,
+                170.94
+            ],
+            "placementRelTo": "RA_J5",
+            "parentObject": "RA_J5"
+        },
+        {
+            "id": "RA_Gripper1",
+            "descr": "Robot Arm Gripper 1",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_Gripper1",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -10.95,
+                30.57,
+                106.09
+            ],
+            "placementRelTo": "RA_EndEffector",
+            "parentObject": "RA_EndEffector"
+        },
+        {
+            "id": "RA_Gripper2",
+            "descr": "Robot Arm Gripper 2",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_Gripper2",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -40.7,
+                2,
+                165
+            ],
+            "placementRelTo": "RA_EndEffector",
+            "parentObject": "RA_EndEffector"
+        },
+        {
+            "id": "RA_Gripper3",
+            "descr": "Robot Arm Gripper 3",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Robot_Arm.glb#RA_Gripper3",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                66.65,
+                -24.39,
+                185.36
+            ],
+            "placementRelTo": "RA_EndEffector",
+            "parentObject": "RA_EndEffector"
+        },
+        {
+            "id": "RA_Workholding1",
+            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "position": [
+                10,
+                105,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "RA_Gripper1",
+            "parentObject": "RA_Gripper1"
+        },
+        {
+            "id": "RA_Workholding2",
+            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "position": [
+                -100,
+                10,
+                90
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "RA_Gripper2",
+            "parentObject": "RA_Gripper2"
+        },
+        {
+            "id": "RA_Workholding3",
+            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "position": [
+                68,
+                35,
+                71
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "RA_Gripper3",
+            "parentObject": "RA_Gripper3"
+        },
+        {
+            "id": "Pallet_Table",
+            "descr": "Pallet Table",
+            "type": "http://www.ontoeng.com/factory#BufferElement",
+            "representations": [
+                {
+                    "file": "Pallet_Table.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -90,
+                0,
+                -380
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "Changeover_Jig_Cleaning",
+            "descr": "Dust Cleaning Machine and Changeover jig for robot arm",
+            "type": "http://www.ontoeng.com/factory#MachineToolType",
+            "representations": [
+                {
+                    "file": "Changeover_Jig_Cleaning.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -1360,
+                0,
+                672.5
+            ],
+            "rotation": [
+                0,
+                3.14159265358979,
+                0
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "Changeover_Jig",
+            "descr": "Changeover jig",
+            "type": "http://www.ontoeng.com/factory#BufferElement",
+            "representations": [
+                {
+                    "file": "Changeover_Jig_Cleaning.glb#Changeover_Jig",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Changeover_Jig_Cleaning",
+            "parentObject": "Changeover_Jig_Cleaning"
+        },
+        {
+            "id": "Dust_Cleaning_Machine",
+            "descr": "Dust Cleaning ",
+            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Changeover_Jig_Cleaning.glb#Dust_Cleaning",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Changeover_Jig_Cleaning",
+            "parentObject": "Changeover_Jig_Cleaning"
+        },
+        {
+            "id": "Changeover_Jig_Buffer",
+            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "position": [
+                143,
+                132.96,
+                1639.46
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Changeover_Jig",
+            "parentObject": "Changeover_Jig"
+        },
+        {
+            "id": "Dust_Cleaning_Machine_Buffer",
+            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "position": [
+                -370,
+                0,
+                440
+            ],
+            "rotation": [
+                0,
+                0,
+                3.14159265358979
+            ],
+            "placementRelTo": "Dust_Cleaning_Machine",
+            "parentObject": "Dust_Cleaning_Machine"
+        },
+        {
+            "id": "Lathe_Machine1",
+            "descr": "Lathe Machine",
+            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "model": "Genos L3000e ",
+            "position": [
+                -977.3,
+                0,
+                3582.4
+            ],
+            "rotation": [
+                0,
+                3.14159265358979,
+                0
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "Lathe_Machine1_Static",
+            "descr": "Lathe Machine 1 frame ",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "LatheFrame.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine1",
+            "parentObject": "Lathe_Machine1"
+        },
+        {
+            "id": "Lathe_Machine1_Rotating",
+            "descr": "Lathe Machine 1 turning tool",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "LatheToolOP1.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                542.978,
+                1110.3,
+                1412.399
+            ],
+            "placementRelTo": "Lathe_Machine1_Static",
+            "parentObject": "Lathe_Machine1_Static"
+        },
+        {
+            "id": "Lathe_Machine1_Workholding",
+            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "position": [
+                425,
+                0,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine1_Rotating",
+            "parentObject": "Lathe_Machine1_Rotating"
+        },
+        {
+            "id": "Chips_Cleaning_Machine",
+            "descr": "Chips Cleaning Machine",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Chips_Cleaning_Machine.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -1320,
+                0,
+                1080
+            ],
+            "rotation": [
+                0,
+                -0.523598775598299,
+                0
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "Chips_Cleaning_Workholding",
+            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "position": [
+                200,
+                1369.789,
+                200
+            ],
+            "rotation": [
+                0,
+                0,
+                1.5707963267949
+            ],
+            "placementRelTo": "Chips_Cleaning_Machine",
+            "parentObject": "Chips_Cleaning_Machine"
+        },
+        {
+            "id": "Poka_Yoka",
+            "descr": "Poka Yoka ",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Poke_Yoka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                100,
+                1578.323,
+                72.1
+            ],
+            "rotation": [
+                -1.5707963267949,
+                3.14159265358979,
+                0
+            ],
+            "placementRelTo": "Chips_Cleaning_Machine",
+            "parentObject": "Chips_Cleaning_Machine"
+        },
+        {
+            "id": "Poka_Yoka_Workholding",
+            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "position": [
+                0,
+                160.4,
+                67.931
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "Poka_Yoka",
+            "parentObject": "Poka_Yoka"
+        },
+        {
+            "id": "MeasurementTable",
+            "descr": "MeasurementTable",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Measurement_Table.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -3700,
+                0,
+                -670
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "MeasurementTable_Buffer",
+            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "position": [
+                412.9,
+                1096.8,
+                -691
+            ],
+            "placementRelTo": "MeasurementTable",
+            "parentObject": "MeasurementTable"
+        },
+        {
+            "id": "Lathe_Machine2",
+            "descr": "Lathe Machine",
+            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "model": "Genos L3000e ",
+            "position": [
+                -2800,
+                0,
+                -3472.4
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "assignmentTo": [
+                "Manufacturing Cell"
+            ]
+        },
+        {
+            "id": "Lathe_Machine2_Static",
+            "descr": "Lathe Machine 2 frame ",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "LatheFrame.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine2",
+            "parentObject": "Lathe_Machine2"
+        },
+        {
+            "id": "Lathe_Machine2_Rotating",
+            "descr": "Lathe Machine 2 turning tool ",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "LatheToolOP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                538.919,
+                1110.3,
+                1412.399
+            ],
+            "placementRelTo": "Lathe_Machine2_Static",
+            "parentObject": "Lathe_Machine2_Static"
+        },
+        {
+            "id": "Lathe_Machine2_Workholding",
+            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "position": [
+                234.156,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                3.14159265358979,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine2_Rotating",
+            "parentObject": "Lathe_Machine2_Rotating"
+        },
+        {
+            "id": "shaft.1",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Changeover_Jig_Buffer"
+        },
+        {
+            "id": "shaft.2",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine1_Workholding"
+        },
+        {
+            "id": "shaft.3",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Chips_Cleaning_Workholding"
+        },
+        {
+            "id": "shaft.4",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Poka_Yoka_Workholding"
+        },
+        {
+            "id": "shaft.5",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Lathe_Machine2_Workholding"
+        },
+        {
+            "id": "shaft.6",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "RA_Workholding1"
+        },
+        {
+            "id": "shaft.7",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "RA_Workholding2"
+        },
+        {
+            "id": "shaft.8",
+            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "OP2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "RA_Workholding3"
+        }
+    ]
+}
