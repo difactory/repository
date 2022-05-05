@@ -68,6 +68,7 @@
         },
         {
             "id": "ManufacturingCell",
+            "type": "http://www.ontoeng.com/factory#ManufacturingSystem",
             "assignmentTo": [
                 "productionPlan"
             ]
@@ -381,7 +382,7 @@
         {
             "id": "Changeover_Jig_Cleaning",
             "descr": "Dust Cleaning Machine and Changeover jig for robot arm",
-            "type": "http://www.ontoeng.com/factory#MachineToolType",
+            "type": "http://www.ontoeng.com/factory#MachineTool",
             "representations": [
                 {
                     "file": "Changeover_Jig_Cleaning.glb",
@@ -728,7 +729,7 @@
         },
         {
             "id": "shaft.1",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -749,7 +750,7 @@
         },
         {
             "id": "shaft.2",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -770,7 +771,7 @@
         },
         {
             "id": "shaft.3",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -791,7 +792,7 @@
         },
         {
             "id": "shaft.4",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -812,7 +813,7 @@
         },
         {
             "id": "shaft.5",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -833,7 +834,7 @@
         },
         {
             "id": "shaft.6",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -854,7 +855,7 @@
         },
         {
             "id": "shaft.7",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -875,7 +876,7 @@
         },
         {
             "id": "shaft.8",
-            "type": "http://www.ontoeng.com/factory#ArtifactType",
+            "type": "http://www.ontoeng.com/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
