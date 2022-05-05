@@ -2,7 +2,7 @@
     "context": {
         "UnitOfMeasureScale": 0.001,
         "Zup": false,
-        "RepoPath": "repository/models/ProdCell/"
+        "RepoPath": ""
     },
     "scene": [
         "building",
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "id": "Manufacturing Cell",
+            "id": "ManufacturingCell",
             "assignmentTo": [
                 "productionPlan"
             ]
@@ -104,7 +104,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -375,7 +375,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -400,7 +400,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -493,7 +493,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -565,7 +565,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -640,7 +640,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
@@ -671,7 +671,7 @@
             ],
             "placementRelTo": "building",
             "assignmentTo": [
-                "Manufacturing Cell"
+                "ManufacturingCell"
             ]
         },
         {
