@@ -1,0 +1,273 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "building",
+        "RS",
+        "UR",
+        "UR_base",
+        "UR_joint1",
+        "UR_joint2",
+        "UR_joint3",
+        "UR_joint4",
+        "UR_joint5",
+        "UR_joint6",
+        "UR_EndEffector",
+        "UR_Gripper1",
+        "UR_Gripper2"
+    ],
+    "assets": [
+        {
+            "id": "building",
+            "descr": "Building",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "RS",
+            "descr": "Robotic station",
+            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                20,
+                0,
+                360
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "building"
+        },
+        {
+            "id": "UR",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URPPs_Robot",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -33,
+                0,
+                0.1
+            ],
+            "placementRelTo": "RS",
+            "parentObject": "RS"
+        },
+        {
+            "id": "UR_base",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URbase",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "UR",
+            "parentObject": "UR"
+        },
+        {
+            "id": "UR_joint1",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint1",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                8.605,
+                0
+            ],
+            "rotation": [
+                0,
+                0.805,
+                0
+            ],
+            "placementRelTo": "UR_base",
+            "parentObject": "UR_base"
+        },
+        {
+            "id": "UR_joint2",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint2",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                6.585,
+                5.4
+            ],
+            "rotation": [
+                0,
+                0,
+                -0.5
+            ],
+            "placementRelTo": "UR_joint1",
+            "parentObject": "UR_joint1"
+        },
+        {
+            "id": "UR_joint3",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint3",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                24.365,
+                2.36
+            ],
+            "rotation": [
+                0,
+                0,
+                2.045
+            ],
+            "placementRelTo": "UR_joint2",
+            "parentObject": "UR_joint2"
+        },
+        {
+            "id": "UR_joint4",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint4",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                21.3,
+                0.8
+            ],
+            "rotation": [
+                0,
+                0,
+                1.44
+            ],
+            "placementRelTo": "UR_joint3",
+            "parentObject": "UR_joint3"
+        },
+        {
+            "id": "UR_joint5",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint5",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                4.26,
+                4.08
+            ],
+            "rotation": [
+                0,
+                0.86,
+                0
+            ],
+            "placementRelTo": "UR_joint4",
+            "parentObject": "UR_joint4"
+        },
+        {
+            "id": "UR_joint6",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URjoint6",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                4.08,
+                4.26
+            ],
+            "rotation": [
+                0,
+                0,
+                1.511
+            ],
+            "placementRelTo": "UR_joint5",
+            "parentObject": "UR_joint5"
+        },
+        {
+            "id": "UR_EndEffector",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#UREndEffector",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                3.8
+            ],
+            "placementRelTo": "UR_joint6",
+            "parentObject": "UR_joint6"
+        },
+        {
+            "id": "UR_Gripper1",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URgripper1",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                -1.27,
+                3.5
+            ],
+            "placementRelTo": "UR_EndEffector",
+            "parentObject": "UR_EndEffector"
+        },
+        {
+            "id": "UR_Gripper2",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "UR_Pick_and_Place_Station.glb#URgripper2",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                1.43,
+                3.5
+            ],
+            "placementRelTo": "UR_EndEffector",
+            "parentObject": "UR_EndEffector"
+        }
+    ]
+}
