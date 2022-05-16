@@ -17,12 +17,7 @@
                         "position": [ 0, 23, 0 ],
                         "placementRelTo": "http://www.ontoeng.com/CW1#M1"
                     }
-                }
-            ]
-        },
-        {
-            "id": "http://www.ontoeng.com/CW1#Pallet",
-            "actions": [
+                },
                 {
                     "trigger": {
                         "type": "timestamp",
