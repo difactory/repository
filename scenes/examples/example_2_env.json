@@ -57,5 +57,27 @@
       "darkness": 0.7,
       "bias": 0.001,
       "environmentIntensity": 0.2
+  },
+  "datagen": {
+      "cam": {
+          "alphaMin": 0,
+          "alphaMax": 360,
+          "alphaStep": 60,
+          "betaMin": 0,
+          "betaMax": 70,
+          "betaStep": 35,
+          "radiusFactorMin": 1.7,
+          "radiusFactorMax": 2.7,
+          "radiusFactorStep": 1
+      }
+  },
+  "env": {
+      "skyboxTexture": "textures/studio.env",
+      "backgroundColor": [
+          0.2,
+          0.3,
+          0.5
+      ],
+      "groundTexture": "textures/concrete.jpg"
   }
 }
