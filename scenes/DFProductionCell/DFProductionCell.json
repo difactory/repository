@@ -6,21 +6,21 @@
     },
     "scene": [
         "building",
-        "Robot_Arm",
-        "RA_Static",
-        "RA_Base",
-        "RA_J1",
-        "RA_J2",
-        "RA_J3",
-        "RA_J4",
-        "RA_J5",
-        "RA_EndEffector",
-        "RA_Gripper1",
-        "RA_Gripper2",
-        "RA_Gripper3",
-        "RA_Workholding1",
-        "RA_Workholding2",
-        "RA_Workholding3",
+        "robot",
+        "robot.RA_Static",
+        "robot.RA_Base",
+        "robot.RA_J1",
+        "robot.RA_J2",
+        "robot.RA_J3",
+        "robot.RA_J4",
+        "robot.RA_J5",
+        "robot.RA_EndEffector",
+        "robot.RA_Gripper1",
+        "robot.RA_Gripper2",
+        "robot.RA_Gripper3",
+        "robot.RA_Workholding1",
+        "robot.RA_Workholding2",
+        "robot.RA_Workholding3",
         "Pallet_Table",
         "Changeover_Jig_Cleaning",
         "Changeover_Jig",
@@ -83,7 +83,7 @@
             "parentObject": "productionPlan"
         },
         {
-            "id": "Robot_Arm",
+            "id": "robot",
             "descr": "Robot Arm",
             "type": "http://www.ontoeng.com/factory#Robot",
             "model": "M710iC-50",
@@ -109,7 +109,7 @@
             ]
         },
         {
-            "id": "RA_Static",
+            "id": "robot.RA_Static",
             "descr": "Robot Arm Base for elevation",
             "type": "http://www.ontoeng.com/factory#Robot",
             "representations": [
@@ -128,11 +128,11 @@
                 0,
                 0
             ],
-            "placementRelTo": "Robot_Arm",
-            "parentObject": "Robot_Arm"
+            "placementRelTo": "robot",
+            "parentObject": "robot"
         },
         {
-            "id": "RA_Base",
+            "id": "robot.RA_Base",
             "descr": "Robot Arm Base",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -146,11 +146,11 @@
                 400,
                 1
             ],
-            "placementRelTo": "RA_Static",
-            "parentObject": "RA_Static"
+            "placementRelTo": "robot.RA_Static",
+            "parentObject": "robot.RA_Static"
         },
         {
-            "id": "RA_J1",
+            "id": "robot.RA_J1",
             "descr": "Robot Arm Joint 1",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -164,11 +164,11 @@
                 266,
                 -1
             ],
-            "placementRelTo": "RA_Base",
-            "parentObject": "RA_Base"
+            "placementRelTo": "robot.RA_Base",
+            "parentObject": "robot.RA_Base"
         },
         {
-            "id": "RA_J2",
+            "id": "robot.RA_J2",
             "descr": "Robot Arm Joint 2",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -182,11 +182,11 @@
                 299,
                 151.1
             ],
-            "placementRelTo": "RA_J1",
-            "parentObject": "RA_J1"
+            "placementRelTo": "robot.RA_J1",
+            "parentObject": "robot.RA_J1"
         },
         {
-            "id": "RA_J3",
+            "id": "robot.RA_J3",
             "descr": "Robot Arm Joint 3",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -200,11 +200,11 @@
                 867.155,
                 -70.1
             ],
-            "placementRelTo": "RA_J2",
-            "parentObject": "RA_J2"
+            "placementRelTo": "robot.RA_J2",
+            "parentObject": "robot.RA_J2"
         },
         {
-            "id": "RA_J4",
+            "id": "robot.RA_J4",
             "descr": "Robot Arm Joint 4",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -218,11 +218,11 @@
                 170.96,
                 288.72
             ],
-            "placementRelTo": "RA_J3",
-            "parentObject": "RA_J3"
+            "placementRelTo": "robot.RA_J3",
+            "parentObject": "robot.RA_J3"
         },
         {
-            "id": "RA_J5",
+            "id": "robot.RA_J5",
             "descr": "Robot Arm Joint 5",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -236,11 +236,11 @@
                 1.95,
                 728.51
             ],
-            "placementRelTo": "RA_J4",
-            "parentObject": "RA_J4"
+            "placementRelTo": "robot.RA_J4",
+            "parentObject": "robot.RA_J4"
         },
         {
-            "id": "RA_EndEffector",
+            "id": "robot.RA_EndEffector",
             "descr": "Robot Arm End Effector",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -254,11 +254,11 @@
                 0.74,
                 170.94
             ],
-            "placementRelTo": "RA_J5",
-            "parentObject": "RA_J5"
+            "placementRelTo": "robot.RA_J5",
+            "parentObject": "robot.RA_J5"
         },
         {
-            "id": "RA_Gripper1",
+            "id": "robot.RA_Gripper1",
             "descr": "Robot Arm Gripper 1",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -272,11 +272,11 @@
                 30.57,
                 106.09
             ],
-            "placementRelTo": "RA_EndEffector",
-            "parentObject": "RA_EndEffector"
+            "placementRelTo": "robot.RA_EndEffector",
+            "parentObject": "robot.RA_EndEffector"
         },
         {
-            "id": "RA_Gripper2",
+            "id": "robot.RA_Gripper2",
             "descr": "Robot Arm Gripper 2",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -290,11 +290,11 @@
                 2,
                 165
             ],
-            "placementRelTo": "RA_EndEffector",
-            "parentObject": "RA_EndEffector"
+            "placementRelTo": "robot.RA_EndEffector",
+            "parentObject": "robot.RA_EndEffector"
         },
         {
-            "id": "RA_Gripper3",
+            "id": "robot.RA_Gripper3",
             "descr": "Robot Arm Gripper 3",
             "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
             "representations": [
@@ -308,11 +308,11 @@
                 -24.39,
                 185.36
             ],
-            "placementRelTo": "RA_EndEffector",
-            "parentObject": "RA_EndEffector"
+            "placementRelTo": "robot.RA_EndEffector",
+            "parentObject": "robot.RA_EndEffector"
         },
         {
-            "id": "RA_Workholding1",
+            "id": "robot.RA_Workholding1",
             "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
             "position": [
                 10,
@@ -324,11 +324,11 @@
                 0,
                 -1.5707963267949
             ],
-            "placementRelTo": "RA_Gripper1",
-            "parentObject": "RA_Gripper1"
+            "placementRelTo": "robot.RA_Gripper1",
+            "parentObject": "robot.RA_Gripper1"
         },
         {
-            "id": "RA_Workholding2",
+            "id": "robot.RA_Workholding2",
             "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
             "position": [
                 -100,
@@ -340,11 +340,11 @@
                 0,
                 1.5707963267949
             ],
-            "placementRelTo": "RA_Gripper2",
-            "parentObject": "RA_Gripper2"
+            "placementRelTo": "robot.RA_Gripper2",
+            "parentObject": "robot.RA_Gripper2"
         },
         {
-            "id": "RA_Workholding3",
+            "id": "robot.RA_Workholding3",
             "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
             "position": [
                 68,
@@ -356,8 +356,8 @@
                 0,
                 1.5707963267949
             ],
-            "placementRelTo": "RA_Gripper3",
-            "parentObject": "RA_Gripper3"
+            "placementRelTo": "robot.RA_Gripper3",
+            "parentObject": "robot.RA_Gripper3"
         },
         {
             "id": "Pallet_Table",
@@ -851,7 +851,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "RA_Workholding1"
+            "placementRelTo": "robot.RA_Workholding1"
         },
         {
             "id": "shaft.7",
@@ -872,7 +872,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "RA_Workholding2"
+            "placementRelTo": "robot.RA_Workholding2"
         },
         {
             "id": "shaft.8",
@@ -893,7 +893,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "RA_Workholding3"
+            "placementRelTo": "robot.RA_Workholding3"
         }
     ]
 }
