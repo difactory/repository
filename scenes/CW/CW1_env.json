@@ -1,0 +1,98 @@
+{
+	"cameras": [
+		{
+			"id": "camera.d1",
+			"type": "FlyCamera",
+			"position": [
+				72.22581040093064,
+				106.78207007308437,
+				530.6580834063794
+			],
+			"rotation": [
+				0.3940344609099209,
+				-2.833476753575976,
+				0
+			],
+			"speed": 8
+		},
+		{
+			"id": "camera.d2",
+			"type": "FreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				1.4922565104551517,
+				-1.1132976022761496,
+				0
+			],
+			"speed": 1
+		},
+		{
+			"id": "camera.d3",
+			"type": "WebVRFreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				1.4922565104551517,
+				-1.1132976022761496,
+				0
+			],
+			"speed": 1
+		}
+	],
+	"lights": [
+		{
+			"id": "light.0",
+			"type": "HemisphericLight",
+			"direction": [
+				1,
+				0.3,
+				0.1
+			],
+			"intensity": 0.1
+		},
+		{
+			"id": "light.1",
+			"type": "PointLight",
+			"position": [
+				60,
+				110,
+				500
+			],
+			"intensity": 3.5
+		}
+	],
+	"shadows": {
+		"darkness": 0.3,
+		"bias": 0.001,
+		"environmentIntensity": 0.3
+	},
+	"datagen": {
+		"cam": {
+			"alphaMin": 0,
+			"alphaMax": 360,
+			"alphaStep": 60,
+			"betaMin": 0,
+			"betaMax": 70,
+			"betaStep": 35,
+			"radiusFactorMin": 1.7,
+			"radiusFactorMax": 2.7,
+			"radiusFactorStep": 1
+		}
+	},
+	"env": {
+		"skyboxTexture": "textures/studio.env",
+		"backgroundColor": [
+			0.2,
+			0.3,
+			0.5
+		],
+		"groundTexture": "textures/concrete.jpg"
+	}
+}
