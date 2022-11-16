@@ -4,7 +4,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
-     xmlns:ifc="http://ifcowl.openbimstandards.org/IFC4_ADD1#"
+     xmlns:ifc="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#"
      xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -36,7 +36,7 @@
      xmlns:statistics="http://www.ontoeng.com/statistics#"
      xmlns:VFLibBuilding="http://www.ontoeng.com/VFLibBuilding#"
      xmlns:controlSystem="http://www.ontoeng.com/controlSystem#"
-     xmlns:IFC4_ADD1_rules="http://ifcowl.openbimstandards.org/IFC4_ADD1_rules#"
+     xmlns:IFC4_ADD1_rules="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL_rules#"
      xmlns:IFC4_ADD1_extension="http://www.ontoeng.com/IFC4_ADD1_extension#">
     <owl:Ontology rdf:about="http://www.ontoeng.com/VFLibBuilding">
         <owl:imports rdf:resource="http://www.ontoeng.com/factory"/>
@@ -87,7 +87,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#VFLibBuilding -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#VFLibBuilding">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProjectLibrary"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProjectLibrary"/>
         <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796"/>
         <ifc:unitsInContext_IfcContext rdf:resource="http://www.ontoeng.com/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc"/>
     </owl:NamedIndividual>
@@ -97,7 +97,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcText"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default building</expr:hasString>
     </owl:NamedIndividual>
     
@@ -116,7 +116,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcURIReference"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warehouse.glb</expr:hasString>
     </owl:NamedIndividual>
     
@@ -125,10 +125,10 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#GRAM"/>
-        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#KILO"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MASSUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#GRAM"/>
+        <ifc:prefix_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#KILO"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#MASSUNIT"/>
     </owl:NamedIndividual>
     
 
@@ -136,9 +136,9 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
     </owl:NamedIndividual>
     
 
@@ -146,7 +146,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcUnitAssignment"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitAssignment"/>
         <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5"/>
         <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e"/>
         <ifc:units_IfcUnitAssignment rdf:resource="http://www.ontoeng.com/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d"/>
@@ -159,7 +159,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#default_building -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#default_building">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
         <ifc:description_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35"/>
         <ifc:name_IfcRoot rdf:resource="http://www.ontoeng.com/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618"/>
         <ifc:representation_IfcProduct rdf:resource="http://www.ontoeng.com/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e"/>
@@ -170,7 +170,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLabel"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default_building</expr:hasString>
     </owl:NamedIndividual>
     
@@ -179,7 +179,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcShapeRepresentation"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
         <osph:hasExternalRepresentation rdf:resource="http://www.ontoeng.com/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807"/>
     </owl:NamedIndividual>
     
@@ -188,9 +188,9 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SECOND"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#TIMEUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#SECOND"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#TIMEUNIT"/>
     </owl:NamedIndividual>
     
 
@@ -198,7 +198,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcLabel"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLabel"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFLibBuilding</expr:hasString>
     </owl:NamedIndividual>
     
@@ -207,7 +207,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcProductDefinitionShape"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
         <ifc:representations_IfcProductRepresentation rdf:resource="http://www.ontoeng.com/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614"/>
     </owl:NamedIndividual>
     
@@ -216,9 +216,9 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#CUBIC_METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#VOLUMEUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#CUBIC_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#VOLUMEUNIT"/>
     </owl:NamedIndividual>
     
 
@@ -226,10 +226,10 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#METRE"/>
-        <ifc:prefix_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#MILLI"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#LENGTHUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <ifc:prefix_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#MILLI"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
     </owl:NamedIndividual>
     
 
@@ -237,7 +237,7 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcRepresentation_List"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
         <list:hasContents rdf:resource="http://www.ontoeng.com/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0"/>
     </owl:NamedIndividual>
     
@@ -246,9 +246,9 @@
     <!-- http://www.ontoeng.com/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35 -->
 
     <owl:NamedIndividual rdf:about="http://www.ontoeng.com/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35">
-        <rdf:type rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcSIUnit"/>
-        <ifc:name_IfcSIUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#SQUARE_METRE"/>
-        <ifc:unitType_IfcNamedUnit rdf:resource="http://ifcowl.openbimstandards.org/IFC4_ADD1#AREAUNIT"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#SQUARE_METRE"/>
+        <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#AREAUNIT"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
