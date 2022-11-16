@@ -13,7 +13,7 @@
         {
             "id": "bottle.1",
             "descr": "bottle",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement",
             "representations": [
                 {
                     "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
@@ -24,7 +24,7 @@
         {
             "id": "bottle.2",
             "descr": "bottle",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement",
             "representations": [
                 {
                     "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",
@@ -40,7 +40,7 @@
         {
             "id": "bottle.3",
             "descr": "bottle",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement",
             "representations": [
                 {
                     "file": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb",

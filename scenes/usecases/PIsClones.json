@@ -30,7 +30,7 @@
         },
         {
             "id": "PIs_1.PI_Machine_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#PI_Machine_Static",
@@ -62,7 +62,7 @@
         },
         {
             "id": "PIs_2.PI_Machine_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#PI_Machine_Static",
@@ -94,7 +94,7 @@
         },
         {
             "id": "PIs_3.PI_Machine_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#PI_Machine_Static",

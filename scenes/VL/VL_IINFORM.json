@@ -21,7 +21,7 @@
     "assets": [
         {
             "id": "lab_building",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
                     "file": "laboratorio.glb",
@@ -66,7 +66,7 @@
         },
         {
             "id": "Kuka_controller",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcUnitaryControlElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
             "representations": [
                 {
                     "file": "controllore_Kuka.glb",
@@ -87,7 +87,7 @@
         },
         {
             "id": "Kuka_structure",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "struttura_supporto_Kuka.glb",
@@ -150,7 +150,7 @@
         },
         {
             "id": "Comau_controller",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcZone",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcZone",
             "representations": [
                 {
                     "file": "controllore_Comau.glb",
@@ -171,7 +171,7 @@
         },
         {
             "id": "Table_1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcFurniture",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
             "representations": [
                 {
                     "file": "tavolo_utensili_Comau.glb",
@@ -192,7 +192,7 @@
         },
         {
             "id": "Omron_HD1500",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
             "representations": [
                 {
                     "file": "Omron_HD1500.glb",
@@ -213,7 +213,7 @@
         },
         {
             "id": "Omron_LD60",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
             "placementRelTo": "lab_building"
         },
         {
@@ -223,7 +223,7 @@
         },
         {
             "id": "CustomConnection",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "placementRelTo": "lab_building"
         }
     ]

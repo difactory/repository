@@ -35,7 +35,7 @@
 		},
 		{
 			"id": "http://www.ontoeng.com/CW1#building",
-			"type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+			"type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
 			"descr": "Building",
 			"contains": [
 				"http://www.ontoeng.com/CW1#M1",

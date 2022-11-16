@@ -23,7 +23,7 @@
         {
             "id": "building",
             "descr": "Building",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "position": [
                 0,
                 0,
@@ -71,7 +71,7 @@
         },
         {
             "id": "UR_base",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URbase",
@@ -88,7 +88,7 @@
         },
         {
             "id": "UR_joint1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint1",
@@ -110,7 +110,7 @@
         },
         {
             "id": "UR_joint2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint2",
@@ -132,7 +132,7 @@
         },
         {
             "id": "UR_joint3",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint3",
@@ -154,7 +154,7 @@
         },
         {
             "id": "UR_joint4",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint4",
@@ -176,7 +176,7 @@
         },
         {
             "id": "UR_joint5",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint5",
@@ -198,7 +198,7 @@
         },
         {
             "id": "UR_joint6",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint6",
@@ -220,7 +220,7 @@
         },
         {
             "id": "UR_EndEffector",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#UREndEffector",
@@ -237,7 +237,7 @@
         },
         {
             "id": "UR_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URgripper1",
@@ -254,7 +254,7 @@
         },
         {
             "id": "UR_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URgripper2",

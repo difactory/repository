@@ -469,7 +469,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingZ",
             "representations": [
                 {
@@ -1071,7 +1071,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibBuilding#default_building",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "descr": "Default building",
             "representations": [
                 {
@@ -1092,7 +1092,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingX",
             "representations": [
                 {
@@ -1115,7 +1115,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_Z",
@@ -1147,7 +1147,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#Vibrating_Bowl_Wing",
@@ -1169,7 +1169,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_Static",
             "representations": [
                 {
@@ -1192,7 +1192,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#WC1_Floating_Y",
@@ -1214,7 +1214,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_FloatingY",
             "representations": [
                 {
@@ -1237,7 +1237,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_FloatingX",
             "representations": [
                 {
@@ -1260,7 +1260,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#WC1_Gripper_1",
@@ -1282,7 +1282,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_Gripper1",
             "representations": [
                 {
@@ -1305,7 +1305,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#WC1_Gripper_2",
@@ -1327,7 +1327,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#WC1_Static",
@@ -1349,7 +1349,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#WC1s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_1_StationRev.glb#WC1_Floating_X",
@@ -1371,7 +1371,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_X",
@@ -1393,7 +1393,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_Gripper2",
             "representations": [
                 {
@@ -1416,7 +1416,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#WC1s_VibratingBowl",
             "representations": [
                 {
@@ -1450,7 +1450,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Static",
@@ -1472,7 +1472,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Static",
             "representations": [
                 {
@@ -3015,7 +3015,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingY",
             "representations": [
                 {
@@ -3038,7 +3038,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingY",
             "representations": [
                 {
@@ -3061,7 +3061,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Gripper_2",
@@ -3083,7 +3083,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper2",
             "representations": [
                 {
@@ -3106,7 +3106,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#Rs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Riveting_Station.glb#R_Machine_Static",
@@ -3128,7 +3128,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PIs_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#Vibrating_Bowl_Pins",
@@ -3150,7 +3150,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX2",
             "representations": [
                 {
@@ -3173,7 +3173,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Static",
             "representations": [
                 {
@@ -3196,7 +3196,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingX",
             "representations": [
                 {
@@ -3219,7 +3219,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_Y",
@@ -3241,7 +3241,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_Static",
             "representations": [
                 {
@@ -3264,7 +3264,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PIs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#PI_Machine_Floating_X",
@@ -3286,7 +3286,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PIs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb#PI_Machine_Static",
@@ -3308,7 +3308,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Riveting_Station.glb#R_Machine_Floating_X1",
@@ -3330,7 +3330,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Static",
             "representations": [
                 {
@@ -3353,7 +3353,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX1",
             "representations": [
                 {
@@ -3376,7 +3376,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingZ",
             "representations": [
                 {
@@ -3399,7 +3399,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_FloatingX",
             "representations": [
                 {
@@ -3433,7 +3433,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper1",
             "representations": [
                 {
@@ -3456,7 +3456,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper2",
             "representations": [
                 {
@@ -3479,7 +3479,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_Static",
             "representations": [
                 {
@@ -3502,7 +3502,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Riveting_Station.glb#R_Machine_Floating_X2",
@@ -3524,7 +3524,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingZ",
             "representations": [
                 {
@@ -3547,7 +3547,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PPs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Gripper_1",
@@ -3569,7 +3569,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper1",
             "representations": [
                 {
@@ -3592,7 +3592,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_VibratingBowl",
             "representations": [
                 {
@@ -3615,7 +3615,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingX",
             "representations": [
                 {
@@ -3638,7 +3638,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper2",
             "representations": [
                 {
@@ -3661,7 +3661,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingY",
             "representations": [
                 {
@@ -3684,7 +3684,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper1",
             "representations": [
                 {
@@ -3718,7 +3718,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_Static",
             "representations": [
                 {
@@ -3741,7 +3741,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_FloatingX",
             "representations": [
                 {
@@ -3764,7 +3764,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_VibratingBowl",
             "representations": [
                 {
@@ -3787,7 +3787,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_Static",
             "representations": [
                 {
@@ -3810,7 +3810,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX1",
             "representations": [
                 {
@@ -3833,7 +3833,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX2",
             "representations": [
                 {
@@ -3856,7 +3856,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Static",
             "representations": [
                 {
@@ -3879,7 +3879,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingX",
             "representations": [
                 {
@@ -3902,7 +3902,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingZ",
             "representations": [
                 {
@@ -3925,7 +3925,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_FloatingY",
             "representations": [
                 {
@@ -5483,7 +5483,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper1",
             "representations": [
                 {
@@ -5506,7 +5506,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX2",
             "representations": [
                 {
@@ -5539,7 +5539,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#CBs_Static",
             "representations": [
                 {
@@ -5573,7 +5573,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingY",
             "representations": [
                 {
@@ -5596,7 +5596,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#CBs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Collection_Box_Station.glb#CB_Static",
@@ -5618,7 +5618,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_Gripper1",
             "representations": [
                 {
@@ -5641,7 +5641,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Floating_X",
@@ -5663,7 +5663,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_Static",
             "representations": [
                 {
@@ -5686,7 +5686,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_VibratingBowl",
             "representations": [
                 {
@@ -5709,7 +5709,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Static",
@@ -5731,7 +5731,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_Static",
             "representations": [
                 {
@@ -5754,7 +5754,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_Static",
             "representations": [
                 {
@@ -5777,7 +5777,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_FloatingX",
             "representations": [
                 {
@@ -5800,7 +5800,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_Static",
             "representations": [
                 {
@@ -5823,7 +5823,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX2",
             "representations": [
                 {
@@ -5846,7 +5846,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PPs_Gripper2",
             "representations": [
                 {
@@ -5869,7 +5869,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Gripper_2",
@@ -5891,7 +5891,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#CBs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Collection_Box_Station.glb#CB_Floating_Y",
@@ -5913,7 +5913,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingZ",
             "representations": [
                 {
@@ -5936,7 +5936,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_VibratingBowl",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_VibratingBowl",
             "representations": [
                 {
@@ -5970,7 +5970,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingZ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Floating_Z",
@@ -5992,7 +5992,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_Gripper2",
             "representations": [
                 {
@@ -6015,7 +6015,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingX",
             "representations": [
                 {
@@ -6038,7 +6038,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX1",
             "representations": [
                 {
@@ -6061,7 +6061,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Floating_Y",
@@ -6083,7 +6083,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_FloatingX1",
             "representations": [
                 {
@@ -6106,7 +6106,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#Rs_Static",
             "representations": [
                 {
@@ -6129,7 +6129,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#PP2s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station_Box.glb#PP_Gripper_1",
@@ -6151,7 +6151,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#PIs_FloatingX",
             "representations": [
                 {
@@ -6174,7 +6174,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#CBs_FloatingY",
             "representations": [
                 {
@@ -6197,7 +6197,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#CBs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Collection_Box_Station.glb#CB_Gripper_1",
@@ -6219,7 +6219,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#CBs_Gripper2",
             "representations": [
                 {
@@ -6242,7 +6242,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#CBs_FloatingX",
             "representations": [
                 {
@@ -6265,7 +6265,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#CBs_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Collection_Box_Station.glb#CB_Gripper_2",
@@ -6287,7 +6287,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFLibStations#CBs_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Collection_Box_Station.glb#CB_Floating_X",
@@ -6309,7 +6309,7 @@
         },
         {
             "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/DFLibStations#CBs_Gripper1",
             "representations": [
                 {

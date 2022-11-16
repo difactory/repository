@@ -53,7 +53,7 @@
     "assets": [
         {
             "id": "building",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
                 {
                     "file": "Warehouse.glb",
@@ -134,7 +134,7 @@
         {
             "id": "robot.RA_Base",
             "descr": "Robot Arm Base",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_Base",
@@ -152,7 +152,7 @@
         {
             "id": "robot.RA_J1",
             "descr": "Robot Arm Joint 1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_J1",
@@ -170,7 +170,7 @@
         {
             "id": "robot.RA_J2",
             "descr": "Robot Arm Joint 2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_J2",
@@ -188,7 +188,7 @@
         {
             "id": "robot.RA_J3",
             "descr": "Robot Arm Joint 3",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_J3",
@@ -206,7 +206,7 @@
         {
             "id": "robot.RA_J4",
             "descr": "Robot Arm Joint 4",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_J4",
@@ -224,7 +224,7 @@
         {
             "id": "robot.RA_J5",
             "descr": "Robot Arm Joint 5",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_J5",
@@ -242,7 +242,7 @@
         {
             "id": "robot.RA_EndEffector",
             "descr": "Robot Arm End Effector",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_EndEffector",
@@ -260,7 +260,7 @@
         {
             "id": "robot.RA_Gripper1",
             "descr": "Robot Arm Gripper 1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_Gripper1",
@@ -278,7 +278,7 @@
         {
             "id": "robot.RA_Gripper2",
             "descr": "Robot Arm Gripper 2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_Gripper2",
@@ -296,7 +296,7 @@
         {
             "id": "robot.RA_Gripper3",
             "descr": "Robot Arm Gripper 3",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_Gripper3",
@@ -500,7 +500,7 @@
         {
             "id": "Lathe_Machine1_Static",
             "descr": "Lathe Machine 1 frame ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "LatheFrame.glb",
@@ -518,7 +518,7 @@
         {
             "id": "Lathe_Machine1_Rotating",
             "descr": "Lathe Machine 1 turning tool",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "LatheToolOP1.glb",
@@ -547,7 +547,7 @@
         {
             "id": "Chips_Cleaning_Machine",
             "descr": "Chips Cleaning Machine",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Chips_Cleaning_Machine.glb",
@@ -588,7 +588,7 @@
         {
             "id": "Poka_Yoka",
             "descr": "Poka Yoka ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Poke_Yoka.glb",
@@ -627,7 +627,7 @@
         {
             "id": "MeasurementTable",
             "descr": "MeasurementTable",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Measurement_Table.glb",
@@ -678,7 +678,7 @@
         {
             "id": "Lathe_Machine2_Static",
             "descr": "Lathe Machine 2 frame ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "LatheFrame.glb",
@@ -696,7 +696,7 @@
         {
             "id": "Lathe_Machine2_Rotating",
             "descr": "Lathe Machine 2 turning tool ",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "LatheToolOP2.glb",

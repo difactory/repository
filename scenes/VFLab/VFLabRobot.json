@@ -89,7 +89,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_Gripper2",
             "representations": [
                 {
@@ -150,7 +150,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibBuildingRobot#default_building",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "descr": "Default building",
             "position": [
                 0.0,
@@ -570,7 +570,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint1",
@@ -592,7 +592,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_2_Station.glb#WC2_Floating_X",
@@ -614,7 +614,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_2_Station.glb#WC2_Gripper_2",
@@ -636,7 +636,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Static",
             "representations": [
                 {
@@ -659,7 +659,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Gripper1",
             "representations": [
                 {
@@ -682,7 +682,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint2",
@@ -724,7 +724,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_FloatingX",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_FloatingX",
             "representations": [
                 {
@@ -747,7 +747,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_2_Station.glb#WC2_Gripper_1",
@@ -769,7 +769,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Gripper2",
             "representations": [
                 {
@@ -792,7 +792,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_base",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URbase",
@@ -814,7 +814,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_base",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_base",
             "representations": [
                 {
@@ -837,7 +837,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_Static",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_2_Station.glb#WC2_Static",
@@ -859,7 +859,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint2",
             "representations": [
                 {
@@ -882,7 +882,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint3",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint3",
@@ -904,7 +904,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "Wing_Conveyor_2_Station.glb#WC2_Floating_Y",
@@ -926,7 +926,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_FloatingY",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#WC2s_FloatingY",
             "representations": [
                 {
@@ -949,7 +949,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint1",
             "representations": [
                 {
@@ -972,7 +972,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint5",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint5",
             "representations": [
                 {
@@ -995,7 +995,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint6",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint6",
@@ -1017,7 +1017,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint6",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint6",
             "representations": [
                 {
@@ -1040,7 +1040,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_EndEffector",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#UREndEffector",
@@ -1062,7 +1062,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_EndEffector",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_EndEffector",
             "representations": [
                 {
@@ -1085,7 +1085,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint4",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint4",
             "representations": [
                 {
@@ -1108,7 +1108,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URgripper1",
@@ -1130,7 +1130,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint5",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint5",
@@ -1152,7 +1152,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint4",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URjoint4",
@@ -1174,7 +1174,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint3",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_joint3",
             "representations": [
                 {
@@ -1717,7 +1717,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLibStationsRobot#UR_Gripper2",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URgripper2",
@@ -1739,7 +1739,7 @@
         },
         {
             "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper1",
-            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "model": "http://www.ontoeng.com/VFLibStationsRobot#UR_Gripper1",
             "representations": [
                 {

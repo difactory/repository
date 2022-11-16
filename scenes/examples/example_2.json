@@ -17,7 +17,7 @@
     {
       "id": "default_building",
       "descr": "Plant building. This is the building hosting a factory and the related facilities.",
-      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding"
+      "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"
     },
     {
       "id": "WorkstationTypeA",
@@ -44,7 +44,7 @@
     {
       "id": "TrolleyTypeA",
       "descr": "Manual trolley",
-      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElementType",
+      "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType",
       "representations": [
         {
           "file": "elements/trolley/trolley.obj",
@@ -105,7 +105,7 @@
     },
     {
       "id": "Trolley.1",
-      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
       "model": "TrolleyTypeA",
       "position": [
         200,
@@ -121,7 +121,7 @@
     },
     {
       "id": "Trolley.2",
-      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
       "model": "TrolleyTypeA",
       "position": [
         200,
@@ -137,7 +137,7 @@
     },
     {
       "id": "Trolley.3",
-      "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+      "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
       "model": "TrolleyTypeA",
       "position": [
         200,
