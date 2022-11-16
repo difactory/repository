@@ -18,7 +18,7 @@
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:IFC4_ADD1_rules="http://ifcowl.openbimstandards.org/IFC4_ADD1_rules#">
-    <owl:Ontology rdf:about="https://standards.buildingsmart/IFC/DEV/IFC4/ADD1/OWL">
+    <owl:Ontology rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL">
         <owl:imports rdf:resource="https://w3id.org/express"/>
         <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
         <dce:contributor>Jakob Beetz (j.beetz@tue.nl)</dce:contributor>
