@@ -1,0 +1,230 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "lab_building",
+        "Kuka_KR50R2500",
+        "Kuka_controller",
+        "Kuka_structure",
+        "Kuka_tool_storage",
+        "Comau_NJ220",
+        "Comau_controller",
+        "Table_1",
+        "Omron_HD1500",
+        "Omron_LD60",
+        "Techman12",
+        "CustomConnection"
+    ],
+    "assets": [
+        {
+            "id": "lab_building",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcBuilding",
+            "representations": [
+                {
+                    "file": "laboratorio.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "RoboticLab",
+            "type": "http://www.ontoeng.com/factory#ManufacturingSystem"
+        },
+        {
+            "id": "Kuka_KR50R2500",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "representations": [
+                {
+                    "file": "Kuka_KR50.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1426,
+                2200,
+                300
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "Kuka_structure"
+        },
+        {
+            "id": "Kuka_controller",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcUnitaryControlElement",
+            "representations": [
+                {
+                    "file": "controllore_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -471,
+                1043,
+                598
+            ],
+            "rotation": [
+                -1.5707963267949,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "Comau_controller"
+        },
+        {
+            "id": "Kuka_structure",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "struttura_supporto_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1800,
+                0,
+                -6000
+            ],
+            "rotation": [
+                0,
+                0.610865238198015,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Kuka_tool_storage",
+            "type": "http://www.ontoeng.com/factory#StorageElement",
+            "representations": [
+                {
+                    "file": "stallo_utensili_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                5300,
+                0,
+                -7000
+            ],
+            "rotation": [
+                0,
+                3.75245789178781,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Comau_NJ220",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "representations": [
+                {
+                    "file": "Comau_NJ220.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1500,
+                0,
+                -4500
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Comau_controller",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcZone",
+            "representations": [
+                {
+                    "file": "controllore_Comau.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                5500,
+                0,
+                -5000
+            ],
+            "rotation": [
+                0,
+                0.785398163397448,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Table_1",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcFurniture",
+            "representations": [
+                {
+                    "file": "tavolo_utensili_Comau.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1200,
+                0,
+                -2500
+            ],
+            "rotation": [
+                0,
+                2.0943951023932,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Omron_HD1500",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+            "representations": [
+                {
+                    "file": "Omron_HD1500.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                3000,
+                0,
+                -4800
+            ],
+            "rotation": [
+                0,
+                0.610865238198015,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Omron_LD60",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElement",
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Techman12",
+            "type": "http://www.ontoeng.com/factory#Robot",
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "CustomConnection",
+            "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcElementAssembly",
+            "placementRelTo": "lab_building"
+        }
+    ]
+}
