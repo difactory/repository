@@ -1,0 +1,501 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xml:base="http://www.learninglab.de/~dolog/fsm/fsm.owl"
+     xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xmlns:jms="http://jena.hpl.hp.com/2003/08/jms#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:rss="http://purl.org/rss/1.0/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Exit -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Exit">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardAction">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Source -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Target -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Body -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Body">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Count">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Label">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#StateName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#isConcurrent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#isConcurrent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#isRegion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#isRegion">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Action -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Branch -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Branch">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#History"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Join"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Junction"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Split"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Event -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Final -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#History -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#History">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Join"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Junction"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Split"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Join -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Join">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Junction"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Split"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Junction -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Junction">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Split"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Region -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Region">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#isRegion"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Split -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Split">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#State -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#State">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <owl:disjointWith rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition -->
+
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#isRegion"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#isRegion"/>
+                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
