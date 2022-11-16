@@ -1,0 +1,507 @@
+{
+    "context": {
+        "assetTrail": false,
+        "UnitOfMeasureScale": 0.01,
+        "Repo3dModel": "https://difactory.github.io/repository/models/GLB/",
+        "RepoAnim": "https://difactory.github.io/repository/"
+    },
+    "nodes": [
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "state",
+                        "descr": "working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint1",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint1.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint4",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint4",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint4.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint6",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint6",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint6.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper1",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "RPP1.UR_Gripper1.working",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_EndEffector"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint5",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint5",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint5.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper2",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "RPP1.UR_Gripper2.working",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_EndEffector"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint2",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint2.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint3",
+            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint3",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1500"
+                    },
+                    "event": {
+                        "type": "animationAdditive",
+                        "data": "RPP1.UR_joint3.working"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.WingScrew",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.WingScrew",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Spring",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Spring",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#pallet_1",
+            "id": "http://www.ontoeng.com/VFLabRobot#pallet_1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.URPPs_PalletPosition"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "3000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.URPPs_PalletPosition"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "6300"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1",
+                        "position": [
+                            0.0,
+                            23.0,
+                            2244.445
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_Buffer1"
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Workholding",
+                        "position": [
+                            -0.03580297174470388,
+                            0.4965687114827801,
+                            1.524855169465218
+                        ],
+                        "rotation": [
+                            -0.1396907706148256,
+                            0.02434790938707902,
+                            0.0007925073677865033
+                        ]
+                    }
+                },
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "3300"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#pallet_1.Pal_Workholding"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-3",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-3",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Hook",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Hook",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Box",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Box",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Clip",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Clip",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-1",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Wing",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Wing",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "200"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#Hinge_1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector1",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector2",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-2",
+            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-2",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                    }
+                }
+            ]
+        }
+    ],
+    "sequences": [
+        {
+            "id": "RPP1.UR_Gripper1.working",
+            "FPS": 10,
+            "pos": [
+                [0,-1.27,4],[0,-1.28,4],[0,-1.29,4],[0,-1.3,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.07,4],[0,-1.17,4],[0,-1.27,4]
+            ],
+            "rot": [
+                [0,-0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ]
+        },
+        {
+            "id": "RPP1.UR_Gripper2.working",
+            "FPS": 10,
+            "pos": [
+                [0,1.43,4],[0,1.45333,4],[0,1.47667,4],[0,1.5,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.23,4],[0,1.33,4],[0,1.43,4]
+            ],
+            "rot": [
+                [0,-0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint1.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0.408,0],[0,-0.408,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,0.204,0],[0,0.204,0],[0,0.204,0],[0,0.204,0]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint2.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0.125],[0,-0,0.125],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,-0.125],[0,-0,-0.125],[0,-0,0],[0,-0,0],[0,-0,0.122],[0,-0,0.122],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,-0.0813333],[0,-0,-0.0813333],[0,-0,-0.0813333]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint3.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,-0.375],[0,-0,-0.375],[0,-0,-0.375],[0,-0,-0.375],[0,-0,-0.75],[0,-0,-0.75],[0,-0,-0.440592],[0,-0,-0.440592],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0.440592],[0,-0,0.440592],[0,-0,0.75],[0,-0,0.75],[0,-0,0.5],[0,-0,0.5],[0,-0,0.5]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint4.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,-0.204],[0,-0,-0.204],[0,-0,-0.204],[0,-0,-0.204],[0,-0,-0.204],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333],[0,-0,0.113333]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint5.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,0.50952,0],[0,0.50952,0],[0,0.50952,0],[0,0.50952,0],[0,0.50952,0],[0,-0.04,0],[0,-0.04,0],[0,-0.04,0],[0,-0.04,0],[0,-0.04,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,0.2,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0],[0,-0.31845,0]
+            ]
+        },
+        {
+            "id": "RPP1.UR_joint6.working",
+            "FPS": 10,
+            "pos": [
+                [0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]
+            ],
+            "rot": [
+                [0,0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,-0.40525],[0,-0,-0.40525],[0,-0,-0.40525],[0,-0,-0.40525],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111],[0,-0,0.180111]
+            ]
+        }        
+    ],
+    "bookmarks": [
+        {
+            "name": "bookmark_0",
+            "time": "0"
+        }
+    ]
+}
