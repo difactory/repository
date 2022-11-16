@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>

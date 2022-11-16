@@ -36,6 +36,10 @@ WHERE {
 	}	
 	?stM fsm:contains ?idleComp .
 	?idleComp a fsm:Composite .
+	?initOverall a fsm:Initial .
+	?trInitCompIdle fsm:Source ?initOverall .
+	?trInitCompIdle fsm:Target ?idleComp .	
+	
 	?stM fsm:contains ?workState .
 	{ ?workState a factory:MachineToolWorkingState .}
 	UNION{ ?workState a fsm:Composite . }

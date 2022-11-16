@@ -3,7 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX list: <https://w3id.org/list#> 
 PREFIX express: <https://w3id.org/express#> 
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>

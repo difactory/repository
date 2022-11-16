@@ -8,8 +8,8 @@ PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 DELETE{
 	GRAPH ?g1 {?stM fsm:contains ?region .}	
 	GRAPH ?g2{ ?region ?b0 ?c0 .}
-	GRAPH ?g3{?elem1 ?b1 ?c1 . }
-	GRAPH ?g4{?a2 ?b2 ?elem2 . }
+	GRAPH ?g3{?elem ?b1 ?c1 . }
+	GRAPH ?g4{?a2 ?b2 ?elem . }
 
 	# redundant, but added for backward compatibility
 	GRAPH ?g5{ ?entryAction ?b3 ?c3 .}
@@ -29,8 +29,10 @@ WHERE {
 	GRAPH ?g7{ ?eventType ifcext:typesObject|ifcext:declaresObject ?startOp .}
    
 	{GRAPH ?g2{ ?region ?b0 ?c0 .}} 
-	UNION {?region fsm:hasStateMachineElement ?elem1 . GRAPH ?g3{?elem1 ?b1 ?c1 . }} 
-	UNION {?region fsm:hasStateMachineElement ?elem2 . GRAPH ?g4{?a2 ?b2 ?elem2 . }}
+	UNION {?region fsm:hasStateMachineElement ?elem . 
+		{GRAPH ?g3{?elem ?b1 ?c1 . }} 
+		UNION {GRAPH ?g4{?a2 ?b2 ?elem . }}
+	}
 	# redundant, but added for backward compatibility
 	UNION {OPTIONAL {GRAPH ?g5{ ?entryAction ?b3 ?c3 .}}} 
 	UNION {OPTIONAL{ GRAPH ?g6{ ?startOp ?b4 ?c4 .}} }

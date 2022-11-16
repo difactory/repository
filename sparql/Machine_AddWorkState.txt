@@ -18,9 +18,9 @@ INSERT {
 		?doPStep a owl:NamedIndividual , ?pstepClass .
 		
 		?stM fsm:contains ?trIdleWork ,?guardTrIdleWork , ?startOp.
-		?stM fsm:contains ?trWorkFinal.
+		?stM fsm:contains ?trWorkFinal, ?trInitIdle.
 		?workState fsm:hasStateMachineElement ?newWorkState .
-		?trIdleWork fsm:Source ?idleSt .
+		?trIdleWork fsm:Source ?idleReg .
 		?trIdleWork fsm:Target ?newWorkState .
 		?trIdleWork fsm:TransitionGuard ?guardTrIdleWork .
 		?guardTrIdleWork fsm:GuardEvent ?startOp .
@@ -30,6 +30,22 @@ INSERT {
 		
 		?newWorkState osph:do ?doPStep .
 		?doPStep ifcext:isDefinedByObject ?pstep .
+		
+		?newReg a owl:NamedIndividual , fsm:Region .
+		?initReg a owl:NamedIndividual , fsm:Initial .
+		?blockedReg a owl:NamedIndividual , factory:MachineToolBlockedState .
+		?starvedReg a owl:NamedIndividual , factory:MachineToolStarvedState .
+		?idleReg a owl:NamedIndividual , factory:MachineToolIdleState .
+		?trInitIdle a owl:NamedIndividual  , fsm:Transition .
+		
+		?idleComp fsm:hasStateMachineElement ?newReg .		
+		?newReg fsm:hasStateMachineElement ?initReg ,
+			?blockedReg ,
+			?starvedReg ,
+			?idleReg .
+		?trInitIdle fsm:Source ?initReg .
+		?trInitIdle fsm:Target ?idleReg .
+	
 	}
 }
 WHERE {
@@ -45,13 +61,17 @@ WHERE {
 	?trWorkIdle a fsm:Transition .
 	?trWorkIdle fsm:Source ?workState .
 	?trWorkIdle fsm:Target ?idleComp .	
+	
+	?initOverall a fsm:Initial .
+	?trInitCompIdle fsm:Source ?initOverall .
+	?trInitCompIdle fsm:Target ?idleComp .
+		
 	OPTIONAL{
 		?workState fsm:hasStateMachineElement ?finalSt .
 		?finalSt a fsm:Final .
 	}
-
-	?idleComp fsm:hasStateMachineElement ?idleSt .
-	?idleSt a factory:MachineToolIdleState .
+	#?idleComp fsm:hasStateMachineElement ?idleSt .
+	#?idleSt a factory:MachineToolIdleState .
 
 	?pstep a ?pstepClass .
 	FILTER ( ?pstepClass != owl:NamedIndividual ) .
@@ -61,7 +81,15 @@ WHERE {
 	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_start_",STRAFTER(STR(?pstep),"#"))),?null) AS ?startOp ) . 
 	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_trIdleWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trIdleWork ) . 
 	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_guardIdleWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?guardTrIdleWork ) . 
-	BIND(IF(bound(?finalSt), URI(CONCAT(STR(?elem),"_trFinalWork_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trWorkFinal ) . 
+	BIND(IF(bound(?finalSt), URI(CONCAT(STR(?elem),"_trWorkFinal_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trWorkFinal ) . 
+
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_reg_",STRAFTER(STR(?pstep),"#"))),?null) AS ?newReg ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_regInit_",STRAFTER(STR(?pstep),"#"))),?null) AS ?initReg ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_idle_",STRAFTER(STR(?pstep),"#"))),?null) AS ?idleReg ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_stv_",STRAFTER(STR(?pstep),"#"))),?null) AS ?starvedReg ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_blk_",STRAFTER(STR(?pstep),"#"))),?null) AS ?blockedReg ) .  
+	BIND(IF(bound(?stM), URI(CONCAT(STR(?elem),"_trInitIdle_",STRAFTER(STR(?pstep),"#"))),?null) AS ?trInitIdle ) .  
+		
 	
 
 }

@@ -2,7 +2,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX stat: <http://www.ontoeng.com/statistics#>
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX express: <https://w3id.org/express#> 
 select distinct ?timeValue ?time ?dur ?stochDistr ?p1 ?p2 ?p3

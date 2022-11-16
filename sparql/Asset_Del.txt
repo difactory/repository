@@ -4,7 +4,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX express: <https://w3id.org/express#> 

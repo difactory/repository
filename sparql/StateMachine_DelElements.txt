@@ -4,14 +4,14 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX factory: <http://www.ontoeng.com/factory#>
 PREFIX osph: <http://www.ontoeng.com/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
-PREFIX ifc: <http://ifcowl.openbimstandards.org/IFC4_ADD1#> 
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX express: <https://w3id.org/express#> 
 PREFIX list: <https://w3id.org/list#> 
 
 DELETE{
-	GRAPH ?g5{?statemach ?b5 ?c5 . } 
+
 	GRAPH ?g6{?statemachelem1 ?b6 ?c6 . } 
 	GRAPH ?g7{?a7 ?b7 ?statemachelem1 . } 
 	
@@ -31,9 +31,15 @@ DELETE{
 	GRAPH ?g15{?a15 ?b15 ?stmelem3 . } 
 }
 WHERE { 
-	
+	# StateMachine
 	?statemach a fsm:StateMachine.
-	?statemach fsm:contains/fsm:hasStateMachineElement* ?statemachelem1 .
+	?statemach fsm:contains ?statemachelem .
+	?statemachelem rdf:type/rdfs:subClassOf*  fsm:StateMachineElement .
+	
+	{?statemachelem fsm:hasStateMachineElement* ?statemachelem1 .}
+	UNION { ?statemachelem1 fsm:Source ?statemachelem . }
+	UNION { ?statemachelem1 fsm:Target ?statemachelem .}
+	
 	{	
 		{ GRAPH ?g6{?statemachelem1 ?b6 ?c6 . } }
 		UNION { GRAPH ?g7{?a7 ?b7 ?statemachelem1 . } }

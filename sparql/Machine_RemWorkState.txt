@@ -13,30 +13,102 @@ DELETE{
 	GRAPH ?g8{?a8 ?b8 ?guard .}
 	GRAPH ?g9{ ?event ?b9 ?c9 .} 
 	GRAPH ?g10{?a10 ?b10 ?event .}
+	GRAPH ?g9a{ ?cond ?b9a ?c9a .}
+	GRAPH ?g10a{?a10a ?b10a ?cond .}
+	
 	GRAPH ?g1{?newWorkState ?b1 ?c1 .} 
 	GRAPH ?g2{?a2 ?b2 ?newWorkState .}
 	GRAPH ?g3{?doPStep ?b3 ?c3 .} 
 	GRAPH ?g4{?a4 ?b4 ?doPStep .}
 	GRAPH ?g5{?tr ?b5 ?c5 .} 
 	GRAPH ?g6{?a6 ?b6 ?tr .}
+	
+	GRAPH ?g01{ ?newReg ?b01 ?c01 .}
+	GRAPH ?g02{?a02 ?b02 ?newReg .}
+	GRAPH ?g11{ ?regElem ?b11 ?c11 .}
+	GRAPH ?g12{?a12 ?b12 ?regElem .}
+	GRAPH ?g13{ ?tr2 ?b13 ?c13 .}
+	GRAPH ?g14{?a14 ?b14 ?tr2 .}
+	GRAPH ?g15{ ?guard2 ?b15 ?c15 .}
+	GRAPH ?g16{?a16 ?b16 ?guard2 .}
+	GRAPH ?g17{ ?event2 ?b17 ?c17 .}
+	GRAPH ?g18{?a18 ?b18 ?event2 .}
+	GRAPH ?g19{ ?cond2 ?b19 ?c19 .}
+	GRAPH ?g20{?a20 ?b20 ?cond2 .}
 }
 WHERE {
 
 	?elem osph:hasStateMachine ?stM .		
-	?stM fsm:contains/fsm:hasStateMachineElement ?newWorkState .
-	?newWorkState osph:do ?doPStep .
-	?doPStep ifcext:isDefinedByObject ?pstep .		
-	{?tr fsm:Source ?newWorkState .} UNION { ?tr fsm:Target ?newWorkState .}
+	
+	?stM fsm:contains ?workState , ?idleComp, ?trWorkIdle, ?trIdleWork .
+	?idleComp a fsm:Composite .
+	?workState a fsm:Composite . 			
+	?trWorkIdle a fsm:Transition .
+	?trWorkIdle fsm:Source ?workState .
+	?trWorkIdle fsm:Target ?idleComp .	
+	
+	?initOverall a fsm:Initial .
+	?trInitCompIdle fsm:Source ?initOverall .
+	?trInitCompIdle fsm:Target ?idleComp .
+		
+	?workState fsm:hasStateMachineElement ?newWorkState .
+	
+	?trIdleWork fsm:Source ?idleReg .
+	?trIdleWork fsm:Target ?newWorkState .	
+	?trIdleWork a fsm:Transition .
+	?idleComp fsm:hasStateMachineElement ?newReg .
+	?newReg fsm:hasStateMachineElement ?idleReg .
+	?idleReg a factory:MachineToolIdleState .
+	?newReg a fsm:Region .
+
 
 	{GRAPH ?g1{?newWorkState ?b1 ?c1 .}} UNION {GRAPH ?g2{?a2 ?b2 ?newWorkState .}}
-	UNION {GRAPH ?g3{?doPStep ?b3 ?c3 .}} UNION {GRAPH ?g4{?a4 ?b4 ?doPStep .}}
-	UNION {GRAPH ?g5{?tr ?b5 ?c5 .}} UNION {GRAPH ?g6{?a6 ?b6 ?tr .}}    
+	UNION {
+        ?newWorkState osph:do ?doPStep .
+        ?doPStep ifcext:isDefinedByObject|^ifcext:declaresObject ?pstep .	
+    	{GRAPH ?g3{?doPStep ?b3 ?c3 .}}
+    	UNION {GRAPH ?g4{?a4 ?b4 ?doPStep .}}
+  	}
 	UNION{
-		?tr fsm:TransitionGuard ?guard .
-		{GRAPH ?g7{ ?guard ?b7 ?c7 .}} #UNION {GRAPH ?g8{?a8 ?b8 ?guard .}}
+		{?tr fsm:Source ?newWorkState .} UNION { ?tr fsm:Target ?newWorkState .}
+		
+		{GRAPH ?g5{?tr ?b5 ?c5 .}} UNION {GRAPH ?g6{?a6 ?b6 ?tr .}}    
 		UNION{
-			?guard fsm:GuardEvent ?event .
-			{GRAPH ?g9{ ?event ?b9 ?c9 .}} UNION {GRAPH ?g10{?a10 ?b10 ?event .}}
+			?tr fsm:TransitionGuard ?guard .
+			{GRAPH ?g7{ ?guard ?b7 ?c7 .}} #UNION {GRAPH ?g8{?a8 ?b8 ?guard .}}
+			UNION{
+				?guard fsm:GuardEvent ?event .
+				{GRAPH ?g9{ ?event ?b9 ?c9 .}} UNION {GRAPH ?g10{?a10 ?b10 ?event .}}
+			}
+			UNION{
+				?guard fsm:GuardCondition ?cond .
+				{GRAPH ?g9a{ ?cond ?b9a ?c9a .}} UNION {GRAPH ?g10a{?a10a ?b10a ?cond .}}
+			}		
 		}
+	}
+	# remove region 
+	UNION{
+		{?newReg fsm:hasStateMachineElement ?regElem .}
+	
+		{GRAPH ?g01{ ?newReg ?b01 ?c01 .}} UNION {GRAPH ?g02{?a02 ?b02 ?newReg .}}
+		{GRAPH ?g11{ ?regElem ?b11 ?c11 .}} UNION {GRAPH ?g12{?a12 ?b12 ?regElem .}}
+		UNION{
+			{ ?tr2 fsm:Source ?regElem . } UNION { ?tr2 fsm:Target ?regElem .}	
+			
+			{GRAPH ?g13{ ?tr2 ?b13 ?c13 .}} UNION {GRAPH ?g14{?a14 ?b14 ?tr2 .}}			
+			UNION{
+				?tr2 fsm:TransitionGuard ?guard2 .
+				{GRAPH ?g15{ ?guard2 ?b15 ?c15 .}} #UNION {GRAPH ?g16{?a16 ?b16 ?guard2 .}}
+				UNION{
+					?guard2 fsm:GuardEvent ?event2 .
+					{GRAPH ?g17{ ?event2 ?b17 ?c17 .}} UNION {GRAPH ?g18{?a18 ?b18 ?event2 .}}
+				}
+				UNION{
+					?guard2 fsm:GuardCondition ?cond2 .
+					{GRAPH ?g19{ ?cond2 ?b19 ?c19 .}} UNION {GRAPH ?g20{?a20 ?b20 ?cond2 .}}
+				}	
+			}			
+		}
+
 	}
 } 

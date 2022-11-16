@@ -7,8 +7,20 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 
 DELETE {
 	GRAPH ?g {
-		?workState_ a factory:MachineToolWorkingState .	
-		?trIdleWork_ fsm:Source ?idleComp_ .		
+		?workState_ a owl:NamedIndividual, factory:MachineToolWorkingState .	
+		?trIdleWork_ fsm:Source ?idleComp_ .	
+
+		?idleComp_ fsm:hasStateMachineElement ?initInIdleComp_ .
+		?initInIdleComp_ a owl:NamedIndividual, fsm:Initial .
+		?idleComp_ fsm:hasStateMachineElement ?blockedSt_ .
+		?blockedSt_ a owl:NamedIndividual, factory:MachineToolBlockedState .
+		?idleComp_ fsm:hasStateMachineElement ?starvedSt_ .
+		?starvedSt_ a owl:NamedIndividual, factory:MachineToolStarvedState .
+		?idleComp_ fsm:hasStateMachineElement ?idleSt_ .
+		?idleSt_ a owl:NamedIndividual, factory:MachineToolIdleState .
+		?trInitIdle_ fsm:Source ?initInIdleComp_ .
+		?trInitIdle_ fsm:Target ?idleSt_ .	
+		?trInitIdle_ a owl:NamedIndividual, fsm:Transition .		
 	}
 }
 INSERT { 
@@ -27,15 +39,15 @@ INSERT {
 		?guardTrIdleWork a owl:NamedIndividual , fsm:Guard .
 		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
 		
-		?initInIdleComp a owl:NamedIndividual , fsm:Initial .
-		?blockedSt a owl:NamedIndividual , factory:MachineToolBlockedState .
-		?starvedSt a owl:NamedIndividual , factory:MachineToolStarvedState .
-		?idleSt a owl:NamedIndividual , factory:MachineToolIdleState .
-		?trInitIdle a owl:NamedIndividual , fsm:Transition .
-		?trStarvedIdle a owl:NamedIndividual , fsm:Transition .
-		?trIdleStarved a owl:NamedIndividual , fsm:Transition .
-		?trBlockedIdle a owl:NamedIndividual , fsm:Transition .
-		?trIdleBlocked a owl:NamedIndividual , fsm:Transition .
+#		?initInIdleComp a owl:NamedIndividual , fsm:Initial .
+#		?blockedSt a owl:NamedIndividual , factory:MachineToolBlockedState .
+#		?starvedSt a owl:NamedIndividual , factory:MachineToolStarvedState .
+#		?idleSt a owl:NamedIndividual , factory:MachineToolIdleState .
+#		?trInitIdle a owl:NamedIndividual , fsm:Transition .
+#		?trStarvedIdle a owl:NamedIndividual , fsm:Transition .
+#		?trIdleStarved a owl:NamedIndividual , fsm:Transition .
+#		?trBlockedIdle a owl:NamedIndividual , fsm:Transition .
+#		?trIdleBlocked a owl:NamedIndividual , fsm:Transition .
 		
 		?stM fsm:contains ?trWorkIdle , 
 			?trInitCompIdle ,
@@ -50,7 +62,7 @@ INSERT {
 		?trWorkIdle fsm:Target ?idleComp .
 		?trInitCompIdle fsm:Source ?initSt .
 		?trInitCompIdle fsm:Target ?idleComp .
-		?trIdleWork fsm:Source ?idleSt .
+		?trIdleWork fsm:Source ?idleComp .
 		?trIdleWork fsm:Target ?workState .
 		
 		?trIdleWork fsm:TransitionGuard ?guardTrIdleWork .
@@ -58,27 +70,27 @@ INSERT {
 		
 		?workState fsm:hasStateMachineElement ?workFinal .
 
-		?idleComp fsm:hasStateMachineElement ?initInIdleComp ,
-			?blockedSt ,
-			?starvedSt ,
-			?idleSt ,
-			?trInitIdle ,
-			?trStarvedIdle ,
-			?trIdleStarved ,
-			?trBlockedIdle ,
-			?trIdleBlocked .
-		
-		?trInitIdle fsm:Source ?initInIdleComp .
-		?trInitIdle fsm:Target ?idleSt .
-		
-		?trStarvedIdle fsm:Source ?starvedSt .
-		?trStarvedIdle fsm:Target ?idleSt .
-		?trIdleStarved fsm:Source ?idleSt .
-		?trIdleStarved fsm:Target ?starvedSt .
-		?trBlockedIdle fsm:Source ?blockedSt .
-		?trBlockedIdle fsm:Target ?idleSt .
-		?trIdleBlocked fsm:Source ?idleSt .
-		?trIdleBlocked fsm:Target ?blockedSt .
+#		?idleComp fsm:hasStateMachineElement ?initInIdleComp ,
+#			?blockedSt ,
+#			?starvedSt ,
+#			?idleSt ,
+#			?trInitIdle ,
+#			?trStarvedIdle ,
+#			?trIdleStarved ,
+#			?trBlockedIdle ,
+#			?trIdleBlocked .
+#		
+#		?trInitIdle fsm:Source ?initInIdleComp .
+#		?trInitIdle fsm:Target ?idleSt .
+#		
+#		?trStarvedIdle fsm:Source ?starvedSt .
+#		?trStarvedIdle fsm:Target ?idleSt .
+#		?trIdleStarved fsm:Source ?idleSt .
+#		?trIdleStarved fsm:Target ?starvedSt .
+#		?trBlockedIdle fsm:Source ?blockedSt .
+#		?trBlockedIdle fsm:Target ?idleSt .
+#		?trIdleBlocked fsm:Source ?idleSt .
+#		?trIdleBlocked fsm:Target ?blockedSt .
 	}
 }
 WHERE {
@@ -88,46 +100,49 @@ WHERE {
 		?machine rdf:type ?itsClass .
 	}
 	OPTIONAL{
-		?machine osph:hasStateMachine ?stM_ .		
-		?stM_ fsm:contains ?trWorkIdle_ .
-		?trWorkIdle_ a fsm:Transition .
-		?stM_ fsm:contains ?trInitCompIdle_ .
-		?trInitCompIdle_ a fsm:Transition .
-		?stM_ fsm:contains ?trIdleWork_ .
-		?trIdleWork_ a fsm:Transition .
-		?stM_ fsm:contains ?initSt_ .
-		?initSt_ a fsm:Initial .
-		?stM_ fsm:contains ?guardTrIdleWork_ .
-		?guardTrIdleWork_ a fsm:Guard .
-		?stM_ fsm:contains ?idleComp_ .
-		?idleComp_ a fsm:Composite .
+		?machine osph:hasStateMachine ?stM_ .
 		
-		?trWorkIdle_ fsm:Target ?idleComp_ .
+		?stM_ fsm:contains ?idleComp_ .
+		?stM_ fsm:contains ?initSt_ .
+		?initSt_ a fsm:Initial .		
+		?idleComp_ a fsm:Composite .
 		?trInitCompIdle_ fsm:Source ?initSt_ .
 		?trInitCompIdle_ fsm:Target ?idleComp_ .
-		{?trIdleWork_ fsm:Source ?idleComp_ .} UNION {?trIdleWork_ fsm:Source ?idleSt_ .}
+		?trWorkIdle_ fsm:Target ?idleComp_ .		
+		?stM_ fsm:contains ?trWorkIdle_ .
+		?stM_ fsm:contains ?trInitCompIdle_ .
+
+		?stM_ fsm:contains ?workState_ .
+		?trWorkIdle_ fsm:Source ?workState_ .
+		{ ?workState_ a factory:MachineToolWorkingState . }
+		UNION { ?workState_ a fsm:Composite . }			
+
+
+		{?trIdleWork_ fsm:Source ?idleComp_ .} # UNION {?trIdleWork_ fsm:Source ?idleSt_ .}
+		?trIdleWork_ fsm:Target ?workState_ .	
 		?trIdleWork_ fsm:TransitionGuard ?guardTrIdleWork_ .
+		?stM_ fsm:contains ?trIdleWork_ .
+		?stM_ fsm:contains ?guardTrIdleWork_ .
+		?guardTrIdleWork_ a fsm:Guard .
 		?guardTrIdleWork_ fsm:GuardEvent ?startOp_ .
 		{?startOp_ a factory:MachineToolStartOperationType .}
 		UNION {?startOp_ a factory:MachineToolStartOperation .}
 		
-		?stM_ fsm:contains ?workState_ .
-		?trWorkIdle_ fsm:Source ?workState_ .
-		?trIdleWork_ fsm:Target ?workState_ .	
-		{ ?workState_ a factory:MachineToolWorkingState . }
-		UNION { ?workState_ a fsm:Composite . }		
-
-		?idleComp_ fsm:hasStateMachineElement ?initInIdleComp_ .
-		?initInIdleComp_ a fsm:Initial .
-		?idleComp_ fsm:hasStateMachineElement ?blockedSt_ .
-		?blockedSt_ a factory:MachineToolBlockedState .
-		?idleComp_ fsm:hasStateMachineElement ?starvedSt_ .
-		?starvedSt_ a factory:MachineToolStarvedState .
-		?idleComp_ fsm:hasStateMachineElement ?idleSt_ .
-		?idleSt_ a factory:MachineToolIdleState .
-		?trInitIdle_ fsm:Source ?initInIdleComp_ .
-		?trInitIdle_ fsm:Target ?idleSt_ .	
-		?trInitIdle_ a fsm:Transition .
+	
+#
+#		OPTIONAL{
+#			?idleComp_ fsm:hasStateMachineElement ?initInIdleComp_ .
+#			?initInIdleComp_ a fsm:Initial .
+#			?idleComp_ fsm:hasStateMachineElement ?blockedSt_ .
+#			?blockedSt_ a factory:MachineToolBlockedState .
+#			?idleComp_ fsm:hasStateMachineElement ?starvedSt_ .
+#			?starvedSt_ a factory:MachineToolStarvedState .
+#			?idleComp_ fsm:hasStateMachineElement ?idleSt_ .
+#			?idleSt_ a factory:MachineToolIdleState .
+#			?trInitIdle_ fsm:Source ?initInIdleComp_ .
+#			?trInitIdle_ fsm:Target ?idleSt_ .	
+#			?trInitIdle_ a fsm:Transition .
+#		}
 	}
 
 	BIND(IF(bound(?stM_),?stM_ ,URI(CONCAT(STR(?machine),"_stM")) ) AS ?stM ) .  
