@@ -2,7 +2,7 @@
   "context": {
     "UnitOfMeasureScale": 0.01,
     "Zup": false,
-    "RepoPath": "https://difactory.github.io/repository/"
+    "RepoPath": ""
   },
   "scene": [
     "default_building",
@@ -25,7 +25,7 @@
       "type": "http://www.ontoeng.com/factory#MachineToolType",
       "representations": [
         {
-          "file": "models/machines/TC108/TC108.obj",
+          "file": "machines/TC108/TC108.obj",
           "unit": 0.01
         }
       ]
@@ -36,7 +36,7 @@
       "type": "http://www.ontoeng.com/factory#MachineToolType",
       "representations": [
         {
-          "file": "models/machines/TC52/tc52.obj",
+          "file": "machines/TC52/tc52.obj",
           "unit": 0.01
         }
       ]
@@ -47,7 +47,7 @@
       "type": "http://ifcowl.openbimstandards.org/IFC4_ADD1#IfcTransportElementType",
       "representations": [
         {
-          "file": "models/elements/trolley/trolley.obj",
+          "file": "elements/trolley/trolley.obj",
           "unit": 0.01
         }
       ]

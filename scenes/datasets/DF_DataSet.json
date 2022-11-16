@@ -2,7 +2,7 @@
     "context": {
         "UnitOfMeasureScale": 0.01,
         "Zup": false,
-        "RepoPath": "https://difactory.github.io/repository/models/GLB/"
+        "RepoPath": ""
     },
     "scene": [
         "http://www.ontoeng.com/DF_DataSet#Hinge_2.Pin1-3",

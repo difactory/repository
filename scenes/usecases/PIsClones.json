@@ -2,7 +2,7 @@
     "context": {
         "UnitOfMeasureScale": 0.001,
         "Zup": false,
-        "RepoPath": "https://difactory.github.io/repository/models/GLB/"
+        "RepoPath": ""
     },
     "scene": [
         "PIs_1",
