@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ontoeng.com/osph#"
-     xml:base="http://www.ontoeng.com/osph"
+<rdf:RDF xmlns="https://w3id.org/ontoeng/osph#"
+     xml:base="https://w3id.org/ontoeng/osph"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
 	 xmlns:cc="http://creativecommons.org/ns#"
      xmlns:ns="http://creativecommons.org/ns#"
@@ -10,17 +10,17 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:osph="http://www.ontoeng.com/osph#"
+     xmlns:osph="https://w3id.org/ontoeng/osph#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
-     xmlns:expression="http://www.ontoeng.com/expression#">
-    <owl:Ontology rdf:about="http://www.ontoeng.com/osph">
+     xmlns:expression="https://w3id.org/ontoeng/expression#">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/osph">
         <owl:imports rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl"/>
-        <owl:imports rdf:resource="http://www.ontoeng.com/expression"/>
-        <owl:imports rdf:resource="http://www.ontoeng.com/statistics"/>
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/expression"/>
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/statistics"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
         <dc:creator>Walter Terkaj</dc:creator>
@@ -55,320 +55,320 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#assignsValue -->
+    <!-- https://w3id.org/ontoeng/osph#assignsValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#assignsValue">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ValueAssignment"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Constant"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#assignsValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Constant"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#decomposesHistory -->
+    <!-- https://w3id.org/ontoeng/osph#decomposesHistory -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#decomposesHistory">
-        <owl:inverseOf rdf:resource="http://www.ontoeng.com/osph#isDecomposedByHistory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#decomposesHistory">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#isDecomposedByHistory"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#do -->
+    <!-- https://w3id.org/ontoeng/osph#do -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#do">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#do">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#Activity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Activity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#generatesEvent -->
+    <!-- https://w3id.org/ontoeng/osph#generatesEvent -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#generatesEvent">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#EventGeneration"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#generatesEvent">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#EventGeneration"/>
         <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#generatesMotion -->
+    <!-- https://w3id.org/ontoeng/osph#generatesMotion -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#generatesMotion">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#MotionGeneration"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#Motion"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#generatesMotion">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#MotionGeneration"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasConditionExpression -->
+    <!-- https://w3id.org/ontoeng/osph#hasConditionExpression -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasConditionExpression">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasConditionExpression">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasControlledVariable -->
+    <!-- https://w3id.org/ontoeng/osph#hasControlledVariable -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasControlledVariable">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasControlledVariable">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ValueAssignment"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Variable"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasExternalMotion -->
+    <!-- https://w3id.org/ontoeng/osph#hasExternalMotion -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasExternalMotion">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasExternalMotion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#Motion"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#MotionReference"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#MotionReference"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasExternalRepresentation -->
+    <!-- https://w3id.org/ontoeng/osph#hasExternalRepresentation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasExternalRepresentation">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasExternalRepresentation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#Representation"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Representation"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasHistory -->
+    <!-- https://w3id.org/ontoeng/osph#hasHistory -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasHistory">
-        <owl:inverseOf rdf:resource="http://www.ontoeng.com/osph#isHistoryOf"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistory">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasHistoryMotion -->
+    <!-- https://w3id.org/ontoeng/osph#hasHistoryMotion -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasHistoryMotion">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryMotion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ProductHistory"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#Motion"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ProductHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasHistoryObservations -->
+    <!-- https://w3id.org/ontoeng/osph#hasHistoryObservations -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasHistoryObservations"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryObservations"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasHistoryOrigin -->
+    <!-- https://w3id.org/ontoeng/osph#hasHistoryOrigin -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasHistoryOrigin">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontoeng.com/osph#hasMotionPlacement -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasMotionPlacement">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#Motion"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#Placement3D"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontoeng.com/osph#hasMotionRelTo -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasMotionRelTo">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#Motion"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectPlacement"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontoeng.com/osph#hasProbabilityDistribution -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasProbabilityDistribution">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/expression#RandomVariable"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.ontoeng.com/osph#hasPropertyUnit -->
-
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasPropertyUnit">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryOrigin">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasPropertyValue -->
+    <!-- https://w3id.org/ontoeng/osph#hasMotionPlacement -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasPropertyValue">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasMotionPlacement">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#StaticProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Placement3D"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasQuantityUnit -->
+    <!-- https://w3id.org/ontoeng/osph#hasMotionRelTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasQuantityUnit">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasMotionRelTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectPlacement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasProbabilityDistribution -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasProbabilityDistribution">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#RandomVariable"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasPropertyUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertyUnit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasRelatedState -->
+    <!-- https://w3id.org/ontoeng/osph#hasPropertyValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasRelatedState">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertyValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasQuantityUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasQuantityUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasRelatedState -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasRelatedState">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <dc:description>State to which the frequency refers.</dc:description>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasRepresentationLengthUnit -->
+    <!-- https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasRepresentationLengthUnit">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#UnitOfMeasurement"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasResultValue -->
+    <!-- https://w3id.org/ontoeng/osph#hasResultValue -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasResultValue">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasResultValue">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ResultValue"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ResultValue"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasStateFrequencies -->
+    <!-- https://w3id.org/ontoeng/osph#hasStateFrequencies -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasStateFrequencies">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#StateFrequency"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasStateFrequencies">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#StateFrequency"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasStateMachine -->
+    <!-- https://w3id.org/ontoeng/osph#hasStateMachine -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasStateMachine">
-        <owl:inverseOf rdf:resource="http://www.ontoeng.com/osph#isStateMachineOf"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasStateMachine">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#isStateMachineOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
         <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
         <dc:description>Definition of the state of an entity. The state can be decomposed.</dc:description>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasStateRepresentations -->
+    <!-- https://w3id.org/ontoeng/osph#hasStateRepresentations -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasStateRepresentations">
-        <owl:inverseOf rdf:resource="http://www.ontoeng.com/osph#isOfStateRepresentation"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ProductSimpleState"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#Representation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasStateRepresentations">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#isOfStateRepresentation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ProductSimpleState"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Representation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasStatisticsUnit -->
+    <!-- https://w3id.org/ontoeng/osph#hasStatisticsUnit -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasStatisticsUnit">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasStatisticsUnit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasTimePosition -->
+    <!-- https://w3id.org/ontoeng/osph#hasTimePosition -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#hasTimePosition">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasTimePosition">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2006/time#TimePosition"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isDecomposedByHistory -->
+    <!-- https://w3id.org/ontoeng/osph#isDecomposedByHistory -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isDecomposedByHistory">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isDecomposedByHistory">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isHistoryOf -->
+    <!-- https://w3id.org/ontoeng/osph#isHistoryOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isHistoryOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isHistoryOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isOfStateRepresentation -->
+    <!-- https://w3id.org/ontoeng/osph#isOfStateRepresentation -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isOfStateRepresentation"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isOfStateRepresentation"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isQuantitySampledFrom -->
+    <!-- https://w3id.org/ontoeng/osph#isQuantitySampledFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isQuantitySampledFrom">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isQuantitySampledFrom">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isRepresentedByVariable -->
+    <!-- https://w3id.org/ontoeng/osph#isRepresentedByVariable -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isRepresentedByVariable">
-        <owl:inverseOf rdf:resource="http://www.ontoeng.com/osph#representsProperty"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isRepresentedByVariable">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#representsProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Variable"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#isStateMachineOf -->
+    <!-- https://w3id.org/ontoeng/osph#isStateMachineOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#isStateMachineOf">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isStateMachineOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
         <dc:description>Entity to which a state is referred.</dc:description>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#representsProperty -->
+    <!-- https://w3id.org/ontoeng/osph#representsProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/osph#representsProperty">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#representsProperty">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/expression#Variable"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     </owl:ObjectProperty>
     
@@ -401,57 +401,57 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#assignsSimpleValue -->
+    <!-- https://w3id.org/ontoeng/osph#assignsSimpleValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#assignsSimpleValue">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ValueAssignment"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#assignsSimpleValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasIntervalEndTime -->
+    <!-- https://w3id.org/ontoeng/osph#hasIntervalEndTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#hasIntervalEndTime">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasIntervalEndTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasIntervalStartTime -->
+    <!-- https://w3id.org/ontoeng/osph#hasIntervalStartTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#hasIntervalStartTime">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasIntervalStartTime">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasNumberOfObservations -->
+    <!-- https://w3id.org/ontoeng/osph#hasNumberOfObservations -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#hasNumberOfObservations">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasNumberOfObservations">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <dc:description>Number of times the state was entered.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasPropertySimpleValue -->
+    <!-- https://w3id.org/ontoeng/osph#hasPropertySimpleValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#hasPropertySimpleValue">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#StaticProperty"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertySimpleValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/osph#hasStayRatio -->
+    <!-- https://w3id.org/ontoeng/osph#hasStayRatio -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/osph#hasStayRatio">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasStayRatio">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/osph#StateFrequency"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#StateFrequency"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Ratio (between 0 and 1) of time spent in the state.</dc:description>
     </owl:DatatypeProperty>
@@ -487,8 +487,8 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasConditionExpression"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasConditionExpression"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -587,8 +587,8 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#do"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Activity"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#do"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Activity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -612,8 +612,8 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isStateMachineOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isStateMachineOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -664,12 +664,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/expression#Variable -->
+    <!-- https://w3id.org/ontoeng/expression#Variable -->
 
-    <rdf:Description rdf:about="http://www.ontoeng.com/expression#Variable">
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#Variable">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#representsProperty"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#representsProperty"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -677,52 +677,52 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Activity -->
+    <!-- https://w3id.org/ontoeng/osph#Activity -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Activity">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Activity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#DataOrigin -->
+    <!-- https://w3id.org/ontoeng/osph#DataOrigin -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#DataOrigin"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#DataOrigin"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#EventGeneration -->
+    <!-- https://w3id.org/ontoeng/osph#EventGeneration -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#EventGeneration">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#EventGeneration">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Motion -->
+    <!-- https://w3id.org/ontoeng/osph#Motion -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Motion">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Motion">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasExternalMotion"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#MotionReference"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasExternalMotion"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#MotionReference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasMotionPlacement"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Placement3D"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasMotionPlacement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Placement3D"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasMotionRelTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectPlacement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasMotionRelTo"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectPlacement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasTimePosition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasTimePosition"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#TimePosition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -731,35 +731,35 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#MotionGeneration -->
+    <!-- https://w3id.org/ontoeng/osph#MotionGeneration -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#MotionGeneration">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#MotionGeneration">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#MotionReference -->
+    <!-- https://w3id.org/ontoeng/osph#MotionReference -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#MotionReference">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#Reference"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#MotionReference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#Reference"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ObjectDefinition -->
+    <!-- https://w3id.org/ontoeng/osph#ObjectDefinition -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ObjectDefinition">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ObjectDefinition">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStateMachine"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateMachine"/>
                 <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -767,54 +767,54 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ObjectHistory -->
+    <!-- https://w3id.org/ontoeng/osph#ObjectHistory -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ObjectHistory">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ObjectHistory">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#decomposesHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#decomposesHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistoryObservations"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryObservations"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistoryOrigin"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#DataOrigin"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryOrigin"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStateFrequencies"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#StateFrequency"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateFrequencies"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#StateFrequency"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isDecomposedByHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isDecomposedByHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isHistoryOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasIntervalEndTime"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasIntervalEndTime"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasIntervalStartTime"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasIntervalStartTime"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -823,26 +823,26 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ObjectPlacement -->
+    <!-- https://w3id.org/ontoeng/osph#ObjectPlacement -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ObjectPlacement"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ObjectPlacement"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Placement3D -->
+    <!-- https://w3id.org/ontoeng/osph#Placement3D -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Placement3D"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Placement3D"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Product -->
+    <!-- https://w3id.org/ontoeng/osph#Product -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Product">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Product">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ProductHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>An object that can be characterized in terms of placement and geometrical representation.</dc:description>
@@ -850,27 +850,27 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ProductHistory -->
+    <!-- https://w3id.org/ontoeng/osph#ProductHistory -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ProductHistory">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductHistory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistoryMotion"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Motion"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryMotion"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStateFrequencies"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateFrequencies"/>
                 <owl:allValuesFrom>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasRelatedState"/>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasRelatedState"/>
                         <owl:allValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
-                                    <rdf:Description rdf:about="http://www.ontoeng.com/osph#ProductSimpleState"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductSimpleState"/>
                                 </owl:unionOf>
                             </owl:Class>
                         </owl:allValuesFrom>
@@ -880,132 +880,132 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isDecomposedByHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ProductHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isDecomposedByHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isHistoryOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Product"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Product"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ProductSimpleState -->
+    <!-- https://w3id.org/ontoeng/osph#ProductSimpleState -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ProductSimpleState">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductSimpleState">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStateRepresentations"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Representation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateRepresentations"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Representation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Project -->
+    <!-- https://w3id.org/ontoeng/osph#Project -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Project">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Project">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasHistory"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#ProjectHistory"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProjectHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ProjectHistory -->
+    <!-- https://w3id.org/ontoeng/osph#ProjectHistory -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ProjectHistory">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectHistory"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProjectHistory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isHistoryOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Project"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Project"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Reference -->
+    <!-- https://w3id.org/ontoeng/osph#Reference -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Reference"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Reference"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#Representation -->
+    <!-- https://w3id.org/ontoeng/osph#Representation -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#Representation">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Representation">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasExternalRepresentation"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#RepresentationReference"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasExternalRepresentation"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isOfStateRepresentation"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#Representation"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isOfStateRepresentation"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Representation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#RepresentationReference -->
+    <!-- https://w3id.org/ontoeng/osph#RepresentationReference -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#RepresentationReference">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#Reference"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#RepresentationReference">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#Reference"/>
         <dc:description>Representation that is pointing to a 2D/3D CAD model.
 The geometric elements of the 2D/3D model are defined within the coordinate system of the modeled object (i.e. object coordinate system).</dc:description>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ResultStatistics -->
+    <!-- https://w3id.org/ontoeng/osph#ResultStatistics -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ResultStatistics">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ResultStatistics">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ResultValue -->
+    <!-- https://w3id.org/ontoeng/osph#ResultValue -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ResultValue">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ResultValue">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#StateFrequency -->
+    <!-- https://w3id.org/ontoeng/osph#StateFrequency -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#StateFrequency">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StateFrequency">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasRelatedState"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasRelatedState"/>
                 <owl:someValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasRelatedState"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasRelatedState"/>
                 <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasNumberOfObservations"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasNumberOfObservations"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -1020,7 +1020,7 @@ The geometric elements of the 2D/3D model are defined within the coordinate syst
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStayRatio"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStayRatio"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1035,7 +1035,7 @@ The geometric elements of the 2D/3D model are defined within the coordinate syst
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStayRatio"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStayRatio"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1054,27 +1054,27 @@ history interval.</dc:description>
     
 
 
-    <!-- http://www.ontoeng.com/osph#StaticProperty -->
+    <!-- https://w3id.org/ontoeng/osph#StaticProperty -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#StaticProperty">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StaticProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/osph#StochasticQuantity -->
+    <!-- https://w3id.org/ontoeng/osph#StochasticQuantity -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#StochasticQuantity">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StochasticQuantity">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasQuantityUnit"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#UnitOfMeasurement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasQuantityUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#isQuantitySampledFrom"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isQuantitySampledFrom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Generic class that represents complex or simple quantities that are directly or indirectly related to probability distributions.</dc:description>
@@ -1082,28 +1082,28 @@ history interval.</dc:description>
     
 
 
-    <!-- http://www.ontoeng.com/osph#UnitOfMeasurement -->
+    <!-- https://w3id.org/ontoeng/osph#UnitOfMeasurement -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#UnitOfMeasurement"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
     
 
 
-    <!-- http://www.ontoeng.com/osph#ValueAssignment -->
+    <!-- https://w3id.org/ontoeng/osph#ValueAssignment -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/osph#ValueAssignment">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ValueAssignment">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
         <dc:description>Action that assigns a value to a variable</dc:description>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#DescriptiveStatistics -->
+    <!-- https://w3id.org/ontoeng/statistics#DescriptiveStatistics -->
 
-    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#DescriptiveStatistics">
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#DescriptiveStatistics">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasStatisticsUnit"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#UnitOfMeasurement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStatisticsUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -1142,8 +1142,8 @@ history interval.</dc:description>
     <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/osph#hasPropertyUnit"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/osph#UnitOfMeasurement"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>

@@ -1,8 +1,8 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
 DELETE{

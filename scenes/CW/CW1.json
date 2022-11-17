@@ -7,25 +7,25 @@
 	"scene": [
 		"hdrSkyBox",
 		"ground",
-		"http://www.ontoeng.com/CW1#building",
-		"http://www.ontoeng.com/CW1#M4",
-		"http://www.ontoeng.com/CW1#M1",
-		"http://www.ontoeng.com/CW1#Pallet",
-		"http://www.ontoeng.com/CW1#M3",
-		"http://www.ontoeng.com/CW1#M2"
+		"https://w3id.org/ontoeng/CW1#building",
+		"https://w3id.org/ontoeng/CW1#M4",
+		"https://w3id.org/ontoeng/CW1#M1",
+		"https://w3id.org/ontoeng/CW1#Pallet",
+		"https://w3id.org/ontoeng/CW1#M3",
+		"https://w3id.org/ontoeng/CW1#M2"
 	],
 	"assets": [
 		{
-			"id": "http://www.ontoeng.com/CW1#M4",
-			"type": "http://www.ontoeng.com/factory#MachineTool",
+			"id": "https://w3id.org/ontoeng/CW1#M4",
+			"type": "https://w3id.org/ontoeng/factory#MachineTool",
 			"descr": "Inspection Camera Station",
 			"position": [
 				20,
 				0,
 				100
 			],
-			"placementRelTo": "http://www.ontoeng.com/CW1#building",
-			"container": "http://www.ontoeng.com/CW1#building",
+			"placementRelTo": "https://w3id.org/ontoeng/CW1#building",
+			"container": "https://w3id.org/ontoeng/CW1#building",
 			"representations": [
 				{
 					"file": "Inspection_Camera_Station.glb",
@@ -34,32 +34,32 @@
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#building",
+			"id": "https://w3id.org/ontoeng/CW1#building",
 			"type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
 			"descr": "Building",
 			"contains": [
-				"http://www.ontoeng.com/CW1#M1",
-				"http://www.ontoeng.com/CW1#M2",
-				"http://www.ontoeng.com/CW1#M3",
-				"http://www.ontoeng.com/CW1#M4",
-				"http://www.ontoeng.com/CW1#Pallet"
+				"https://w3id.org/ontoeng/CW1#M1",
+				"https://w3id.org/ontoeng/CW1#M2",
+				"https://w3id.org/ontoeng/CW1#M3",
+				"https://w3id.org/ontoeng/CW1#M4",
+				"https://w3id.org/ontoeng/CW1#Pallet"
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M1_startOp",
-			"type": "http://www.ontoeng.com/factory#MachineToolStartOperation"
+			"id": "https://w3id.org/ontoeng/CW1#M1_startOp",
+			"type": "https://w3id.org/ontoeng/factory#MachineToolStartOperation"
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M2",
-			"type": "http://www.ontoeng.com/factory#MachineTool",
+			"id": "https://w3id.org/ontoeng/CW1#M2",
+			"type": "https://w3id.org/ontoeng/factory#MachineTool",
 			"descr": "Pin Insertion Station",
 			"position": [
 				20,
 				0,
 				300
 			],
-			"placementRelTo": "http://www.ontoeng.com/CW1#building",
-			"container": "http://www.ontoeng.com/CW1#building",
+			"placementRelTo": "https://w3id.org/ontoeng/CW1#building",
+			"container": "https://w3id.org/ontoeng/CW1#building",
 			"representations": [
 				{
 					"file": "Pin_Insertion_Station.glb",
@@ -68,16 +68,16 @@
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M3",
-			"type": "http://www.ontoeng.com/factory#MachineTool",
+			"id": "https://w3id.org/ontoeng/CW1#M3",
+			"type": "https://w3id.org/ontoeng/factory#MachineTool",
 			"descr": "Riveting Station",
 			"position": [
 				20,
 				0,
 				200
 			],
-			"placementRelTo": "http://www.ontoeng.com/CW1#building",
-			"container": "http://www.ontoeng.com/CW1#building",
+			"placementRelTo": "https://w3id.org/ontoeng/CW1#building",
+			"container": "https://w3id.org/ontoeng/CW1#building",
 			"representations": [
 				{
 					"file": "Riveting_Station.glb",
@@ -86,20 +86,20 @@
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M3_startOp",
-			"type": "http://www.ontoeng.com/factory#MachineToolStartOperation"
+			"id": "https://w3id.org/ontoeng/CW1#M3_startOp",
+			"type": "https://w3id.org/ontoeng/factory#MachineToolStartOperation"
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M1",
-			"type": "http://www.ontoeng.com/factory#MachineTool",
+			"id": "https://w3id.org/ontoeng/CW1#M1",
+			"type": "https://w3id.org/ontoeng/factory#MachineTool",
 			"descr": "Inspection Camera Station",
 			"position": [
 				20,
 				0,
 				400
 			],
-			"placementRelTo": "http://www.ontoeng.com/CW1#building",
-			"container": "http://www.ontoeng.com/CW1#building",
+			"placementRelTo": "https://w3id.org/ontoeng/CW1#building",
+			"container": "https://w3id.org/ontoeng/CW1#building",
 			"representations": [
 				{
 					"file": "Inspection_Camera_Station.glb",
@@ -108,16 +108,16 @@
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#Pallet",
-			"type": "http://www.ontoeng.com/factory#Pallet",
+			"id": "https://w3id.org/ontoeng/CW1#Pallet",
+			"type": "https://w3id.org/ontoeng/factory#Pallet",
 			"descr": "Pallet for the main hinge assembly",
 			"position": [
 				50,
 				0,
 				300
 			],
-			"placementRelTo": "http://www.ontoeng.com/CW1#building",
-			"container": "http://www.ontoeng.com/CW1#building",
+			"placementRelTo": "https://w3id.org/ontoeng/CW1#building",
+			"container": "https://w3id.org/ontoeng/CW1#building",
 			"representations": [
 				{
 					"file": "Pallet.glb",
@@ -126,12 +126,12 @@
 			]
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M4_startOp",
-			"type": "http://www.ontoeng.com/factory#MachineToolStartOperation"
+			"id": "https://w3id.org/ontoeng/CW1#M4_startOp",
+			"type": "https://w3id.org/ontoeng/factory#MachineToolStartOperation"
 		},
 		{
-			"id": "http://www.ontoeng.com/CW1#M2_startOp",
-			"type": "http://www.ontoeng.com/factory#MachineToolStartOperation"
+			"id": "https://w3id.org/ontoeng/CW1#M2_startOp",
+			"type": "https://w3id.org/ontoeng/factory#MachineToolStartOperation"
 		}
 	]
 }

@@ -7,8 +7,8 @@
     },
     "nodes": [
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1",
             "actions": [
                 {
                     "trigger": {
@@ -23,8 +23,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint1",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint1",
             "actions": [
                 {
                     "trigger": {
@@ -39,8 +39,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint4",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint4",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint4",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint4",
             "actions": [
                 {
                     "trigger": {
@@ -55,8 +55,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint6",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint6",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint6",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint6",
             "actions": [
                 {
                     "trigger": {
@@ -71,8 +71,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper1",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_Gripper1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -82,14 +82,14 @@
                     "event": {
                         "type": "animation",
                         "data": "RPP1.UR_Gripper1.working",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_EndEffector"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_EndEffector"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint5",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint5",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint5",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint5",
             "actions": [
                 {
                     "trigger": {
@@ -104,8 +104,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper2",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Gripper2",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_Gripper2",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -115,14 +115,14 @@
                     "event": {
                         "type": "animation",
                         "data": "RPP1.UR_Gripper2.working",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_EndEffector"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_EndEffector"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint2",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint2",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint2",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint2",
             "actions": [
                 {
                     "trigger": {
@@ -137,8 +137,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint3",
-            "id": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_joint3",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint3",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_joint3",
             "actions": [
                 {
                     "trigger": {
@@ -153,8 +153,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.WingScrew",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.WingScrew",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.WingScrew",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.WingScrew",
             "actions": [
                 {
                     "trigger": {
@@ -163,14 +163,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Spring",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Spring",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Spring",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Spring",
             "actions": [
                 {
                     "trigger": {
@@ -179,14 +179,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#pallet_1",
-            "id": "http://www.ontoeng.com/VFLabRobot#pallet_1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#pallet_1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#pallet_1",
             "actions": [
                 {
                     "trigger": {
@@ -195,7 +195,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.URPPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#RPP1.URPPs_PalletPosition"
                     }
                 },
                 {
@@ -205,7 +205,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.URPPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#RPP1.URPPs_PalletPosition"
                     }
                 },
                 {
@@ -215,7 +215,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1",
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1",
                         "position": [
                             0.0,
                             23.0,
@@ -226,8 +226,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1",
             "actions": [
                 {
                     "trigger": {
@@ -236,7 +236,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PPH1.WC2s_Buffer1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PPH1.WC2s_Buffer1"
                     }
                 },
                 {
@@ -246,7 +246,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#RPP1.UR_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#RPP1.UR_Workholding",
                         "position": [
                             -0.03580297174470388,
                             0.4965687114827801,
@@ -266,14 +266,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#pallet_1.Pal_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#pallet_1.Pal_Workholding"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-3",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-3",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-3",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-3",
             "actions": [
                 {
                     "trigger": {
@@ -282,14 +282,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Hook",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Hook",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Hook",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Hook",
             "actions": [
                 {
                     "trigger": {
@@ -298,14 +298,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Box",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Box",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Box",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Box",
             "actions": [
                 {
                     "trigger": {
@@ -314,14 +314,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Clip",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Clip",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Clip",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Clip",
             "actions": [
                 {
                     "trigger": {
@@ -330,14 +330,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-1",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-1",
             "actions": [
                 {
                     "trigger": {
@@ -346,14 +346,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Wing",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Wing",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Wing",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Wing",
             "actions": [
                 {
                     "trigger": {
@@ -362,14 +362,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#Hinge_1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector1",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector1",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Connector1",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Connector1",
             "actions": [
                 {
                     "trigger": {
@@ -378,14 +378,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector2",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Connector2",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Connector2",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Connector2",
             "actions": [
                 {
                     "trigger": {
@@ -394,14 +394,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-2",
-            "id": "http://www.ontoeng.com/VFLabRobot#Hinge_1.Pin1-2",
+            "name": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-2",
+            "id": "https://w3id.org/ontoeng/VFLabRobot#Hinge_1.Pin1-2",
             "actions": [
                 {
                     "trigger": {
@@ -410,7 +410,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/VFLabRobot#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/VFLabRobot#PalletStorage.1"
                     }
                 }
             ]

@@ -33,7 +33,7 @@
         {
             "id": "RS",
             "descr": "Robotic station",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb",
@@ -54,7 +54,7 @@
         },
         {
             "id": "UR",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
                     "file": "UR_Pick_and_Place_Station.glb#URPPs_Robot",

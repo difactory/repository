@@ -6,9 +6,9 @@ PREFIX express: <https://w3id.org/express#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX osph: <http://www.ontoeng.com/osph#>
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
 SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) 
 

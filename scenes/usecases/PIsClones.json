@@ -15,7 +15,7 @@
     "assets": [
         {
             "id": "PIs_1",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb",
@@ -47,7 +47,7 @@
         },
         {
             "id": "PIs_2",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb",
@@ -79,7 +79,7 @@
         },
         {
             "id": "PIs_3",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "Pin_Insertion_Station.glb",

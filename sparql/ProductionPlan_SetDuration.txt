@@ -1,7 +1,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
 DELETE{
 	GRAPH ?g1{?prodplan ifc:duration_IfcWorkControl ?duration .}

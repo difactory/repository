@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ontoeng.com/statistics#"
-     xml:base="http://www.ontoeng.com/statistics"
+<rdf:RDF xmlns="https://w3id.org/ontoeng/statistics#"
+     xml:base="https://w3id.org/ontoeng/statistics"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
 	 xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,10 +8,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:stat="http://www.ontoeng.com/statistics#"
+     xmlns:stat="https://w3id.org/ontoeng/statistics#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="http://www.ontoeng.com/statistics">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/statistics">
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>The Statistics Ontology defines the basic classes and properties needed to model data related to descriptive statistics and probability distributions.
 
@@ -65,22 +65,22 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasOutcomes -->
+    <!-- https://w3id.org/ontoeng/statistics#hasOutcomes -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/statistics#hasOutcomes">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#CategoricalDistribution"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/statistics#CategoricalOutcome"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/statistics#hasOutcomes">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalDistribution"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalOutcome"/>
         <dc:description>Definition of the outcomes of a categorical probability distribution.</dc:description>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#isSampledFrom -->
+    <!-- https://w3id.org/ontoeng/statistics#isSampledFrom -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/statistics#isSampledFrom">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/statistics#isSampledFrom">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
     </owl:ObjectProperty>
     
 
@@ -96,11 +96,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasAlpha_BetaDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasAlpha_BetaDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasAlpha_BetaDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasAlpha_BetaDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#BetaDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#BetaDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the first shape parameter for a Beta probability distribution.</dc:description>
         <rdfs:label>hasAlpha</rdfs:label>
@@ -108,11 +108,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasBeta_BetaDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasBeta_BetaDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasBeta_BetaDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasBeta_BetaDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#BetaDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#BetaDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the second shape parameter for a Beta probability distribution.</dc:description>
         <rdfs:label>hasBeta</rdfs:label>
@@ -120,11 +120,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasD1_FDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasD1_FDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasD1_FDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasD1_FDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#FDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#FDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:description>Definition of the first degrees of freedom for an F- probability distribution.</dc:description>
         <rdfs:label>hasD1</rdfs:label>
@@ -132,11 +132,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasD2_FDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasD2_FDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasD2_FDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasD2_FDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#FDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#FDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:description>Definition of the second degrees of freedom for an F- probability distribution.</dc:description>
         <rdfs:label>hasD2</rdfs:label>
@@ -144,77 +144,77 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionKurtosis -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionKurtosis -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionKurtosis">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionKurtosis">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Kurtosis of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionMean -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionMean -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionMean">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionMean">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Mean of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionMedian -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionMedian -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionMedian">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionMedian">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Median of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionMode -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionMode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionMode">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionMode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Mean of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionSkewness -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionSkewness -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionSkewness">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionSkewness">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Skewness of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasDistributionVariance -->
+    <!-- https://w3id.org/ontoeng/statistics#hasDistributionVariance -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasDistributionVariance">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasDistributionVariance">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Variance of the probability distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasKappa_ChisquaredDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasKappa_ChisquaredDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasKappa_ChisquaredDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasKappa_ChisquaredDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ChisquaredDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ChisquaredDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:description>Definition of the degrees of freedom for a Chi-squared probability distribution.</dc:description>
         <rdfs:label>hasKappa</rdfs:label>
@@ -222,11 +222,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasKappa_GammaDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasKappa_GammaDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasKappa_GammaDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasKappa_GammaDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#GammaDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#GammaDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the shape parameter for a Gamma probability distribution.</dc:description>
         <rdfs:label>hasKappa</rdfs:label>
@@ -234,11 +234,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasKappa_WeibullDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasKappa_WeibullDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasKappa_WeibullDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasKappa_WeibullDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#WeibullDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#WeibullDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the shape parameter for a Weibull probability distribution.</dc:description>
         <rdfs:label>hasKappa</rdfs:label>
@@ -246,11 +246,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasLambda_ExponentialDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasLambda_ExponentialDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#ExponentialDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#ExponentialDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the rate parameter for an Exponential probability distribution.</dc:description>
         <rdfs:label>hasLambda</rdfs:label>
@@ -258,11 +258,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasLambda_PoissonDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasLambda_PoissonDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasLambda_PoissonDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLambda_PoissonDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#PoissonDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#PoissonDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the lambda parameter for a Poisson probability distribution.</dc:description>
         <rdfs:label>hasLambda</rdfs:label>
@@ -270,11 +270,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasLambda_WeibullDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasLambda_WeibullDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasLambda_WeibullDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLambda_WeibullDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#WeibullDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#WeibullDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the scale parameter for a Weibull probability distribution.</dc:description>
         <rdfs:label>hasLambda</rdfs:label>
@@ -282,11 +282,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasLowerLimit_TriangularDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasLowerLimit_TriangularDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasLowerLimit_TriangularDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLowerLimit_TriangularDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#TriangularDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#TriangularDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the lower limit parameter (a) for a Triangular probability distribution.</dc:description>
         <rdfs:label>hasLowerLimit</rdfs:label>
@@ -294,11 +294,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasLowerLimit_UniformContinuousDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasLowerLimit_UniformContinuousDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasLowerLimit_UniformContinuousDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLowerLimit_UniformContinuousDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#UniformContinuousDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#UniformContinuousDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the lower limit parameter (a) for a Uniform probability distribution.</dc:description>
         <rdfs:label>hasLowerLimit</rdfs:label>
@@ -306,11 +306,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasMi_LognormalDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasMi_LognormalDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasMi_LognormalDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasMi_LognormalDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#LognormalDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#LognormalDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the location parameter for a Log-Normal probability distribution.</dc:description>
         <rdfs:label>hasMi</rdfs:label>
@@ -318,11 +318,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasMi_NormalDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasMi_NormalDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasMi_NormalDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasMi_NormalDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#NormalDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#NormalDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the mean parameter for a Normal probability distribution.</dc:description>
         <rdfs:label>hasMi</rdfs:label>
@@ -330,11 +330,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasMode_TriangularDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasMode_TriangularDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasMode_TriangularDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasMode_TriangularDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#TriangularDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#TriangularDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the mode parameter (c) for a Triangular probability distribution.</dc:description>
         <rdfs:label>hasMode</rdfs:label>
@@ -342,165 +342,165 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasOutcomeLabel -->
+    <!-- https://w3id.org/ontoeng/statistics#hasOutcomeLabel -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasOutcomeLabel">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasOutcomeLabel">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#CategoricalOutcome"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalOutcome"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:description>Definition of the label of an outcome of categorical distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasOutcomeProbability -->
+    <!-- https://w3id.org/ontoeng/statistics#hasOutcomeProbability -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasOutcomeProbability">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasOutcomeProbability">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#CategoricalOutcome"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalOutcome"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the probability of an outcome of categorical distribution.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleFirstQuartile -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleFirstQuartile -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleFirstQuartile">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleFirstQuartile">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>First quartile of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleKurtosis -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleKurtosis -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleKurtosis">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleKurtosis">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Kurtosis of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleMaximum -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleMaximum -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleMaximum">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleMaximum">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Maximum value in the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleMean -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleMean -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleMean">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleMean">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Sample arithmetic mean.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleMedian -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleMedian -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleMedian">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleMedian">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Median of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleMinimum -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleMinimum -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleMinimum">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleMinimum">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Minimum value in the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleMode -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleMode -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleMode">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleMode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Mode of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleRange -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleRange -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleRange">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleRange">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Difference between the largest and smallest values in the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleSize -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleSize -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleSize">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleSize">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <dc:description>Size of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleSkewness -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleSkewness -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleSkewness">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleSkewness">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Skewness of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleThirdQuartile -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleThirdQuartile -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleThirdQuartile">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleThirdQuartile">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Third quartile of the sample.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSampleVariance -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSampleVariance -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSampleVariance">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSampleVariance">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#DescriptiveStatistics"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Sample variance.</dc:description>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSigma_LognormalDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSigma_LognormalDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSigma_LognormalDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSigma_LognormalDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#LognormalDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#LognormalDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the scale parameter for a Log-Normal probability distribution.</dc:description>
         <rdfs:label>hasSigma</rdfs:label>
@@ -508,11 +508,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSigma_NormalDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSigma_NormalDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSigma_NormalDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSigma_NormalDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#NormalDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#NormalDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the standard deviation parameter for a Normal probability distribution.</dc:description>
         <rdfs:label>hasSigma</rdfs:label>
@@ -520,11 +520,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSuccessProbability_BernoulliDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSuccessProbability_BernoulliDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSuccessProbability_BernoulliDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSuccessProbability_BernoulliDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#BernoulliDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#BernoulliDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the success probability for a Bernoulli probability distribution.</dc:description>
         <rdfs:label>hasSuccessProbability</rdfs:label>
@@ -532,11 +532,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasSuccessProbability_GeometricDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasSuccessProbability_GeometricDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasSuccessProbability_GeometricDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasSuccessProbability_GeometricDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#GeometricDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#GeometricDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the success probability for a Geometric probability distribution.</dc:description>
         <rdfs:label>hasSuccessProbability</rdfs:label>
@@ -544,11 +544,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasTheta_GammaDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasTheta_GammaDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasTheta_GammaDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasTheta_GammaDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#GammaDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#GammaDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the scale parameter for the Gamma probability distribution.</dc:description>
         <rdfs:label>hasTheta</rdfs:label>
@@ -556,11 +556,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasUpperLimit_TriangularDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasUpperLimit_TriangularDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasUpperLimit_TriangularDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasUpperLimit_TriangularDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#TriangularDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#TriangularDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the upper limit parameter (b) for a Triangular probability distribution.</dc:description>
         <rdfs:label>hasUpperLimit</rdfs:label>
@@ -568,11 +568,11 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#hasUpperLimit_UniformContinuousDistr -->
+    <!-- https://w3id.org/ontoeng/statistics#hasUpperLimit_UniformContinuousDistr -->
 
-    <owl:DatatypeProperty rdf:about="http://www.ontoeng.com/statistics#hasUpperLimit_UniformContinuousDistr">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/statistics#hasUpperLimit_UniformContinuousDistr">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/statistics#UniformContinuousDistribution"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/statistics#UniformContinuousDistribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <dc:description>Definition of the upper limit parameter (b) for a Uniform probability distribution.</dc:description>
         <rdfs:label>hasUpperLimit</rdfs:label>
@@ -591,19 +591,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#BernoulliDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#BernoulliDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#BernoulliDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#BernoulliDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSuccessProbability_BernoulliDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSuccessProbability_BernoulliDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSuccessProbability_BernoulliDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSuccessProbability_BernoulliDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -624,25 +624,25 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#BetaDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#BetaDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#BetaDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#BetaDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasAlpha_BetaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasAlpha_BetaDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasBeta_BetaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasBeta_BetaDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasAlpha_BetaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasAlpha_BetaDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -657,7 +657,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasBeta_BetaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasBeta_BetaDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -675,20 +675,20 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#CategoricalDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#CategoricalDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#CategoricalDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#CategoricalDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomes"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontoeng.com/statistics#CategoricalOutcome"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomes"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalOutcome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomes"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/statistics#CategoricalOutcome"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomes"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#CategoricalOutcome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Categorical probability distribution.</dc:description>
@@ -696,24 +696,24 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#CategoricalOutcome -->
+    <!-- https://w3id.org/ontoeng/statistics#CategoricalOutcome -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#CategoricalOutcome">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#CategoricalOutcome">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomeProbability"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomeProbability"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomeLabel"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomeLabel"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomeProbability"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomeProbability"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -731,7 +731,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasOutcomeLabel"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasOutcomeLabel"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
@@ -741,19 +741,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#ChisquaredDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#ChisquaredDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#ChisquaredDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#ChisquaredDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_ChisquaredDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_ChisquaredDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_ChisquaredDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_ChisquaredDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -771,23 +771,23 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#BetaDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#ChisquaredDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#ExponentialDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#FDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#GammaDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#LognormalDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#NormalDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#TriangularDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#UniformContinuousDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#WeibullDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#BetaDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#ChisquaredDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#ExponentialDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#FDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#GammaDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#LognormalDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#NormalDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#TriangularDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#UniformContinuousDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#WeibullDistribution"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -797,66 +797,66 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#DescriptiveStatistics -->
+    <!-- https://w3id.org/ontoeng/statistics#DescriptiveStatistics -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#DescriptiveStatistics">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#DescriptiveStatistics">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#isSampledFrom"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#isSampledFrom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleFirstQuartile"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleFirstQuartile"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleKurtosis"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleKurtosis"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleMaximum"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleMaximum"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleMean"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleMean"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleMedian"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleMedian"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleMinimum"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleMinimum"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleMode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleMode"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleRange"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleRange"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleSize"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleSize"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -871,19 +871,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleSkewness"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleSkewness"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleThirdQuartile"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleThirdQuartile"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSampleVariance"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSampleVariance"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -892,17 +892,17 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#BernoulliDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#CategoricalDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#GeometricDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#PoissonDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#BernoulliDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#CategoricalDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#GeometricDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#PoissonDistribution"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -912,19 +912,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#ExponentialDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#ExponentialDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#ExponentialDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#ExponentialDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_ExponentialDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_ExponentialDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -942,25 +942,25 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#FDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#FDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#FDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#FDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasD1_FDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasD1_FDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasD2_FDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasD2_FDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasD1_FDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasD1_FDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -975,7 +975,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasD2_FDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasD2_FDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -993,25 +993,25 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#GammaDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#GammaDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#GammaDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#GammaDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_GammaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_GammaDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasTheta_GammaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasTheta_GammaDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_GammaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_GammaDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1026,7 +1026,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasTheta_GammaDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasTheta_GammaDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1044,19 +1044,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#GeometricDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#GeometricDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#GeometricDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#GeometricDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSuccessProbability_GeometricDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSuccessProbability_GeometricDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSuccessProbability_GeometricDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSuccessProbability_GeometricDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1077,31 +1077,31 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#LognormalDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#LognormalDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#LognormalDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#LognormalDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMi_LognormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMi_LognormalDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSigma_LognormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSigma_LognormalDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMi_LognormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMi_LognormalDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSigma_LognormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSigma_LognormalDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1119,31 +1119,31 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#NormalDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#NormalDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#NormalDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#NormalDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMi_NormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMi_NormalDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSigma_NormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSigma_NormalDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMi_NormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMi_NormalDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasSigma_NormalDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasSigma_NormalDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1161,19 +1161,19 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#PoissonDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#PoissonDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#PoissonDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#PoissonDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_PoissonDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_PoissonDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_PoissonDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_PoissonDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1191,50 +1191,50 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#ProbabilityDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#ProbabilityDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#ProbabilityDistribution">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#ProbabilityDistribution">
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
-                    <rdf:Description rdf:about="http://www.ontoeng.com/statistics#DiscreteProbabilityDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/statistics#DiscreteProbabilityDistribution"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionKurtosis"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionKurtosis"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionMean"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionMean"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionMedian"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionMedian"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionMode"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionMode"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionSkewness"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionSkewness"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasDistributionVariance"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasDistributionVariance"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1244,43 +1244,43 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#TriangularDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#TriangularDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#TriangularDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#TriangularDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLowerLimit_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLowerLimit_TriangularDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMode_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMode_TriangularDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasUpperLimit_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasUpperLimit_TriangularDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLowerLimit_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLowerLimit_TriangularDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasMode_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasMode_TriangularDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasUpperLimit_TriangularDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasUpperLimit_TriangularDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1289,31 +1289,31 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#UniformContinuousDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#UniformContinuousDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#UniformContinuousDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#UniformContinuousDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLowerLimit_UniformContinuousDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLowerLimit_UniformContinuousDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasUpperLimit_UniformContinuousDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasUpperLimit_UniformContinuousDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLowerLimit_UniformContinuousDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLowerLimit_UniformContinuousDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasUpperLimit_UniformContinuousDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasUpperLimit_UniformContinuousDistr"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1322,25 +1322,25 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     
 
 
-    <!-- http://www.ontoeng.com/statistics#WeibullDistribution -->
+    <!-- https://w3id.org/ontoeng/statistics#WeibullDistribution -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/statistics#WeibullDistribution">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/statistics#ContinuousProbabilityDistribution"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#WeibullDistribution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#ContinuousProbabilityDistribution"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_WeibullDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_WeibullDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_WeibullDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_WeibullDistr"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasKappa_WeibullDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasKappa_WeibullDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1355,7 +1355,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/statistics#hasLambda_WeibullDistr"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/statistics#hasLambda_WeibullDistr"/>
                 <owl:allValuesFrom>
                     <rdfs:Datatype>
                         <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>

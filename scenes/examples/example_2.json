@@ -22,7 +22,7 @@
     {
       "id": "WorkstationTypeA",
       "descr": "Machining center",
-      "type": "http://www.ontoeng.com/factory#MachineToolType",
+      "type": "https://w3id.org/ontoeng/factory#MachineToolType",
       "representations": [
         {
           "file": "machines/TC108/TC108.obj",
@@ -33,7 +33,7 @@
     {
       "id": "WorkstationTypeB",
       "descr": "Machining center",
-      "type": "http://www.ontoeng.com/factory#MachineToolType",
+      "type": "https://w3id.org/ontoeng/factory#MachineToolType",
       "representations": [
         {
           "file": "machines/TC52/tc52.obj",
@@ -55,7 +55,7 @@
     {
       "id": "WS01",
       "descr": "Workstation 01",
-      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "type": "https://w3id.org/ontoeng/factory#MachineTool",
       "model": "WorkstationTypeA",
       "position": [
         0,
@@ -72,7 +72,7 @@
     {
       "id": "WS02",
       "descr": "Workstation 02",
-      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "type": "https://w3id.org/ontoeng/factory#MachineTool",
       "model": "WorkstationTypeA",
       "position": [
         0,
@@ -89,7 +89,7 @@
     {
       "id": "WS03",
       "descr": "Workstation 03",
-      "type": "http://www.ontoeng.com/factory#MachineTool",
+      "type": "https://w3id.org/ontoeng/factory#MachineTool",
       "model": "WorkstationTypeB",
       "position": [
         0,

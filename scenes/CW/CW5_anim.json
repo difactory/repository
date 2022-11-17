@@ -5,7 +5,7 @@
     },
     "nodes": [
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint1",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint1",
             "actions": [
                 {
                     "trigger": {
@@ -16,13 +16,13 @@
                         "type": "show",
                         "position": [ 0, 8.605, 0 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_base"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_base"
                     }
                 }
             ]
         },
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint2",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint2",
             "actions": [
                 {
                     "trigger": {
@@ -33,13 +33,13 @@
                         "type": "show",
                         "position": [ 0, 6.585, 5.4 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_joint1"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_joint1"
                     }
                 }
             ]
         },
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint3",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint3",
             "actions": [
                 {
                     "trigger": {
@@ -50,13 +50,13 @@
                         "type": "show",
                         "position": [ 0, 24.365,  2.36 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_joint2"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_joint2"
                     }
                 }
             ]
         },
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint4",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint4",
             "actions": [
                 {
                     "trigger": {
@@ -67,13 +67,13 @@
                         "type": "show",
                         "position": [ 0, 21.3,  0.8 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_joint3"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_joint3"
                     }
                 }
             ]
         },
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint5",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint5",
             "actions": [
                 {
                     "trigger": {
@@ -84,13 +84,13 @@
                         "type": "show",
                         "position": [0,  4.26, 4.08 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_joint4"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_joint4"
                     }
                 }
             ]
         },
         {
-            "id": "http://www.ontoeng.com/CW5#UR_joint6",
+            "id": "https://w3id.org/ontoeng/CW5#UR_joint6",
             "actions": [
                 {
                     "trigger": {
@@ -101,7 +101,7 @@
                         "type": "show",
                         "position": [ 0, 4.08, 4.26 ],
                         "rotation": [ 0, 0, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW5#UR_joint5"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW5#UR_joint5"
                     }
                 }
             ]

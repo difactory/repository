@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
-PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
 
 
 DELETE{

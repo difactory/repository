@@ -1,4 +1,4 @@
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 
 DELETE { 
 	GRAPH ?g { 

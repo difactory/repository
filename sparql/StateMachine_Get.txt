@@ -1,12 +1,12 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
-PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX cs: <http://www.ontoeng.com/controlSystem>
-PREFIX ex: <http://www.ontoeng.com/expression#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
 SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) ?parent ?statetype ?stateclass ?transition ?target ?event ?cond

@@ -5,7 +5,7 @@
     },
     "nodes": [
         {
-            "id": "http://www.ontoeng.com/CW1#Pallet",
+            "id": "https://w3id.org/ontoeng/CW1#Pallet",
             "actions": [
                 {
                     "trigger": {
@@ -15,7 +15,7 @@
                     "event": {
                         "type": "show",
                         "position": [ 0, 23, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW1#M1"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW1#M1"
                     }
                 },
                 {
@@ -26,7 +26,7 @@
                     "event": {
                         "type": "show",
                         "position": [  0, 23, 0 ],
-                        "placementRelTo": "http://www.ontoeng.com/CW1#M2"
+                        "placementRelTo": "https://w3id.org/ontoeng/CW1#M2"
                     }
                 }
             ]

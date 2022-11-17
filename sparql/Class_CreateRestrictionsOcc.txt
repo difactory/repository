@@ -2,11 +2,11 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
 INSERT {
-	GRAPH <http://www.ontoeng.com/factory> {
+	GRAPH <https://w3id.org/ontoeng/factory> {
     	?occClass rdfs:subClassOf
           [ a owl:Restriction ;
             owl:onProperty ifcext:declaresObject ;
@@ -20,16 +20,16 @@ INSERT {
 }
 #SELECT ?occClass
 #FROM <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL>
-#FROM <http://www.ontoeng.com/factory>
-#FROM NAMED <http://www.ontoeng.com/factory>
+#FROM <https://w3id.org/ontoeng/factory>
+#FROM NAMED <https://w3id.org/ontoeng/factory>
 USING <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL>
-USING <http://www.ontoeng.com/factory>
-USING NAMED <http://www.ontoeng.com/factory>
+USING <https://w3id.org/ontoeng/factory>
+USING NAMED <https://w3id.org/ontoeng/factory>
 
 WHERE { 
   ?occClass rdfs:subClassOf* ifc:IfcProduct .
   FILTER ( ?occClass != owl:NamedIndividual ) . 
-  GRAPH <http://www.ontoeng.com/factory> {
+  GRAPH <https://w3id.org/ontoeng/factory> {
     ?occClass a owl:Class .
   }
 }  

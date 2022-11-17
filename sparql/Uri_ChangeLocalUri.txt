@@ -1,4 +1,4 @@
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 
 DELETE  { 
 	GRAPH ?g1 {?s1 ?p1 ?uriChild .}  

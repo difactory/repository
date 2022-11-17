@@ -1,11 +1,11 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
-PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
 select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) (count(distinct ?wPos) as ?nServ) (group_concat(distinct ?taskclass) as ?taskclasses)

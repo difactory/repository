@@ -12,7 +12,7 @@
     "assets": [
         {
             "id": "Hinge_1",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb",
@@ -27,7 +27,7 @@
         },
         {
             "id": "Hinge_2",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb",
@@ -42,7 +42,7 @@
         },
         {
             "id": "Hinge_3",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb",

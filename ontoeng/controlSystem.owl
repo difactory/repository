@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.ontoeng.com/controlSystem#"
-     xml:base="http://www.ontoeng.com/controlSystem"
+<rdf:RDF xmlns="https://w3id.org/ontoeng/controlSystem#"
+     xml:base="https://w3id.org/ontoeng/controlSystem"
      xmlns:schema="http://schema.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:cc="http://creativecommons.org/ns#"
@@ -9,15 +9,15 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:controlSystem="http://www.ontoeng.com/controlSystem#"
+     xmlns:controlSystem="https://w3id.org/ontoeng/controlSystem#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://www.ontoeng.com/controlSystem">
-        <owl:imports rdf:resource="http://www.ontoeng.com/osph"/>
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/controlSystem">
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/osph"/>
         <dc:contributor>Emanuele Bruini</dc:contributor>
         <dc:description>The ControlSystem ontology</dc:description>
         <dc:creator>Marcello Urgo</dc:creator>
@@ -72,28 +72,28 @@
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#hasAlgorithmExpression -->
+    <!-- https://w3id.org/ontoeng/controlSystem#hasAlgorithmExpression -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasAlgorithmExpression">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/controlSystem#Algorithm"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/controlSystem#hasAlgorithmExpression">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/controlSystem#Algorithm"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#hasExecutionController -->
+    <!-- https://w3id.org/ontoeng/controlSystem#hasExecutionController -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasExecutionController">
-        <rdfs:range rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/controlSystem#hasExecutionController">
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#hasPolicyExpression -->
+    <!-- https://w3id.org/ontoeng/controlSystem#hasPolicyExpression -->
 
-    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasPolicyExpression">
-        <rdfs:domain rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
-        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/controlSystem#hasPolicyExpression">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/controlSystem#ControlPolicy"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
     </owl:ObjectProperty>
     
 
@@ -109,174 +109,174 @@
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#AGGWNQControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#AGGWNQControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#AGGWNQControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#AGGWNQControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#Algorithm -->
+    <!-- https://w3id.org/ontoeng/controlSystem#Algorithm -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#Algorithm">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#Algorithm">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/controlSystem#hasAlgorithmExpression"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/controlSystem#hasAlgorithmExpression"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#BSSControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#BSSControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#BSSControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#BSSControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControlPolicy">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ControlPolicy">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.ontoeng.com/controlSystem#hasPolicyExpression"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/controlSystem#hasPolicyExpression"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ControllerFB -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ControllerFB -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControllerFB">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ControllerFB">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ControllerSimpleState -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ControllerSimpleState -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControllerSimpleState">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ControllerSimpleState">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ConwipControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ConwipControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#DispControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#DispControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#DispControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#DispControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#DispatchingController -->
+    <!-- https://w3id.org/ontoeng/controlSystem#DispatchingController -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#DispatchingController">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#DispatchingController">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#KanbanControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#KanbanControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#KanbanControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#KanbanControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#PriorityFunction -->
+    <!-- https://w3id.org/ontoeng/controlSystem#PriorityFunction -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#PriorityFunction">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#Algorithm"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#PriorityFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#Algorithm"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#RControllerIdleState -->
+    <!-- https://w3id.org/ontoeng/controlSystem#RControllerIdleState -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#RControllerIdleState">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerIdleState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#RControllerReleaseState -->
+    <!-- https://w3id.org/ontoeng/controlSystem#RControllerReleaseState -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#RControllerReleaseState">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseCondition -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseCondition -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseCondition">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseCondition">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseControlPolicy -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControlPolicy"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseController -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseController -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseController">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseController">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState">
-        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerSimpleState"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerSimpleState"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseGuard -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseGuard -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseGuard">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseGuard">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseCondition"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseCondition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.ontoeng.com/controlSystem#ReleaseTransition -->
+    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseTransition -->
 
-    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseTransition">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseTransition">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
-                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseGuard"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

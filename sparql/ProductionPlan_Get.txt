@@ -1,11 +1,11 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX osph: <http://www.ontoeng.com/osph#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#>
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
-PREFIX factory: <http://www.ontoeng.com/factory#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
 SELECT distinct ?prodplan ?time (group_concat(distinct ?sys) as ?allsys) (group_concat(distinct ?contr) as ?allcontr) (group_concat(distinct ?prodsched) as ?allprodsched)
 

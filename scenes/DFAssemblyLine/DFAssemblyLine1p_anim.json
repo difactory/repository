@@ -7,8 +7,8 @@
     },
     "nodes": [
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -18,14 +18,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PPW01][PPW01.WC1s_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -35,14 +35,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PPW01][PPW01.WC1s_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -52,14 +52,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PPW01][PPW01.WC1s_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -69,14 +69,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PPW01][PPW01.WC1s_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -86,14 +86,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP01][PP01.PPs_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingZ"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingZ"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingZ",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingZ",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingZ",
             "actions": [
                 {
                     "trigger": {
@@ -103,14 +103,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP01][PP01.PPs_FloatingZ][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -120,14 +120,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP01][PP01.PPs_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -137,14 +137,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP01][PP01.PPs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI02",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI02",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI02",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI02",
             "actions": [
                 {
                     "trigger": {
@@ -179,8 +179,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R03",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R03",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R03",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R03",
             "actions": [
                 {
                     "trigger": {
@@ -215,8 +215,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05",
             "actions": [
                 {
                     "trigger": {
@@ -251,8 +251,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI01",
             "actions": [
                 {
                     "trigger": {
@@ -287,8 +287,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI04",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI04",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI04",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI04",
             "actions": [
                 {
                     "trigger": {
@@ -323,8 +323,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PPW01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PPW01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01",
             "actions": [
                 {
                     "trigger": {
@@ -359,8 +359,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03",
             "actions": [
                 {
                     "trigger": {
@@ -395,8 +395,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R02",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R02",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R02",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R02",
             "actions": [
                 {
                     "trigger": {
@@ -431,8 +431,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01",
             "actions": [
                 {
                     "trigger": {
@@ -468,8 +468,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02",
             "actions": [
                 {
                     "trigger": {
@@ -504,8 +504,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04",
             "actions": [
                 {
                     "trigger": {
@@ -540,8 +540,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R01",
             "actions": [
                 {
                     "trigger": {
@@ -576,8 +576,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI03",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI03",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI03",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI03",
             "actions": [
                 {
                     "trigger": {
@@ -612,8 +612,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01",
             "actions": [
                 {
                     "trigger": {
@@ -622,7 +622,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_RestingPos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_RestingPos1"
                     }
                 },
                 {
@@ -633,7 +633,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][80]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(0.16)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_WorkingPos"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_WorkingPos"
                     }
                 },
                 {
@@ -643,7 +643,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_Workholding",
                         "position": [
                             -0.1350000000000023,
                             -0.8199999999999988,
@@ -658,7 +658,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#pallet_02.Pal_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#pallet_02.Pal_Workholding"
                     }
                 },
                 {
@@ -668,7 +668,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Workholding",
                         "position": [
                             -0.002000000000001024,
                             0.7060000000000002,
@@ -684,7 +684,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[-154.02][313.86][-42.5]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(0.704376)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Buffer10"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Buffer10"
                     }
                 },
                 {
@@ -695,14 +695,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[120][0][150]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(0.384187)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Buffer3"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Buffer3"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Clip",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Clip",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Clip",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Clip",
             "actions": [
                 {
                     "trigger": {
@@ -711,7 +711,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_LC_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_LC_Pos1"
                     }
                 },
                 {
@@ -721,7 +721,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Workholding",
                         "position": [
                             -0.01499999999999773,
                             -0.2800000000000011,
@@ -737,14 +737,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][3][8]-[0][3][8]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-3",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-3",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-3",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-3",
             "actions": [
                 {
                     "trigger": {
@@ -753,7 +753,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_Workholding"
                     }
                 },
                 {
@@ -763,7 +763,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_Workholding"
                     }
                 },
                 {
@@ -774,14 +774,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[-8.5][9.5][-25]-[0][9.5][-25]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Connector2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Connector2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Connector2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Connector2",
             "actions": [
                 {
                     "trigger": {
@@ -790,7 +790,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_LC_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_LC_Pos1"
                     }
                 },
                 {
@@ -800,7 +800,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Workholding",
                         "position": [
                             -0.01499999999999773,
                             0.1699999999999988,
@@ -816,14 +816,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][12.26][-37.35]-[0][12.26][-37.35]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Box",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Box",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Box",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Box",
             "actions": [
                 {
                     "trigger": {
@@ -832,7 +832,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_LC_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_LC_Pos1"
                     }
                 },
                 {
@@ -842,7 +842,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Workholding",
                         "position": [
                             -0.025,
                             0.05,
@@ -858,14 +858,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][-0.22][-47.11]-[0][-0.22][-47.11]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Spring",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Spring",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Spring",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Spring",
             "actions": [
                 {
                     "trigger": {
@@ -874,7 +874,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_LC_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_LC_Pos1"
                     }
                 },
                 {
@@ -884,7 +884,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Workholding",
                         "position": [
                             -0.01499999999999773,
                             0.3,
@@ -900,14 +900,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][6.25][-38.68]-[0][6.25][-38.68]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Hook",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Hook",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Hook",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Hook",
             "actions": [
                 {
                     "trigger": {
@@ -916,7 +916,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_Workholding"
                     }
                 },
                 {
@@ -926,7 +926,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_Workholding"
                     }
                 },
                 {
@@ -937,14 +937,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[-9.5][22.02][-44.18]-[-1][22.02][-44.18]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-1",
             "actions": [
                 {
                     "trigger": {
@@ -953,7 +953,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_Workholding"
                     }
                 },
                 {
@@ -963,7 +963,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_Workholding"
                     }
                 },
                 {
@@ -974,14 +974,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[-10.5][5.7][12]-[0][5.7][12]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Pin1-2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Pin1-2",
             "actions": [
                 {
                     "trigger": {
@@ -990,7 +990,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_Workholding"
                     }
                 },
                 {
@@ -1000,7 +1000,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_Workholding"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_Workholding"
                     }
                 },
                 {
@@ -1011,14 +1011,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[-7.5][2][-35.02]-[0][2][-35]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Connector1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Connector1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Connector1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Connector1",
             "actions": [
                 {
                     "trigger": {
@@ -1027,7 +1027,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_LC_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_LC_Pos1"
                     }
                 },
                 {
@@ -1037,7 +1037,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Workholding",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Workholding",
                         "position": [
                             -0.01499999999999773,
                             0.06999999999999886,
@@ -1053,14 +1053,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][8.42][-45.43]-[0][8.42][-45.43]rot[0][-0][0]-[0][-0][0]t(0.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -1070,14 +1070,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP04][PP04.PPs_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -1087,14 +1087,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP05][PP05.PP2s_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingZ"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingZ"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -1104,14 +1104,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP05][PP05.PP2s_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1121,14 +1121,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP05][PP05.PP2s_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1138,14 +1138,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PI04][PI04.PIs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1155,14 +1155,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PI03][PI03.PIs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1172,14 +1172,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP05][PP05.PP2s_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1189,14 +1189,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP03][PP03.PPs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingZ",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingZ",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingZ",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingZ",
             "actions": [
                 {
                     "trigger": {
@@ -1206,14 +1206,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP05][PP05.PP2s_FloatingZ][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1223,14 +1223,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP02][PP02.PPs_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -1240,14 +1240,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP03][PP03.PPs_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1257,14 +1257,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PI02][PI02.PIs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_FloatingX1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_FloatingX1",
             "actions": [
                 {
                     "trigger": {
@@ -1274,14 +1274,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R02][R02.Rs_FloatingX1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -1291,14 +1291,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP02][PP02.PPs_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1308,14 +1308,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP03][PP03.PPs_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_FloatingX2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_FloatingX2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_FloatingX2",
             "actions": [
                 {
                     "trigger": {
@@ -1325,14 +1325,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R02][R02.Rs_FloatingX2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1342,14 +1342,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP04][PP04.PPs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -1359,14 +1359,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP04][PP04.PPs_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingZ"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingZ"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingZ",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingZ",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingZ",
             "actions": [
                 {
                     "trigger": {
@@ -1376,14 +1376,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP04][PP04.PPs_FloatingZ][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1393,14 +1393,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP04][PP04.PPs_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_FloatingX1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_FloatingX1",
             "actions": [
                 {
                     "trigger": {
@@ -1410,14 +1410,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R03][R03.Rs_FloatingX1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -1427,14 +1427,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP03][PP03.PPs_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingZ"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingZ"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_FloatingX2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_FloatingX2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_FloatingX2",
             "actions": [
                 {
                     "trigger": {
@@ -1444,14 +1444,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R03][R03.Rs_FloatingX2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingZ",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingZ",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingZ",
             "actions": [
                 {
                     "trigger": {
@@ -1461,14 +1461,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP03][PP03.PPs_FloatingZ][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -1478,14 +1478,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP02][PP02.PPs_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingZ"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingZ"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_FloatingX1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_FloatingX1",
             "actions": [
                 {
                     "trigger": {
@@ -1495,14 +1495,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R01][R01.Rs_FloatingX1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1512,14 +1512,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP02][PP02.PPs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1529,14 +1529,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP01][PP01.PPs_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1546,14 +1546,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PI01][PI01.PIs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingZ",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingZ",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingZ",
             "actions": [
                 {
                     "trigger": {
@@ -1563,14 +1563,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[PP02][PP02.PPs_FloatingZ][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_FloatingX2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_FloatingX2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_FloatingX2",
             "actions": [
                 {
                     "trigger": {
@@ -1580,14 +1580,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R01][R01.Rs_FloatingX2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R04",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R04",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R04",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R04",
             "actions": [
                 {
                     "trigger": {
@@ -1622,8 +1622,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#CB01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#CB01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#CB01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#CB01",
             "actions": [
                 {
                     "trigger": {
@@ -1658,8 +1658,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#C01",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#C01",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#C01",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#C01",
             "actions": [
                 {
                     "trigger": {
@@ -1694,8 +1694,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Gripper2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Gripper2",
             "actions": [
                 {
                     "trigger": {
@@ -1705,14 +1705,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[CB01][CB01.CBs_Gripper2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX2",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX2",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_FloatingX2",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_FloatingX2",
             "actions": [
                 {
                     "trigger": {
@@ -1722,14 +1722,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R04][R04.Rs_FloatingX2][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Gripper1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Gripper1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Gripper1",
             "actions": [
                 {
                     "trigger": {
@@ -1739,14 +1739,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[CB01][CB01.CBs_Gripper1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingX"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingX"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingX",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingX",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingX",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingX",
             "actions": [
                 {
                     "trigger": {
@@ -1756,14 +1756,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[CB01][CB01.CBs_FloatingX][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingY"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingY"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingY",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_FloatingY",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingY",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_FloatingY",
             "actions": [
                 {
                     "trigger": {
@@ -1773,14 +1773,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[CB01][CB01.CBs_FloatingY][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX1",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_FloatingX1",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_FloatingX1",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_FloatingX1",
             "actions": [
                 {
                     "trigger": {
@@ -1790,14 +1790,14 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/[R04][R04.Rs_FloatingX1][working]_anim_predef.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_Static"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_Static"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.WingScrew",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.WingScrew",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.WingScrew",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.WingScrew",
             "actions": [
                 {
                     "trigger": {
@@ -1806,7 +1806,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01",
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01",
                         "position": [
                             0.0,
                             0.5499999999999999,
@@ -1817,8 +1817,8 @@
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Wing",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01.Wing",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Wing",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01.Wing",
             "actions": [
                 {
                     "trigger": {
@@ -1827,14 +1827,14 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#Hinge_01"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#Hinge_01"
                     }
                 }
             ]
         },
         {
-            "name": "http://www.ontoeng.com/DFAssemblyLine#pallet_02",
-            "id": "http://www.ontoeng.com/DFAssemblyLine#pallet_02",
+            "name": "https://w3id.org/ontoeng/DFAssemblyLine#pallet_02",
+            "id": "https://w3id.org/ontoeng/DFAssemblyLine#pallet_02",
             "actions": [
                 {
                     "trigger": {
@@ -1843,7 +1843,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_PalletPos"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_PalletPos"
                     }
                 },
                 {
@@ -1853,7 +1853,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PPW01.WC1s_PalletPos"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PPW01.WC1s_PalletPos"
                     }
                 },
                 {
@@ -1864,7 +1864,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1770.4]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(3.5408)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#B01.CB5_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#B01.CB5_Pos1"
                     }
                 },
                 {
@@ -1875,7 +1875,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][600]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(1.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP01.PPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP01.PPs_PalletPosition"
                     }
                 },
                 {
@@ -1886,7 +1886,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI01.PIs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI01.PIs_PalletPosition"
                     }
                 },
                 {
@@ -1897,7 +1897,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R01.Rs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R01.Rs_PalletPosition"
                     }
                 },
                 {
@@ -1908,7 +1908,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1400]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2.8)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#B02.CB5_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#B02.CB5_Pos1"
                     }
                 },
                 {
@@ -1919,7 +1919,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][600]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(1.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP02.PPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP02.PPs_PalletPosition"
                     }
                 },
                 {
@@ -1930,7 +1930,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP03.PPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP03.PPs_PalletPosition"
                     }
                 },
                 {
@@ -1941,7 +1941,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI02.PIs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI02.PIs_PalletPosition"
                     }
                 },
                 {
@@ -1952,7 +1952,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R02.Rs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R02.Rs_PalletPosition"
                     }
                 },
                 {
@@ -1963,7 +1963,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1400]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2.8)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#B03.CB5_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#B03.CB5_Pos1"
                     }
                 },
                 {
@@ -1974,7 +1974,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][600]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(1.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP04.PPs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP04.PPs_PalletPosition"
                     }
                 },
                 {
@@ -1985,7 +1985,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI03.PIs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI03.PIs_PalletPosition"
                     }
                 },
                 {
@@ -1996,7 +1996,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R03.Rs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R03.Rs_PalletPosition"
                     }
                 },
                 {
@@ -2007,7 +2007,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1400]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2.8)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#B04.CB5_Pos1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#B04.CB5_Pos1"
                     }
                 },
                 {
@@ -2018,7 +2018,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][600]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(1.2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PP05.PP2s_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PP05.PP2s_PalletPosition"
                     }
                 },
                 {
@@ -2029,7 +2029,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PI04.PIs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PI04.PIs_PalletPosition"
                     }
                 },
                 {
@@ -2040,7 +2040,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#R04.Rs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#R04.Rs_PalletPosition"
                     }
                 },
                 {
@@ -2051,7 +2051,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#C01.ICs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#C01.ICs_PalletPosition"
                     }
                 },
                 {
@@ -2062,7 +2062,7 @@
                     "event": {
                         "type": "animation",
                         "data": "animations/DFAssemblyLine/tr[0][0][1000]-[0][0][-0]rot[0][-0][0]-[0][-0][0]t(2)_rel3.txt",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#CB01.CBs_PalletPosition"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#CB01.CBs_PalletPosition"
                     }
                 },
                 {
@@ -2081,7 +2081,7 @@
                     },
                     "event": {
                         "type": "show",
-                        "placementRelTo": "http://www.ontoeng.com/DFAssemblyLine#PalletStorage.1"
+                        "placementRelTo": "https://w3id.org/ontoeng/DFAssemblyLine#PalletStorage.1"
                     }
                 }
             ]

@@ -1,7 +1,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX factory: <http://www.ontoeng.com/factory#>
-PREFIX cs: <http://www.ontoeng.com/controlSystem#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 
 INSERT { 
 	GRAPH ?graph { 

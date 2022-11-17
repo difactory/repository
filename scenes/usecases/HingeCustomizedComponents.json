@@ -21,7 +21,7 @@
     "assets": [
         {
             "id": "Hinge",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb",
@@ -36,7 +36,7 @@
         },
         {
             "id": "Hinge.Box",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -53,7 +53,7 @@
         },
         {
             "id": "Hinge.Clip",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -70,7 +70,7 @@
         },
         {
             "id": "Hinge.Connector1",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -87,7 +87,7 @@
         },
         {
             "id": "Hinge.Connector2",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -104,7 +104,7 @@
         },
         {
             "id": "Hinge.Hook",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -121,7 +121,7 @@
         },
         {
             "id": "Hinge.Pin1-1",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -138,7 +138,7 @@
         },
         {
             "id": "Hinge.Pin1-2",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -155,7 +155,7 @@
         },
         {
             "id": "Hinge.Pin1-3",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -172,7 +172,7 @@
         },
         {
             "id": "Hinge.Spring",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -189,7 +189,7 @@
         },
         {
             "id": "Hinge.Wing",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -206,7 +206,7 @@
         },
         {
             "id": "Hinge.WingScrew",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",

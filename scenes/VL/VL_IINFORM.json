@@ -41,11 +41,11 @@
         },
         {
             "id": "RoboticLab",
-            "type": "http://www.ontoeng.com/factory#ManufacturingSystem"
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
         },
         {
             "id": "Kuka_KR50R2500",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
                     "file": "Kuka_KR50.glb",
@@ -108,7 +108,7 @@
         },
         {
             "id": "Kuka_tool_storage",
-            "type": "http://www.ontoeng.com/factory#StorageElement",
+            "type": "https://w3id.org/ontoeng/factory#StorageElement",
             "representations": [
                 {
                     "file": "stallo_utensili_Kuka.glb",
@@ -129,7 +129,7 @@
         },
         {
             "id": "Comau_NJ220",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
                     "file": "Comau_NJ220.glb",
@@ -218,7 +218,7 @@
         },
         {
             "id": "Techman12",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "placementRelTo": "lab_building"
         },
         {

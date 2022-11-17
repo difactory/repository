@@ -68,24 +68,24 @@
         },
         {
             "id": "ManufacturingCell",
-            "type": "http://www.ontoeng.com/factory#ManufacturingSystem",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem",
             "assignmentTo": [
                 "productionPlan"
             ]
         },
         {
             "id": "productionPlan",
-            "type": "http://www.ontoeng.com/factory#ProductionPlan"
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlan"
         },
         {
             "id": "productionSchedule",
-            "type": "http://www.ontoeng.com/factory#ProductionSchedule",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
             "parentObject": "productionPlan"
         },
         {
             "id": "robot",
             "descr": "Robot Arm",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "model": "M710iC-50",
             "representations": [
                 {
@@ -111,7 +111,7 @@
         {
             "id": "robot.RA_Static",
             "descr": "Robot Arm Base for elevation",
-            "type": "http://www.ontoeng.com/factory#Robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
             "representations": [
                 {
                     "file": "Robot_Arm.glb#RA_Static",
@@ -313,7 +313,7 @@
         },
         {
             "id": "robot.RA_Workholding1",
-            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 10,
                 105,
@@ -329,7 +329,7 @@
         },
         {
             "id": "robot.RA_Workholding2",
-            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 -100,
                 10,
@@ -345,7 +345,7 @@
         },
         {
             "id": "robot.RA_Workholding3",
-            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 68,
                 35,
@@ -362,7 +362,7 @@
         {
             "id": "Pallet_Table",
             "descr": "Pallet Table",
-            "type": "http://www.ontoeng.com/factory#BufferElement",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
             "representations": [
                 {
                     "file": "Pallet_Table.glb",
@@ -382,7 +382,7 @@
         {
             "id": "Changeover_Jig_Cleaning",
             "descr": "Dust Cleaning Machine and Changeover jig for robot arm",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "Changeover_Jig_Cleaning.glb",
@@ -407,7 +407,7 @@
         {
             "id": "Changeover_Jig",
             "descr": "Changeover jig",
-            "type": "http://www.ontoeng.com/factory#BufferElement",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
             "representations": [
                 {
                     "file": "Changeover_Jig_Cleaning.glb#Changeover_Jig",
@@ -425,7 +425,7 @@
         {
             "id": "Dust_Cleaning_Machine",
             "descr": "Dust Cleaning ",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "representations": [
                 {
                     "file": "Changeover_Jig_Cleaning.glb#Dust_Cleaning",
@@ -447,7 +447,7 @@
         },
         {
             "id": "Changeover_Jig_Buffer",
-            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 143,
                 132.96,
@@ -463,7 +463,7 @@
         },
         {
             "id": "Dust_Cleaning_Machine_Buffer",
-            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 -370,
                 0,
@@ -480,7 +480,7 @@
         {
             "id": "Lathe_Machine1",
             "descr": "Lathe Machine",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "model": "Genos L3000e ",
             "position": [
                 -977.3,
@@ -535,7 +535,7 @@
         },
         {
             "id": "Lathe_Machine1_Workholding",
-            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 425,
                 0,
@@ -571,7 +571,7 @@
         },
         {
             "id": "Chips_Cleaning_Workholding",
-            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 200,
                 1369.789,
@@ -610,7 +610,7 @@
         },
         {
             "id": "Poka_Yoka_Workholding",
-            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0,
                 160.4,
@@ -646,7 +646,7 @@
         },
         {
             "id": "MeasurementTable_Buffer",
-            "type": "http://www.ontoeng.com/factory#BufferWorkingPosition",
+            "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 412.9,
                 1096.8,
@@ -658,7 +658,7 @@
         {
             "id": "Lathe_Machine2",
             "descr": "Lathe Machine",
-            "type": "http://www.ontoeng.com/factory#MachineTool",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "model": "Genos L3000e ",
             "position": [
                 -2800,
@@ -713,7 +713,7 @@
         },
         {
             "id": "Lathe_Machine2_Workholding",
-            "type": "http://www.ontoeng.com/factory#WorkholdingPosition",
+            "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 234.156,
                 0,
@@ -729,7 +729,7 @@
         },
         {
             "id": "shaft.1",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -750,7 +750,7 @@
         },
         {
             "id": "shaft.2",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -771,7 +771,7 @@
         },
         {
             "id": "shaft.3",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -792,7 +792,7 @@
         },
         {
             "id": "shaft.4",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -813,7 +813,7 @@
         },
         {
             "id": "shaft.5",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -834,7 +834,7 @@
         },
         {
             "id": "shaft.6",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -855,7 +855,7 @@
         },
         {
             "id": "shaft.7",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",
@@ -876,7 +876,7 @@
         },
         {
             "id": "shaft.8",
-            "type": "http://www.ontoeng.com/factory#Artifact",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
                     "file": "OP2.glb",

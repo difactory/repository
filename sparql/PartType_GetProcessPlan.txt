@@ -1,8 +1,8 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX ifcext: <http://www.ontoeng.com/IFC4_ADD1_extension#> 
-PREFIX factory: <http://www.ontoeng.com/factory#> 
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
+PREFIX factory: <https://w3id.org/ontoeng/factory#> 
 select distinct ?parttype ?pplan 
 WHERE { 
 	?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
