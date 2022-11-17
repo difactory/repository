@@ -42,10 +42,10 @@
      xmlns:IFC4_ADD1_rules="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL_rules#"
      xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine">
-        <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/DF/DFLibBuilding"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/DF/DFLibProduct"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/DF/DFLibStations"/>
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
     </owl:Ontology>
     
 
@@ -124,12 +124,12 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferElement"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01_blev"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01_cap"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#877c3f96-a876-45b7-bac6-5ba83d1459ae"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#fe941c70-ce13-44d6-af4f-56b1f9304711"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01.CB5_Conveyor"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01_blev"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01_cap"/>
     </owl:NamedIndividual>
     
 
@@ -228,11 +228,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#B02">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferElement"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B02_cap"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#8e37530e-5837-45b7-bb0d-974c47fb600c"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#0a859a85-3ae3-4320-9afd-1223f2e9d8eb"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP02"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B02.CB5_Conveyor"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B02_cap"/>
     </owl:NamedIndividual>
     
 
@@ -314,11 +314,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#B03">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferElement"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B03_cap"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#28f8cf78-8010-448a-8917-a8d32fa9808b"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#507496fc-51eb-45f6-8975-6b8b1c458a3a"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP04"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B03.CB5_Conveyor"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B03_cap"/>
     </owl:NamedIndividual>
     
 
@@ -400,11 +400,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#B04">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferElement"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B04_cap"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#eac15dba-098f-483e-a437-efe5147101a8"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#9e1abfa5-d509-4e83-8425-5c0394be36e8"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP05"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B04.CB5_Conveyor"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B04_cap"/>
     </owl:NamedIndividual>
     
 
@@ -3670,7 +3670,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01_wiplev"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#55864117-eecd-4e4f-9ac2-586bd2ac1f3e"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#aa3ccbfe-d8f8-4128-be27-bcbf38ad6abc"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PI01"/>
@@ -3678,6 +3677,7 @@
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01.PPs_LateralConveyor"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01.PPs_Static"/>
         <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01_stM"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PP01_wiplev"/>
     </owl:NamedIndividual>
     
 
@@ -5863,7 +5863,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01_wiplev"/>
         <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#4f8418d1-f2ca-4e36-bdd5-ffa86481372d"/>
         <ifc:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#1ddc5411-2d7b-438b-8196-6920aa49f43f"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#B01"/>
@@ -5872,6 +5871,7 @@
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01.WC1s_Static"/>
         <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01.WC1s_VibratingBowl"/>
         <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01_stM"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#PPW01_wiplev"/>
     </owl:NamedIndividual>
     
 
@@ -19418,10 +19418,10 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/DFAssemblyLine#productionSchedule">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#ProductionSchedule"/>
-        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#productionSchedule_quantity"/>
         <ifc:name_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#559f4f70-9fea-4f9c-a670-bf5aea5531d7"/>
         <IFC4_ADD1_extension:hasAssignedObject rdf:resource="https://w3id.org/ontoeng/DF/DFLibProduct#Hinge"/>
         <IFC4_ADD1_extension:hasAssignedObject rdf:resource="https://w3id.org/ontoeng/DF/DFLibProduct#HingeProcessPlan"/>
+        <ssn:hasProperty rdf:resource="https://w3id.org/ontoeng/DF/DFAssemblyLine#productionSchedule_quantity"/>
     </owl:NamedIndividual>
     
 

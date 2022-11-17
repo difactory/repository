@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="http://www.learninglab.de/~dolog/fsm/fsm.owl" uri="fsm.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="http://www.w3.org/2006/time" uri="time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="http://www.w3.org/ns/sosa/" uri="sosa.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="http://www.w3.org/ns/ssn/" uri="ssn.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL" uri="IFC4_ADD1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/express" uri="express.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/list" uri="list.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/IFC4_ADD1_extension" uri="IFC4_ADD1_extension.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/controlSystem" uri="controlSystem.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/expression" uri="expression.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/factory" uri="factory.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/osph" uri="osph.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668686404592" name="https://w3id.org/ontoeng/statistics" uri="statistics.owl"/>
+    </group>
+</catalog>
