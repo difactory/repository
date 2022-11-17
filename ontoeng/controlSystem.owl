@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ontoeng.com/controlSystem#"
+     xml:base="http://www.ontoeng.com/controlSystem"
+     xmlns:schema="http://schema.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:controlSystem="http://www.ontoeng.com/controlSystem#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.ontoeng.com/controlSystem">
+        <owl:imports rdf:resource="http://www.ontoeng.com/osph"/>
+        <dc:contributor>Emanuele Bruini</dc:contributor>
+        <dc:description>The ControlSystem ontology</dc:description>
+        <dc:creator>Marcello Urgo</dc:creator>
+        <dc:creator>Walter Terkaj</dc:creator>
+        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#hasAlgorithmExpression -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasAlgorithmExpression">
+        <rdfs:domain rdf:resource="http://www.ontoeng.com/controlSystem#Algorithm"/>
+        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#hasExecutionController -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasExecutionController">
+        <rdfs:range rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#hasPolicyExpression -->
+
+    <owl:ObjectProperty rdf:about="http://www.ontoeng.com/controlSystem#hasPolicyExpression">
+        <rdfs:domain rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
+        <rdfs:range rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#AGGWNQControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#AGGWNQControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#Algorithm -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#Algorithm">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontoeng.com/controlSystem#hasAlgorithmExpression"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#BSSControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#BSSControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControlPolicy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontoeng.com/controlSystem#hasPolicyExpression"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/expression#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ControllerFB -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControllerFB">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/osph#ObjectDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ControllerSimpleState -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ControllerSimpleState">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ConwipControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ConwipControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#DispControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#DispControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#DispatchingController -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#DispatchingController">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#KanbanControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#KanbanControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#PriorityFunction -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#PriorityFunction">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#RControllerIdleState -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#RControllerIdleState">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#RControllerReleaseState -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#RControllerReleaseState">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseCondition -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseCondition">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseControlPolicy -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseControlPolicy">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControlPolicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseController -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseController">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerFB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseControllerSimpleState">
+        <rdfs:subClassOf rdf:resource="http://www.ontoeng.com/controlSystem#ControllerSimpleState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseGuard -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseGuard">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseCondition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontoeng.com/controlSystem#ReleaseTransition -->
+
+    <owl:Class rdf:about="http://www.ontoeng.com/controlSystem#ReleaseTransition">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
+                <owl:allValuesFrom rdf:resource="http://www.ontoeng.com/controlSystem#ReleaseGuard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
