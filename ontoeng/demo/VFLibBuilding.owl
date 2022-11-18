@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/ontoeng/DF/VFLibBuilding#"
-     xml:base="https://w3id.org/ontoeng/DF/VFLibBuilding"
+<rdf:RDF xmlns="https://w3id.org/ontoeng/demo/VFLibBuilding#"
+     xml:base="https://w3id.org/ontoeng/demo/VFLibBuilding"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
@@ -34,11 +34,11 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:expression="https://w3id.org/ontoeng/expression#"
      xmlns:statistics="https://w3id.org/ontoeng/statistics#"
-     xmlns:VFLibBuilding="https://w3id.org/ontoeng/DF/VFLibBuilding#"
+     xmlns:VFLibBuilding="https://w3id.org/ontoeng/demo/VFLibBuilding#"
      xmlns:controlSystem="https://w3id.org/ontoeng/controlSystem#"
      xmlns:IFC4_ADD1_rules="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL_rules#"
      xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
-    <owl:Ontology rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
     </owl:Ontology>
     
@@ -84,47 +84,47 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#VFLibBuilding -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#VFLibBuilding -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#VFLibBuilding">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#VFLibBuilding">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProjectLibrary"/>
-        <ifc:name_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796"/>
-        <ifc:unitsInContext_IfcContext rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc"/>
+        <ifc:name_IfcRoot rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796"/>
+        <ifc:unitsInContext_IfcContext rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Default building</expr:hasString>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
-        <ifc:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba"/>
-        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48"/>
+        <ifc:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#bb340235-042c-4ae7-8099-6dd8d07806ba">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Warehouse.glb</expr:hasString>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#GRAM"/>
         <ifc:prefix_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#KILO"/>
@@ -133,9 +133,9 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#ca00ca63-7055-4188-8126-fa5f9a7e9c48">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
         <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
@@ -143,51 +143,51 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#ccbe179d-ea96-4d13-b810-759bbb2d93dc">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitAssignment"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99"/>
-        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#c0bfbbbe-ab37-4041-983c-ed05c37f6ac5"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99"/>
+        <ifc:units_IfcUnitAssignment rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#default_building -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#default_building -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#default_building">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#default_building">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
-        <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35"/>
-        <ifc:name_IfcRoot rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618"/>
-        <ifc:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e"/>
+        <ifc:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#a5dd7648-e583-4248-8e57-e751122f0b35"/>
+        <ifc:name_IfcRoot rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618"/>
+        <ifc:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#04bc5ac5-e93a-4af8-a27d-105446ed5618">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLabel"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">default_building</expr:hasString>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
-        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#b90d1b2f-ede4-4e79-a37a-a0979d2cc807"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#1f09492e-bc2d-4550-bf2a-98b91f29135e">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#SECOND"/>
         <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#TIMEUNIT"/>
@@ -195,27 +195,27 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#17ec0505-dbe2-4454-a88d-8dddbcdc3796">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLabel"/>
         <expr:hasString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VFLibBuilding</expr:hasString>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#366902e2-ace4-4cbd-8b0c-b7396e3ca01e">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
-        <ifc:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614"/>
+        <ifc:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#4692044c-14c8-4edd-8750-f1d88dd6071d">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#CUBIC_METRE"/>
         <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#VOLUMEUNIT"/>
@@ -223,9 +223,9 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#47fee739-bf17-40e8-bf4c-6eea25d6ef99">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
         <ifc:prefix_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#MILLI"/>
@@ -234,18 +234,18 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#71a246f7-9ece-47ef-b366-46dca7602614">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
-        <list:hasContents rdf:resource="https://w3id.org/ontoeng/DF/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/demo/VFLibBuilding#1f0291fb-6ef5-4eba-bda4-d468f72d6fb0"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/ontoeng/DF/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35 -->
+    <!-- https://w3id.org/ontoeng/demo/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35 -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/DF/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35">
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/VFLibBuilding#9cdb8990-6cb2-413e-a1ab-ad6564028d35">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
         <ifc:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#SQUARE_METRE"/>
         <ifc:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#AREAUNIT"/>

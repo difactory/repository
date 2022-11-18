@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/DFAssemblyLine" uri="DFAssemblyLine.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/DFLibBuilding" uri="DFLibBuilding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/DFLibProduct" uri="DFLibProduct.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/DFLibStations" uri="DFLibStations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/DFProductionCell" uri="DFProductionCell.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/VFLab" uri="VFLab.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/VFLibBuilding" uri="VFLibBuilding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/VFLibProduct" uri="VFLibProduct.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1668756609194" name="https://w3id.org/ontoeng/demo/VFLibStations" uri="VFLibStations.owl"/>
+    </group>
+</catalog>
