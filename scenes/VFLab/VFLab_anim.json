@@ -2,8 +2,7 @@
     "context": {
         "assetTrail": false,
         "UnitOfMeasureScale": 0.01,
-        "Repo3dModel": "/repository/models/GLB/",
-        "RepoAnim": "/repository/"
+        "RepoAnim": "https://difactory.github.io/repository/"
     },
     "nodes": [
         {
