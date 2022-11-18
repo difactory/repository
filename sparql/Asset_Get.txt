@@ -20,14 +20,16 @@ WHERE {
   
 	OPTIONAL{
 		{
-			?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
+			?asset ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasNext*/list:hasContents/osph:hasExternalRepresentation ?extrepr .  
 			OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
 			?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc . 
+      		filter( regex(str(?reprLoc), ".obj|.OBJ|.glb|.GLB" )) .
 		} 
 		UNION {
-			?asset ifc:representationMaps_IfcTypeProduct/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
+			?asset ifc:representationMaps_IfcTypeProduct/list:hasNext*/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
 			OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
 			?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
+      		filter( regex(str(?reprLoc), ".obj|.OBJ|.glb|.GLB" )) .
 		}
 	}
     
