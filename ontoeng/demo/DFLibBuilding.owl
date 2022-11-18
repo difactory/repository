@@ -40,7 +40,9 @@
      xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/demo/DFLibBuilding">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
-    </owl:Ontology>
+        <dc:creator>Walter Terkaj</dc:creator>
+        <terms:license>CC BY-NC 4.0</terms:license>
+	</owl:Ontology>
     
 
 

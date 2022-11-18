@@ -21,10 +21,10 @@
     <owl:Ontology rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL">
         <owl:imports rdf:resource="https://w3id.org/express"/>
         <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
-        <dce:contributor>Jakob Beetz (j.beetz@tue.nl)</dce:contributor>
-        <dce:contributor>Maria Poveda Villalon (mpoveda@fi.upm.es)</dce:contributor>
-        <dce:creator>Pieter Pauwels (pipauwel.pauwels@ugent.be)</dce:creator>
-        <dce:creator>Walter Terkaj (walter.terkaj@itia.cnr.it)</dce:creator>
+        <dce:contributor>Jakob Beetz</dce:contributor>
+        <dce:contributor>Maria Poveda Villalon</dce:contributor>
+        <dce:creator>Pieter Pauwels</dce:creator>
+        <dce:creator>Walter Terkaj</dce:creator>
         <dce:date>2016/02/27</dce:date>
         <dce:description>OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data</dce:description>
         <dce:language>en</dce:language>

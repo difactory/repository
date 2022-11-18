@@ -47,7 +47,9 @@
         <owl:imports rdf:resource="https://w3id.org/ontoeng/demo/VFLibProduct"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/demo/VFLibStations"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
-    </owl:Ontology>
+        <dc:creator>Walter Terkaj</dc:creator>
+        <terms:license>CC BY-NC 4.0</terms:license>
+	</owl:Ontology>
     
 
 

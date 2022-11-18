@@ -20,7 +20,7 @@
         <owl:imports rdf:resource="https://w3id.org/ontoeng/osph"/>
         <dc:contributor>Emanuele Bruini</dc:contributor>
         <dc:description>The ControlSystem ontology</dc:description>
-        <dc:creator>Marcello Urgo</dc:creator>
+        <dc:contributor>Marcello Urgo</dc:contributor>
         <dc:creator>Walter Terkaj</dc:creator>
         <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
     </owl:Ontology>
