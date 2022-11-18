@@ -2,114 +2,114 @@
     "context": {
         "UnitOfMeasureScale": 0.01,
         "Zup": false,
-        "RepoPath": ""
+        "RepoPath": "/repository/models/GLB/"
     },
     "scene": [
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-3",
-        "https://w3id.org/ontoeng/DF_DataSet#B1",
-        "https://w3id.org/ontoeng/DFLibBuilding#default_building",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Hook",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Connector2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Connector1",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Static",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingZ",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingX",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Gripper1",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Gripper2",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_3",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_2",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Box",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Clip",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Connector1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Connector2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Hook",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-1",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_5",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_4",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Box",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.WingScrew",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Clip",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-3",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Wing",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Spring",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos2",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Conveyor",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos5",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos6",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos7",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos5",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_PalletPosition",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos1",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos1",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos2",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos4",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos10",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-        "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos3",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos3",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos4",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos9",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_1.Pal_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_2.Pal_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos8",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_4.Pal_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_3.Pal_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#pallet_5.Pal_Workholding",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Box",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Clip",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Clip",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Wing",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Connector1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Connector2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Wing",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Wing",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Spring",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-3",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Hook",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Connector2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Box",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.WingScrew",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Connector2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Spring",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Connector1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.WingScrew",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Connector1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Clip",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.WingScrew",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Box",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Spring",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-3",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Hook",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Hook",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-1",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Wing",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.WingScrew",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-2",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Spring",
-        "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-3"
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1",
+        "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Hook",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Connector2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Connector1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Static",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingZ",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingX",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Gripper1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Gripper2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Box",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Clip",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Connector1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Connector2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Hook",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Box",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.WingScrew",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Clip",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Wing",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Spring",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Conveyor",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos5",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos6",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos7",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos5",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_PalletPosition",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos4",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos10",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos4",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos9",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1.Pal_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2.Pal_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos8",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4.Pal_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3.Pal_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5.Pal_Workholding",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Box",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Clip",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Clip",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Wing",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Connector1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Connector2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Wing",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Wing",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Spring",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Hook",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Connector2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Box",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.WingScrew",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Connector2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Spring",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Connector1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.WingScrew",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Connector1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Clip",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.WingScrew",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Box",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Spring",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Hook",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Hook",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-1",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Wing",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.WingScrew",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-2",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Spring",
+        "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-3"
     ],
     "assets": [
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -126,11 +126,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_Gripper2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Gripper2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -148,14 +148,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1",
             "type": "https://w3id.org/ontoeng/factory#BufferElement",
             "descr": "Conveyor Buffer with capacity of 5 pallets",
-            "model": "https://w3id.org/ontoeng/DFLibStations#ConveyorBuffer5",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#ConveyorBuffer5",
             "position": [
                 20.0,
                 0.0,
@@ -166,10 +166,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibBuilding#default_building"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_WorkingPos",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_WorkingPos",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 -4.0,
@@ -181,11 +181,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibBuilding#default_building",
+            "id": "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "descr": "Default building",
             "representations": [
@@ -206,9 +206,9 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "representations": [
                 {
                     "file": "Conveyor_Main.glb#Elements",
@@ -225,11 +225,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 0.0,
@@ -241,11 +241,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -263,11 +263,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#ConveyorBuffer5",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#ConveyorBuffer5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#ConveyorBuffer5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#ConveyorBuffer5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 0.0,
@@ -279,14 +279,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#CB5_Pos1"
+                "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 0.0,
@@ -298,16 +298,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#CB5_Pos2"
+                "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Hook",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -324,13 +324,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -347,13 +347,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -370,13 +370,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -393,13 +393,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -416,11 +416,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -438,11 +438,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "descr": "Pick and Place Station",
             "representations": [
@@ -453,9 +453,9 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Static",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_Static",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Static",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Static",
@@ -472,13 +472,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingZ",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingZ",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingZ",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_Z",
@@ -495,11 +495,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#ConveyorBuffer5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#ConveyorBuffer5",
             "type": "https://w3id.org/ontoeng/factory#BufferElementType",
             "descr": "Conveyor as buffer unit",
             "representations": [
@@ -510,7 +510,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -528,11 +528,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingZ",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingZ"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingZ",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingZ"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -550,13 +550,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingX",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingX",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_X",
@@ -573,13 +573,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Floating_Y",
@@ -596,11 +596,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingZ",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingZ"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingZ",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingZ"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingZ",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingZ",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -618,13 +618,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Gripper1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_Gripper1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Gripper1",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Gripper_1",
@@ -641,11 +641,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Gripper2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -663,11 +663,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_Gripper1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Gripper1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -685,13 +685,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Gripper2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Gripper2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_Gripper2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Gripper2",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#PP_Gripper_2",
@@ -708,11 +708,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
             "type": "https://w3id.org/ontoeng/factory#StorageElement",
             "representations": [
                 {
@@ -730,14 +730,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3",
             "type": "https://w3id.org/ontoeng/factory#Pallet",
             "descr": "pallet",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "position": [
                 20.0,
                 0.0,
@@ -748,13 +748,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibBuilding#default_building"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "descr": "hinge",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "position": [
                 0.0,
                 0.0,
@@ -765,10 +765,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_1.Pal_Workholding"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1.Pal_Workholding"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -786,14 +786,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2",
             "type": "https://w3id.org/ontoeng/factory#Pallet",
             "descr": "pallet",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "position": [
                 0.0,
                 0.0,
@@ -804,10 +804,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -825,11 +825,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -847,11 +847,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -869,14 +869,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1",
             "type": "https://w3id.org/ontoeng/factory#Pallet",
             "descr": "pallet",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "position": [
                 20.0,
                 0.0,
@@ -887,10 +887,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibBuilding#default_building"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -908,11 +908,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -930,11 +930,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -952,13 +952,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Box",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -975,11 +975,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -997,13 +997,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Clip",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -1020,13 +1020,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -1043,13 +1043,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -1066,13 +1066,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Hook",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -1089,13 +1089,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -1112,14 +1112,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_5",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5",
             "type": "https://w3id.org/ontoeng/factory#Pallet",
             "descr": "pallet",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "position": [
                 20.0,
                 0.0,
@@ -1132,7 +1132,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -1150,14 +1150,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_4",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4",
             "type": "https://w3id.org/ontoeng/factory#Pallet",
             "descr": "pallet",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "position": [
                 0.0,
                 0.0,
@@ -1168,10 +1168,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -1189,11 +1189,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "representations": [
                 {
@@ -1211,13 +1211,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#Hinge"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Box",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -1234,13 +1234,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",
@@ -1257,14 +1257,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "descr": "hinge",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "position": [
                 20.0,
                 0.0,
@@ -1277,9 +1277,9 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Clip",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -1296,13 +1296,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -1319,13 +1319,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Wing",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -1342,13 +1342,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -1365,13 +1365,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1.Spring",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1.Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -1388,11 +1388,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
             "type": "https://w3id.org/ontoeng/factory#PalletType",
             "descr": "Pallet for the main hinge assembly",
             "representations": [
@@ -1403,7 +1403,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "type": "https://w3id.org/ontoeng/factory#ArtifactType",
             "descr": "Hinge",
             "representations": [
@@ -1414,7 +1414,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos8",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos8",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -1.0699999999999999,
@@ -1426,14 +1426,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos7"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos7"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 11.53,
@@ -1445,16 +1445,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos1"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos2",
             "position": [
                 0.0,
                 23.0,
@@ -1465,17 +1465,17 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos1"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1",
             "type": "https://w3id.org/ontoeng/factory#MachineTool",
             "descr": "A handling device for picking up an item, moving it and placing it in another location. Such devices are usually mechanically driven and follow a fixed sequence of motions.",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station",
             "position": [
                 20.0,
                 0.0,
@@ -1486,10 +1486,10 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibBuilding#default_building"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibBuilding#default_building"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 9.43,
@@ -1501,16 +1501,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos2"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_Conveyor",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Conveyor",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#Conveyor_Main",
@@ -1527,11 +1527,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 5.2299999999999999,
@@ -1543,14 +1543,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos4"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -1568,11 +1568,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos9",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos9",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -3.17,
@@ -1584,16 +1584,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos8"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos8"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos5",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos5",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos5",
             "position": [
                 5.2299999999999999,
                 35.1,
@@ -1604,16 +1604,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos4"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos6",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos6",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos6",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos6",
             "position": [
                 3.13,
                 35.1,
@@ -1624,16 +1624,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos5"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos5"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos7",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos7",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos7",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos7",
             "position": [
                 1.03,
                 35.1,
@@ -1644,16 +1644,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos6"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos6"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos5",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos5",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos5",
             "position": [
                 0.0,
                 23.0,
@@ -1664,14 +1664,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos4"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -1689,13 +1689,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_PalletPosition",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_PalletPosition",
             "position": [
                 0.0,
                 23.0,
@@ -1706,13 +1706,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos1",
             "position": [
                 0.0,
                 23.0,
@@ -1723,13 +1723,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos1",
             "position": [
                 13.63,
                 35.1,
@@ -1740,11 +1740,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos4",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 0.0,
@@ -1756,14 +1756,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#CB5_Pos3"
+                "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 13.63,
@@ -1775,11 +1775,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos4",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 7.33,
@@ -1791,16 +1791,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos3"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos2",
             "position": [
                 11.53,
                 35.1,
@@ -1811,14 +1811,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos1"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 0.0,
@@ -1830,16 +1830,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#CB5_Pos4"
+                "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos4",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos4",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos4",
             "position": [
                 0.0,
                 23.0,
@@ -1850,14 +1850,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos3"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -1869,11 +1869,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos10",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos10",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -5.2700000000000009,
@@ -1885,14 +1885,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos9"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos9"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos6",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos6",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 3.13,
@@ -1904,14 +1904,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos5"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos5"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos7",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos7",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 1.03,
@@ -1923,16 +1923,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos6"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos6"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos10",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos10",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos10",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos10",
             "position": [
                 -5.2700000000000009,
                 35.1,
@@ -1943,16 +1943,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos9"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos9"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LateralConveyor",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LateralConveyor",
             "representations": [
                 {
                     "file": "Pick_and_Place_Station.glb#Conveyor_Lateral",
@@ -1969,13 +1969,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#CB5_Pos3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#CB5_Pos3",
             "position": [
                 0.0,
                 23.0,
@@ -1986,16 +1986,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#B1.CB5_Pos2"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#B1.CB5_Pos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos3",
             "position": [
                 9.43,
                 35.1,
@@ -2006,16 +2006,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos2"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos4",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos4",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos4",
             "position": [
                 7.33,
                 35.1,
@@ -2026,14 +2026,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos3"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 0.0,
@@ -2045,13 +2045,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibProduct#PalletA",
-            "parentObject": "https://w3id.org/ontoeng/DFLibProduct#PalletA"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos9",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos9",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos9",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos9",
             "position": [
                 -3.17,
                 35.1,
@@ -2062,16 +2062,16 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos8"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos8"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Workholding",
             "position": [
                 1.45,
                 -4.0,
@@ -2082,13 +2082,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_1.Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1.Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "position": [
                 0.0,
                 5.2,
@@ -2099,13 +2099,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_1",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#pallet_1"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_1"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_2.Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2.Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "position": [
                 0.0,
                 5.2,
@@ -2116,13 +2116,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#pallet_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos8",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos8",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibStations#PPs_LC_Pos8",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_LC_Pos8",
             "position": [
                 -1.0699999999999999,
                 35.1,
@@ -2133,14 +2133,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DF_DataSet#PP1.PPs_LC_Pos7"
+                "https://w3id.org/ontoeng/demo/DF_DataSet#PP1.PPs_LC_Pos7"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PPs_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 1.45,
@@ -2152,11 +2152,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PPs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PPs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer9",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer9",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.0,
@@ -2168,11 +2168,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 3.63,
@@ -2184,14 +2184,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos4"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos10",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos10",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -5.6,
@@ -2203,14 +2203,14 @@
                 -0.3577922058197929,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos9"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos9"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2222,14 +2222,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos1"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos4",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2241,14 +2241,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos3"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2260,14 +2260,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos4"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos4"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos6",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos6",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2279,14 +2279,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos5"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos5"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer5",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer5",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.0,
@@ -2298,11 +2298,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer6",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer6",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.0,
@@ -2314,11 +2314,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2330,14 +2330,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos2"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos8",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos8",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2349,14 +2349,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos7"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos7"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos7",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos7",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -1.37,
@@ -2368,14 +2368,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos6"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos6"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos9",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos9",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.1,
@@ -2387,14 +2387,14 @@
                 -0.049567384254027398,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos8"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos8"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos7",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos7",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2406,14 +2406,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos6"
+                "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos6"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 8.63,
@@ -2425,14 +2425,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos2"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos2"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -2444,11 +2444,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -2460,11 +2460,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PIs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PIs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos8",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos8",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -3.8700000000000007,
@@ -2476,14 +2476,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos7"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos7"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#ICs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#ICs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -2495,11 +2495,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#ICs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#ICs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#ICs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#ICs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -2511,11 +2511,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer8",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer8",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.0,
@@ -2527,11 +2527,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Rs_PalletPosition",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_PalletPosition",
             "type": "https://w3id.org/ontoeng/factory#BufferWorkingPosition",
             "position": [
                 0.0,
@@ -2543,11 +2543,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#Rs_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#Rs_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos6",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos6",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 1.1300000000000002,
@@ -2559,14 +2559,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos5"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos5"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer4",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.0,
@@ -2578,11 +2578,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos10",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos10",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -8.87,
@@ -2594,14 +2594,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos9"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos9"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 11.129999999999999,
@@ -2613,14 +2613,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos1"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos1"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos4",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos4",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.13,
@@ -2632,14 +2632,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos3"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos3"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_RestingPos1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_RestingPos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -4.0,
@@ -2651,11 +2651,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer3",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer3",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.0,
@@ -2667,11 +2667,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 13.63,
@@ -2683,11 +2683,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer7",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer7",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.0,
@@ -2699,11 +2699,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos9",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos9",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.37,
@@ -2715,14 +2715,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "connectedTo": [
-                "https://w3id.org/ontoeng/DFLibStations#PP2s_LC_Pos8"
+                "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LC_Pos8"
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer1",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 -6.0,
@@ -2734,11 +2734,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer2",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.0,
@@ -2750,11 +2750,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Buffer10",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Buffer10",
             "type": "https://w3id.org/ontoeng/factory#BufferRestingPosition",
             "position": [
                 6.0,
@@ -2766,13 +2766,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Box",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Box"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Box"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_4.Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4.Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "position": [
                 0.0,
                 5.2,
@@ -2783,13 +2783,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#pallet_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_3.Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3.Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "position": [
                 0.0,
                 5.2,
@@ -2800,13 +2800,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#pallet_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#pallet_5.Pal_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5.Pal_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pal_Workholding",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pal_Workholding",
             "position": [
                 0.0,
                 5.2,
@@ -2817,13 +2817,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#pallet_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Box",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -2840,13 +2840,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Clip",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -2863,13 +2863,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -2886,13 +2886,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Clip",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -2909,13 +2909,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Wing",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -2932,13 +2932,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -2955,14 +2955,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "descr": "hinge",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "position": [
                 20.0,
                 0.0,
@@ -2975,9 +2975,9 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -2994,13 +2994,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Wing",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -3017,13 +3017,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Wing",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -3040,13 +3040,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Spring",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -3063,13 +3063,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -3086,13 +3086,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -3109,13 +3109,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -3132,13 +3132,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Hook",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -3155,13 +3155,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -3178,13 +3178,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Box",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -3201,13 +3201,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",
@@ -3224,13 +3224,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Connector2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Connector2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector2",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector2",
@@ -3247,13 +3247,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.Spring",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -3270,13 +3270,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -3293,13 +3293,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2.WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2.WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",
@@ -3316,13 +3316,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_2"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_2"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Connector1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Connector1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Connector1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Connector1",
             "representations": [
                 {
                     "file": "Hinge.glb#Connector1",
@@ -3339,14 +3339,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "descr": "hinge",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "position": [
                 0.0,
                 0.0,
@@ -3357,12 +3357,12 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#pallet_4.Pal_Workholding"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#pallet_4.Pal_Workholding"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Clip",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Clip",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Clip",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Clip",
             "representations": [
                 {
                     "file": "Hinge.glb#Clip",
@@ -3379,13 +3379,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -3402,13 +3402,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",
@@ -3425,13 +3425,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Box",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Box",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Box",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Box",
             "representations": [
                 {
                     "file": "Hinge.glb#Box",
@@ -3448,13 +3448,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Spring",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -3471,13 +3471,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4.Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4.Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -3494,14 +3494,14 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_4"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_4"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "descr": "hinge",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hinge",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hinge",
             "position": [
                 20.0,
                 0.0,
@@ -3514,9 +3514,9 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3.Hook",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3.Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -3533,13 +3533,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_3"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_3"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Hook",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Hook",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Hook",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Hook",
             "representations": [
                 {
                     "file": "Hinge.glb#Hook",
@@ -3556,13 +3556,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-1",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-1",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-1",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-1",
@@ -3579,13 +3579,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Wing",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Wing",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Wing",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Wing",
             "representations": [
                 {
                     "file": "Hinge.glb#Wing",
@@ -3602,13 +3602,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.WingScrew",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.WingScrew",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#WingScrew",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#WingScrew",
             "representations": [
                 {
                     "file": "Hinge.glb#WingScrew",
@@ -3625,13 +3625,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-2",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-2",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-2",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-2",
@@ -3648,13 +3648,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Spring",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Spring",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Spring",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Spring",
             "representations": [
                 {
                     "file": "Hinge.glb#Spring",
@@ -3671,13 +3671,13 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5.Pin1-3",
+            "id": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5.Pin1-3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
-            "model": "https://w3id.org/ontoeng/DFLibProduct#Pin1-3",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#Pin1-3",
             "representations": [
                 {
                     "file": "Hinge.glb#Pin1-3",
@@ -3694,11 +3694,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5",
-            "parentObject": "https://w3id.org/ontoeng/DF_DataSet#Hinge_5"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5",
+            "parentObject": "https://w3id.org/ontoeng/demo/DF_DataSet#Hinge_5"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "descr": "Pick and Place Station",
             "representations": [
@@ -3709,7 +3709,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_VibratingBowl",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_VibratingBowl",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3727,11 +3727,11 @@
                 1.5707963267948966,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Riveting_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Riveting_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "descr": "Riveting Station",
             "representations": [
@@ -3742,7 +3742,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "descr": "Pin Insertion Station",
             "representations": [
@@ -3753,7 +3753,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "representations": [
                 {
@@ -3763,7 +3763,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3781,11 +3781,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "representations": [
                 {
@@ -3795,7 +3795,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#InspectionCamera_Station",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#InspectionCamera_Station",
             "type": "https://w3id.org/ontoeng/factory#MachineToolType",
             "descr": "Inspection Camera Station",
             "representations": [
@@ -3806,7 +3806,7 @@
             ]
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingY",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingY",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3824,11 +3824,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3846,11 +3846,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PIs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PIs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Gripper1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Gripper1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3868,11 +3868,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3890,11 +3890,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingZ",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingZ"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingZ",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingZ"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_Gripper1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Gripper1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3912,11 +3912,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3934,11 +3934,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3956,11 +3956,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Rs_FloatingX1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_FloatingX1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -3978,11 +3978,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#Rs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#Rs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_Gripper1",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Gripper1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4000,11 +4000,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingY",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingY",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4022,11 +4022,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4044,11 +4044,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Gripper2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Gripper2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4066,11 +4066,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4088,11 +4088,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_Gripper2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Gripper2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4110,11 +4110,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingZ",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingZ",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4132,11 +4132,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_VibratingBowl",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_VibratingBowl",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4154,11 +4154,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Rs_FloatingX2",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_FloatingX2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4176,11 +4176,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#Rs_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#Rs_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4198,11 +4198,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Rs_Static",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Static",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4220,11 +4220,11 @@
                 -3.141592653589793,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#Riveting_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#Riveting_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#Riveting_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#Riveting_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingX",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingX",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -4242,11 +4242,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_Static",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_Static"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Static",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Static"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 28.800000000000006,
@@ -4258,11 +4258,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PIs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PIs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 1.45,
@@ -4274,11 +4274,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PP2s_FloatingY"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_FloatingY"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_PalletConveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_PalletConveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4296,11 +4296,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4318,11 +4318,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_PalletPos",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_PalletPos",
             "type": "https://w3id.org/ontoeng/factory#PalletPosition",
             "position": [
                 0.0,
@@ -4334,11 +4334,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_PalletConveyor",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_PalletConveyor"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_PalletConveyor",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_PalletConveyor"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 27.675,
@@ -4350,11 +4350,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CBs_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PP2s_LateralConveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PP2s_LateralConveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4372,11 +4372,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PickAndPlace2_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PickAndPlace2_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#ICs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#ICs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4394,11 +4394,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#InspectionCamera_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#InspectionCamera_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#InspectionCamera_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#InspectionCamera_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4416,11 +4416,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WingConveyor1_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WingConveyor1_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#PIs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#PIs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4438,11 +4438,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#PinInsertion_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#PinInsertion_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#WC1s_Workholding",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_Workholding",
             "type": "https://w3id.org/ontoeng/factory#WorkholdingPosition",
             "position": [
                 27.675,
@@ -4454,11 +4454,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#WC1s_FloatingX"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#WC1s_FloatingX"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#CBs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#CBs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4476,11 +4476,11 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#CollectionBox_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#CollectionBox_Station"
         },
         {
-            "id": "https://w3id.org/ontoeng/DFLibStations#Rs_Conveyor",
+            "id": "https://w3id.org/ontoeng/demo/DFLibStations#Rs_Conveyor",
             "type": "https://w3id.org/ontoeng/factory#Conveyor",
             "representations": [
                 {
@@ -4498,8 +4498,8 @@
                 -0.0,
                 0.0
             ],
-            "placementRelTo": "https://w3id.org/ontoeng/DFLibStations#Riveting_Station",
-            "parentObject": "https://w3id.org/ontoeng/DFLibStations#Riveting_Station"
+            "placementRelTo": "https://w3id.org/ontoeng/demo/DFLibStations#Riveting_Station",
+            "parentObject": "https://w3id.org/ontoeng/demo/DFLibStations#Riveting_Station"
         }
     ]
 }

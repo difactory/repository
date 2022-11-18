@@ -1,89 +1,92 @@
 {
-    "cameras": [
-        {
-            "id": "camera.1",
-            "type": "FlyCamera",
-            "position": [
-                39,
-                70,
-                438
-            ],
-            "rotation": [
-                0.5844230091570228,
-                -2.7326849799279236,
-                0
-            ],
-            "speed": 8
-        },
-        {
-            "id": "camera.2",
-            "type": "FreeCamera",
-            "position": [
-                39,
-                70,
-                438
-            ],
-            "rotation": [
-                0.5776272945509733,
-                -2.72836859508764,
-                0
-            ],
-            "speed": 8
-        }
-    ],
-    "lights": [
-        {
-            "id": "light.0",
-            "type": "HemisphericLight",
-            "direction": [
-                1,
-                0.3,
-                0.1
-            ],
-            "intensity": 0.2
-        },
-        {
-            "id": "light.1",
-            "type": "PointLight",
-            "position": [
-                0,
-                150,
-                400
-            ],
-            "intensity": 2
-        },
-        {
-            "id": "light.2",
-            "type": "PointLight",
-            "position": [
-                0,
-                150,
-                0
-            ],
-            "intensity": 2
-        }
-    ],
-    "shadows": {
-        "darkness": 0.3,
-        "bias": 0.001,
-        "environmentIntensity": 0.3
-    },
-    "datagen": {
-        "cam": {
-            "alphaMin": 0,
-            "alphaMax": 360,
-            "alphaStep": 60,
-            "betaMin": 0,
-            "betaMax": 70,
-            "betaStep": 35,
-            "radiusFactorMin": 1.5,
-            "radiusFactorMax": 2.5,
-            "radiusFactorStep": 1
-        }
-    },
-    "env": {
-        "skyboxTexture": "textures/studio.env",
-        "backgroundColor": [0.2,0.3,0.5],
-        "groundTexture": "textures/concrete.jpg"
-    }
+	"cameras": [
+		{
+			"id": "camera.1",
+			"type": "FlyCamera",
+			"position": [
+				20.762050075930137,
+				46.58184890416552,
+				369.1469512760714
+			],
+			"rotation": [
+				1.5270880353908847,
+				-0.8383173150837662,
+				0.7352000122069992
+			],
+			"speed": 1
+		},
+		{
+			"id": "camera.2",
+			"type": "FreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				0.5776272945509733,
+				-2.72836859508764,
+				0
+			],
+			"speed": 8
+		}
+	],
+	"lights": [
+		{
+			"id": "light.0",
+			"type": "HemisphericLight",
+			"direction": [
+				1,
+				0.3,
+				0.1
+			],
+			"intensity": 0.2
+		},
+		{
+			"id": "light.1",
+			"type": "PointLight",
+			"position": [
+				0,
+				150,
+				400
+			],
+			"intensity": 2
+		},
+		{
+			"id": "light.2",
+			"type": "PointLight",
+			"position": [
+				0,
+				150,
+				0
+			],
+			"intensity": 2
+		}
+	],
+	"shadows": {
+		"darkness": 0.3,
+		"bias": 0.001,
+		"environmentIntensity": 0.3
+	},
+	"datagen": {
+		"cam": {
+			"alphaMin": 0,
+			"alphaMax": 360,
+			"alphaStep": 60,
+			"betaMin": 0,
+			"betaMax": 70,
+			"betaStep": 35,
+			"radiusFactorMin": 1.7,
+			"radiusFactorMax": 2.7,
+			"radiusFactorStep": 1
+		}
+	},
+	"env": {
+		"skyboxTexture": "textures/studio.env",
+		"backgroundColor": [
+			0.2,
+			0.2,
+			0.3
+		]
+	}
 }
