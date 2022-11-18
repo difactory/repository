@@ -1,0 +1,182 @@
+@prefix : <https://w3id.org/ontoeng/DF/DFLibBuilding#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> .
+@prefix jms: <http://jena.hpl.hp.com/2003/08/jms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rss: <http://purl.org/rss/1.0/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix expr: <https://w3id.org/express#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix list: <https://w3id.org/list#> .
+@prefix osph: <https://w3id.org/ontoeng/osph#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://www.w3.org/2001/vcard-rdf/3.0#> .
+@prefix schema: <http://schema.org/> .
+@prefix factory: <https://w3id.org/ontoeng/factory#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix expression: <https://w3id.org/ontoeng/expression#> .
+@prefix statistics: <https://w3id.org/ontoeng/statistics#> .
+@prefix DFLibBuilding: <https://w3id.org/ontoeng/DF/DFLibBuilding#> .
+@prefix controlSystem: <https://w3id.org/ontoeng/controlSystem#> .
+@prefix IFC4_ADD1_rules: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL_rules#> .
+@prefix IFC4_ADD1_extension: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> .
+@base <https://w3id.org/ontoeng/DF/DFLibBuilding> .
+
+<https://w3id.org/ontoeng/DF/DFLibBuilding> rdf:type owl:Ontology ;
+                                             owl:imports <https://w3id.org/ontoeng/factory> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#DFLibBuilding
+DFLibBuilding:DFLibBuilding rdf:type owl:NamedIndividual ,
+                                     ifc:IfcProjectLibrary ;
+                            ifc:name_IfcRoot <https://w3id.org/ontoeng/DF/DFLibBuilding#4b989c1b-445a-4afd-99c6-3fed4b8ab70c> ;
+                            ifc:unitsInContext_IfcContext <https://w3id.org/ontoeng/DF/DFLibBuilding#96bb099c-3537-4a54-834f-8af21c5c5853> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#default_building
+DFLibBuilding:default_building rdf:type owl:NamedIndividual ,
+                                        ifc:IfcBuilding ;
+                               ifc:description_IfcRoot <https://w3id.org/ontoeng/DF/DFLibBuilding#5257a817-2a04-405f-afaa-e74f70d05d14> ;
+                               ifc:name_IfcRoot <https://w3id.org/ontoeng/DF/DFLibBuilding#83ae6aa8-242f-4c7c-95e6-39b73ae331d2> ;
+                               ifc:representation_IfcProduct <https://w3id.org/ontoeng/DF/DFLibBuilding#511b796f-3eff-4d24-8edf-c79da36e9a5f> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#2b0d9007-0aeb-4722-8d76-aba3105bb1a0
+<https://w3id.org/ontoeng/DF/DFLibBuilding#2b0d9007-0aeb-4722-8d76-aba3105bb1a0> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcURIReference ;
+                                                                                 expr:hasString "Warehouse.glb"^^xsd:string .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#21874dac-8420-4470-a847-0906fe05d01b
+<https://w3id.org/ontoeng/DF/DFLibBuilding#21874dac-8420-4470-a847-0906fe05d01b> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:GRAM ;
+                                                                                 ifc:prefix_IfcSIUnit ifc:KILO ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:MASSUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#22f6193a-751b-4f88-b0c4-30d37583ec5f
+<https://w3id.org/ontoeng/DF/DFLibBuilding#22f6193a-751b-4f88-b0c4-30d37583ec5f> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:METRE ;
+                                                                                 ifc:prefix_IfcSIUnit ifc:MILLI ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:LENGTHUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#247e368a-f574-4036-8482-06ec39c836c6
+<https://w3id.org/ontoeng/DF/DFLibBuilding#247e368a-f574-4036-8482-06ec39c836c6> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcRepresentation_List ;
+                                                                                 list:hasContents <https://w3id.org/ontoeng/DF/DFLibBuilding#857a4a08-d0f2-46d6-9d1f-f5eed88f929c> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#30635b7c-e16c-4ae8-9834-c99d33c226af
+<https://w3id.org/ontoeng/DF/DFLibBuilding#30635b7c-e16c-4ae8-9834-c99d33c226af> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:SQUARE_METRE ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:AREAUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#4b989c1b-445a-4afd-99c6-3fed4b8ab70c
+<https://w3id.org/ontoeng/DF/DFLibBuilding#4b989c1b-445a-4afd-99c6-3fed4b8ab70c> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcLabel ;
+                                                                                 expr:hasString "DFLibBuilding"^^xsd:string .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#40280a70-8b0f-4a8f-87ce-17baf09d34ba
+<https://w3id.org/ontoeng/DF/DFLibBuilding#40280a70-8b0f-4a8f-87ce-17baf09d34ba> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:CUBIC_METRE ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:VOLUMEUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#445373c1-fb50-4e28-b969-fbc863d58f2d
+<https://w3id.org/ontoeng/DF/DFLibBuilding#445373c1-fb50-4e28-b969-fbc863d58f2d> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:SECOND ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:TIMEUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#511b796f-3eff-4d24-8edf-c79da36e9a5f
+<https://w3id.org/ontoeng/DF/DFLibBuilding#511b796f-3eff-4d24-8edf-c79da36e9a5f> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcProductDefinitionShape ;
+                                                                                 ifc:representations_IfcProductRepresentation <https://w3id.org/ontoeng/DF/DFLibBuilding#247e368a-f574-4036-8482-06ec39c836c6> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#5257a817-2a04-405f-afaa-e74f70d05d14
+<https://w3id.org/ontoeng/DF/DFLibBuilding#5257a817-2a04-405f-afaa-e74f70d05d14> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcText ;
+                                                                                 expr:hasString "Default building"^^xsd:string .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#83ae6aa8-242f-4c7c-95e6-39b73ae331d2
+<https://w3id.org/ontoeng/DF/DFLibBuilding#83ae6aa8-242f-4c7c-95e6-39b73ae331d2> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcLabel ;
+                                                                                 expr:hasString "default_building"^^xsd:string .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#857a4a08-d0f2-46d6-9d1f-f5eed88f929c
+<https://w3id.org/ontoeng/DF/DFLibBuilding#857a4a08-d0f2-46d6-9d1f-f5eed88f929c> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcShapeRepresentation ;
+                                                                                 osph:hasExternalRepresentation <https://w3id.org/ontoeng/DF/DFLibBuilding#9ce48069-34ba-48af-a6e1-f2457f5abdca> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#9ce48069-34ba-48af-a6e1-f2457f5abdca
+<https://w3id.org/ontoeng/DF/DFLibBuilding#9ce48069-34ba-48af-a6e1-f2457f5abdca> rdf:type owl:NamedIndividual ,
+                                                                                          osph:RepresentationReference ;
+                                                                                 ifc:location_IfcExternalReference <https://w3id.org/ontoeng/DF/DFLibBuilding#2b0d9007-0aeb-4722-8d76-aba3105bb1a0> ;
+                                                                                 osph:hasRepresentationLengthUnit <https://w3id.org/ontoeng/DF/DFLibBuilding#9cf79d2e-26a5-4f2f-8ec8-26f08277a0f4> .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#9cf79d2e-26a5-4f2f-8ec8-26f08277a0f4
+<https://w3id.org/ontoeng/DF/DFLibBuilding#9cf79d2e-26a5-4f2f-8ec8-26f08277a0f4> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcSIUnit ;
+                                                                                 ifc:name_IfcSIUnit ifc:METRE ;
+                                                                                 ifc:unitType_IfcNamedUnit ifc:LENGTHUNIT .
+
+
+###  https://w3id.org/ontoeng/DF/DFLibBuilding#96bb099c-3537-4a54-834f-8af21c5c5853
+<https://w3id.org/ontoeng/DF/DFLibBuilding#96bb099c-3537-4a54-834f-8af21c5c5853> rdf:type owl:NamedIndividual ,
+                                                                                          ifc:IfcUnitAssignment ;
+                                                                                 ifc:units_IfcUnitAssignment <https://w3id.org/ontoeng/DF/DFLibBuilding#21874dac-8420-4470-a847-0906fe05d01b> ,
+                                                                                                             <https://w3id.org/ontoeng/DF/DFLibBuilding#22f6193a-751b-4f88-b0c4-30d37583ec5f> ,
+                                                                                                             <https://w3id.org/ontoeng/DF/DFLibBuilding#30635b7c-e16c-4ae8-9834-c99d33c226af> ,
+                                                                                                             <https://w3id.org/ontoeng/DF/DFLibBuilding#40280a70-8b0f-4a8f-87ce-17baf09d34ba> ,
+                                                                                                             <https://w3id.org/ontoeng/DF/DFLibBuilding#445373c1-fb50-4e28-b969-fbc863d58f2d> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
