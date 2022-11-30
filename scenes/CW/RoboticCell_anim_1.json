@@ -1,0 +1,29 @@
+{
+    "context": {
+        "assetTrail": false,
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoAnim": "https://difactory.github.io/repository/"
+    },
+    "nodes": [
+        {
+            "id": "WS2.link1",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+						"position": [0, 8.605, 0],
+                        "rotation": [0, 0, 0],
+						"placementRelTo": "WS2.base"
+                    }
+                }
+            ]
+        }
+    ],
+    "sequences": [],
+    "bookmarks": []
+}
