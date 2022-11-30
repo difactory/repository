@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoeng/CW/AssemblyLine#"
+     xml:base="https://w3id.org/ontoeng/CW/AssemblyLine"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:OWL="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#"
+     xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:osph="https://w3id.org/ontoeng/osph#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:express="https://w3id.org/express#">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine">
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
+		<terms:license>CC BY-NC 4.0</terms:license>
+		<dc:creator>Walter Terkaj</dc:creator>
+		<rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications. For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_descr"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Inspection Camera Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M1_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M1_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M1_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_descr"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Pin Insertion Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M2_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M2_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M2_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_descr"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Riveting Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M3_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M3_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M3_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_descr"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Inspection Camera Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#M4_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#M4_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#M4_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#building -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#building">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#building_descr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#building_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#building_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Building</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#pallet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#pallet">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Pallet"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/AssemblyLine#pallet_descr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/AssemblyLine#pallet_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/AssemblyLine#pallet_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Pallet for the main hinge assembly</express:hasString>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

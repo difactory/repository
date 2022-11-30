@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoeng/CW/RoboticCell#"
+     xml:base="https://w3id.org/ontoeng/CW/RoboticCell"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:OWL="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#"
+     xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:osph="https://w3id.org/ontoeng/osph#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:express="https://w3id.org/express#"
+     xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/CW/RoboticCell">
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
+		<terms:license>CC BY-NC 4.0</terms:license>
+		<dc:creator>Walter Terkaj</dc:creator>
+		<rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications. For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_descr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>hinge</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StorageElement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_duration -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_duration">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration"/>
+        <express:hasString>P1D</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#RoboticCell -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#RoboticCell">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#AssemblySystem"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#RoboticCell_descr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#RoboticCell_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#RoboticCell_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Assembly line. An assembly system consists of facilities that are utilized for the assembly of a product or products, characterized by rigid or loose chaining of individual assembly work stations. An assembly line is a specific class of assembly systems where several work stations are linked together according to the sequence of operations required. Hence, the routing of the parts and the sequence of operations is given. This assembly line is devoted to the assembly of a hinge for furniture.</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_descr"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Conveyor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>A handling device for picking up an item, moving it and placing it in another location. Such devices are usually mechanically driven and follow a fixed sequence of motions.</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Conveyor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#PalletPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Robot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#WorkholdingPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#default_building -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#default_building">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Pallet"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_descr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#WorkholdingPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>pallet</express:hasString>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
