@@ -9,11 +9,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:list="https://w3id.org/list#"
      xmlns:osph="https://w3id.org/ontoeng/osph#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
      xmlns:express="https://w3id.org/express#"
      xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/CW/RoboticCell">
@@ -41,6 +44,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_descr"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_prodrepr"/>
     </owl:NamedIndividual>
     
 
@@ -54,10 +58,68 @@
     
 
 
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>HingeWing.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#Hinge_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#Hinge_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StorageElement"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_objplace"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building"/>
     </owl:NamedIndividual>
     
 
@@ -67,6 +129,25 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_duration">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration"/>
         <express:hasString>P1D</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#PalletStorage.1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 19000 0</IFC4_ADD1_extension:hasLocation>
     </owl:NamedIndividual>
     
 
@@ -94,7 +175,11 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
         <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_prodrepr"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor"/>
         <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_stM"/>
     </owl:NamedIndividual>
     
@@ -104,6 +189,27 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -71.2 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -112,7 +218,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_objplace"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -122.2 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -121,7 +248,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_objplace"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -173.2 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -130,7 +278,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_objplace"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -224.20000000000002 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -139,7 +308,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_objplace"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -275.2 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -148,7 +338,28 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_objplace"/>
         <IFC4_ADD1_extension:isConnectedToElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>162 -326.2 248</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-2.679489658502291e-8 0.9999999999999997 -1.7512870914508165e-14; 0.9999999999997861 2.6794896585028633e-8 6.535897930762417e-7; 6.535897930762419e-7 0 -0.9999999999997864</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -157,6 +368,89 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Conveyor"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer1"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer2"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer3"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer4"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer5"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Buffer6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Wing_Conveyor_2_Station.glb#WC2_Conveyor</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>72 0 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1.Conveyor_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -166,6 +460,25 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_descr">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
         <express:hasString>A handling device for picking up an item, moving it and placing it in another location. Such devices are usually mechanically driven and follow a fixed sequence of motions.</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Wing_Conveyor_2_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprLU"/>
     </owl:NamedIndividual>
     
 
@@ -199,6 +512,63 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_initSt">
         <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>-71.5 -3618.95 0</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-3.4914813388431334e-15 1 0; -1 -3.4914813388431334e-15 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS1_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS1_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS1_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -271,6 +641,11 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot"/>
         <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_stM"/>
     </owl:NamedIndividual>
     
@@ -280,6 +655,84 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Conveyor"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#Conveyor_Main</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 0 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -288,6 +741,86 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#UREndEffector</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -38 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -296,6 +829,83 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_prodrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URgripper1</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -40 -12.7</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper1_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -304,6 +914,83 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_prodrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URgripper2</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -40 14.299999999999999</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Gripper2_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -312,6 +999,26 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#PalletPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Conveyor_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.PalletPosition_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 55.55 230</IFC4_ADD1_extension:hasLocation>
     </owl:NamedIndividual>
     
 
@@ -320,6 +1027,182 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Robot"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URPPs_Robot</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>-330 -12.5 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_finished"/>
     </owl:NamedIndividual>
     
 
@@ -328,6 +1211,27 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#WorkholdingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Workholding_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>-5.85 -98 2</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>1.091574325590497e-8 0.06894527848796898 0.9976204431416871; 0.04158063855171939 -0.9967576523968643 0.06888565079842916; 0.9991351512671502 0.04148169430614254 -0.0028667995850064944</IFC4_ADD1_extension:hasRotationMatrix>
     </owl:NamedIndividual>
     
 
@@ -336,6 +1240,84 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URbase</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.Robot_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 0 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -344,6 +1326,85 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint1</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.base_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 0 86.05000000000001</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>0.6670531711922226 -0.7450101118792948 0; 0.7450101118792948 0.6670531711922226 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -352,6 +1413,85 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint2</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint1_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -54 65.85</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>0.8775825618903728 0 0.479425538604203; 0 1 0; -0.479425538604203 0 0.8775825618903728</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -360,6 +1500,85 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint3</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint2_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -23.599999999999998 243.64999999999998</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>-0.45663013462360375 0 -0.8896566304780904; 0 1 0; 0.8896566304780904 0 -0.45663013462360375</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -368,6 +1587,85 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint4</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint3_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 8 213</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>0.13042370873814554 0 -0.9914583481916864; 0 1 0; 0.9914583481916864 0 0.13042370873814554</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -376,6 +1674,85 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint5</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint4_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -40.8 42.599999999999994</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>0.6524374681640519 -0.757842562895277 0; 0.757842562895277 0.6524374681640519 0; 0 0 1</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -384,6 +1761,104 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.EndEffector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb#URjoint6</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint5_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -42.599999999999994 40.8</IFC4_ADD1_extension:hasLocation>
+        <IFC4_ADD1_extension:hasRotationMatrix>0.059760698533809116 0 -0.9982127322924463; 0 1 0; 0.9982127322924463 0 0.059760698533809116</IFC4_ADD1_extension:hasRotationMatrix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2.joint6_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>UR_Pick_and_Place_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprLU"/>
     </owl:NamedIndividual>
     
 
@@ -417,6 +1892,62 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_initSt">
         <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 -3500 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#WS2_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#WS2_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#WS2_extrepr"/>
     </owl:NamedIndividual>
     
 
@@ -489,6 +2020,25 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#default_building">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#default_building_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#default_building_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#default_building_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#default_building_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 0 0</IFC4_ADD1_extension:hasLocation>
     </owl:NamedIndividual>
     
 
@@ -498,6 +2048,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Pallet"/>
         <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_prodrepr"/>
+        <IFC4_ADD1_extension:isDecomposedByObject rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding"/>
     </owl:NamedIndividual>
     
 
@@ -506,6 +2059,26 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#WorkholdingPosition"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet.Workholding_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 -7.5 52</IFC4_ADD1_extension:hasLocation>
     </owl:NamedIndividual>
     
 
@@ -515,6 +2088,70 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_descr">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
         <express:hasString>pallet</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Pallet.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/RoboticCell#pallet_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/RoboticCell#pallet_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/RoboticCell#pallet_extrepr"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
