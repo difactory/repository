@@ -1,0 +1,304 @@
+{
+    "context": {
+        "assetTrail": false,
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoAnim": ""
+    },
+    "nodes": [
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "0"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0,
+                            23,
+                            0
+                        ],
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "placementRelTo": "M1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "1000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0,
+                            23,
+                            0
+                        ],
+                        "placementRelTo": "M2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "2000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0,
+                            23,
+                            0
+                        ],
+                        "placementRelTo": "M3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "3000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0,
+                            23,
+                            0
+                        ],
+                        "placementRelTo": "M4"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "4000"
+                    },
+                    "event": {
+                        "type": "show",
+                        "position": [
+                            0,
+                            23,
+                            0
+                        ],
+                        "placementRelTo": "M1"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "5500"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "pallet_move",
+                        "placementRelTo": "M2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "7000"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "pallet_move",
+                        "placementRelTo": "M3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "pallet",
+            "actions": [
+                {
+                    "trigger": {
+                        "type": "timestamp",
+                        "data": "8500"
+                    },
+                    "event": {
+                        "type": "animation",
+                        "data": "pallet_move",
+                        "placementRelTo": "M4"
+                    }
+                }
+            ]
+        }
+    ],
+    "sequences": [
+        {
+            "id": "pallet_move",
+            "FPS": "10",
+            "pos": [
+                [
+                    0,
+                    23,
+                    90
+                ],
+                [
+                    0,
+                    23,
+                    80
+                ],
+                [
+                    0,
+                    23,
+                    70
+                ],
+                [
+                    0,
+                    23,
+                    60
+                ],
+                [
+                    0,
+                    23,
+                    50
+                ],
+                [
+                    0,
+                    23,
+                    40
+                ],
+                [
+                    0,
+                    23,
+                    30
+                ],
+                [
+                    0,
+                    23,
+                    20
+                ],
+                [
+                    0,
+                    23,
+                    10
+                ],
+                [
+                    0,
+                    23,
+                    0
+                ]
+            ],
+            "rot": [
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        }
+    ],
+    "bookmarks": []
+}
