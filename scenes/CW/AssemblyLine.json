@@ -1,0 +1,112 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "building",
+        "pallet",
+        "M1",
+        "M2",
+        "M3",
+        "M4"
+    ],
+    "assets": [
+        {
+            "id": "building",
+            "descr": "Building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "pallet",
+            "descr": "Pallet for the main hinge assembly",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "representations": [
+                {
+                    "file": "Pallet.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                50,
+                0,
+                300
+            ],
+            "placementRelTo": "building"
+        },
+        {
+            "id": "M1",
+            "descr": "Inspection Camera Station",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Inspection_Camera_Station.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                20,
+                0,
+                400
+            ],
+            "placementRelTo": "building"
+        },
+        {
+            "id": "M2",
+            "descr": "Pin Insertion Station",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Pin_Insertion_Station.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                20,
+                0,
+                300
+            ],
+            "placementRelTo": "building"
+        },
+        {
+            "id": "M3",
+            "descr": "Riveting Station",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Riveting_Station.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                20,
+                0,
+                200
+            ],
+            "placementRelTo": "building"
+        },
+        {
+            "id": "M4",
+            "descr": "Inspection Camera Station",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Inspection_Camera_Station.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                20,
+                0,
+                100
+            ],
+            "placementRelTo": "building"
+        }
+    ]
+}
