@@ -17,12 +17,12 @@
         "WS1.Buffer6",
         "WS2",
         "WS2.base",
-        "WS2.joint1",
-        "WS2.joint2",
-        "WS2.joint3",
-        "WS2.joint4",
-        "WS2.joint5",
-        "WS2.joint6",
+        "WS2.link1",
+        "WS2.link2",
+        "WS2.link3",
+        "WS2.link4",
+        "WS2.link5",
+        "WS2.link6",
         "WS2.EndEffector",
         "WS2.Gripper1",
         "WS2.Gripper2",
@@ -278,7 +278,7 @@
             "parentObject": "WS2.Robot"
         },
         {
-            "id": "WS2.joint1",
+            "id": "WS2.link1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -300,7 +300,7 @@
             "parentObject": "WS2.base"
         },
         {
-            "id": "WS2.joint2",
+            "id": "WS2.link2",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -318,11 +318,11 @@
                 0,
                 -0.5
             ],
-            "placementRelTo": "WS2.joint1",
-            "parentObject": "WS2.joint1"
+            "placementRelTo": "WS2.link1",
+            "parentObject": "WS2.link1"
         },
         {
-            "id": "WS2.joint3",
+            "id": "WS2.link3",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -340,11 +340,11 @@
                 0,
                 2.045
             ],
-            "placementRelTo": "WS2.joint2",
-            "parentObject": "WS2.joint2"
+            "placementRelTo": "WS2.link2",
+            "parentObject": "WS2.link2"
         },
         {
-            "id": "WS2.joint4",
+            "id": "WS2.link4",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -362,11 +362,11 @@
                 0,
                 1.44
             ],
-            "placementRelTo": "WS2.joint3",
-            "parentObject": "WS2.joint3"
+            "placementRelTo": "WS2.link3",
+            "parentObject": "WS2.link3"
         },
         {
-            "id": "WS2.joint5",
+            "id": "WS2.link5",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -384,11 +384,11 @@
                 0.86,
                 0
             ],
-            "placementRelTo": "WS2.joint4",
-            "parentObject": "WS2.joint4"
+            "placementRelTo": "WS2.link4",
+            "parentObject": "WS2.link4"
         },
         {
-            "id": "WS2.joint6",
+            "id": "WS2.link6",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
@@ -406,8 +406,8 @@
                 0,
                 1.511
             ],
-            "placementRelTo": "WS2.joint5",
-            "parentObject": "WS2.joint5"
+            "placementRelTo": "WS2.link5",
+            "parentObject": "WS2.link5"
         },
         {
             "id": "WS2.EndEffector",
@@ -423,8 +423,8 @@
                 0,
                 3.8
             ],
-            "placementRelTo": "WS2.joint6",
-            "parentObject": "WS2.joint6"
+            "placementRelTo": "WS2.link6",
+            "parentObject": "WS2.link6"
         },
         {
             "id": "WS2.Gripper1",

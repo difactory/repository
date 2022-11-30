@@ -97,7 +97,7 @@
             ]
         },
         {
-            "id": "WS2.joint1",
+            "id": "WS2.link1",
             "actions": [
                 {
                     "trigger": {
@@ -106,13 +106,13 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint1.working"
+                        "data": "WS2.link1.working"
                     }
                 }
             ]
         },
         {
-            "id": "WS2.joint2",
+            "id": "WS2.link2",
             "actions": [
                 {
                     "trigger": {
@@ -121,13 +121,13 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint2.working"
+                        "data": "WS2.link2.working"
                     }
                 }
             ]
         },
         {
-            "id": "WS2.joint3",
+            "id": "WS2.link3",
             "actions": [
                 {
                     "trigger": {
@@ -136,13 +136,13 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint3.working"
+                        "data": "WS2.link3.working"
                     }
                 }
             ]
         },
         {
-            "id": "WS2.joint4",
+            "id": "WS2.link4",
             "actions": [
                 {
                     "trigger": {
@@ -151,13 +151,13 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint4.working"
+                        "data": "WS2.link4.working"
                     }
                 }
             ]
         },
         {
-            "id": "WS2.joint5",
+            "id": "WS2.link5",
             "actions": [
                 {
                     "trigger": {
@@ -166,13 +166,13 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint5.working"
+                        "data": "WS2.link5.working"
                     }
                 }
             ]
         },
         {
-            "id": "WS2.joint6",
+            "id": "WS2.link6",
             "actions": [
                 {
                     "trigger": {
@@ -181,7 +181,7 @@
                     },
                     "event": {
                         "type": "animationAdditive",
-                        "data": "WS2.joint6.working"
+                        "data": "WS2.link6.working"
                     }
                 }
             ]
@@ -221,7 +221,7 @@
     ],
     "sequences": [
         {
-            "id": "WS2.joint1.working",
+            "id": "WS2.link1.working",
             "FPS": "5",
             "pos": [
                 [
@@ -619,7 +619,7 @@
             ]
         },
         {
-            "id": "WS2.joint2.working",
+            "id": "WS2.link2.working",
             "FPS": "5",
             "pos": [
                 [
@@ -1017,7 +1017,7 @@
             ]
         },
         {
-            "id": "WS2.joint3.working",
+            "id": "WS2.link3.working",
             "FPS": "5",
             "pos": [
                 [
@@ -1415,7 +1415,7 @@
             ]
         },
         {
-            "id": "WS2.joint4.working",
+            "id": "WS2.link4.working",
             "FPS": "5",
             "pos": [
                 [
@@ -1813,7 +1813,7 @@
             ]
         },
         {
-            "id": "WS2.joint5.working",
+            "id": "WS2.link5.working",
             "FPS": "5",
             "pos": [
                 [
@@ -2211,7 +2211,7 @@
             ]
         },
         {
-            "id": "WS2.joint6.working",
+            "id": "WS2.link6.working",
             "FPS": "5",
             "pos": [
                 [
