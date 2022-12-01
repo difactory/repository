@@ -1,0 +1,953 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoeng/CW/ProductionLine#"
+     xml:base="https://w3id.org/ontoeng/CW/ProductionLine"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:OWL="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#"
+     xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:list="https://w3id.org/list#"
+     xmlns:osph="https://w3id.org/ontoeng/osph#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:express="https://w3id.org/express#"
+     xmlns:IFC4_ADD1_extension="https://w3id.org/ontoeng/IFC4_ADD1_extension#">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/CW/ProductionLine">
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
+		<terms:license>CC BY-NC 4.0</terms:license>
+		<dc:creator>Walter Terkaj</dc:creator>
+		<rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications. For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Inspection Camera Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Inspection_Camera_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 -4000 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M1_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M1_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M1_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Pin Insertion Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Pin_Insertion_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 -3000 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M2_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M2_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M2_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Riveting Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Riveting_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 -2000 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M3_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M3_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M3_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building"/>
+        <osph:hasStateMachine rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_stM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Inspection Camera Station</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Inspection_Camera_Station.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_finished -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_finished">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_guardTrIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_guardTrIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+        <fsm:GuardEvent rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_startOp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_initSt -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_initSt">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>200 -1000 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_extrepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_stM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_stM">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_guardTrIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_initSt"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_startOp"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_trIdleWork"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_trInitCompIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_trWorkIdle"/>
+        <fsm:contains rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_workComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_startOp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_startOp">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_trIdleWork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_trIdleWork">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_workComp"/>
+        <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_guardTrIdleWork"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_trInitCompIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_trInitCompIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_initSt"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_trWorkIdle -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_trWorkIdle">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <fsm:Source rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_workComp"/>
+        <fsm:Target rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_idleComp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#M4_workComp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#M4_workComp">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+        <fsm:hasStateMachineElement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#M4_finished"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#building -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#building">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#building_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#building_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Building</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#building_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#building_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#building_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>0 0 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#Pallet"/>
+        <OWL:description_IfcRoot rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_descr"/>
+        <OWL:objectPlacement_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_objplace"/>
+        <OWL:representation_IfcProduct rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_prodrepr"/>
+        <IFC4_ADD1_extension:isContainedInStructure rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_descr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_descr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
+        <express:hasString>Pallet for the main hinge assembly</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_extref -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_extref">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference"/>
+        <express:hasString>Pallet.glb</express:hasString>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_extrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_extrepr">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#RepresentationReference"/>
+        <OWL:location_IfcExternalReference rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_extref"/>
+        <osph:hasRepresentationLengthUnit rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprLU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_objplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_objplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
+        <OWL:placementRelTo_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#building_objplace"/>
+        <OWL:relativePlacement_IfcLocalPlacement rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_relplace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_prodrepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_prodrepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape"/>
+        <OWL:representations_IfcProductRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_relplace -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_relplace">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
+        <IFC4_ADD1_extension:hasLocation>500 -3000 0</IFC4_ADD1_extension:hasLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprLU -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprLU">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit"/>
+        <OWL:name_IfcSIUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE"/>
+        <OWL:unitType_IfcNamedUnit rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprlist -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_reprlist">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List"/>
+        <list:hasContents rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_shaperepr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/CW/ProductionLine#pallet_shaperepr -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/CW/ProductionLine#pallet_shaperepr">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation"/>
+        <osph:hasExternalRepresentation rdf:resource="https://w3id.org/ontoeng/CW/ProductionLine#pallet_extrepr"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
