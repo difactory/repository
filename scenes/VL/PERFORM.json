@@ -6,6 +6,7 @@
     },
     "scene": [
         "lab_building",
+        "Base_1",
         "Robot_1",
         "Robot_1.base_link",
         "Robot_1.Joint_1",
@@ -20,6 +21,8 @@
         "Robot_1.Link_4",
         "Robot_1.Link_5",
         "Robot_1.Link_6",
+        "Tool",
+        "Base_2",
         "Robot_2",
         "Robot_2.base_link",
         "Robot_2.Joint_1",
@@ -33,7 +36,8 @@
         "Robot_2.Link_3",
         "Robot_2.Link_4",
         "Robot_2.Link_5",
-        "Robot_2.Link_6"
+        "Robot_2.Link_6",
+        "Conveyor"
     ],
     "assets": [
         {
@@ -63,12 +67,11 @@
             ]
         },
         {
-            "id": "Robot_1",
-            "descr": "COMAU NS16 robot",
-            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "id": "Base_1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb",
+                    "file": "Base.glb",
                     "unit": 1
                 }
             ],
@@ -79,17 +82,39 @@
             ],
             "rotation": [
                 0,
-                -1.5707963267949,
+                0,
                 0
             ],
             "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Robot_1",
+            "descr": "COMAU NS16 robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "Comau_ns16hand.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0.46,
+                0
+            ],
+            "rotation": [
+                0,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "Base_1"
         },
         {
             "id": "Robot_1.base_link",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#base_link",
+                    "file": "Comau_ns16hand.glb#base_link",
                     "unit": 1
                 }
             ],
@@ -111,7 +136,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_1",
+                    "file": "Comau_ns16hand.glb#Joint_1",
                     "unit": 1
                 }
             ],
@@ -133,7 +158,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_2",
+                    "file": "Comau_ns16hand.glb#Joint_2",
                     "unit": 1
                 }
             ],
@@ -155,7 +180,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_3",
+                    "file": "Comau_ns16hand.glb#Joint_3",
                     "unit": 1
                 }
             ],
@@ -177,7 +202,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_4",
+                    "file": "Comau_ns16hand.glb#Joint_4",
                     "unit": 1
                 }
             ],
@@ -199,7 +224,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_5",
+                    "file": "Comau_ns16hand.glb#Joint_5",
                     "unit": 1
                 }
             ],
@@ -221,7 +246,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_6",
+                    "file": "Comau_ns16hand.glb#Joint_6",
                     "unit": 1
                 }
             ],
@@ -243,7 +268,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_1",
+                    "file": "Comau_ns16hand.glb#Link_1",
                     "unit": 1
                 }
             ],
@@ -265,7 +290,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_2",
+                    "file": "Comau_ns16hand.glb#Link_2",
                     "unit": 1
                 }
             ],
@@ -287,7 +312,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_3",
+                    "file": "Comau_ns16hand.glb#Link_3",
                     "unit": 1
                 }
             ],
@@ -309,7 +334,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_4",
+                    "file": "Comau_ns16hand.glb#Link_4",
                     "unit": 1
                 }
             ],
@@ -331,7 +356,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_5",
+                    "file": "Comau_ns16hand.glb#Link_5",
                     "unit": 1
                 }
             ],
@@ -353,7 +378,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_6",
+                    "file": "Comau_ns16hand.glb#Link_6",
                     "unit": 1
                 }
             ],
@@ -371,12 +396,32 @@
             "parentObject": "Robot_1.Link_5"
         },
         {
-            "id": "Robot_2",
-            "descr": "COMAU NS16 robot",
-            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "id": "Tool",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb",
+                    "file": "Tool.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                -0.03,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "Robot_1.Link_6"
+        },
+        {
+            "id": "Base_2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "Base.glb",
                     "unit": 1
                 }
             ],
@@ -387,17 +432,39 @@
             ],
             "rotation": [
                 0,
-                -1.5707963267949,
+                0,
                 0
             ],
             "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Robot_2",
+            "descr": "COMAU NS16 robot",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "Comau_ns16hand.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0.46,
+                0
+            ],
+            "rotation": [
+                0,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "Base_2"
         },
         {
             "id": "Robot_2.base_link",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#base_link",
+                    "file": "Comau_ns16hand.glb#base_link",
                     "unit": 1
                 }
             ],
@@ -419,7 +486,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_1",
+                    "file": "Comau_ns16hand.glb#Joint_1",
                     "unit": 1
                 }
             ],
@@ -441,7 +508,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_2",
+                    "file": "Comau_ns16hand.glb#Joint_2",
                     "unit": 1
                 }
             ],
@@ -463,7 +530,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_3",
+                    "file": "Comau_ns16hand.glb#Joint_3",
                     "unit": 1
                 }
             ],
@@ -485,7 +552,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_4",
+                    "file": "Comau_ns16hand.glb#Joint_4",
                     "unit": 1
                 }
             ],
@@ -507,7 +574,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_5",
+                    "file": "Comau_ns16hand.glb#Joint_5",
                     "unit": 1
                 }
             ],
@@ -529,7 +596,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Joint_6",
+                    "file": "Comau_ns16hand.glb#Joint_6",
                     "unit": 1
                 }
             ],
@@ -551,7 +618,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_1",
+                    "file": "Comau_ns16hand.glb#Link_1",
                     "unit": 1
                 }
             ],
@@ -573,7 +640,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_2",
+                    "file": "Comau_ns16hand.glb#Link_2",
                     "unit": 1
                 }
             ],
@@ -595,7 +662,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_3",
+                    "file": "Comau_ns16hand.glb#Link_3",
                     "unit": 1
                 }
             ],
@@ -617,7 +684,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_4",
+                    "file": "Comau_ns16hand.glb#Link_4",
                     "unit": 1
                 }
             ],
@@ -639,7 +706,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_5",
+                    "file": "Comau_ns16hand.glb#Link_5",
                     "unit": 1
                 }
             ],
@@ -661,7 +728,7 @@
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
             "representations": [
                 {
-                    "file": "comau_ns16hand.glb#Link_6",
+                    "file": "Comau_ns16hand.glb#Link_6",
                     "unit": 1
                 }
             ],
@@ -677,6 +744,27 @@
             ],
             "placementRelTo": "Robot_2.Link_5",
             "parentObject": "Robot_2.Link_5"
+        },
+        {
+            "id": "Conveyor",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "Conveyor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                4.7,
+                0,
+                0.5
+            ],
+            "rotation": [
+                0,
+                1.57079632679489,
+                0
+            ],
+            "placementRelTo": "lab_building"
         }
     ]
 }
