@@ -486,7 +486,7 @@
             ],
             "rotation": [
                 0,
-                1.57079632679489,
+                0,
                 0
             ],
             "placementRelTo": "Lab_building"
