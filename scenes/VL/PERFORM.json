@@ -5,7 +5,7 @@
         "RepoPath": ""
     },
     "scene": [
-        "lab_building",
+        "Lab_building",
         "Base_1",
         "Robot_1",
         "Robot_1.base_link",
@@ -36,7 +36,7 @@
             "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
         },
         {
-            "id": "lab_building",
+            "id": "Lab_building",
             "descr": "Bulding in ARM1",
             "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
             "representations": [
@@ -75,7 +75,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "lab_building"
+            "placementRelTo": "Lab_building"
         },
         {
             "id": "Robot_1",
@@ -446,7 +446,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "lab_building"
+            "placementRelTo": "Lab_building"
         },
         {
             "id": "Robot_2",
@@ -489,7 +489,7 @@
                 1.57079632679489,
                 0
             ],
-            "placementRelTo": "lab_building"
+            "placementRelTo": "Lab_building"
         },
         {
             "id": "Table_1",
@@ -510,7 +510,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "lab_building"
+            "placementRelTo": "Lab_building"
         },
         {
             "id": "RobotController",
@@ -531,7 +531,7 @@
                 0,
                 0
             ],
-            "placementRelTo": "lab_building"
+            "placementRelTo": "Lab_building"
         }
     ]
 }
