@@ -1,3 +1,49 @@
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-# Repository
+# Digital Factory Repository
+
+This repository contains material related to digital factory applications, including:
+
+- [3D models](models/) of assets in [VR-compatible format](https://virtualfactory.gitbook.io/vlft/kb/instantiation/3d-models) (e.g. .glb, .gltf, .obj)
+- [scene configuration](scenes/) of production systems, labs defined according to a [JSON schema](https://virtualfactory.gitbook.io/vlft/kb/instantiation/assets/json)
+- [spreadsheets](/spreadsheets/) defining the configuration of production systems, labs according to a [template](https://virtualfactory.gitbook.io/vlft/kb/instantiation/assets/spreadsheet)
+- [ontologies](ontoeng/), both T-box (cf. [Factory Data Model](https://virtualfactory.gitbook.io/vlft/kb/fdm)) and [A-box](https://virtualfactory.gitbook.io/vlft/kb/instantiation/assets/ontology) modules
+- [SPARQL queries and updates](sparql/) customized to [access](https://virtualfactory.gitbook.io/vlft/kb/fdm/sparql-queries) and [modify](https://virtualfactory.gitbook.io/vlft/kb/fdm/sparql-updates) the [ontologies](ontoeng/)
+- [animations](animations/) defining the dynamic behaviour of scene configurations according to a [JSON schema](https://virtualfactory.gitbook.io/vlft/kb/instantiation/animations)
+
+## Use Cases
+The content of the folders is interlinked and can be grouped into demos, classworks, examples.
+The use cases are provided with open data and can be exploited with any software tools. However, they are already compatible with the following prototype tools:
+- [VEB.js](https://virtualfactory.gitbook.io/vlft/tools/vebjs) (Virtual Environment based on Babylon.js), a reconfigurable model-driven virtual environment application based on [Babylon.js](https://www.babylonjs.com/), a complete JavaScript framework and graphics engine for building 3D applications with HTML5 and WebGL (Web Graphics Library) - ([live demo](https://difactory.github.io/DF/tools/VEBjs.html))
+- [OntoGuiWeb](https://virtualfactory.gitbook.io/vlft/tools/ontoguiweb), a web application providing a graphical user interface for the instantiation and exploration of OWL ontologies - ([live demo](https://difactory.github.io/DF/tools/OntoGuiWeb.html))
+
+The following table gives an overview of the available data for the various use cases:
+- **Type**, i.e. type of use case, e.g. Demo, VL (Virtual Lab), CW (Classwork), ex (example)
+- **Doc**, i.e. link to the documentation of the use case
+- **VR**, i.e. VR rendering using VEB.js
+- **HiQ**, i.e. high-quality VR rendering using VEB.js
+- **Scene**, i.e. definition of the use case in a JSON file
+- **Onto**, i.e. definition of the use case in an ontology
+- **3D**, i.e. 3D models of the use case
+- **Anim**, i.e. animation of the use case
+- **Table**, i.e. definition of the use case in spreadsheet table(s)
+
+
+| Title                                                      | Type | Doc       | VR        | HiQ  | Scene    | Onto     | 3D       | Anim     | Table    |
+|------------------------------------------------------------|------|-----------|-----------|----------|----------|----------|----------|----------|----------|
+| Automated Assembly Line producing hinges                   | demo | [link](https://virtualfactory.gitbook.io/vlft/use-cases/assembly-line)  | [link](https://difactory.github.io/DF/scenes/VFLab/glb.html)  | [link](https://difactory.github.io/DF/scenes/VFLab/glbpbr.html) | [link](https://difactory.github.io/repository/scenes/demo/VFLab.json) | [link](https://difactory.github.io/repository/ontoeng/demo/VFLab.owl) | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine) | [link](https://difactory.github.io/repository/scenes/demo/VFLab_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VF_UseCase_AssemblyLine.xlsx) |
+| Automated Assembly Line producing hinges (reduced version) | demo |   |  [link](https://difactory.github.io/DF/scenes/DFAssemblyLine/glb.html) | [link](https://difactory.github.io/DF/scenes/DFAssemblyLine/glbpbr.html) | [link](https://difactory.github.io/repository/scenes/demo/DFAssemblyLine.json) | [link](https://difactory.github.io/repository/ontoeng/demo/DFAssemblyLine.owl) | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine) | [link](https://difactory.github.io/repository/scenes/demo/DFAssemblyLine_anim.json) |  |
+| Production cell                                                         | demo |  |  [link](https://difactory.github.io/DF/scenes/DFProductionCell/glb.html) |  | [link](https://difactory.github.io/repository/scenes/demo/DFProductionCell.json) | [link](https://difactory.github.io/repository/ontoeng/demo/DFProductionCell.owl) | [link](https://github.com/difactory/repository/tree/main/models/ProdCell) |   |   |
+|||||||||||
+|  Production line     |  CW |   |  [link](https://difactory.github.io/DF/scenes/CW/ProductionLine.html) |  | [link](https://difactory.github.io/repository/scenes/CW/ProductionLine.json) | [link](https://difactory.github.io/repository/ontoeng/CW/ProductionLine.owl) | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine) | [link](https://difactory.github.io/repository/scenes/CW/ProductionLine_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/CwProductionLine.xlsx) |
+|  Robotic cell      | CW  |    |  [link](https://difactory.github.io/DF/scenes/CW/RoboticCell.html) |   | [link](https://difactory.github.io/repository/scenes/CW/RoboticCell.json) | [link](https://difactory.github.io/repository/ontoeng/CW/RoboticCell.owl) | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine) | [link](https://difactory.github.io/repository/scenes/CW/RoboticCell_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/CwRoboticCell.xlsx) |
+|||||||||||
+|  PERFORM Lab          |  VL |  [link](https://github.com/difactory/DF/blob/main/docs/AVATAR-JLL/JLL_doc.md#1-perform-lab) |  [link](https://difactory.github.io/DF/scenes/VL/PERFORM_glb.html) |  | [link](https://difactory.github.io/repository/scenes/VL/PERFORM.json) | [link]() | [link](https://difactory.github.io/repository/scenes/VL/PERFORM_anim.json) | [link](https://github.com/difactory/repository/tree/main/models/VL/PERFORM) | [link](https://difactory.github.io/repository/spreadsheets/VL_STIIMA_PERFORM.xlsx) |
+|||||||||||
+|  Example #1   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-1) |  [link](https://difactory.github.io/DF/scenes/examples/ex1.html) |  | [link](https://difactory.github.io/repository/scenes/examples/example_1.json) |  | [link](https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb) | [link](https://difactory.github.io/repository/scenes/examples/example_1_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VF_assets_example1.xlsx) |
+|  Example #2   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-2) |  [link](https://difactory.github.io/DF/scenes/examples/ex2.html) |  | [link](https://difactory.github.io/repository/scenes/examples/example_2.json) |  | [link](https://github.com/difactory/repository/tree/main/models/DemoFactory) | [link](https://difactory.github.io/repository/scenes/examples/example_2_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VF_assets_example2.xlsx) |
+|  Example #3   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-3) |  [link](https://difactory.github.io/DF/scenes/examples/ex3.html) |  | [link](https://difactory.github.io/repository/scenes/examples/example_3.json) | | [link](https://github.com/difactory/repository/tree/main/models/DemoFactory) | [link](https://difactory.github.io/repository/scenes/examples/example_3_anim.json) | |
+|  Hinge Example #1   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-1) |  [link](https://difactory.github.io/DF/scenes/usecases/hinge1.html) |  | [link](https://difactory.github.io/repository/scenes/usecases/HingeClones.json) |  | [link](https://difactory.github.io/repository/models/AssemblyLine/GLB/) |  | [link](https://difactory.github.io/repository/spreadsheets/UseCase_HingeClones.xlsx) |
+|  Hinge Example #2   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-2) |  [link](https://difactory.github.io/DF/scenes/usecases/hinge2.html) |  | [link](https://difactory.github.io/repository/scenes/usecases/HingeCustomizedComponents.json) | | [link](https://difactory.github.io/repository/models/AssemblyLine/GLB/) | | [link](https://difactory.github.io/repository/spreadsheets/UseCase_HingeCustomizedComponents.xlsx) |
+|  Hinge Example #3   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-3) |  [link](https://difactory.github.io/DF/scenes/usecases/hinge3.html) |  | [link](https://difactory.github.io/repository/scenes/usecases/HingeHiddenComponents.json) |  | [link](https://difactory.github.io/repository/models/AssemblyLine/GLB/) |  | [link](https://difactory.github.io/repository/spreadsheets/UseCase_HingeHiddenComponents.xlsx) |
+|  Machine Example   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-1) |  [link](https://difactory.github.io/DF/scenes/usecases/pi1.html) |  | [link](https://difactory.github.io/repository/scenes/usecases/PIsClones.json) |  | [link](https://difactory.github.io/repository/models/AssemblyLine/GLB/) |  | [link](https://difactory.github.io/repository/spreadsheets/UseCase_PIsClones.xlsx) |
