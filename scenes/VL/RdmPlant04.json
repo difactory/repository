@@ -1,0 +1,3672 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": "/repository/models/GLB/"
+    },
+    "scene": [
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm0.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot2.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot2.2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Carrier",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#TofRing",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#UShare",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1_plate.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable2.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robotController",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Structure",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.base.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable.2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1_table.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos5",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#UShare.usPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1.fpPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos4",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos6",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos6",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos4",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos5",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos4",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos6",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos5",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1.smdrPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmCross2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.2",
+        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.4",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmCross2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmCross2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmCross1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm2.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm4.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.pin.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm1.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm3.1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmBar",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmFrame",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos3",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos1",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos2",
+        "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos3"
+    ],
+    "assets": [
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm0.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0.1",
+            "position": [
+                0.0,
+                26.8,
+                1.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.base.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.base.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1Dec",
+            "position": [
+                530.0,
+                53.0,
+                135.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2.1",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot2",
+            "position": [
+                0.0,
+                7.000000000000001,
+                0.8
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Carrier"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2.2",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot2",
+            "position": [
+                -8.73049,
+                87.0,
+                -28.719
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable2.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.1",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#UPlt",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.2",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#UPlt",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Carrier",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "representations": [
+                {
+                    "file": "robot2Carrier.glb",
+                    "unit": 0.001
+                }
+            ],
+            "position": [
+                1.0,
+                84.5,
+                -79.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Structure",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Structure"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.3",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#UPlt",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#TofRing",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "TofRing.glb",
+                    "unit": 0.001
+                }
+            ],
+            "position": [
+                552.0,
+                275.0,
+                -19.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#UShare",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "universalSharingStation.glb",
+                    "unit": 0.001
+                }
+            ],
+            "position": [
+                537.0,
+                0.0,
+                237.99999999999998
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1_plate.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_plate",
+            "position": [
+                530.0,
+                0.0,
+                132.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable2.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable2",
+            "position": [
+                681.0,
+                0.0,
+                -196.0
+            ],
+            "rotation": [
+                0.0,
+                1.3089970275211205,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robotController",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
+            "representations": [
+                {
+                    "file": "robotController.glb",
+                    "unit": 0.001
+                }
+            ],
+            "position": [
+                355.0,
+                0.0,
+                -273.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot2Structure",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "robot2Structure.glb",
+                    "unit": 0.001
+                }
+            ],
+            "position": [
+                415.0,
+                0.0,
+                -125.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "position": [
+                397.0,
+                0.0,
+                125.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "position": [
+                367.0,
+                0.0,
+                96.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.base.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base.1",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "position": [
+                538.0,
+                0.0,
+                -325.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable",
+            "position": [
+                539.0,
+                0.0,
+                -281.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable",
+            "position": [
+                16.0,
+                0.0,
+                -20.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1_table.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_table",
+            "position": [
+                530.0,
+                0.0,
+                135.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurnitureType",
+            "representations": [
+                {
+                    "file": "workingTable.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_arm1.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_arm4.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_base.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBarType",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "transModBar.glb",
+                    "unit": 0.01
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_arm3.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_pin",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_pin.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#MC",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAudioVisualApplianceType",
+            "representations": [
+                {
+                    "file": "MesaCamera.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_plate",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurnitureType",
+            "representations": [
+                {
+                    "file": "robot1_plate.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_table",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurnitureType",
+            "representations": [
+                {
+                    "file": "robot1_table.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_arm0.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "robot1_arm2.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrameType",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssemblyType",
+            "representations": [
+                {
+                    "file": "transModFrame.glb",
+                    "unit": 0.01
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurnitureType",
+            "representations": [
+                {
+                    "file": "warehouseModule.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurnitureType",
+            "representations": [
+                {
+                    "file": "workingTable2.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos2",
+            "position": [
+                57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos3",
+            "position": [
+                19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos5",
+            "position": [
+                -57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#UShare.usPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                85.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#UShare",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#UShare"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1.fpPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#fpPos1",
+            "position": [
+                -45.0,
+                88.0,
+                12.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "Lab.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos4",
+            "position": [
+                -19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos6",
+            "position": [
+                -96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#flyingProbe.1",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#flyingProbe",
+            "position": [
+                1.0,
+                -3.0,
+                173.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos1",
+            "position": [
+                96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos3",
+            "position": [
+                19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#SMDRework",
+            "position": [
+                152.0,
+                -9.0,
+                -185.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos6",
+            "position": [
+                -96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos1",
+            "position": [
+                96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos4",
+            "position": [
+                -19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos2",
+            "position": [
+                57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos2",
+            "position": [
+                57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos5",
+            "position": [
+                -57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos3",
+            "position": [
+                19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos4",
+            "position": [
+                -19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos1",
+            "position": [
+                96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos6",
+            "position": [
+                -96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3.wmPos5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos5",
+            "position": [
+                -57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1.smdrPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#smdrPos1",
+            "position": [
+                0.0,
+                100.0,
+                -19.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#SMDRework.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibProductType#MMIAW5SF8",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "pcbBoardB.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#unloadToDeman",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#UPlt",
+            "type": "https://w3id.org/ontoeng/factory#PalletType",
+            "representations": [
+                {
+                    "file": "UPlt.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCrossTransModType",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType",
+            "representations": [
+                {
+                    "file": "crossTransfer.glb",
+                    "unit": 0.01
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibProductType#MM5502",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "pcbBoardA.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "representations": [
+                {
+                    "file": "pcbBoardC.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType",
+            "representations": [
+                {
+                    "file": "transMod/transMod_icon.PNG"
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                492.0,
+                0.0,
+                334.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                350.0,
+                0.0,
+                287.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                152.0,
+                0.0,
+                -13.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmCross2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "position": [
+                0.0,
+                88.2,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                152.0,
+                0.0,
+                287.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                643.0,
+                0.0,
+                334.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                200.0,
+                0.0,
+                287.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                200.0,
+                0.0,
+                -13.0
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.2",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
+            "position": [
+                0.0,
+                1.5,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.4",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
+            "position": [
+                0.0,
+                1.5,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                500.99999999999997,
+                0.0,
+                287.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                341.0,
+                0.0,
+                334.0
+            ],
+            "rotation": [
+                -0.0,
+                -1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                248.0,
+                0.0,
+                146.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                248.0,
+                0.0,
+                -4.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                152.0,
+                0.0,
+                146.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.1",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.1.wmPos2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                652.0,
+                0.0,
+                287.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                248.0,
+                0.0,
+                296.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "position": [
+                200.0,
+                0.0,
+                146.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.3",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
+            "position": [
+                0.0,
+                1.5,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#UPlt.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.0,
+                -9.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1Dec",
+            "type": "https://w3id.org/ontoeng/factory#RobotType",
+            "representations": [
+                {
+                    "file": "robot1Dec/robot_1_icon.PNG"
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmCross2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmCross2",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "position": [
+                0.0,
+                88.2,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCrossTransModType",
+            "position": [
+                0.0,
+                88.2,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmCross1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmCross1",
+            "position": [
+                0.0,
+                88.2,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm2.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2.1",
+            "position": [
+                -1.2,
+                -8.2,
+                -70.30000000000001
+            ],
+            "rotation": [
+                -0.0,
+                2.652899798663617,
+                3.141592653589793
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm1.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm1.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.2"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm4.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4.1",
+            "position": [
+                0.0,
+                -20.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm3.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm3.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.pin.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_pin.1",
+            "position": [
+                0.0,
+                -19.0,
+                -2.5
+            ],
+            "rotation": [
+                -0.6632253775118843,
+                -1.5707963267948966,
+                1.5707963267948966
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm4.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm4.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm1.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1.1",
+            "position": [
+                -29.799999999999998,
+                34.900000000000009,
+                -9.8
+            ],
+            "rotation": [
+                0.41887953268527558,
+                1.5707963267948966,
+                1.5707963267948966
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm0.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm0.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                15.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm3.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3.1",
+            "position": [
+                -24.0,
+                -18.0,
+                17.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                -1.5707963267948966
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm2.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#robot1Dec.1.arm2.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1",
+            "position": [
+                -29.799999999999998,
+                34.900000000000009,
+                -9.8
+            ],
+            "rotation": [
+                1.5707963267948966,
+                0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm0",
+            "position": [
+                0.0,
+                26.8,
+                1.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3",
+            "position": [
+                -24.0,
+                -18.0,
+                17.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                -1.5707963267948966
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm2",
+            "position": [
+                -1.2,
+                -8.2,
+                -70.30000000000001
+            ],
+            "rotation": [
+                0.0,
+                -3.141592653589793,
+                3.141592653589793
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm1.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4",
+            "position": [
+                0.0,
+                -20.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                1.5707963267948966,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm3.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_base",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1Dec",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1Dec"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_pin.1",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_pin",
+            "position": [
+                0.0,
+                -19.0,
+                -2.5
+            ],
+            "rotation": [
+                0.0,
+                -1.5707963267948966,
+                1.5707963267948966
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot1_arm4.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.5"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                88.0,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.12"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos1",
+            "position": [
+                96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "type": "https://w3id.org/ontoeng/factory#BufferElementType",
+            "representations": [
+                {
+                    "file": "wmb_grey.glb",
+                    "unit": 0.001
+                },
+                {
+                    "file": "wmb_blue.glb",
+                    "unit": 0.001
+                },
+                {
+                    "file": "wmb_green.glb",
+                    "unit": 0.001
+                },
+                {
+                    "file": "wmb_orange.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#flyingProbe",
+            "type": "https://w3id.org/ontoeng/factory#MachineToolType",
+            "representations": [
+                {
+                    "file": "flyingProbe.glb",
+                    "unit": 0.01
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#SMDRework",
+            "type": "https://w3id.org/ontoeng/factory#MachineToolType",
+            "representations": [
+                {
+                    "file": "SMDRework.glb",
+                    "unit": 0.001
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#workingTable.3",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#workingTable",
+            "position": [
+                670.0,
+                0.0,
+                -198.0
+            ],
+            "rotation": [
+                0.0,
+                1.3089970275211205,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrame",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmFrameType",
+            "position": [
+                0.0,
+                0.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBar",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmBarType",
+            "position": [
+                0.0,
+                83.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                -19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#smdrPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                100.0,
+                -19.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#SMDRework",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#SMDRework"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                -57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                -96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                87.5,
+                -48.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos2",
+            "position": [
+                57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos5",
+            "position": [
+                -57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                87.5,
+                -5.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#tmPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                87.5,
+                38.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#transMod"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmbuffer",
+            "position": [
+                57.60000000000001,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#warehouseModule"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos4",
+            "position": [
+                -19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos6",
+            "position": [
+                -96.0,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#fpPos1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "position": [
+                0.0,
+                88.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElementType#flyingProbe",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElementType#flyingProbe"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4.wmPos3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "model": "https://w3id.org/ontoeng/VL/RdmLibElementType#wmPos3",
+            "position": [
+                19.2,
+                104.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4",
+            "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.4"
+        },
+        {
+            "id": "https://w3id.org/ontoeng/VL/RdmLibElementType#robot2",
+            "type": "https://w3id.org/ontoeng/factory#RobotType",
+            "representations": [
+                {
+                    "file": "robot2.glb",
+                    "unit": 0.001
+                }
+            ]
+        }
+    ]
+}
