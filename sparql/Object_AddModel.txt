@@ -61,6 +61,11 @@ WHERE {
 		?restr owl:onProperty ifcext:declaresObject .
     	?restr owl:allValuesFrom ?occClassByObject .
 	}
+	UNION {
+    	?model rdf:type/rdfs:subClassOf ?restr .
+		?restr owl:onProperty ifcext:isDefinedByObject .
+    	?restr owl:allValuesFrom ?occClassByObject .
+	}
 	UNION{
 		{
 			?model (ifcext:isDecomposedByObject|^ifcext:decomposesObject)+ ?child .
