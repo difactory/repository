@@ -70,8 +70,8 @@
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.10",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6",
-        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.2",
-        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.4",
+        "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.2",
+        "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.4",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.13.tmCross1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.7.tmCross1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.1",
@@ -82,11 +82,11 @@
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.6.tmCross1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.9",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4.tmCross1",
-        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.1",
+        "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.15",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.8",
-        "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.3",
+        "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.3",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.11.tmCross1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.14.tmCross1",
         "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.3.tmCross1",
@@ -1487,7 +1487,7 @@
             "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
         },
         {
-            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.2",
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.2",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
             "position": [
@@ -1503,7 +1503,7 @@
             "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibElement#warehouseModule.2.wmPos4"
         },
         {
-            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.4",
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.4",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
             "position": [
@@ -1684,7 +1684,7 @@
             "parentObject": "https://w3id.org/ontoeng/VL/RdmLibElement#transMod.4"
         },
         {
-            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.1",
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.1",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
             "position": [
@@ -1748,7 +1748,7 @@
             "placementRelTo": "https://w3id.org/ontoeng/VL/RdmLibBuilding#ARM1building"
         },
         {
-            "id": "https://w3id.org/ontoeng/VL/RdmPlant04#pcb3.3",
+            "id": "https://w3id.org/ontoeng/VL/RdmPlant#pcb3.3",
             "type": "https://w3id.org/ontoeng/factory#Artifact",
             "model": "https://w3id.org/ontoeng/VL/RdmLibProductType#pcb3",
             "position": [
