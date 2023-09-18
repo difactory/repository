@@ -13,7 +13,7 @@
 				1.5143727663529054,
 				0
 			],
-			"speed": 0.5
+			"speed": 0.125
 		},
 		{
 			"id": "camera.d2",
@@ -48,29 +48,49 @@
 	],
 	"lights": [
 		{
-			"id": "light.d1",
+			"id": "light.0",
 			"type": "HemisphericLight",
 			"direction": [
 				1,
 				0.3,
 				0.1
 			],
-			"intensity": 1
+			"intensity": 0.5
 		},
 		{
-			"id": "light.d2",
+			"id": "light.1",
 			"type": "PointLight",
 			"position": [
-				0,
-				100,
-				0
+				4.5,
+				3,
+				-7.7
 			],
-			"intensity": 1
+			"intensity": 0.5
+		},
+		{
+			"id": "light.2",
+			"type": "PointLight",
+			"position": [
+				4.5,
+				3,
+				-8.7
+			],
+			"intensity": 0.5
+		},
+		{
+			"id": "light.3",
+			"type": "PointLight",
+			"position": [
+				4.5,
+				3,
+				-9.7
+			],
+			"intensity": 0.5
 		}
 	],
 	"shadows": {
-		"darkness": 0.3,
-		"bias": 0.001,
+		"darkness": 0.2,
+		"bias": 0.0000001,
 		"environmentIntensity": 0.3
 	},
 	"datagen": {
