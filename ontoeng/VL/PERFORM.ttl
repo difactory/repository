@@ -1,0 +1,1446 @@
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Lab.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "2940 9910 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_initSt> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trIdleWork> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_startOp> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trInitCompIdle> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_idleComp> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trWorkIdle> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_workComp> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_stM> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 -386" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1.3492435731251315e-11 -0.9999999999932537 -0.0000036732051033217936; -0.0000036732051033217936 -0.000003673205103346574 0.9999999999865075; -0.9999999999932537 0 -0.000003673205103346574" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "COMAU NS16 robot" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 251" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "0.9999999999460303 -0.000007346410213105766 -0.000007346410212907524; -0.000007346410212907524 -0.9999999999730151 5.39697430192247e-11; -0.000007346410213105766 0 -0.9999999999730151" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_5" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_2" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trIdleWork> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_idleComp> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_startOp> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_initSt> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trInitCompIdle> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trWorkIdle> , <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_workComp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_finished> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "6331 7115 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_idleComp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_idleComp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 -30" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 -45" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#base_link" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Controller.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_4" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Base.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 700 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "0.000003673205103247453 0.9999999999932537 -2.698487148605749e-11; 0.9999999999662689 -0.000003673205103346574 -0.000007346410213056205; -0.000007346410213105766 0 -0.9999999999730151" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "COMAU NS16 robot" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 540" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 1 0; -1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_idleComp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_6" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_startOp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_stM> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "5840 6410 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#PerformLab>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingSystem> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/PERFORM#PerformLab_descr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "4340 9910 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_3" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Base.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_startOp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_5" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Conveyor.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "238 185 -101" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-0.000003673205103346574 -6.7225704876629544e-15 -0.9999999999932537; 0.9999999999932537 -2.469338022305722e-20 -0.000003673205103346574; 0 -1 6.722570487708307e-15" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 540" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 1 0; -1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_2" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_4" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Table.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1_finished> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "6331 9215 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Table_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Table_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Lab_building_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Bulding in ARM1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_3> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_4_reprLU> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#PerformLab_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "System of PERFORM Lab" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Tool_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_2_idleComp> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_5_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Conveyor_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Conveyor_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/PERFORM#Lab_building> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_2_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_2_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "106 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-0.000003673205103346574 6.7225704876629544e-15 -0.9999999999932537; -0.9999999999932537 -2.469338022305722e-20 0.000003673205103346574; 0 1 6.722570487708307e-15" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_6_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Joint_6" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_ns16hand.glb#Link_3" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Tool_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Tool.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_3_extrepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.base_link_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_6_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#ForceSensor_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "ForceSensor.glb" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_4_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Link_5_relplace> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#RobotController_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#RobotController_reprlist> .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Robot_1.Joint_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "300 101 -349" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-0.9999999999730151 -4.9386760489223716e-20 -0.000007346410213105766; 0.000007346410213105766 -6.7225704875268996e-15 -0.9999999999730151; 0 -1 6.722570487708307e-15" .
+
+<https://w3id.org/ontoeng/VL/PERFORM#Base_2_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/PERFORM#Base_2_extrepr> .
