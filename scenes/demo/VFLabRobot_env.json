@@ -2,7 +2,7 @@
 	"cameras": [
 		{
 			"id": "camera.1",
-			"type": "FlyCamera",
+			"type": "UniversalCamera",
 			"position": [
 				62.45700064092084,
 				70.0360941612738,
@@ -17,7 +17,7 @@
 		},
 		{
 			"id": "camera.2",
-			"type": "FreeCamera",
+			"type": "UniversalCamera",
 			"position": [
 				88,
 				84,
@@ -88,6 +88,7 @@
 			0.2,
 			0.3
 		],
-		"groundTexture": "textures/concrete.jpg"
+		"groundTexture": "textures/concrete.jpg",
+		"groundSize": [2000,2000,400]
 	}
 }
