@@ -1,78 +1,107 @@
 {
-    "cameras": [
-        {
-            "id": "camera.1",
-            "type": "UniversalCamera",
-            "position": [
-                88,
-                84,
-                367
-            ],
-            "rotation": [
-                0.45083021429278103,
-                -1.0028874716612546,
-                0.002433239205145581
-            ],
-            "speed": 2
-        },
-        {
-            "id": "camera.2",
-            "type": "UniversalCamera",
-            "position": [
-                39,
-                70,
-                438
-            ],
-            "rotation": [
-                0.5776272945509733,
-                -2.72836859508764,
-                0
-            ],
-            "speed": 4
-        },
-        {
-            "id": "camera.3",
-            "type": "UniversalCamera",
-            "position": [
-                88,
-                84,
-                367
-            ],
-            "rotation": [
-                0.45083021429278103,
-                -1.0028874716612546,
-                0.002433239205145581
-            ],
-            "speed": 8
-        }
-    ],
-    "lights":[
-        {
-            "id": "light.0",
-            "type": "HemisphericLight",
-            "direction": [ 1, 0.3, 0.1 ],
-            "intensity": 0.2
-        },
-        {
-            "id": "light.1",
-            "type": "PointLight",
-            "position": [
-                0,150,500
-            ],
-            "intensity": 2
-        },
-        {
-            "id": "light.2",
-            "type": "PointLight",
-            "position": [
-                0,150,-1500
-            ],
-            "intensity": 2
-        }
-    ],
-    "shadows": {
-        "darkness": 0.3,
-        "bias": 0.001,
-        "environmentIntensity": 0.3
-    }
+	"cameras": [
+		{
+			"id": "camera.3",
+			"type": "FreeCamera",
+			"position": [
+				88,
+				84,
+				367
+			],
+			"rotation": [
+				0.45083021429278103,
+				-1.0028874716612546,
+				0.002433239205145581
+			],
+			"speed": 4
+		},
+		{
+			"id": "camera.2",
+			"type": "FreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				0.5776272945509733,
+				-2.72836859508764,
+				0
+			],
+			"speed": 4
+		},
+		{
+			"id": "camera.3",
+			"type": "FreeCamera",
+			"position": [
+				39.815582316740155,
+				59.764510420725536,
+				-1653.7709077754982
+			],
+			"rotation": [
+				0.09199091530902978,
+				-6.299096042597403,
+				0
+			],
+			"speed": 4
+		}
+	],
+	"lights": [
+		{
+			"id": "light.0",
+			"type": "HemisphericLight",
+			"direction": [
+				1,
+				0.3,
+				0.1
+			],
+			"intensity": 0.2
+		},
+		{
+			"id": "light.1",
+			"type": "PointLight",
+			"position": [
+				0,
+				150,
+				500
+			],
+			"intensity": 2
+		},
+		{
+			"id": "light.2",
+			"type": "PointLight",
+			"position": [
+				0,
+				150,
+				-1500
+			],
+			"intensity": 2
+		}
+	],
+	"shadows": {
+		"darkness": 0.3,
+		"bias": 0.001,
+		"environmentIntensity": 0.3
+	},
+	"datagen": {
+		"cam": {
+			"alphaMin": 0,
+			"alphaMax": 360,
+			"alphaStep": 60,
+			"betaMin": 0,
+			"betaMax": 70,
+			"betaStep": 35,
+			"radiusFactorMin": 1.5,
+			"radiusFactorMax": 2.5,
+			"radiusFactorStep": 1
+		}
+	},
+	"env": {
+		"skyboxTexture": "textures/studio.env",
+		"backgroundColor": [
+			0.2,
+			0.2,
+			0.3
+		]
+	}
 }
