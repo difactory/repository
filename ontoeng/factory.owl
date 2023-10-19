@@ -735,6 +735,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description>Class representing machine tools.</dc:description>
     </owl:Class>
     
 
