@@ -1,0 +1,235 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "lab_building",
+        "Kuka_KR50R2500",
+        "Kuka_structure",
+        "Comau_NJ220"
+    ],
+    "assets": [
+        {
+            "id": "lab_building",
+            "descr": "Lab building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "Lab.glb",
+                    "unit": 0.01
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "RoboticLab",
+            "descr": "The DARB (Disassembly using Autonomous Robot for Batteries) Lab has the mission of studying innovative solutions to control the tasks performed by robots by merging the perceptual aspect with the automation aspect, thus boosting what robots can do in a completely autonomous manner.",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingSystem"
+        },
+        {
+            "id": "Kuka_KR50R2500",
+            "descr": "Kuka KR50 robot with KRC5 control of 45 kg mounted on a linear axis",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "Kuka_KR50.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1426,
+                2200,
+                300
+            ],
+            "rotation": [
+                0,
+                0,
+                -1.5707963267949
+            ],
+            "placementRelTo": "Kuka_structure"
+        },
+        {
+            "id": "Kuka_controller",
+            "descr": "Controller of Kuka robot",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement",
+            "representations": [
+                {
+                    "file": "controllore_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                -471,
+                1043,
+                598
+            ],
+            "rotation": [
+                -1.5707963267949,
+                -1.5707963267949,
+                0
+            ],
+            "placementRelTo": "Comau_controller"
+        },
+        {
+            "id": "Kuka_structure",
+            "descr": "Structural element for Kuka robot",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "representations": [
+                {
+                    "file": "struttura_supporto_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                11500,
+                0,
+                4500
+            ],
+            "rotation": [
+                0,
+                4.71238898038469,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Kuka_tool_storage",
+            "descr": "Storage for Kuka tools",
+            "type": "https://w3id.org/ontoeng/factory#StorageElement",
+            "representations": [
+                {
+                    "file": "stallo_utensili_Kuka.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                5300,
+                0,
+                -7000
+            ],
+            "rotation": [
+                0,
+                3.75245789178781,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Comau_NJ220",
+            "descr": "Comau NJ220 robot of 220 kg with control C5GOpen",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "representations": [
+                {
+                    "file": "Comau_NJ220.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                10000,
+                0,
+                1900
+            ],
+            "rotation": [
+                0,
+                1.5707963267949,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Comau_controller",
+            "descr": "Controller of Comau robot",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcZone",
+            "representations": [
+                {
+                    "file": "controllore_Comau.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                5500,
+                0,
+                -5000
+            ],
+            "rotation": [
+                0,
+                0.785398163397448,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Table_1",
+            "descr": "Table for Comau robot tools",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture",
+            "representations": [
+                {
+                    "file": "tavolo_utensili_Comau.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                1200,
+                0,
+                -2500
+            ],
+            "rotation": [
+                0,
+                2.0943951023932,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Omron_HD1500",
+            "descr": "Omron HD1500 mobile robot composed of a robot and a mobile platform by Omron",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "representations": [
+                {
+                    "file": "Omron_HD1500.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                3000,
+                0,
+                -4800
+            ],
+            "rotation": [
+                0,
+                0.610865238198015,
+                0
+            ],
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Omron_LD60",
+            "descr": "Mobile robot",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement",
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "Techman12",
+            "descr": "Mounted on top of Omron_LD60",
+            "type": "https://w3id.org/ontoeng/factory#Robot",
+            "placementRelTo": "lab_building"
+        },
+        {
+            "id": "CustomConnection",
+            "descr": "Connection between Omron_LD60 and Techman12",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly",
+            "placementRelTo": "lab_building"
+        }
+    ]
+}

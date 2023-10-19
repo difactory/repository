@@ -1,0 +1,751 @@
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Structural element for Kuka robot" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Storage for Kuka tools" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Kuka KR50 robot with KRC5 control of 45 kg mounted on a linear axis" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_LD60_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_LD60_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#CustomConnection_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Connection between Omron_LD60 and Techman12" .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_trWorkIdle> , <https://w3id.org/ontoeng/VL/DARB#Techman12_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/DARB#Techman12_trIdleWork> , <https://w3id.org/ontoeng/VL/DARB#Techman12_workComp> , <https://w3id.org/ontoeng/VL/DARB#Techman12_startOp> , <https://w3id.org/ontoeng/VL/DARB#Techman12_idleComp> , <https://w3id.org/ontoeng/VL/DARB#Techman12_trInitCompIdle> , <https://w3id.org/ontoeng/VL/DARB#Techman12_initSt> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_startOp> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trInitCompIdle> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trWorkIdle> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_initSt> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_workComp> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_guardTrIdleWork> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trIdleWork> , <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trIdleWork> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_workComp> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trInitCompIdle> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trWorkIdle> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_idleComp> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_initSt> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_startOp> , <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "3000 4800 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "0.819152044288992 -0.5735764363510458 0; 0.5735764363510458 0.819152044288992 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_LD60_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitaryControlElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_prodrepr> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_stM> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_finished> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau_NJ220.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Omron HD1500 mobile robot composed of a robot and a mobile platform by Omron" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#CustomConnection_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#CustomConnection_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_startOp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_startOp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#prefix_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#CENTI> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "11500 -4500 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-1.8369701987210297e-16 1 0; -1 -1.8369701987210297e-16 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#CustomConnection_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage>
+        a       <https://w3id.org/ontoeng/factory#StorageElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_controller_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#CustomConnection>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#CustomConnection_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#CustomConnection_objplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcFurniture> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "stallo_utensili_Kuka.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_controller_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Controller of Comau robot" .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Table for Comau robot tools" .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Lab building" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Kuka_KR50.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#RoboticLab>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingSystem> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#RoboticLab_descr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_LD60>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_LD60_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_LD60_objplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementAssembly> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Omron_HD1500.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "struttura_supporto_Kuka.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_finished> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#RoboticLab_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "The DARB (Disassembly using Autonomous Robot for Batteries) Lab has the mission of studying innovative solutions to control the tasks performed by robots by merging the perceptual aspect with the automation aspect, thus boosting what robots can do in a completely autonomous manner." .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Mounted on top of Omron_LD60" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "controllore_Kuka.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Lab.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_objplace> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_stM> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Table_1_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_prodrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_startOp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_extref>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "tavolo_utensili_Comau.glb" .
+
+<https://w3id.org/ontoeng/VL/DARB>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "10000 -1900 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 -1 0; 1 -3.4914813388431334e-15 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/VL/DARB#Omron_HD1500_reprLU> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_idleComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_extrepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Techman12_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Techman12_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "1426 -300 2200" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 0 1; 0 1 0; -1 0 -3.4914813388431334e-15" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_structure_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_reprlist> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220>
+        a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_stM> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Controller of Kuka robot" .
+
+<https://w3id.org/ontoeng/VL/DARB#lab_building_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/VL/DARB#lab_building_shaperepr> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_controller>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcZone> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_controller_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_controller_objplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_controller_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_controller_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Omron_LD60_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Mobile robot" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_workComp>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_finished> .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Comau NJ220 robot of 220 kg with control C5GOpen" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_structure_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/VL/DARB#Kuka_KR50R2500_relplace> .
+
+<https://w3id.org/ontoeng/VL/DARB#Table_1_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "1200 2500 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-0.500000000000004 -0.8660254037844363 0; 0.8660254037844363 -0.500000000000004 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/VL/DARB#Comau_NJ220_idleComp> .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_tool_storage_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "5300 7000 0" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-0.819152044288991 0.5735764363510473 0; -0.5735764363510473 -0.819152044288991 0; 0 0 1" .
+
+<https://w3id.org/ontoeng/VL/DARB#Kuka_controller_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "-471 -598 1043" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "-3.4914813388431334e-15 -3.4914813388431334e-15 1; -1 1.219044193948984e-29 -3.4914813388431334e-15; 0 -1 -3.4914813388431334e-15" .
