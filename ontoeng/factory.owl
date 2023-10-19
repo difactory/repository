@@ -2272,6 +2272,7 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Task">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTask"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#TaskSelect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -2302,10 +2303,19 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#TaskSelect -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskSelect">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#TaskType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskType">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#TaskSelect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
