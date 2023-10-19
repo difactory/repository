@@ -31,7 +31,7 @@
         <dce:title>IFC4_ADD1</dce:title>
         <vann:preferredNamespacePrefix>ifc</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="ugent.be)">Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels</rdfs:comment>
+        <rdfs:comment>Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj with revision support from Pieter Pauwels</rdfs:comment>
     </owl:Ontology>
     
 
@@ -10682,6 +10682,9 @@
         <rdfs:label>WEBER</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
+    </rdf:Description>
+    <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
     <rdf:Description>
@@ -10692,9 +10695,6 @@
     </rdf:Description>
     <rdf:Description>
         <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
-    </rdf:Description>
-    <rdf:Description>
-        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
     </rdf:Description>
 </rdf:RDF>
 
