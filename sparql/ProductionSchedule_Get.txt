@@ -15,12 +15,12 @@ WHERE {
   # part type
   OPTIONAL{
 	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?parttype .
-	?parttype rdf:type/rdfs:subClassOf* factory:ArtifactType .
+	?parttype rdf:type/rdfs:subClassOf* factory:ArtifactSelect .
   }  
   # process plan
   OPTIONAL{
 	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?procplan .
-	?procplan rdf:type/rdfs:subClassOf* ifc:IfcTaskType .
+	?procplan rdf:type/rdfs:subClassOf* factory:TaskSelect .
   }  
   # quantity
   OPTIONAL{

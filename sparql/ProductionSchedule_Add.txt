@@ -13,5 +13,5 @@ WHERE {
 	?prodplan rdf:type factory:ProductionPlan .
 	?prodsched rdf:type factory:ProductionSchedule .
 	?parttype rdf:type ?partclass .
-	?partclass rdfs:subClassOf* factory:ArtifactType .
+	?partclass rdfs:subClassOf* factory:ArtifactSelect .
 }

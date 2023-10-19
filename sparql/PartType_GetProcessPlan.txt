@@ -6,7 +6,7 @@ PREFIX factory: <https://w3id.org/ontoeng/factory#>
 select distinct ?parttype ?pplan 
 WHERE { 
 	?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
-	?itsClass rdfs:subClassOf* factory:ArtifactType . 
+	?itsClass rdfs:subClassOf* factory:ArtifactSelect . 
 	?parttype rdf:type ?itsClass .
-	?pplan rdf:type/rdfs:subClassOf* ifc:IfcTaskType .
+	?pplan rdf:type/rdfs:subClassOf* factory:TaskSelect .
 }

@@ -3,13 +3,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#> 
 
 select distinct ?pplan ?pstep ?pstepclass (group_concat(distinct ?input) as ?allinput) (count(?allsucc)-1 as ?Nallsucc) (group_concat(distinct ?succ) as ?alldirsucc)
 
 WHERE{
 
   # get process plans
-  ?ppClass rdfs:subClassOf* ifc:IfcTaskType .   
+  ?ppClass rdfs:subClassOf* factory:TaskSelect .   
   ?pplan rdf:type ?ppClass .
   FILTER ( ?ppClass != owl:NamedIndividual ) .
   
