@@ -19,7 +19,6 @@
         </dc:creator>
         <dc:license rdf:resource="http://www.opengeospatial.org/ogc/Software"/>
         <dc:license rdf:resource="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"/>
-        <dc:rights>Copyright 2017 W3C/OGC.</dc:rights>
         <dc:title xml:lang="en">Semantic Sensor Network Ontology</dc:title>
         <ns0:preferredNamespacePrefix>ssn</ns0:preferredNamespacePrefix>
         <ns0:preferredNamespaceUri>http://www.w3.org/ns/ssn/</ns0:preferredNamespaceUri>

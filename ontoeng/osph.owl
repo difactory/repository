@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="https://w3id.org/ontoeng/osph#"
      xml:base="https://w3id.org/ontoeng/osph"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-	 xmlns:cc="http://creativecommons.org/ns#"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,13 +18,13 @@
      xmlns:expression="https://w3id.org/ontoeng/expression#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/osph">
         <owl:imports rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl"/>
-        <owl:imports rdf:resource="https://w3id.org/ontoeng/expression"/>
-        <owl:imports rdf:resource="https://w3id.org/ontoeng/statistics"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/expression"/>
+        <owl:imports rdf:resource="https://w3id.org/ontoeng/statistics"/>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that model object states and performance history.</dc:description>
-		<cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
         <rdfs:comment> This version of the ontology is presented in:
 - terkaj w, schneider gf, pauwels p (2017) reusing domain ontologies in linked building data: the case of building automation and control. proceedings of the 8th workshop formal ontologies meet industry, joint ontology workshops 2017, ceur workshop proceedings, vol. 2050.
 
@@ -197,20 +196,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#hasProbabilityDistribution -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasProbabilityDistribution">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#RandomVariable"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ontoeng/osph#hasPropertyUnit -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertyUnit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
     </owl:ObjectProperty>
     
 
@@ -220,6 +211,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertyValue">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#Constant"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#RandomVariable"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -309,6 +308,15 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasValueUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasValueUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ConstantValue"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#isDecomposedByHistory -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isDecomposedByHistory">
@@ -338,6 +346,8 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#isQuantitySampledFrom">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#RandomVariable"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
     </owl:ObjectProperty>
     
 
@@ -664,6 +674,59 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/ontoeng/expression#RandomVariable -->
+
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#RandomVariable">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isQuantitySampledFrom"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/ontoeng/expression#Variable -->
 
     <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#Variable">
@@ -681,6 +744,20 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Activity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ConstantValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ConstantValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Constant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasValueUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -974,8 +1051,8 @@ The geometric elements of the 2D/3D model are defined within the coordinate syst
     <!-- https://w3id.org/ontoeng/osph#ResultStatistics -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ResultStatistics">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Result"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/statistics#DescriptiveStatistics"/>
     </owl:Class>
     
 
@@ -1058,6 +1135,12 @@ history interval.</dc:description>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StaticProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1065,16 +1148,11 @@ history interval.</dc:description>
     <!-- https://w3id.org/ontoeng/osph#StochasticQuantity -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StochasticQuantity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#RandomVariable"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasQuantityUnit"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isQuantitySampledFrom"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/statistics#ProbabilityDistribution"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Generic class that represents complex or simple quantities that are directly or indirectly related to probability distributions.</dc:description>
@@ -1110,43 +1188,38 @@ history interval.</dc:description>
     
 
 
-    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
-        <owl:equivalentClass rdf:resource="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
-    </rdf:Description>
     
 
 
-    <!-- http://www.w3.org/ns/sosa/Observation -->
+    <!-- https://w3id.org/ontoeng/osph#Measured -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Observation">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Measured">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3.org/ns/ssn/FeatureOfInterest -->
+    <!-- https://w3id.org/ontoeng/osph#Predicted -->
 
-    <owl:Class rdf:about="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Predicted">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.w3.org/ns/ssn/Property -->
+    <!-- https://w3id.org/ontoeng/osph#Simulated -->
 
-    <rdf:Description rdf:about="http://www.w3.org/ns/ssn/Property">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Simulated">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

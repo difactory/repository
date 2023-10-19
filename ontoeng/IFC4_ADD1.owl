@@ -31,7 +31,7 @@
         <dce:title>IFC4_ADD1</dce:title>
         <vann:preferredNamespacePrefix>ifc</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL</vann:preferredNamespaceUri>
-        <rdfs:comment>Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels@ugent.be)</rdfs:comment>
+        <rdfs:comment xml:lang="ugent.be)">Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels</rdfs:comment>
     </owl:Ontology>
     
 
@@ -1576,6 +1576,26 @@
         <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcGeometricRepresentationContext"/>
         <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcReal"/>
         <rdfs:label>Precision</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkPlan -->
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkPlan">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlan"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkSchedule -->
+
+    <owl:ObjectProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkSchedule">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkSchedule"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
     </owl:ObjectProperty>
     
 
@@ -9322,7 +9342,28 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlan">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkControl"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkPlan"/>
+                <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkPlan"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkSchedule"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
     </owl:Class>
     
 
@@ -9331,6 +9372,27 @@
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkSchedule">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkControl"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkSchedule"/>
+                <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#predefinedType_IfcWorkSchedule"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
     </owl:Class>
     
 
@@ -9419,6 +9481,15 @@
     
 
 
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#ACTUAL -->
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#ACTUAL">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#AMOUNTOFSUBSTANCEUNIT -->
 
     <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#AMOUNTOFSUBSTANCEUNIT">
@@ -9469,6 +9540,15 @@
     <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#ATTO">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIPrefix"/>
         <rdfs:label>ATTO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#BASELINE -->
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#BASELINE">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
     </owl:NamedIndividual>
     
 
@@ -10125,6 +10205,8 @@
 
     <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#NOTDEFINED">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDataOriginEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
         <rdfs:label>NOTDEFINED</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10189,6 +10271,15 @@
     <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#PLANEANGLEUNIT">
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitEnum"/>
         <rdfs:label>PLANEANGLEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#PLANNED -->
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#PLANNED">
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
     </owl:NamedIndividual>
     
 
@@ -10514,6 +10605,8 @@
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDataOriginEnum"/>
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDerivedUnitEnum"/>
         <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcUnitEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlanTypeEnum"/>
+        <rdf:type rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkScheduleTypeEnum"/>
         <rdfs:label>USERDEFINED</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10589,6 +10682,9 @@
         <rdfs:label>WEBER</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    </rdf:Description>
+    <rdf:Description>
         <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
     </rdf:Description>
     <rdf:Description>
@@ -10599,9 +10695,6 @@
     </rdf:Description>
     <rdf:Description>
         <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minExclusive>
-    </rdf:Description>
-    <rdf:Description>
-        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
     </rdf:Description>
 </rdf:RDF>
 

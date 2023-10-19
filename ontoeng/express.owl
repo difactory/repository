@@ -14,16 +14,16 @@
     <owl:Ontology rdf:about="https://w3id.org/express">
         <owl:imports rdf:resource="https://w3id.org/list"/>
         <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
-        <dce:creator>Pieter Pauwels (pipauwel.pauwels@ugent.be)</dce:creator>
-        <dce:creator>Walter Terkaj (walter.terkaj@itia.cnr.it)</dce:creator>
+        <dce:creator>Pieter Pauwels</dce:creator>
+        <dce:creator>Walter Terkaj</dce:creator>
         <dce:date>2015/12/11</dce:date>
         <dce:description>OWL ontology for EXPRESS concepts</dce:description>
         <dce:language>en</dce:language>
         <dce:title>EXPRESS</dce:title>
         <vann:preferredNamespacePrefix>expr</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/express</vann:preferredNamespaceUri>
-        <rdfs:comment>Ontology automatically generated using &apos;genOnto&apos; converter developed by Walter Terkaj (ITIA-CNR, walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels@ugent.be)</rdfs:comment>
-        <rdfs:comment>Serialized using C++ RDF library by Walter Terkaj (ITIA-CNR, walter.terkaj@itia.cnr.it) based on Redland API C library. Fri Sep 25 14:02:03 2015
+        <rdfs:comment>Ontology automatically generated using genOnto converter developed by Walter Terkaj with revision support from Pieter Pauwels </rdfs:comment>
+        <rdfs:comment>Serialized using C++ RDF library by Walter Terkaj based on Redland API C library. Fri Sep 25 14:02:03 2015
 </rdfs:comment>
     </owl:Ontology>
     
