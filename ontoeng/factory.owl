@@ -397,6 +397,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementObsProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementProperty"/>
     </owl:Class>
     
 
@@ -404,14 +405,6 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferElementProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementProperty">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferElementObsProperty"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferElementStaticProperty"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
@@ -420,6 +413,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferElementStaticProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementStaticProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
@@ -956,6 +950,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolObsProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolProperty"/>
     </owl:Class>
     
 
@@ -980,14 +975,6 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolProperty">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineToolObsProperty"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineToolStaticProperty"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
@@ -1078,6 +1065,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolStaticProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStaticProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
@@ -1838,6 +1826,7 @@ A production resource type captures common productivities and cost rates for app
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleObsProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleProperty"/>
     </owl:Class>
     
 
@@ -1845,14 +1834,6 @@ A production resource type captures common productivities and cost rates for app
     <!-- https://w3id.org/ontoeng/factory#ProductionScheduleProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleProperty">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleObsProperty"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
@@ -1861,6 +1842,7 @@ A production resource type captures common productivities and cost rates for app
     <!-- https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleProperty"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
