@@ -59,5 +59,18 @@
         "darkness": 0.3,
         "bias": 0.001,
         "environmentIntensity": 0.3
+    },
+    "datagen": {
+        "cam": {
+            "alphaMin": 0,
+            "alphaMax": 360,
+            "alphaStep": 60,
+            "betaMin": 0,
+            "betaMax": 70,
+            "betaStep": 35,
+            "radiusFactorMin": 1.5,
+            "radiusFactorMax": 2.5,
+            "radiusFactorStep": 1
+        }
     }
 }
