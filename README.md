@@ -18,7 +18,7 @@ The use cases are provided with open data and can be exploited with any software
 - [OntoGuiWeb](https://virtualfactory.gitbook.io/vlft/tools/ontoguiweb), a web application providing a graphical user interface for the instantiation and exploration of OWL ontologies - ([live demo](https://difactory.github.io/DF/tools/OntoGuiWeb.html))
 
 The following table gives an overview of the available data for the various use cases:
-- **Type**, i.e. type of use case, e.g. demo (demo of factory), VL (Virtual Lab), CW (Classwork), ex (example)
+- **Type**, i.e. type of use case, e.g. demo (demo of factory), VL (Virtual Lab), CW (Classwork), UC (Use Case) ex (example)
 - **Doc**, i.e. link to the documentation of the use case
 - **VR**, i.e. VR rendering using VEB.js
 - **HiQ**, i.e. high-quality VR rendering using VEB.js
@@ -40,6 +40,8 @@ The following table gives an overview of the available data for the various use 
 |||||||||||
 |  PERFORM Lab          |  VL |  [link](https://github.com/difactory/DF/blob/main/docs/AVATAR-JLL/JLL_doc.md#1-perform-lab) |  [link](https://difactory.github.io/DF/scenes/VL/PERFORM_glb.html) |  | [link](https://difactory.github.io/repository/scenes/VL/PERFORM.json) | [link](https://difactory.github.io/repository/ontoeng/VL/PERFORM.owl)  | [link](https://github.com/difactory/repository/tree/main/models/VL/PERFORM) | [link](https://difactory.github.io/repository/scenes/VL/PERFORM_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VL_STIIMA_PERFORM.xlsx) |
 |  RDM Lab          |  VL |  [link](https://link.springer.com/chapter/10.1007/978-3-319-94358-9_21#Sec8) |  [link](https://difactory.github.io/DF/scenes/VL/RdmPlant.html) |  | [link](https://difactory.github.io/repository/scenes/VL/RdmPlant.json) | [link](https://difactory.github.io/repository/ontoeng/VL/RdmPlant.owl) | [link](https://github.com/difactory/repository/tree/main/models/VL/RDM) |  |  |
+|||||||||||
+| ControlPolicy01 | UC| | | | | [link](https://difactory.github.io/repository/ontoeng/UC/ControlPolicy01.owl) | 
 |||||||||||
 |  Example #1   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-1) |  [link](https://difactory.github.io/DF/scenes/examples/ex1.html) |  | [link](https://difactory.github.io/repository/scenes/examples/example_1.json) |  | [link](https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/WaterBottle/glTF-Binary/WaterBottle.glb) | [link](https://difactory.github.io/repository/scenes/examples/example_1_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VF_assets_example1.xlsx) |
 |  Example #2   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-2) |  [link](https://difactory.github.io/DF/scenes/examples/ex2.html) |  | [link](https://difactory.github.io/repository/scenes/examples/example_2.json) |  | [link](https://github.com/difactory/repository/tree/main/models/DemoFactory) | [link](https://difactory.github.io/repository/scenes/examples/example_2_anim.json) | [link](https://difactory.github.io/repository/spreadsheets/VF_assets_example2.xlsx) |
