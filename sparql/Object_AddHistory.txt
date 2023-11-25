@@ -1,0 +1,32 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+
+DELETE{
+	GRAPH ?h1 {?hist osph:hasIntervalStartTime ?startold }.
+	GRAPH ?h2 {?hist osph:hasIntervalEndTime ?endold }.
+}
+INSERT { 
+	GRAPH ?graph { 
+		?obj osph:hasHistory ?hist .
+		?hist  osph:decomposesHistory ?parent .
+		?hist osph:hasIntervalStartTime ?start .
+		?hist osph:hasIntervalEndTime ?end .
+	}
+}
+WHERE {
+
+	OPTIONAL{
+		GRAPH ?h1 {?hist osph:hasIntervalStartTime ?startold }.
+	}	
+	OPTIONAL{
+		GRAPH ?h2 {?hist osph:hasIntervalEndTime ?endold }.
+	}	
+	
+	BIND(IF(strlen(?startdate)>0,STRDT(?startdate, xsd:dateTime),?null ) AS ?start ) . 	
+	BIND(IF(strlen(?enddate)>0,STRDT(?enddate, xsd:dateTime),?null ) AS ?end ) . 	
+
+}

@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX express: <https://w3id.org/express#> 
+PREFIX list: <https://w3id.org/list#> 
+
+DELETE{
+	GRAPH ?g1{ ?elemhist ?b1 ?c1 .} 
+	GRAPH ?g2{ ?a2 ?b2 ?elemhist .} 
+	
+}
+WHERE { 
+
+	#?elemhistclass rdfs:subClassOf* osph:ObjectHistory .
+	#?elemhist rdf:type ?elemhistclass . 
+	
+	# Get all histories
+	?hist (osph:isDecomposedByHistory|^osph:decomposesHistory)* ?elemhist .
+	
+	{ GRAPH ?g1{ ?elemhist ?b1 ?c1 .} }
+	UNION { GRAPH ?g2{ ?a2 ?b2 ?elemhist .} }	
+}

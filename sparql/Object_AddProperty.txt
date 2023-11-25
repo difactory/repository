@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+INSERT { 
+	GRAPH ?graph { 	
+		?propNew a owl:NamedIndividual , ?propclass .
+		?obj ssn:hasProperty ?propNew .
+	}
+}
+WHERE {
+
+	?objclass rdfs:subClassOf* osph:ObjectDefinition .
+	?obj rdf:type ?objclass .  
+    FILTER ( ?objclass != owl:NamedIndividual ) . 
+
+	OPTIONAL {
+		?obj ssn:hasProperty ?prop .
+		?prop rdf:type ?propclass .
+		FILTER ( ?propclass != owl:NamedIndividual ) .
+	}		
+	
+	BIND(IF(bound(?buffprop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+}

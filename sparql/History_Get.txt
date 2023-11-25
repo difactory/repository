@@ -1,0 +1,36 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+
+select distinct ?hist ?itstype ?parent ?obj ?start ?end
+WHERE { 
+
+	?itstype rdfs:subClassOf* osph:ObjectHistory .   
+
+	?hist rdf:type ?itstype .
+
+	FILTER ( ?itstype != owl:NamedIndividual ) .
+	
+	OPTIONAL{
+		?parent osph:isDecomposedByHistory|^osph:decomposesHistory ?hist .
+	}
+	OPTIONAL{
+		?obj osph:hasHistory ?hist .
+	}	
+	OPTIONAL{
+		?hist osph:hasIntervalStartTime ?start .
+	}	
+	OPTIONAL{
+		?hist osph:hasIntervalEndTime ?end .
+	}	
+
+}

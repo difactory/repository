@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+
+SELECT distinct ?asset ?itsType ?buffer ?machine
+
+WHERE { 
+
+	?itsType rdfs:subClassOf* ifc:IfcObjectDefinition .   
+
+	?asset rdf:type ?itsType .
+
+	FILTER ( ?itsType != owl:NamedIndividual ) . 
+
+	OPTIONAL{
+		?buffersub rdfs:subClassOf* fa:BufferElement .
+		BIND("yes" AS ?buffer ) .
+		?asset  rdf:type ?buffersub .
+	}
+	OPTIONAL{
+		?machsub rdfs:subClassOf* fa:MachineTool .
+		BIND("yes" AS ?machine ) .
+		?asset  rdf:type ?machsub .
+	}  
+}

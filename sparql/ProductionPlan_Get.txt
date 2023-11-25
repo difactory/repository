@@ -5,12 +5,12 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 
-SELECT distinct ?prodplan ?time (group_concat(distinct ?sys) as ?allsys) (group_concat(distinct ?contr) as ?allcontr) (group_concat(distinct ?prodsched) as ?allprodsched)
+SELECT distinct ?prodplan ?time (group_concat(distinct ?sys) as ?allsys) (group_concat(distinct ?contr) as ?allcontr) (group_concat(distinct ?prodsched) as ?allprodsched) (group_concat(distinct ?prodhist) as ?allprodhist)
 
 WHERE { 
-  ?prodplan rdf:type factory:ProductionPlan .
+  ?prodplan rdf:type fa:ProductionPlan .
   # duration
   OPTIONAL{
 	?prodplan ifc:duration_IfcWorkControl ?time .
@@ -18,7 +18,7 @@ WHERE {
   # systems
   OPTIONAL{
 	?prodplan ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?sys .
-	?sys rdf:type/rdfs:subClassOf* factory:TransformationSystem .
+	?sys rdf:type/rdfs:subClassOf* fa:TransformationSystem .
   }  
   # controllers
   OPTIONAL{
@@ -28,7 +28,12 @@ WHERE {
   # production batches
   OPTIONAL{
 	?prodplan ifcext:isDecomposedByObject|^ifcext:decomposesObject ?prodsched .
-	?prodsched rdf:type/rdfs:subClassOf* factory:ProductionSchedule .
+	?prodsched rdf:type/rdfs:subClassOf* fa:ProductionSchedule .
+  }
+  # production histories
+  OPTIONAL{
+	?prodplan osph:hasHistory ?prodhist .
+	?prodhist rdf:type/rdfs:subClassOf* fa:ProductionPlanHistory .
   }
 }
 GROUP BY ?prodplan ?time

@@ -1,10 +1,29 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+
      
 INSERT { 
 	GRAPH ?graph { 
-		?subject ifcext:hasAssignedObject ?assignedobj .
+		?obj1 ifcext:hasAssignedObject ?obj2 .
+		?prodplan cs:hasExecutionController ?contr
 	}
 }
 WHERE{
 
+	OPTIONAL{
+		?subject rdf:type/rdfs:subClassOf* ifc:IfcObjectDefinition .
+		BIND(?subject AS ?obj1 ) .
+		?assignedobj rdf:type/rdfs:subClassOf* ifc:IfcObjectDefinition .
+		BIND(?assignedobj AS ?obj2 ) .
+	}
+	OPTIONAL{
+		?subject rdf:type/rdfs:subClassOf* factory:ProductionPlan .
+		BIND(?subject AS ?prodplan ) .
+		?assignedobj rdf:type/rdfs:subClassOf* cs:ControllerFB .
+		BIND(?assignedobj AS ?contr ) .
+	}
 }

@@ -1,0 +1,45 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+
+DELETE{
+	GRAPH ?h {?prop osph:hasPropertySimpleValue ?propval .}	
+}
+INSERT { 
+
+	GRAPH ?graph { 	
+		?propNew a owl:NamedIndividual , ?propclass .
+		?obj ssn:hasProperty ?propNew .
+		
+		?propNew osph:hasPropertySimpleValue ?value .
+		?propNew osph:hasPropertySimpleValue ?integerdt . #deprecated
+		?propNew osph:hasPropertySimpleValue ?doubledt . #deprecated
+		?propNew osph:hasPropertySimpleValue ?datetimedt . #deprecated
+	}
+
+}
+WHERE {
+
+	?objclass rdfs:subClassOf* osph:ObjectDefinition .
+	?obj rdf:type ?objclass .  
+    FILTER ( ?objclass != owl:NamedIndividual ) . 
+
+	OPTIONAL {
+		?obj ssn:hasProperty ?prop .
+		?prop rdf:type ?propclass .
+		FILTER ( ?propclass != owl:NamedIndividual ) .
+		OPTIONAL{
+			GRAPH ?h {?prop osph:hasPropertySimpleValue ?propval .}	
+		}
+	}		
+	
+	BIND(IF(bound(?buffprop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+
+	BIND(IF(strlen(?intval)>0,STRDT(?intval, xsd:integer),?null ) AS ?integerdt ) . 	
+	BIND(IF(strlen(?doubleval)>0,STRDT(?doubleval, xsd:double),?null ) AS ?doubledt ) . 	
+	BIND(IF(strlen(?dateval)>0,STRDT(?dateval, xsd:dateTime),?null ) AS ?datetimedt ) . 	
+}
