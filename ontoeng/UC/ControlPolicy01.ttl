@@ -1,0 +1,2493 @@
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#default_building>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_descr> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_objplace> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opA06>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_do_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trWorkFinal_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_opB02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_reg_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stv_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_blk_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "0 0 0" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res07m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_idleSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_entryAction>
+        a       <https://w3id.org/ontoeng/osph#EventGeneration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#generatesEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_startOp_1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res04m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitIdle_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opB05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res01m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardIdleWork_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_start_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B8>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B8_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_relSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_entryAction> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_cond>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasConditionExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trIdleWork_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardIdleWork_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trInitIdle_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_start_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trWorkFinal_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trInitIdle_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_regInit_opA04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idle_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trInitIdle_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_regInit_opB03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idle_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_reg_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_reg_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleB>
+        a       <https://w3id.org/ontoeng/factory#ProductionSchedule> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleB_ScheduledQuantity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanB> , <https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeB> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B5> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B2> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_relplace> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB03_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT16S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_do_opA03>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opB04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stv_opB01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_blk_opB04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B7_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#productionPlan_duration>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT8H" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkFinal_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opA06> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opB05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_reg>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_trIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_idleSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_trRelIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trInitIdle_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_regInit_opA02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idle_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trWorkFinal_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_opA04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opA05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_do_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_reg_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_stv_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_blk_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_regInit_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idle_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_BinExpr>
+        a       <https://w3id.org/ontoeng/expression#BinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasLhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_IterBExpr> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
+        <https://w3id.org/ontoeng/expression#hasRhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_Thr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stv_opA06>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_trRelIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_idleSt> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA04_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT12S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB04_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_trIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_idleSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_guardTrIdleRel> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04>
+        a       <https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/controlSystem#hasPolicyExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkFinal_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkFinal_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitIdle_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitIdle_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_Thr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasInteger>
+                20 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_IterBExpr>
+        a       <https://w3id.org/ontoeng/expression#IteratedBinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasOperands>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev_var> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#ADDITION> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B3>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B3_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_do_opB01>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA02_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA06>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res08m> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_reg_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#pplanB>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTaskType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_BinExpr>
+        a       <https://w3id.org/ontoeng/expression#BinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasLhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_IterBExpr> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
+        <https://w3id.org/ontoeng/expression#hasRhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_Thr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitIdle_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opA05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitIdle_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opB01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B8> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trWorkFinal_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_opB03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_blk_opA03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB03>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res06m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#AssemblyLine>
+        a       <https://w3id.org/ontoeng/factory#AssemblySystem> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#AssemblyLine_descr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B4> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B8> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B2> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B6> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B3> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B9> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B7> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B5> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_regInit_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_IterBExpr>
+        a       <https://w3id.org/ontoeng/expression#IteratedBinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasOperands>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev_var> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#ADDITION> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_reg_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stv_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_blk_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_do_opA02>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_reg_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stv_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_blk_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opA01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B1_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                50 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkFinal_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opB01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opB05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opB05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_reg> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_reg> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_reg> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_reg> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_trIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_idleSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_guardTrIdleRel> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opB01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B9>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B9_BufferCapacity> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA01>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA01_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res01m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trIdleWork_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idle_opA04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_opA04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardIdleWork_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_guardTrIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_cond> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trIdleWork_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idle_opB03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_opB03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardIdleWork_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_do_opB05>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B3> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B2_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                6 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_reg>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_trIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_startOp_1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_trRelIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_idleSt> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trIdleWork_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idle_opA02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_opA02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardIdleWork_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_relSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_entryAction> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB01_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB01_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idle_opA04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_Thr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasInteger>
+                6 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opA06>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_stv_opA02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opA05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_guardTrIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_cond> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA04_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B5_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B5_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B2_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_reg_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_stv_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_blk_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_regInit_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idle_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseController> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_blk_opB03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_reg_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_cond>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasConditionExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B3_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                8 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idle_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idle_opB03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_trIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_idleSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_guardTrIdleRel> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B4>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B4_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkFinal_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opB04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.000305250305250305"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stv_opA05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opB01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00000102030405060708"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB02_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT14S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opA05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opA05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_entryAction>
+        a       <https://w3id.org/ontoeng/osph#EventGeneration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#generatesEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opB01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opB01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00000142450142450142"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B9> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B4_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                6 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00000154320987654321"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB04>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res07m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res06m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_do_opB04>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res03m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA03_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT14S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkFinal_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitIdle_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkFinal_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitIdle_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_stv_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B5_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                10 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opB05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_do_opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_reg_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stv_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_blk_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB03_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA02>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res02m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_idleSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_blk_opB01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_cond>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasConditionExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_startOp_1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_guardTrIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_cond> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B4> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA01_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA01_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trInitIdle_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trIdleWork_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardIdleWork_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trWorkFinal_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_start_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                4.3624307464119e-7 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B6_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                6 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_reg_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttf>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                4.65289410013028e-7 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_blk_opA06>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00000185185185185185"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkFinal_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opB05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0000161030595813204"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeA>
+        a       <https://w3id.org/ontoeng/factory#ArtifactType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanA> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_regInit_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opB04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_do_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_do_opB03>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opB01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_do_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stv_opB05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stv_opA01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B5>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B5_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B5_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B7_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                10 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_BinExpr>
+        a       <https://w3id.org/ontoeng/expression#BinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasLhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_IterBExpr> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
+        <https://w3id.org/ontoeng/expression#hasRhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip04_Thr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_reg_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_stv_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_blk_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_regInit_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idle_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idle_opA02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_trRelIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_idleSt> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idle_opA03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_entryAction>
+        a       <https://w3id.org/ontoeng/osph#EventGeneration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#generatesEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_startOp_1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_guardTrIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_cond> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_IterBExpr>
+        a       <https://w3id.org/ontoeng/expression#IteratedBinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasOperands>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev_var> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#ADDITION> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB05>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res08m> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitIdle_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opB04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B8_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                14 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_regInit_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_opB03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_do_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_do_opA01>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trInitIdle_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_regInit_opA03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idle_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#productionPlan>
+        a       <https://w3id.org/ontoeng/factory#ProductionPlan> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#duration_IfcWorkControl>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#productionPlan_duration> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#AssemblyLine> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleB> , <https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleA> ;
+        <https://w3id.org/ontoeng/controlSystem#hasExecutionController>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01>
+        a       <https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/controlSystem#hasPolicyExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trInitIdle_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_regInit_opB02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idle_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_trIdleRel>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_idleSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_guardTrIdleRel> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_startOp_1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_IterBExpr>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/expression#IteratedBinaryExpression> ;
+        <https://w3id.org/ontoeng/expression#hasOperands>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B7_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B2_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B5_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev_var> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev_var> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#ADDITION> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB01_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT4S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trIdleWork_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trWorkFinal_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardIdleWork_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trInitIdle_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_start_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA03_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA06_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT9S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitIdle_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opA01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_stv_opA04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opB05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opB05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA03>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res03m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_reg_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_trRelIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_idleSt> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_cond>
+        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasConditionExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B5_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B7> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA02_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT12S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_reg_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_stv_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_blk_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_regInit_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idle_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_do_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkFinal_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opA01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_blk_opA02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B3_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trInitIdle_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opA06> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttr_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_start_opA04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_start_opA03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_start_opA02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opA01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_trRelIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_relSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_idleSt> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_entryAction>
+        a       <https://w3id.org/ontoeng/osph#EventGeneration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#generatesEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeB>
+        a       <https://w3id.org/ontoeng/factory#ArtifactType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanB> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#default_building_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Default building" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_Thr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasInteger>
+                8 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_start_opB05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opB04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_start_opB03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_start_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA06_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_blk_opA05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opA05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardIdleWork_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_start_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_opA04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_do_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B6>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B6_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res08m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_reg_opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_reg_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opA06>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B7_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B7_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res05m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#res02m>
+        a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stv_opB04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB02_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_reg>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_startOp_1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_idleSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_trIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_trRelIdle> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork_opB04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idle_opB04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opB04> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trIdleWork_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardIdleWork_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_start_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trWorkFinal_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trInitIdle_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardIdleWork_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_start_opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_relSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_entryAction> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trIdleWork_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idle_opA03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_opA03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_guardIdleWork_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trIdleWork_opB02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idle_opB02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_opB02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardIdleWork_opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opA01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B4_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02>
+        a       <https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/controlSystem#hasPolicyExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip02_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_start_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_regInit_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_reg_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_blk_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_opA03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_do_opA03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkFinal_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitIdle_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkFinal_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trIdleWork_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trInitIdle_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_start_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardIdleWork_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_reg_opB01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_stv_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_blk_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_regInit_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opB01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork_opA01>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idle_opA01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opA01> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardIdleWork_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B1>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B1_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA04>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res04m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trWorkFinal_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_opA02> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_relSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_entryAction> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB05_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT8S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_reg_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_stv_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_blk_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_regInit_opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B6> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_BinExpr>
+        a       <https://w3id.org/ontoeng/expression#BinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/expression#hasLhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_IterBExpr> ;
+        <https://w3id.org/ontoeng/expression#hasOperator>
+                <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
+        <https://w3id.org/ontoeng/expression#hasRhsOperand>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_Thr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB05_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB01>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB01_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res01m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip01_Thr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasInteger>
+                40 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB04_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT6S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_stv_opA03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                8.3984210968338e-7 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_trIdleWork_opA06>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idle_opA06> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_opA06> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_guardIdleWork_opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0000306597988717194"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M8_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_opA02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_do_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0000208855472013367"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0000564588979223126"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_guardIdleWork_opA04>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_start_opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B9_BufferCapacity>
+        a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                50 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA05_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT8S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_regInit_opB03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_do_opA06>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_do_opB02>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_blk_opB05>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#AssemblyLine_descr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "Assembly line. An assembly system consists of facilities that are utilized for the assembly of a product or products, characterized by rigid or loose chaining of individual assembly work stations. An assembly line is a specific class of assembly systems where several work stations are linked together according to the sequence of operations required. Hence, the routing of the parts and the sequence of operations is given. This assembly line is devoted to the assembly of a hinge for furniture." .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_blk_opA01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B7>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B7_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B7_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_regInit_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleA>
+        a       <https://w3id.org/ontoeng/factory#ProductionSchedule> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleA_ScheduledQuantity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanA> , <https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeA> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M8_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA01_ptime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/express#hasString>
+                "PT4S" .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleB_ScheduledQuantity>
+        a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                150 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_failed.1_repairTask_time> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_stM>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trInitIdle_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trIdleWork_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardIdleWork_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_start_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trWorkFinal_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_opA01>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_do_opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M7_idleSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#prodScheduleA_ScheduledQuantity>
+        a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                100 .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_trWorkFinal_opA05>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_opA05> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B8_lev>
+        a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_stv_opB03>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_reg>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_idleSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_startOp_1> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_trRelIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M2_trIdleRel> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B2_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B2_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03>
+        a       <https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/controlSystem#hasPolicyExpression>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#conwip03_BinExpr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_trWorkFinal_opA03>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_opA03> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M3_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0000283736238792419"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_startOp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_do_opA04>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_blk_opA04>
+        a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B2>
+        a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B2_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy01#B2_BufferCapacity> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M3_failed.1_ttf_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.000159642401021711"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_lev>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_repair> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA05>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res07m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_trFailedIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_repairTask_time>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.000338753387533875"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M4_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M4_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_do_opA05>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#pplanA>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTaskType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA01> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_reg_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_stv_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_blk_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_regInit_opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_idle_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M1_idleSt>
+        a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_failed.1_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00000168350168350168"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opA05_tasktime>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05_ptime> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M6>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_lev> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B7> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_trWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_failed.1_guardTrWorkFailed> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M2_guardIdleWork_opA02>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M2_start_opA02> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev_var>
+        a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#representsProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#B6_lev> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#opB02>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02_tasktime> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#res05m> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M7_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_reg_opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#M7_reg_opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#M5_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
