@@ -2,7 +2,7 @@
 
 # Digital Factory Repository
 
-This repository contains material related to digital factory applications, including:
+This repository contains [**data sets**](#data-sets) related to digital factory applications, including:
 
 - [3D models](models/) of assets in [VR-compatible format](https://virtualfactory.gitbook.io/vlft/kb/instantiation/3d-models) (e.g. .glb, .gltf, .obj)
 - [scene configuration](scenes/) of production systems, labs defined according to a [JSON schema](https://virtualfactory.gitbook.io/vlft/kb/instantiation/assets/json)
@@ -10,6 +10,10 @@ This repository contains material related to digital factory applications, inclu
 - [ontologies](ontoeng/), both T-box (cf. [Factory Data Model](https://virtualfactory.gitbook.io/vlft/kb/fdm)) and [A-box](https://virtualfactory.gitbook.io/vlft/kb/instantiation/assets/ontology) modules
 - [SPARQL queries and updates](sparql/) customized to [access](https://virtualfactory.gitbook.io/vlft/kb/fdm/sparql-queries) and [modify](https://virtualfactory.gitbook.io/vlft/kb/fdm/sparql-updates) the [ontologies](ontoeng/)
 - [animations](animations/) defining the dynamic behaviour of scene configurations according to a [JSON schema](https://virtualfactory.gitbook.io/vlft/kb/instantiation/animations)
+
+The VLFT (Virtual Learning Factory Toolkit) [gitbook](https://virtualfactory.gitbook.io/vlft) provides an extended documentation.
+
+Please check the [**references**](#references) for related publications.
 
 ## Data sets
 The content of the folders is interlinked and can be grouped into demos, classworks, examples, etc.
@@ -50,3 +54,17 @@ The following table gives an overview of the available data for the various data
 |  Product Example #2   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-2) |  [link](https://difactory.github.io/DF/scenes/ex/hinge2.html) |  | [link](https://difactory.github.io/repository/scenes/ex/HingeCustomizedComponents.json) | | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) | | [link](https://difactory.github.io/repository/spreadsheets/UseCase_HingeCustomizedComponents.xlsx) |
 |  Product Example #3   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-3) |  [link](https://difactory.github.io/DF/scenes/ex/hinge3.html) |  | [link](https://difactory.github.io/repository/scenes/ex/HingeHiddenComponents.json) |  | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) |  | [link](https://difactory.github.io/repository/spreadsheets/UseCase_HingeHiddenComponents.xlsx) |
 |  Machine Example   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/assets-and-animations#example-1) |  [link](https://difactory.github.io/DF/scenes/ex/pi1.html) |  | [link](https://difactory.github.io/repository/scenes/ex/PIsClones.json) |  | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) |  | [link](https://difactory.github.io/repository/spreadsheets/UseCase_PIsClones.xlsx) |
+
+
+## References
+
+* Terkaj, W., Annoni, M., Martinez, B.O., Pessot, E., Sortino, M., Urgo, M., *2024*. **Digital Twin for Factories: Challenges and Industrial Applications**, in: Carrino, L., Galantucci, L.M., Settineri, L. (Eds.), Selected Topics in Manufacturing: Emerging Trends from the Perspective of AITeM’s Young Researchers, Lecture Notes in Mechanical Engineering. Springer Nature Switzerland, Cham, pp. 255–274. https://doi.org/10.1007/978-3-031-41163-2_13
+* Berardinucci, F., Colombo, G., Lorusso, M., Manzini, M., Terkaj, W., Urgo, M., *2022*. **A learning workflow based on an integrated digital toolkit to support education in manufacturing system engineering**. Journal of Manufacturing Systems 63, 411–423. https://doi.org/10.1016/j.jmsy.2022.04.003
+* Urgo, M., Terkaj, W., Mondellini, M., Colombo, G., *2022*. **Design of serious games in engineering education: An application to the configuration and analysis of manufacturing systems**. CIRP Journal of Manufacturing Science and Technology 36, 172–184. https://doi.org/10.1016/j.cirpj.2021.11.006
+* Mahmood, K., Otto, T., Kuts, V., Terkaj, W., Modoni, G., Urgo, M., Colombo, G., Haidegger, G., Kovacs, P., Stahre, J., *2021*. **Advancement in production engineering education through Virtual Learning Factory Toolkit concept**. Proceedings of the Estonian Academy of Sciences 70, 374–382. https://doi.org/10.3176/proc.2021.4.02
+* Terkaj, W., Qi, Q., Urgo, M., Scott, P.J., Jiang, X., *2021*. **Multi-scale modelling of manufacturing systems using ontologies and delta-lenses**. CIRP Annals 70, 361–364. https://doi.org/10.1016/j.cirp.2021.04.047
+* Sanfilippo, E.M., Terkaj, W., Borgo, S., *2021*. **Ontological modeling of manufacturing resources**. Applied Ontology 16, 87–109. https://doi.org/10.3233/AO-210242
+* Urgo, M., Terkaj, W., *2020*. **Formal modelling of release control policies as a plug-in for performance evaluation of manufacturing systems**. CIRP Annals 69, 377–380. https://doi.org/10.1016/j.cirp.2020.04.007
+* Terkaj, W., Gaboardi, P., Trevisan, C., Tolio, T., Urgo, M., *2019*. **A digital factory platform for the design of roll shop plants**. CIRP Journal of Manufacturing Science and Technology 26, 88–93. https://doi.org/10.1016/j.cirpj.2019.04.007
+* Terkaj, W., Tolio, T., Urgo, M., *2015*. **A virtual factory approach for in situ simulation to support production and maintenance planning**. CIRP Annals 64, 451–454. https://doi.org/10.1016/j.cirp.2015.04.121
+* Kádár, B., Terkaj, W., Sacco, M., *2013*. **Semantic Virtual Factory supporting interoperable modelling and evaluation of production systems**. CIRP Annals 62, 443–446. https://doi.org/10.1016/j.cirp.2013.03.045
