@@ -51,6 +51,13 @@
             ]
         },
         {
+            "id": "parttypeAraw",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "pplanA"
+            ]
+        },
+        {
             "id": "pplanA",
             "type": "https://w3id.org/ontoeng/factory#ManufacturingTaskType",
             "assignmentTo": [
@@ -117,6 +124,13 @@
             "type": "https://w3id.org/ontoeng/factory#ArtifactType",
             "assignmentTo": [
                 "prodScheduleB"
+            ]
+        },
+        {
+            "id": "parttypeBraw",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "pplanB"
             ]
         },
         {

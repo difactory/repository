@@ -446,6 +446,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanB>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTaskType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeBraw> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy01#opB05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opB01> .
 
@@ -1078,6 +1080,9 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy01#M5_idleComp> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeBraw>
+        a       <https://w3id.org/ontoeng/factory#ArtifactType> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy01#M6_failed.1_ttf>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
@@ -1494,6 +1499,9 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy01#controller01_M5_startOp_1>
         a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeAraw>
+        a       <https://w3id.org/ontoeng/factory#ArtifactType> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy01#M1_failed.1_repairTask_time>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2419,6 +2427,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy01#pplanA>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTaskType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ControlPolicy01#parttypeAraw> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy01#opA06> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA02> , <https://w3id.org/ontoeng/UC/ControlPolicy01#opA01> .
 
