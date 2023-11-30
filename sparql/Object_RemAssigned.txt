@@ -3,7 +3,7 @@ PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 DELETE{
 	GRAPH ?g {
 		?subject ifcext:hasAssignedObject ?assignedobj .
-		?elemTo ifcext:hasAssignmentTo ?subject .
+		?assignedobj ifcext:hasAssignmentTo ?subject .
 	}
 }
 WHERE {
