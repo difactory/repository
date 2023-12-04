@@ -1,0 +1,7 @@
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
+
+select distinct ?subject ?decobj ?parent
+WHERE { 
+	?subject (ifcext:isDecomposedByObject|^ifcext:decomposesObject)+ ?decobj .
+	?parent (ifcext:isDecomposedByObject|^ifcext:decomposesObject) ?decobj .
+}

@@ -1,6 +1,6 @@
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
 
-select distinct ?decobj 
+select distinct ?subject ?decobj 
 WHERE { 
 	?subject ifcext:isDecomposedByObject|^ifcext:decomposesObject ?decobj .
 }
