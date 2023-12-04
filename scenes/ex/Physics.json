@@ -1,0 +1,147 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false
+        },
+    "scene": [
+        "https://w3id.org/ontoeng/ex/Physics#B1",
+        "https://w3id.org/ontoeng/ex/Physics#pallet_3",
+        "https://w3id.org/ontoeng/ex/Physics#pallet_2",
+        "https://w3id.org/ontoeng/ex/Physics#pallet_1",
+        "https://w3id.org/ontoeng/ex/Physics#pallet_5",
+        "https://w3id.org/ontoeng/ex/Physics#pallet_4"
+    ],
+    "assets": [
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#B1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "descr": "Conveyor Buffer with capacity of 5 pallets",
+            "model": "https://w3id.org/ontoeng/demo/DFLibStations#ConveyorBuffer5",
+            "representations": [
+                {
+                    "file": "Conveyor_Main.glb",
+                    "unit": 1.0
+                }
+            ],
+            "position": [
+                20.0,
+                0.0,
+                350.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "properties":{
+                "mass": 0,
+                "velocity": [0,0,5],
+                "restitution": 0.3,
+                "friction": 0.3
+            }
+        },
+
+        {
+            "id": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "type": "https://w3id.org/ontoeng/factory#PalletType",
+            "representations": [
+                {
+                    "file": "Pallet.glb",
+                    "unit": 1.0
+                }
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#pallet_1",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "descr": "pallet",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "position": [
+                20.0,
+                40.0,
+                320.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "properties":{
+                "mass": 1,
+                "restitution": 0.3,
+                "friction": 0.3
+            }
+        },
+
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#pallet_2",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "descr": "pallet",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "position": [
+                20.0,
+                40.0,
+                390.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ],
+            "properties":{
+                "mass": 1,
+                "restitution": 0.3,
+                "friction": 0.3
+            }
+        },
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#pallet_3",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "descr": "pallet",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "position": [
+                0.0,
+                23.0,
+                -0.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#pallet_4",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "descr": "pallet",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "position": [
+                0.0,
+                23.0,
+                -20.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        },
+        {
+            "id": "https://w3id.org/ontoeng/ex/Physics#pallet_5",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "descr": "pallet",
+            "model": "https://w3id.org/ontoeng/demo/DFLibProduct#PalletA",
+            "position": [
+                0.0,
+                23.0,
+                -40.0
+            ],
+            "rotation": [
+                0.0,
+                -0.0,
+                0.0
+            ]
+        }
+
+    ]
+}
