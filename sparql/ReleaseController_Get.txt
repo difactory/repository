@@ -1,10 +1,12 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#> 
 
-SELECT distinct ?controller ?controlledMach ?controlPolicy ?workstate
+SELECT distinct ?controller ?controlledMach ?controlPolicy ?workstate (group_concat(distinct ?pstep) as ?allpsteps) (group_concat(distinct ?part) as ?allparts)
 
 WHERE { 
   ?controller rdf:type cs:ReleaseController .
@@ -17,7 +19,16 @@ WHERE {
 	?trIdleWork fsm:Target ?workstate .
 	?trIdleWork fsm:TransitionGuard/fsm:GuardEvent ?eventType .
 	?eventType (ifcext:typesObject|ifcext:declaresObject) ?event .
+
+	OPTIONAL{
+		?workstate  fsm:hasStateMachineElement*/osph:do ?doPStep .
+		?doPStep ifcext:isDefinedByObject ?pstep .
+		?pplan (ifcext:isNestedByObject|^ifcext:nestsObject)* ?pstep.
+		?part ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan.
+		?part rdf:type/rdfs:subClassOf* factory:ArtifactType .  
+	}
 	  
+
 	?relTransition fsm:Target ?relState .
 	OPTIONAL{
 		?relTransition fsm:TransitionGuard/fsm:GuardCondition/osph:hasConditionExpression ?condexpr .
@@ -25,3 +36,4 @@ WHERE {
 	}
   }
 }
+GROUPBY ?controller ?controlledMach ?controlPolicy ?workstate
