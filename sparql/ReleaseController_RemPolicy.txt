@@ -29,7 +29,12 @@ WHERE {
 	GRAPH ?g {
 		?condTrIdleRel osph:hasConditionExpression ?condexpr .
 	}
- 	?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
+ 	# ?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
+	
+	?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement* ?trIdleWork .
+	?trIdleWork fsm:Target ?workstate .
+	?trIdleWork fsm:TransitionGuard/fsm:GuardEvent ?eventType .	
+	
 	{?eventType rdf:type factory:MachineToolStartOperationType .}
 	UNION {?eventType rdf:type factory:MachineToolStartOperation .}
 }

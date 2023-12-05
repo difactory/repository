@@ -54,20 +54,21 @@ WHERE {
 		?controller osph:hasStateMachine ?contrStM .
 	}	
 	#?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement*/fsm:GuardEvent ?eventType .
-	?tr fsm:Target ?workstate .
-	?tr fsm:TransitionGuard/fsm:GuardEvent ?eventType .
+	?machine osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement* ?trIdleWork .
+	?trIdleWork fsm:Target ?workstate .
+	?trIdleWork fsm:TransitionGuard/fsm:GuardEvent ?eventType .
 	{?eventType rdf:type factory:MachineToolStartOperationType .}
 	UNION {?eventType rdf:type factory:MachineToolStartOperation .}
 	
 	BIND(IF(bound(?contrStM),?null ,URI(CONCAT(STR(?controller),"_stM")) ) AS ?contrStMNew ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_reg")) AS ?contrRegion ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trRelIdle")) AS ?trRelIdle ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_idleSt")) AS ?idleSt ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_relSt")) AS ?relSt ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_guardTrIdleRel")) AS ?guardTrIdleRel ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_trIdleRel")) AS ?trIdleRel ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_cond")) AS ?condTrIdleRel ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_entryAction")) AS ?entryAction ) .  
-	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?machine),"#"),"_startOp_1")) AS ?startOp ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_reg")) AS ?contrRegion ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_trRelIdle")) AS ?trRelIdle ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_idleSt")) AS ?idleSt ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_relSt")) AS ?relSt ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_guardTrIdleRel")) AS ?guardTrIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_trIdleRel")) AS ?trIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_cond")) AS ?condTrIdleRel ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_entryAction")) AS ?entryAction ) .  
+	BIND(URI(CONCAT(STR(?controller),"_",STRAFTER(STR(?workstate),"#"),"_startOp_1")) AS ?startOp ) .  
 
 }
