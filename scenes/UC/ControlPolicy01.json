@@ -518,7 +518,7 @@
             }
         },
         {
-            "id": "controller01",
+            "id": "c01",
             "type": "https://w3id.org/ontoeng/controlSystem#ReleaseController",
             "assignmentTo": [
                 "productionPlan"
