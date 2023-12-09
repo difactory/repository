@@ -24,5 +24,5 @@ WHERE {
 		FILTER ( ?propclass != owl:NamedIndividual ) .
 	}		
 	
-	BIND(IF(bound(?buffprop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+	BIND(IF(bound(?prop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
 }
