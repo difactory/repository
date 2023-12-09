@@ -1286,12 +1286,6 @@ In case of only one value, then the transformation is uniform along all directio
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedFromElement"/>
                 <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement"/>
             </owl:Restriction>
@@ -2886,65 +2880,6 @@ In case of only one value, then the transformation is uniform along all directio
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementFriction -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementFriction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementMass -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementMass">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementRestitution -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementRestitution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 

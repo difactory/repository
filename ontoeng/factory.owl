@@ -76,7 +76,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     <!-- https://w3id.org/ontoeng/factory#hasMachineEnergyState -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/factory#hasMachineEnergyState">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/factory#MachineNominalPowerConsumption"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/factory#DeviceNominalPowerConsumption"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEnergyState"/>
     </owl:ObjectProperty>
     
@@ -155,15 +155,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty -->
-
-    <rdf:Description rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ElementStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementStaticProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStaticProperty"/>
-    </rdf:Description>
-    
-
-
     <!-- https://w3id.org/ontoeng/controlSystem#Algorithm -->
 
     <rdf:Description rdf:about="https://w3id.org/ontoeng/controlSystem#Algorithm">
@@ -200,40 +191,10 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/factory#ArtifactDueDate -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ArtifactDueDate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactStaticProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ArtifactObsProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ArtifactObsProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/factory#ArtifactSelect -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ArtifactSelect">
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ArtifactStaticProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ArtifactStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -309,7 +270,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferCapacity -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferCapacity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementStaticProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
@@ -397,16 +358,8 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferElementObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementObs">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferElementObsProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementObsProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementProperty"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
 
@@ -414,16 +367,16 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferElementProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferCapacity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferLevel"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferElementStaticProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -435,7 +388,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#BufferElementStaticProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#BufferElementProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -452,7 +405,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferLevel -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementObsProperty"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <dc:description>Number of artifacts in the buffer.</dc:description>
     </owl:Class>
     
@@ -461,7 +414,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferLevelObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferLevelObs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferElementObs"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
@@ -593,6 +546,78 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#DeviceEnergyConsumption -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#DeviceEnergyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#DeviceEnergyConsumptionObs -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#DeviceEnergyConsumptionObs">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ResultStatistics"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasResultValue"/>
+                        <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEnergyMeasure"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#DeviceEnergyConsumption"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#DeviceNominalPowerConsumption -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#DeviceNominalPowerConsumption">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/factory#hasMachineEnergyState"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEnergyState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyValue"/>
+                <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPowerMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#DeviceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#DeviceProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceEnergyConsumption"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceNominalPowerConsumption"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#DisassemblyTask -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#DisassemblyTask">
@@ -633,66 +658,10 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     
 
 
-    <!-- https://w3id.org/ontoeng/factory#MachineEnergyConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineEnergyConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolObsProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineEnergyConsumptionObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineEnergyConsumptionObs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolObs"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ResultStatistics"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasResultValue"/>
-                        <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEnergyMeasure"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineEnergyConsumption"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineNominalPowerConsumption -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineNominalPowerConsumption">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStaticProperty"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/factory#hasMachineEnergyState"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEnergyState"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyValue"/>
-                <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPowerMeasure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/factory#MachineServerN -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineServerN">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStaticProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
@@ -950,16 +919,15 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolObs">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolObsProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolObsProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolProperty"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceEnergyConsumptionObs"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
 
@@ -984,6 +952,16 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineServerN"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevel"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
@@ -1071,15 +1049,6 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     
 
 
-    <!-- https://w3id.org/ontoeng/factory#MachineToolStaticProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/factory#MachineToolType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolType">
@@ -1088,7 +1057,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStaticProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1123,7 +1092,7 @@ Generic machinery element type.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineWipLevel -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolObsProperty"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:Class>
     
 
@@ -1131,7 +1100,7 @@ Generic machinery element type.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineWipLevelObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevelObs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolObs"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
@@ -1392,7 +1361,7 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
     <!-- https://w3id.org/ontoeng/factory#ProducedQuantity -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProducedQuantity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleObsProperty"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
     </owl:Class>
     
 
@@ -1400,7 +1369,8 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
     <!-- https://w3id.org/ontoeng/factory#ProducedQuantityObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProducedQuantityObs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleObs"/>
+        <owl:equivalentClass rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleObs"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
@@ -1419,6 +1389,56 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ProductFriction -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductFriction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ProductMass -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductMass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ProductProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductFriction"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductMass"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductRestitution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductVelocity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ProductRestitution -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductRestitution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ProductVelocity -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductVelocity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -1826,16 +1846,7 @@ A production resource type captures common productivities and cost rates for app
     <!-- https://w3id.org/ontoeng/factory#ProductionScheduleObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleObs">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionScheduleObsProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleObsProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
 
@@ -1843,16 +1854,17 @@ A production resource type captures common productivities and cost rates for app
     <!-- https://w3id.org/ontoeng/factory#ProductionScheduleProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProducedQuantity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ScheduledDueDate"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ScheduledPriority"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ScheduledQuantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleProperty"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -2054,7 +2066,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     <!-- https://w3id.org/ontoeng/factory#ScheduledDueDate -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledDueDate">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
@@ -2068,7 +2080,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     <!-- https://w3id.org/ontoeng/factory#ScheduledPriority -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledPriority">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
@@ -2082,7 +2094,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     <!-- https://w3id.org/ontoeng/factory#ScheduledQuantity -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledQuantity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ProductionScheduleStaticProperty"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>

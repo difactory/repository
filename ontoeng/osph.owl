@@ -152,6 +152,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#hasHistoryMotion -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryMotion">
@@ -827,7 +833,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <!-- https://w3id.org/ontoeng/osph#ObjectDefinition -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ObjectDefinition">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/FeatureOfInterest"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
@@ -851,6 +857,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#decomposesHistory"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
