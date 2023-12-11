@@ -930,11 +930,25 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductHistory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>An object that can be characterized in terms of placement and geometrical representation.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductFriction -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductFriction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -983,6 +997,39 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#ProductMass -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductMass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductFriction"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMass"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductRestitution -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#ProductSimpleState -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductSimpleState">
@@ -993,6 +1040,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Representation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductVelocity -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 

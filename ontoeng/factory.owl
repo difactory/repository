@@ -155,26 +155,13 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProduct -->
-
-    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProduct">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ProductProperty"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeProduct -->
 
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeProduct">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ProductProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductProperty"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -398,7 +385,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferCapacity"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferLevel"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -984,7 +971,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceProperty"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineServerN"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevel"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductProperty"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1415,56 +1402,6 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductFriction -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductFriction">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductMass -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductMass">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductProperty -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductProperty">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductFriction"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductMass"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductRestitution"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProductVelocity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductRestitution -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductRestitution">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductVelocity -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductVelocity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
@@ -2592,6 +2529,14 @@ VffTransportationSystem represents a generic transportation system.</dc:descript
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductProperty -->
+
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </rdf:Description>
     
 
 

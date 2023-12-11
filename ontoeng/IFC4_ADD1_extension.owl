@@ -406,7 +406,14 @@ In case of only one value, then the transformation is uniform along all directio
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActor -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActor"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ActorProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -899,7 +906,14 @@ In case of only one value, then the transformation is uniform along all directio
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcControl -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcControl"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcControl">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ControlProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -1655,7 +1669,14 @@ In case of only one value, then the transformation is uniform along all directio
 
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcGroup -->
 
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcGroup"/>
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcGroup">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#GroupProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -1962,6 +1983,12 @@ In case of only one value, then the transformation is uniform along all directio
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProcess">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ProcessProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
                 <owl:allValuesFrom rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeProcess"/>
             </owl:Restriction>
@@ -2127,6 +2154,12 @@ In case of only one value, then the transformation is uniform along all directio
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcResource -->
 
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcResource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#ResourceProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
@@ -2854,6 +2887,22 @@ In case of only one value, then the transformation is uniform along all directio
     
 
 
+    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ActorProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ActorProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ControlProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ControlProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#DurationSelect -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#DurationSelect">
@@ -2865,6 +2914,30 @@ In case of only one value, then the transformation is uniform along all directio
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#GroupProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#GroupProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ProcessProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ProcessProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#ResourceProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#ResourceProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
     </owl:Class>
     
 
