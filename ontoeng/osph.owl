@@ -949,6 +949,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductFriction">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1001,6 +1007,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductMass">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1026,6 +1038,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1048,6 +1066,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
