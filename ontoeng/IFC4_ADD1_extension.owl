@@ -200,8 +200,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType">
         <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcObject"/>
-        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeObject"/>
     </owl:ObjectProperty>
     
 
