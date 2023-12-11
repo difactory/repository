@@ -10,7 +10,7 @@ PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
-SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) 
+SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?propCV) as ?allpropCV) 
 
 WHERE { 
 
@@ -55,6 +55,13 @@ WHERE {
 		?asset ssn:hasProperty ?buffprop .
 		?buffprop rdf:type factory:BufferCapacity .
 		?buffprop osph:hasPropertySimpleValue ?buffCap .
+	}	
+	OPTIONAL{
+		?asset ssn:hasProperty ?prop .
+		?prop rdf:type ?propclass .
+		?prop osph:hasPropertySimpleValue ?propval .
+		FILTER ( ?propclass != owl:NamedIndividual ) .
+		BIND(CONCAT(STR(?propclass)," ",STR(?propval)) AS ?propCV ) .  
 	}	
 	OPTIONAL{ ?asset ifc:objectPlacement_IfcProduct ?objplace . 
 		OPTIONAL{
