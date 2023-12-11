@@ -1,0 +1,8 @@
+INSERT { 
+	GRAPH ?graph { 
+		?indiv ?prop ?target .
+	}
+}
+WHERE{
+	
+}

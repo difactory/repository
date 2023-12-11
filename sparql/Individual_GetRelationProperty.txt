@@ -1,0 +1,35 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+
+
+
+SELECT distinct ?indiv ?class ?prop #?super ?subsuper 
+
+WHERE { 
+	?indiv rdf:type ?class .
+	?class rdf:type owl:Class .
+
+	?class rdfs:subClassOf* ?super .
+	{
+		?prop rdfs:domain ?super .
+		?prop rdfs:range ?range .
+	}
+	UNION
+        {	
+		?super rdfs:subClassOf ?restr .
+		?restr	a owl:Restriction ;
+			owl:onProperty ?prop ;
+			owl:allValuesFrom ?range .
+	}
+{?prop rdf:type owl:ObjectProperty} UNION {?prop rdf:type owl:DatatypeProperty} .
+
+?prop rdf:type ?proptype .
+
+}  
+ORDER BY (?prop)
