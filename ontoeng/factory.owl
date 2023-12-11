@@ -155,6 +155,32 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProduct -->
+
+    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProduct">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ProductProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeProduct -->
+
+    <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTypeProduct">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ProductProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/ontoeng/controlSystem#Algorithm -->
 
     <rdf:Description rdf:about="https://w3id.org/ontoeng/controlSystem#Algorithm">
