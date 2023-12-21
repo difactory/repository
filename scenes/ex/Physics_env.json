@@ -29,6 +29,21 @@
 				0
 			],
 			"speed": 4
+		},
+		{
+			"id": "camera.mobile",
+			"type": "DeviceOrientationCamera",
+			"position": [
+				122.1681250707728,
+				94.75052798864748,
+				370.4998396585301
+			],
+			"rotation": [
+				0.50,
+				-1.70,
+				0
+			],
+			"speed": 4
 		}
 	],
 	"lights": [
@@ -101,7 +116,7 @@
 		}
 	},
 	"physics": {
-		"engine": "cannon",
+		"engine": "havok",
 		"gravity": [
 			0,
 			-9.81,
