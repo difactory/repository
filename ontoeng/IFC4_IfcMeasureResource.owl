@@ -1,0 +1,3481 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#"
+     xml:base="https://w3id.org/ontoeng/IFC4_IfcMeasureResource"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:list="https://w3id.org/list#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:expr="https://w3id.org/express#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource">
+        <owl:imports rdf:resource="https://w3id.org/express"/>
+        <dce:description>OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data</dce:description>
+        <dce:creator>Walter Terkaj (walter.terkaj@itia.cnr.it)</dce:creator>
+        <dce:creator>Pieter Pauwels (pipauwel.pauwels@ugent.be)</dce:creator>
+        <rdfs:comment>Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels@ugent.be)</rdfs:comment>
+        <rdfs:comment>Serialized using C++ RDF library by Walter Terkaj (walter@terkaj.com) based on Redland API C library. Fri Jan 13 18:17:13 2017
+</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#amountOfSubstanceExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#amountOfSubstanceExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>AmountOfSubstanceExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionFactor_IfcConversionBasedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionFactor_IfcConversionBasedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit"/>
+        <rdfs:label>ConversionFactor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionOffset_IfcConversionBasedUnitWithOffset -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionOffset_IfcConversionBasedUnitWithOffset">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnitWithOffset"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal"/>
+        <rdfs:label>ConversionOffset</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#currency_IfcMonetaryUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#currency_IfcMonetaryUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMonetaryUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+        <rdfs:label>Currency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#dimensions_IfcNamedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#dimensions_IfcNamedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:label>Dimensions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#electricCurrentExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#electricCurrentExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>ElectricCurrentExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#elements_IfcDerivedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#elements_IfcDerivedUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement"/>
+        <rdfs:label>Elements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#exponent_IfcDerivedUnitElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#exponent_IfcDerivedUnitElement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>Exponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#lengthExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#lengthExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>LengthExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#luminousIntensityExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#luminousIntensityExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>LuminousIntensityExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#massExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#massExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>MassExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcContextDependentUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcContextDependentUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+        <rdfs:label>Name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcConversionBasedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcConversionBasedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+        <rdfs:label>Name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcSIUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcSIUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>Name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#prefix_IfcSIUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#prefix_IfcSIUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>Prefix</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#thermodynamicTemperatureExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#thermodynamicTemperatureExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>ThermodynamicTemperatureExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#timeExponent_IfcDimensionalExponents -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#timeExponent_IfcDimensionalExponents">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+        <rdfs:range rdf:resource="https://w3id.org/express#INTEGER"/>
+        <rdfs:label>TimeExponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitComponent_IfcMeasureWithUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitComponent_IfcMeasureWithUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+        <rdfs:label>UnitComponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcDerivedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcDerivedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>UnitType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcNamedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcNamedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>UnitType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unit_IfcDerivedUnitElement -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unit_IfcDerivedUnitElement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:label>Unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#units_IfcUnitAssignment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#units_IfcUnitAssignment">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+        <rdfs:label>Units</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#userDefinedType_IfcDerivedUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#userDefinedType_IfcDerivedUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+        <rdfs:label>UserDefinedType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#valueComponent_IfcMeasureWithUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#valueComponent_IfcMeasureWithUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+        <rdfs:label>ValueComponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAbsorbedDoseMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAbsorbedDoseMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAccelerationMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAccelerationMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAmountOfSubstanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAmountOfSubstanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAngularVelocityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAngularVelocityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAreaDensityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAreaDensityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAreaMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcAreaMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcBoolean -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcBoolean">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#BOOLEAN"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcComplexNumber -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcComplexNumber">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL_List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/express#REAL_List"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://w3id.org/express#REAL_EmptyList"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCompoundPlaneAngleMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCompoundPlaneAngleMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#INTEGER_List"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                                <owl:someValuesFrom rdf:resource="https://w3id.org/express#INTEGER_List"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                                <owl:allValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                        <owl:onClass rdf:resource="https://w3id.org/express#INTEGER_EmptyList"/>
+                                    </owl:Restriction>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcContextDependentUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcContextDependentUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionFactor_IfcConversionBasedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcConversionBasedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionFactor_IfcConversionBasedUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcConversionBasedUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnitWithOffset -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnitWithOffset">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionOffset_IfcConversionBasedUnitWithOffset"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#conversionOffset_IfcConversionBasedUnitWithOffset"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCountMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCountMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#NUMBER"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCurvatureMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcCurvatureMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#elements_IfcDerivedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcDerivedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#userDefinedType_IfcDerivedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#elements_IfcDerivedUnit"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcDerivedUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#userDefinedType_IfcDerivedUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitElement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#exponent_IfcDerivedUnitElement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unit_IfcDerivedUnitElement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#exponent_IfcDerivedUnitElement"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unit_IfcDerivedUnitElement"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDescriptiveMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDescriptiveMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#STRING"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#amountOfSubstanceExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#electricCurrentExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#lengthExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#luminousIntensityExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#massExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#thermodynamicTemperatureExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#timeExponent_IfcDimensionalExponents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#amountOfSubstanceExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#electricCurrentExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#lengthExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#luminousIntensityExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#massExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#thermodynamicTemperatureExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#timeExponent_IfcDimensionalExponents"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/express#INTEGER"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDoseEquivalentMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDoseEquivalentMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDynamicViscosityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDynamicViscosityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricCapacitanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricCapacitanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricChargeMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricChargeMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricConductanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricConductanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricCurrentMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricCurrentMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricResistanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricResistanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricVoltageMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcElectricVoltageMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcEnergyMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcEnergyMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcForceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcForceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcFrequencyMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcFrequencyMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcHeatFluxDensityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcHeatFluxDensityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcHeatingValueMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcHeatingValueMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#STRING"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIdentifier_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIlluminanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIlluminanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcInductanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcInductanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcInteger -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcInteger">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#INTEGER"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIntegerCountRateMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIntegerCountRateMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#INTEGER"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIonConcentrationMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIonConcentrationMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIsothermalMoistureCapacityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcIsothermalMoistureCapacityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcKinematicViscosityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcKinematicViscosityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#STRING"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearForceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearForceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearMomentMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearMomentMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearStiffnessMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearStiffnessMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearVelocityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLinearVelocityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLogical -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLogical">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#LOGICAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousFluxMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousFluxMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityDistributionMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLuminousIntensityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMagneticFluxDensityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMagneticFluxDensityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMagneticFluxMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMagneticFluxMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassDensityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassDensityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassFlowRateMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassFlowRateMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassPerLengthMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMassPerLengthMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureWithUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitComponent_IfcMeasureWithUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#valueComponent_IfcMeasureWithUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitComponent_IfcMeasureWithUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#valueComponent_IfcMeasureWithUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfElasticityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfElasticityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfLinearSubgradeReactionMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfLinearSubgradeReactionMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfRotationalSubgradeReactionMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfRotationalSubgradeReactionMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfSubgradeReactionMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcModulusOfSubgradeReactionMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMoistureDiffusivityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMoistureDiffusivityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMolecularWeightMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMolecularWeightMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMomentOfInertiaMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMomentOfInertiaMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMonetaryMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMonetaryMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMonetaryUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMonetaryUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#currency_IfcMonetaryUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#currency_IfcMonetaryUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcContextDependentUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcConversionBasedUnit"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#dimensions_IfcNamedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcNamedUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#dimensions_IfcNamedUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDimensionalExponents"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#unitType_IfcNamedUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNonNegativeLengthMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNonNegativeLengthMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNormalisedRatioMeasure_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNumericMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNumericMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#NUMBER"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPHMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPHMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcParameterValue_List_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlanarForceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlanarForceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositiveLengthMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositiveLengthMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcLengthMeasure"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositivePlaneAngleMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositivePlaneAngleMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPlaneAngleMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositiveRatioMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPositiveRatioMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPowerMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPowerMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPressureMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcPressureMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRadioActivityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRadioActivityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRatioMeasure_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcReal_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalFrequencyMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalFrequencyMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalMassMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalMassMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalStiffnessMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcRotationalStiffnessMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcNamedUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcSIUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#prefix_IfcSIUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#name_IfcSIUnit"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#prefix_IfcSIUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSectionModulusMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSectionModulusMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSectionalAreaIntegralMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSectionalAreaIntegralMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcShearModulusMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcShearModulusMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSolidAngleMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSolidAngleMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPowerLevelMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPowerLevelMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPowerMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPowerMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPressureLevelMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPressureLevelMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPressureMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSoundPressureMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSpecificHeatCapacityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSpecificHeatCapacityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTemperatureGradientMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTemperatureGradientMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTemperatureRateOfChangeMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTemperatureRateOfChangeMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcText -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcText">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSimpleValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#STRING"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalAdmittanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalAdmittanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalConductivityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalConductivityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalExpansionCoefficientMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalExpansionCoefficientMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalResistanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalResistanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalTransmittanceMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermalTransmittanceMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermodynamicTemperatureMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcThermodynamicTemperatureMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTimeMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTimeMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTorqueMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcTorqueMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitAssignment -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitAssignment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#units_IfcUnitAssignment"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#units_IfcUnitAssignment"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#ENUMERATION"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_EmptyList -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_EmptyList">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_List"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#EmptyList"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_List -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_List">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/list#OWLList"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#hasNext"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcValue_List"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVaporPermeabilityMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVaporPermeabilityMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVolumeMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVolumeMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVolumetricFlowRateMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcVolumetricFlowRateMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcWarpingConstantMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcWarpingConstantMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcWarpingMomentMeasure -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcWarpingMomentMeasure">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedMeasureValue"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#REAL"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ABSORBEDDOSEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ABSORBEDDOSEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ABSORBEDDOSEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ACCELERATIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ACCELERATIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ACCELERATIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AMOUNTOFSUBSTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AMOUNTOFSUBSTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>AMOUNTOFSUBSTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AMPERE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AMPERE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>AMPERE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ANGULARVELOCITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ANGULARVELOCITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ANGULARVELOCITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AREADENSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AREADENSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>AREADENSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AREAUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#AREAUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>AREAUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ATTO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ATTO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>ATTO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#BECQUEREL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#BECQUEREL">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>BECQUEREL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CANDELA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CANDELA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>CANDELA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CENTI -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CENTI">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>CENTI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#COMPOUNDPLANEANGLEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#COMPOUNDPLANEANGLEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>COMPOUNDPLANEANGLEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#COULOMB -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#COULOMB">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>COULOMB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CUBIC_METRE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CUBIC_METRE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>CUBIC_METRE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CURVATUREUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#CURVATUREUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>CURVATUREUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DECA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DECA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>DECA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DECI -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DECI">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>DECI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DEGREE_CELSIUS -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DEGREE_CELSIUS">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>DEGREE_CELSIUS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DOSEEQUIVALENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DOSEEQUIVALENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>DOSEEQUIVALENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DYNAMICVISCOSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#DYNAMICVISCOSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>DYNAMICVISCOSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCAPACITANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCAPACITANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICCAPACITANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCHARGEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCHARGEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICCHARGEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCONDUCTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCONDUCTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICCONDUCTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCURRENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICCURRENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICCURRENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICRESISTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICRESISTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICRESISTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICVOLTAGEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ELECTRICVOLTAGEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ELECTRICVOLTAGEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ENERGYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ENERGYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ENERGYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#EXA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#EXA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>EXA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FARAD -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FARAD">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>FARAD</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FEMTO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FEMTO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>FEMTO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FORCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FORCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>FORCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FREQUENCYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#FREQUENCYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>FREQUENCYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GIGA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GIGA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>GIGA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GRAM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GRAM">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>GRAM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GRAY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#GRAY">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>GRAY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HEATFLUXDENSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HEATFLUXDENSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>HEATFLUXDENSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HEATINGVALUEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HEATINGVALUEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>HEATINGVALUEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HECTO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HECTO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>HECTO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HENRY -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HENRY">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>HENRY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HERTZ -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#HERTZ">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>HERTZ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ILLUMINANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ILLUMINANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>ILLUMINANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#INDUCTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#INDUCTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>INDUCTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#INTEGERCOUNTRATEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#INTEGERCOUNTRATEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>INTEGERCOUNTRATEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IONCONCENTRATIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IONCONCENTRATIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>IONCONCENTRATIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ISOTHERMALMOISTURECAPACITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ISOTHERMALMOISTURECAPACITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ISOTHERMALMOISTURECAPACITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#JOULE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#JOULE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>JOULE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KELVIN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KELVIN">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>KELVIN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KILO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KILO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>KILO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KINEMATICVISCOSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#KINEMATICVISCOSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>KINEMATICVISCOSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LENGTHUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LENGTHUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>LENGTHUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARFORCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARFORCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>LINEARFORCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARMOMENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARMOMENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>LINEARMOMENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARSTIFFNESSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARSTIFFNESSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>LINEARSTIFFNESSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARVELOCITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LINEARVELOCITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>LINEARVELOCITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMEN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMEN">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>LUMEN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSFLUXUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSFLUXUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>LUMINOUSFLUXUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSINTENSITYDISTRIBUTIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSINTENSITYDISTRIBUTIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>LUMINOUSINTENSITYDISTRIBUTIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSINTENSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUMINOUSINTENSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>LUMINOUSINTENSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUX -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#LUX">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>LUX</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MAGNETICFLUXDENSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MAGNETICFLUXDENSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>MAGNETICFLUXDENSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MAGNETICFLUXUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MAGNETICFLUXUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>MAGNETICFLUXUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSDENSITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSDENSITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MASSDENSITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSFLOWRATEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSFLOWRATEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MASSFLOWRATEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSPERLENGTHUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSPERLENGTHUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MASSPERLENGTHUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MASSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>MASSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MEGA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MEGA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>MEGA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#METRE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#METRE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>METRE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MICRO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MICRO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>MICRO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MILLI -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MILLI">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>MILLI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFELASTICITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFELASTICITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MODULUSOFELASTICITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFLINEARSUBGRADEREACTIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFLINEARSUBGRADEREACTIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MODULUSOFLINEARSUBGRADEREACTIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFROTATIONALSUBGRADEREACTIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFROTATIONALSUBGRADEREACTIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MODULUSOFROTATIONALSUBGRADEREACTIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFSUBGRADEREACTIONUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MODULUSOFSUBGRADEREACTIONUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MODULUSOFSUBGRADEREACTIONUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOISTUREDIFFUSIVITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOISTUREDIFFUSIVITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MOISTUREDIFFUSIVITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOLE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>MOLE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOLECULARWEIGHTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOLECULARWEIGHTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MOLECULARWEIGHTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOMENTOFINERTIAUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#MOMENTOFINERTIAUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>MOMENTOFINERTIAUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#NANO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#NANO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>NANO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#NEWTON -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#NEWTON">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>NEWTON</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#OHM -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#OHM">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>OHM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PASCAL -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PASCAL">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>PASCAL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PETA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PETA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>PETA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PHUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PHUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>PHUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PICO -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PICO">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>PICO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PLANARFORCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PLANARFORCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>PLANARFORCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PLANEANGLEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PLANEANGLEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>PLANEANGLEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#POWERUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#POWERUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>POWERUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PRESSUREUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#PRESSUREUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>PRESSUREUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#RADIAN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#RADIAN">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>RADIAN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#RADIOACTIVITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#RADIOACTIVITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>RADIOACTIVITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALFREQUENCYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALFREQUENCYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ROTATIONALFREQUENCYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALMASSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALMASSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ROTATIONALMASSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALSTIFFNESSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#ROTATIONALSTIFFNESSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>ROTATIONALSTIFFNESSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECOND -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECOND">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>SECOND</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECTIONAREAINTEGRALUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECTIONAREAINTEGRALUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SECTIONAREAINTEGRALUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECTIONMODULUSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SECTIONMODULUSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SECTIONMODULUSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SHEARMODULUSUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SHEARMODULUSUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SHEARMODULUSUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SIEMENS -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SIEMENS">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>SIEMENS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SIEVERT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SIEVERT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>SIEVERT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOLIDANGLEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOLIDANGLEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>SOLIDANGLEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPOWERLEVELUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPOWERLEVELUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SOUNDPOWERLEVELUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPOWERUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPOWERUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SOUNDPOWERUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPRESSURELEVELUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPRESSURELEVELUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SOUNDPRESSURELEVELUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPRESSUREUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SOUNDPRESSUREUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SOUNDPRESSUREUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SPECIFICHEATCAPACITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SPECIFICHEATCAPACITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>SPECIFICHEATCAPACITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SQUARE_METRE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#SQUARE_METRE">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>SQUARE_METRE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#STERADIAN -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#STERADIAN">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>STERADIAN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TEMPERATUREGRADIENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TEMPERATUREGRADIENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>TEMPERATUREGRADIENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TEMPERATURERATEOFCHANGEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TEMPERATURERATEOFCHANGEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>TEMPERATURERATEOFCHANGEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TERA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TERA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIPrefix"/>
+        <rdfs:label>TERA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TESLA -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TESLA">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>TESLA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALADMITTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALADMITTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>THERMALADMITTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALCONDUCTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALCONDUCTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>THERMALCONDUCTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALEXPANSIONCOEFFICIENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALEXPANSIONCOEFFICIENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>THERMALEXPANSIONCOEFFICIENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALRESISTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALRESISTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>THERMALRESISTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALTRANSMITTANCEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMALTRANSMITTANCEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>THERMALTRANSMITTANCEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMODYNAMICTEMPERATUREUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#THERMODYNAMICTEMPERATUREUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>THERMODYNAMICTEMPERATUREUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TIMEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TIMEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>TIMEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TORQUEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#TORQUEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>TORQUEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#USERDEFINED -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#USERDEFINED">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>USERDEFINED</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VAPORPERMEABILITYUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VAPORPERMEABILITYUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>VAPORPERMEABILITYUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>VOLT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLUMETRICFLOWRATEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLUMETRICFLOWRATEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>VOLUMETRICFLOWRATEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLUMEUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#VOLUMEUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcUnitEnum"/>
+        <rdfs:label>VOLUMEUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WARPINGCONSTANTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WARPINGCONSTANTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>WARPINGCONSTANTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WARPINGMOMENTUNIT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WARPINGMOMENTUNIT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcDerivedUnitEnum"/>
+        <rdfs:label>WARPINGMOMENTUNIT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WATT -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WATT">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>WATT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WEBER -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#WEBER">
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource#IfcSIUnitName"/>
+        <rdfs:label>WEBER</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ifcowl.openbimstandards.org/IFC4">
+        <dce:title>IFC4_draft4_shortform</dce:title>
+        <dce:contributor>Jakob Beetz (j.beetz@tue.nl)</dce:contributor>
+        <dce:language>en</dce:language>
+        <vann:preferredNamespacePrefix>ifc</vann:preferredNamespacePrefix>
+        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <dce:date>2016/02/27</dce:date>
+        <dce:contributor>Maria Poveda Villalon (mpoveda@fi.upm.es)</dce:contributor>
+        <vann:preferredNamespaceUri>http://ifcowl.openbimstandards.org/IFC4</vann:preferredNamespaceUri>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
