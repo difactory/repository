@@ -19,10 +19,9 @@
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/IFC4_IfcMeasureResource">
         <owl:imports rdf:resource="https://w3id.org/express"/>
         <dce:description>OWL ontology for the IFC conceptual data schema and exchange file format for Building Information Model (BIM) data</dce:description>
-        <dce:creator>Walter Terkaj (walter.terkaj@itia.cnr.it)</dce:creator>
-        <dce:creator>Pieter Pauwels (pipauwel.pauwels@ugent.be)</dce:creator>
-        <rdfs:comment>Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj@itia.cnr.it) with revision support from Pieter Pauwels (pipauwel.pauwels@ugent.be)</rdfs:comment>
-        <rdfs:comment>Serialized using C++ RDF library by Walter Terkaj (walter@terkaj.com) based on Redland API C library. Fri Jan 13 18:17:13 2017
+        <dce:creator>Walter Terkaj </dce:creator>
+        <dce:creator>Pieter Pauwels </dce:creator>
+        <rdfs:comment>Ontology automatically generated from EXPRESS schema &apos;IFC4_ADD1.exp&apos; using ExpressToOwl converter developed by Walter Terkaj (walter.terkaj(AT)stiima.cnr.it) with revision support from Pieter Pauwels (p.pauwels(AT)tue.nl)</rdfs:comment>
 </rdfs:comment>
     </owl:Ontology>
     

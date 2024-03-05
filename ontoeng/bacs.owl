@@ -46,8 +46,7 @@
         <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that models the building automation and control systems. </dc:description>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you wish to use this ontology, please acknowledge Walter Terkaj (ITIA-CNR) and related publications.
-For any query please write to walter.terkaj@itia.cnr.it or walter@terkaj.com
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications. For any query please write to walter.terkaj(AT)stiima.cnr.it
 </rdfs:comment>
     </owl:Ontology>
     
