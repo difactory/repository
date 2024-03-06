@@ -1,7 +1,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleB_ScheduledQuantity>
         a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                150 .
+                450 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttr_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -63,7 +63,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleA_ScheduledQuantity>
         a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                100 .
+                300 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_stM>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
@@ -174,7 +174,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan_duration>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
-                "PT8H" .
+                "P1D" .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_trIdleWork_opB01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
