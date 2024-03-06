@@ -649,6 +649,60 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#ExpectedDuration -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ExpectedDuration">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyValue"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#FinishTime -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#FinishTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#FinishTimeObs -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#FinishTimeObs">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#FinishTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#MachineServerN -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineServerN">
@@ -2126,6 +2180,40 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#StartTime -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#StartTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#StartTimeObs -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#StartTimeObs">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#StartTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#StorageElement -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#StorageElement">
@@ -2219,6 +2307,12 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#TaskSelect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#TaskProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Task"/>
             </owl:Restriction>
@@ -2235,6 +2329,12 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#TaskType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#TaskHistory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2243,6 +2343,53 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskExecutionMotion">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#TaskHistory -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskHistory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Task"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#TaskObs -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskObs">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#StartTimeObs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#TaskProperty -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskProperty">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ExpectedDuration"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#FinishTime"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#StartTime"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
 
