@@ -11,7 +11,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/expression">
-        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:contributor>Georg Ferdinand Schneider</dc:contributor>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology to formalize Algebric and Logical expressions. The expression can be decomposed in atomic, unary, binary expressions.</dc:description>

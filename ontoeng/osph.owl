@@ -22,7 +22,7 @@
         <owl:imports rdf:resource="http://www.w3.org/ns/ssn/"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/expression"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/statistics"/>
-        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <ns:license>https://creativecommons.org/licenses/by/4.0/</ns:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that model object states and performance history.</dc:description>
         <rdfs:comment> This version of the ontology is presented in:

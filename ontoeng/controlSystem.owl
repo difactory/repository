@@ -18,7 +18,7 @@
      xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/controlSystem">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/osph"/>
-        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:contributor>Emanuele Bruini</dc:contributor>
         <dc:contributor>Marcello Urgo</dc:contributor>
         <dc:creator>Walter Terkaj</dc:creator>

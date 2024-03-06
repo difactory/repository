@@ -19,7 +19,7 @@
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension">
         <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/osph"/>
-        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Extension to the ifcOWL ontology, version IFC4_ADD1.</dc:description>
         <rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (ITIA-CNR) and related publications.

@@ -45,7 +45,7 @@
         <owl:imports rdf:resource="https://w3id.org/bot-0.3.2"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/IFC4_IfcMeasureResource"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/osph"/>
-        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <ns:license>https://creativecommons.org/licenses/by/4.0/</ns:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that models the building automation and control systems.</dc:description>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications. For any query please write to walter.terkaj(AT)stiima.cnr.it

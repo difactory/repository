@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ontoeng/statistics#"
      xml:base="https://w3id.org/ontoeng/statistics"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-	 xmlns:cc="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,6 +12,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/statistics">
+        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>The Statistics Ontology defines the basic classes and properties needed to model data related to descriptive statistics and probability distributions.
 
@@ -23,10 +24,9 @@ This version of the ontology is mentioned in:
 - Terkaj W, Schneider GF, Pauwels P (2017) Reusing Domain Ontologies in Linked Building Data: the Case of Building Automation and Control. Proceedings of the 8th Workshop Formal Ontologies Meet Industry, Joint Ontology Workshops 2017, CEUR Workshop Proceedings, vol. 2050.
 
 For an alternative ontology you may refer to the STATO ontology (http://stato-ontology.org/).</dc:description>
-<rdfs:comment>
+        <rdfs:comment>
 If you wish to use this ontology, please acknowledge Walter Terkaj (STIIMA-CNR) and related publications.
 For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
-<cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
     </owl:Ontology>
     
 
@@ -39,6 +39,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 

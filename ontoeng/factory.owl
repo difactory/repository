@@ -17,7 +17,7 @@
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/factory">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/controlSystem"/>
-        <cc:license>http://creativecommons.org/licenses/by/3.0/</cc:license>
+        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that models factories and their components for applications related to design, management and control.</dc:description>
         <rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications.
