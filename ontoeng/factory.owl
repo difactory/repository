@@ -656,7 +656,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertyValue"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/expression#RandomVariable"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
