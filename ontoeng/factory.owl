@@ -371,7 +371,14 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#BufferElementObs -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementObs">
-        <owl:equivalentClass rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#DeviceEnergyConsumptionObs"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://w3id.org/express#SELECT"/>
     </owl:Class>
     
@@ -464,35 +471,6 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#BufferRestingPosition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferSpecificLevel -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferSpecificLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferLevel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/factory#isLevelSpecificTo"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:description>Content of the buffer in terms of specific artifacts.</dc:description>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferSpecificLevelObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferSpecificLevelObs">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observedProperty"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#BufferSpecificLevel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>

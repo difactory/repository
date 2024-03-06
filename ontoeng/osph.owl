@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/ontoeng/osph#"
      xml:base="https://w3id.org/ontoeng/osph"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ex="https://w3id.org/ontoeng/expression#"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -14,8 +15,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
-     xmlns:expression="https://w3id.org/ontoeng/expression#">
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/osph">
         <owl:imports rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
@@ -152,9 +152,22 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasHistoryAssignedObject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryAssignedObject">
+        <owl:inverseOf rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo -->
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+    </owl:ObjectProperty>
     
 
 
@@ -842,6 +855,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectHistory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateMachine"/>
                 <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
             </owl:Restriction>
@@ -861,7 +880,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryAssignmentTo"/>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistoryAssignedObject"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ObjectDefinition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1301,14 +1320,6 @@ history interval.</dc:description>
     <!-- https://w3id.org/ontoeng/osph#Predicted -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Predicted">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#Simulated -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Simulated">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
     </owl:NamedIndividual>
 </rdf:RDF>
