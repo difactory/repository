@@ -1643,6 +1643,12 @@ Occurrences of the ProductionMaterialResourceType are represented by individuals
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcWorkPlan"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ExpectedDuration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/controlSystem#hasExecutionController"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
             </owl:Restriction>
@@ -1852,6 +1858,7 @@ A production resource type captures common productivities and cost rates for app
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ExpectedDuration"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ProducedQuantity"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ScheduledDueDate"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#ScheduledPriority"/>
