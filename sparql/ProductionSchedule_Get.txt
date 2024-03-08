@@ -8,14 +8,16 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
-SELECT distinct ?prodsched ?parttype ?quantity ?procplan
+SELECT distinct ?prodsched ?parttype ?part ?partsel ?procplan ?quantity ?duedate ?priority
 
 WHERE { 
+
+
   ?prodsched rdf:type factory:ProductionSchedule .
-  # part type
+  # part / part type
   OPTIONAL{
-	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?parttype .
-	?parttype rdf:type/rdfs:subClassOf* factory:ArtifactSelect .
+	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?partsel .
+	?partsel rdf:type/rdfs:subClassOf* factory:ArtifactSelect .
   }  
   # process plan
   OPTIONAL{
@@ -24,7 +26,32 @@ WHERE {
   }  
   # quantity
   OPTIONAL{
-	?prodsched ssn:hasProperty/osph:hasPropertySimpleValue ?quantity .
+	OPTIONAL{
+		?prodsched ssn:hasProperty ?prop1 .
+		?prop1 rdf:type factory:ScheduledQuantity .
+		?prop1 osph:hasPropertySimpleValue ?quantity .
+	}
+	OPTIONAL{
+		?prodsched ssn:hasProperty ?prop2 .
+		?prop2 rdf:type factory:ScheduledDueDate .
+		?prop2 osph:hasPropertySimpleValue ?duedate .
+	}
+	OPTIONAL{
+		?prodsched ssn:hasProperty ?prop3 .
+		?prop3 rdf:type factory:ScheduledPriority .
+		?prop3 osph:hasPropertySimpleValue ?priority .
+	}
   }
+  
+  	{
+		?itsClass rdfs:subClassOf* factory:ArtifactType . 
+		?partsel rdf:type ?itsClass .
+		BIND(?partsel AS ?parttype ) .
+	}
+	UNION{
+		?itsClass rdfs:subClassOf* factory:Artifact . 
+		?partsel rdf:type ?itsClass .
+		BIND(?partsel AS ?part ) .
+	}
 
 }

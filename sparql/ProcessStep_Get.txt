@@ -3,23 +3,45 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX express: <https://w3id.org/express#> 
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 
-select distinct  ?pstep ?pstepclass ?time (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?pred) as ?allpred) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
+select distinct  ?pstep ?pstepclass ?parent ?pplan ?pplanclass ?time (group_concat(distinct ?succ) as ?allsucc) (group_concat(distinct ?pred) as ?allpred) (group_concat(distinct ?inputpart) as ?allinput) (group_concat(distinct ?resource) as ?allresource)
 
 WHERE{
+
 
   # get pstep
   ?pstepclass rdfs:subClassOf* ifc:IfcTask .   
   ?pstep rdf:type ?pstepclass .
   FILTER ( ?pstepclass != owl:NamedIndividual ) .
   
+  # get its parent
+  OPTIONAL{
+	?parent (ifcext:isNestedByObject|^ifcext:nestsObject) ?pstep.
+	?parent rdf:type ?parentclass .
+	FILTER ( ?parentclass != owl:NamedIndividual ) .
+  }
+  
+  # get its process plan
+  OPTIONAL{
+	?pplan (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?pstep.
+	?pplan rdf:type ?pplanclass .
+	FILTER ( ?pplanclass != owl:NamedIndividual ) .
+	OPTIONAL{?pplanparent (ifcext:isNestedByObject|^ifcext:nestsObject) ?pplan.}
+	FILTER(!bound(?pplanparent) )
+  }
+  FILTER(!bound(?pplan) || bound(?pplanclass) )
+  
+  
   # get input parts
   OPTIONAL{ 
     ?pstep ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?inputpart . 
-    ?inputpart rdf:type/rdfs:subClassOf* factory:Artifact .
+    ?inputpart rdf:type/rdfs:subClassOf* fa:Artifact .
   }
 
   # get predecessors
@@ -30,23 +52,42 @@ WHERE{
   
   # get resources where the pstep can be executed (it can be a resource or a resource type)
   OPTIONAL{ 
-    ?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
-  	?res rdf:type/rdfs:subClassOf* factory:ProductionResource .
+    #?pstep (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+    ?pstep (ifcext:isDefinedByObject|^ifcext:declaresObject)*/(ifcext:nestsObject|^ifcext:isNestedByObject)*/(ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?res .
+  	?res rdf:type/rdfs:subClassOf* fa:ProductionResource .
   	#?restype ifcext:typesObject|^ifcext:isDefinedByType ?res .  
     ?res (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:typesObject|^ifcext:isDefinedByType)* ?resource .
     ?resource rdf:type ?resClass .
 	?resClass rdfs:subClassOf* ifc:IfcElement .
 	?system ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?resource .
   }  
+  FILTER(!bound(?resource) || bound(?res) )
+  
+	# get default processing time (deterministic) via IfcTaskTime
+	OPTIONAL{
+		?pstep (ifcext:isDefinedByObject|^ifcext:declaresObject)*/ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime ?time .
+	}
+	# get default processing time (stochastic) via IfcTaskTime
+	OPTIONAL{
+		?pstep (ifcext:isDefinedByObject|^ifcext:declaresObject)*/ifc:taskTime_IfcTask/ifcext:hasStochasticDuration ?time .
+		#?pstep ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?time .
+	}
+	# get default processing time defined as property
+	OPTIONAL{
+		?pstep (ifcext:isDefinedByObject|^ifcext:declaresObject)*/ssn:hasProperty ?prop .
+		?prop a fa:ExpectedDuration .
+		{
+			?prop osph:hasPropertySimpleValue ?timeDT .
+			BIND(?prop AS ?time ) .  
+		}
+		UNION{
+			?prop osph:hasPropertyValue ?time .
+			?time rdf:type/rdfs:subClassOf* ex:RandomVariable .
+		}
+	}
+
   
   
-  # get default processing time (deterministic)
-  OPTIONAL{?pstep ifc:taskTime_IfcTask/ifc:scheduleDuration_IfcTaskTime ?time .}
-  # get default processing time (stochastic)
-  OPTIONAL{
-    ?pstep ifc:taskTime_IfcTask/ifcext:hasStochasticDuration ?time .
-    #?pstep ifc:taskTime_IfcTask/ifcext:hasStochasticDuration/osph:isQuantitySampledFrom ?time .
-  }
-} GROUP BY ?pstep ?pstepclass ?time
+} GROUP BY ?pstep ?pstepclass ?parent ?pplan ?pplanclass ?time
 
 

@@ -22,16 +22,20 @@ WHERE {
 	{ GRAPH ?g1{ ?controller ?b1 ?c1 .} }
 	UNION { GRAPH ?g2{ ?a2 ?b2 ?controller .} }	
 	UNION {
-		?controller osph:hasStateMachine ?stM .
-		?stM fsm:contains ?region .		
-		?region fsm:hasStateMachineElement ?elem .
-		
+		?controller osph:hasStateMachine ?stM .		
 		{ GRAPH ?g3{?stM ?b3 ?c3 . } } 
-		UNION { GRAPH ?g4{?region ?b4 ?c4 . } }
-		UNION { GRAPH ?g5{?elem ?b5 ?c5 . } }
-		UNION { GRAPH ?g6{?a6 ?b6 ?elem . } }
+		UNION { 
+			?stM fsm:contains ?region .
+			GRAPH ?g4{?region ?b4 ?c4 . } 
+		}
+		UNION { 
+			?region fsm:hasStateMachineElement ?elem .
+			GRAPH ?g5{?elem ?b5 ?c5 . } 
+			GRAPH ?g6{?a6 ?b6 ?elem . }
+		}
 		# redundant, but added for backward compatibility
 		UNION {
+		  ?stM fsm:contains ?region .
           ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
           ?entryAction osph:generatesEvent ?startOp .
           { ?entryAction ?b7 ?c7 . } UNION { ?startOp ?b8 ?c8 . } UNION { ?a9 ?b9 ?startOp . } 			

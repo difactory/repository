@@ -1,0 +1,38 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+
+
+INSERT { 
+	GRAPH ?graph { 
+		?hist osph:hasStateFrequencies ?freq .
+		?freq rdf:type owl:NamedIndividual, osph:StateFrequency .
+		?freq osph:hasRelatedState ?state .		
+		?freq osph:hasStayRatio ?ratio .
+	}
+}
+WHERE {
+
+	# History
+	?obj osph:hasHistory/(osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .
+	# State machine
+	?obj osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement* ?state .
+		
+	?stateclass rdfs:subClassOf* fsm:State .   
+	?state rdf:type ?stateclass .
+	FILTER ( ?stateclass != owl:NamedIndividual ) .	
+	
+	
+
+	# Frequency URI
+	BIND(URI(CONCAT(STR(?hist),"_",STRAFTER(STR(?state),"#"))) AS ?freq ) .  
+	
+	# Ratio
+	BIND(IF(bound(?defratio) ,?defratio ,  "1"^^xsd:double) AS ?ratio ) .
+}

@@ -2,35 +2,92 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX list: <https://w3id.org/list#> 
-PREFIX express: <https://w3id.org/express#> 
-PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
-PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX fa: <https://w3id.org/ontoeng/factory#>
 
-select distinct ?hist ?itstype ?parent ?obj ?start ?end
+select distinct ?obj ?hist ?itstype ?roothist ?dataorigin ?start ?end ?prop ?propclass ?obs ?obsclass ?obsvalue (group_concat(distinct ?assigned) as ?allassigned) ?state ?ratio # ?min ?max ?assigned 
 WHERE { 
 
+
+	# Object history
 	?itstype rdfs:subClassOf* osph:ObjectHistory .   
-
 	?hist rdf:type ?itstype .
-
 	FILTER ( ?itstype != owl:NamedIndividual ) .
-	
+
+	# Object
+	?obj osph:hasHistory/(osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .	
 	OPTIONAL{
-		?parent osph:isDecomposedByHistory|^osph:decomposesHistory ?hist .
+		?hist1 (osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .
+		?obj osph:hasHistory ?hist1 .
+		?hist1 (osph:isDecomposedByHistory|^osph:decomposesHistory)+ ?subhist1 .
+		?obj1 osph:hasHistory ?subhist1 .
 	}
+	FILTER(!bound(?obj1) || ?hist = ?hist1 )
+	
+	# Root history
+	?roothist (osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .	
 	OPTIONAL{
-		?obj osph:hasHistory ?hist .
+		?roothistparent (osph:isDecomposedByHistory|^osph:decomposesHistory) ?roothist .		
+	}
+	FILTER(!bound(?roothistparent))
+	
+	# Data origin
+	OPTIONAL{
+		?roothist osph:hasHistoryOrigin ?dataorigin .
+		?dataorigin rdf:type ?dataorigintype .
+		FILTER ( ?dataorigintype != owl:NamedIndividual ) .
 	}	
+	FILTER(!bound(?dataorigin) || bound(?dataorigintype) )
+	
+	# Observations
+	OPTIONAL{
+			?obj ssn:hasProperty ?prop .
+			?prop rdf:type ?propclass .	
+			?hist osph:hasHistoryObservations ?obs .
+			?obs rdf:type ?obsclass .
+			FILTER ( ?obsclass != owl:NamedIndividual ) .
+			?obs sosa:hasSimpleResult ?obsvalue .
+			?obsclass rdfs:subClassOf ?restr .
+			?restr	a owl:Restriction ;
+				owl:onProperty sosa:observedProperty ;
+				owl:allValuesFrom ?propclass .		
+	}
+	FILTER(!bound(?propclass) || bound(?obs) )
+	
+	# Assignments
+	OPTIONAL{
+		?hist osph:hasHistoryAssignedObject ?assigned .
+		?assigned rdf:type ?assignedtype .
+		FILTER ( ?assignedtype != owl:NamedIndividual ) .
+	}
+	FILTER(!bound(?assigned) || bound(?assignedtype) )
+	
+	# State frequencies
+	OPTIONAL{
+		?hist osph:hasStateFrequencies ?freq .
+		?freq osph:hasRelatedState ?state .
+		OPTIONAL{
+			?freq osph:hasStayRatio ?defratio .
+		}
+		BIND(IF(bound(?defratio) ,?defratio ,  "1"^^xsd:double) AS ?ratio ) .
+	}
+
+	
+	# Time interval
 	OPTIONAL{
 		?hist osph:hasIntervalStartTime ?start .
-	}	
+	}
+	FILTER (!bound(?start) || ?start  > ?min)
+	FILTER (!bound(?start) || ?start  < ?max)		
+
 	OPTIONAL{
 		?hist osph:hasIntervalEndTime ?end .
-	}	
-
+	}		
+	BIND(IF(bound(?mindate) ,?mindate ,  "1900-01-01T00:00:00"^^xsd:dateTime)   AS ?min ) . 
+	BIND(IF(bound(?maxdate) ,?maxdate ,  "9999-01-01T00:00:00"^^xsd:dateTime)   AS ?max ) . 
 }
+GROUP BY ?obj ?hist ?itstype ?roothist ?dataorigin ?start ?end ?prop ?propclass ?obs ?obsclass ?obsvalue ?state ?ratio
+ORDER BY ?obj ?start

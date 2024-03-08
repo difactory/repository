@@ -15,11 +15,15 @@ DELETE{
 	GRAPH ?g2{ ?a2 ?b2 ?elemChild .} 
 	GRAPH ?g3{ ?prop ?b3 ?c3 .} 
 	GRAPH ?g4{ ?a4 ?b4 ?prop .} 
+	
+	GRAPH ?g62{?propvalInd ?b62 ?c62 . }
+	GRAPH ?g63{?distr ?b63 ?c63 . }		
+	
 	GRAPH ?g5{?stM ?b5 ?c5 . } 
 	GRAPH ?g6{?stmelem1 ?b6 ?c6 . } 
 	GRAPH ?g7{?a7 ?b7 ?stmelem1 . } 
-	GRAPH ?g8{?stmelem2 ?b8 ?c8 . } 
-	GRAPH ?g9{?a9 ?b9 ?stmelem2 . }
+	#GRAPH ?g8{?stmelem2 ?b8 ?c8 . } 
+	#GRAPH ?g9{?a9 ?b9 ?stmelem2 . }
 	GRAPH ?g10 { ?var ?b10 ?c10 .}
 	GRAPH ?g11 { ?a11 ?b11 ?var .}
 	GRAPH ?g12{?region ?b12 ?c12 . } 
@@ -52,6 +56,14 @@ DELETE{
 	GRAPH ?g53{?stochdur ?b53 ?c53 . }
 	GRAPH ?g54{?timestoch ?b54 ?c54 . }
 	
+	GRAPH ?g55 {?prop ?b55 ?c55 .}
+	GRAPH ?g56 {?propvalInd ?b56 ?c56 . }
+	GRAPH ?g57 {?distr ?b57 ?c57. }
+	
+	GRAPH ?g60{?hist ?b60 ?c60 . } 
+	GRAPH ?g61{?a61 ?b61 ?hist . }
+	GRAPH ?g62{?obs ?b62 ?c62 . }
+	GRAPH ?g63{?freq ?b63 ?c63 . }	
 }
 WHERE { 
 
@@ -66,8 +78,20 @@ WHERE {
 	UNION { GRAPH ?g2{ ?a2 ?b2 ?elemChild .} }	
 	UNION{
 		?elemChild ssn:hasProperty ?prop .
-		{ GRAPH ?g3{ ?prop ?b3 ?c3 .} }
-		UNION { GRAPH ?g4{ ?a4 ?b4 ?prop .} } 
+		{ 
+			GRAPH ?g3{ ?prop ?b3 ?c3 .} 
+		}
+		UNION{
+			?prop osph:hasPropertyValue ?propvalInd .
+			{GRAPH ?g62 { ?propvalInd ?b62 ?c62 . }}
+			UNION{
+				?propvalInd osph:isQuantitySampledFrom ?distr .
+				GRAPH ?g63 { ?distr ?b63 ?c63 . }
+			}		
+		}
+		UNION { 
+			GRAPH ?g4{ ?a4 ?b4 ?prop .} 
+		} 
 		UNION{	
 			?var osph:representsProperty ?prop .
 			{GRAPH ?g10 { ?var ?b10 ?c10 .}	}
@@ -79,15 +103,15 @@ WHERE {
 		?elemChild osph:hasStateMachine ?stM .
 		{ GRAPH ?g5{?stM ?b5 ?c5 . } }
 		UNION{
-			?stM fsm:contains ?stmelem1 .		
+			?stM fsm:contains/fsm:hasStateMachineElement* ?stmelem1 .		
 			{ GRAPH ?g6{?stmelem1 ?b6 ?c6 . } }
 			UNION { GRAPH ?g7{?a7 ?b7 ?stmelem1 . } }
-			UNION {
-				?stmelem1 fsm:hasStateMachineElement ?stmelem2 .
-				{ GRAPH ?g8{?stmelem2 ?b8 ?c8 . } }
-				UNION { GRAPH ?g9{?a9 ?b9 ?stmelem2 . } }
-			}
-			## TTF
+			#UNION {
+			#	?stmelem1 fsm:hasStateMachineElement ?stmelem2 .
+			#	{ GRAPH ?g8{?stmelem2 ?b8 ?c8 . } }
+			#	UNION { GRAPH ?g9{?a9 ?b9 ?stmelem2 . } }
+			#}
+			## TransitionGuard (e.g. TTF)
 			UNION {
 				?stmelem1 fsm:TransitionGuard ?guard .
 				?guard fsm:GuardEvent ?guardevent .
@@ -102,7 +126,7 @@ WHERE {
 					}
 				}
 			}
-			## TTR
+			## do (e.g. TTR, working operation)
 			UNION {	
 				?stmelem1 osph:do ?mainttask .
 				{GRAPH ?g55{?mainttask ?b55 ?c55 .}}
@@ -121,6 +145,18 @@ WHERE {
 							GRAPH ?g54 {?timestoch ?b54 ?c54 .} 
 						}
 					}	
+				}
+				UNION{
+					?mainttask ssn:hasProperty ?prop .
+					{GRAPH ?g55{?prop ?b55 ?c55 .}}
+					UNION{
+						?prop osph:hasPropertyValue ?propvalInd .
+						{GRAPH ?g56 { ?propvalInd ?b56 ?c56 . }}
+						UNION{
+							?propvalInd osph:isQuantitySampledFrom ?distr .
+							GRAPH ?g57 { ?distr ?b57 ?c57. }
+						}
+					}		
 				}
 			}	
 		}
@@ -179,4 +215,22 @@ WHERE {
 		?elemChild ifc:description_IfcRoot ?descr .
 		{ GRAPH ?g35{?descr ?b35 ?c35 . } }
 	}	
+	
+	# History 
+	UNION{
+		?elemChild osph:hasHistory/(osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .
+		{ GRAPH ?g60{?hist ?b60 ?c60 . } }
+		UNION{
+			GRAPH ?g61{?a61 ?b61 ?hist . }
+		}
+		UNION{
+			?hist osph:hasHistoryObservations ?obs .
+			GRAPH ?g62{?obs ?b62 ?c62 . }
+		}
+		UNION{
+			?hist osph:hasStateFrequencies ?freq .
+			GRAPH ?g63{?freq ?b63 ?c63 . }
+		}
+	}
+	
 }

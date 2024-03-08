@@ -6,6 +6,8 @@ PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX fa: <https://w3id.org/ontoeng/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 
 SELECT distinct ?prodplan ?time (group_concat(distinct ?sys) as ?allsys) (group_concat(distinct ?contr) as ?allcontr) (group_concat(distinct ?prodsched) as ?allprodsched) (group_concat(distinct ?prodhist) as ?allprodhist)
 
@@ -13,7 +15,11 @@ WHERE {
   ?prodplan rdf:type fa:ProductionPlan .
   # duration
   OPTIONAL{
-	?prodplan ifc:duration_IfcWorkControl ?time .
+	{?prodplan ifc:duration_IfcWorkControl ?time .}
+	UNION{
+		?prodplan ssn:hasProperty ?time .
+		?time a fa:ExpectedDuration .
+	}
   }
   # systems
   OPTIONAL{

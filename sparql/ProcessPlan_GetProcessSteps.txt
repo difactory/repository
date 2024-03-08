@@ -18,7 +18,7 @@ WHERE{
   OPTIONAL{ ?pplan ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?input . }
 
   # get tasks in a process plan
-  ?pplan ifcext:isNestedByObject|^ifcext:nestsObject ?pstep. 
+  ?pplan (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?pstep. 
 
   # get class of task
   ?pstep rdf:type ?pstepclass.

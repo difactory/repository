@@ -27,9 +27,8 @@ WHERE {
 	}
 	OPTIONAL{
 		?class rdfs:subClassOf* ?subsuper .
-                ?subsuper rdfs:subClassOf/owl:onProperty ?prop .
-		?subsuper rdfs:subClassOf+ ?super .
-		
+		?subsuper rdfs:subClassOf/owl:onProperty ?prop .
+		?subsuper rdfs:subClassOf+ ?super .		
 	}
 	FILTER(!bound(?subsuper))
 	

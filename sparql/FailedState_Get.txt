@@ -5,20 +5,37 @@ PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
 
 select distinct ?failedstate ?ttftime ?ttrtime
 WHERE { 
-	?itsClass rdfs:subClassOf* factory:MachineToolFailedState . 
+	?itsClass rdfs:subClassOf* fa:MachineToolFailedState . 
 	?failedstate rdf:type ?itsClass .
 	?intr fsm:Target ?failedstate .
+	# TTF
 	optional{
 		?intr fsm:TransitionGuard/fsm:GuardEvent ?ttfguardev .
 		?ttfguardev ifcext:hasTimeToHappen ?ttftime.
 	}
+	# TTR via IfcTaskTime
 	optional{
 		?failedstate osph:do/ifc:taskTime_IfcTask ?ttr .
 		optional{ ?ttr ifcext:hasStochasticDuration ?ttrtime. }
 		optional{ ?ttr ifc:scheduleDuration_IfcTaskTime ?ttrtime . }	
+	}
+	# TTR defined as property
+	OPTIONAL{
+		?failedstate osph:do/ssn:hasProperty ?prop .
+		?prop a fa:ExpectedDuration .
+		{
+			?prop osph:hasPropertySimpleValue ?timeDT .
+			BIND(?prop AS ?ttrtime ) .  
+		}
+		UNION{
+			?prop osph:hasPropertyValue ?ttrtime .
+			?ttrtime rdf:type/rdfs:subClassOf* ex:RandomVariable .
+		}
 	}
 }

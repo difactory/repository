@@ -10,6 +10,9 @@ DELETE{
 	GRAPH ?g2{ ?duration ?b2 ?c2 .}
 	GRAPH ?g3{ ?prodplan ?b3 ?c3 .}
 	GRAPH ?g4{ ?a4 ?b4 ?prodplan .}
+	
+	GRAPH ?g30 { ?prop ?b30 ?c30 .} 
+	GRAPH ?g62 { ?propvalInd ?b62 ?c62 . }
 }
 WHERE { 
 	?prodplan rdf:type factory:ProductionPlan .	
@@ -22,6 +25,18 @@ WHERE {
 		?prodplan ifc:duration_IfcWorkControl ?duration .
 		OPTIONAL{ GRAPH ?g2{ ?duration ?b2 ?c2 .} }
 	}
+	# properties
+	OPTIONAL{
+		?prodplan ssn:hasProperty ?prop .
+		{ 
+			GRAPH ?g30{ ?prop ?b30 ?c30 .} 
+		}
+		UNION{
+			?prop osph:hasPropertyValue ?propvalInd .
+			{GRAPH ?g62 { ?propvalInd ?b62 ?c62 . }}
+		}
+	}
+	
 	OPTIONAL{ GRAPH ?g3{ ?prodplan ?b3 ?c3 .} }
 	OPTIONAL{ GRAPH ?g4{ ?a4 ?b4 ?prodplan .} }	
 }

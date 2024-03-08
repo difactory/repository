@@ -27,6 +27,14 @@ WHERE {
 			owl:onProperty ?prop ;
 			owl:allValuesFrom ?range .
 	}
+	
+	OPTIONAL{
+		?class rdfs:subClassOf* ?subsuper .
+		?subsuper rdfs:subClassOf/owl:onProperty ?prop .
+		?subsuper rdfs:subClassOf+ ?super .	
+	}
+	FILTER(!bound(?subsuper))
+	
 {?prop rdf:type owl:ObjectProperty} UNION {?prop rdf:type owl:DatatypeProperty} .
 
 ?prop rdf:type ?proptype .

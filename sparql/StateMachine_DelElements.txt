@@ -9,6 +9,7 @@ PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX express: <https://w3id.org/express#> 
 PREFIX list: <https://w3id.org/list#> 
+PREFIX stat: <https://w3id.org/ontoeng/statistics#>
 
 DELETE{
 
@@ -24,6 +25,10 @@ DELETE{
 	GRAPH ?g52{?duration ?b52 ?c52 . }
 	GRAPH ?g53{?stochdur ?b53 ?c53 . }
 	GRAPH ?g54{?timestoch ?b54 ?c54 . }
+	
+	GRAPH ?g61{?prop ?b61 ?c61 .}
+	GRAPH ?g62{?propvalInd ?b62 ?c62 . }
+	GRAPH ?g63{?distr ?b63 ?c63 . }
 	
 	GRAPH ?g12{?region ?b12 ?c12 . } 
 	GRAPH ?g13{?a13 ?b13 ?region . } 
@@ -75,6 +80,18 @@ WHERE {
 						GRAPH ?g54 {?timestoch ?b54 ?c54 .} 
 					}
 				}	
+			}
+			UNION{
+				?task ssn:hasProperty ?prop .
+				{GRAPH ?g61{?prop ?b61 ?c61 .}}
+				UNION{
+					?prop osph:hasPropertyValue ?propvalInd .
+					{GRAPH ?g62 { ?propvalInd ?b62 ?c62 . }}
+					UNION{
+						?propvalInd osph:isQuantitySampledFrom ?distr .
+						GRAPH ?g63 { ?distr ?b63 ?c63 . }
+					}
+				}		
 			}
 		}	
 	}

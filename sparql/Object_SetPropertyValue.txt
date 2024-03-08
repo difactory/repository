@@ -5,9 +5,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX stat: <https://w3id.org/ontoeng/statistics#>
+
 
 DELETE{
-	GRAPH ?h {?prop osph:hasPropertySimpleValue ?propval .}	
+	GRAPH ?h {?prop osph:hasPropertySimpleValue ?propvalDT .}	
+	GRAPH ?k {?prop osph:hasPropertyValue ?propvalInd .}	
+	GRAPH ?j {?propvalInd ?b2 ?c2 .}
+	GRAPH ?m {?c2 ?b3 ?c3 .}
 }
 INSERT { 
 
@@ -15,12 +20,13 @@ INSERT {
 		?propNew a owl:NamedIndividual , ?propclass .
 		?obj ssn:hasProperty ?propNew .
 		
-		?propNew osph:hasPropertySimpleValue ?value .
+		?propNew osph:hasPropertyValue ?valueIRI .
+		?propNew osph:hasPropertySimpleValue ?valueDT .
+		
 		?propNew osph:hasPropertySimpleValue ?integerdt . #deprecated
 		?propNew osph:hasPropertySimpleValue ?doubledt . #deprecated
 		?propNew osph:hasPropertySimpleValue ?datetimedt . #deprecated
 	}
-
 }
 WHERE {
 
@@ -33,11 +39,28 @@ WHERE {
 		?prop rdf:type ?propclass .
 		FILTER ( ?propclass != owl:NamedIndividual ) .
 		OPTIONAL{
-			GRAPH ?h {?prop osph:hasPropertySimpleValue ?propval .}	
+			GRAPH ?h {?prop osph:hasPropertySimpleValue ?propvalDT .}	
+		}
+		OPTIONAL{
+			GRAPH ?k {?prop osph:hasPropertyValue ?propvalInd .}	
+			OPTIONAL{
+				GRAPH ?j {
+					?propvalInd ?b2 ?c2 .
+					OPTIONAL{
+						GRAPH ?m {
+							?c2 rdf:type/rdfs:subClassOf* stat:ProbabilityDistribution .
+							?c2 ?b3 ?c3 .
+						}
+					}
+				}
+			}
 		}
 	}		
 	
-	BIND(IF(bound(?buffprop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+	BIND(IF(bound(?prop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+	
+	BIND(IF(isIRI(?value),?value,?null) AS ?valueIRI) .
+	BIND(IF(isLiteral(?value),?value,?null) AS ?valueDT) .
 
 	BIND(IF(strlen(?intval)>0,STRDT(?intval, xsd:integer),?null ) AS ?integerdt ) . 	
 	BIND(IF(strlen(?doubleval)>0,STRDT(?doubleval, xsd:double),?null ) AS ?doubledt ) . 	

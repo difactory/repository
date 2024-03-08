@@ -25,6 +25,10 @@ DELETE {
 	GRAPH ?g12{?duration ?b12 ?c12 . }
 	GRAPH ?g13{?stochdur ?b13 ?c13 .}
 	GRAPH ?g14{?timestoch ?b14 ?c14 .}
+	
+	GRAPH ?g15{?prop ?b15 ?c15 .}
+	GRAPH ?g16{?propvalInd ?b16 ?c16 . }
+	GRAPH ?g17{?distr ?b17 ?c17. }
 }
 WHERE {
 	
@@ -74,6 +78,18 @@ WHERE {
 					GRAPH ?g14 {?timestoch ?b14 ?c14 .} 
 				}
 			}	
+		}
+		UNION{
+			?mainttask ssn:hasProperty ?prop .
+			{GRAPH ?g15{?prop ?b15 ?c15 .}}
+			UNION{
+				?prop osph:hasPropertyValue ?propvalInd .
+				{GRAPH ?g16 { ?propvalInd ?b16 ?c16 . }}
+				UNION{
+					?propvalInd osph:isQuantitySampledFrom ?distr .
+					GRAPH ?g17 { ?distr ?b17 ?c17. }
+				}
+			}		
 		}
 	}	
 }

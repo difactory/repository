@@ -23,7 +23,7 @@ WHERE {
 	?hist rdf:type ?histclass . 
 	
 	# Get all histories
-	?hist (osph:isDecomposedByHistory|^osph:decomposesHistory)* ?elemhist .
+	?hist (osph:isDecomposedByHistory|^osph:decomposesHistory)+ ?elemhist .
 	
 	{
 		# Outgoing relations, including Assignments
@@ -43,4 +43,8 @@ WHERE {
 		?elemhist osph:hasStateFrequencies ?freq .
 		{ GRAPH ?g5{ ?freq ?b5 ?c5 .} }
 	}
+
+	
+	
+
 }

@@ -1,0 +1,38 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+
+select distinct ?hist ?itstype ?dataorigin ?start ?end
+WHERE { 
+
+	# Object history
+	?itstype rdfs:subClassOf* osph:ObjectHistory .   
+	?hist rdf:type ?itstype .
+	FILTER ( ?itstype != owl:NamedIndividual ) .
+	
+	# Data origin
+	OPTIONAL{
+		?hist osph:hasHistoryOrigin ?dataorigin .
+	}
+	
+
+	# Time interval
+	OPTIONAL{
+		?hist osph:hasIntervalStartTime ?start .
+	}
+	FILTER (!bound(?start) || ?start  >= ?min)
+	FILTER (!bound(?start) || ?start  <= ?max)		
+
+	OPTIONAL{
+		?hist osph:hasIntervalEndTime ?end .
+	}		
+	BIND(IF(bound(?mindate) ,?mindate ,  "1900-01-01T00:00:00"^^xsd:dateTime)   AS ?min ) . 
+	BIND(IF(bound(?maxdate) ,?maxdate ,  "9999-01-01T00:00:00"^^xsd:dateTime)   AS ?max ) . 
+}
+ORDER BY ?obj ?start

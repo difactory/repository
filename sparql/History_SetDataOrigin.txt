@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+
+DELETE{
+	GRAPH ?g {?hist osph:hasHistoryOrigin ?dataoriginCurrent .}	
+}
+INSERT { 
+	GRAPH ?graph { 
+		
+		?hist osph:hasHistoryOrigin ?dataorigin .
+	}
+}
+WHERE {
+
+	?itstype rdfs:subClassOf* osph:ObjectHistory .   
+	?hist rdf:type ?itstype .
+	FILTER ( ?itstype != owl:NamedIndividual ) .
+	
+	OPTIONAL {
+		GRAPH ?g {?hist osph:hasHistoryOrigin ?dataoriginCurrent .}	
+	}
+}
+
+

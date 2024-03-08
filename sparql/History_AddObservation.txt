@@ -1,0 +1,43 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+
+
+INSERT { 
+	GRAPH ?graph { 
+		?hist osph:hasHistoryObservations ?obs .
+		?obs rdf:type owl:NamedIndividual, ?obsclass .
+		?obs sosa:hasSimpleResult ?value .		
+		?obs sosa:observedProperty ?propNew .
+		
+		?obj ssn:hasProperty  ?propNew .
+		
+		?propNew rdf:type owl:NamedIndividual, ?propclass .
+	}
+}
+WHERE {
+
+	OPTIONAL {
+		?obj ssn:hasProperty ?prop .
+		?prop rdf:type ?propclass .
+		FILTER ( ?propclass != owl:NamedIndividual ) .
+	}	
+	
+	?obj osph:hasHistory/(osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .
+
+	?obsclass rdfs:subClassOf ?restr .
+	?restr	a owl:Restriction ;
+		owl:onProperty sosa:observedProperty ;
+		owl:allValuesFrom ?propclass .	
+	
+	BIND(IF(bound(?prop),?prop ,  URI(CONCAT(STR(?obj),"_",STRAFTER(STR(?propclass),"#")))  ) AS ?propNew ) .  
+	
+	BIND(URI(CONCAT(STR(?hist),"_",STRAFTER(STR(?obsclass),"#"))) AS ?obs ) .  
+}

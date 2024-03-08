@@ -14,6 +14,11 @@ DELETE{
 	GRAPH ?g4 {?duration ?b4 ?c4 .}
 	GRAPH ?g5 {?stochdur ?b5 ?c5 .}
 	GRAPH ?g6 {?timestoch ?b6 ?c6.} 
+
+	GRAPH ?g61{?prop ?b61 ?c61 .}
+	GRAPH ?g62{?propvalInd ?b62 ?c62 . }
+	GRAPH ?g63{?distr ?b63 ?c63 . }	
+	
 	GRAPH ?g7 {?res1 ?b7 ?c7 .} 
 	GRAPH ?g8 {?a8 ?b8 ?res1 .} 
 	GRAPH ?g9 {?res2 ?b9 ?c9 .}
@@ -42,6 +47,18 @@ WHERE{
 				GRAPH ?g6 {?timestoch ?b6 ?c6.} 
 			}
 		}	
+	}
+	UNION{
+		?pstep ssn:hasProperty ?prop .
+		{GRAPH ?g61{?prop ?b61 ?c61 .}}
+		UNION{
+			?prop osph:hasPropertyValue ?propvalInd .
+			{GRAPH ?g62 { ?propvalInd ?b62 ?c62 . }}
+			UNION{
+				?propvalInd osph:isQuantitySampledFrom ?distr .
+				GRAPH ?g63 { ?distr ?b63 ?c63 . }
+			}
+		}		
 	}
 	# get resources where the pstep can be executed (it can be a resource or a resource type)
 	UNION { 

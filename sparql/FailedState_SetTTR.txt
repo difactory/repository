@@ -1,29 +1,47 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX stat: <https://w3id.org/ontoeng/statistics#>
 
 DELETE{
+	GRAPH ?h0{ ?mainttasktime ?b0 ?c0 .}
+	GRAPH ?h1{ ?a1 ?b1 ?mainttasktime .}
 	GRAPH ?h3{ ?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrvalueDet.}
 	GRAPH ?h4{ ?ttrvalueDet ?b4 ?c4 . }
 	GRAPH ?h5{ ?mainttasktime ifcext:hasStochasticDuration ?ttrvalueStoch.}
 	GRAPH ?h6{ ?ttrvalueStoch ?b6 ?c6 . }
 	GRAPH ?h7{ ?ttrpdistr ?b7 ?c7 . }
+	
+	GRAPH ?g6 {?prop osph:hasPropertySimpleValue ?propvalDT .}	
+	GRAPH ?g7 {?prop osph:hasPropertyValue ?propvalInd .}	
+	GRAPH ?g8 {?propvalInd ?b8 ?c8 .}
+	GRAPH ?g9 {?cdistr ?b9 ?c9 . }
+
 }
 INSERT { 
 	GRAPH ?g { 
-		?mainttaskNew a owl:NamedIndividual , factory:MaintenanceTask .
-		?mainttasktimeNew a owl:NamedIndividual , ifc:IfcTaskTime .
+		?mainttaskNew a owl:NamedIndividual , fa:MaintenanceTask .
+		#?mainttasktimeNew a owl:NamedIndividual , ifc:IfcTaskTime .
 		?failedstate osph:do ?mainttaskNew .
-		?mainttaskNew ifc:taskTime_IfcTask ?mainttasktimeNew .
+		#?mainttaskNew ifc:taskTime_IfcTask ?mainttasktimeNew .
 	
-		?mainttasktime ifcext:hasStochasticDuration ?ttrStoch .
-		?mainttasktimeNew ifcext:hasStochasticDuration ?ttrStoch .	
-		?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrDet .
-		?mainttasktimeNew ifc:scheduleDuration_IfcTaskTime ?ttrDet .
+		#?mainttasktime ifcext:hasStochasticDuration ?ttrStoch .
+		#?mainttasktimeNew ifcext:hasStochasticDuration ?ttrStoch .	
+		#?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrDet .
+		#?mainttasktimeNew ifc:scheduleDuration_IfcTaskTime ?ttrDet .
+	}
+	GRAPH ?g{
+		?propNew a owl:NamedIndividual , fa:ExpectedDuration .
+		?mainttaskNew ssn:hasProperty ?propNew .
+		?propNew osph:hasPropertyValue ?proctimeIRI .
+		?propNew osph:hasPropertySimpleValue ?proctimeDT .
 	}
 }
 WHERE {
@@ -33,30 +51,55 @@ WHERE {
 	
 	?ttr a ?ttrclass .
 	FILTER ( ?ttrclass != owl:NamedIndividual ) .	
-	BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"IfcDuration"),?ttr,?null) AS ?ttrDet ) . 
-	BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"StochasticQuantityTime"),?ttr,?null) AS ?ttrStoch ) . 	
+	#BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"IfcDuration"),?ttr,?null) AS ?ttrDet ) . 
+	#BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"StochasticQuantityTime"),?ttr,?null) AS ?ttrStoch ) . 	
 		
 	OPTIONAL {	
 		?failedstate osph:do ?mainttask .
-		?mainttask ifc:taskTime_IfcTask ?mainttasktime .
-		OPTIONAL{
-			GRAPH ?h3{ ?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrvalueDet.}
+		{
+			?mainttask ifc:taskTime_IfcTask ?mainttasktime .
+			GRAPH ?h0{?mainttasktime ?b0 ?c0 .}
+			GRAPH ?h1{?a1 ?b1 ?mainttasktime .}
 			OPTIONAL{
-				GRAPH ?h4{ ?ttrvalueDet ?b4 ?c4 . }
+				GRAPH ?h3{ ?mainttasktime ifc:scheduleDuration_IfcTaskTime ?ttrvalueDet.}
+				OPTIONAL{
+					GRAPH ?h4{ ?ttrvalueDet ?b4 ?c4 . }
+				}
+			}
+			OPTIONAL {
+				GRAPH ?h5{ ?mainttasktime ifcext:hasStochasticDuration ?ttrvalueStoch.}
+				OPTIONAL {
+					GRAPH ?h6{ ?ttrvalueStoch ?b6 ?c6 . }
+					OPTIONAL {
+						?ttrvalueStoch osph:isQuantitySampledFrom ?ttrpdistr.
+						GRAPH ?h7{?ttrpdistr ?b7 ?c7 . }
+					}	
+				}
 			}
 		}
-		OPTIONAL {
-			GRAPH ?h5{ ?mainttasktime ifcext:hasStochasticDuration ?ttrvalueStoch.}
-			OPTIONAL {
-				GRAPH ?h6{ ?ttrvalueStoch ?b6 ?c6 . }
-				OPTIONAL {
-					?ttrvalueStoch osph:isQuantitySampledFrom ?ttrpdistr.
-					GRAPH ?h7{?ttrpdistr ?b7 ?c7 . }
-				}	
+		UNION{
+			?mainttask ssn:hasProperty ?prop .
+			?prop rdf:type fa:ExpectedDuration .
+			OPTIONAL{
+				GRAPH ?g6 {?prop osph:hasPropertySimpleValue ?propvalDT .}	
 			}
+			OPTIONAL{
+				GRAPH ?g7 {?prop osph:hasPropertyValue ?propvalInd .}	
+				OPTIONAL{
+					{GRAPH ?g8 {?propvalInd ?b8 ?c8 .}}
+					UNION{
+						?propvalInd osph:isQuantitySampledFrom ?distr .
+						GRAPH ?g9 { ?distr ?b9 ?c9 . }
+					}			
+				}
+			}	
 		}
 	}
 
 	BIND(IF(bound(?mainttask),?null ,URI(CONCAT(STR(?failedstate),"_repair")) ) AS ?mainttaskNew ) .  
-	BIND(IF(bound(?mainttasktime),?null ,URI(CONCAT(STR(?failedstate),"_repairTask_time")) ) AS ?mainttasktimeNew ) .  
+	#BIND(IF(bound(?mainttasktime),?null ,URI(CONCAT(STR(?failedstate),"_repairTask_time")) ) AS ?mainttasktimeNew ) .  
+	BIND(IF(bound(?prop),?prop , URI(CONCAT(STR(?failedstate),"_repairTask_ExpectedDuration"))) AS ?propNew ) .  	
+	BIND(IF(isIRI(?ttr),?ttr,?null) AS ?proctimeIRI) .
+	BIND(IF(isLiteral(?ttr),xsd:duration(STR(?ttr)),?null) AS ?proctimeDT) .
+
 }

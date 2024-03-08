@@ -4,12 +4,14 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
 
      
 INSERT { 
 	GRAPH ?graph { 
 		?obj1 ifcext:hasAssignedObject ?obj2 .
-		?prodplan cs:hasExecutionController ?contr
+		?prodplan cs:hasExecutionController ?contr .
+		?hist osph:hasHistoryAssignedObject ?histassigned .
 	}
 }
 WHERE{
@@ -25,5 +27,11 @@ WHERE{
 		BIND(?subject AS ?prodplan ) .
 		?assignedobj rdf:type/rdfs:subClassOf* cs:ControllerFB .
 		BIND(?assignedobj AS ?contr ) .
+	}
+	OPTIONAL{
+		?subject rdf:type/rdfs:subClassOf* osph:ObjectHistory .
+		BIND(?subject AS ?hist ) .
+		?assignedobj rdf:type/rdfs:subClassOf* ifc:IfcObjectDefinition .
+		BIND(?assignedobj AS ?histassigned ) .
 	}
 }

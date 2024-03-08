@@ -9,25 +9,59 @@ PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX fa: <https://w3id.org/ontoeng/factory#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 
-SELECT distinct ?asset ?itsType ?buffer ?machine
+SELECT distinct ?asset ?itsType ?buffer ?machine ?state ?historyclass
 
 WHERE { 
 
-	?itsType rdfs:subClassOf* ifc:IfcObjectDefinition .   
-
+	{
+		?itsType rdfs:subClassOf* osph:ObjectDefinition . 
+	}
+	UNION
+	{
+		?itsType rdfs:subClassOf* fsm:State . 
+		BIND("yes" AS ?state ) .
+	}
+	
 	?asset rdf:type ?itsType .
-
 	FILTER ( ?itsType != owl:NamedIndividual ) . 
 
+
 	OPTIONAL{
-		?buffersub rdfs:subClassOf* fa:BufferElement .
-		BIND("yes" AS ?buffer ) .
-		?asset  rdf:type ?buffersub .
+		# History class
+		?itsType rdfs:subClassOf* ?super .
+		{
+			osph:hasHistory rdfs:domain ?super .
+			osph:hasHistory rdfs:range ?historyclass .
+		}
+		UNION
+			{	
+			?super rdfs:subClassOf ?restr .
+			?restr	a owl:Restriction ;
+				owl:onProperty osph:hasHistory ;
+				owl:allValuesFrom ?historyclass .
+		}
+		OPTIONAL{
+			?itsType rdfs:subClassOf* ?subsuper .
+			?subsuper rdfs:subClassOf/owl:onProperty osph:hasHistory .
+			?subsuper rdfs:subClassOf+ ?super .	
+		}
+		FILTER(!bound(?subsuper))	
 	}
+	
+	
 	OPTIONAL{
-		?machsub rdfs:subClassOf* fa:MachineTool .
-		BIND("yes" AS ?machine ) .
-		?asset  rdf:type ?machsub .
-	}  
+		{
+			?buffersub rdfs:subClassOf* fa:BufferElement .
+			BIND("yes" AS ?buffer ) .
+			?asset  rdf:type ?buffersub .
+		}
+		UNION{
+			?machsub rdfs:subClassOf* fa:MachineTool .
+			BIND("yes" AS ?machine ) .
+			?asset  rdf:type ?machsub .
+		}  
+	}
 }
+
