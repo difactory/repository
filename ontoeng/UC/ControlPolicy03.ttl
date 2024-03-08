@@ -8,6 +8,11 @@
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00301885849362815"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_guardTrIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
@@ -24,11 +29,6 @@
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_ttr_pdistr> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT14S" .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trWorkFinal_opB03>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -55,10 +55,20 @@
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_ttf_pdistr> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_ttr> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleA_ScheduledQuantity>
         a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -96,11 +106,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_guardIdleWork_opB03> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_guardTrWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
@@ -126,6 +131,11 @@
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.000213583276614771"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT12S"^^<http://www.w3.org/2001/XMLSchema#duration> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_initSt>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
@@ -140,10 +150,10 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_MachineWipLevel>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr_pdistr>
-        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
-                "0.0029160677735099"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr_pdistr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#pplanB>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTaskType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -152,10 +162,10 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB04> , <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02> , <https://w3id.org/ontoeng/UC/ControlPolicy03#opB01> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr_pdistr> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0029160677735099"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_trWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -170,11 +180,6 @@
         a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#do>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_do_opA01> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan_duration>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "P1D" .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_trIdleWork_opB01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -214,8 +219,13 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_repairTask_ExpectedDuration> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "P1D"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -233,17 +243,12 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA03>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res03m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_ptime> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip03>
         a       <https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -333,6 +338,11 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_guardTrWorkFailed> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT6S"^^<http://www.w3.org/2001/XMLSchema#duration> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleA>
         a       <https://w3id.org/ontoeng/factory#ProductionSchedule> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
@@ -355,11 +365,6 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_idle_opB03>
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_trFailedIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -471,11 +476,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_trRelIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_startOp_1> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_idleSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_trIdleRel> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_stv_opA06>
         a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
@@ -491,8 +491,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_ttr>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -501,8 +501,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trWorkIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -570,26 +570,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_guardTrIdleRel> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT16S" .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_ptime> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT14S" .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT9S" .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_guardTrIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
@@ -630,11 +610,6 @@
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00138588373921709"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_ptime> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferCapacity>
         a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -654,11 +629,6 @@
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00351782391093328"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_trWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
@@ -670,6 +640,16 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_initSt>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_reg_opA01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -713,11 +693,6 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_idleSt>
         a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT12S" .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_guardTrWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
@@ -725,12 +700,22 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res04m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_trIdleWork_opA01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -760,8 +745,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_ev>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -803,8 +788,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB01>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res05m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -817,8 +802,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_guardTrWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -897,11 +882,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_guardTrIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
@@ -938,11 +918,6 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 10 .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_workComp>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
@@ -964,6 +939,11 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_regInit_opB04> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_idle_opB04> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT14S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_idle_opB01>
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -989,11 +969,6 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_regInit_opA05>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_ptime> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_stv_opB04>
         a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
@@ -1011,8 +986,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trWorkIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1031,16 +1006,6 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_stv_opA05>
         a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_ttr> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_ptime> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_trIdleRel>
         a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1071,8 +1036,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_ev>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1084,8 +1049,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_ev>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1127,6 +1092,11 @@
                 <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
         <https://w3id.org/ontoeng/expression#hasRhsOperand>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip03_Thr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT8S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_ttf>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1176,8 +1146,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res07m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -1230,11 +1200,6 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_finished>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_trFailedIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
@@ -1261,8 +1226,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res06m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -1285,11 +1250,6 @@
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_reg_opB01> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT8S" .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M5_workComp_relSt>
         a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1320,22 +1280,37 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_guardIdleWork_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trIdleWork_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_start_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trWorkFinal_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trInitIdle_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_workComp> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_ttr> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_idle_opA03>
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_regInit_opA02>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_ttr> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_initSt>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opB01_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT14S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_idle_opA04>
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_workComp>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1364,16 +1339,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_finished> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_guardTrWorkFailed>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_ev> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_trIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
@@ -1383,20 +1348,30 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_guardTrIdleWork> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_ev> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_guardIdleWork_opB01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_start_opB01> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_ptime> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_ttr> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_opB02>
-        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#do>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_do_opB02> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT9S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_trWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1410,10 +1385,10 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_blk_opA06>
         a       <https://w3id.org/ontoeng/factory#MachineToolBlockedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT4S" .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_opB02>
+        a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#do>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_do_opB02> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1462,11 +1437,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
                 "0 0 0" .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_ptime> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_ttf_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
@@ -1480,11 +1450,6 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_opB02> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_guardIdleWork_opB02> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_guardTrIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1569,11 +1534,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA04> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ev>
-        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ttf> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_ttf_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
@@ -1583,6 +1543,11 @@
         a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M5_workComp_startOp_1> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.1_ttf> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_stv_opB03>
         a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1655,8 +1620,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_initSt>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1720,23 +1685,23 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_failed.2_repairTask_ExpectedDuration> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_guardTrWorkFailed>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ev> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_reg_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_reg_opA05> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttr_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00154091054239715"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_idleComp>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_reg_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_reg_opA05> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_guardTrWorkFailed>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ev> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttf>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1767,8 +1732,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA06>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res08m> .
 
@@ -1809,8 +1774,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res07m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -1822,6 +1787,11 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT12S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_trInitCompIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1848,8 +1818,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan>
         a       <https://w3id.org/ontoeng/factory#ProductionPlan> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#duration_IfcWorkControl>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan_duration> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#productionPlan_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#AssemblyLine> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
@@ -1861,11 +1831,6 @@
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_start_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trWorkFinal_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trIdleWork_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_guardIdleWork_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trInitIdle_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trIdleWork_opB03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_guardIdleWork_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trInitIdle_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trWorkFinal_opA05> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_trWorkIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_start_opA05> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#parttypeA>
         a       <https://w3id.org/ontoeng/factory#ArtifactType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1901,16 +1866,6 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT8S" .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_do_opB04>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1968,8 +1923,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA01>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res01m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -1996,8 +1951,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttr>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2009,8 +1964,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_trWorkIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2033,11 +1988,6 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_idle_opA01>
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_trIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2064,15 +2014,15 @@
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00318939433435572"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA01_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT4S"^^<http://www.w3.org/2001/XMLSchema#duration> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_reg>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_entryAction> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_trIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_relSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_cond> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_idleSt> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_guardTrIdleRel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_trRelIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M1_workComp_startOp_1> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA04_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT12S" .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_trFailedIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2088,8 +2038,23 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_idleSt> .
 
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_ttr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttr> .
+
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_start_opA04>
         a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_start_opA03>
         a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2131,10 +2096,10 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_idleComp> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ev>
-        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttf> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_repairTask_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertyValue>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_ttr> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip01_BinExpr>
         a       <https://w3id.org/ontoeng/expression#BinaryExpression> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2145,18 +2110,23 @@
         <https://w3id.org/ontoeng/expression#hasRhsOperand>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip01_Thr> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_finished>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ev>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ev>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ttf> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttf> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01>
         a       <https://w3id.org/ontoeng/controlSystem#ReleaseController> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_stM> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.2_ttf> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B3>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2181,11 +2151,6 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_workComp> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_idleComp> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA06_ptime> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M5_workComp_cond>
         a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2214,6 +2179,11 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_opA05> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_finished> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT16S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2268,11 +2238,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_stv_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_blk_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_regInit_opA03> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_idle_opA03> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.1_ttr>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
@@ -2292,11 +2257,6 @@
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB03> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02_ptime> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2330,8 +2290,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB04>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opB04_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res08m> .
 
@@ -2352,8 +2312,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_trWorkFinal_opB02>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2466,11 +2426,6 @@
         <https://w3id.org/ontoeng/osph#hasStateMachine>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_stM> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_repairTask_time>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasStochasticDuration>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttr> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_workComp>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
@@ -2492,8 +2447,8 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA02>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_tasktime> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA02_ExpectedDuration> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#res02m> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
@@ -2621,11 +2576,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opB02> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_tasktime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTaskTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#scheduleDuration_IfcTaskTime>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#opA03_ptime> .
-
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttr_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
@@ -2665,39 +2615,29 @@
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_repair>
         a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_repairTask_time> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repair>
-        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#taskTime_IfcTask>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repairTask_time> .
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.2_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_ttr_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.00173110438892955"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ev>
-        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttf> .
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repair>
+        a       <https://w3id.org/ontoeng/factory#MaintenanceTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.w3.org/ns/ssn/hasProperty>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.1_repairTask_ExpectedDuration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_initSt>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#opB03_ptime>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/express#hasString>
-                "PT6S" .
-
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_MachineWipLevel>
-        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_ttf>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_ttf_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_MachineWipLevel>
+        a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_trWorkIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2705,6 +2645,11 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_workComp> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_idleComp> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ev>
+        a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttf> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2751,6 +2696,11 @@
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
                 "0.000200249670620419"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/UC/ControlPolicy03#opA05_ExpectedDuration>
+        a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "PT8S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#c01_M7_workComp_entryAction>
         a       <https://w3id.org/ontoeng/osph#EventGeneration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
