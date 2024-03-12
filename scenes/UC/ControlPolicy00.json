@@ -1,0 +1,542 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "default_building",
+        "M1",
+        "M2",
+        "M3",
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+    ],
+    "assets": [
+        {
+            "id": "default_building",
+            "descr": "Default building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "AssemblyLine",
+            "descr": "Assembly line. An assembly system consists of facilities that are utilized for the assembly of a product or products, characterized by rigid or loose chaining of individual assembly work stations. An assembly line is a specific class of assembly systems where several work stations are linked together according to the sequence of operations required. Hence, the routing of the parts and the sequence of operations is given. This assembly line is devoted to the assembly of a hinge for furniture.",
+            "type": "https://w3id.org/ontoeng/factory#AssemblySystem",
+            "assignmentTo": [
+                "prodPlan"
+            ]
+        },
+        {
+            "id": "parttypeA",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType"
+        },
+        {
+            "id": "parttypeAraw",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "pplanA"
+            ]
+        },
+        {
+            "id": "pplanA",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTaskType",
+            "assignmentTo": [
+                "parttypeA"
+            ]
+        },
+        {
+            "id": "opA01",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA02"
+            ]
+        },
+        {
+            "id": "opA02",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA03"
+            ],
+            "taskTime": 14
+        },
+        {
+            "id": "opA03",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "taskTime": 16
+        },
+        {
+            "id": "opA01_setup",
+            "type": "https://w3id.org/ontoeng/factory#SetupTask",
+            "parentObject": "opA01",
+            "successors": [
+                "opA01_cutting"
+            ],
+            "taskTime": 2
+        },
+        {
+            "id": "opA01_cutting",
+            "type": "https://w3id.org/ontoeng/factory#MachiningTask",
+            "parentObject": "opA01",
+            "taskTime": 7
+        },
+        {
+            "id": "res01m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA01"
+            ]
+        },
+        {
+            "id": "res02m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA02"
+            ]
+        },
+        {
+            "id": "res03m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA03"
+            ]
+        },
+        {
+            "id": "M1",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B2"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res01m"
+            ],
+            "properties": {
+                "nserver": 1
+            },
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000239131644671569)",
+                    "TTR": "EXP(0.00259120972326868)"
+                }
+            ]
+        },
+        {
+            "id": "M2",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B3"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res02m"
+            ],
+            "properties": {
+                "nserver": 1
+            },
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000163398461185276)",
+                    "TTR": "EXP(0.00318998026732016)"
+                }
+            ]
+        },
+        {
+            "id": "M3",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B4"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res03m"
+            ],
+            "properties": {
+                "nserver": 1
+            },
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000203076051462444)",
+                    "TTR": "EXP(0.00133887995358048)"
+                }
+            ]
+        },
+        {
+            "id": "B1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M1"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 50
+            }
+        },
+        {
+            "id": "B2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M2"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 6
+            }
+        },
+        {
+            "id": "B3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M3"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 8
+            }
+        },
+        {
+            "id": "B4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 6
+            }
+        },
+        {
+            "id": "prodPlan",
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlan",
+            "duration": 28800
+        },
+        {
+            "id": "c01",
+            "type": "https://w3id.org/ontoeng/controlSystem#ReleaseController",
+            "assignmentTo": [
+                "prodPlan"
+            ],
+            "controlledMach": [
+                {
+                    "machine": "M1",
+                    "policy": "conwip01"
+                },
+                {
+                    "machine": "M3",
+                    "policy": "conwip02"
+                }
+            ]
+        },
+        {
+            "id": "conwip01",
+            "type": "https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy",
+            "polObserved": [
+                "M1",
+                "M2",
+                "B1",
+                "B2"
+            ],
+            "polThreshold": 8
+        },
+        {
+            "id": "conwip02",
+            "type": "https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy",
+            "polObserved": [
+                "M3",
+                "B3",
+                "B4"
+            ],
+            "polThreshold": 7
+        },
+        {
+            "id": "jobA_1",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "prodPlan",
+            "properties": {
+                "quantity": 1,
+                "duedate": "2024-03-02T12:00:00Z",
+                "priority": 1
+            }
+        },
+        {
+            "id": "partA_1",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "parttypeA",
+            "assignmentTo": [
+                "jobA_1"
+            ]
+        },
+        {
+            "id": "pplanA_1",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "pplanA",
+            "assignmentTo": [
+                "partA_1",
+                "jobA_1"
+            ]
+        },
+        {
+            "id": "opA01_1",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA01",
+            "parentObject": "pplanA_1",
+            "successors": [
+                "opA02_1"
+            ]
+        },
+        {
+            "id": "opA02_1",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA02",
+            "parentObject": "pplanA_1",
+            "successors": [
+                "opA03_1"
+            ]
+        },
+        {
+            "id": "opA03_1",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA03",
+            "parentObject": "pplanA_1"
+        },
+        {
+            "id": "opA01_1_setup",
+            "type": "https://w3id.org/ontoeng/factory#SetupTask",
+            "model": "opA01_setup",
+            "parentObject": "opA01_1",
+            "successors": [
+                "opA01_1_cutting"
+            ]
+        },
+        {
+            "id": "opA01_1_cutting",
+            "type": "https://w3id.org/ontoeng/factory#MachiningTask",
+            "model": "opA01_cutting",
+            "parentObject": "opA01_1"
+        },
+        {
+            "id": "jobA_2",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "prodPlan",
+            "properties": {
+                "quantity": 1,
+                "duedate": "2024-03-02T12:00:00Z",
+                "priority": 1
+            }
+        },
+        {
+            "id": "partA_2",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "parttypeA",
+            "assignmentTo": [
+                "jobA_2"
+            ]
+        },
+        {
+            "id": "pplanA_2",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "pplanA",
+            "assignmentTo": [
+                "partA_2",
+                "jobA_2"
+            ]
+        },
+        {
+            "id": "opA01_2",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA01",
+            "parentObject": "pplanA_2",
+            "successors": [
+                "opA02_2"
+            ]
+        },
+        {
+            "id": "opA02_2",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA02",
+            "parentObject": "pplanA_2",
+            "successors": [
+                "opA03_2"
+            ]
+        },
+        {
+            "id": "opA03_2",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA03",
+            "parentObject": "pplanA_2"
+        },
+        {
+            "id": "opA01_2_setup",
+            "type": "https://w3id.org/ontoeng/factory#SetupTask",
+            "model": "opA01_setup",
+            "parentObject": "opA01_2",
+            "successors": [
+                "opA01_2_cutting"
+            ]
+        },
+        {
+            "id": "opA01_2_cutting",
+            "type": "https://w3id.org/ontoeng/factory#MachiningTask",
+            "model": "opA01_cutting",
+            "parentObject": "opA01_2"
+        },
+        {
+            "id": "jobA_3",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "prodPlan",
+            "properties": {
+                "quantity": 1,
+                "duedate": "2024-03-02T12:00:00Z",
+                "priority": 1
+            }
+        },
+        {
+            "id": "partA_3",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "parttypeA",
+            "assignmentTo": [
+                "jobA_3"
+            ]
+        },
+        {
+            "id": "pplanA_3",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "pplanA",
+            "assignmentTo": [
+                "partA_3",
+                "jobA_3"
+            ]
+        },
+        {
+            "id": "opA01_3",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA01",
+            "parentObject": "pplanA_3",
+            "successors": [
+                "opA02_3"
+            ]
+        },
+        {
+            "id": "opA02_3",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA02",
+            "parentObject": "pplanA_3",
+            "successors": [
+                "opA03_3"
+            ]
+        },
+        {
+            "id": "opA03_3",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA03",
+            "parentObject": "pplanA_3"
+        },
+        {
+            "id": "opA01_3_setup",
+            "type": "https://w3id.org/ontoeng/factory#SetupTask",
+            "model": "opA01_setup",
+            "parentObject": "opA01_3",
+            "successors": [
+                "opA01_3_cutting"
+            ]
+        },
+        {
+            "id": "opA01_3_cutting",
+            "type": "https://w3id.org/ontoeng/factory#MachiningTask",
+            "model": "opA01_cutting",
+            "parentObject": "opA01_3"
+        },
+        {
+            "id": "jobA_4",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "prodPlan",
+            "properties": {
+                "quantity": 1,
+                "duedate": "2024-03-02T12:00:00Z",
+                "priority": 1
+            }
+        },
+        {
+            "id": "partA_4",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "model": "parttypeA",
+            "assignmentTo": [
+                "jobA_4"
+            ]
+        },
+        {
+            "id": "pplanA_4",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "pplanA",
+            "assignmentTo": [
+                "partA_4",
+                "jobA_4"
+            ]
+        },
+        {
+            "id": "opA01_4",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA01",
+            "parentObject": "pplanA_4",
+            "successors": [
+                "opA02_4"
+            ]
+        },
+        {
+            "id": "opA02_4",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA02",
+            "parentObject": "pplanA_4",
+            "successors": [
+                "opA03_4"
+            ]
+        },
+        {
+            "id": "opA03_4",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "model": "opA03",
+            "parentObject": "pplanA_4"
+        },
+        {
+            "id": "opA01_4_setup",
+            "type": "https://w3id.org/ontoeng/factory#SetupTask",
+            "model": "opA01_setup",
+            "parentObject": "opA01_4",
+            "successors": [
+                "opA01_4_cutting"
+            ]
+        },
+        {
+            "id": "opA01_4_cutting",
+            "type": "https://w3id.org/ontoeng/factory#MachiningTask",
+            "model": "opA01_cutting",
+            "parentObject": "opA01_4"
+        },
+        {
+            "id": "hist.1.M",
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlanHistory"
+        },
+        {
+            "id": "hist.2.M",
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlanHistory"
+        },
+        {
+            "id": "hist.3.M",
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlanHistory"
+        }
+    ]
+}

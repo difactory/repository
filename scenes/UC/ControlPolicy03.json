@@ -1,0 +1,596 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "default_building",
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6",
+        "B7",
+        "B8",
+        "B9"
+    ],
+    "assets": [
+        {
+            "id": "default_building",
+            "descr": "Default building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "id": "AssemblyLine",
+            "descr": "Assembly line. An assembly system consists of facilities that are utilized for the assembly of a product or products, characterized by rigid or loose chaining of individual assembly work stations. An assembly line is a specific class of assembly systems where several work stations are linked together according to the sequence of operations required. Hence, the routing of the parts and the sequence of operations is given. This assembly line is devoted to the assembly of a hinge for furniture.",
+            "type": "https://w3id.org/ontoeng/factory#AssemblySystem",
+            "assignmentTo": [
+                "productionPlan"
+            ]
+        },
+        {
+            "id": "parttypeA",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "prodScheduleA"
+            ]
+        },
+        {
+            "id": "parttypeAraw",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "pplanA"
+            ]
+        },
+        {
+            "id": "pplanA",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTaskType",
+            "assignmentTo": [
+                "parttypeA",
+                "prodScheduleA"
+            ]
+        },
+        {
+            "id": "opA01",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA02"
+            ],
+            "taskTime": 4
+        },
+        {
+            "id": "opA02",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA03"
+            ],
+            "taskTime": 12
+        },
+        {
+            "id": "opA03",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA04"
+            ],
+            "taskTime": 14
+        },
+        {
+            "id": "opA04",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA05"
+            ],
+            "taskTime": 12
+        },
+        {
+            "id": "opA05",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA06"
+            ],
+            "taskTime": 8
+        },
+        {
+            "id": "opA06",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanA",
+            "successors": [
+                "opA07"
+            ],
+            "taskTime": 9
+        },
+        {
+            "id": "parttypeB",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "prodScheduleB"
+            ]
+        },
+        {
+            "id": "parttypeBraw",
+            "type": "https://w3id.org/ontoeng/factory#ArtifactType",
+            "assignmentTo": [
+                "pplanB"
+            ]
+        },
+        {
+            "id": "pplanB",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTaskType",
+            "assignmentTo": [
+                "parttypeB",
+                "prodScheduleB"
+            ]
+        },
+        {
+            "id": "opB01",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanB",
+            "successors": [
+                "opB02"
+            ],
+            "taskTime": 14
+        },
+        {
+            "id": "opB02",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanB",
+            "successors": [
+                "opB03"
+            ],
+            "taskTime": 16
+        },
+        {
+            "id": "opB03",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanB",
+            "successors": [
+                "opB04"
+            ],
+            "taskTime": 6
+        },
+        {
+            "id": "opB04",
+            "type": "https://w3id.org/ontoeng/factory#ManufacturingTask",
+            "parentObject": "pplanB",
+            "successors": [
+                "opB05"
+            ],
+            "taskTime": 8
+        },
+        {
+            "id": "res01m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA01"
+            ]
+        },
+        {
+            "id": "res02m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA02"
+            ]
+        },
+        {
+            "id": "res03m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA03"
+            ]
+        },
+        {
+            "id": "res04m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA04"
+            ]
+        },
+        {
+            "id": "res05m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opB01"
+            ]
+        },
+        {
+            "id": "res06m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opB02"
+            ]
+        },
+        {
+            "id": "res07m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA05",
+                "opB03"
+            ]
+        },
+        {
+            "id": "res08m",
+            "type": "https://w3id.org/ontoeng/factory#ProductionResource",
+            "assignmentTo": [
+                "opA06",
+                "opB04"
+            ]
+        },
+        {
+            "id": "M1",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B2"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res01m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000164987073064817)",
+                    "TTR": "EXP(0.00120328603267036)"
+                },
+                {
+                    "TTF": "EXP(0.000317094158378282)",
+                    "TTR": "EXP(0.00173110438892955)"
+                }
+            ]
+        },
+        {
+            "id": "M2",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B3"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res02m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000209705615229147)",
+                    "TTR": "EXP(0.00301885849362815)"
+                },
+                {
+                    "TTF": "EXP(0.000228465238938878)",
+                    "TTR": "EXP(0.00144851714356562)"
+                }
+            ]
+        },
+        {
+            "id": "M3",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B4"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res03m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000205501000196861)",
+                    "TTR": "EXP(0.00154091054239715)"
+                },
+                {
+                    "TTF": "EXP(0.000143312891132401)",
+                    "TTR": "EXP(0.00428393123979902)"
+                }
+            ]
+        },
+        {
+            "id": "M4",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B7"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res04m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000181918738631472)",
+                    "TTR": "EXP(0.00351782391093328)"
+                },
+                {
+                    "TTF": "EXP(0.00018299005956417)",
+                    "TTR": "EXP(0.00152927960705266)"
+                }
+            ]
+        },
+        {
+            "id": "M5",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B6"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res05m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000198393787450478)",
+                    "TTR": "EXP(0.00177420288519659)"
+                },
+                {
+                    "TTF": "EXP(0.000213583276614771)",
+                    "TTR": "EXP(0.00193969341649395)"
+                }
+            ]
+        },
+        {
+            "id": "M6",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B7"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res06m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000248761693264858)",
+                    "TTR": "EXP(0.00318939433435572)"
+                },
+                {
+                    "TTF": "EXP(0.000267447961565783)",
+                    "TTR": "EXP(0.00480224443685617)"
+                }
+            ]
+        },
+        {
+            "id": "M7",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B8"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res07m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000200249670620419)",
+                    "TTR": "EXP(0.00160722520193829)"
+                },
+                {
+                    "TTF": "EXP(0.000210252336316446)",
+                    "TTR": "EXP(0.00136733770978104)"
+                }
+            ]
+        },
+        {
+            "id": "M8",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "connectedTo": [
+                "B9"
+            ],
+            "assignmentTo": [
+                "AssemblyLine",
+                "res08m"
+            ],
+            "failureModes": [
+                {
+                    "TTF": "EXP(0.000253944937111669)",
+                    "TTR": "EXP(0.00138588373921709)"
+                },
+                {
+                    "TTF": "EXP(0.000280186159373064)",
+                    "TTR": "EXP(0.0029160677735099)"
+                }
+            ]
+        },
+        {
+            "id": "B1",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M1"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 50
+            }
+        },
+        {
+            "id": "B2",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M2"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 6
+            }
+        },
+        {
+            "id": "B3",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M3"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 8
+            }
+        },
+        {
+            "id": "B4",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M4"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 6
+            }
+        },
+        {
+            "id": "B5",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M5"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 10
+            }
+        },
+        {
+            "id": "B6",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M6"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 6
+            }
+        },
+        {
+            "id": "B7",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M7"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 10
+            }
+        },
+        {
+            "id": "B8",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "connectedTo": [
+                "M8"
+            ],
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 14
+            }
+        },
+        {
+            "id": "B9",
+            "type": "https://w3id.org/ontoeng/factory#BufferElement",
+            "assignmentTo": [
+                "AssemblyLine"
+            ],
+            "properties": {
+                "capacity": 50
+            }
+        },
+        {
+            "id": "productionPlan",
+            "type": "https://w3id.org/ontoeng/factory#ProductionPlan",
+            "duration": 86400
+        },
+        {
+            "id": "prodScheduleA",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "productionPlan",
+            "properties": {
+                "quantity": 8640
+            }
+        },
+        {
+            "id": "prodScheduleB",
+            "type": "https://w3id.org/ontoeng/factory#ProductionSchedule",
+            "parentObject": "productionPlan",
+            "properties": {
+                "quantity": 8640
+            }
+        },
+        {
+            "id": "c01",
+            "type": "https://w3id.org/ontoeng/controlSystem#ReleaseController",
+            "assignmentTo": [
+                "productionPlan"
+            ],
+            "controlledMach": [
+                {
+                    "machine": "M1",
+                    "policy": "conwip01"
+                },
+                {
+                    "machine": "M5",
+                    "policy": "conwip02"
+                },
+                {
+                    "machine": "M7",
+                    "policy": "conwip03"
+                }
+            ]
+        },
+        {
+            "id": "conwip01",
+            "type": "https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy",
+            "polObserved": [
+                "M2",
+                "M3",
+                "M4",
+                "B2",
+                "B3",
+                "B4"
+            ],
+            "polThreshold": 18
+        },
+        {
+            "id": "conwip02",
+            "type": "https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy",
+            "polObserved": [
+                "M5",
+                "M6",
+                "B6"
+            ],
+            "polThreshold": 6
+        },
+        {
+            "id": "conwip03",
+            "type": "https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy",
+            "polObserved": [
+                "M7",
+                "M8",
+                "B8"
+            ],
+            "polThreshold": 12
+        }
+    ]
+}

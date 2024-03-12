@@ -1,7 +1,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleB_ScheduledQuantity>
         a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                450 .
+                8640 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_failed.1_ttr_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -73,7 +73,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#prodScheduleA_ScheduledQuantity>
         a       <https://w3id.org/ontoeng/factory#ScheduledQuantity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                300 .
+                8640 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_stM>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
@@ -1527,7 +1527,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip03_Thr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasInteger>
-                20 .
+                12 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_do_opA04>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2371,7 +2371,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#conwip01_Thr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasInteger>
-                12 .
+                18 .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B9>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
