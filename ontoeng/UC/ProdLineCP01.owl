@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ontoeng/UC/ProdLineCP01#"
      xml:base="https://w3id.org/ontoeng/UC/ProdLineCP01"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
      xmlns:OWL="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#"
      xmlns:fsm="http://www.learninglab.de/~dolog/fsm/fsm.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,9 +10,14 @@
      xmlns:ssn="http://www.w3.org/ns/ssn/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:osph="https://w3id.org/ontoeng/osph#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
      xmlns:express="https://w3id.org/express#"
      xmlns:expression="https://w3id.org/ontoeng/expression#"
      xmlns:statistics="https://w3id.org/ontoeng/statistics#"
@@ -19,741 +26,6 @@
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/factory"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Source -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Target -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#contains -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement -->
-
-    <owl:AnnotationProperty rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/hasSimpleResult -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sosa/hasSimpleResult"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/observedProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sosa/observedProperty"/>
-    
-
-
-    <!-- http://www.w3.org/ns/ssn/hasProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/ssn/hasProperty"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot -->
-
-    <owl:AnnotationProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#description_IfcRoot"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct -->
-
-    <owl:AnnotationProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement -->
-
-    <owl:AnnotationProperty rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement"/>
-    
-
-
-    <!-- https://w3id.org/express#hasInteger -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/express#hasInteger"/>
-    
-
-
-    <!-- https://w3id.org/express#hasString -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/express#hasString"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#hasExecutionController -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/controlSystem#hasExecutionController"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#hasPolicyExpression -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/controlSystem#hasPolicyExpression"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#hasLhsOperand -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/expression#hasLhsOperand"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#hasOperands -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/expression#hasOperands"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#hasOperator -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/expression#hasOperator"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#hasRhsOperand -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/expression#hasRhsOperand"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#decomposesHistory -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#decomposesHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#do -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#do"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#generatesEvent -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#generatesEvent"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasConditionExpression -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasConditionExpression"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasHistory -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasHistoryAssignedObject -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryAssignedObject"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasHistoryObservations -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryObservations"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasHistoryOrigin -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasHistoryOrigin"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasIntervalEndTime -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasIntervalEndTime"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasIntervalStartTime -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasIntervalStartTime"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasPropertySimpleValue -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasPropertyValue -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertyValue"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasRelatedState -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasRelatedState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasStateFrequencies -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasStateFrequencies"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasStateMachine -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasStateMachine"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasStayRatio -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#hasStayRatio"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#isQuantitySampledFrom -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#isQuantitySampledFrom"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#representsProperty -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/osph#representsProperty"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr -->
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#duration -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Final -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Region -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Region"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcPositiveInteger"/>
-    
-
-
-    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText -->
-
-    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#RControllerIdleState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerIdleState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#RControllerReleaseState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseCondition -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseCondition"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseController -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseController"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseGuard -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseTransition -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#BinaryExpression -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/expression#BinaryExpression"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#IteratedBinaryExpression -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/expression#IteratedBinaryExpression"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/expression#Variable -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/expression#Variable"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#Artifact -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Artifact"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ArtifactType -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ArtifactType"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#AssemblySystem -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#AssemblySystem"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferCapacity -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferCapacity"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferElement -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElement"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferElementHistory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferElementHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferLevel -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferLevel"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#BufferLevelObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ExpectedDuration -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ExpectedDuration"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#FinishTime -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#FinishTime"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#FinishTimeObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineServerN -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineServerN"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineTool -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineTool"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolBlockedState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolBlockedState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolFailedState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolFailedState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolFailure -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolHistory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolIdleState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolIdleState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolStartOperation -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolStarvedState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStarvedState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolWorkingState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolWorkingState"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineWipLevel -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevel"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineWipLevelObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachiningTask -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachiningTask"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MaintenanceTask -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MaintenanceTask"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ManufacturingTask -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ManufacturingTask"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ManufacturingTaskType -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ManufacturingTaskType"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionPlan -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionPlan"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionPlanHistory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionPlanHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionResource -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionResource"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ProductionSchedule -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ProductionSchedule"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ScheduledDueDate -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledDueDate"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ScheduledPriority -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledPriority"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#ScheduledQuantity -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ScheduledQuantity"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#SetupTask -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#SetupTask"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#StartTime -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#StartTime"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#StartTimeObs -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#TaskHistory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#TaskHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#EventGeneration -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#EventGeneration"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#ProductHistory -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductHistory"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#StateFrequency -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#StateFrequency"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/statistics#ExponentialDistribution -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/statistics#ExponentialDistribution"/>
     
 
 
@@ -3259,8 +2531,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B1_0_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3295,8 +2567,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B1_12_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3305,8 +2577,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B1_1_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3341,8 +2613,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B1_23_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3351,8 +2623,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B1_2_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3385,8 +2657,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_12_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3407,8 +2679,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_13_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3430,8 +2702,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_23_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3452,8 +2724,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_29_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3475,8 +2747,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_34_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3497,8 +2769,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B2_45_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3531,8 +2803,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B3_29_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3553,8 +2825,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B3_30_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3576,8 +2848,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B3_45_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3598,8 +2870,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B3_48_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3632,8 +2904,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B4_48_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3654,8 +2926,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_B4_49_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3677,9 +2949,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_11_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_11_M1_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_11_M1_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -3698,8 +2970,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_11_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3711,9 +2983,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_13_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_13_M1_opA01"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:13Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_13_M1_opA01"/>
     </owl:NamedIndividual>
     
 
@@ -3732,8 +3004,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_13_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3745,9 +3017,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_2_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_2_M1_opA01"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_2_M1_opA01"/>
     </owl:NamedIndividual>
     
 
@@ -3758,9 +3030,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_22_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_22_M1_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:22Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_22_M1_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -3779,8 +3051,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_22_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3792,9 +3064,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_3"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_24_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_24_M1_opA01"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:24Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_24_M1_opA01"/>
     </owl:NamedIndividual>
     
 
@@ -3813,8 +3085,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_24_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3833,8 +3105,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_2_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3845,9 +3117,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_33_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_33_M1_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:33Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_33_M1_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -3866,8 +3138,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M1_33_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3890,9 +3162,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_14_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_14_M2_opA02"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:14Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_14_M2_opA02"/>
     </owl:NamedIndividual>
     
 
@@ -3911,8 +3183,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_14_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3923,9 +3195,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_28_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_28_M2_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:28Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_28_M2_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -3944,8 +3216,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_28_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3957,9 +3229,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_30_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_30_M2_opA02"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:30Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_30_M2_opA02"/>
     </owl:NamedIndividual>
     
 
@@ -3978,8 +3250,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_30_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -3990,9 +3262,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_44_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_44_M2_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:44Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_44_M2_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -4011,8 +3283,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_44_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4024,9 +3296,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_3"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_46_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_46_M2_opA02"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:46Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_46_M2_opA02"/>
     </owl:NamedIndividual>
     
 
@@ -4045,8 +3317,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M2_46_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4069,9 +3341,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_31_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_31_M3_opA03"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:31Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_31_M3_opA03"/>
     </owl:NamedIndividual>
     
 
@@ -4090,8 +3362,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_31_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4102,9 +3374,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_47_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_47_M3_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:47Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_47_M3_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -4123,8 +3395,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_47_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4136,9 +3408,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_49_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_49_M3_opA03"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:49Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_49_M3_opA03"/>
     </owl:NamedIndividual>
     
 
@@ -4157,8 +3429,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_M3_49_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4190,8 +3462,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_11_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4212,8 +3484,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_2_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4245,8 +3517,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_cutting_11_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_cutting_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4267,8 +3539,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_cutting_4_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:04Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_cutting_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:04Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4300,8 +3572,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_setup_2_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_setup_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4322,8 +3594,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_1_setup_4_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:04Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_1_setup_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:04Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4355,8 +3627,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_13_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:13Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:13Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4377,8 +3649,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_22_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:22Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:22Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4410,8 +3682,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_cutting_15_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:15Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_cutting_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:15Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4432,8 +3704,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_cutting_22_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:22Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_cutting_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:22Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4465,8 +3737,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_setup_13_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:13Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_setup_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:13Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4487,8 +3759,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_2_setup_15_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:15Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_2_setup_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:15Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4520,8 +3792,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_24_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:24Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:24Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4542,8 +3814,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_33_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:33Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:33Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4575,8 +3847,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_cutting_26_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:26Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_cutting_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:26Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4597,8 +3869,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_cutting_33_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:33Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_cutting_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:33Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4630,8 +3902,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_setup_24_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:24Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_setup_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:24Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4652,8 +3924,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA01_3_setup_26_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:26Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA01_3_setup_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:26Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4685,8 +3957,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA02_1_14_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:14Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA02_1_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:14Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4707,8 +3979,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA02_1_28_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:28Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA02_1_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:28Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4740,8 +4012,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA02_2_30_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:30Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA02_2_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:30Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4762,8 +4034,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA02_2_44_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:44Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA02_2_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:44Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4795,8 +4067,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA02_3_46_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:46Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA02_3_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:46Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4828,8 +4100,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA03_1_31_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:31Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA03_1_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:31Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4850,8 +4122,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA03_1_47_FinishTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#FinishTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:47Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA03_1_FinishTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:47Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4883,8 +4155,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.1_opA03_2_49_StartTimeObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#StartTimeObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:49Z</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#opA03_2_StartTime"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:49Z</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4959,8 +4231,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B1_0_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -4994,8 +4266,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B1_10_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5004,8 +4276,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B1_1_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5038,8 +4310,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B2_12_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5060,8 +4332,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B2_13_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5094,8 +4366,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B3_29_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5116,8 +4388,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B3_30_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5150,8 +4422,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B4_48_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5172,8 +4444,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_B4_49_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5195,9 +4467,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_11_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_11_M1_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:11Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_11_M1_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -5216,8 +4488,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_11_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5229,9 +4501,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_2_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_2_M1_opA01"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:02Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_2_M1_opA01"/>
     </owl:NamedIndividual>
     
 
@@ -5250,8 +4522,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M1_2_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5274,9 +4546,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2_14_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2_14_M2_opA02"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:14Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2_14_M2_opA02"/>
     </owl:NamedIndividual>
     
 
@@ -5295,8 +4567,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2_14_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5317,8 +4589,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M2_28_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5351,8 +4623,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M3_31_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5373,8 +4645,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.2_M3_47_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5437,8 +4709,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B1_15_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B1_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5471,8 +4743,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B2_26_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5493,8 +4765,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B2_29_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B2_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5527,8 +4799,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B3_29_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5549,8 +4821,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B3_30_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5572,8 +4844,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B3_45_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5594,8 +4866,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B3_48_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B3_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5628,8 +4900,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B4_48_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5650,8 +4922,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B4_49_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5673,8 +4945,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B4_66_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5695,8 +4967,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_B4_67_BufferLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#BufferLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#B4_BufferLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5719,9 +4991,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_16_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_16_M1_opA01"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:16Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_16_M1_opA01"/>
     </owl:NamedIndividual>
     
 
@@ -5740,8 +5012,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_16_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5752,9 +5024,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_25_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_25_M1_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:25Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_25_M1_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -5773,8 +5045,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M1_25_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M1_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5796,9 +5068,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_28_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_28_M2_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:28Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_28_M2_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -5817,8 +5089,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_28_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5830,9 +5102,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_30_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_30_M2_opA02"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:30Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_30_M2_opA02"/>
     </owl:NamedIndividual>
     
 
@@ -5851,8 +5123,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_30_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5863,9 +5135,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_44_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_44_M2_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:44Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_44_M2_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -5884,8 +5156,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M2_44_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M2_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5908,9 +5180,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_1"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_31_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_31_M3_opA03"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:31Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_31_M3_opA03"/>
     </owl:NamedIndividual>
     
 
@@ -5929,8 +5201,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_31_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5941,9 +5213,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_47_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_47_M3_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:47Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_47_M3_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -5962,8 +5234,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_47_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -5975,9 +5247,9 @@
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3"/>
         <osph:hasHistoryAssignedObject rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#partA_2"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_49_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_49_M3_opA03"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:00:49Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_49_M3_opA03"/>
     </owl:NamedIndividual>
     
 
@@ -5996,8 +5268,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_49_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
@@ -6008,9 +5280,9 @@
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
         <osph:decomposesHistory rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3"/>
         <osph:hasHistoryObservations rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_65_MachineWipLevelObs"/>
+        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_65_M3_idleComp"/>
         <osph:hasIntervalEndTime></osph:hasIntervalEndTime>
         <osph:hasIntervalStartTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-03-01T11:01:05Z</osph:hasIntervalStartTime>
-        <osph:hasStateFrequencies rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_65_M3_idleComp"/>
     </owl:NamedIndividual>
     
 
@@ -6029,8 +5301,8 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#prodPlan_hist.3_M3_65_MachineWipLevelObs">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineWipLevelObs"/>
-        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
         <sosa:observedProperty rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#M3_MachineWipLevel"/>
+        <sosa:hasSimpleResult rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sosa:hasSimpleResult>
     </owl:NamedIndividual>
     
 
