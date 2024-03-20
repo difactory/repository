@@ -1,9 +1,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX express: <https://w3id.org/express#> 
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX fa: <https://w3id.org/ontoeng/factory#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
@@ -85,9 +83,6 @@ WHERE{
 			?time rdf:type/rdfs:subClassOf* ex:RandomVariable .
 		}
 	}
-
-  
-  
 } GROUP BY ?pstep ?pstepclass ?parent ?pplan ?pplanclass ?time
 
 

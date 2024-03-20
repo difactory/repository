@@ -5,7 +5,7 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX fa: <https://w3id.org/ontoeng/factory#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
 SELECT distinct ?prodsched ?parttype ?part ?partsel ?procplan ?quantity ?duedate ?priority
@@ -13,43 +13,43 @@ SELECT distinct ?prodsched ?parttype ?part ?partsel ?procplan ?quantity ?duedate
 WHERE { 
 
 
-  ?prodsched rdf:type factory:ProductionSchedule .
-  # part / part type
-  OPTIONAL{
-	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?partsel .
-	?partsel rdf:type/rdfs:subClassOf* factory:ArtifactSelect .
-  }  
-  # process plan
-  OPTIONAL{
-	?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?procplan .
-	?procplan rdf:type/rdfs:subClassOf* factory:TaskSelect .
-  }  
-  # quantity
-  OPTIONAL{
+	?prodsched rdf:type fa:ProductionSchedule .
+	# part / part type
 	OPTIONAL{
-		?prodsched ssn:hasProperty ?prop1 .
-		?prop1 rdf:type factory:ScheduledQuantity .
-		?prop1 osph:hasPropertySimpleValue ?quantity .
-	}
+		?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?partsel .
+		?partsel rdf:type/rdfs:subClassOf* fa:ArtifactSelect .
+	}  
+	# process plan
 	OPTIONAL{
-		?prodsched ssn:hasProperty ?prop2 .
-		?prop2 rdf:type factory:ScheduledDueDate .
-		?prop2 osph:hasPropertySimpleValue ?duedate .
-	}
+		?prodsched ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?procplan .
+		?procplan rdf:type/rdfs:subClassOf* fa:TaskSelect .
+	}  
+	# quantity
 	OPTIONAL{
-		?prodsched ssn:hasProperty ?prop3 .
-		?prop3 rdf:type factory:ScheduledPriority .
-		?prop3 osph:hasPropertySimpleValue ?priority .
+		OPTIONAL{
+			?prodsched ssn:hasProperty ?prop1 .
+			?prop1 rdf:type fa:ScheduledQuantity .
+			?prop1 osph:hasPropertySimpleValue ?quantity .
+		}
+		OPTIONAL{
+			?prodsched ssn:hasProperty ?prop2 .
+			?prop2 rdf:type fa:ScheduledDueDate .
+			?prop2 osph:hasPropertySimpleValue ?duedate .
+		}
+		OPTIONAL{
+			?prodsched ssn:hasProperty ?prop3 .
+			?prop3 rdf:type fa:ScheduledPriority .
+			?prop3 osph:hasPropertySimpleValue ?priority .
+		}
 	}
-  }
   
   	{
-		?itsClass rdfs:subClassOf* factory:ArtifactType . 
+		?itsClass rdfs:subClassOf* fa:ArtifactType . 
 		?partsel rdf:type ?itsClass .
 		BIND(?partsel AS ?parttype ) .
 	}
 	UNION{
-		?itsClass rdfs:subClassOf* factory:Artifact . 
+		?itsClass rdfs:subClassOf* fa:Artifact . 
 		?partsel rdf:type ?itsClass .
 		BIND(?partsel AS ?part ) .
 	}

@@ -6,12 +6,10 @@ PREFIX stat: <https://w3id.org/ontoeng/statistics#>
 PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX express: <https://w3id.org/express#> 
+
 select distinct ?timeValue ?time ?dur ?stochDistr ?p1 ?p2 ?p3
 WHERE { 
 
-
-	# The selected element is a user-defined parameter
-	# BIND(URI("#stochasticValue#") AS ?timeValue) . 	
 
 	# TIME (deterministic)
 	OPTIONAL{

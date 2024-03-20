@@ -5,10 +5,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
-PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
-PREFIX fa: <https://w3id.org/ontoeng/factory#>
 
-select distinct ?obj ?hist ?itstype ?roothist ?dataorigin ?start ?end ?prop ?propclass ?obs ?obsclass ?obsvalue (group_concat(distinct ?assigned) as ?allassigned) ?state ?ratio # ?min ?max ?assigned 
+select distinct ?obj ?hist ?itstype ?roothist ?dataorigin ?start ?end ?prop ?propclass ?obs ?obsclass ?obsvalue (group_concat(distinct ?assigned) as ?allassigned) ?state ?ratio 
+
 WHERE { 
 
 
