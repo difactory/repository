@@ -1,16 +1,15 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
-PREFIX factory: <https://w3id.org/ontoeng/factory#> 
+PREFIX fa: <https://w3id.org/ontoeng/factory#> 
 select distinct ?parttype ?part ?pplan 
 WHERE { 
 
-
+	?pplan rdf:type/rdfs:subClassOf* fa:TaskSelect .
+	
 	{
 		?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
-		?itsClass1 rdfs:subClassOf* factory:ArtifactType . 
-		?parttype rdf:type ?itsClass1 .
+		?parttype rdf:type/rdfs:subClassOf* fa:ArtifactType .
 	}
 	UNION{
 		{
@@ -20,22 +19,6 @@ WHERE {
 		UNION{
 			?part ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
 		}
-						
-		?itsClass2 rdfs:subClassOf* factory:Artifact . 
-		?part rdf:type ?itsClass2 .
-	}
-	
-	?pplan rdf:type/rdfs:subClassOf* factory:TaskSelect .
-	
-	
-	{
-		?itsClass rdfs:subClassOf* factory:ArtifactType . 
-		?partsel rdf:type ?itsClass .
-		BIND(?partsel AS ?parttype ) .
-	}
-	UNION{
-		?itsClass rdfs:subClassOf* factory:Artifact . 
-		?partsel rdf:type ?itsClass .
-		BIND(?partsel AS ?part ) .
+		?part rdf:type/rdfs:subClassOf* fa:Artifact . 
 	}
 }

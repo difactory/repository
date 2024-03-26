@@ -14,7 +14,7 @@ WHERE {
 	# Object history
 	?itstype rdfs:subClassOf* osph:ObjectHistory .   
 	?hist rdf:type ?itstype .
-	FILTER ( ?itstype != owl:NamedIndividual ) .
+	#FILTER ( ?itstype != owl:NamedIndividual ) .
 
 	# Object
 	?obj osph:hasHistory/(osph:isDecomposedByHistory|^osph:decomposesHistory)* ?hist .	
