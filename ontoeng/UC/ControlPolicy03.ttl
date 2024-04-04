@@ -119,12 +119,12 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_lev> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_lev> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttf_pdistr>
         a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -147,7 +147,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_stv_opB02>
         a       <https://w3id.org/ontoeng/factory#MachineToolStarvedState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M6_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_ttr>
@@ -230,7 +230,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B4> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -400,7 +400,7 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_guardTrIdleWork> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#B8_lev>
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.1_ev>
@@ -659,7 +659,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_failed.2_trFailedIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -671,15 +671,15 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_wip> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#B6_BufferLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#B6_lev>
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B7> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -760,7 +760,7 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_idleComp> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M5_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_regInit_opB02>
@@ -834,7 +834,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_do_opB01>
         a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -878,7 +878,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B6>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_BufferCapacity> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6> .
 
@@ -911,7 +911,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_BufferLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_lev> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B5_BufferCapacity>
         a       <https://w3id.org/ontoeng/factory#BufferCapacity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1024,7 +1024,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_BufferLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B6_lev> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_idleComp>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1116,7 +1116,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B6> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -1317,7 +1317,7 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_opA04> , <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_finished> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M4_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B7>
@@ -1579,7 +1579,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B2>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_BufferCapacity> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B2_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2> .
 
@@ -1643,7 +1643,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#res02m>
         a       <https://w3id.org/ontoeng/factory#ProductionResource> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1655,7 +1655,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA05> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M8_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_failed.1_ttr_pdistr>
@@ -1711,7 +1711,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B7> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -1727,7 +1727,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_finished>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#B4_BufferLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#B4_lev>
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#opA06>
@@ -1863,7 +1863,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B8>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferCapacity> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B8_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8> .
 
@@ -1959,7 +1959,7 @@
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M5_failed.2_ttr_pdistr> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M3_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_failed.2_repair>
@@ -2131,7 +2131,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B3>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferCapacity> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3> .
 
@@ -2188,7 +2188,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M7>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M7_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B8> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -2218,7 +2218,7 @@
         <https://w3id.org/ontoeng/expression#hasOperator>
                 <https://w3id.org/ontoeng/expression#ADDITION> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#B3_BufferLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#B3_lev>
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.2_ttf>
@@ -2277,7 +2277,7 @@
         <https://w3id.org/ontoeng/osph#do>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_do_opA04> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M7_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_start_opB04>
@@ -2420,7 +2420,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M2>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M2_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B3> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -2462,7 +2462,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_opA03>
         a       <https://w3id.org/ontoeng/factory#MachineToolWorkingState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2636,7 +2636,7 @@
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M6_failed.1_ttf_pdistr> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_MachineWipLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#M2_wip>
         a       <https://w3id.org/ontoeng/factory#MachineWipLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4_trWorkIdle>
@@ -2654,12 +2654,12 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_MachineWipLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M3_wip> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M1_failed.2_ev>
         a       <https://w3id.org/ontoeng/factory#MachineToolFailure> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2669,7 +2669,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B4>
         a       <https://w3id.org/ontoeng/factory#BufferElement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_BufferLevel> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_BufferCapacity> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_lev> , <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_BufferCapacity> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#M4> .
 
@@ -2748,7 +2748,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#M8>
         a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_MachineWipLevel> ;
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#M8_wip> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isConnectedToElement>
                 <https://w3id.org/ontoeng/UC/ControlPolicy03#B9> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
@@ -2757,7 +2757,7 @@
 <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#representsProperty>
-                <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_BufferLevel> .
+                <https://w3id.org/ontoeng/UC/ControlPolicy03#B4_lev> .
 
-<https://w3id.org/ontoeng/UC/ControlPolicy03#B2_BufferLevel>
+<https://w3id.org/ontoeng/UC/ControlPolicy03#B2_lev>
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
