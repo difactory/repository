@@ -1,40 +1,42 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
-    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY list "https://w3id.org/list#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
-    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
-]>
-
-
 <rdf:RDF xmlns="https://w3id.org/list#"
      xml:base="https://w3id.org/list"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:list="https://w3id.org/list#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="https://w3id.org/list">
-        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://owl-workshop.man.ac.uk/acceptedLong/submission_12.pdf</rdfs:seeAlso>
         <rdfs:comment>A set of entities used to describe the OWL list pattern. </rdfs:comment>
         <rdfs:comment>This ontology is identical to the ontology originally published by Drummond et al., with namespace http://www.co-ode.org/ontologies/lists/2008/09/11/list.owl# and available at web location http://owl.cs.manchester.ac.uk/wp-content/uploads/2015/07/list.owl_.txt on 11 December 2015.</rdfs:comment>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://owl-workshop.man.ac.uk/acceptedLong/submission_12.pdf</rdfs:seeAlso>
+        <owl:backwardCompatibleWith>list</owl:backwardCompatibleWith>
         <owl:versionInfo>1.0.0 </owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
@@ -51,36 +53,36 @@
 
     <!-- https://w3id.org/list#hasContents -->
 
-    <owl:ObjectProperty rdf:about="&list;hasContents">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:subPropertyOf rdf:resource="&list;hasListProperty"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/list#hasContents">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/list#hasListProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/list#hasListProperty -->
 
-    <owl:ObjectProperty rdf:about="&list;hasListProperty">
-        <rdfs:domain rdf:resource="&list;OWLList"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/list#hasListProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/list#OWLList"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/list#hasNext -->
 
-    <owl:ObjectProperty rdf:about="&list;hasNext">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:subPropertyOf rdf:resource="&list;isFollowedBy"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/list#hasNext">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/list#isFollowedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/list#isFollowedBy -->
 
-    <owl:ObjectProperty rdf:about="&list;isFollowedBy">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:range rdf:resource="&list;OWLList"/>
-        <rdfs:subPropertyOf rdf:resource="&list;hasListProperty"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/list#isFollowedBy">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/list#hasListProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/list#OWLList"/>
     </owl:ObjectProperty>
     
 
@@ -96,18 +98,24 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
     <!-- https://w3id.org/list#EmptyList -->
 
-    <owl:Class rdf:about="&list;EmptyList">
+    <owl:Class rdf:about="https://w3id.org/list#EmptyList">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&list;OWLList"/>
+                    <rdf:Description rdf:about="https://w3id.org/list#OWLList"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&list;hasContents"/>
-                                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/list#hasContents"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -117,12 +125,12 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&list;OWLList"/>
+                    <rdf:Description rdf:about="https://w3id.org/list#OWLList"/>
                     <owl:Class>
                         <owl:complementOf>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&list;isFollowedBy"/>
-                                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
                             </owl:Restriction>
                         </owl:complementOf>
                     </owl:Class>
@@ -135,21 +143,18 @@
 
     <!-- https://w3id.org/list#OWLList -->
 
-    <owl:Class rdf:about="&list;OWLList">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    <owl:Class rdf:about="https://w3id.org/list#OWLList">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&list;isFollowedBy"/>
-                <owl:allValuesFrom rdf:resource="&list;OWLList"/>
+                <owl:onProperty rdf:resource="https://w3id.org/list#isFollowedBy"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/list#OWLList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="&owl;Thing"/>
 </rdf:RDF>
 
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
