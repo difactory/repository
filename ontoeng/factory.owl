@@ -177,6 +177,95 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/controlSystem#RControllerIdleState -->
+
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerIdleState">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseController"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/ontoeng/controlSystem#RControllerReleaseState -->
+
+    <rdf:Description rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#EventGeneration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#generatesEvent"/>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseController"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#Artifact -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Artifact">

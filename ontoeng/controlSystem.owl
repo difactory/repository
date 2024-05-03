@@ -167,14 +167,6 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/controlSystem#ControllerSimpleState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ControllerSimpleState">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ConwipControlPolicy">
@@ -218,7 +210,7 @@
     <!-- https://w3id.org/ontoeng/controlSystem#RControllerIdleState -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerIdleState">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState"/>
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
     </owl:Class>
     
 
@@ -226,7 +218,7 @@
     <!-- https://w3id.org/ontoeng/controlSystem#RControllerReleaseState -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState"/>
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
     </owl:Class>
     
 
@@ -251,14 +243,6 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseController">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseControllerSimpleState">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerSimpleState"/>
     </owl:Class>
     
 
