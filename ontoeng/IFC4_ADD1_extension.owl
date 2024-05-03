@@ -405,6 +405,14 @@ In case of only one value, then the transformation is uniform along all directio
     
 
 
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Event -->
+
+    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEvent"/>
+    </rdf:Description>
+    
+
+
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActor -->
 
     <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActor">
@@ -1418,7 +1426,6 @@ In case of only one value, then the transformation is uniform along all directio
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEvent -->
 
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEvent">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
@@ -1432,7 +1439,6 @@ In case of only one value, then the transformation is uniform along all directio
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEventType -->
 
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEventType">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen"/>

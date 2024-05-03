@@ -775,46 +775,6 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     
 
 
-    <!-- https://w3id.org/ontoeng/factory#MachineToolEvent -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolEvent">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEvent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEvent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEvent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEventType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/factory#MachineToolEventType -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolEventType">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEventType"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEvent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/factory#MachineToolExtendedStandbyState -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolExtendedStandbyState">
@@ -848,7 +808,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolFailure -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolFailure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -880,7 +840,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolFailureType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolFailureType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEventType"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEventType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
@@ -1050,7 +1010,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolStartOperation -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStartOperation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEvent"/>
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -1076,7 +1036,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolStartOperationType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolStartOperationType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolEventType"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcEventType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>

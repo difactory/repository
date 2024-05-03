@@ -557,7 +557,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#C01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#C01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#86ab6406-b4a2-4d9c-8ea0-2e656cd804b2"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -971,7 +971,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#CB01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#CB01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#46ac6e07-a1f2-4ecf-bbc4-8b5801ddfef2"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -2584,7 +2584,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#a3dc224a-f58e-4360-b017-8edd9b8c4d9e"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -2880,7 +2880,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#67e68cee-713b-4b25-b716-f37c26993d14"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -2890,7 +2890,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_failureEvent.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_failureEvent.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#e8517a94-d85a-4e5c-aaf5-0307f38cb561"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -3220,7 +3220,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI03_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI03_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#9b6f5345-2ae6-4294-ac8d-e122400d8d03"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -3502,7 +3502,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI04_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI04_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#4e370270-3353-43f1-9c29-1b69ad8e615d"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -3938,7 +3938,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#bbdbfa26-2a01-43af-b996-0fb442f64ff7"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -4390,7 +4390,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP02_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP02_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#df7c6b78-9a19-407f-98a5-93ddb8ceaaeb"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -4825,7 +4825,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP03_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP03_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#ee1e6c73-8ce4-4a75-b2e2-6e3f6787ea1f"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -5260,7 +5260,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP04_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP04_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#e038acc1-84fc-4e26-8182-57031f3ef694"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -5695,7 +5695,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP05_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP05_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#137a72d7-d56e-43c8-b4d9-d7369a821d95"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -6141,7 +6141,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PPW01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PPW01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#d0000aa9-46e9-4043-9f2d-fb9996045fd5"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -6454,7 +6454,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#d133eb7e-bada-4554-8754-2bdf6c2e1442"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -6464,7 +6464,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_failureEvent.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_failureEvent.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#536f9e22-bb70-4e6a-a313-e09f594bbc6a"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -6798,7 +6798,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#5fa8931b-edc0-4f65-a7ef-5335b01876ca"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -6808,7 +6808,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_failureEvent.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_failureEvent.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#dc502428-9f6e-4a2e-aca1-17723a1465c9"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -7142,7 +7142,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#8efdbade-9fbf-48fa-ad9c-04758a2ff707"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -7152,7 +7152,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_failureEvent.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_failureEvent.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#739ce22c-efd2-469a-b331-aaa4c726f277"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -7486,7 +7486,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_failureEvent.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_failureEvent.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#6e8fffc3-5c1c-40f2-8c59-8d5d5f728d29"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>
@@ -7496,7 +7496,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_failureEvent.2 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_failureEvent.2">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailureType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolFailure"/>
         <IFC4_ADD1_extension:hasTimeToHappen rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#23308cf2-1bf7-4361-9b62-c9bee6912015"/>
         <factory:hasMachineToolFailureType rdf:resource="https://w3id.org/ontoeng/factory#ODF"/>
     </owl:NamedIndividual>

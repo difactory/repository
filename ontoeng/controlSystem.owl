@@ -283,6 +283,18 @@
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerIdleState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
             </owl:Restriction>
