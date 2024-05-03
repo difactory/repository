@@ -640,7 +640,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#C01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#C01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -1054,7 +1054,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#CB01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#CB01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -2667,7 +2667,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -3000,7 +3000,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI02_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -3303,7 +3303,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI03_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI03_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -3585,7 +3585,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PI04_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PI04_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -4021,7 +4021,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -4473,7 +4473,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP02_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP02_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -4908,7 +4908,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP03_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP03_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -5343,7 +5343,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP04_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP04_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -5778,7 +5778,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PP05_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PP05_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -6224,7 +6224,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#PPW01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#PPW01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
         <IFC4_ADD1_extension:typesObject rdf:resource="https://w3id.org/ontoeng/demo/DFAssemblyLine#PPW01_stM_startOp.1.2"/>
     </owl:NamedIndividual>
     
@@ -6574,7 +6574,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R01_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -6918,7 +6918,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R02_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -7262,7 +7262,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R03_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
@@ -7606,7 +7606,7 @@
     <!-- https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_startOp.1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/demo/DFAssemblyLine#R04_stM_startOp.1">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperationType"/>
+        <rdf:type rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
     </owl:NamedIndividual>
     
 
