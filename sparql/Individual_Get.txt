@@ -6,5 +6,8 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT distinct ?indiv 
 WHERE { 
 	?indiv rdf:type ?class .	
-	?indiv rdf:type owl:NamedIndividual .
+	#?indiv rdf:type owl:NamedIndividual .
+	?indiv rdf:type/rdf:type owl:Class .
+	FILTER(!isBlank(?class)) .
 }
+ORDER BY ?indiv

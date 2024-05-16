@@ -1,46 +1,49 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
-PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
-PREFIX factory: <https://w3id.org/ontoeng/factory#>
-PREFIX ssn: <http://www.w3.org/ns/ssn/>
-PREFIX osph: <https://w3id.org/ontoeng/osph#>
 
 
-
-SELECT distinct ?class  ?prop ?allrange ?range #?super ?subsuper
+SELECT distinct ?class  ?prop  ?range (group_concat(distinct ?rangeelems) as ?rangeunion) # ?rangeblank ?rangeelems # ?allrange   ?super ?subsuper
 
 WHERE { 
 
-	?class rdfs:subClassOf* ?super .
+	?class rdf:type owl:Class .
+	FILTER(!isBlank(?class)) .
 	{
-		?prop rdfs:domain ?super .
-		?prop rdfs:range ?range .
+		?prop rdfs:domain/(owl:unionOf/rdf:rest*/rdf:first)* ?class .
+		?prop rdfs:range ?rangetmp .
 	}
-	UNION
-        {	
-		?super rdfs:subClassOf ?restr .
-		?restr	a owl:Restriction ;
+	UNION {	
+		?class rdfs:subClassOf ?restr .
+		{?restr	a owl:Restriction ;
 			owl:onProperty ?prop ;
-			owl:allValuesFrom ?range .
+			owl:allValuesFrom ?rangetmp .}
+		UNION
+		{?restr	a owl:Restriction ;
+			owl:onProperty ?prop ;
+			owl:someValuesFrom ?rangetmp .
+		}
 	}
-	OPTIONAL{
-		?class rdfs:subClassOf* ?subsuper .
-		?subsuper rdfs:subClassOf/owl:onProperty ?prop .
-		?subsuper rdfs:subClassOf+ ?super .		
+	UNION {	
+		?rangetmp rdfs:subClassOf ?restr .
+		{?restr	a owl:Restriction ;
+			owl:onProperty/owl:inverseOf ?prop ;
+			owl:allValuesFrom ?class .}
+		UNION
+		{?restr	a owl:Restriction ;
+			owl:onProperty/owl:inverseOf ?prop ;
+			owl:someValuesFrom ?class .
+		}
 	}
-	FILTER(!bound(?subsuper))
+	FILTER(!isBlank(?prop)) .
+	#FILTER(!isBlank(?range)) .
 	
-	{
-		?allrange rdfs:subClassOf* ?range.
+	BIND(IF(!isBlank(?rangetmp) ,?rangetmp ,  ?null)   AS ?range ) . 
+	BIND(IF(isBlank(?rangetmp) ,?rangetmp ,  ?null)   AS ?rangeblank ) . 
+	
+	OPTIONAL{	
+		?rangetmp (owl:unionOf/rdf:rest*/rdf:first) ?rangeelems .
 	}
-	UNION{
-		?range (owl:equivalentClass/owl:unionOf/rdf:rest*/rdf:first)+ ?allrange.
-	}
-	OPTIONAL{
-		?allrange owl:equivalentClass/owl:unionOf ?union .
-	}
-	FILTER(!bound(?union ))
 }  
-ORDER BY (?prop)
+GROUP BY ?class  ?prop  ?range
+ORDER BY ?class ?prop

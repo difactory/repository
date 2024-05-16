@@ -1,12 +1,25 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-select distinct ?g ?onto  (if (count(?class), "true", "false") as ?Tbox) (group_concat(distinct ?h) as ?Allimports)
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX dc1: <http://purl.org/dc/elements/1.1/>
+
+select distinct ?g ?onto ?prefix ?version (group_concat(distinct ?descr) as ?descrs) (group_concat(distinct ?comment) as ?comments) (group_concat(distinct ?creator; separator=", ") as ?creators) (if (count(?class), "true", "false") as ?Tbox) (group_concat(distinct ?h) as ?Allimports)
 where { 
 	graph ?g { 
 		?onto rdf:type owl:Ontology . 
 		FILTER ( ?onto != "" ) . 
+		OPTIONAL {?onto vann:preferredNamespacePrefix ?prefix .} 
 		OPTIONAL {?class rdf:type owl:Class. FILTER isIRI(?class)} 
-		OPTIONAL {?onto owl:imports ?import. FILTER(?onto != ?import ) 
-		graph ?h {?import rdf:type owl:Ontology. } 
-}}} GROUP BY ?g ?onto
+		OPTIONAL {?onto owl:versionIRI ?version. }
+		OPTIONAL {?onto rdfs:comment ?comment. }
+		OPTIONAL {{?onto dc:creator ?creator.}UNION{?onto dc1:creator ?creator.} }
+		OPTIONAL {{?onto dc:description ?descr. }UNION{?onto dc1:description ?descr.}}
+		OPTIONAL {
+			?onto owl:imports ?import. FILTER(?onto != ?import ) 
+			graph ?h {?import rdf:type owl:Ontology. } 
+		}
+	}
+} GROUP BY ?g ?onto ?prefix ?version
+ORDER BY ?onto

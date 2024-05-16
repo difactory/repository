@@ -1,0 +1,39 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+
+
+SELECT distinct ?class  ?prop  ?range ?allrange #  ?super ?subsuper
+
+WHERE { 
+
+	?class rdf:type owl:Class .
+	FILTER(!isBlank(?class)) .
+	?class rdfs:subClassOf* ?super .
+	{
+		?prop rdfs:domain ?super .
+		?prop rdfs:range ?range .
+	}
+	UNION
+        {	
+		?super rdfs:subClassOf ?restr .
+		?restr	a owl:Restriction ;
+			owl:onProperty ?prop ;
+			owl:allValuesFrom ?range .
+	}
+	OPTIONAL{
+		?class rdfs:subClassOf* ?subsuper .
+		?subsuper rdfs:subClassOf/owl:onProperty ?prop .
+		?subsuper rdfs:subClassOf+ ?super .		
+	}
+	FILTER(!bound(?subsuper))
+	FILTER(!isBlank(?prop)) .
+	
+	{ ?allrange rdfs:subClassOf* ?range. }
+	UNION{ ?range (owl:equivalentClass/owl:unionOf/rdf:rest*/rdf:first)+ ?allrange. }
+	
+	OPTIONAL{ ?allrange owl:equivalentClass/owl:unionOf ?union . }
+	FILTER(!bound(?union ))
+}  
+ORDER BY (?prop)
