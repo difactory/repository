@@ -40,17 +40,18 @@ INSERT {
 	GRAPH ?g{
 		?propNew a owl:NamedIndividual , fa:ExpectedDuration .
 		?mainttaskNew ssn:hasProperty ?propNew .
+		?mainttask ssn:hasProperty ?propNew .
 		?propNew osph:hasPropertyValue ?proctimeIRI .
 		?propNew osph:hasPropertySimpleValue ?proctimeDT .
 	}
 }
 WHERE {
 	GRAPH ?g{
-		?failedstate rdf:type owl:NamedIndividual .
+		?failedstate rdf:type fa:MachineToolFailedState .
 	}
 	
-	?ttr a ?ttrclass .
-	FILTER ( ?ttrclass != owl:NamedIndividual ) .	
+	#?ttr a ?ttrclass .
+	#FILTER ( ?ttrclass != owl:NamedIndividual ) .	
 	#BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"IfcDuration"),?ttr,?null) AS ?ttrDet ) . 
 	#BIND(IF(strlen(STR(?ttr))>0 && CONTAINS(STR(?ttrclass),"StochasticQuantityTime"),?ttr,?null) AS ?ttrStoch ) . 	
 		
