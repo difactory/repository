@@ -6,6 +6,7 @@ PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
 DELETE{
 	GRAPH ?g1 {?pstep ?b1 ?c1 .} 
