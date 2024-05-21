@@ -20,7 +20,7 @@ DELETE{
 	GRAPH ?g6 {?prop osph:hasPropertySimpleValue ?propvalDT .}	
 	GRAPH ?g7 {?prop osph:hasPropertyValue ?propvalInd .}	
 	GRAPH ?g8 {?propvalInd ?b8 ?c8 .}
-	GRAPH ?g9 {?cdistr ?b9 ?c9 . }
+	GRAPH ?g9 {?distr ?b9 ?c9 . }
 
 	#GRAPH ?g1{?tasktime ifc:scheduleDuration_IfcTaskTime ?duration .}
 	#GRAPH ?g2{?duration ?b1 ?c1 . }
@@ -99,7 +99,7 @@ WHERE {
 				{GRAPH ?g8 {?propvalInd ?b8 ?c8 .}}
 				UNION{
 					?propvalInd osph:isQuantitySampledFrom ?distr .
-					GRAPH ?g9 { ?cdistr ?b9 ?c9 . }
+					GRAPH ?g9 { ?distr ?b9 ?c9 . }
 				}			
 			}
 		}
