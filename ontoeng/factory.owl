@@ -17,9 +17,9 @@
     <owl:Ontology rdf:about="https://w3id.org/ontoeng/factory">
         <owl:imports rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension"/>
         <owl:imports rdf:resource="https://w3id.org/ontoeng/controlSystem"/>
-        <cc:license>https://creativecommons.org/licenses/by/4.0/</cc:license>
         <dc:creator>Walter Terkaj</dc:creator>
         <dc:description>Ontology that models factories and their components for applications related to design, management and control.</dc:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <vann:preferredNamespacePrefix>fa</vann:preferredNamespacePrefix>
         <rdfs:comment>If you wish to use this ontology, please acknowledge Walter Terkaj (CNR-STIIMA) and related publications.
 
@@ -184,6 +184,35 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
                         <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement"/>
                     </rdf:Description>
                 </owl:onProperty>
@@ -231,6 +260,35 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
                         <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
                     </owl:Restriction>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerIdleState"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -540,7 +598,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1211,7 +1269,7 @@ Generic machinery element type.</dc:description>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasSimpleResult"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
