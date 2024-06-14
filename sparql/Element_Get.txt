@@ -8,7 +8,7 @@ PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
-select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) (count(distinct ?wPos) as ?nServ) (group_concat(distinct ?taskclass) as ?taskclasses) (group_concat(distinct ?system) as ?allsys) 
+select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) ?nServ (group_concat(distinct ?taskclass) as ?taskclasses) (group_concat(distinct ?system) as ?allsys) 
 WHERE { 
 
 	?elemclass rdfs:subClassOf* ifc:IfcElement .
@@ -18,6 +18,11 @@ WHERE {
 		?elem ssn:hasProperty ?buffprop .
 		?buffprop rdf:type factory:BufferCapacity .
 		?buffprop osph:hasPropertySimpleValue ?buffCap .
+	}
+	optional{
+		?elem ssn:hasProperty ?machprop .
+		?machprop rdf:type factory:MachineServerN .
+		?machprop osph:hasPropertySimpleValue ?nServ .
 	}
 	optional{
 		?elem osph:hasStateMachine ?stm .
@@ -52,4 +57,4 @@ WHERE {
 		?system (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo) ?elem .
 		#?system (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?elem .
 	}		
-} GROUP BY ?elem ?elemclass ?buffCap
+} GROUP BY ?elem ?elemclass ?buffCap ?nServ
