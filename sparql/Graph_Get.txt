@@ -11,6 +11,7 @@ where {
 		?onto rdf:type owl:Ontology . 
 		FILTER ( ?onto != "" ) . 
 		OPTIONAL {?onto vann:preferredNamespacePrefix ?prefix .} 
+		OPTIONAL {?onto vann:preferredNamespaceUri ?namespace .} 
 		OPTIONAL {?class rdf:type owl:Class. FILTER isIRI(?class)} 
 		OPTIONAL {?onto owl:versionIRI ?version. }
 		OPTIONAL {?onto rdfs:comment ?comment. }
@@ -21,5 +22,5 @@ where {
 			graph ?h {?import rdf:type owl:Ontology. } 
 		}
 	}
-} GROUP BY ?g ?onto ?prefix ?version
+} GROUP BY ?g ?onto ?prefix ?namespace ?version
 ORDER BY ?onto
