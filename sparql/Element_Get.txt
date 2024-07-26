@@ -8,12 +8,23 @@ PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
 
-select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) ?nServ (group_concat(distinct ?taskclass) as ?taskclasses) (group_concat(distinct ?system) as ?allsys) 
+select distinct ?elem ?elemclass (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?connFrom) as ?connectedFrom) ?buffCap (count(distinct ?buffrestpos) as ?intBuffCap) ?nServ (group_concat(distinct ?taskclass) as ?taskclasses) (group_concat(distinct ?system) as ?allsys) ?machine ?buffer
 WHERE { 
 
 	?elemclass rdfs:subClassOf* ifc:IfcElement .
 	?elem rdf:type ?elemclass . 
 	FILTER ( ?elemclass != owl:NamedIndividual ) .
+	OPTIONAL{
+		{
+			?elemclass rdfs:subClassOf* factory:BufferElement .
+			BIND("yes" AS ?buffer ) .
+		}
+		UNION{
+			?elemclass rdfs:subClassOf* factory:MachineTool .
+			BIND("yes" AS ?machine ) .
+		}  
+	}		
+	
 	optional{
 		?elem ssn:hasProperty ?buffprop .
 		?buffprop rdf:type factory:BufferCapacity .
@@ -57,4 +68,4 @@ WHERE {
 		?system (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo) ?elem .
 		#?system (ifcext:hasAssignedObject|^ifcext:hasAssignmentTo)/(ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?elem .
 	}		
-} GROUP BY ?elem ?elemclass ?buffCap ?nServ
+} GROUP BY ?elem ?elemclass ?buffCap ?nServ ?machine ?buffer
