@@ -4,6 +4,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
 
 DELETE{
 	GRAPH ?g1{ ?name ?b1 ?c1 .}
