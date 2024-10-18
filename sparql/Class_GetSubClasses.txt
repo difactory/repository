@@ -4,6 +4,6 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 
 SELECT ?subclass WHERE { 
-	?subclass rdfs:subClassOf* ?class . 
+	?class (^rdfs:subClassOf | owl:equivalentClass/owl:unionOf/rdf:rest*/rdf:first)* ?subclass . 
 	?subclass rdf:type owl:Class .
 }

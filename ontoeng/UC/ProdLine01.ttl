@@ -350,7 +350,7 @@
                 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_entryAction> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_trIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
                 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_idleSt> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
@@ -448,7 +448,7 @@
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolBlockedState> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_cond>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasConditionExpression>
                 <https://w3id.org/ontoeng/UC/ProdLine01#conwip01_BinExpr> .
 
@@ -670,7 +670,7 @@
                 <https://w3id.org/ontoeng/UC/ProdLine01#M3> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_guardTrIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
                 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_cond> .
 

@@ -17,11 +17,11 @@ INSERT {
 		
 		?contrRegion a owl:NamedIndividual , fsm:Region .
 		?trRelIdle a owl:NamedIndividual , fsm:Transition .
-		?trIdleRel a owl:NamedIndividual , cs:ReleaseTransition .
+		?trIdleRel a owl:NamedIndividual , fsm:Transition .
 		?idleSt a owl:NamedIndividual , cs:RControllerIdleState .
 		?relSt a owl:NamedIndividual , cs:RControllerReleaseState .
-		?guardTrIdleRel a owl:NamedIndividual , cs:ReleaseGuard .
-		?condTrIdleRel a owl:NamedIndividual , cs:ReleaseCondition .
+		?guardTrIdleRel a owl:NamedIndividual , fsm:Guard .
+		?condTrIdleRel a owl:NamedIndividual , fsm:Condition .
 		?entryAction a owl:NamedIndividual , osph:EventGeneration .
 		?startOp a owl:NamedIndividual , factory:MachineToolStartOperation .
 		

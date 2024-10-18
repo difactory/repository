@@ -187,7 +187,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
                         <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -288,7 +288,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
                         <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
                     </rdf:Description>
                 </owl:onProperty>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

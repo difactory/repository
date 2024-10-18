@@ -427,7 +427,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M3_failed.1_repair> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M5_workComp_trIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M5_workComp_idleSt> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
@@ -506,7 +506,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M7_finished> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M7_workComp_guardTrIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M7_workComp_cond> .
 
@@ -1071,7 +1071,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M7_guardTrIdleWork> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M7_workComp_trIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M7_workComp_idleSt> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
@@ -1183,7 +1183,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_guardIdleWork_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trInitIdle_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_initSt> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_start_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_startOp> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trWorkFinal_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_idleComp> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trInitCompIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trIdleWork_opB01> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_workComp> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_failed.1_trFailedIdle> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_failed.1> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_failed.1_trWorkFailed> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_guardTrIdleWork> , <https://w3id.org/ontoeng/UC/ControlPolicy02#M5_trWorkIdle> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M1_workComp_cond>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasConditionExpression>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#conwip01_BinExpr> .
 
@@ -1437,7 +1437,7 @@
         a       <https://w3id.org/ontoeng/factory#MachineToolIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M1_workComp_trIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseTransition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M1_workComp_idleSt> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
@@ -1734,7 +1734,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M3_finished> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M1_workComp_guardTrIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M1_workComp_cond> .
 
@@ -2164,7 +2164,7 @@
         a       <https://w3id.org/ontoeng/factory#BufferLevel> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M7_workComp_cond>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasConditionExpression>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#conwip03_BinExpr> .
 
@@ -2188,7 +2188,7 @@
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#M3> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M5_workComp_guardTrIdleRel>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseGuard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M5_workComp_cond> .
 
@@ -2214,7 +2214,7 @@
                 "PT14S"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ControlPolicy02#c01_M5_workComp_cond>
-        a       <https://w3id.org/ontoeng/controlSystem#ReleaseCondition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasConditionExpression>
                 <https://w3id.org/ontoeng/UC/ControlPolicy02#conwip02_BinExpr> .
 

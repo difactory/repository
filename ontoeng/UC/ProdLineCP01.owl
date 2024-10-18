@@ -1318,7 +1318,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_cond -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_cond">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseCondition"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
         <osph:hasConditionExpression rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#conwip01_BinExpr"/>
     </owl:NamedIndividual>
     
@@ -1336,7 +1336,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_guardTrIdleRel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_guardTrIdleRel">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
         <fsm:GuardCondition rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_cond"/>
     </owl:NamedIndividual>
     
@@ -1386,7 +1386,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_trIdleRel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_trIdleRel">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <fsm:Source rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_idleSt"/>
         <fsm:Target rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_relSt"/>
         <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M1_workComp_guardTrIdleRel"/>
@@ -1407,7 +1407,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_cond -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_cond">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseCondition"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
         <osph:hasConditionExpression rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#conwip02_BinExpr"/>
     </owl:NamedIndividual>
     
@@ -1425,7 +1425,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_guardTrIdleRel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_guardTrIdleRel">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
         <fsm:GuardCondition rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_cond"/>
     </owl:NamedIndividual>
     
@@ -1475,7 +1475,7 @@
     <!-- https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_trIdleRel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_trIdleRel">
-        <rdf:type rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseTransition"/>
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <fsm:Source rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_idleSt"/>
         <fsm:Target rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_relSt"/>
         <fsm:TransitionGuard rdf:resource="https://w3id.org/ontoeng/UC/ProdLineCP01#c01_M3_workComp_guardTrIdleRel"/>

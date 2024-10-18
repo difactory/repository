@@ -1,0 +1,45 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+PREFIX express: <https://w3id.org/express#> 
+
+SELECT Distinct ?statemach ?itsObj ?objclass ?rangetmp ?rangetmp2 ?subclass
+WHERE {
+  
+	?statemach rdf:type fsm:StateMachine .
+	?itsObj osph:hasStateMachine ?statemach .
+	
+	?itsObj a ?objclass .
+	FILTER ( ?objclass != owl:NamedIndividual ) .
+	
+	?objclass rdfs:subClassOf* ?superclass .
+        ?superclass rdfs:subClassOf ?restr .
+
+	OPTIONAL{
+		?objclass rdfs:subClassOf* ?subsuper .
+		?subsuper rdfs:subClassOf/owl:onProperty osph:hasStateMachine .
+		?subsuper rdfs:subClassOf/owl:allValuesFrom/owl:onProperty fsm:contains .
+		?subsuper rdfs:subClassOf+ ?superclass .		
+	}
+	FILTER(!bound(?subsuper))
+
+
+	?restr	a owl:Restriction ;
+		owl:onProperty osph:hasStateMachine ;
+		owl:allValuesFrom ?rangetmp .
+
+	?rangetmp a owl:Restriction ;
+		owl:onProperty fsm:contains ;
+		owl:allValuesFrom ?rangetmp2 .
+
+	?rangetmp2  (owl:unionOf/rdf:rest*/rdf:first)/(^rdfs:subClassOf)* ?subclass . 
+
+	# to filter results based on branch of hierarchy
+	?subclass rdfs:subClassOf* ?filterClass .
+}

@@ -223,9 +223,9 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseCondition -->
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseCondition">
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
     </owl:Class>
     
@@ -247,23 +247,23 @@
     
 
 
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseGuard -->
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseGuard">
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseCondition"/>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/ontoeng/controlSystem#ReleaseTransition -->
+    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseTransition">
+    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -280,7 +280,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#ReleaseGuard"/>
+                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
