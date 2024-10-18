@@ -14,6 +14,7 @@ WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
 	OPTIONAL{?itsObj osph:hasStateMachine ?statemach .}
+	OPTIONAL{
 	{
 		?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
     	?state a ?stateclass .
@@ -94,6 +95,7 @@ WHERE {
 				BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
 			}      
         }
+	}
 	}
 }
 GROUP BY ?statemach ?itsObj ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?event ?cond

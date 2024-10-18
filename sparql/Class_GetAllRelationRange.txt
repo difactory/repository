@@ -21,11 +21,16 @@ WHERE {
 		?restr	a owl:Restriction ;
 			owl:onProperty ?prop ;
 			owl:allValuesFrom ?range .
+                 ?range rdf:type owl:Class .
 	}
 	OPTIONAL{
 		?class rdfs:subClassOf* ?subsuper .
-		?subsuper rdfs:subClassOf/owl:onProperty ?prop .
-		?subsuper rdfs:subClassOf+ ?super .		
+                ?subsuper rdfs:subClassOf ?restr2 .
+		?restr2 a owl:Restriction ;
+			owl:onProperty ?prop ;
+			owl:allValuesFrom ?rangesubsup .
+                ?rangesubsup rdf:type owl:Class .
+		?subsuper rdfs:subClassOf+ ?super .	
 	}
 	FILTER(!bound(?subsuper))
 	FILTER(!isBlank(?prop)) .
@@ -36,4 +41,4 @@ WHERE {
 	OPTIONAL{ ?allrange owl:equivalentClass/owl:unionOf ?union . }
 	FILTER(!bound(?union ))
 }  
-ORDER BY (?prop)
+ORDER BY (?prop) 
