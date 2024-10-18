@@ -429,7 +429,6 @@ In case of only one value, then the transformation is uniform along all directio
     <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator -->
 
     <rdf:Description rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>

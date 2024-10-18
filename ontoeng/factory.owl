@@ -324,11 +324,55 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#Actuator -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ActuatorType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#ActuatorType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ActuatorType">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuatorType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#Artifact -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Artifact">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactSelect"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#Product"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -347,7 +391,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description>Definition from VFF: class for generic products seen as the output of a production system.</dc:description>
+        <dc:description>A product  (such as a tool or ornament) showing human workmanship or modification as distinguished from a natural object.</dc:description>
     </owl:Class>
     
 
@@ -649,6 +693,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Conveyor">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -675,6 +720,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ConveyorType">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
@@ -868,7 +914,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineTool -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineTool">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolSelect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -898,6 +944,33 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolHistory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateMachine"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ontoeng/factory#MachineToolSimpleState"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Class representing machine tools.</dc:description>
@@ -1140,7 +1213,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolSimpleState -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolSimpleState">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ProductSimpleState"/>
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple"/>
     </owl:Class>
     
 
@@ -1205,7 +1278,7 @@ VffAssemblySystem represents a generic assembly system.</dc:description>
     <!-- https://w3id.org/ontoeng/factory#MachineToolType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#MachineToolType">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolSelect"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1452,7 +1525,7 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
     <!-- https://w3id.org/ontoeng/factory#Pallet -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Pallet">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -1499,7 +1572,7 @@ VffManufacturingSystem represents a generic manufacturing system.</dc:descriptio
     <!-- https://w3id.org/ontoeng/factory#PalletType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#PalletType">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
@@ -2094,7 +2167,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     <!-- https://w3id.org/ontoeng/factory#Robot -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Robot">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineTool"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -2121,7 +2194,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     <!-- https://w3id.org/ontoeng/factory#RobotType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#RobotType">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#MachineToolType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
@@ -2137,6 +2210,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#RotatingTable">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -2163,6 +2237,7 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#RotatingTableType">
         <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcTransportElementType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
@@ -2209,6 +2284,49 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#Sensor -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSensor"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByType"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#SensorType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/factory#SensorType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#SensorType">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSensorType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#Sensor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2535,7 +2653,7 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
     <!-- https://w3id.org/ontoeng/factory#Tool -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#Tool">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElement"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Artifact"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#declaresObject"/>
@@ -2561,7 +2679,7 @@ A product that is used as an DmStorageResource is referenced using the IfcRelAss
     <!-- https://w3id.org/ontoeng/factory#ToolType -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#ToolType">
-        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcElementType"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#ArtifactType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/IFC4_ADD1_extension#typesObject"/>

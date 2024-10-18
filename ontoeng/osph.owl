@@ -866,6 +866,17 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateMachine"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
+                        <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachineElement"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -958,6 +969,33 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasHistory"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#ProductHistory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasStateMachine"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#contains"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Final"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Pseudostate"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#SynchState"/>
+                                    <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+                                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductSimpleState"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>An object that can be characterized in terms of placement and geometrical representation.</dc:description>
