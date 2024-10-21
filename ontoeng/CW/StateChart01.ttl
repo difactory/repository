@@ -1,0 +1,4 @@
+<https://w3id.org/ontoeng/CW/StateChart01>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
