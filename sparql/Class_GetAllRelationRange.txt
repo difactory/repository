@@ -31,6 +31,7 @@ WHERE {
 			owl:allValuesFrom ?rangesubsup .
                 ?rangesubsup rdf:type owl:Class .
 		?subsuper rdfs:subClassOf+ ?super .	
+		FILTER ( ?subsuper != ?super ) .
 	}
 	FILTER(!bound(?subsuper))
 	FILTER(!isBlank(?prop)) .

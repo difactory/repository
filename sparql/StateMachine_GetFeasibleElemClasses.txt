@@ -12,29 +12,30 @@ PREFIX express: <https://w3id.org/express#>
 SELECT Distinct ?statemach ?itsObj ?objclass ?rangetmp ?rangetmp2 ?subclass
 WHERE {
   
+ 	?itsObj osph:hasStateMachine ?statemach .
 	?statemach rdf:type fsm:StateMachine .
-	?itsObj osph:hasStateMachine ?statemach .
 	
 	?itsObj a ?objclass .
 	FILTER ( ?objclass != owl:NamedIndividual ) .
 	
 	?objclass rdfs:subClassOf* ?superclass .
-        ?superclass rdfs:subClassOf ?restr .
-
+    ?superclass rdf:type owl:Class .
+	
 	OPTIONAL{
 		?objclass rdfs:subClassOf* ?subsuper .
+        ?subsuper rdf:type owl:Class .     
 		?subsuper rdfs:subClassOf/owl:onProperty osph:hasStateMachine .
 		?subsuper rdfs:subClassOf/owl:allValuesFrom/owl:onProperty fsm:contains .
 		?subsuper rdfs:subClassOf+ ?superclass .		
 	}
 	FILTER(!bound(?subsuper))
 
-
-	?restr	a owl:Restriction ;
+    ?superclass rdfs:subClassOf ?restr .
+	?restr	rdf:type owl:Restriction;
 		owl:onProperty osph:hasStateMachine ;
 		owl:allValuesFrom ?rangetmp .
 
-	?rangetmp a owl:Restriction ;
+	?rangetmp rdf:type owl:Restriction;
 		owl:onProperty fsm:contains ;
 		owl:allValuesFrom ?rangetmp2 .
 

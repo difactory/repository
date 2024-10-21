@@ -9,93 +9,109 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?itsObj ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) ?parent ?statetype ?stateclass ?transition ?target ?event ?cond
+SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) ?parent ?statetype ?stateclass ?transition ?source ?target ?event ?cond
 WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
+	
 	OPTIONAL{?itsObj osph:hasStateMachine ?statemach .}
+	
 	OPTIONAL{
-	{
-		?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
-    	?state a ?stateclass .
-    	FILTER ( ?stateclass != owl:NamedIndividual ) .
-    	{?state rdf:type/rdfs:subClassOf* fsm:Simple . BIND("Simple" as ?statetype)} 
-        UNION {?state rdf:type fsm:Composite . BIND("Composite" as ?statetype)} 
-		UNION {?state rdf:type fsm:Region . BIND("Region" as ?statetype)} 
-		UNION {?state rdf:type fsm:Initial . BIND("Initial" as ?statetype)} 
-		UNION {?state rdf:type fsm:Final . BIND("Final" as ?statetype)} 
-		 
-        OPTIONAL{ ?parent fsm:contains|fsm:hasStateMachineElement ?state . }
-        OPTIONAL{ ?outtr fsm:Source ?state . }
-        OPTIONAL{ ?state osph:do ?doactivity . 
-                OPTIONAL { ?doactivity ifcext:isDefinedByType|^ifcext:typesObject ?doactivityModel} .
-    			OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
+		?statemach fsm:contains/fsm:hasStateMachineElement* ?elem .
+			
+		{
+			# STATE 
+			
+			#?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
+			BIND(?elem as ?state)
+			?elem a ?stateclass .
+			FILTER ( ?stateclass != owl:NamedIndividual ) .
+			{?elem rdf:type/rdfs:subClassOf* fsm:Simple . BIND("Simple" as ?statetype)} 
+			UNION {?elem rdf:type fsm:Composite . BIND("Composite" as ?statetype)} 
+			UNION {?elem rdf:type fsm:Region . BIND("Region" as ?statetype)} 
+			UNION {?elem rdf:type fsm:Initial . BIND("Initial" as ?statetype)} 
+			UNION {?elem rdf:type fsm:Final . BIND("Final" as ?statetype)} 
+			
+			
+			 
+			OPTIONAL{ ?parent fsm:hasStateMachineElement ?elem . }
+			OPTIONAL{ ?outtr fsm:Source ?elem . }
+			OPTIONAL{ ?elem osph:do ?doactivity . 
+					OPTIONAL { ?doactivity ifcext:isDefinedByType|^ifcext:typesObject ?doactivityModel} .
+					OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
+			}
+			OPTIONAL{ ?elem fsm:Entry/osph:generatesEvent ?onentryEvent . 
+					OPTIONAL { ?onentryEvent ifcext:isDefinedByType|^ifcext:typesObject ?onentryEventModel} .
+					OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
+			}
+			OPTIONAL{ ?elem fsm:Exit/osph:generatesEvent ?onexitEvent . 
+					OPTIONAL { ?onexitEvent ifcext:isDefinedByType|^ifcext:typesObject ?onexitEventModel} .
+					OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
+			}
 		}
-        OPTIONAL{ ?state fsm:Entry/osph:generatesEvent ?onentryEvent . 
-                OPTIONAL { ?onentryEvent ifcext:isDefinedByType|^ifcext:typesObject ?onentryEventModel} .
-    			OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
-      	}
-        OPTIONAL{ ?state fsm:Exit/osph:generatesEvent ?onexitEvent . 
-                OPTIONAL { ?onexitEvent ifcext:isDefinedByType|^ifcext:typesObject ?onexitEventModel} .
-    			OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
-      	}
-	}
-  	UNION{
-    	?statemach fsm:contains/fsm:hasStateMachineElement* ?transition .
-    	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
-		?transition fsm:Target ?target .
-    	OPTIONAL{
-            ?transition fsm:TransitionGuard ?guard .
-      		OPTIONAL{?guard fsm:GuardEvent ?event .}
-      		OPTIONAL{
-				?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
+		UNION{
+		
+			# TRANSITION 
+			
+			#?statemach fsm:contains/fsm:hasStateMachineElement* ?transition .
+			?elem rdf:type/rdfs:subClassOf* fsm:Transition .
+			?elem fsm:Source ?source .
+			?elem fsm:Target ?target .
+			
+			BIND(?elem as ?transition)
+			
+			OPTIONAL{
+				?elem fsm:TransitionGuard ?guard .
+				OPTIONAL{?guard fsm:GuardEvent ?event .}
+				OPTIONAL{
+					?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
 
-				# BIN EXPRESSION
-				?expr rdf:type ex:BinaryExpression .
-				?expr ex:hasOperator/rdfs:label ?operator .  
-				# LHS	
-				{
-					?expr ex:hasLhsOperand ?lhs .
+					# BIN EXPRESSION
+					?expr rdf:type ex:BinaryExpression .
+					?expr ex:hasOperator/rdfs:label ?operator .  
+					# LHS	
 					{
-						SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
-						WHERE {
-							?expriter rdf:type ex:IteratedBinaryExpression .   
-							?expriter ex:hasOperator/rdfs:label ?operator1 .  
-							?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
-						} GROUP BY ?expriter ?operator1     
+						?expr ex:hasLhsOperand ?lhs .
+						{
+							SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
+							WHERE {
+								?expriter rdf:type ex:IteratedBinaryExpression .   
+								?expriter ex:hasOperator/rdfs:label ?operator1 .  
+								?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+							} GROUP BY ?expriter ?operator1     
+						}
+						FILTER(?lhs=?expriter ) .
+						BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
 					}
-					FILTER(?lhs=?expriter ) .
-					BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
-				}
-				UNION{
-					?expr ex:hasLhsOperand ?lhs .
-					?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
-					?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
-				}  
-				# RHS
-				{
-					?expr ex:hasRhsOperand ?rhs .
+					UNION{
+						?expr ex:hasLhsOperand ?lhs .
+						?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
+						?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
+					}  
+					# RHS
 					{
-						SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
-						WHERE {
-							?expriter2 rdf:type ex:IteratedBinaryExpression .   
-							?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
-							?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
-						} GROUP BY ?expriter2 ?operator2     
+						?expr ex:hasRhsOperand ?rhs .
+						{
+							SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
+							WHERE {
+								?expriter2 rdf:type ex:IteratedBinaryExpression .   
+								?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
+								?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
+							} GROUP BY ?expriter2 ?operator2     
+						}
+						FILTER(?rhs=?expriter2 ) .
+						BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
 					}
-					FILTER(?rhs=?expriter2 ) .
-					BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
-				}
-				UNION{
-					?expr ex:hasRhsOperand ?rhs .
-					?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
-					?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
-				}    
+					UNION{
+						?expr ex:hasRhsOperand ?rhs .
+						?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
+						?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
+					}    
 
-				BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
-			}      
-        }
-	}
+					BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
+				}      
+			}
+		}
 	}
 }
-GROUP BY ?statemach ?itsObj ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?event ?cond
+GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?event ?cond

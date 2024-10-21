@@ -36,7 +36,7 @@ WHERE {
 		}
 	}
 	FILTER(!isBlank(?prop)) .
-	#FILTER(!isBlank(?range)) .
+	FILTER(!isBlank(?range)) .
 	
 	BIND(IF(!isBlank(?rangetmp) ,?rangetmp ,  ?null)   AS ?range ) . 
 	BIND(IF(isBlank(?rangetmp) ,?rangetmp ,  ?null)   AS ?rangeblank ) . 

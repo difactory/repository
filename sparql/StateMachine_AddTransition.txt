@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+PREFIX express: <https://w3id.org/express#> 
+
+
+INSERT { 
+	GRAPH ?graph { 
+		?statemach fsm:contains ?transition .
+		?transition fsm:Source ?source .
+		?transition fsm:Target ?target .
+	}
+}
+WHERE{
+
+	?statemach rdf:type fsm:StateMachine .
+	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
+
+}
