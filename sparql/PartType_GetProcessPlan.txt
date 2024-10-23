@@ -2,23 +2,27 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#> 
 PREFIX fa: <https://w3id.org/ontoeng/factory#> 
-select distinct ?parttype ?part ?pplan 
+select distinct ?partsel ?parttype ?part ?pplan 
 WHERE { 
 
 	?pplan rdf:type/rdfs:subClassOf* fa:TaskSelect .
 	
 	{
-		?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
-		?parttype rdf:type/rdfs:subClassOf* fa:ArtifactType .
+		?partsel ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
+		?partsel rdf:type/rdfs:subClassOf* fa:ArtifactType .
+		
+		BIND(?partsel as ?parttype)
 	}
 	UNION{
 		{
-			?part ifcext:isDefinedByType ?parttype .
+			?partsel ifcext:isDefinedByType ?parttype .
 			?parttype ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
 		}
 		UNION{
-			?part ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
+			?partsel ifcext:hasAssignedObject|^ifcext:hasAssignmentTo ?pplan .
 		}
-		?part rdf:type/rdfs:subClassOf* fa:Artifact . 
+		?partsel rdf:type/rdfs:subClassOf* fa:Artifact . 
+		
+		BIND(?partsel as ?part)
 	}
 }
