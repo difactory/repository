@@ -13,23 +13,28 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M2_opA02> , <https://w3id.org/ontoeng/UC/ProdLine01#M2_finished> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttf>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttf_pdistr> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_regInit_opA03>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttr>
+<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTF>
         a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttr_pdistr> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTF_pdistr> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTF_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00016666666666666666"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_guardTrWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ev> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTR_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.005"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_guardIdleWork_opA03>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -39,12 +44,17 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ev>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolFailure> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttf> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTF> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_repairTask_ExpectedDuration>
         a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertyValue>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttr> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTR> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTF.1>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTF.1_pdistr> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#AssemblyLine>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#AssemblySystem> ;
@@ -86,20 +96,15 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_stv_opA03>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolStarvedState> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#parttypeA>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#ArtifactType> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
-                <https://w3id.org/ontoeng/UC/ProdLine01#pplanA> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_reg_opA03>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M3_stv_opA03> , <https://w3id.org/ontoeng/UC/ProdLine01#M3_blk_opA03> , <https://w3id.org/ontoeng/UC/ProdLine01#M3_regInit_opA03> , <https://w3id.org/ontoeng/UC/ProdLine01#M3_idle_opA03> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttf>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttf_pdistr> .
+<https://w3id.org/ontoeng/UC/ProdLine01#parttypeA>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#ArtifactType> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/UC/ProdLine01#pplanA> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01>
         a       <https://w3id.org/ontoeng/controlSystem#ReleaseController> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -118,13 +123,18 @@
         <http://www.w3.org/ns/ssn/hasProperty>
                 <https://w3id.org/ontoeng/UC/ProdLine01#B4_BufferCapacity> .
 
+<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTR_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.005833333333333333"^^<http://www.w3.org/2001/XMLSchema#double> .
+
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_finished>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_repairTask_ExpectedDuration>
         a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertyValue>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttr> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTR> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_lev_var>
         a       <https://w3id.org/ontoeng/expression#Variable> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -157,13 +167,18 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 1 .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_startOp_1>
-        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolStartOperation> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#res03m>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#ProductionResource> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M3> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_startOp_1>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolStartOperation> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTR_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.004666666666666667"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_trRelIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -180,11 +195,6 @@
                 <https://w3id.org/ontoeng/expression#LESSTHANOREQUAL> ;
         <https://w3id.org/ontoeng/expression#hasRhsOperand>
                 <https://w3id.org/ontoeng/UC/ProdLine01#conwip01_Thr> .
-
-<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttf_pdistr>
-        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
-                "0.000203076051462444"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M2>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineTool> ;
@@ -247,6 +257,11 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
                 <https://w3id.org/ontoeng/UC/ProdLine01#opA03> .
 
+<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTF.1>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTF.1_pdistr> .
+
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolFailedState> ;
         <https://w3id.org/ontoeng/osph#do>
@@ -268,7 +283,7 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ev>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolFailure> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttf> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTF.1> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_reg>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Region> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -324,6 +339,11 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M2> .
 
+<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTF.1_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.0003"^^<http://www.w3.org/2001/XMLSchema#double> .
+
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_repair>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MaintenanceTask> ;
         <http://www.w3.org/ns/ssn/hasProperty>
@@ -343,6 +363,11 @@
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#ManufacturingTask> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ProdLine01#opA03> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTF.1_pdistr>
+        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
+                "0.00025"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_relSt>
         a       <https://w3id.org/ontoeng/controlSystem#RControllerReleaseState> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -365,11 +390,6 @@
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M2_idleComp> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttf>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttf_pdistr> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_trWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
@@ -385,7 +405,7 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_repairTask_ExpectedDuration>
         a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertyValue>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttr> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTR> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M3_trIdleWork>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -493,11 +513,6 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_regInit_opA01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttr>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttr_pdistr> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_trInitCompIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
@@ -513,10 +528,15 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#c01_M1_workComp_idleSt>
         a       <https://w3id.org/ontoeng/controlSystem#RControllerIdleState> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
+<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTR>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_timeTTR_pdistr> .
+
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ev>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#MachineToolFailure> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasTimeToHappen>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttf> .
+                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTF.1> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_trInitIdle_opA01>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -599,17 +619,7 @@
 <https://w3id.org/ontoeng/UC/ProdLine01#prodPlan_ExpectedDuration>
         a       <https://w3id.org/ontoeng/factory#ExpectedDuration> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                "PT8H"^^<http://www.w3.org/2001/XMLSchema#duration> .
-
-<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_ttf_pdistr>
-        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
-                "0.000163398461185276"^^<http://www.w3.org/2001/XMLSchema#double> .
-
-<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_ttf_pdistr>
-        a       <https://w3id.org/ontoeng/statistics#ExponentialDistribution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/statistics#hasLambda_ExponentialDistr>
-                "0.000239131644671569"^^<http://www.w3.org/2001/XMLSchema#double> .
+                "PT1H"^^<http://www.w3.org/2001/XMLSchema#duration> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M2_trWorkIdle>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -628,15 +638,10 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDefinedByObject>
                 <https://w3id.org/ontoeng/UC/ProdLine01#opA02> .
 
-<https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttr>
-        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
-                <https://w3id.org/ontoeng/UC/ProdLine01#M3_failed.1_ttr_pdistr> .
-
 <https://w3id.org/ontoeng/UC/ProdLine01#jobA_ScheduledQuantity>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#ScheduledQuantity> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                100 .
+                50 .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#default_building_descr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -656,6 +661,11 @@
                 <https://w3id.org/ontoeng/UC/ProdLine01#AssemblyLine> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/UC/ProdLine01#jobA> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTR>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ProdLine01#M2_failed.1_timeTTR_pdistr> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_guardTrWorkFailed>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -763,6 +773,11 @@
                 <https://w3id.org/ontoeng/UC/ProdLine01#M1_opA01> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
                 <https://w3id.org/ontoeng/UC/ProdLine01#M1_guardIdleWork_opA01> .
+
+<https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTR>
+        a       <https://w3id.org/ontoeng/IFC4_ADD1_extension#StochasticQuantityTime> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#isQuantitySampledFrom>
+                <https://w3id.org/ontoeng/UC/ProdLine01#M1_failed.1_timeTTR_pdistr> .
 
 <https://w3id.org/ontoeng/UC/ProdLine01#AssemblyLine_descr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcText> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
