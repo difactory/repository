@@ -5,14 +5,15 @@ PREFIX vann: <http://purl.org/vocab/vann/>
 PREFIX dc: <http://purl.org/dc/terms/>
 PREFIX dc1: <http://purl.org/dc/elements/1.1/>
 
-select distinct ?g ?onto ?prefix ?version (group_concat(distinct ?descr) as ?descrs) (group_concat(distinct ?comment) as ?comments) (group_concat(distinct ?creator; separator=", ") as ?creators) (if (count(?class), "true", "false") as ?Tbox) (group_concat(distinct ?h) as ?Allimports)
+select distinct ?g ?onto ?prefix ?version (group_concat(distinct ?descr) as ?descrs) (group_concat(distinct ?comment) as ?comments) (group_concat(distinct ?creator; separator=", ") as ?creators) (if (count(?class)+count(?objprop), "true", "false") as ?Tbox) (group_concat(distinct ?h) as ?Allimports)
 where { 
 	graph ?g { 
 		?onto rdf:type owl:Ontology . 
 		FILTER ( ?onto != "" ) . 
 		OPTIONAL {?onto vann:preferredNamespacePrefix ?prefix .} 
 		OPTIONAL {?onto vann:preferredNamespaceUri ?namespace .} 
-		OPTIONAL {?class rdf:type owl:Class. FILTER isIRI(?class)} 
+		OPTIONAL { { ?class rdf:type owl:Class. FILTER isIRI(?class). } UNION {?objprop rdf:type owl:ObjectProperty.}}
+		#OPTIONAL {?objprop rdf:type owl:ObjectProperty. FILTER isIRI(?objprop)} 
 		OPTIONAL {?onto owl:versionIRI ?version. }
 		OPTIONAL {?onto rdfs:comment ?comment. }
 		OPTIONAL {{?onto dc:creator ?creator.}UNION{?onto dc1:creator ?creator.} }
