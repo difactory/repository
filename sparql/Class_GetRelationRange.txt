@@ -10,19 +10,14 @@ WHERE {
 	?class rdf:type owl:Class .
 	FILTER(!isBlank(?class)) .
 	{
-		?prop rdfs:domain/(owl:unionOf/rdf:rest*/rdf:first)* ?class .
+		?prop rdfs:domain/(owl:unionOf/rdf:rest*/rdf:first)? ?class .
 		?prop rdfs:range ?rangetmp .
 	}
 	UNION {	
 		?class rdfs:subClassOf ?restr .
 		{?restr	a owl:Restriction ;
 			owl:onProperty ?prop ;
-			owl:allValuesFrom ?rangetmp .}
-		UNION
-		{?restr	a owl:Restriction ;
-			owl:onProperty ?prop ;
-			owl:someValuesFrom ?rangetmp .
-		}
+			owl:allValuesFrom|owl:someValuesFrom ?rangetmp .}
 	}
 	UNION {	
 		?rangetmp rdfs:subClassOf ?restr .

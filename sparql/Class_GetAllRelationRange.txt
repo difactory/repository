@@ -12,16 +12,16 @@ WHERE {
 	FILTER(!isBlank(?class)) .
 	?class rdfs:subClassOf* ?super .
 	{
-		?prop rdfs:domain ?super .
+		?prop rdfs:domain/(owl:unionOf/rdf:rest*/rdf:first)? ?super.
 		?prop rdfs:range ?range .
 	}
 	UNION
-        {	
+    {	
 		?super rdfs:subClassOf ?restr .
 		?restr	a owl:Restriction ;
 			owl:onProperty ?prop ;
-			owl:allValuesFrom ?range .
-                 ?range rdf:type owl:Class .
+			owl:allValuesFrom|owl:someValuesFrom ?range .
+        ?range rdf:type owl:Class .
 	}
 	OPTIONAL{
 		?class rdfs:subClassOf* ?subsuper .
