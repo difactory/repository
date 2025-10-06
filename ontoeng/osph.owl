@@ -1173,6 +1173,20 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#ProductMotionType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductMotionType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#ProductProperty -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductProperty">
