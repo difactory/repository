@@ -1195,6 +1195,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductFriction"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMass"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMotionType"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity"/>
                 </owl:unionOf>
