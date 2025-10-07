@@ -12,24 +12,17 @@ PREFIX express: <https://w3id.org/express#>
 
 INSERT { 
 	GRAPH ?graph { 
-		?statemach fsm:contains ?transition .
-		?transition fsm:Source ?source .
-		?transition fsm:Target ?target .
+		?statemach fsm:contains ?action .
 		
-		?guardNew a owl:NamedIndividual , fsm:Guard .
-		?transition fsm:TransitionGuard ?guardNew .
-		
-		?guard fsm:GuardEvent ?event .
-		?guardNew fsm:GuardEvent ?event .
+		?stateEntry fsm:Entry ?action .
+		?stateExit fsm:Exit ?action .		
 	}
 }
 WHERE{
 
 	?statemach rdf:type fsm:StateMachine .
-	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
+	?action rdf:type/rdfs:subClassOf* fsm:Action .
 
-	OPTIONAL{?transition fsm:TransitionGuard ?guard . }
-	
-	BIND(IF(bound(?guard),?null ,URI(CONCAT(STR(?transition),"_guard")) ) AS ?guardNew ) .
+
 
 }

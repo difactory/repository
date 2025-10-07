@@ -10,7 +10,7 @@ PREFIX osph: <https://w3id.org/ontoeng/osph#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX factory: <https://w3id.org/ontoeng/factory#>
 
-SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?propCV) as ?allpropCV) 
+SELECT distinct ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap ?statechart (group_concat(distinct ?itsAssignments) as ?allAssignments) (group_concat(distinct ?itsModeled) as ?allModeled) (group_concat(distinct ?containedElem) as ?allContainedElem) (group_concat(distinct ?connTo) as ?connectedTo) (group_concat(distinct ?failstate) as ?failstates) (group_concat(distinct ?propCV) as ?allpropCV) 
 
 WHERE { 
 
@@ -47,6 +47,10 @@ WHERE {
 	OPTIONAL { ?asset (ifcext:isConnectedToElement|^ifcext:isConnectedFromElement) ?connTo . }	.
 
 	OPTIONAL{
+		?asset osph:hasStateMachine ?statechart .
+	}
+
+	OPTIONAL{
 		?asset osph:hasStateMachine ?stm .
 		?stm fsm:contains ?failstate .
 		?failstate rdf:type/rdfs:subClassOf* factory:MachineToolFailedState . 
@@ -75,4 +79,4 @@ WHERE {
 			?objplace ifc:placementRelTo_IfcLocalPlacement/^ifc:objectPlacement_IfcProduct ?itsRelTo .
 		}
 	}
-} GROUP BY ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap 
+} GROUP BY ?asset ?itsType ?itsDescr ?itsModel ?reprLUp ?reprLoc ?itsPos ?itsRot ?itsRelTo ?itsParent ?itsBuilding ?buffCap ?statechart

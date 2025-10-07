@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?event ?cond
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?event ?cond
 WHERE {
   
 	# STATE 	
@@ -30,77 +30,87 @@ WHERE {
 	OPTIONAL{ ?parent fsm:hasStateMachineElement ?state . }
 	
 	# ACTIONS
-	OPTIONAL{ ?state osph:do ?doactivity . 
-			OPTIONAL { ?doactivity ifcext:isDefinedByType|^ifcext:typesObject ?doactivityModel} .
-			OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
+	{
+		OPTIONAL{ ?state osph:do ?doactivity . 
+				OPTIONAL { ?doactivity ifcext:isDefinedByType|^ifcext:typesObject ?doactivityModel} .
+				OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
+		}
+		OPTIONAL{ ?state fsm:Entry ?entryAction .
+				?entryAction a ?entryActionClass .
+				FILTER ( ?entryActionClass != owl:NamedIndividual ) .
+				OPTIONAL { ?entryAction osph:generatesEvent ?onentryEvent . 
+					OPTIONAL { ?onentryEvent ifcext:isDefinedByType|^ifcext:typesObject ?onentryEventModel} .
+					OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
+				}
+		}
+		OPTIONAL{ ?state fsm:Exit ?exitAction .
+				OPTIONAL { ?exitAction osph:generatesEvent ?onexitEvent .
+					OPTIONAL { ?onexitEvent ifcext:isDefinedByType|^ifcext:typesObject ?onexitEventModel} .
+					OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
+				}
+		}
 	}
-	OPTIONAL{ ?state fsm:Entry/osph:generatesEvent ?onentryEvent . 
-			OPTIONAL { ?onentryEvent ifcext:isDefinedByType|^ifcext:typesObject ?onentryEventModel} .
-			OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
-	}
-	OPTIONAL{ ?state fsm:Exit/osph:generatesEvent ?onexitEvent . 
-			OPTIONAL { ?onexitEvent ifcext:isDefinedByType|^ifcext:typesObject ?onexitEventModel} .
-			OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
-	}
-
-	# OUTCOMING TRANSITION # ?outTransition ?transitionTarget
-	OPTIONAL{ 
-	
-		?outTransition fsm:Source ?state . 
-		?outTransition rdf:type/rdfs:subClassOf* fsm:Transition .
-		?outTransition fsm:Target ?transitionTarget .
-				
-		OPTIONAL{
-			?outTransition fsm:TransitionGuard ?guard .
-			OPTIONAL{?guard fsm:GuardEvent ?event .}
+	UNION
+	{
+		# OUTCOMING TRANSITION # ?outTransition ?transitionTarget
+		OPTIONAL{ 
+		
+			?outTransition fsm:Source ?state . 
+			?outTransition rdf:type/rdfs:subClassOf* fsm:Transition .
+			?outTransition fsm:Target ?transitionTarget .
+					
 			OPTIONAL{
-				?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
+				?outTransition fsm:TransitionGuard ?guard .
+				OPTIONAL{?guard fsm:GuardEvent ?event .}
+				OPTIONAL{
+					?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
 
-				# BIN EXPRESSION
-				?expr rdf:type ex:BinaryExpression .
-				?expr ex:hasOperator/rdfs:label ?operator .  
-				# LHS	
-				{
-					?expr ex:hasLhsOperand ?lhs .
+					# BIN EXPRESSION
+					?expr rdf:type ex:BinaryExpression .
+					?expr ex:hasOperator/rdfs:label ?operator .  
+					# LHS	
 					{
-						SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
-						WHERE {
-							?expriter rdf:type ex:IteratedBinaryExpression .   
-							?expriter ex:hasOperator/rdfs:label ?operator1 .  
-							?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
-						} GROUP BY ?expriter ?operator1     
+						?expr ex:hasLhsOperand ?lhs .
+						{
+							SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
+							WHERE {
+								?expriter rdf:type ex:IteratedBinaryExpression .   
+								?expriter ex:hasOperator/rdfs:label ?operator1 .  
+								?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+							} GROUP BY ?expriter ?operator1     
+						}
+						FILTER(?lhs=?expriter ) .
+						BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
 					}
-					FILTER(?lhs=?expriter ) .
-					BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
-				}
-				UNION{
-					?expr ex:hasLhsOperand ?lhs .
-					?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
-					?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
-				}  
-				
-				# RHS
-				{
-					?expr ex:hasRhsOperand ?rhs .
+					UNION{
+						?expr ex:hasLhsOperand ?lhs .
+						?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
+						?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
+					}  
+					
+					# RHS
 					{
-						SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
-						WHERE {
-							?expriter2 rdf:type ex:IteratedBinaryExpression .   
-							?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
-							?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
-						} GROUP BY ?expriter2 ?operator2     
+						?expr ex:hasRhsOperand ?rhs .
+						{
+							SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
+							WHERE {
+								?expriter2 rdf:type ex:IteratedBinaryExpression .   
+								?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
+								?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
+							} GROUP BY ?expriter2 ?operator2     
+						}
+						FILTER(?rhs=?expriter2 ) .
+						BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
 					}
-					FILTER(?rhs=?expriter2 ) .
-					BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
-				}
-				UNION{
-					?expr ex:hasRhsOperand ?rhs .
-					?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
-					?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
-				}    
+					UNION{
+						?expr ex:hasRhsOperand ?rhs .
+						?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
+						?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
+					}    
 
-				BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
-			}      
+					BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
+				}      
+			}
 		}
 	}
 }
