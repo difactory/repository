@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?event ?cond
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?exitActionClass ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?event ?cond
 WHERE {
   
 	# STATE 	
@@ -29,13 +29,13 @@ WHERE {
 	# PARENT (Composite)
 	OPTIONAL{ ?parent fsm:hasStateMachineElement ?state . }
 	
-	# ACTIONS
+	# ACTIONS and ACTIVITY
 	{
-		OPTIONAL{ ?state osph:do ?doactivity . 
+		{ ?state osph:do ?doactivity . 
 				OPTIONAL { ?doactivity ifcext:isDefinedByType|^ifcext:typesObject ?doactivityModel} .
 				OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
 		}
-		OPTIONAL{ ?state fsm:Entry ?entryAction .
+		UNION{ ?state fsm:Entry ?entryAction .
 				?entryAction a ?entryActionClass .
 				FILTER ( ?entryActionClass != owl:NamedIndividual ) .
 				OPTIONAL { ?entryAction osph:generatesEvent ?onentryEvent . 
@@ -43,7 +43,9 @@ WHERE {
 					OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
 				}
 		}
-		OPTIONAL{ ?state fsm:Exit ?exitAction .
+		UNION{ ?state fsm:Exit ?exitAction .
+				?exitAction a ?exitActionClass .
+				FILTER ( ?exitAction != owl:NamedIndividual ) .
 				OPTIONAL { ?exitAction osph:generatesEvent ?onexitEvent .
 					OPTIONAL { ?onexitEvent ifcext:isDefinedByType|^ifcext:typesObject ?onexitEventModel} .
 					OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
