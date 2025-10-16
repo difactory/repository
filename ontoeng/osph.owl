@@ -538,6 +538,16 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasTransitionDelay -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasTransitionDelay">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Automatic transition with delay in seconds</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -738,6 +748,12 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionName"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasTransitionDelay"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
