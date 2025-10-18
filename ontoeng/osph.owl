@@ -124,15 +124,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#hasActionVelocity -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionVelocity">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ontoeng/osph#hasConditionExpression -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasConditionExpression">
