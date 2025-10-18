@@ -18,12 +18,13 @@ WHERE {
 
 	?prop rdf:type ?proptype .
 
-	OPTIONAL{
-		{?prop owl:inverseOf ?invprop .} UNION {?invprop owl:inverseOf ?prop .}
+	{ 
+		?indiv ?prop ?target .
 	}
-
-	{ ?indiv ?prop ?target .}
 	UNION
-	{ ?target ?invprop ?indiv . }
+	{ 
+		{?prop owl:inverseOf ?invprop .} UNION {?invprop owl:inverseOf ?prop .}
+		?target ?invprop ?indiv . 
+	}
 
 }  

@@ -223,14 +223,6 @@
     
 
 
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseControlPolicy">
@@ -243,46 +235,6 @@
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/controlSystem#ReleaseController">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/controlSystem#ControllerFB"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardCondition"/>
-                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition -->
-
-    <owl:Class rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerIdleState"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Target"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard"/>
-                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
 </rdf:RDF>
 

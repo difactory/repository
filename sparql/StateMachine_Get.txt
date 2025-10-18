@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?event ?cond ?action ?actionClass
+SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay ?event ?cond ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actPos ?actRot ?actVel
 WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
@@ -71,6 +71,8 @@ WHERE {
 			
 			BIND(?elem as ?transition)
 			
+			OPTIONAL{?elem osph:hasTransitionDelay ?trDelay .}
+			
 			OPTIONAL{
 				?elem fsm:TransitionGuard ?guard .
 				OPTIONAL{?guard fsm:GuardEvent ?event .}
@@ -126,14 +128,21 @@ WHERE {
 		UNION{
 	
 			# ACTION 	
-			?elem rdf:type/rdfs:subClassOf* fsm:Action .
+			?elem fsm:Entry ?action . 
+			?action rdf:type/rdfs:subClassOf* fsm:Action .
 			
-			?elem a ?actionClass .
-			FILTER ( ?actionClass != owl:NamedIndividual ) .
+			?action a ?actionClass .
+			FILTER ( ?actionClass != owl:NamedIndividual ) .		
 			
-			BIND(?elem as ?action)
-		
+			OPTIONAL{?action osph:hasActionDelay ?actDelay .}
+			OPTIONAL{?action osph:hasActionDuration ?actDuration .}
+			OPTIONAL{?action osph:hasActionTarget ?actTarget .}
+			
+			OPTIONAL{?action osph:hasActionPlacement/ifcext:hasLocation ?actPos .}
+			OPTIONAL{?action osph:hasActionPlacement/ifcext:hasEulerAnglesYXZ ?actRot .}
+			
+			OPTIONAL{?action osph:hasActionVelocity ?actVel .}
 		}
 	}
 }
-GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?event ?cond  ?action ?actionClass
+GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel

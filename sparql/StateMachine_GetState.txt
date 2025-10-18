@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?exitActionClass ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?event ?cond
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?exitActionClass ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?trDelay ?event ?cond
 WHERE {
   
 	# STATE 	
@@ -60,6 +60,8 @@ WHERE {
 			?outTransition fsm:Source ?state . 
 			?outTransition rdf:type/rdfs:subClassOf* fsm:Transition .
 			?outTransition fsm:Target ?transitionTarget .
+			
+			OPTIONAL{?outTransition osph:hasTransitionDelay ?trDelay .}
 					
 			OPTIONAL{
 				?outTransition fsm:TransitionGuard ?guard .
