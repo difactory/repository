@@ -7,9 +7,16 @@ PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
 PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
 PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
-PREFIX express: <https://w3id.org/express#> 
+PREFIX express: <https://w3id.org/express#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-
+DELETE{
+	GRAPH ?g0{?transition osph:hasTransitionDelay ?delayOLD .}
+	GRAPH ?g1{
+		?transition fsm:TransitionGuard ?guardDEL . 
+		?guardDEL a owl:NamedIndividual , fsm:Guard .
+	}
+}
 INSERT { 
 	GRAPH ?graph { 
 		?statemach fsm:contains ?transition .
@@ -21,15 +28,28 @@ INSERT {
 		
 		?guard fsm:GuardEvent ?event .
 		?guardNew fsm:GuardEvent ?event .
+		
+		?transition osph:hasTransitionDelay ?delay .
+		?transition osph:hasTransitionDelay ?delayDefault .
 	}
 }
 WHERE{
 
-	?statemach rdf:type fsm:StateMachine .
+	#?statemach rdf:type fsm:StateMachine .
 	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
 
-	OPTIONAL{?transition fsm:TransitionGuard ?guard . }
+	OPTIONAL{ GRAPH ?g1{?transition fsm:TransitionGuard ?guard . } }
 	
-	BIND(IF(bound(?guard),?null ,URI(CONCAT(STR(?transition),"_guard")) ) AS ?guardNew ) .
-
+	BIND(IF(!bound(?guard) && bound(?event),URI(CONCAT(STR(?transition),"_guard")) ,?null ) AS ?guardNew ) .
+	
+	BIND(IF(bound(?event) , "0.0"^^xsd:double , ?null) AS ?delayDefault ) .
+	
+	BIND(IF(bound(?guard) && bound(?delay) && (?delay > 0) ,?guard ,?null ) AS ?guardDEL ) .
+	
+	OPTIONAL { 
+		FILTER(BOUND(?delay))
+		GRAPH ?g0{?transition osph:hasTransitionDelay ?delayOLD .}
+	}
+	
+	# Position, Rotation, Velocity
 }

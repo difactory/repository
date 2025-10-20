@@ -37,7 +37,7 @@ WHERE {
 		UNION {
 		  ?stM fsm:contains ?region .
           ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
-          ?entryAction osph:generatesEvent ?startOp .
+          ?entryAction osph:generatesEvent|osph:hasActionTarget ?startOp .
           { ?entryAction ?b7 ?c7 . } UNION { ?startOp ?b8 ?c8 . } UNION { ?a9 ?b9 ?startOp . } 			
 		}	
 	}

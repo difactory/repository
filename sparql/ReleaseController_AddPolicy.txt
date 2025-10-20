@@ -23,7 +23,7 @@ WHERE {
 	?trIdleRel fsm:Source ?idleSt .
 	
 	?relSt fsm:Entry ?entryAction .
-	?entryAction osph:generatesEvent ?startOp .
+	?entryAction osph:generatesEvent|osph:hasActionTarget ?startOp .
 	?eventType ifcext:typesObject|ifcext:declaresObject ?startOp .
 	
 	?trIdleRel fsm:TransitionGuard ?guardTrIdleRel .

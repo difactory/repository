@@ -43,7 +43,8 @@ INSERT {
 		?guardTrIdleRel fsm:GuardCondition ?condTrIdleRel .
 		
 		?relSt fsm:Entry ?entryAction .
-		?entryAction osph:generatesEvent ?startOp .
+		#?entryAction osph:generatesEvent ?startOp .
+		?entryAction osph:hasActionTarget ?startOp .
 		
 		?eventType ifcext:declaresObject ?startOp .
 	}

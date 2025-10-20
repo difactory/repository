@@ -98,7 +98,7 @@ WHERE {
 	# controller
 	UNION{
 		?statemachelem1 fsm:GuardEvent/(ifcext:typesObject|ifcext:declaresObject) ?startOp .
-		?region fsm:hasStateMachineElement/fsm:Entry/osph:generatesEvent ?startOp .
+		?region fsm:hasStateMachineElement/fsm:Entry/(osph:generatesEvent|osph:hasActionTarget) ?startOp .
 		?region fsm:hasStateMachineElement ?statemachelem3 .
 		{ GRAPH ?g12{?region ?b12 ?c12 . } }
 		UNION { GRAPH ?g13{?a13 ?b13 ?region . } } 

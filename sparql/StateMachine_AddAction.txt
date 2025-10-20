@@ -9,20 +9,59 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-
+DELETE{
+	GRAPH ?g0{?action osph:hasActionDelay ?delayOLD .}
+	GRAPH ?g1{?action osph:hasActionDuration ?durationOLD .}
+	GRAPH ?g2{?action osph:hasActionTarget ?targetOLD .}
+	GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
+	GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
+	GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
+}
 INSERT { 
 	GRAPH ?graph { 
 		?statemach fsm:contains ?action .
 		
 		?stateEntry fsm:Entry ?action .
-		?stateExit fsm:Exit ?action .		
+		?stateExit fsm:Exit ?action .	
+
+		?action osph:hasActionDelay ?delay .
+		?action osph:hasActionDuration ?duration .
+		?action osph:hasActionTarget ?target .
+		
+		?action osph:hasActionLocation ?position .
+		?action osph:hasActionRotation ?rotation .
+		?action osph:hasActionVelocity ?velocity .
+		
 	}
 }
 WHERE{
 
-	?statemach rdf:type fsm:StateMachine .
+	#?statemach rdf:type fsm:StateMachine .
 	?action rdf:type/rdfs:subClassOf* fsm:Action .
 
-
+	OPTIONAL { 
+		FILTER(BOUND(?delay))
+		GRAPH ?g0{?action osph:hasActionDelay ?delayOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?duration))
+		GRAPH ?g1{?action osph:hasActionDuration ?durationOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?target))
+		GRAPH ?g2{?action osph:hasActionTarget ?targetOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?position))
+		GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?rotation))
+		GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?velocity))
+		GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
+	}
 
 }

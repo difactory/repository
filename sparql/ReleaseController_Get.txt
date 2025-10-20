@@ -14,7 +14,7 @@ WHERE {
 	?controller osph:hasStateMachine ?stM .
 	?stM fsm:contains ?region .
 	?region fsm:hasStateMachineElement ?relState .
-	?relState fsm:Entry/osph:generatesEvent ?event .
+	?relState fsm:Entry/(osph:generatesEvent|osph:hasActionTarget) ?event .
 	?controlledMach osph:hasStateMachine/fsm:contains/fsm:hasStateMachineElement* ?trIdleWork .
 	?trIdleWork fsm:Target ?workstate .
 	?trIdleWork fsm:TransitionGuard/fsm:GuardEvent ?eventType .

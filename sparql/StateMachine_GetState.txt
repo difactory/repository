@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?exitActionClass ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?trDelay ?event ?cond
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?entryActionClass ?onentryEvent ?onentryEventModel ?exitAction ?exitActionClass ?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?trDelay ?event ?cond 
 WHERE {
   
 	# STATE 	
@@ -42,6 +42,15 @@ WHERE {
 					OPTIONAL { ?onentryEvent ifcext:isDefinedByType|^ifcext:typesObject ?onentryEventModel} .
 					OPTIONAL { ?onentryEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onentryEventModel} .
 				}
+				
+				OPTIONAL{?entryAction osph:hasActionDelay ?actDelay .}
+				OPTIONAL{?entryAction osph:hasActionDuration ?actDuration .}
+				OPTIONAL{?entryAction osph:hasActionTarget ?actTarget .}
+				
+				OPTIONAL{?entryAction osph:hasActionLocation ?actPos .}
+				OPTIONAL{?entryAction osph:hasActionRotation ?actRot .}
+				
+				OPTIONAL{?entryAction osph:hasActionVelocity ?actVel .}							
 		}
 		UNION{ ?state fsm:Exit ?exitAction .
 				?exitAction a ?exitActionClass .

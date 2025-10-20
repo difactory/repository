@@ -30,7 +30,7 @@ WHERE {
 	UNION {?eventType rdf:type factory:MachineToolStartOperation .} 
 	
     ?region fsm:hasStateMachineElement/fsm:Entry ?entryAction .
-    ?entryAction osph:generatesEvent ?startOp .  
+    ?entryAction osph:generatesEvent|osph:hasActionTarget ?startOp .  
 	GRAPH ?g7{ ?eventType ifcext:typesObject|ifcext:declaresObject ?startOp .}
 	
 	{GRAPH ?g2{ ?region ?b0 ?c0 .}} 
