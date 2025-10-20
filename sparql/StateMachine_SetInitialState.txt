@@ -1,0 +1,33 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+PREFIX express: <https://w3id.org/express#> 
+
+
+INSERT { 
+	GRAPH ?graph { 
+	
+		?initialState a owl:NamedIndividual , fsm:Initial .
+		
+		?initialTransition a owl:NamedIndividual , fsm:Transition .
+		?initialTransition fsm:Source ?initialState .
+		?initialTransition fsm:Target ?state .		
+		
+		?statemach fsm:contains ?initialState .
+		?statemach fsm:contains ?initialTransition .
+	}
+}
+WHERE{
+
+	?statemach rdf:type fsm:StateMachine .
+	
+	BIND(URI(CONCAT(STR(?state),"_initial") ) AS ?initialState ) . 
+	BIND(URI(CONCAT(STR(?state),"_initialTr") ) AS ?initialTransition ) . 
+
+}
