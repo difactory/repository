@@ -1,0 +1,88 @@
+<https://w3id.org/ontoeng/CW/StateChart05#M1_trIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_idleComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_guardTrIdleWork> .
+
+<https://w3id.org/ontoeng/CW/StateChart05>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://www.w3.org/2002/07/owl#imports>
+                <https://w3id.org/ontoeng/factory> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#pplanA>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isNestedByObject>
+                <https://w3id.org/ontoeng/CW/StateChart05#op20> , <https://w3id.org/ontoeng/CW/StateChart05#op10> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_idleComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#GateStop>
+        a       <https://w3id.org/ontoeng/factory#Actuator> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_stM>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_guardTrIdleWork> , <https://w3id.org/ontoeng/CW/StateChart05#M1_idleComp> , <https://w3id.org/ontoeng/CW/StateChart05#M1_workComp> , <https://w3id.org/ontoeng/CW/StateChart05#M1_initSt> , <https://w3id.org/ontoeng/CW/StateChart05#M1_guardIdleWork_op10> , <https://w3id.org/ontoeng/CW/StateChart05#M1_trInitCompIdle> , <https://w3id.org/ontoeng/CW/StateChart05#M1_trIdleWork> , <https://w3id.org/ontoeng/CW/StateChart05#M1_trWorkIdle> , <https://w3id.org/ontoeng/CW/StateChart05#M1_startOp> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#Conveyor01>
+        a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_finished>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Final> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#op20>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_trInitCompIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_initSt> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_idleComp> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_guardTrIdleWork>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_startOp> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1>
+        a       <https://w3id.org/ontoeng/factory#MachineTool> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasStateMachine>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_stM> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#op10>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingTask> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isPredecessorToProcess>
+                <https://w3id.org/ontoeng/CW/StateChart05#op20> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#jobshop>
+        a       <https://w3id.org/ontoeng/factory#ManufacturingSystem> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_trWorkIdle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_workComp> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_idleComp> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#PartA>
+        a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasAssignedObject>
+                <https://w3id.org/ontoeng/CW/StateChart05#pplanA> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_workComp>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Composite> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#hasStateMachineElement>
+                <https://w3id.org/ontoeng/CW/StateChart05#M1_finished> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_initSt>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart05#M1_startOp>
+        a       <https://w3id.org/ontoeng/factory#MachineToolStartOperation> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
