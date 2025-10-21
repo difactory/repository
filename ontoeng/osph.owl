@@ -1255,6 +1255,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMass"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMotionType"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductShapeType"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity"/>
                 </owl:unionOf>
             </owl:Class>
@@ -1271,6 +1272,20 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ProductShapeType -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ProductShapeType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasPropertySimpleValue"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
