@@ -1,7 +1,7 @@
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
-                "49.5 -4403 220" ;
+                "49.5 -4405 220" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "-1 -3.2310891488651735e-15 0; 3.2310891488651735e-15 -1 0; 0 0 1" .
 
@@ -491,7 +491,7 @@
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
-                "315 -2875 230" ;
+                "129 -2875 230" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
@@ -818,6 +818,11 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductShapeType>
+        a       <https://w3id.org/ontoeng/osph#ProductShapeType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "MESH" .
+
 <https://w3id.org/ontoeng/CW/StateChart02#box_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
@@ -1050,7 +1055,7 @@
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
-                "410 -2600 220" ;
+                "410 -2595 220" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
@@ -1759,7 +1764,7 @@
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#Conveyor> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductMotionType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductRestitution> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductMass> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductFriction> ;
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductMotionType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductShapeType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductRestitution> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductMass> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductFriction> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
@@ -1858,6 +1863,11 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st_init> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductShapeType>
+        a       <https://w3id.org/ontoeng/osph#ProductShapeType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "MESH" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2355,7 +2365,7 @@
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#Conveyor> ;
         <http://www.w3.org/ns/ssn/hasProperty>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMotionType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductFriction> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMass> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductRestitution> ;
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMotionType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductFriction> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMass> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductShapeType> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductRestitution> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
