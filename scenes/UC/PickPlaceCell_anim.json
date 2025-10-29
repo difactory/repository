@@ -46,7 +46,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "startB"
+                        "data": "B2startB"
                     }
                 }
             ]
@@ -76,7 +76,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "stop"
+                        "data": "B2stop"
                     }
                 }
             ]
@@ -121,7 +121,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "startB"
+                        "data": "B1startB"
                     }
                 }
             ]
@@ -136,7 +136,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "stop"
+                        "data": "B1stop"
                     }
                 }
             ]
@@ -151,7 +151,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "startB"
+                        "data": "B1startB"
                     }
                 }
             ]
@@ -166,7 +166,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "stop"
+                        "data": "B1stop"
                     }
                 }
             ]
@@ -181,7 +181,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "startB"
+                        "data": "B1startB"
                     }
                 }
             ]
@@ -196,7 +196,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "stop"
+                        "data": "B1stop"
                     }
                 }
             ]
@@ -211,7 +211,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "startB"
+                        "data": "B1startB"
                     }
                 }
             ]
@@ -226,7 +226,7 @@
                     },
                     "event": {
                         "type": "sendEvent",
-                        "data": "stop"
+                        "data": "B1stop"
                     }
                 }
             ]
