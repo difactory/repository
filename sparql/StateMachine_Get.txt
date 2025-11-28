@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay ?event ?cond ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPos ?actRot ?actVel
+SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay ?event ?cond ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink
 WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
@@ -123,7 +123,7 @@ WHERE {
 		UNION{
 	
 			# ACTION 	
-			?elem fsm:Entry ?action . 
+			?elem fsm:Entry|fsm:Exit ?action . 
 			?action rdf:type/rdfs:subClassOf* fsm:Action .
 			
 			?action a ?actionClass .
@@ -143,7 +143,13 @@ WHERE {
 			OPTIONAL{?action osph:hasActionRotation ?actRot .}
 			
 			OPTIONAL{?action osph:hasActionVelocity ?actVel .}
+			
+			OPTIONAL{?action osph:hasActionReprRef ?actRepr .}
+			OPTIONAL{?action osph:hasActionReprColor ?actColor .}
+			OPTIONAL{?action osph:hasActionReprIntensity ?actIntensity .}
+			OPTIONAL{?action osph:hasActionReprBlinkInterval ?actBlink .}
+
 		}
 	}
 }
-GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPlace  ?actPos ?actRot ?actVel
+GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPlace  ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink

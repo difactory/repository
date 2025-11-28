@@ -16,6 +16,10 @@ DELETE{
 	GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
 	GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
 	GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
+	GRAPH ?g6{?action osph:hasActionReprRef ?reprrefOLD .}
+	GRAPH ?g7{?action osph:hasActionReprColor ?reprcolorOLD .}
+	GRAPH ?g8{?action osph:hasActionReprIntensity ?reprintensityOLD .}	
+	GRAPH ?g9{?action osph:hasActionReprBlinkInterval ?reprblinkOLD .}	
 }
 INSERT { 
 	GRAPH ?graph { 
@@ -31,7 +35,11 @@ INSERT {
 		?action osph:hasActionLocation ?position .
 		?action osph:hasActionRotation ?rotation .
 		?action osph:hasActionVelocity ?velocity .
-		
+	
+		?action osph:hasActionReprRef ?reprref .
+		?action osph:hasActionReprColor ?reprcolor .
+		?action osph:hasActionReprIntensity ?reprintensity .	
+		?action osph:hasActionReprBlinkInterval ?reprblink .	
 	}
 }
 WHERE{
@@ -63,5 +71,20 @@ WHERE{
 		FILTER(BOUND(?velocity))
 		GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
 	}
-
+	OPTIONAL { 
+		FILTER(BOUND(?reprref))
+		GRAPH ?g6{?action osph:hasActionReprRef ?reprrefOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?reprcolor))
+		GRAPH ?g7{?action osph:hasActionReprColor ?reprcolorOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?reprintensity))
+		GRAPH ?g8{?action osph:hasActionReprIntensity ?reprintensityOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?reprblink))
+		GRAPH ?g9{?action osph:hasActionReprBlinkInterval ?reprblinkOLD .}
+	}		
 }
