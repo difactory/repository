@@ -338,6 +338,15 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasTransitionAction -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasTransitionAction">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
+        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#hasValueUnit -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasValueUnit">
