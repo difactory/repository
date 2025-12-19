@@ -27,6 +27,7 @@ INSERT {
 		
 		?stateEntry fsm:Entry ?action .
 		?stateExit fsm:Exit ?action .	
+		?transition osph:hasTransitionAction ?action .	
 
 		?action osph:hasActionDelay ?delay .
 		?action osph:hasActionDuration ?duration .

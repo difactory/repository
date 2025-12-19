@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?trDelay ?event ?cond 
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?transitionAction ?trDelay ?event ?cond 
 WHERE {
   
 	# STATE 	
@@ -36,7 +36,12 @@ WHERE {
 				OPTIONAL { ?doactivity ifcext:isDefinedByObject|^ifcext:declaresObject ?doactivityModel} .		
 		}
 		UNION {
-			?state fsm:Entry|fsm:Exit ?action .
+			#{?state fsm:Entry|fsm:Exit ?action .}
+			#UNION{
+			#	?outTransition fsm:Source ?state . 
+			#	?outTransition osph:hasTransitionAction ?action .
+			#}	
+			
 			{ 
 				?state fsm:Entry ?action .			
 				BIND(?action AS ?entryAction) 				
@@ -53,6 +58,12 @@ WHERE {
 					OPTIONAL { ?onexitEvent ifcext:isDefinedByObject|^ifcext:declaresObject ?onexitEventModel} .
 				}
 			}
+			UNION{
+				?outTransition fsm:Source ?state . 
+				?outTransition osph:hasTransitionAction ?action .
+				BIND(?action AS ?transitionAction)
+			}
+			
 			?action a ?actClass .
 			FILTER ( ?actClass != owl:NamedIndividual ) .
 			
@@ -78,8 +89,9 @@ WHERE {
 		
 			?outTransition fsm:Source ?state . 
 			?outTransition rdf:type/rdfs:subClassOf* fsm:Transition .
-			?outTransition fsm:Target ?transitionTarget .
+			OPTIONAL{?outTransition fsm:Target ?transitionTarget .}
 			
+			OPTIONAL{?outTransition osph:hasTransitionAction ?transitionAction .}
 			OPTIONAL{?outTransition osph:hasTransitionDelay ?trDelay .}
 					
 			OPTIONAL{
