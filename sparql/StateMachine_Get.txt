@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay (group_concat(distinct ?trAction) as ?trActs) ?event ?cond ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink
+SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay (group_concat(distinct ?trAction) as ?trActs) ?event ?cond ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPos ?actRot ?actVel ?actLoop ?actRepr ?actColor ?actIntensity ?actBlink
 WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
@@ -145,6 +145,8 @@ WHERE {
 			
 			OPTIONAL{?action osph:hasActionVelocity ?actVel .}
 			
+			OPTIONAL{?action osph:isActionInLoop ?actLoop .}
+			
 			OPTIONAL{?action osph:hasActionReprRef ?actRepr .}
 			OPTIONAL{?action osph:hasActionReprColor ?actColor .}
 			OPTIONAL{?action osph:hasActionReprIntensity ?actIntensity .}
@@ -153,4 +155,4 @@ WHERE {
 		}
 	}
 }
-GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPlace  ?actPos ?actRot ?actVel ?actRepr ?actColor ?actIntensity ?actBlink
+GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actDelay ?actDuration ?actTarget ?actTargetSM ?actPlace  ?actPos ?actRot ?actVel ?actLoop ?actRepr ?actColor ?actIntensity ?actBlink

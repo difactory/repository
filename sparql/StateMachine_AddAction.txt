@@ -16,6 +16,7 @@ DELETE{
 	GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
 	GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
 	GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
+	GRAPH ?g51{?action osph:isActionInLoop ?loopOLD .}
 	GRAPH ?g6{?action osph:hasActionReprRef ?reprrefOLD .}
 	GRAPH ?g7{?action osph:hasActionReprColor ?reprcolorOLD .}
 	GRAPH ?g8{?action osph:hasActionReprIntensity ?reprintensityOLD .}	
@@ -36,6 +37,8 @@ INSERT {
 		?action osph:hasActionLocation ?position .
 		?action osph:hasActionRotation ?rotation .
 		?action osph:hasActionVelocity ?velocity .
+		
+		?action osph:isActionInLoop ?loop .
 	
 		?action osph:hasActionReprRef ?reprref .
 		?action osph:hasActionReprColor ?reprcolor .
@@ -71,6 +74,10 @@ WHERE{
 	OPTIONAL { 
 		FILTER(BOUND(?velocity))
 		GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
+	}
+	OPTIONAL { 
+		FILTER(BOUND(?loop))
+		GRAPH ?g51{?action osph:isActionInLoop ?loopOLD .}
 	}
 	OPTIONAL { 
 		FILTER(BOUND(?reprref))
