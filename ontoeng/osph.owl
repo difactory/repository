@@ -94,6 +94,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasActionParameter -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionParameter">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#hasActionRelTo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionRelTo">
@@ -586,6 +594,24 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#hasParameterName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasParameterName">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasParameterValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasParameterValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionParameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#hasPropertySimpleValue -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertySimpleValue">
@@ -937,6 +963,30 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionMoveTo">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ActionMotion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ActionParameter -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionParameter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ActionRaiseEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionRaiseEvent">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#ActionSendEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionSendEvent">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
     </owl:Class>
     
 
