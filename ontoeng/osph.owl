@@ -98,6 +98,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionParameter">
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
     </owl:ObjectProperty>
     
 
@@ -108,6 +109,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionMotion"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#ObjectPlacement"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -117,6 +119,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionTarget">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -136,6 +139,15 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasControlledVariable">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasExtendedStateVariable -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasExtendedStateVariable">
+        <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
     </owl:ObjectProperty>
     
@@ -501,6 +513,16 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionMotion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasActionReferenceValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionReferenceValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -511,6 +533,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionSetRepresentation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
         <skos:definition></skos:definition>
     </owl:DatatypeProperty>
     
@@ -522,6 +545,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionSetRepresentation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -532,6 +556,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionSetRepresentation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -541,6 +566,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionReprRef">
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionSetRepresentation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -551,6 +577,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionMotion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -561,6 +588,27 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionSurfaceVelocity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasExprName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasExprName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasExprValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasExprValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -590,24 +638,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasNumberOfObservations">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <dc:description>Number of times the state was entered.</dc:description>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasParameterName -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasParameterName">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionParameter"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasParameterValue -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasParameterValue">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ActionParameter"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -929,6 +959,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#ActionAssignment -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionAssignment">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#ActionGenerateAsset -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionGenerateAsset">
@@ -967,17 +1005,17 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#ActionParameter -->
+    <!-- https://w3id.org/ontoeng/osph#ActionRaiseEvent -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionParameter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionRaiseEvent">
+        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#ActionRaiseEvent -->
+    <!-- https://w3id.org/ontoeng/osph#ActionReference -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionRaiseEvent">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionReference">
         <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
     </owl:Class>
     
@@ -1065,6 +1103,7 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                 <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:Class>
     
 
@@ -1621,6 +1660,7 @@ history interval.</dc:description>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Action that assigns a value to a variable</dc:description>
+        <rdfs:comment>DEPRECATED</rdfs:comment>
     </owl:Class>
     
 
