@@ -98,7 +98,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasActionParameter">
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#AtomicExpression"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/expression#Variable"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -277,6 +284,15 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasQuantityUnit">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#Quantity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#StochasticQuantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
     </owl:ObjectProperty>
     
 
@@ -363,15 +379,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasTransitionAction">
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
         <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasValueUnit -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasValueUnit">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ConstantValue"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
     </owl:ObjectProperty>
     
 
@@ -626,6 +633,24 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasPropertySimpleValue">
         <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#StaticProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasQuantityName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasQuantityName">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#hasQuantityValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#hasQuantityValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#Quantity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
 
@@ -1073,20 +1098,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#ConstantValue -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ConstantValue">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Constant"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasValueUnit"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/osph#DataOrigin -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#DataOrigin"/>
@@ -1490,6 +1501,20 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#isHistoryOf"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#Project"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#Quantity -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#Quantity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Constant"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasQuantityUnit"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#UnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
