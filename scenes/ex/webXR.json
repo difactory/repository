@@ -258,6 +258,10 @@
                         "entry": [
                             {
                                 "type": "xstate.raise",
+                                "event": "updatePlacement"
+                            },
+                            {
+                                "type": "xstate.raise",
                                 "event": "updateMovement"
                             }
                         ]
