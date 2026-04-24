@@ -1,0 +1,434 @@
+﻿{
+    "context": {
+        "UnitOfMeasureScale": 0.01,
+        "Zup": false,
+        "RepoPath": ""
+    },
+    "scene": [
+        "building",
+        "Controller",
+        "AssetLoader",
+        "part_1",
+        "part_2",
+        "box",
+        "spindle",
+        "B1"
+    ],
+    "assets": [
+        {
+            "id": "building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding"
+        },
+        {
+            "id": "Controller",
+            "type": "https://w3id.org/ontoeng/factory#Actuator"
+        },
+        {
+            "id": "AssetLoader",
+            "type": "https://w3id.org/ontoeng/factory#Actuator",
+            "placementRelTo": "building"
+        },
+        {
+            "id": "part",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "Part_blue.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "properties": {
+                "mass": 1,
+                "restitution": 0.1,
+                "friction": 0.95
+            }
+        },
+        {
+            "id": "part_1",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "Part_green.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                31.7,
+                23,
+                340
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "properties": {
+                "mass": 1,
+                "restitution": 0.1,
+                "friction": 0.95
+            }
+        },
+        {
+            "id": "part_2",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "Part_blue.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                31.7,
+                23,
+                372.5
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "properties": {
+                "mass": 1,
+                "restitution": 0.1,
+                "friction": 0.95
+            }
+        },
+        {
+            "id": "box",
+            "type": "https://w3id.org/ontoeng/factory#Pallet",
+            "representations": [
+                {
+                    "file": "Box_part.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                31.7,
+                23,
+                403
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "properties": {
+                "mass": 1,
+                "restitution": 0.1,
+                "friction": 0.95
+            }
+        },
+        {
+            "id": "spindle",
+            "type": "https://w3id.org/ontoeng/factory#Actuator",
+            "representations": [
+                {
+                    "file": "Spindle.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                80,
+                30,
+                350
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "statechart": {
+                "id": "stSpindle",
+                "initial": "stopped",
+                "context": {
+                    "variables": {
+                        "rotationVelocity": [
+                            0,
+                            1,
+                            0
+                        ],
+                        "movementVelocity": [
+                            3,
+                            0,
+                            0
+                        ],
+                        "testVar": 24
+                    }
+                },
+                "on": {
+                    "updateVariableSet": [
+                        {
+                            "actions": [
+                                "updateVariableSet"
+                            ]
+                        }
+                    ],
+                    "updateVariableAdd": [
+                        {
+                            "actions": [
+                                "updateVariableAdd"
+                            ]
+                        }
+                    ],
+                    "updateVariableSub": [
+                        {
+                            "actions": [
+                                "updateVariableSub"
+                            ]
+                        }
+                    ]
+                },
+                "states": {
+                    "stopped": {
+                        "on": {
+                            "startRotation": "spinning",
+                            "startMove": "moving",
+                            "updateRotVel": {
+                                "actions": {
+                                    "type": "xstate.raise",
+                                    "event": {
+                                        "type": "updateVariableAdd",
+                                        "payload": {
+                                            "variable": "rotationVelocity",
+                                            "value": [
+                                                0,
+                                                0.5,
+                                                0
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "entry": [
+                            {
+                                "type": "moveAdditive",
+                                "target": "spindle",
+                                "rotation": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "duration": 1000,
+                                "loop": false
+                            }
+                        ]
+                    },
+                    "moving": {
+                        "on": {
+                            "stopMovement": "stopped",
+                            "safetyCheck": {
+                                "target": "stopped",
+                                "cond": {
+                                    "type": "evaluateExpression",
+                                    "expr": "$position  >= [100,-9999,-9999]"
+                                }
+                            },
+                            "updateMovement": {
+                                "actions": [
+                                    {
+                                        "type": "moveAdditive",
+                                        "target": "spindle",
+                                        "position": "$movementVelocity",
+                                        "duration": 1000,
+                                        "loop": true
+                                    },
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "safetyCheck"
+                                    }
+                                ]
+                            }
+                        },
+                        "entry": [
+                            {
+                                "type": "xstate.raise",
+                                "event": "updateMovement"
+                            }
+                        ]
+                    },
+                    "spinning": {
+                        "on": {
+                            "stopRotation": "stopped",
+                            "safetyCheck": {
+                                "target": "stopped",
+                                "cond": {
+                                    "type": "evaluateExpression",
+                                    "expr": "$rotationVelocity  >= [0,3,0]"
+                                }
+                            },
+                            "updateRotSpeed": {
+                                "actions": [
+                                    {
+                                        "type": "moveAdditive",
+                                        "target": "spindle",
+                                        "rotation": "variables.rotationVelocity",
+                                        "duration": 1000,
+                                        "loop": true
+                                    },
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "safetyCheck"
+                                    }
+                                ]
+                            },
+                            "updateRotVel": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": {
+                                            "type": "updateVariableAdd",
+                                            "payload": {
+                                                "variable": "rotationVelocity",
+                                                "value": [
+                                                    0,
+                                                    0.9,
+                                                    0
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "updateRotSpeed"
+                                    }
+                                ]
+                            }
+                        },
+                        "entry": [
+                            {
+                                "type": "xstate.raise",
+                                "event": "updateRotSpeed"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "B1",
+            "type": "https://w3id.org/ontoeng/factory#Conveyor",
+            "representations": [
+                {
+                    "file": "Conveyor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [
+                26,
+                0,
+                315
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "placementRelTo": "building",
+            "properties": {
+                "mass": 0,
+                "restitution": 0.3,
+                "friction": 0.0,
+                "MotionType": "ANIMATED"
+            },
+            "statechart": {
+                "id": "stB1",
+                "initial": "idle",
+                "states": {
+                    "idle": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "startForward"
+                                    }
+                                ]
+                            },
+                            "a-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "startBackward"
+                                    }
+                                ]
+                            },
+                            "startForward": {
+                                "target": "forward"
+                            },
+                            "startBackward": "backward"
+                        },
+                        "entry": {
+                            "action": "surfaceVelocity",
+                            "target": "B1",
+                            "velocity": [
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "forward": {
+                        "on": {
+                            "x-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "stop"
+                                    }
+                                ]
+                            },
+                            "stop": "idle"
+                        },
+                        "entry": {
+                            "action": "surfaceVelocity",
+                            "target": "B1",
+                            "velocity": [
+                                0,
+                                0,
+                                8
+                            ]
+                        }
+                    },
+                    "backward": {
+                        "on": {
+                            "x-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "stop"
+                                    }
+                                ]
+                            },
+                            "stop": "idle"
+                        },
+                        "entry": {
+                            "action": "surfaceVelocity",
+                            "target": "B1",
+                            "velocity": [
+                                0,
+                                0,
+                                -8
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
