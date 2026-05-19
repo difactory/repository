@@ -86,10 +86,10 @@
 			"radiusFactorStep": 1
 		},
 		"background": {
-			"fragmentMode": "csg",
+			"fragmentMode": "box",
 			"surfaceMode": "sphere",
 			"volumeForm": "mixed",
-			"fragmentCount": 100,
+			"fragmentCount": 500,
 			"sourceCount": 100,
 
 			"distanceFactor": 8.0,
