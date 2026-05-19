@@ -77,13 +77,39 @@
 		"cam": {
 			"alphaMin": 0,
 			"alphaMax": 360,
-			"alphaStep": 60,
+			"alphaStep": 120,
 			"betaMin": 0,
-			"betaMax": 70,
+			"betaMax": 35,
 			"betaStep": 35,
 			"radiusFactorMin": 1.7,
 			"radiusFactorMax": 2.7,
 			"radiusFactorStep": 1
+		},
+		"background": {
+			"fragmentMode": "csg",
+			"surfaceMode": "sphere",
+			"volumeForm": "mixed",
+			"fragmentCount": 100,
+			"sourceCount": 100,
+
+			"distanceFactor": 8.0,
+			"widthFactor": 15.0,
+			"heightFactor": 15.0,
+
+			"fragmentSizeFactor": 1.5,
+			"minDepthRatio": 0.55,
+
+			"jitterRatio": 0.15,
+			"seed": 2026,
+
+			"minSourceSizeFactor": 0.001,
+			"maxSourceSizeFactor": 40,
+
+			"faceCameraFragments": false,
+
+			"materialSampling": "surfaceArea",
+			"saturatedColorPenalty": 0.35,
+			"colorSaturationFactor": 0.9
 		}
 	},
 	"env": {
@@ -111,5 +137,14 @@
 			0
 		],
 		"viewer": false
-	}
+	},
+    "webxr":{
+        "movement": {
+            "teleportation": true,
+            "invertDirection": false
+        },
+		"interactions": {
+            "pointerSelectionSize": 1
+		}
+    }
 }
