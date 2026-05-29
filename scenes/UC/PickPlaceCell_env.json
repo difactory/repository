@@ -4,13 +4,13 @@
 			"id": "camera.d1",
 			"type": "FreeCamera",
 			"position": [
-				39.56414513988465,
-				52.847534511254054,
-				431.9359207062656
+				169.29288305345162,
+				147.76987850341328,
+				509.90689492292483
 			],
 			"rotation": [
-				0.6845344609099223,
-				-2.731476753575979,
+				0.5045344609099227,
+				-2.3499767535759783,
 				0
 			],
 			"speed": 8
@@ -84,17 +84,43 @@
 			"radiusFactorMin": 1.7,
 			"radiusFactorMax": 2.7,
 			"radiusFactorStep": 1
+		},
+		"background": {
+			"fragmentMode": "box",
+			"surfaceMode": "sphere",
+			"volumeForm": "mixed",
+			"fragmentCount": 500,
+			"sourceCount": 100,
+
+			"distanceFactor": 8.0,
+			"widthFactor": 15.0,
+			"heightFactor": 15.0,
+
+			"fragmentSizeFactor": 1.5,
+			"minDepthRatio": 0.55,
+
+			"jitterRatio": 0.15,
+			"seed": 2026,
+
+			"minSourceSizeFactor": 0.001,
+			"maxSourceSizeFactor": 40,
+
+			"faceCameraFragments": false,
+
+			"materialSampling": "surfaceArea",
+			"saturatedColorPenalty": 0.35,
+			"colorSaturationFactor": 0.9
 		}
 	},
 	"env": {
-		"skyboxTexture": "textures/studio.env",
+		"skyboxTexture": "studio.env",
 		"backgroundColor": [
 			0.2,
 			0.3,
 			0.5
 		],
 		"ground": {
-			"texture": "textures/concrete.jpg",
+			"texture": "concrete_floor.jpg",
 			"size": [
 				2000,
 				2000,
@@ -111,5 +137,11 @@
 			0
 		],
 		"viewer": false
+	},
+	"webxr":{
+		"interactions":{
+			"pointerSelectionSize": 1
+		}
 	}
+
 }
