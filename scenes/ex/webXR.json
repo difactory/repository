@@ -12,7 +12,8 @@
                   "part_2",
                   "box",
                   "spindle",
-                  "B1"
+                  "B1",
+                  "SafetySensor"
               ],
     "assets":  [
                    {
@@ -66,7 +67,7 @@
                        "position":  [
                                         31.7,
                                         23,
-                                        340
+                                        370
                                     ],
                        "rotation":  [
                                         0,
@@ -92,7 +93,7 @@
                        "position":  [
                                         31.7,
                                         23,
-                                        372.5
+                                        400
                                     ],
                        "rotation":  [
                                         0,
@@ -118,7 +119,7 @@
                        "position":  [
                                         31.7,
                                         23,
-                                        403
+                                        430
                                     ],
                        "rotation":  [
                                         0,
@@ -142,9 +143,9 @@
                                                }
                                            ],
                        "position":  [
-                                        80,
-                                        30,
-                                        350
+                                        38,
+                                        8,
+                                        330
                                     ],
                        "rotation":  [
                                         0,
@@ -363,26 +364,8 @@
                                           "states":  {
                                                          "idle":  {
                                                                       "on":  {
-                                                                                 "b-button_pressed":  {
-                                                                                                          "actions":  [
-                                                                                                                          {
-                                                                                                                              "type":  "xstate.raise",
-                                                                                                                              "event":  "startForward"
-                                                                                                                          }
-                                                                                                                      ]
-                                                                                                      },
-                                                                                 "a-button_pressed":  {
-                                                                                                          "actions":  [
-                                                                                                                          {
-                                                                                                                              "type":  "xstate.raise",
-                                                                                                                              "event":  "startBackward"
-                                                                                                                          }
-                                                                                                                      ]
-                                                                                                      },
-                                                                                 "startForward":  {
-                                                                                                      "target":  "forward"
-                                                                                                  },
-                                                                                 "startBackward":  "backward"
+                                                                                 "B1startF":  "forward",
+                                                                                 "B1startB":  "backward"
                                                                              },
                                                                       "entry":  {
                                                                                     "action":  "surfaceVelocity",
@@ -396,15 +379,7 @@
                                                                   },
                                                          "forward":  {
                                                                          "on":  {
-                                                                                    "x-button_pressed":  {
-                                                                                                             "actions":  [
-                                                                                                                             {
-                                                                                                                                 "type":  "xstate.raise",
-                                                                                                                                 "event":  "stop"
-                                                                                                                             }
-                                                                                                                         ]
-                                                                                                         },
-                                                                                    "stop":  "idle"
+                                                                                    "B1stop":  "idle"
                                                                                 },
                                                                          "entry":  {
                                                                                        "action":  "surfaceVelocity",
@@ -418,15 +393,7 @@
                                                                      },
                                                          "backward":  {
                                                                           "on":  {
-                                                                                     "x-button_pressed":  {
-                                                                                                              "actions":  [
-                                                                                                                              {
-                                                                                                                                  "type":  "xstate.raise",
-                                                                                                                                  "event":  "stop"
-                                                                                                                              }
-                                                                                                                          ]
-                                                                                                          },
-                                                                                     "stop":  "idle"
+                                                                                     "B1stop":  "idle"
                                                                                  },
                                                                           "entry":  {
                                                                                         "action":  "surfaceVelocity",
@@ -438,6 +405,61 @@
                                                                                                      ]
                                                                                     }
                                                                       }
+                                                     }
+                                      }
+                   },
+                   {
+                       "id":  "SafetySensor",
+                       "type":  "https://w3id.org/ontoeng/factory#SensorVolume",
+                       "representations":  [
+                                               {
+                                                   "file":  "SafetyVolume.glb",
+                                                   "unit":  1
+                                               }
+                                           ],
+                       "position":  [
+                                        31.7,
+                                        0,
+                                        300
+                                    ],
+                       "rotation":  [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                       "placementRelTo":  "building",
+                       "properties":  {
+                                          "mass":  0,
+                                          "restitution":  0.0,
+                                          "friction":  0.0,
+                                          "MotionType":  "ANIMATED",
+                                          "isTrigger":  true
+                                      },
+                       "statechart":  {
+                                          "id":  "stSafetySensor",
+                                          "initial":  "Idle",
+                                          "states":  {
+                                                         "Idle":  {
+                                                                      "meta":  {
+                                                                                   "type":  "https://w3id.org/ontoeng/factory#SensorIdle"
+                                                                               },
+                                                                      "on":  {
+                                                                                 "OBJECT_DETECTED":  "Detecting"
+                                                                             }
+                                                                  },
+                                                         "Detecting":  {
+                                                                           "meta":  {
+                                                                                        "type":  "https://w3id.org/ontoeng/factory#SensorDetecting"
+                                                                                    },
+                                                                           "on":  {
+                                                                                      "OBJECT_REMOVED":  "Idle"
+                                                                                  },
+                                                                           "entry":  {
+                                                                                         "action":  "sendEvent",
+                                                                                         "event":  "B1stop",
+                                                                                         "to":  "stB1"
+                                                                                     }
+                                                                       }
                                                      }
                                       }
                    }
