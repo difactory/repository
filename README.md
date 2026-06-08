@@ -56,6 +56,9 @@ The following table gives an overview of the available data for the various data
 |  Product Example #3   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/factory-assets/assembled-product#scene-3-hidden-components-of-hinge) |  [link](https://difactory.github.io/DF/scenes/ex/hinge3.html) |  | [link](https://difactory.github.io/repository/scenes/ex/HingeHiddenComponents.json) |  | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) |  | [link](https://difactory.github.io/repository/spreadsheets/ex_HingeHiddenComponents.xlsx) |
 |  Machine Example   |  ex  |  [link](https://virtualfactory.gitbook.io/vlft/use-cases/factory-assets/workstation) |  [link](https://difactory.github.io/DF/scenes/ex/pi1.html) |  | [link](https://difactory.github.io/repository/scenes/ex/PIsClones.json) |  | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) |  | [link](https://difactory.github.io/repository/spreadsheets/ex_PIsClones.xlsx) |
 |  Physics Example   |  ex  |   |  [link](https://difactory.github.io/DF/scenes/ex/physics.html) |  | [link](https://difactory.github.io/repository/scenes/ex/Physics.json) |  | [link](https://github.com/difactory/repository/tree/main/models/AssemblyLine/GLB) |  | [link](https://difactory.github.io/repository/spreadsheets/ex_Physics.xlsx) |
+| webXR | UC| | [link](https://difactory.github.io/DF/scenes/ex/webXR.html)| | [link](https://difactory.github.io/repository/scenes/ex/webXR.json) |  | [link](https://github.com/difactory/repository/tree/main/models/PickPlaceCell) |  |  |
+|||||||||||
+
 
 
 ## References
