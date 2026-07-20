@@ -4,16 +4,16 @@
 			"id": "camera.d1",
 			"type": "FreeCamera",
 			"position": [
-				66.29330008941179,
-				99.24117027536698,
-				473.78995860662855
+				169.29288305345162,
+				147.76987850341328,
+				509.90689492292483
 			],
 			"rotation": [
-				0.6355344595819057,
-				-2.6269768243383407,
+				0.5045344609099227,
+				-2.3499767535759783,
 				0
 			],
-			"speed": 16
+			"speed": 8
 		},
 		{
 			"id": "camera.d2",
@@ -51,32 +51,27 @@
 			"id": "light.0",
 			"type": "HemisphericLight",
 			"direction": [
-				0.3,
 				1,
-				0.2
+				0.3,
+				0.1
 			],
-			"intensity": 0.3
+			"intensity": 0.1
 		},
 		{
-			"id": "light.3",
-			"type": "DirectionalLight",
+			"id": "light.1",
+			"type": "PointLight",
 			"position": [
-				1.3,
-				1,
-				2.2
+				60,
+				110,
+				500
 			],
-			"direction": [
-				-1.3,
-				-1,
-				-2.2
-			],
-			"intensity": 5
+			"intensity": 3.5
 		}
 	],
 	"shadows": {
 		"darkness": 0.3,
 		"bias": 0.001,
-		"environmentIntensity": 0.34
+		"environmentIntensity": 0.3
 	},
 	"datagen": {
 		"cam": {
@@ -96,75 +91,40 @@
 			"volumeForm": "mixed",
 			"fragmentCount": 500,
 			"sourceCount": 100,
-			"distanceFactor": 8,
-			"widthFactor": 15,
-			"heightFactor": 15,
+
+			"distanceFactor": 8.0,
+			"widthFactor": 15.0,
+			"heightFactor": 15.0,
+
 			"fragmentSizeFactor": 1.5,
 			"minDepthRatio": 0.55,
+
 			"jitterRatio": 0.15,
 			"seed": 2026,
+
 			"minSourceSizeFactor": 0.001,
 			"maxSourceSizeFactor": 40,
+
 			"faceCameraFragments": false,
+
 			"materialSampling": "surfaceArea",
 			"saturatedColorPenalty": 0.35,
 			"colorSaturationFactor": 0.9
 		}
 	},
-	"webxr": {
-		"movement": {
-			"teleportation": false,
-			"freeMovement": true,
-			"speed": 2,
-			"lockHeightAfterTeleport": true,
-			"movementOrientationFollowsViewerPose": true,
-			"invertDirection": false
-		},
-		"interactions": {
-			"gripping": true,
-			"grabDistance": 500,
-			"pointerSelection": true,
-			"pointerSelectionSize": 1,
-			"laserPointerColor": {
-				"default": {
-					"r": 0,
-					"g": 1,
-					"b": 0
-				},
-				"picked": {
-					"r": 1,
-					"g": 0,
-					"b": 0
-				}
-			}
-		},
-		"camera": {
-			"collisions": true,
-			"height": 80,
-			"flying": false
-		},
-		"soundParams": {
-			"type": "sine",
-			"frequency": 200,
-			"duration": 0.01,
-			"volume": 0.1,
-			"decay": 0.02
-		}
-	},
 	"env": {
 		"skyboxTexture": "studio.env",
 		"backgroundColor": [
-			0.13,
-			0.14,
-			0.13
+			0.2,
+			0.3,
+			0.5
 		],
 		"ground": {
-			"texture_": "assets/industrial_concrete_floor_4m_0p2m_hairline_veb.png",
-			"texture": "assets/industrial_concrete_floor_4m_0p2m_drawn_0p5mm_complete_veb.jpg",
+			"texture": "concrete_floor.jpg",
 			"size": [
-				24000,
-				24000,
-				96
+				2000,
+				2000,
+				400
 			],
 			"mass": 0
 		}
@@ -177,5 +137,11 @@
 			0
 		],
 		"viewer": false
+	},
+	"webxr":{
+		"interactions":{
+			"pointerSelectionSize": 1
+		}
 	}
+
 }

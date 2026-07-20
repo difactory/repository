@@ -37,6 +37,8 @@
         "part_2",
         "part_3",
         "box",
+        "stopper1",
+        "stopper2",
         "SignalPole",
         "SignalPole.RedLight",
         "SignalPole.YellowLight",
