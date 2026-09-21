@@ -5,56 +5,23 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "-1 -3.2310891488651735e-15 0; 3.2310891488651735e-15 -1 0; 0 0 1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "ANIMATED" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Idle> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_rest>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act4> , <https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act3> , <https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act2> , <https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_reprLU>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+<https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B2_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#B2_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_relplace>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_relplace>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
-                "33.1 -4320 220" ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
-                "0.0007963267107332633 0.0023889773548126316 -0.9999968293204574; 0.9999996829318346 -0.0000019024070821669183 0.0007963244383255811; 0 -0.999997146387718 -0.0023889781122815386" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP>
         a       <https://w3id.org/ontoeng/factory#Robot> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -67,20 +34,48 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "33.1 -4320 220" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "0.0007963267107332633 0.0023889773548126316 -0.9999968293204574; 0.9999996829318346 -0.0000019024070821669183 0.0007963244383255811; 0 -0.999997146387718 -0.0023889781122815386" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_OBJECT_REMOVED>
+<https://w3id.org/ontoeng/CW/StateChart02#start>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_shaperepr> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -119,72 +114,41 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> .
+<https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_velocity> , <https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_target> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr4_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_goRest> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_place_act3>
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn4>
         a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 -38 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_goPick>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_delay> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_position> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "ANIMATED" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_OBJECT_REMOVED> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Controller>
         a       <https://w3id.org/ontoeng/factory#Actuator> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_shaperepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_extrepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr5>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart02#place> , <https://w3id.org/ontoeng/CW/StateChart02#backward> , <https://w3id.org/ontoeng/CW/StateChart02#genBox> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest> , <https://w3id.org/ontoeng/CW/StateChart02#idle> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/CW/StateChart02#st_tr5_guard> ;
+        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
+                "1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -196,22 +160,20 @@
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr3_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_extrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP_reprlist> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_reprlist> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -225,27 +187,6 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_2_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_prodrepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprLU>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act3>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 -3 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#B1>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#Conveyor> ;
         <http://www.w3.org/ns/ssn/hasProperty>
@@ -257,17 +198,26 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox_act1> .
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1_velocity>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "velocity" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 0 0" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -283,12 +233,12 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_4_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "129 -2500 234" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#part> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 3 -38" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -322,14 +272,12 @@
         <https://w3id.org/express#hasString>
                 "Sensor.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_pick> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_place> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -341,20 +289,10 @@
         <https://w3id.org/express#hasString>
                 "Stopper.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "129 -2500 234" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#part> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -362,6 +300,18 @@
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2_position> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_1_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -372,11 +322,6 @@
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr4> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -420,34 +365,15 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_forward_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 -80 0" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_st_init> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_start>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_delay> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_position> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_backward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_tr3_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -455,6 +381,13 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_extref> ;
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_reprLU> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -468,6 +401,11 @@
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_shaperepr> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#idle>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#B1_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -480,13 +418,12 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 -38 -38" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -494,13 +431,6 @@
                 "129 -2875 230" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Idle> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -524,16 +454,10 @@
         <https://w3id.org/express#hasString>
                 "Grid.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6>
         a       <https://w3id.org/ontoeng/factory#SensorBarrier> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -546,39 +470,17 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Pick_and_Place_Robot.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr4_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_stop> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#B1_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Conveyor.glb" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -594,22 +496,10 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_shaperepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr2_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -623,22 +513,8 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr2_guard> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_OBJECT_REMOVED> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -676,20 +552,17 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#part_1_ProductFriction>
+        a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_extref> ;
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_reprLU> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#part_1_ProductFriction>
-        a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -709,72 +582,32 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_prodrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide2> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1> , <https://w3id.org/ontoeng/CW/StateChart02#B1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_start> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr2_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-120 0 80" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 30 0" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_startB>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_place_act4>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 38 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr4_guard>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/CW/StateChart02#goRest> , <https://w3id.org/ontoeng/CW/StateChart02#stop> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -788,30 +621,20 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_ProductRestitution>
+        a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "0"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B1_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#B1_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_ProductRestitution>
-        a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                "0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1_velocity> , <https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B1_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -823,10 +646,8 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "MESH" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#box_shaperepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#box_extrepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#startB>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -834,11 +655,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_relplace> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_OBJECT_REMOVED> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcActuator> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -848,6 +664,11 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_prodrepr> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#box_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#box_extrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B2>
         a       <https://w3id.org/ontoeng/factory#Conveyor> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -860,15 +681,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act4>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 3 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1>
         a       <https://w3id.org/ontoeng/factory#SensorBarrier> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
@@ -880,14 +692,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_st> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 30 0" .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -896,6 +701,11 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_reprLU> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#B2_ProductMass>
+        a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
+                "0"^^<http://www.w3.org/2001/XMLSchema#double> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
@@ -903,28 +713,22 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_ProductMass>
-        a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
-                "0"^^<http://www.w3.org/2001/XMLSchema#double> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Pick_and_Place_Robot.glb#PP_Gripper" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_OBJECT_DETECTED> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#B2_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn2_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-6 171 -40" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -955,15 +759,17 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_onGenBox> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#part> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_4_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -971,20 +777,6 @@
                 "0 -12 -198" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_onGenBox> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr4>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_pick> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_rest> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_tr4_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -998,8 +790,17 @@
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_1_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_delay> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_position> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_target> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1007,6 +808,13 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_extref> ;
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_reprLU> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY>
         a       <https://w3id.org/ontoeng/factory#RobotArm> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1016,11 +824,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_prodrepr> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_goPlace> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1034,9 +837,6 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
@@ -1047,10 +847,8 @@
         <https://w3id.org/express#hasString>
                 "Pick_and_Place_Robot.glb#PP_Finger1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_OBJECT_DETECTED> .
+<https://w3id.org/ontoeng/CW/StateChart02#onGenBox>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1059,33 +857,15 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_stop> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr4>
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr1>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_forward> ;
+                <https://w3id.org/ontoeng/CW/StateChart02#st_init> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_tr4_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_onGenPart>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_onGenPart>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_prodrepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_reprlist> .
+                <https://w3id.org/ontoeng/CW/StateChart02#Idle> , <https://w3id.org/ontoeng/CW/StateChart02#rest> , <https://w3id.org/ontoeng/CW/StateChart02#idle> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1093,6 +873,18 @@
                 "33.1 -3670 220" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "0.0007963267107332633 0.0023889773548126316 -0.9999968293204574; 0.9999996829318346 -0.0000019024070821669183 0.0007963244383255811; 0 -0.999997146387718 -0.0023889781122815386" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#B1_reprlist> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#box> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1130,23 +922,6 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_idle>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
@@ -1178,24 +953,12 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#PP_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#PP_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#PP_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#PP_rest> , <https://w3id.org/ontoeng/CW/StateChart02#PP_place> , <https://w3id.org/ontoeng/CW/StateChart02#PP_pick> , <https://w3id.org/ontoeng/CW/StateChart02#PP_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#PP_tr4> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr4> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1231,11 +994,6 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle> , <https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr1> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
@@ -1248,15 +1006,8 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_prodrepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_reprlist>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/list#hasContents>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_shaperepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#OBJECT_DETECTED>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1265,14 +1016,12 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#part_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/CW/StateChart02#part_relplace> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1281,14 +1030,10 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr3_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2_shaperepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1297,12 +1042,17 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#part_objplace>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
-                <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
-                <https://w3id.org/ontoeng/CW/StateChart02#part_relplace> .
+<https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_prodrepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_reprlist> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1328,6 +1078,13 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 -3 -38" .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
@@ -1347,13 +1104,6 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_extrepr>
-        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_extref> ;
-        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_reprLU> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#part_3>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
@@ -1365,6 +1115,13 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#Slide2_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_reprLU> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6>
         a       <https://w3id.org/ontoeng/factory#SensorBarrierReceiver> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
@@ -1372,32 +1129,27 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_prodrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#part_1_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr3_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act2>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-6 171 -40" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 38 -38" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_init>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1406,17 +1158,24 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP_reprLU> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_velocity>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "velocity" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 80 0" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_rotation> , <https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_position> , <https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_target> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
                 "0 -12 -198" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_pick>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act4> , <https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act3> , <https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act2> , <https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1429,11 +1188,6 @@
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_startB> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1456,7 +1210,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1507,20 +1261,24 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0"^^<http://www.w3.org/2001/XMLSchema#double> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-6 171 -40" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#part_2_relplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
+                "129 -3725 230" ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
+                "1 0 0; 0 1 0; 0 0 1" .
+
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_reprlist>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/list#hasContents>
-                <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_shaperepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_OBJECT_DETECTED> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1529,33 +1287,10 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr5>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_place> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_rest> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_tr5_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_idle_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 0 0" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_st_init> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#part_2_relplace>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
-                "129 -3725 230" ;
-        <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
-                "1 0 0; 0 1 0; 0 0 1" .
+<https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_shaperepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1578,6 +1313,11 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_relplace> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#place>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#place_actEn4> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn3> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn2> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn1> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#PP_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
@@ -1585,12 +1325,32 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Idle> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_delay> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_position> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_target> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#Idle>
+        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#B1> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr3_guard>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/CW/StateChart02#OBJECT_REMOVED> , <https://w3id.org/ontoeng/CW/StateChart02#goPlace> , <https://w3id.org/ontoeng/CW/StateChart02#stop> , <https://w3id.org/ontoeng/CW/StateChart02#startB> , <https://w3id.org/ontoeng/CW/StateChart02#onGenBox> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B2_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1598,13 +1358,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#B2_relplace> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_reprLU>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ>
         a       <https://w3id.org/ontoeng/factory#RobotArm> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1614,6 +1367,13 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_prodrepr> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1625,10 +1385,12 @@
         <https://w3id.org/express#hasString>
                 "Sensor2.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_shaperepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_extrepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1>
+        a       <https://w3id.org/ontoeng/factory#SensorBarrierReceiver> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_prodrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1649,12 +1411,10 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1>
-        a       <https://w3id.org/ontoeng/factory#SensorBarrierReceiver> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_objplace> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_prodrepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_extrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1662,9 +1422,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_extref> ;
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_reprLU> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_stop>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1690,14 +1447,8 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr5>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_backward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_tr5_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#onGenPart>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1707,23 +1458,29 @@
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#B1_backward> , <https://w3id.org/ontoeng/CW/StateChart02#B1_forward> , <https://w3id.org/ontoeng/CW/StateChart02#B1_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#B1_tr4> , <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> , <https://w3id.org/ontoeng/CW/StateChart02#B1_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#B1_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#B1_tr5> .
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#place_actEn1_position> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn1_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr2>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart02#Idle> , <https://w3id.org/ontoeng/CW/StateChart02#idle> , <https://w3id.org/ontoeng/CW/StateChart02#rest> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart02#genPart> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#pick> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/CW/StateChart02#st_tr2_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1772,16 +1529,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_st> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr3_guard> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1795,26 +1543,15 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_onGenPart> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_onGenPart> .
+<https://w3id.org/ontoeng/CW/StateChart02#forward>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Sensor2.glb" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_idle>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1830,15 +1567,6 @@
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Sensor.glb" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr4>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> ;
-        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
-                "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#building>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1857,13 +1585,6 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductShapeType>
         a       <https://w3id.org/ontoeng/osph#ProductShapeType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -1876,13 +1597,12 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_st_init> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_stop>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1890,14 +1610,6 @@
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_goPick> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box>
         a       <https://w3id.org/ontoeng/factory#Pallet> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1917,6 +1629,13 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn1_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-120 200 80" .
+
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.w3.org/ns/ssn/hasProperty>
@@ -1927,11 +1646,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_prodrepr> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_start> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1947,15 +1661,17 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_onGenBox>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
                 "-270 -4428.5 530.6" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "-3.4914813388431334e-15 0 1; 0 1 0; -1 0 -3.4914813388431334e-15" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1_position> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -1969,18 +1685,6 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr4>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> ;
-        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
-                "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasLocation>
@@ -1988,29 +1692,22 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "-3.4914813388431334e-15 0 1; 0 1 0; -1 0 -3.4914813388431334e-15" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act3>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 -38 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 0 0" .
-
 <https://w3id.org/ontoeng/CW/StateChart02#box_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "1"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn2_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1_velocity> , <https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2026,11 +1723,6 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_OBJECT_REMOVED> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -2041,13 +1733,12 @@
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprlist>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/list#hasContents>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_shaperepr> .
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2058,15 +1749,15 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprlist>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/list#hasContents>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_shaperepr> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_Hole_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_place>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_place_act4> , <https://w3id.org/ontoeng/CW/StateChart02#PP_place_act3> , <https://w3id.org/ontoeng/CW/StateChart02#PP_place_act2> , <https://w3id.org/ontoeng/CW/StateChart02#PP_place_act1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2096,15 +1787,12 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B2_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Conveyor.glb" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2132,7 +1820,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2151,23 +1839,15 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_st_init> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Stopper.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_OBJECT_REMOVED> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_goRest>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1_position> , <https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2185,20 +1865,6 @@
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_forward_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr2_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2225,6 +1891,9 @@
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#goRest>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2>
         a       <https://w3id.org/ontoeng/factory#SensorBarrierReceiver> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2260,13 +1929,6 @@
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#stopper2_reprLU>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
@@ -2293,6 +1955,13 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_relplace> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#stopper2_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
@@ -2300,17 +1969,26 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_place_act1>
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn2>
         a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-120 200 80" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#place_actEn2_position> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn2_target> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_startF> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-6 171 -175" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr3>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart02#Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#pick> , <https://w3id.org/ontoeng/CW/StateChart02#idle> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart02#backward> , <https://w3id.org/ontoeng/CW/StateChart02#idle> , <https://w3id.org/ontoeng/CW/StateChart02#genBox> , <https://w3id.org/ontoeng/CW/StateChart02#Idle> , <https://w3id.org/ontoeng/CW/StateChart02#place> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/CW/StateChart02#st_tr3_guard> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2318,13 +1996,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_relplace> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Idle> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2345,22 +2016,17 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Slide1_reprLU> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1_velocity>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "velocity" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 30 0" , "0 -80 0" .
+
 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_OBJECT_REMOVED> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-120 0 80" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2>
         a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <https://w3id.org/ontoeng/factory#Conveyor> ;
@@ -2373,7 +2039,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
                 <https://w3id.org/ontoeng/CW/StateChart02#building> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2382,11 +2048,6 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#box_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_forward_act1> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Grid>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
@@ -2394,11 +2055,17 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_prodrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_stop>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 -38 -38" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#rest>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2407,48 +2074,41 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr5>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> ;
-        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
-                "1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "317 -4400 234" , "317 -4500 234" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart>
+<https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "129 -2500 234" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#genPart>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genPart_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_backward>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_backward_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_rest> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr2_guard> .
+                <https://w3id.org/ontoeng/CW/StateChart02#genPart_actEn1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductMotionType>
         a       <https://w3id.org/ontoeng/osph#ProductMotionType> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "ANIMATED" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn4_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr2_guard>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/CW/StateChart02#OBJECT_DETECTED> , <https://w3id.org/ontoeng/CW/StateChart02#start> , <https://w3id.org/ontoeng/CW/StateChart02#goPick> , <https://w3id.org/ontoeng/CW/StateChart02#startF> , <https://w3id.org/ontoeng/CW/StateChart02#onGenPart> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2492,9 +2152,6 @@
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Detecting>
-        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
@@ -2510,9 +2167,6 @@
         <https://w3id.org/express#hasString>
                 "Pick_and_Place_Robot.glb#PP_Finger2" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_goPlace>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
@@ -2522,6 +2176,18 @@
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_reprlist> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn1_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-120 0 80" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2_position> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn2_target> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2542,18 +2208,6 @@
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_shaperepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_extrepr> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
@@ -2561,56 +2215,33 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_tr5>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_idle> ;
-        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
-                "1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/ontoeng/CW/StateChart02#Slide1_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_extrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "White_Box.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#PP_rest_act4>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionDelay>
-                "1"^^<http://www.w3.org/2001/XMLSchema#double> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "0 38 -38" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> .
+<https://w3id.org/ontoeng/CW/StateChart02#stop>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_1_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_genPart_act1> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_OBJECT_REMOVED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#part_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr5_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_goRest> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B1_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2618,9 +2249,6 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#B1_relplace> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Idle>
-        a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_4_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2633,6 +2261,11 @@
                 "410 -3780 220" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "-0.01920249290169265 -0.0023885376208731234 0.9998127620481717; -0.9998156151342908 0.00004587433524338535 -0.019202438105223058; 0 -0.999997146387718 -0.0023889781122815386" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#backward>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2655,7 +2288,10 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_4> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#OBJECT_REMOVED>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2681,6 +2317,9 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_1_relplace> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#goPick>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#box_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -2698,10 +2337,12 @@
         <http://www.w3.org/2002/07/owl#imports>
                 <https://w3id.org/ontoeng/factory> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_st_init> .
+<https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1_rotation>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "rotation" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1 0 0; 0 1 0; 0 0 1" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2713,34 +2354,20 @@
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_OBJECT_REMOVED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_shaperepr>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
-                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#AssetLoader_genBox_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "317 -4400 234" ;
-        <https://w3id.org/ontoeng/osph#hasActionRotation>
-                "1 0 0; 0 1 0; 0 0 1" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#box> .
+<https://w3id.org/ontoeng/CW/StateChart02#st>
+        a       <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
+                <https://w3id.org/ontoeng/CW/StateChart02#place> , <https://w3id.org/ontoeng/CW/StateChart02#pick> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#genPart> , <https://w3id.org/ontoeng/CW/StateChart02#Idle> , <https://w3id.org/ontoeng/CW/StateChart02#rest> , <https://w3id.org/ontoeng/CW/StateChart02#st_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#st_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#genBox> , <https://w3id.org/ontoeng/CW/StateChart02#st_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#idle> , <https://w3id.org/ontoeng/CW/StateChart02#st_init> , <https://w3id.org/ontoeng/CW/StateChart02#backward> , <https://w3id.org/ontoeng/CW/StateChart02#st_tr4> , <https://w3id.org/ontoeng/CW/StateChart02#st_tr5> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B2_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#B2_extrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_backward_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 80 0" .
+<https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_shaperepr>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
+                <https://w3id.org/ontoeng/CW/StateChart02#Receiver_2_extrepr> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2768,19 +2395,17 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_tr3_guard> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_reprlist> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn4_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "0 38 -38" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2792,52 +2417,46 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_prodrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#B2_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/list#hasContents>
                 <https://w3id.org/ontoeng/CW/StateChart02#B2_shaperepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_OBJECT_DETECTED> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_place_act2>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-6 171 -40" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle_act1> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide2_idle> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide2_start>
+<https://w3id.org/ontoeng/CW/StateChart02#goPlace>
         a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_Idle> .
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn3>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_delay> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_position> , <https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_target> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#place_actEn3_delay>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "delay" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "1.5"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Slide2_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.8"^^<http://www.w3.org/2001/XMLSchema#double> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#pick>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn4> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn3> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn2> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr4>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#genPart> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest> , <https://w3id.org/ontoeng/CW/StateChart02#idle> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
+                <https://w3id.org/ontoeng/CW/StateChart02#st_tr4_guard> ;
+        <https://w3id.org/ontoeng/osph#hasTransitionDelay>
+                "0.3"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part>
         a       <https://w3id.org/ontoeng/factory#Artifact> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2848,22 +2467,10 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_prodrepr> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr2_guard> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Signal_pole.glb" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_OBJECT_REMOVED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingX_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2874,16 +2481,6 @@
                 "0 -12 -198" ;
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 -1 -3.2310891488651735e-15; 0 3.2310891488651735e-15 -1" .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_pick_act2>
-        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "-6 171 -175" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingY> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_st_init>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Initial> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -2933,34 +2530,6 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_OBJECT_DETECTED> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr5_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_stop> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#PP_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_rest> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_pick> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#PP_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr3>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Detecting> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr3_guard> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#box_ProductRestitution>
         a       <https://w3id.org/ontoeng/osph#ProductRestitution> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
@@ -2976,13 +2545,15 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_3_reprlist> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1_position> , <https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1_target> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_OBJECT_REMOVED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3002,6 +2573,13 @@
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#White_Box_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3025,15 +2603,17 @@
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#Signal_pole_reprLU> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_st_init> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
                 "Sensor.glb" .
+
+<https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#Slide2> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1> , <https://w3id.org/ontoeng/CW/StateChart02#B1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_1_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3045,24 +2625,17 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.1"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_tr2>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_idle> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_forward> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionGuard>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_tr2_guard> .
+<https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3>
+        a       <https://w3id.org/ontoeng/osph#ActionMoveTo> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasActionParameter>
+                <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_delay> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_position> , <https://w3id.org/ontoeng/CW/StateChart02#rest_actEn3_target> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_OBJECT_DETECTED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Grid_second_extrepr>
-        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
-                <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_extref> ;
-        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
-                <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_reprLU> .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1_target>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "target" ;
+        <https://w3id.org/ontoeng/osph#hasParamValue>
+                <https://w3id.org/ontoeng/CW/StateChart02#PP.FloatingZ> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_3_objplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3071,23 +2644,17 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
                 <https://w3id.org/ontoeng/CW/StateChart02#part_3_relplace> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B1_startF>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#Grid_second_extrepr>
+        a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#location_IfcExternalReference>
+                <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_extref> ;
+        <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
+                <https://w3id.org/ontoeng/CW/StateChart02#Grid_second_reprLU> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#box_reprlist> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_tr2_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_OBJECT_DETECTED> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_tr3_guard>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1_stop> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B1_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3095,6 +2662,16 @@
                 <https://w3id.org/ontoeng/CW/StateChart02#B1_extref> ;
         <https://w3id.org/ontoeng/osph#hasRepresentationLengthUnit>
                 <https://w3id.org/ontoeng/CW/StateChart02#B1_reprLU> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#genBox>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
+                <https://w3id.org/ontoeng/CW/StateChart02#genBox_actEn1> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#st_tr5_guard>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Guard> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <http://www.learninglab.de/~dolog/fsm/fsm.owl#GuardEvent>
+                <https://w3id.org/ontoeng/CW/StateChart02#goRest> , <https://w3id.org/ontoeng/CW/StateChart02#stop> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_1_reprlist>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcRepresentation_List> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3113,25 +2690,6 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_4_reprlist> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_reprLU>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
-                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_genBox_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionGenerateAsset> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionLocation>
-                "317 -4500 234" ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#box> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B1_forward>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Simple> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry>
-                <https://w3id.org/ontoeng/CW/StateChart02#B1_forward_act1> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#part_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/express#hasString>
@@ -3142,15 +2700,15 @@
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_OBJECT_REMOVED>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#stopper1_reprLU>
+<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_2_reprLU>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
                 <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#startF>
+        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#PP.Gripper>
         a       <https://w3id.org/ontoeng/factory#JawGripper> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3161,17 +2719,17 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger2> , <https://w3id.org/ontoeng/CW/StateChart02#PP.Finger1> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#stopper1_reprLU>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcSIUnit> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#name_IfcSIUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#METRE> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#unitType_IfcNamedUnit>
+                <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#LENGTHUNIT> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasExternalRepresentation>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_extrepr> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_objplace>
-        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
-                <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
-        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_relplace> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#B1_relplace>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcAxis2Placement3D> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3180,8 +2738,12 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#hasRotationMatrix>
                 "1 0 0; 0 1 0; 0 0 1" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_onGenBox>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Event> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_objplace>
+        a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcLocalPlacement> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#placementRelTo_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/CW/StateChart02#building_objplace> ;
+        <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#relativePlacement_IfcLocalPlacement>
+                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_relplace> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_ProductFriction>
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3199,7 +2761,7 @@
         <https://w3id.org/ontoeng/IFC4_ADD1_extension#isDecomposedByObject>
                 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5> ;
         <https://w3id.org/ontoeng/osph#hasStateMachine>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_5_st> .
+                <https://w3id.org/ontoeng/CW/StateChart02#st> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_6_extref>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcURIReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3218,19 +2780,12 @@
         <https://w3id.org/express#hasString>
                 "Sensor.glb" .
 
-<https://w3id.org/ontoeng/CW/StateChart02#Controller_tr1>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Source>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_st_init> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#Target>
-                <https://w3id.org/ontoeng/CW/StateChart02#Controller_idle> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#Slide1_idle_act1>
-        a       <https://w3id.org/ontoeng/osph#ActionSurfaceVelocity> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <https://w3id.org/ontoeng/osph#hasActionTarget>
-                <https://w3id.org/ontoeng/CW/StateChart02#Slide1> ;
-        <https://w3id.org/ontoeng/osph#hasActionVelocity>
-                "0 0 0" .
+<https://w3id.org/ontoeng/CW/StateChart02#pick_actEn1_position>
+        a       <https://w3id.org/ontoeng/osph#ActionParameter> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
+        <https://w3id.org/ontoeng/osph#hasParamName>
+                "position" ;
+        <https://w3id.org/ontoeng/osph#hasParamSimpleValue>
+                "-120 0 80" .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_extrepr>
         a       <https://w3id.org/ontoeng/osph#RepresentationReference> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3244,6 +2799,9 @@
         <https://w3id.org/express#hasString>
                 "Grid.glb" .
 
+<https://w3id.org/ontoeng/CW/StateChart02#Detecting>
+        a       <https://w3id.org/ontoeng/factory#SensorDetecting> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_prodrepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcProductDefinitionShape> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representations_IfcProductRepresentation>
@@ -3253,11 +2811,6 @@
         a       <https://w3id.org/ontoeng/osph#ProductFriction> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
         <https://w3id.org/ontoeng/osph#hasPropertySimpleValue>
                 "0.95"^^<http://www.w3.org/2001/XMLSchema#double> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_st>
-        a       <http://www.learninglab.de/~dolog/fsm/fsm.owl#StateMachine> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
-        <http://www.learninglab.de/~dolog/fsm/fsm.owl#contains>
-                <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Detecting> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_Idle> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_3_st_init> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#DiffuseSensorBox_6_shaperepr>
         a       <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcShapeRepresentation> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;

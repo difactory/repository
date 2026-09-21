@@ -2430,6 +2430,14 @@ VffQualityControlSystem represents a generic quality control system.</dc:descrip
     
 
 
+    <!-- https://w3id.org/ontoeng/factory#SensorVolume -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/factory#SensorVolume">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/factory#Sensor"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/factory#SetupTask -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/factory#SetupTask">
