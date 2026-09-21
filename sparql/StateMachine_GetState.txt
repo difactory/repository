@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?actLoop ?actRepr ?actColor ?actIntensity ?actBlink ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?transitionAction ?trDelay ?event ?cond 
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actPar ?actParName ?actParVal ?actParSimpVal ?actParVar ?actParEvVar ?actParEvVal ?actReference ?var ?varName ?varVal ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?transitionAction ?trDelay ?event ?cond #?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?actLoop ?actRepr ?actColor ?actIntensity ?actBlink
 WHERE {
   
 	# STATE 	
@@ -67,21 +67,31 @@ WHERE {
 			?action a ?actClass .
 			FILTER ( ?actClass != owl:NamedIndividual ) .
 			
-			OPTIONAL{?action osph:hasActionDelay ?actDelay .}
-			OPTIONAL{?action osph:hasActionDuration ?actDuration .}
-			OPTIONAL{?action osph:hasActionTarget ?actTarget .}
-			
-			OPTIONAL{?action osph:hasActionLocation ?actPos .}
-			OPTIONAL{?action osph:hasActionRotation ?actRot .}
-			
-			OPTIONAL{?action osph:hasActionVelocity ?actVel .}			
-			
-			OPTIONAL{?action osph:isActionInLoop ?actLoop .}
+			# OPTIONAL{?action osph:hasActionDelay ?actDelay .}
+			# OPTIONAL{?action osph:hasActionDuration ?actDuration .}
+			# OPTIONAL{?action osph:hasActionTarget ?actTarget .}
+			# OPTIONAL{?action osph:hasActionLocation ?actPos .}
+			# OPTIONAL{?action osph:hasActionRotation ?actRot .}
+			# OPTIONAL{?action osph:hasActionVelocity ?actVel .}			
+			# OPTIONAL{?action osph:isActionInLoop ?actLoop .}
+			# OPTIONAL{?action osph:hasActionReprRef ?actRepr .}
+			# OPTIONAL{?action osph:hasActionReprColor ?actColor .}
+			# OPTIONAL{?action osph:hasActionReprIntensity ?actIntensity .}		
+			# OPTIONAL{?action osph:hasActionReprBlinkInterval ?actBlink .}	
 
-			OPTIONAL{?action osph:hasActionReprRef ?actRepr .}
-			OPTIONAL{?action osph:hasActionReprColor ?actColor .}
-			OPTIONAL{?action osph:hasActionReprIntensity ?actIntensity .}		
-			OPTIONAL{?action osph:hasActionReprBlinkInterval ?actBlink .}			
+			OPTIONAL{
+				?action osph:hasActionReferenceValue ?actReference .			
+			}
+			OPTIONAL{
+				?action osph:hasActionParameter ?actPar .			
+				?actPar osph:hasParamName ?actParName .
+				OPTIONAL{?actPar osph:hasParamValue ?actParVal .}
+				OPTIONAL{?actPar osph:hasParamSimpleValue ?actParSimpVal .}
+				OPTIONAL{?actPar osph:hasParamVariable ?actParVar .}
+				OPTIONAL{?actPar osph:hasEventPayloadVariable ?actParEvVar .}
+				OPTIONAL{?actPar osph:hasEventPayloadValue ?actParEvVal .}
+			
+			}				
 		}
 	}
 	UNION
@@ -149,5 +159,6 @@ WHERE {
 				}      
 			}
 		}
+
 	}
 }
