@@ -10,6 +10,8 @@ PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
 DELETE{
+	GRAPH ?g0{?actParamOLD ?propOLD ?objOLD .}
+
 	GRAPH ?g0{?action osph:hasActionDelay ?delayOLD .}
 	GRAPH ?g1{?action osph:hasActionDuration ?durationOLD .}
 	GRAPH ?g2{?action osph:hasActionTarget ?targetOLD .}
@@ -29,6 +31,18 @@ INSERT {
 		?stateEntry fsm:Entry ?action .
 		?stateExit fsm:Exit ?action .	
 		?transition osph:hasTransitionAction ?action .	
+
+		?action osph:hasActionParameter ?actPar .		
+		?actPar a owl:NamedIndividual , osph:ActionParameter .
+
+		?actPar osph:hasParamName ?actParName .
+		?actPar osph:hasParamValue ?actParVal .
+		?actPar osph:hasParamSimpleValue ?actParSimpVal .
+		?actPar osph:hasParamVariable ?actParVar .
+		?actPar osph:hasEventPayloadVariable ?actParEvVar .
+		?actPar osph:hasEventPayloadValue ?actParEvVal .
+
+		
 
 		?action osph:hasActionDelay ?delay .
 		?action osph:hasActionDuration ?duration .
@@ -50,6 +64,21 @@ WHERE{
 
 	#?statemach rdf:type fsm:StateMachine .
 	?action rdf:type/rdfs:subClassOf* fsm:Action .
+
+	# VALUES (?actParName ) {("delay" ) } 
+	
+	OPTIONAL { 
+		FILTER(BOUND(?actParName))
+		GRAPH ?g0{
+			?action osph:hasActionParameter ?actParamOLD .
+			?actParamOLD osph:hasParamName ?actParNameOLD .
+			?actParamOLD ?propOLD ?objOLD .
+			}
+		FILTER(?actParNameOLD = ?actParName)
+	}	
+
+	BIND(IF(bound(?actParName) , URI(CONCAT(STR(?action),"_par",STR(?actParName))) , ?null) AS ?actPar ) .
+
 
 	OPTIONAL { 
 		FILTER(BOUND(?delay))

@@ -16,6 +16,7 @@ WHERE {
 
 	?itsType rdfs:subClassOf* ifc:IfcObjectDefinition .
 	?asset rdf:type ?itsType .
+	FILTER ( ?itsType != owl:NamedIndividual ) .
   
   
 	OPTIONAL{
@@ -33,12 +34,10 @@ WHERE {
 		}
 	}
     
-    FILTER ( ?itsType != owl:NamedIndividual ) . 
+     
 	OPTIONAL { ?asset ifc:description_IfcRoot/express:hasString ?itsDescr } .
-    OPTIONAL { ?asset ifcext:isDefinedByType|^ifcext:typesObject ?itsModel} .
-    OPTIONAL { ?asset ifcext:isDefinedByObject|^ifcext:declaresObject ?itsModel} .
-    OPTIONAL { ?asset ifcext:typesObject|^ifcext:isDefinedByType ?itsModeled} .
-    OPTIONAL { ?asset ifcext:declaresObject|^ifcext:isDefinedByObject ?itsModeled} .
+    OPTIONAL { ?asset ifcext:isDefinedByType|^ifcext:typesObject|ifcext:isDefinedByObject|^ifcext:declaresObject ?itsModel} .
+    OPTIONAL { ?asset ifcext:typesObject|^ifcext:isDefinedByType|ifcext:declaresObject|^ifcext:isDefinedByObject ?itsModeled} .
     OPTIONAL { ?asset (ifcext:isContainedInStructure|^ifcext:containsProduct) ?itsBuilding } .
     OPTIONAL { ?asset (ifcext:containsProduct|^ifcext:isContainedInStructure) ?containedElem } .
     OPTIONAL { ?asset (ifcext:decomposesObject|^ifcext:isDecomposedByObject) ?itsParent } .
@@ -57,8 +56,8 @@ WHERE {
 	}
 	OPTIONAL{
 		?asset ssn:hasProperty ?buffprop .
-		?buffprop rdf:type factory:BufferCapacity .
-		?buffprop osph:hasPropertySimpleValue ?buffCap .
+		?buffprop rdf:type factory:BufferCapacity ;
+			osph:hasPropertySimpleValue ?buffCap .
 	}	
 	OPTIONAL{
 		?asset ssn:hasProperty ?prop .
@@ -70,9 +69,10 @@ WHERE {
 	OPTIONAL{ ?asset ifc:objectPlacement_IfcProduct ?objplace . 
 		OPTIONAL{
 		  ?objplace ifc:relativePlacement_IfcLocalPlacement ?relplace .
-			OPTIONAL{ ?relplace ifcext:hasRotationMatrix ?itsRot . }
-			OPTIONAL{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRot . }
-			OPTIONAL{ ?relplace ifcext:hasQuaternion ?itsRot . }
+			OPTIONAL{ ?relplace (ifcext:hasRotationMatrix|ifcext:hasEulerAnglesYXZ|ifcext:hasQuaternion) ?itsRot . }
+			#OPTIONAL{ ?relplace ifcext:hasRotationMatrix ?itsRot . }
+			#OPTIONAL{ ?relplace ifcext:hasEulerAnglesYXZ ?itsRot . }
+			#OPTIONAL{ ?relplace ifcext:hasQuaternion ?itsRot . }
 			OPTIONAL{ ?relplace ifcext:hasLocation ?itsPos . }
 		}
 		OPTIONAL{ 
