@@ -61,6 +61,58 @@ PREFIX xml:                 <http://www.w3.org/XML/1998/namespace>
 PREFIX xsd:                 <http://www.w3.org/2001/XMLSchema#>
 PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
 
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr5_guard>
+        rdf:type        fsm:Guard , owl:NamedIndividual;
+        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B1stop> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr5>
+        rdf:type             fsm:Transition , owl:NamedIndividual;
+        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#backward>;
+        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
+        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr5_guard> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr4_guard>
+        rdf:type        fsm:Guard , owl:NamedIndividual;
+        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B1stop> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr4>
+        rdf:type             fsm:Transition , owl:NamedIndividual;
+        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#forward>;
+        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
+        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr4_guard> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr3_guard>
+        rdf:type        fsm:Guard , owl:NamedIndividual;
+        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B1startB> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr3>
+        rdf:type             fsm:Transition , owl:NamedIndividual;
+        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
+        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#backward>;
+        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr3_guard> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr2_guard>
+        rdf:type        fsm:Guard , owl:NamedIndividual;
+        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B1startF> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr2>
+        rdf:type             fsm:Transition , owl:NamedIndividual;
+        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
+        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#forward>;
+        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr2_guard> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr1>
+        rdf:type    fsm:Transition , owl:NamedIndividual;
+        fsm:Source  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_init>;
+        fsm:Target  <https://w3id.org/ontoeng/CW/StateChart02#idle> .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC_init>
+        rdf:type  fsm:Initial , owl:NamedIndividual .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1_SC>
+        rdf:type      fsm:StateMachine , owl:NamedIndividual;
+        fsm:contains  <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr4> , <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#B1_SC_init> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#idle> , <https://w3id.org/ontoeng/CW/StateChart02#backward> .
+
 <https://w3id.org/ontoeng/CW/StateChart02#TrafficLights_SC_tr7_guard>
         rdf:type        fsm:Guard , owl:NamedIndividual;
         fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#switchOff> .
@@ -421,58 +473,6 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
         rdf:type      fsm:StateMachine , owl:NamedIndividual;
         fsm:contains  <https://w3id.org/ontoeng/CW/StateChart02#Slide1_SC_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_SC_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_SC_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#Slide1_SC_init> , <https://w3id.org/ontoeng/CW/StateChart02#forward_2> , <https://w3id.org/ontoeng/CW/StateChart02#idle_2> .
 
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr5_guard>
-        rdf:type        fsm:Guard , owl:NamedIndividual;
-        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B2stop> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr5>
-        rdf:type             fsm:Transition , owl:NamedIndividual;
-        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#backward>;
-        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
-        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr5_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr4_guard>
-        rdf:type        fsm:Guard , owl:NamedIndividual;
-        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B2stop> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr4>
-        rdf:type             fsm:Transition , owl:NamedIndividual;
-        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#forward>;
-        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
-        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr4_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr3_guard>
-        rdf:type        fsm:Guard , owl:NamedIndividual;
-        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B2startB> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr3>
-        rdf:type             fsm:Transition , owl:NamedIndividual;
-        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
-        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#backward>;
-        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr3_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr2_guard>
-        rdf:type        fsm:Guard , owl:NamedIndividual;
-        fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#B2startF> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr2>
-        rdf:type             fsm:Transition , owl:NamedIndividual;
-        fsm:Source           <https://w3id.org/ontoeng/CW/StateChart02#idle>;
-        fsm:Target           <https://w3id.org/ontoeng/CW/StateChart02#forward>;
-        fsm:TransitionGuard  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr2_guard> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr1>
-        rdf:type    fsm:Transition , owl:NamedIndividual;
-        fsm:Source  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_init>;
-        fsm:Target  <https://w3id.org/ontoeng/CW/StateChart02#idle> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC_init>
-        rdf:type  fsm:Initial , owl:NamedIndividual .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2_SC>
-        rdf:type      fsm:StateMachine , owl:NamedIndividual;
-        fsm:contains  <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr4> , <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#B2_SC_init> , <https://w3id.org/ontoeng/CW/StateChart02#forward> , <https://w3id.org/ontoeng/CW/StateChart02#idle> , <https://w3id.org/ontoeng/CW/StateChart02#backward> .
-
 <https://w3id.org/ontoeng/CW/StateChart02#PP_SC_tr5_guard>
         rdf:type        fsm:Guard , owl:NamedIndividual;
         fsm:GuardEvent  <https://w3id.org/ontoeng/CW/StateChart02#goRest> .
@@ -612,15 +612,6 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
 <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC>
         rdf:type      fsm:StateMachine , owl:NamedIndividual;
         fsm:contains  <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_tr5> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_tr4> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_tr3> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_tr2> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_tr1> , <https://w3id.org/ontoeng/CW/StateChart02#Controller_SC_init> , <https://w3id.org/ontoeng/CW/StateChart02#control_idle> , <https://w3id.org/ontoeng/CW/StateChart02#genPart> , <https://w3id.org/ontoeng/CW/StateChart02#genBox> .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2stop>
-        rdf:type  fsm:Event , owl:NamedIndividual .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2startB>
-        rdf:type  fsm:Event , owl:NamedIndividual .
-
-<https://w3id.org/ontoeng/CW/StateChart02#B2startF>
-        rdf:type  fsm:Event , owl:NamedIndividual .
 
 <https://w3id.org/ontoeng/CW/StateChart02#CommandBox.Potentiometer_reprLU>
         rdf:type                   ifc:IfcSIUnit , owl:NamedIndividual;
@@ -1314,6 +1305,15 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
         rdf:type   fsm:Simple , owl:NamedIndividual;
         fsm:Entry  <https://w3id.org/ontoeng/CW/StateChart02#idle_2_actEn1> .
 
+<https://w3id.org/ontoeng/CW/StateChart02#B1stop>
+        rdf:type  fsm:Event , owl:NamedIndividual .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1startB>
+        rdf:type  fsm:Event , owl:NamedIndividual .
+
+<https://w3id.org/ontoeng/CW/StateChart02#B1startF>
+        rdf:type  fsm:Event , owl:NamedIndividual .
+
 <https://w3id.org/ontoeng/CW/StateChart02#genBox_2_actEn1_rotation>
         rdf:type                  osph:ActionParameter , owl:NamedIndividual;
         osph:hasParamName         "rotation";
@@ -1803,7 +1803,7 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
 <https://w3id.org/ontoeng/CW/StateChart02#idle_actEn1_target>
         rdf:type            osph:ActionParameter , owl:NamedIndividual;
         osph:hasParamName   "target";
-        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B2> .
+        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#place_actEn2_target>
         rdf:type            osph:ActionParameter , owl:NamedIndividual;
@@ -2725,8 +2725,7 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
         ifc:objectPlacement_IfcProduct  <https://w3id.org/ontoeng/CW/StateChart02#B2_objplace>;
         ifc:representation_IfcProduct   <https://w3id.org/ontoeng/CW/StateChart02#B2_prodrepr>;
         IFC4_ADD1_extension:isContainedInStructure
-                <https://w3id.org/ontoeng/CW/StateChart02#building>;
-        osph:hasStateMachine            <https://w3id.org/ontoeng/CW/StateChart02#B2_SC> .
+                <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#box_extrepr>
         rdf:type  osph:RepresentationReference , owl:NamedIndividual;
@@ -2832,7 +2831,7 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
 <https://w3id.org/ontoeng/CW/StateChart02#forward_actEn1_target>
         rdf:type            osph:ActionParameter , owl:NamedIndividual;
         osph:hasParamName   "target";
-        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B2> .
+        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Receiver_5_objplace>
         rdf:type  ifc:IfcLocalPlacement , owl:NamedIndividual;
@@ -3334,7 +3333,8 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
         IFC4_ADD1_extension:isContainedInStructure
                 <https://w3id.org/ontoeng/CW/StateChart02#building>;
         IFC4_ADD1_extension:isDecomposedByObject
-                <https://w3id.org/ontoeng/CW/StateChart02#SnapZone_box> .
+                <https://w3id.org/ontoeng/CW/StateChart02#SnapZone_box>;
+        osph:hasStateMachine            <https://w3id.org/ontoeng/CW/StateChart02#B1_SC> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_2_reprLU>
         rdf:type                   ifc:IfcSIUnit , owl:NamedIndividual;
@@ -3446,7 +3446,7 @@ PREFIX xsp:                 <http://www.owl-ontologies.com/2005/08/07/xsp.owl#>
 <https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_target>
         rdf:type            osph:ActionParameter , owl:NamedIndividual;
         osph:hasParamName   "target";
-        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B2> .
+        osph:hasParamValue  <https://w3id.org/ontoeng/CW/StateChart02#B1> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#backward_actEn1_velocity>
         rdf:type                  osph:ActionParameter , owl:NamedIndividual;
