@@ -21,11 +21,17 @@ INSERT {
 		
 		?statemach fsm:contains ?initialState .
 		?statemach fsm:contains ?initialTransition .
+		
+		?parentState fsm:hasStateMachineElement ?initialState .
 	}
 }
 WHERE{
 
 	?statemach rdf:type fsm:StateMachine .
+	
+	OPTIONAL{
+		?parentState fsm:hasStateMachineElement ?state .
+	}
 	
 	BIND(URI(CONCAT(STR(?state),"_initial") ) AS ?initialState ) . 
 	BIND(URI(CONCAT(STR(?state),"_initialTr") ) AS ?initialTransition ) . 
