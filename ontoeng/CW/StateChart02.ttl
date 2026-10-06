@@ -972,7 +972,9 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#stopper1_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
-                <https://w3id.org/ontoeng/CW/StateChart02#stopper1_prodrepr> .
+                <https://w3id.org/ontoeng/CW/StateChart02#stopper1_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#part_ProductMass>
         a       <https://w3id.org/ontoeng/osph#ProductMass> , <http://www.w3.org/2002/07/owl#NamedIndividual> ;
@@ -3611,7 +3613,9 @@
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#objectPlacement_IfcProduct>
                 <https://w3id.org/ontoeng/CW/StateChart02#stopper2_objplace> ;
         <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#representation_IfcProduct>
-                <https://w3id.org/ontoeng/CW/StateChart02#stopper2_prodrepr> .
+                <https://w3id.org/ontoeng/CW/StateChart02#stopper2_prodrepr> ;
+        <https://w3id.org/ontoeng/IFC4_ADD1_extension#isContainedInStructure>
+                <https://w3id.org/ontoeng/CW/StateChart02#building> .
 
 <https://w3id.org/ontoeng/CW/StateChart02#Idle_2>
         a       <https://w3id.org/ontoeng/factory#SensorIdle> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
