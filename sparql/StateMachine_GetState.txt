@@ -14,7 +14,7 @@ WHERE {
   
 	# STATE 	
 	?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
-	#?state rdf:type/rdfs:subClassOf* fsm:State .	
+	?state rdf:type/rdfs:subClassOf* fsm:State .	
 	?state a ?stateclass .
 	FILTER ( ?stateclass != owl:NamedIndividual ) .
 	
