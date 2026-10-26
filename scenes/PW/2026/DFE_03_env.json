@@ -1,0 +1,180 @@
+{
+	"cameras": [
+		{
+			"id": "camera.d1",
+			"type": "FreeCamera",
+			"position": [
+				-99.09668694061553,
+				3486.6417049423308,
+				6014.917903427763
+			],
+			"rotation": [
+				0.6682959543449001,
+				-3.0849767554871232,
+				0
+			],
+			"speed": 128,
+			"minZ": 1,
+			"maxZ": 50000
+		},
+		{
+			"id": "camera.d2",
+			"type": "FreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				1.4922574904759804,
+				-1.1132980724991095,
+				0
+			],
+			"speed": 1,
+			"minZ": 1,
+			"maxZ": 50000
+		},
+		{
+			"id": "camera.d3",
+			"type": "FreeCamera",
+			"position": [
+				39,
+				70,
+				438
+			],
+			"rotation": [
+				1.4922574904759804,
+				-1.1132980724991095,
+				0
+			],
+			"speed": 1,
+			"minZ": 1,
+			"maxZ": 50000
+		}
+	],
+	"lights": [
+		{
+			"id": "light.0",
+			"type": "HemisphericLight",
+			"direction": [
+				1,
+				0.3,
+				0.1
+			],
+			"intensity": 0.1
+		},
+		{
+			"id": "light.1",
+			"type": "PointLight",
+			"position": [
+				0,
+				1100,
+				0
+			],
+			"intensity": 3.5
+		}
+	],
+	"shadows": {
+		"darkness": 0.3,
+		"bias": 0.001,
+		"environmentIntensity": 0.3
+	},
+	"datagen": {
+		"cam": {
+			"alphaMin": 0,
+			"alphaMax": 360,
+			"alphaStep": 60,
+			"betaMin": 0,
+			"betaMax": 70,
+			"betaStep": 35,
+			"radiusFactorMin": 1.7,
+			"radiusFactorMax": 2.7,
+			"radiusFactorStep": 1
+		},
+		"background": {
+			"fragmentMode": "clone",
+			"surfaceMode": "plane",
+			"volumeForm": "mixed",
+			"fragmentCount": 600,
+			"sourceCount": 100,
+			"distanceFactor": 7,
+			"widthFactor": 9,
+			"heightFactor": 9,
+			"fragmentSizeFactor": 1.5,
+			"minDepthRatio": 0.55,
+			"jitterRatio": 0.15,
+			"seed": 2026,
+			"minSourceSizeFactor": 0.05,
+			"maxSourceSizeFactor": 40,
+			"faceCameraFragments": false,
+			"materialSampling": "surfaceArea",
+			"saturatedColorPenalty": 0.35,
+			"colorSaturationFactor": 0.9
+		}
+	},
+	"webxr": {
+		"movement": {
+			"teleportation": false,
+			"freeMovement": true,
+			"speed": 2,
+			"lockHeightAfterTeleport": true,
+			"movementOrientationFollowsViewerPose": true,
+			"invertDirection": false
+		},
+		"interactions": {
+			"gripping": true,
+			"grabDistance": 500,
+			"pointerSelection": true,
+			"pointerSelectionSize": 1,
+			"laserPointerColor": {
+				"default": {
+					"r": 0,
+					"g": 1,
+					"b": 0
+				},
+				"picked": {
+					"r": 1,
+					"g": 0,
+					"b": 0
+				}
+			}
+		},
+		"camera": {
+			"collisions": true,
+			"height": 80,
+			"flying": false
+		},
+		"soundParams": {
+			"type": "sine",
+			"frequency": 200,
+			"duration": 0.01,
+			"volume": 0.1,
+			"decay": 0.02
+		}
+	},
+	"env": {
+		"skyboxTexture": "textures/studio.env",
+		"backgroundColor": [
+			0.2,
+			0.3,
+			0.5
+		],
+		"ground": {
+			"texture": "textures/concrete.jpg",
+			"size": [
+				10000,
+				10000,
+				400
+			]
+		}
+	},
+	"physics": {
+		"engine": "havok",
+		"gravity": [
+			0,
+			-9.81,
+			0
+		],
+		"viewer": false
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "context":  {
+     "assetTrail":  false,
+     "UnitOfMeasureScale":  0.001,
+    "Zup":  false,
+     "RepoAnim":  ""
+  },
+   "nodes":  [
+    {
+      "id":  "B1",
+       "actions":  [
+        {
+          "trigger":  {
+            "type":  "timestamp",
+             "data":  "1000"
+          },
+           "event":  {
+            "type": "sendEvent",
+            "data":  "B1startF"
+          } 
+        } 
+      ] 
+    }
+  ],
+   "sequences":  [],
+   "bookmarks":  []
+}
