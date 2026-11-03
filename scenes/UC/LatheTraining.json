@@ -1,0 +1,1412 @@
+{
+    "context": {
+        "UnitOfMeasureScale": 0.001,
+        "Zup": false,
+        "RepoPath": "https://raw.githubusercontent.com/TheBigP01/DF03_Project_CNCLatheSetup/main/"
+    },
+    "scene": [
+        "Building",
+        "SpawnRoom",
+        "Frame",
+        "Metaldoor",
+        "PlankHooks",
+        "Workbench",
+        "Earplugs",
+        "Glasses",
+        "Shoes",
+        "Vest",
+        "Computer",
+        "WelcomeText",
+        "FirstPanel",
+        "GuardDoor",
+        "ScenarioPanelSecond",
+        "LatheBody",
+        "MainSwitch",
+        "KnobMainSwitch",
+        "E_Stop",
+        "OnButtonHMI",
+        "HmiDisplay",
+        "Door",
+        "FootPedalLeft",
+        "FootPedalRight",
+        "WorkTable",
+        "RawBar",
+        "RawBar2",
+        "ChuckSnapZone",
+        "FinishedPart",
+        "MachiningSparks"
+    ],
+    "assets": [
+        {
+            "id": "Building",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "Warehouse.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, -1230, 0]
+        },
+        {
+            "id": "SpawnRoom",
+            "type": "https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#IfcBuilding",
+            "representations": [
+                {
+                    "file": "SpawnRoom.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [11200, -1230, 9850],
+            "rotation": [0, 0, 0]
+        },
+        {
+            "id": "Frame",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "MetalFrame.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom"
+        },
+        {
+            "id": "Metaldoor",
+            "descr": "Interactive Metal Door",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "MetalDoor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "Frame",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stMetaldoor",
+                "initial": "Closed",
+                "states": {
+                    "Closed": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Open"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Metaldoor",
+                                "position": [0, 0, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 10
+                            }
+                        ]
+                    },
+                    "Open": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Closed"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Metaldoor",
+                                "position": [-6740, 0, 1740],
+                                "rotation": [0, 4.712346, 0],
+                                "duration": 10
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "PlankHooks",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "PlankHooks.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, -50],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom"
+        },
+        {
+            "id": "Workbench",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WorkbenchCompressed.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom"
+        },
+        {
+            "id": "Earplugs",
+            "descr": "Interactive Safety Earplugs",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyEarplugs.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stEarplugs",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Earplugs",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "Glasses",
+            "descr": "Interactive Safety Glasses",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyGlasses.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stGlasses",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Glasses",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "Shoes",
+            "descr": "Interactive Safety Shoes",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyShoes.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stShoes",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Shoes",
+                                "position": [0, -5000, 0],
+                                "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "Vest",
+            "descr": "Interactive Safety Vest",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "SafetyVest.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, -50],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stVest",
+                "initial": "NotEquipped",
+                "states": {
+                    "NotEquipped": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Equipped"
+                        }
+                    },
+                    "Equipped": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Vest",
+                                "position": [0, -5000, -50],
+                                "duration": 500
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PPE_EQUIPPED",
+                                "targetStatechart": "stGuardDoor"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "Computer",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Computer.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stComputer",
+                "initial": "Welcome",
+                "states": {
+                    "Welcome": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "FirstTask"
+                        }
+                    },
+                    "FirstTask": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "WelcomeText",
+                                "position": [0, -5000, 500],
+                                "duration": 10
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "WelcomeText",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WelcomeText.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "Computer"
+        },
+        {
+            "id": "FirstPanel",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FirstPanel.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "Computer"
+        },
+        {
+            "id": "GuardDoor",
+            "descr": "Prevents users to open the metal door before equipping their PPE",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "GuardDoor.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stGuardDoor",
+                "initial": "Locked_4",
+                "states": {
+                    "Locked_4": { "on": { "PPE_EQUIPPED": "Locked_3" } },
+                    "Locked_3": { "on": { "PPE_EQUIPPED": "Locked_2" } },
+                    "Locked_2": { "on": { "PPE_EQUIPPED": "Locked_1" } },
+                    "Locked_1": { "on": { "PPE_EQUIPPED": "Unlocked" } },
+                    "Unlocked": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "GuardDoor",
+                                "position": [0, -5000, 0],
+                                "duration": 10
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "ScenarioPanelSecond",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "ScenarioPanelSecond.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "SpawnRoom"
+        },
+        {
+            "id": "LatheBody",
+            "descr": "CNC Lathe for Setup Training",
+            "type": "https://w3id.org/ontoeng/factory#MachineTool",
+            "representations": [
+                {
+                    "file": "Lathe_Body.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [-800, -1230, -800],
+            "rotation": [0, 0, 0]
+        },
+        {
+            "id": "MainSwitch",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "MainSwitch.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "KnobMainSwitch",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "KnobMainSwitch.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "MainSwitch",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stKnobMainSwitch",
+                "initial": "ResetAnimation",
+                "states": {
+                    "ResetAnimation": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "KnobMainSwitch.KnobMainSwitch",
+                                "position": [250, 1000, 1],
+                                "rotation": [0, 3.14159153, 3.159044817],
+                                "duration": 10
+                            }
+                            ],
+                        "after": {
+                            "1000": "OFF"
+                        }
+                    },
+                    "OFF": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "ON"
+                        }
+                    },
+                    "ON": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "KnobMainSwitch.KnobMainSwitch",
+                                "position": [250, 1000, 1],
+                                "rotation": [0, 3.14159153, 0],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "playSound",
+                                "url": "MachineSound.mp3",
+                                "loop": true,
+                                "volume": 0.8
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "OnButtonHMI",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "OnButtonHMI.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stOnButtonHMI",
+                "initial": "OFF",
+                "states": {
+                    "OFF": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "ON"
+                        }
+                    },
+                    "ON": {
+                        "entry": [
+                            {
+                                "action": "sendEvent",
+                                "target": "POWER_ON",
+                                "targetStatechart": "stHmiDisplay"
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "HMI_ON",
+                                "targetStatechart": "stE_Stop"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "E_Stop",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "E_Stop.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, -10],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stE_Stop",
+                "initial": "WaitingHMI",
+                "states": {
+                    "WaitingHMI": {
+                        "on": { 
+                            "HMI_ON": "Pressed" 
+                        }
+                    },
+                    "Pressed": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Released"
+                        }
+                    },
+                    "Released": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "E_Stop.E_StopAssembly",
+                                "position": [29, 1156, 1810],
+                                "rotation": [-0.087266, 0, 5.235987742],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "ESTOP_RELEASED",
+                                "targetStatechart": "stHmiDisplay"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "HmiDisplay",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                { 
+                    "file": "ScreenHMI_Off.glb",
+                    "unit": 1 
+                }
+            ],
+            "position": [0, 0, 3],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stHmiDisplay",
+                "initial": "Off",
+                "states": {
+                    "Off": {
+                        "on": { "POWER_ON": "WaitingForEStop" }
+                    },
+                    "WaitingForEStop": {
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Estop.glb" 
+                            }
+                        ],
+                        "on": { "ESTOP_RELEASED": "Ready" }
+                    },
+                    "Ready": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Task"
+                        },
+                        "entry": [
+                            {
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Ready.glb" 
+                            }
+                        ]
+                    },
+                    "Task": { 
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Task.glb" 
+                            }
+                        ],
+                        "on": { "DOOR_CLOSED": "GO" }
+                    },
+                    "GO": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Loading"
+                        },
+                        "entry": [
+                            {
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Go.glb" 
+                            }
+                        ]
+                    },
+                    "Loading": { 
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Loading.glb" 
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "RUN",
+                                "targetStatechart": "stFinishedPart"
+                            }
+                        ],
+                        "on": { "PART_CREATED": "DONE" }
+                    },
+                    "DONE": { 
+                        "entry": [
+                            { 
+                                "action": "setRepresentation", 
+                                "target": "HmiDisplay", 
+                                "reprref": "ScreenHMI_Done.glb" 
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "Door",
+            "descr": "Interactive Safety Door",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "Door.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [-500, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stDoor",
+                "initial": "Close",
+                "states": {
+                    "Close": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Open"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Door",
+                                "position": [-500, 0, 0],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "DOOR_CLOSED",
+                                "targetStatechart": "stHmiDisplay"
+                            }
+                        ]
+                    },
+                    "Open": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Close"
+                        },
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "Door",
+                                "position": [0, 0, 0],
+                                "duration": 2000
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "id": "FootPedalLeft",
+            "descr": "Interactive Foot Pedal to open the Jaws of the chuck",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FootPedalLeft.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 50, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stFootPedalLeft",
+                "initial": "ResetAnimation",
+                "states": {
+                    "ResetAnimation": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_1",
+                                "position": [-85, -1, 3],
+                                "rotation": [-0.523598588, 0, 1.570795765],
+                                "duration": 10
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_2",
+                                "position": [-85, 3, 3],
+                                "rotation": [-0.523598588, -3.14159153, -1.570795765],
+                                "duration": 10
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_3",
+                                "position": [-85, 0, -6],
+                                "rotation": [1.570795765, -1.570795765, 0],
+                                "duration": 10
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.ThreeJawChuck",
+                                "position": [568.78, 1110.3, 1412.5],
+                                "rotation": [1.132538511, 0, -3.14159153],
+                                "duration": 10
+                            }
+                            ],
+                        "after": {
+                            "1000": "Waiting"
+                        }
+                    },
+                    "Waiting": {
+                        "on": { 
+                            "ENABLE_OPEN": "ReadyToOpen" 
+                        }
+                    },
+                    "ReadyToOpen": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "OpeningJaws"
+                        }
+                    },
+                    "OpeningJaws": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_1",
+                                "position": [-85, -1, 3],
+                                "rotation": [-0.523598588, 0, 1.570795765],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_2",
+                                "position": [-85, 3, 3],
+                                "rotation": [-0.523598588, -3.14159153, -1.570795765],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_3",
+                                "position": [-85, 0, -6],
+                                "rotation": [1.570795765, -1.570795765, 0],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "ENABLE_CLOSE",
+                                "targetStatechart": "stFootPedalRight"
+                            }
+                        ],
+                        "always": "Waiting"
+                    }
+                }
+            }
+        },
+        {
+            "id": "FootPedalRight",
+            "descr": "Interactive Foot Pedal to close the Jaws of the chuck",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FootPedalRight.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 50, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger": true,
+                "isPickable": true
+            },
+            "statechart": {
+                "id": "stFootPedalRight",
+                "initial": "ReadyToClose",
+                "states": {
+                    "ReadyToClose": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "ClosingJaws"
+                        }
+                    },
+                    "ClosingJaws": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_1",
+                                "position": [-85, 8, -5],
+                                "rotation": [-0.523598588, 0, 1.570795765],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_2",
+                                "position": [-85, -8, -6],
+                                "rotation": [-0.523598588, -3.14159153, -1.570795765],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.Jaw_3",
+                                "position": [-85, 0, 12],
+                                "rotation": [1.570795765, -1.570795765, 0],
+                                "duration": 2000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "ENABLE_OPEN",
+                                "targetStatechart": "stFootPedalLeft"
+                            }
+                        ],
+                        "always": "Waiting"
+                    },
+                    "Waiting": {
+                        "on": { 
+                            "ENABLE_CLOSE": "ReadyToClose" 
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id": "WorkTable",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "WorkTable.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "RawBar",
+            "descr": "Raw material cylinder to be grapped",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "RawBar.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "WorkTable",
+            "properties": {
+                "MotionType": "ANIMATED",
+                "isTrigger" : true,
+                "isPickable": true
+                 },
+            "statechart": {
+                "id": "stRawBar",
+                "initial": "OnTable",
+                "states": {
+                    "OnTable": {
+                        "on": {
+                            "b-button_pressed": {
+                                "actions": [
+                                    {
+                                        "type": "xstate.raise",
+                                        "event": "pick"
+                                    }
+                                ]
+                            },
+                            "pick": "Swap"
+                        }
+                    },
+                    "Swap": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "RawBar",
+                                "position": [0, -5000, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "RawBar2",
+                                "position": [0, 0, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "RAWBARPLACED",
+                                "targetStatechart": "stChuckSnapZone"
+                            }
+                        ]    
+                    }
+                }
+            }
+        },
+        {
+            "id": "RawBar2",
+            "descr": "Raw material cylinder to be machined",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "RawBar2.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, -5000, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody"
+        },
+        {
+            "id": "ChuckSnapZone",
+            "descr": "Target zone to snap the workpiece into the chuck",
+            "type": "https://w3id.org/ontoeng/factory#SnapZoneActuator",
+            "representations": [
+                {
+                    "file": "ChuckSnapZoneCube.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "isPickable": true,
+                "isTrigger" : true,
+                "SnapPosition": [0, 0, 0], 
+                "SnapRotation": [0, 0, 0] 
+            },
+            "statechart": {
+               "id": "stChuckSnapZone",
+                "initial": "active",
+                "states": {
+                    "active": {
+                        "on": { "RAWBARPLACED": "inactive" }
+                    },
+                    "inactive": {
+                        "on": { "activate": "active" }
+                    }
+                }
+            }
+        },
+        {
+            "id": "FinishedPart",
+            "descr": "Machined Part",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "FakeFinishedPart.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, -5000, 0],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "isPickable": true,
+                "isTrigger" : true,
+                "SnapPosition": [0, 0, 0], 
+                "SnapRotation": [0, 0, 0] 
+            },
+            "statechart": {
+               "id": "stFinishedPart",
+                "initial": "WaitingCommand",
+                "states": {
+                    "WaitingCommand": {
+                        "on": { "RUN": "Running" }
+                    },
+                    "Running": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BaseBlocTurret-1",
+                                "position": [1550, 1089.37, 709.8],
+                                "rotation": [0, -1.570795765, 0],
+                                "duration": 1000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BlockTurret-1",
+                                "position": [125, -80, 10],
+                                "rotation": [0, 0, 0],
+                                "duration": 1000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.SL30_Turret",
+                                "position": [225, 94, 620],
+                                "rotation": [0, 0, -0.57595844],
+                                "duration": 1000
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "START_SPARKS",
+                                "targetStatechart": "stSparks"
+                            },
+                            {
+                                "action": "playSound",
+                                "target": "LatheBody",
+                                "url": "Machining_Screech.wav",
+                                "loop": false,
+                                "volume": 0.8
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "LatheBody.ThreeJawChuck",
+                                "rotation": [2, 0, 0],
+                                "duration": 200,
+                                "loop": true
+                            }
+                        ],
+                        "after": {
+                            "15000": "Finished"
+                        }
+                    },
+                    "Finished": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BaseBlocTurret-1",
+                                "position": [1894, 1089.37, 709.8],
+                                "rotation": [0, -1.570795765, 0],
+                                "duration": 6000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.BlockTurret-1",
+                                "position": [0, 67, 10],
+                                "rotation": [0, 0, 0],
+                                "duration": 6000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "LatheBody.SL30_Turret",
+                                "position": [225, 94, 620],
+                                "rotation": [0, 0, 0],
+                                "duration": 6000
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "RawBar2",
+                                "position": [0, -5000, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "moveTo",
+                                "target": "FinishedPart",
+                                "position": [0, 0, 0],
+                                "rotation": [0, 0, 0],
+                                "duration": 1
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "PART_CREATED",
+                                "targetStatechart": "stHmiDisplay"
+                            },
+                            {
+                                "action": "sendEvent",
+                                "target": "STOP_SPARKS",
+                                "targetStatechart": "stSparks"
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "LatheBody.ThreeJawChuck",
+                                "rotation": [2, 0, 0],
+                                "duration": 200,
+                                "loop": false
+                            }
+                        ]
+                    }
+                }
+            }  
+        },
+        {
+            "id": "MachiningSparks",
+            "descr": "Visual effect for cutting",
+            "type": "https://w3id.org/ontoeng/factory#Artifact",
+            "representations": [
+                {
+                    "file": "Sparks.glb",
+                    "unit": 1
+                }
+            ],
+            "position": [0, -5000, 0],
+            "scale": [0.8, 0.8, 0.8],
+            "rotation": [0, 0, 0],
+            "placementRelTo": "LatheBody",
+            "properties": {
+                "MotionType": "ANIMATED"
+            },
+            "statechart": {
+                "id": "stSparks",
+                "initial": "ResetAnimation",
+                "states": {
+                     "ResetAnimation": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "MachiningSparks.Triangle.006",
+                                "position": [681.6037736, 915.2112676, 1161.60221],
+                                "rotation": [1.570795765, 1.570795765, 0],
+                                "duration": 100
+                            }
+                            ],
+                        "after": {
+                            "1000": "Hidden"
+                        }
+                    },
+                    "Hidden": {
+                        "on": { "START_SPARKS": "MovingUp" }
+                    },
+                    "MovingUp": {
+                        "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "MachiningSparks",
+                                "position": [80, 210, 300], 
+                                "duration": 10
+                            }
+                        ],
+                        "after": {
+                            "60": "PlayingSparks" 
+                        }
+                    },
+                    "PlayingSparks": {
+                        "entry": [
+                            {
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks.Triangle.006",
+                                "rotation": [2, 2, 0],
+                                "duration": 200,
+                                "loop": true
+                            }
+                        ],
+                        "on": { "STOP_SPARKS": "StoppingSparks" }
+                    },
+                    "StoppingSparks": {
+                         "entry": [
+                            {
+                                "action": "moveTo",
+                                "target": "MachiningSparks",
+                                "position": [0, -5000, 0], 
+                                "duration": 10
+                            },
+                            {
+                                "action": "moveAdditive",
+                                "target": "MachiningSparks.Triangle.006",
+                                "rotation": [0, 0, 0],
+                                "duration": 100,
+                                "loop": false
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

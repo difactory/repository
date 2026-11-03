@@ -1,0 +1,138 @@
+{
+	"cameras": [
+		{
+			"id": "camera.d1",
+			"type": "FreeCamera",
+			"position": [
+				-1543.9675540658009,
+				228.98056351289853,
+				8133.19933552898
+			],
+			"rotation": [
+				-0.004000000140642393,
+				2.890500008489349,
+				0
+			],
+			"speed": 1024,
+			"minZ": 0.1,
+			"maxZ": 100000
+		},
+		{
+			"id": "camera.d2",
+			"type": "FreeCamera",
+			"position": [
+				10750,
+				70,
+				7000
+			],
+			"rotation": [
+				0,
+				0,
+				0
+			],
+			"speed": 512,
+			"minZ": 0.1,
+			"maxZ": 100000
+		}
+	],
+	"lights": [
+		{
+			"id": "light.0",
+			"type": "HemisphericLight",
+			"direction": [
+				1,
+				0.3,
+				0.1
+			],
+			"intensity": 0.5
+		},
+		{
+			"id": "light.1",
+			"type": "PointLight",
+			"position": [
+				0,
+				5,
+				0
+			],
+			"intensity": 2
+		}
+	],
+	"shadows": {
+		"darkness": 0.3,
+		"bias": 0.001,
+		"environmentIntensity": 0.3
+	},
+	"datagen": {
+		"cam": {
+			"alphaMin": 0,
+			"alphaMax": 360,
+			"alphaStep": 60,
+			"betaMin": 0,
+			"betaMax": 70,
+			"betaStep": 35,
+			"radiusFactorMin": 1.5,
+			"radiusFactorMax": 2.5,
+			"radiusFactorStep": 1
+		}
+	},
+	"webxr": {
+		"movement": {
+			"teleportation": false,
+			"freeMovement": true,
+			"speed": 2,
+			"lockHeightAfterTeleport": true,
+			"movementOrientationFollowsViewerPose": true,
+			"invertDirection": false
+		},
+		"interactions": {
+			"gripping": true,
+			"grabDistance": 500,
+			"pointerSelection": true,
+			"pointerSelectionSize": 1,
+			"laserPointerColor": {
+				"default": {
+					"r": 0,
+					"g": 1,
+					"b": 0
+				},
+				"picked": {
+					"r": 1,
+					"g": 0,
+					"b": 0
+				}
+			}
+		},
+		"camera": {
+			"collisions": true,
+			"height": 80,
+			"flying": false
+		},
+		"soundParams": {
+			"type": "sine",
+			"frequency": 200,
+			"duration": 0.01,
+			"volume": 0.1,
+			"decay": 0.02
+		}
+	},
+	"env": {
+		"skyboxTexture": "textures/studio.env",
+		"backgroundColor": [
+			0.2,
+			0.3,
+			0.5
+		],
+		"ground": {
+			"texture": ""
+		}
+	},
+	"physics": {
+		"engine": "havok",
+		"gravity": [
+			0,
+			-9.81,
+			0
+		],
+		"viewer": false
+	}
+}
