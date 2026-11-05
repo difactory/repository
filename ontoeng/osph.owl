@@ -1761,33 +1761,9 @@ history interval.</dc:description>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#VariablePosition -->
+    <!-- https://w3id.org/ontoeng/osph#VariableVector3D -->
 
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariablePosition">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#VariableRotationEuler -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariableRotationEuler">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#VariableRotationMatrix -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariableRotationMatrix">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#VariableRotationQuaternion -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariableRotationQuaternion">
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariableVector3D">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
     </owl:Class>
     
