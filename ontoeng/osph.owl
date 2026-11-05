@@ -1486,7 +1486,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductMotionType"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductRestitution"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductShapeType"/>
-                    <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductTriggerBody"/>
                     <rdf:Description rdf:about="https://w3id.org/ontoeng/osph#ProductVelocity"/>
                 </owl:unionOf>
             </owl:Class>
