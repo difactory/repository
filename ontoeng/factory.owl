@@ -247,23 +247,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it.</rdfs:comment>
     <rdf:Description rdf:about="https://w3id.org/ontoeng/controlSystem#RControllerReleaseState">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/osph#EventGeneration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Entry"/>
-                <owl:allValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#generatesEvent"/>
-                        <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/factory#MachineToolStartOperation"/>
-                    </owl:Restriction>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty>
                     <rdf:Description>
                         <owl:inverseOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Source"/>

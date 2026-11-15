@@ -55,15 +55,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#assignsValue -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#assignsValue">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Constant"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/ontoeng/osph#decomposesHistory -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#decomposesHistory">
@@ -81,15 +72,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#State"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoeng/osph#Activity"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#generatesEvent -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#generatesEvent">
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#EventGeneration"/>
-        <rdfs:range rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
     </owl:ObjectProperty>
     
 
@@ -130,16 +112,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Condition"/>
         <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Expression"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#hasControlledVariable -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ontoeng/osph#hasControlledVariable">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
-        <rdfs:range rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
     </owl:ObjectProperty>
     
 
@@ -524,16 +496,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <rdf:Description rdf:about="http://www.learninglab.de/~dolog/fsm/fsm.owl#TransitionName">
         <rdfs:domain rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Transition"/>
     </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#assignsSimpleValue -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ontoeng/osph#assignsSimpleValue">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ontoeng/osph#ValueAssignment"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -1118,6 +1080,14 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     
 
 
+    <!-- https://w3id.org/ontoeng/osph#ActionParameterEvent -->
+
+    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionParameterEvent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ontoeng/osph#ActionParameter"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ontoeng/osph#ActionRaiseEvent -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ActionRaiseEvent">
@@ -1189,21 +1159,6 @@ For any query please write to walter.terkaj(at)stiima.cnr.it </rdfs:comment>
     <!-- https://w3id.org/ontoeng/osph#DataOrigin -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#DataOrigin"/>
-    
-
-
-    <!-- https://w3id.org/ontoeng/osph#EventGeneration -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#EventGeneration">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasActionTarget"/>
-                <owl:allValuesFrom rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>DEPRECATED</rdfs:comment>
-    </owl:Class>
     
 
 
@@ -1777,22 +1732,6 @@ history interval.</dc:description>
     
 
 
-    <!-- https://w3id.org/ontoeng/osph#ValueAssignment -->
-
-    <owl:Class rdf:about="https://w3id.org/ontoeng/osph#ValueAssignment">
-        <rdfs:subClassOf rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Action"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ontoeng/osph#hasActionTarget"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ontoeng/expression#Variable"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dc:description>Action that assigns a value to a variable</dc:description>
-        <rdfs:comment>DEPRECATED</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/ontoeng/osph#VariablePosition3D -->
 
     <owl:Class rdf:about="https://w3id.org/ontoeng/osph#VariablePosition3D">
@@ -1857,6 +1796,38 @@ history interval.</dc:description>
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#Predicted">
         <rdf:type rdf:resource="https://w3id.org/ontoeng/osph#DataOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#updatePlacement -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#updatePlacement">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#updateVariableAdd -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#updateVariableAdd">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#updateVariableSet -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#updateVariableSet">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ontoeng/osph#updateVariableSub -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ontoeng/osph#updateVariableSub">
+        <rdf:type rdf:resource="http://www.learninglab.de/~dolog/fsm/fsm.owl#Event"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
