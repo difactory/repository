@@ -9,12 +9,19 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actPar ?actParName ?actParVal ?actParSimpVal ?actParVar ?actParEvVar ?actParEvVal ?actReference ?var ?varName ?varVal ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?transitionAction ?trDelay ?event ?cond #?actDelay ?actDuration ?actTarget ?actPlace  ?actPos ?actRot ?actVel ?actLoop ?actRepr ?actColor ?actIntensity ?actBlink
+SELECT Distinct ?statemach ?state ?doactivity ?doactivityModel ?entryAction ?onentryEvent ?onentryEventModel ?exitAction ?action ?actClass ?actPar ?actParName ?actParVal ?actParSimpVal ?actParVar ?actParEvVar ?actParEvVal ?actParEvVarClass ?actReference ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?outTransition ?transitionTarget ?transitionAction ?trDelay ?event ?guardcond ?cond ?lhsstr ?lhsuris ?lhsclasses ?operator ?rhsstr
+
 WHERE {
   
-	# STATE 	
-	?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
-	?state rdf:type/rdfs:subClassOf* fsm:State .	
+	# STATE & STATECHART	
+	
+	#?statemach fsm:contains/fsm:hasStateMachineElement* ?state .
+	# ?state rdf:type/rdfs:subClassOf* fsm:State .	
+
+	?statemach rdf:type fsm:StateMachine .
+	?statemach fsm:contains?/fsm:hasStateMachineElement* ?state .
+	?state rdf:type/rdfs:subClassOf* fsm:StateMachineElement .
+	
 	?state a ?stateclass .
 	FILTER ( ?stateclass != owl:NamedIndividual ) .
 	
@@ -24,6 +31,7 @@ WHERE {
 	UNION {?state rdf:type fsm:Region . BIND("Region" as ?statetype)} 
 	UNION {?state rdf:type fsm:Initial . BIND("Initial" as ?statetype)} 
 	UNION {?state rdf:type fsm:Final . BIND("Final" as ?statetype)} 
+	UNION {?state rdf:type fsm:StateMachine . BIND("StateMachine" as ?statetype)} 
 	
 	
 	# PARENT (Composite)
@@ -67,19 +75,8 @@ WHERE {
 			?action a ?actClass .
 			FILTER ( ?actClass != owl:NamedIndividual ) .
 			
-			# OPTIONAL{?action osph:hasActionDelay ?actDelay .}
-			# OPTIONAL{?action osph:hasActionDuration ?actDuration .}
-			# OPTIONAL{?action osph:hasActionTarget ?actTarget .}
-			# OPTIONAL{?action osph:hasActionLocation ?actPos .}
-			# OPTIONAL{?action osph:hasActionRotation ?actRot .}
-			# OPTIONAL{?action osph:hasActionVelocity ?actVel .}			
-			# OPTIONAL{?action osph:isActionInLoop ?actLoop .}
-			# OPTIONAL{?action osph:hasActionReprRef ?actRepr .}
-			# OPTIONAL{?action osph:hasActionReprColor ?actColor .}
-			# OPTIONAL{?action osph:hasActionReprIntensity ?actIntensity .}		
-			# OPTIONAL{?action osph:hasActionReprBlinkInterval ?actBlink .}	
-
 			OPTIONAL{
+				# DEPRECATED
 				?action osph:hasActionReferenceValue ?actReference .			
 			}
 			OPTIONAL{
@@ -88,9 +85,12 @@ WHERE {
 				OPTIONAL{?actPar osph:hasParamValue ?actParVal .}
 				OPTIONAL{?actPar osph:hasParamSimpleValue ?actParSimpVal .}
 				OPTIONAL{?actPar osph:hasParamVariable ?actParVar .}
-				OPTIONAL{?actPar osph:hasEventPayloadVariable ?actParEvVar .}
-				OPTIONAL{?actPar osph:hasEventPayloadValue ?actParEvVal .}
-			
+				OPTIONAL{
+					?actPar osph:hasEventPayloadVariable ?actParEvVar .
+					?actParEvVar a ?actParEvVarClass .
+					FILTER ( ?actParEvVarClass != owl:NamedIndividual ) .
+				}
+				OPTIONAL{?actPar osph:hasEventPayloadValue ?actParEvVal .}	
 			}				
 		}
 	}
@@ -110,52 +110,42 @@ WHERE {
 				?outTransition fsm:TransitionGuard ?guard .
 				OPTIONAL{?guard fsm:GuardEvent ?event .}
 				OPTIONAL{
-					?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
+					?guard fsm:GuardCondition ?guardcond .
+					?guardcond osph:hasConditionExpression ?expr .
 
 					# BIN EXPRESSION
 					?expr rdf:type ex:BinaryExpression .
-					?expr ex:hasOperator/rdfs:label ?operator .  
+					OPTIONAL{ 
+						?expr ex:hasOperator ?operator .  
+						OPTIONAL{ ?operator rdfs:label ?operLabel . }
+					}
 					# LHS	
-					{
+					OPTIONAL{
 						?expr ex:hasLhsOperand ?lhs .
 						{
-							SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
+							SELECT  ?expriter ?operator1 (group_concat(distinct STR(?hs1);SEPARATOR = "," ) as ?lhsuris) (group_concat(distinct STR(?class1);SEPARATOR = "," ) as ?lhsclasses) (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
 							WHERE {
 								?expriter rdf:type ex:IteratedBinaryExpression .   
 								?expriter ex:hasOperator/rdfs:label ?operator1 .  
-								?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+								# ?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+								?expriter ex:hasOperands ?hs1 .
+								?hs1 a ?class1 .
+								FILTER ( ?class1 != owl:NamedIndividual ) .
 							} GROUP BY ?expriter ?operator1     
 						}
 						FILTER(?lhs=?expriter ) .
 						BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
 					}
-					UNION{
-						?expr ex:hasLhsOperand ?lhs .
-						?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
-						?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
-					}  
-					
 					# RHS
-					{
-						?expr ex:hasRhsOperand ?rhs .
-						{
-							SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
-							WHERE {
-								?expriter2 rdf:type ex:IteratedBinaryExpression .   
-								?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
-								?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
-							} GROUP BY ?expriter2 ?operator2     
-						}
-						FILTER(?rhs=?expriter2 ) .
-						BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
-					}
-					UNION{
+					OPTIONAL{
 						?expr ex:hasRhsOperand ?rhs .
 						?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
-						?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
+						{?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .}
+						UNION
+						{?rhs osph:hasQuantityValue ?rhsstr .}
 					}    
 
-					BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
+					BIND(CONCAT(?lhsstr,STR(?operLabel),STR(?rhsstr)) AS ?cond)			
 				}      
 			}
 		}

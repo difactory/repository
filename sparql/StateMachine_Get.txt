@@ -9,7 +9,7 @@ PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
 PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
-SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outGlobalTr) as ?outGlobalTrs) (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay (group_concat(distinct ?trAction) as ?trActs) ?event ?cond ?action ?actionClass (GROUP_CONCAT( CONCAT(STR(?actPar),"&&", STR(?actParName),"&&", COALESCE(STR(?actParVal), ""),"&&", COALESCE(STR(?actParSimpVal), ""),"&&", COALESCE(STR(?actParVar), ""),"&&", COALESCE(STR(?actParEvVar), ""),"&&", COALESCE(STR(?actParEvVal), "")); SEPARATOR="$$") AS ?actParams) ?actReference ?var ?varName ?varVal
+SELECT Distinct ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel (group_concat(distinct ?outGlobalTr) as ?outGlobalTrs) (group_concat(distinct ?outtr) as ?outtrs) (group_concat(distinct ?entryAction) as ?entryActs) (group_concat(distinct ?exitAction) as ?exitActs) ?parent ?statetype ?stateclass ?transition ?source ?target ?trDelay (group_concat(distinct ?trAction) as ?trActs) ?event ?guardcond ?cond ?lhsstr ?lhsuris ?lhsclasses ?operator ?operLabel ?rhsstr ?action ?actionClass (GROUP_CONCAT( CONCAT(STR(?actPar),"&&", STR(?actParName),"&&", COALESCE(STR(?actParVal), ""),"&&", COALESCE(STR(?actParSimpVal), ""),"&&", COALESCE(STR(?actParVar), ""),"&&", COALESCE(STR(?actParEvVar), ""),"&&", COALESCE(STR(?actParEvVal), "")); SEPARATOR="$$") AS ?actParams) ?actReference ?var ?varClass ?varName ?varVal ?varReprProp ?varReprPlace
 WHERE {
   
 	?statemach rdf:type fsm:StateMachine .
@@ -21,8 +21,12 @@ WHERE {
 		UNION
 		{ 
 			?statemach osph:hasExtendedStateVariable ?var .
+			?var a ?varClass .
+			FILTER ( ?varClass != owl:NamedIndividual ) .
 			OPTIONAL{ ?var osph:hasVariableName ?varName .}
 			OPTIONAL{ ?var osph:hasVariablePredefValue ?varVal .}
+			OPTIONAL{ ?var osph:representsProperty ?varReprProp .}
+			OPTIONAL{ ?var osph:representsPlacementOf ?varReprPlace .}
 		}
 		UNION
 		{
@@ -82,51 +86,42 @@ WHERE {
 					?elem fsm:TransitionGuard ?guard .
 					OPTIONAL{?guard fsm:GuardEvent ?event .}
 					OPTIONAL{
-						?guard fsm:GuardCondition/osph:hasConditionExpression ?expr .
+						?guard fsm:GuardCondition ?guardcond .
+						?guardcond osph:hasConditionExpression ?expr .
 
 						# BIN EXPRESSION
 						?expr rdf:type ex:BinaryExpression .
-						?expr ex:hasOperator/rdfs:label ?operator .  
+						OPTIONAL{ 
+							?expr ex:hasOperator ?operator .  
+							OPTIONAL{ ?operator rdfs:label ?operLabel . }
+						}
 						# LHS	
-						{
+						OPTIONAL{
 							?expr ex:hasLhsOperand ?lhs .
 							{
-								SELECT  ?expriter ?operator1  (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
+								SELECT  ?expriter ?operator1 (group_concat(distinct STR(?hs1);SEPARATOR = "," ) as ?lhsuris) (group_concat(distinct STR(?class1);SEPARATOR = "," ) as ?lhsclasses) (group_concat(distinct STRAFTER(STR(?hs1),"#");SEPARATOR = "," ) as ?alllhs)
 								WHERE {
 									?expriter rdf:type ex:IteratedBinaryExpression .   
 									?expriter ex:hasOperator/rdfs:label ?operator1 .  
-									?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+									# ?expriter ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs1 .
+									?expriter ex:hasOperands ?hs1 .
+									?hs1 a ?class1 .
+									FILTER ( ?class1 != owl:NamedIndividual ) .
 								} GROUP BY ?expriter ?operator1     
 							}
 							FILTER(?lhs=?expriter ) .
 							BIND(REPLACE(?alllhs,",",?operator1) AS ?lhsstr) 
 						}
-						UNION{
-							?expr ex:hasLhsOperand ?lhs .
-							?lhs rdf:type/rdfs:subClassOf* ex:Constant .  
-							?lhs express:hasInteger|express:hasDouble|express:hasString ?lhsstr .
-						}  
 						# RHS
-						{
-							?expr ex:hasRhsOperand ?rhs .
-							{
-								SELECT  ?expriter2 ?operator2  (group_concat(distinct STRAFTER(STR(?hs2),"#");SEPARATOR = "," ) as ?allrhs)
-								WHERE {
-									?expriter2 rdf:type ex:IteratedBinaryExpression .   
-									?expriter2 ex:hasOperator/rdfs:label ?operator2 .  
-									?expriter2 ex:hasOperands/(osph:representsProperty|osph:isRepresentedByVariable) ?hs2 .
-								} GROUP BY ?expriter2 ?operator2     
-							}
-							FILTER(?rhs=?expriter2 ) .
-							BIND(REPLACE(?allrhs,",",?operator2) AS ?rhsstr) 
-						}
-						UNION{
+						OPTIONAL{
 							?expr ex:hasRhsOperand ?rhs .
 							?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
-							?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .
+							{?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .}
+							UNION
+							{?rhs osph:hasQuantityValue ?rhsstr .}
 						}    
 
-						BIND(CONCAT(?lhsstr,STR(?operator),STR(?rhsstr)) AS ?cond)			
+						BIND(CONCAT(?lhsstr,STR(?operLabel),STR(?rhsstr)) AS ?cond)					
 					}      
 				}
 			}
@@ -140,6 +135,7 @@ WHERE {
 				FILTER ( ?actionClass != owl:NamedIndividual ) .	
 
 				OPTIONAL{
+					# DEPRECATED
 					?action osph:hasActionReferenceValue ?actReference .			
 				}
 				OPTIONAL{
@@ -156,5 +152,5 @@ WHERE {
 		}
 	}
 }
-GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?cond  ?action ?actionClass ?actReference ?var ?varName ?varVal 
+GROUP BY ?statemach ?itsObj ?elem ?state ?doactivity ?doactivityModel ?onentryEvent ?onentryEventModel ?onexitEvent ?onexitEventModel ?parent ?statetype ?stateclass ?transition ?target ?source ?trDelay ?event ?guardcond ?cond ?lhsstr ?lhsuris ?lhsclasses ?operator ?operLabel ?rhsstr ?action ?actionClass ?actReference ?var ?varClass ?varName ?varVal ?varReprProp ?varReprPlace
 ORDER BY ?statemach

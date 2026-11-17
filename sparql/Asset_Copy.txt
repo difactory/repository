@@ -1,0 +1,380 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX list: <https://w3id.org/list#> 
+PREFIX express: <https://w3id.org/express#> 
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD1/OWL#> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+
+INSERT {
+  GRAPH ?graphDst {
+	
+	# asset and children class
+	?assetchild rdf:type owl:NamedIndividual, ?childclass .
+	
+	# decomposition/nesting
+	?assetchilddirparDec ifcext:isDecomposedByObject ?assetchild .
+	?assetchilddirparNest ifcext:isNestedByObject ?assetchild .
+	
+	# internal relations
+	?assetchild ifcext:isConnectedToElement ?assetchildconn .
+	?assetchild ifcext:isPredecessorToProcess ?assetchildsucc .
+	
+	# placement
+	?assetchilddirparDecplace a owl:NamedIndividual , ifc:IfcLocalPlacement .
+	?assetchildplace a owl:NamedIndividual , ifc:IfcLocalPlacement .		
+	?assetchilddirparDec ifc:objectPlacement_IfcProduct ?assetchilddirparDecplace .
+	?assetchild ifc:objectPlacement_IfcProduct ?assetchildplace .
+	?assetchildplace ifc:placementRelTo_IfcLocalPlacement ?assetchilddirparDecplace .
+	?assetchildplace ifc:relativePlacement_IfcLocalPlacement ?assetchildrelplace .	
+	?assetchildrelplace a owl:NamedIndividual , ifc:IfcAxis2Placement3D .
+	?assetchildrelplace ifcext:hasRotationMatrix ?itsRotMat .
+	?assetchildrelplace ifcext:hasEulerAnglesYXZ ?itsRotEul .
+	?assetchildrelplace ifcext:hasQuaternion ?itsRotQuat .
+	?assetchildrelplace ifcext:hasLocation ?itsPos .	
+	
+	# properties
+    ?assetchild ssn:hasProperty ?assetchildprop .
+    ?assetchildprop rdf:type owl:NamedIndividual , ?propclass .
+    ?assetchildprop ?proppred ?propobj .	
+	
+	# Representation
+	?assetchildprodrepr rdf:type owl:NamedIndividual , ifc:IfcProductDefinitionShape .
+	?assetchildreprlist rdf:type owl:NamedIndividual , ifc:IfcRepresentation_List .
+	?assetchildshaperepr rdf:type owl:NamedIndividual , ifc:IfcShapeRepresentation .
+	?assetchildextrepr rdf:type owl:NamedIndividual , osph:RepresentationReference .
+	?assetchildextref rdf:type owl:NamedIndividual , ifc:IfcURIReference .
+	?assetchildreprLU rdf:type owl:NamedIndividual , ifc:IfcSIUnit .	
+	?assetchild ifc:representation_IfcProduct ?assetchildprodrepr .
+	?assetchildprodrepr ifc:representations_IfcProductRepresentation ?assetchildreprlist .
+	?assetchildreprlist list:hasContents ?assetchildshaperepr .
+	?assetchildshaperepr osph:hasExternalRepresentation ?assetchildextrepr .
+	?assetchildextrepr ifc:location_IfcExternalReference ?assetchildextref .
+	?assetchildextrepr osph:hasRepresentationLengthUnit ?assetchildreprLU .
+	?assetchildextref express:hasString ?reprLoc .
+	?assetchildreprLU ifc:unitType_IfcNamedUnit ifc:LENGTHUNIT ; ifc:name_IfcSIUnit ifc:METRE ; ifc:prefix_IfcSIUnit ?reprLUp .	
+	
+	# State Machine
+	?assetchild osph:hasStateMachine ?assetSC .
+	?assetSC rdf:type owl:NamedIndividual , fsm:StateMachine .
+	# Variables
+	?assetSC osph:hasExtendedStateVariable ?assetSCVar .
+	?assetSCVar rdf:type owl:NamedIndividual .
+	?assetSCVar rdf:type ?varClass .
+	?assetSCVar osph:hasVariableName ?varName .
+	?assetSCVar osph:hasVariablePredefValue ?varVal .
+
+	# Elements
+	?assetSC fsm:contains ?assetSCRootElem .
+	?assetSCParent fsm:hasStateMachineElement ?assetSCElem .
+	?assetSCElem rdf:type owl:NamedIndividual .
+	?assetSCElem rdf:type ?elemClass .
+	# Transitions
+	?assetSCTr fsm:Source ?assetSCTrSource .
+	?assetSCTr fsm:Target ?assetSCTrTarget .
+	?assetSCTr osph:hasTransitionDelay ?trDelay .
+	?assetSCGuard rdf:type owl:NamedIndiviual , fsm:Guard.
+	?assetSCGuardEvent rdf:type owl:NamedIndiviual , fsm:Event.
+	?assetSCTr fsm:TransitionGuard ?assetSCGuard .
+	?assetSCGuard fsm:GuardEvent ?assetSCGuardEvent .
+	
+	# Guard Condition
+	?assetSCGuard fsm:GuardCondition ?assetSCGuardCond .
+	?assetSCGuardCond rdf:type owl:NamedIndividual , fsm:Condition .
+	?assetSCGuardCond osph:hasConditionExpression ?assetSCExpr .
+	?assetSCExpr a owl:NamedIndividual , ex:BinaryExpression .	
+	?assetSCExpr ex:hasOperator ?operator .
+	?assetSCExpr ex:hasLhsOperand ?lhsNew .
+	?assetSCExpr ex:hasRhsOperand ?rhsNew .
+	?lhsNew rdf:type owl:NamedIndividual , ex:IteratedBinaryExpression .
+	?rhsNew rdf:type owl:NamedIndividual , osph:Quantity .
+	?lhsOperandNew rdf:type owl:NamedIndividual , ?classLhsOperand .
+	?rhsNew osph:hasQuantityValue ?rhsstr .
+	?lhsNew ex:hasOperator ?operator1 .
+	?lhsNew ex:hasOperands ?lhsOperandNew .
+	
+	# Actions
+	?assetSCAction rdf:type owl:NamedIndividual .
+	?assetSCAction rdf:type ?actionClass .
+	?assetSCActionOwner fsm:Entry ?assetSCEntryAction .
+	?assetSCActionOwner fsm:Exit ?assetSCExitAction .
+	?assetSCActionOwner osph:hasTransitionAction ?assetSCTrAction .
+	?assetSCAction osph:hasActionReferenceValue ?actReference .
+	# Action Parameters
+	?assetSCAction osph:hasActionParameter ?assetSCActPar .
+	?assetSCActPar rdf:type ?actParClass, owl:NamedIndividual .
+	?assetSCActPar osph:hasParamName ?actParName .
+	?assetSCActPar osph:hasParamValue ?actParVal .
+	?assetSCActPar osph:hasParamSimpleValue ?actParSimpVal .
+	?assetSCActPar osph:hasParamVariable ?assetSCActParVar .
+	?assetSCActPar osph:hasEventPayloadVariable ?assetSCActParEvVar .
+	?assetSCActPar osph:hasEventPayloadValue ?actParEvVal .	
+  }
+}
+WHERE {
+
+	?assetSrc rdf:type ?assetclass .
+	FILTER ( ?assetclass != owl:NamedIndividual ) .
+	
+	{
+		?assetSrc (ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?child .
+		# ?childdirparDec (ifcext:isDecomposedByObject|^ifcext:decomposesObject) ?child .
+		OPTIONAL {
+			# The root has no parent inside the copied decomposition tree
+			?childdirparDec (ifcext:isDecomposedByObject|^ifcext:decomposesObject) ?child .
+			# Ensure that the selected parent belongs to this tree.
+			?assetSrc (ifcext:isDecomposedByObject|^ifcext:decomposesObject)* ?childdirparDec .
+		}
+		
+		?child rdf:type ?childclassprod .
+		?childclassprod rdfs:subClassOf* ifc:IfcProduct .
+		FILTER ( ?childclassprod != owl:NamedIndividual ) .
+		
+		# replicate placement ######################
+		OPTIONAL{ ?child ifc:objectPlacement_IfcProduct ?childplace . 
+			OPTIONAL{
+			  ?childplace ifc:relativePlacement_IfcLocalPlacement ?childrelplace .
+				OPTIONAL{ ?childrelplace ifcext:hasRotationMatrix ?itsRotMat . }
+				OPTIONAL{ ?childrelplace ifcext:hasEulerAnglesYXZ ?itsRotEul . }
+				OPTIONAL{ ?childrelplace ifcext:hasQuaternion ?itsRotQuat . }
+				OPTIONAL{ ?childrelplace ifcext:hasLocation ?itsPos . }
+			}
+		}
+		# Connection
+		OPTIONAL{
+			?child ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?childconn .
+			?assetSrc (ifcext:isDecomposedByObject|^ifcext:decomposesObject)+ ?childconn .
+		}			
+	}
+	UNION {
+		?assetSrc (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?child .
+		?childdirparNest (ifcext:isNestedByObject|^ifcext:nestsObject) ?child .
+		
+		# Successors
+		OPTIONAL{
+			?child ifcext:isPredecessorToProcess|^ifcext:isSuccessorFromProcess ?childsucc . 
+			?assetSrc (ifcext:isNestedByObject|^ifcext:nestsObject)+ ?childsucc .
+		}
+	}	
+	
+	# Class
+	?child rdf:type ?childclass .
+	FILTER ( ?childclass != owl:NamedIndividual ) .
+
+	# Properties
+    OPTIONAL{
+        ?child ssn:hasProperty ?childprop .
+        ?childprop rdf:type ?propclass .
+        FILTER(?propclass != owl:NamedIndividual)
+        OPTIONAL{
+            ?childprop ?proppred ?propobj .
+			FILTER( isLiteral(?propobj) || ?proppred = rdf:type )
+		}
+    }	
+	
+	# Representation
+	OPTIONAL{
+		{
+			?child ifc:representation_IfcProduct/ifc:representations_IfcProductRepresentation/list:hasNext*/list:hasContents/osph:hasExternalRepresentation ?extrepr .
+		}
+		UNION {
+			?child ifc:representationMaps_IfcTypeProduct/list:hasNext*/list:hasContents/ifc:mappedRepresentation_IfcRepresentationMap/osph:hasExternalRepresentation ?extrepr .
+		}
+		OPTIONAL{?extrepr osph:hasRepresentationLengthUnit/ifc:prefix_IfcSIUnit ?reprLUp .}
+		?extrepr ifc:location_IfcExternalReference/express:hasString ?reprLoc .   	
+		# filter( regex(str(?reprLoc), ".obj|.OBJ|.glb|.GLB" )) .
+	}
+	
+	# Statechart
+	OPTIONAL{
+
+		?child osph:hasStateMachine ?sm .
+
+		# Variables
+		OPTIONAL{
+			?sm osph:hasExtendedStateVariable ?var .
+
+			?var rdf:type ?varClass .
+			FILTER(?varClass != owl:NamedIndividual)
+
+			OPTIONAL{ ?var osph:hasVariableName ?varName . }
+			OPTIONAL{ ?var osph:hasVariablePredefValue ?varVal . }
+		}
+
+		# Elements
+		OPTIONAL{
+		
+			?sm fsm:contains/fsm:hasStateMachineElement* ?elem .
+			?elem rdf:type ?elemClass .
+			FILTER(?elemClass != owl:NamedIndividual)
+			OPTIONAL{
+				?parent fsm:hasStateMachineElement ?elem .
+			}		
+		
+			# States / Regions / Initial / Final
+			OPTIONAL{
+
+				FILTER EXISTS{
+					?elemClass rdfs:subClassOf* fsm:State .
+				}
+
+				BIND(?elem as ?state)
+				?elem a ?stateclass .
+				FILTER ( ?stateclass != owl:NamedIndividual ) .
+				{?elem rdf:type/rdfs:subClassOf* fsm:Simple . BIND("Simple" as ?statetype)} 
+				UNION {?elem rdf:type fsm:Composite . BIND("Composite" as ?statetype)} 
+				UNION {?elem rdf:type fsm:Region . BIND("Region" as ?statetype)} 
+				UNION {?elem rdf:type fsm:Initial . BIND("Initial" as ?statetype)} 
+				UNION {?elem rdf:type fsm:Final . BIND("Final" as ?statetype)} 
+							
+			}
+
+			# Transitions
+			OPTIONAL{
+			
+				?elem rdf:type/rdfs:subClassOf* fsm:Transition .
+				?elem fsm:Source ?trSource .
+				OPTIONAL{?elem fsm:Target ?trTarget .}
+				
+				BIND(?elem as ?tr)
+				
+				OPTIONAL{?elem osph:hasTransitionDelay ?trDelay .}
+				OPTIONAL{?elem osph:hasTransitionAction ?trAction .}	
+
+				OPTIONAL{
+					?elem fsm:TransitionGuard ?guard .
+					OPTIONAL{?guard fsm:GuardEvent ?event .}
+					OPTIONAL{
+						?guard fsm:GuardCondition ?guardcond .					
+						?guardcond osph:hasConditionExpression ?expr .
+						
+						# BIN EXPRESSION
+						?expr rdf:type ex:BinaryExpression .
+						OPTIONAL{ 
+							?expr ex:hasOperator ?operator .  
+							OPTIONAL{ ?operator rdfs:label ?operLabel . }
+						}
+						# LHS	
+						OPTIONAL{
+							?expr ex:hasLhsOperand ?lhs .
+							?lhs rdf:type ex:IteratedBinaryExpression .   
+							?lhs ex:hasOperator ?operator1 .  
+							?lhs ex:hasOperands ?lhsOperand .
+							?lhsOperand a ?classLhsOperand .
+							FILTER ( ?classLhsOperand != owl:NamedIndividual ) .
+						}
+						# RHS
+						OPTIONAL{
+							?expr ex:hasRhsOperand ?rhs .
+							?rhs rdf:type/rdfs:subClassOf* ex:Constant .  
+							{?rhs express:hasInteger|express:hasDouble|express:hasString ?rhsstr .}
+							UNION
+							{?rhs osph:hasQuantityValue ?rhsstr .}
+						}    
+
+						BIND(CONCAT(?lhsstr,STR(?operLabel),STR(?rhsstr)) AS ?cond)		
+					}      
+				}				
+			}	
+			
+			# Actions 	
+			OPTIONAL{
+		
+				{
+					?elem fsm:Entry ?action .
+					BIND("Entry" AS ?actionType)
+				}
+				UNION{
+					?elem fsm:Exit ?action .
+					BIND("Exit" AS ?actionType)
+				}
+				UNION{
+					?elem osph:hasTransitionAction ?action .
+					BIND("Transition" AS ?actionType)
+				}
+				?action rdf:type/rdfs:subClassOf* fsm:Action .
+				
+				?action a ?actionClass .
+				FILTER ( ?actionClass != owl:NamedIndividual ) .	
+
+				OPTIONAL{
+					#DEPRECATED 
+					?action osph:hasActionReferenceValue ?actReference .			
+				}
+				OPTIONAL{
+					?action osph:hasActionParameter ?actPar .
+					?actPar rdf:type ?actParClass .
+					FILTER(?actParClass != owl:NamedIndividual)					
+					?actPar osph:hasParamName ?actParName .
+					OPTIONAL{?actPar osph:hasParamValue ?actParVal .}
+					OPTIONAL{?actPar osph:hasParamSimpleValue ?actParSimpVal .}
+					OPTIONAL{?actPar osph:hasParamVariable ?actParVar .}
+					OPTIONAL{?actPar osph:hasEventPayloadVariable ?actParEvVar .}
+					OPTIONAL{?actPar osph:hasEventPayloadValue ?actParEvVal .}
+				
+				}			
+			}
+		}
+	}	
+	
+
+
+  	# BIND( URI(CONCAT(STR(?assetDst),".",STRAFTER(STR(?child),"#")))  AS ?assetchild) .
+	BIND( IF( SAMETERM(?child, ?assetSrc), ?assetDst, URI(CONCAT( STR(?assetDst),".", STRAFTER(STR(?child),"#") )) ) AS ?assetchild) .
+
+  	BIND(IF(SAMETERM(?assetSrc,?childdirparDec),?assetDst,URI(CONCAT(STR(?assetDst),".",STRAFTER(STR(?childdirparDec),"#"))) ) AS ?assetchilddirparDec ) . 
+  	BIND(IF(SAMETERM(?assetSrc,?childdirparNest),?assetDst,URI(CONCAT(STR(?assetDst),".",STRAFTER(STR(?childdirparNest),"#"))) ) AS ?assetchilddirparNest ) . 
+  	BIND(URI(CONCAT(STR(?assetDst),".",STRAFTER(STR(?childconn),"#")))  AS ?assetchildconn ) . 
+  	BIND(URI(CONCAT(STR(?assetDst),".",STRAFTER(STR(?childsucc),"#")))  AS ?assetchildsucc ) . 
+	
+	BIND(IF(bound(?childclassprod),URI(CONCAT(STR(?assetchild),"_objplace")),?null ) AS ?assetchildplace ) . 
+	BIND(IF(bound(?assetchilddirparDec),URI(CONCAT(STR(?assetchilddirparDec),"_objplace")),?null ) AS ?assetchilddirparDecplace ) . 
+	BIND(IF(bound(?childrelplace),URI(CONCAT(STR(?assetchild),"_relplace")),?null ) AS ?assetchildrelplace ) . 	
+	
+	BIND( IF( bound(?childprop), URI(CONCAT(STR(?assetchild),"_",STRAFTER(STR(?propclass),"#"))), ?null ) AS ?assetchildprop ) .
+	
+	BIND(IF(bound(?extrepr),URI(CONCAT(STR(?assetchild),"_prodrepr")),?null) AS ?assetchildprodrepr) .
+	BIND(IF(bound(?extrepr),URI(CONCAT(STR(?assetchild),"_reprlist")) ,?null) AS ?assetchildreprlist) .
+	BIND(IF(bound(?extrepr),URI(CONCAT(STR(?assetchild),"_shaperepr")),?null) AS ?assetchildshaperepr) .
+	BIND(IF(bound(?extrepr),URI(CONCAT(STR(?assetchild),"_extrepr")),?null) AS ?assetchildextrepr) .
+	BIND(IF(bound(?extrepr),URI(CONCAT(STR(?assetchild),"_extref")),?null) AS ?assetchildextref) .
+	BIND(IF(bound(?reprLUp),URI(CONCAT(STR(?assetchild),"_reprLU")),?null) AS ?assetchildreprLU) .	
+	
+	BIND(IF(bound(?sm),URI(CONCAT(STR(?assetchild),"_SC")),?null) AS ?assetSC) .
+	BIND(IF(bound(?var),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?var),"#"))),?null) AS ?assetSCVar) .
+	BIND(IF(bound(?elem),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?elem),"#"))),?null) AS ?assetSCElem) .
+	BIND(IF(bound(?parent),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?parent),"#"))),?null) AS ?assetSCParent) .
+	BIND( IF( !BOUND(?parent) && BOUND(?elem), ?assetSCElem, ?null  ) AS ?assetSCRootElem ) .
+
+	BIND(IF(bound(?tr),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?tr),"#"))),?null) AS ?assetSCTr) .
+	BIND(IF(SAMETERM(?trSource,?sm),?assetSC,IF(bound(?trSource),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?trSource),"#"))),?null)) AS ?assetSCTrSource) .
+	BIND(IF(bound(?trTarget),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?trTarget),"#"))),?null) AS ?assetSCTrTarget) .
+	
+	BIND(IF(bound(?guard),URI(CONCAT(STR(?assetSCTr),"_Guard")),?null) AS ?assetSCGuard) .
+	BIND(IF(bound(?event),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?event),"#") )),?null) AS ?assetSCGuardEvent) .
+	
+	BIND(IF(bound(?guardcond),URI(CONCAT(STR(?assetSCTr),"_GuardCond")),?null) AS ?assetSCGuardCond) .
+	BIND(IF(bound(?expr),URI(CONCAT(STR(?assetSCTr),"_GuardCondExpr")),?null) AS ?assetSCExpr) .
+	BIND(IF(BOUND(?lhs),URI(CONCAT(STR(?assetSCTr),"_",STRAFTER(STR(?lhs),"#"))),URI(CONCAT(STR(?assetSCTr),"_GuardCondExprLhs"))) AS ?lhsNew) .
+	BIND(IF(BOUND(?lhsOperand),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?lhsOperand),"#"))),?null) AS ?lhsOperandNew) .
+	BIND(IF(BOUND(?rhs),URI(CONCAT(STR(?assetSCTr),"_GuardCondExprRhs")),?null) AS ?rhsNew) .
+
+	
+	BIND(IF(bound(?action),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?action),"#"))),?null) AS ?assetSCAction) .
+	BIND(IF(bound(?elem),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?elem),"#"))),?null) AS ?assetSCActionOwner) .
+	BIND(IF(?actionType="Entry",?assetSCAction,?null) AS ?assetSCEntryAction) .
+	BIND(IF(?actionType="Exit",?assetSCAction,?null) AS ?assetSCExitAction) .
+	BIND(IF(?actionType="Transition",?assetSCAction,?null) AS ?assetSCTrAction) .
+	
+	BIND(IF(bound(?actPar),URI(CONCAT(STR(?assetSCAction),"_",STRAFTER(STR(?actPar),"#"))),?null) AS ?assetSCActPar) .
+	BIND(IF(bound(?actParVar),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?actParVar),"#"))),?null) AS ?assetSCActParVar) .
+	BIND(IF(bound(?actParEvVar),URI(CONCAT(STR(?assetSC),"_",STRAFTER(STR(?actParEvVar),"#"))),?null) AS ?assetSCActParEvVar) .
+	
+	
+
+}

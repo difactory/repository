@@ -10,19 +10,12 @@ PREFIX ex: <https://w3id.org/ontoeng/expression#>
 PREFIX express: <https://w3id.org/express#> 
 
 DELETE{
-	GRAPH ?g0{?actParamOLD ?propOLD ?objOLD .}
-
-	GRAPH ?g0{?action osph:hasActionDelay ?delayOLD .}
-	GRAPH ?g1{?action osph:hasActionDuration ?durationOLD .}
-	GRAPH ?g2{?action osph:hasActionTarget ?targetOLD .}
-	GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
-	GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
-	GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
-	GRAPH ?g51{?action osph:isActionInLoop ?loopOLD .}
-	GRAPH ?g6{?action osph:hasActionReprRef ?reprrefOLD .}
-	GRAPH ?g7{?action osph:hasActionReprColor ?reprcolorOLD .}
-	GRAPH ?g8{?action osph:hasActionReprIntensity ?reprintensityOLD .}	
-	GRAPH ?g9{?action osph:hasActionReprBlinkInterval ?reprblinkOLD .}	
+	# GRAPH ?g0{?actParOLD ?propOLD ?objOLD .}
+	GRAPH ?g0{?actParOLD osph:hasParamValue ?actParValDEL .}
+	GRAPH ?g0{?actParOLD osph:hasParamSimpleValue ?actParSimpValDEL .}
+	GRAPH ?g0{?actParOLD osph:hasParamVariable ?actParVarDEL .}
+	GRAPH ?g0{?actParOLD osph:hasEventPayloadVariable ?actParEvVarDEL .}
+	GRAPH ?g0{?actParOLD osph:hasEventPayloadValue ?actParEvValDEL .}	
 }
 INSERT { 
 	GRAPH ?graph { 
@@ -33,31 +26,14 @@ INSERT {
 		?transition osph:hasTransitionAction ?action .	
 
 		?action osph:hasActionParameter ?actPar .		
-		?actPar a owl:NamedIndividual , osph:ActionParameter .
+		# ?actPar a owl:NamedIndividual , osph:ActionParameter .
 
 		?actPar osph:hasParamName ?actParName .
-		?actPar osph:hasParamValue ?actParVal .
-		?actPar osph:hasParamSimpleValue ?actParSimpVal .
-		?actPar osph:hasParamVariable ?actParVar .
-		?actPar osph:hasEventPayloadVariable ?actParEvVar .
-		?actPar osph:hasEventPayloadValue ?actParEvVal .
-
-		
-
-		?action osph:hasActionDelay ?delay .
-		?action osph:hasActionDuration ?duration .
-		?action osph:hasActionTarget ?target .
-		
-		?action osph:hasActionLocation ?position .
-		?action osph:hasActionRotation ?rotation .
-		?action osph:hasActionVelocity ?velocity .
-		
-		?action osph:isActionInLoop ?loop .
-	
-		?action osph:hasActionReprRef ?reprref .
-		?action osph:hasActionReprColor ?reprcolor .
-		?action osph:hasActionReprIntensity ?reprintensity .	
-		?action osph:hasActionReprBlinkInterval ?reprblink .	
+		?actPar osph:hasParamValue ?actParValNEW .
+		?actPar osph:hasParamSimpleValue ?actParSimpValNEW .
+		?actPar osph:hasParamVariable ?actParVarNEW .
+		?actPar osph:hasEventPayloadVariable ?actParEvVarNEW .
+		?actPar osph:hasEventPayloadValue ?actParEvValNEW .
 	}
 }
 WHERE{
@@ -70,58 +46,31 @@ WHERE{
 	OPTIONAL { 
 		FILTER(BOUND(?actParName))
 		GRAPH ?g0{
-			?action osph:hasActionParameter ?actParamOLD .
-			?actParamOLD osph:hasParamName ?actParNameOLD .
-			?actParamOLD ?propOLD ?objOLD .
-			}
+			?action osph:hasActionParameter ?actParOLD .
+			?actParOLD osph:hasParamName ?actParNameOLD .
+			#?actParOLD ?propOLD ?objOLD .
+			OPTIONAL{?actParOLD osph:hasParamValue ?actParValOLD .}
+			OPTIONAL{?actParOLD osph:hasParamSimpleValue ?actParSimpValOLD .}
+			OPTIONAL{?actParOLD osph:hasParamVariable ?actParVarOLD .}
+			OPTIONAL{?actParOLD osph:hasEventPayloadVariable ?actParEvVarOLD .}
+			OPTIONAL{?actParOLD osph:hasEventPayloadValue ?actParEvValOLD .}	
+		}
 		FILTER(?actParNameOLD = ?actParName)
 	}	
 
-	BIND(IF(bound(?actParName) , URI(CONCAT(STR(?action),"_par",STR(?actParName))) , ?null) AS ?actPar ) .
+	# BIND(IF(bound(?actParName) , URI(CONCAT(STR(?action),"_par",STR(?actParName))) , ?null) AS ?actPar ) .
+	BIND(IF(BOUND(?actParName),IF(BOUND(?actParOLD),?actParOLD,URI(CONCAT(STR(?action),"_par_",STR(?actParName)))),?null) AS ?actPar) .
 
-
-	OPTIONAL { 
-		FILTER(BOUND(?delay))
-		GRAPH ?g0{?action osph:hasActionDelay ?delayOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?duration))
-		GRAPH ?g1{?action osph:hasActionDuration ?durationOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?target))
-		GRAPH ?g2{?action osph:hasActionTarget ?targetOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?position))
-		GRAPH ?g3{?action osph:hasActionLocation ?positionOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?rotation))
-		GRAPH ?g4{?action osph:hasActionRotation ?rotationOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?velocity))
-		GRAPH ?g5{?action osph:hasActionVelocity ?velocityOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?loop))
-		GRAPH ?g51{?action osph:isActionInLoop ?loopOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?reprref))
-		GRAPH ?g6{?action osph:hasActionReprRef ?reprrefOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?reprcolor))
-		GRAPH ?g7{?action osph:hasActionReprColor ?reprcolorOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?reprintensity))
-		GRAPH ?g8{?action osph:hasActionReprIntensity ?reprintensityOLD .}
-	}
-	OPTIONAL { 
-		FILTER(BOUND(?reprblink))
-		GRAPH ?g9{?action osph:hasActionReprBlinkInterval ?reprblinkOLD .}
-	}		
+	BIND(IF(bound(?actParVal) , ?actParValOLD , ?null) AS ?actParValDEL ) .	
+	BIND(IF(bound(?actParSimpVal) || bound(?actParVar) , ?actParSimpValOLD , ?null) AS ?actParSimpValDEL ) .	
+	BIND(IF(bound(?actParVar) || bound(?actParSimpVal) , ?actParVarOLD , ?null) AS ?actParVarDEL ) .	
+	BIND(IF(bound(?actParEvVar) , ?actParEvVarOLD , ?null) AS ?actParEvVarDEL ) .	
+	# BIND(IF(bound(?actParEvVal) , ?actParEvValOLD , ?null) AS ?actParEvValDEL ) .	
+	BIND(IF(bound(?actParEvVal) || bound(?actParEvVar) , ?actParEvValOLD , ?null) AS ?actParEvValDEL ) .	
+	
+	BIND(IF(bound(?actParVal) && !CONTAINS(STR(?actParVal),"*DELETE*"), ?actParVal , ?null) AS ?actParValNEW ) .	
+	BIND(IF(bound(?actParSimpVal) , ?actParSimpVal , ?null) AS ?actParSimpValNEW ) .	
+	BIND(IF(bound(?actParVar) && !CONTAINS(STR(?actParVar),"*DELETE*") , ?actParVar , ?null) AS ?actParVarNEW ) .	
+	BIND(IF(bound(?actParEvVar) && !CONTAINS(STR(?actParEvVar),"*DELETE*") , ?actParEvVar , ?null) AS ?actParEvVarNEW ) .	
+	BIND(IF(bound(?actParEvVal) , ?actParEvVal , ?null) AS ?actParEvValNEW ) .	
 }

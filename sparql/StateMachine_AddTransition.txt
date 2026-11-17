@@ -16,6 +16,7 @@ DELETE{
 		?transition fsm:TransitionGuard ?guardDEL . 
 		?guardDEL a owl:NamedIndividual , fsm:Guard .
 	}
+	GRAPH ?g2{?guard fsm:GuardEvent ?eventDEL . } 
 }
 INSERT { 
 	GRAPH ?graph { 
@@ -26,8 +27,8 @@ INSERT {
 		?guardNew a owl:NamedIndividual , fsm:Guard .
 		?transition fsm:TransitionGuard ?guardNew .
 		
-		?guard fsm:GuardEvent ?event .
-		?guardNew fsm:GuardEvent ?event .
+		?guard fsm:GuardEvent ?eventNEW .
+		?guardNew fsm:GuardEvent ?eventNEW .
 		
 		?transition osph:hasTransitionDelay ?delay .
 		?transition osph:hasTransitionDelay ?delayDefault .
@@ -38,13 +39,20 @@ WHERE{
 	#?statemach rdf:type fsm:StateMachine .
 	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
 
-	OPTIONAL{ GRAPH ?g1{?transition fsm:TransitionGuard ?guard . } }
+	OPTIONAL{ 
+		GRAPH ?g1{?transition fsm:TransitionGuard ?guard . } 
+		OPTIONAL{
+			GRAPH ?g2{?guard fsm:GuardEvent ?eventOLD . } 
+		}
+	}
 	
 	BIND(IF(!bound(?guard) && bound(?event),URI(CONCAT(STR(?transition),"_guard")) ,?null ) AS ?guardNew ) .
 	
 	BIND(IF(bound(?event) , "0.0"^^xsd:double , ?null) AS ?delayDefault ) .
 	
 	BIND(IF(bound(?guard) && bound(?delay) && (?delay > 0) ,?guard ,?null ) AS ?guardDEL ) .
+	BIND(IF(bound(?event) && bound(?eventOLD),?eventOLD ,?null ) AS ?eventDEL ) .
+	BIND(IF(bound(?event) && !CONTAINS(STR(?event),"*DELETE*"), ?event , ?null) AS ?eventNEW ) .
 	
 	OPTIONAL { 
 		FILTER(BOUND(?delay))

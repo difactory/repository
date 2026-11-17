@@ -1,0 +1,16 @@
+DELETE{
+	GRAPH ?g0{?indiv ?prop ?targetOLD .}
+}
+INSERT { 
+	GRAPH ?graph { 
+		?indiv ?prop ?targetNew .
+	}
+}
+WHERE{
+	OPTIONAL{
+		GRAPH ?g0 { 
+			?indiv ?prop ?targetOLD .
+		}
+	}
+	BIND(IF(bound(?target) && !CONTAINS(STR(?target), "*ALL*"),?target,?null ) AS ?targetNew ) .
+}

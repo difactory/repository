@@ -1,0 +1,90 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX factory: <https://w3id.org/ontoeng/factory#>
+PREFIX osph: <https://w3id.org/ontoeng/osph#>
+PREFIX fsm: <http://www.learninglab.de/~dolog/fsm/fsm.owl#>
+PREFIX ifcext: <https://w3id.org/ontoeng/IFC4_ADD1_extension#>
+PREFIX cs: <https://w3id.org/ontoeng/controlSystem#>
+PREFIX ex: <https://w3id.org/ontoeng/expression#>
+PREFIX express: <https://w3id.org/express#> 
+
+DELETE{
+	GRAPH ?graph {
+		?lhs ex:hasOperands ?remVar .
+		
+		?exprNew ex:hasOperator ?operatorOLD .
+		
+		?rhs osph:hasQuantityValue ?rhslitOLD .
+	}
+}
+INSERT { 
+	GRAPH ?graph { 
+	
+		?statemach fsm:contains ?guard .
+		
+		?guardNew a owl:NamedIndividual , fsm:Guard .
+		?guardcondNew a owl:NamedIndividual , fsm:Condition .
+		?exprNew a owl:NamedIndividual , ex:BinaryExpression .	
+		?lhsNew a owl:NamedIndividual , ex:IteratedBinaryExpression .
+		?rhsNew a owl:NamedIndividual , osph:Quantity .
+		
+		?transition fsm:TransitionGuard ?guardNew .
+		?guardNew fsm:GuardCondition ?guardcondNew .
+		?guardcondNew osph:hasConditionExpression ?exprNew .
+		?exprNew ex:hasLhsOperand ?lhsNew .
+		?lhsNew ex:hasOperator  ex:ADDITION .
+		
+		?lhsNew ex:hasOperands ?addVar .
+				
+		?exprNew ex:hasOperator ?operatorNew .
+		
+		?exprNew ex:hasRhsOperand ?rhsNew .
+		?rhsNew osph:hasQuantityValue ?setRhs .
+	}
+}
+WHERE{
+
+	?transition rdf:type/rdfs:subClassOf* fsm:Transition .
+	?statemach fsm:contains/fsm:hasStateMachineElement* ?transition .
+	?statemach rdf:type fsm:StateMachine .
+
+	
+	OPTIONAL{
+		?transition fsm:TransitionGuard ?guard . 
+		
+		OPTIONAL{
+			?guard fsm:GuardCondition ?guardcond .
+			OPTIONAL{
+				?guardcond osph:hasConditionExpression ?expr .
+				?expr rdf:type ex:BinaryExpression .
+				OPTIONAL{
+					?expr ex:hasLhsOperand ?lhs .
+				}
+				OPTIONAL{
+					?expr ex:hasOperator ?operator .
+				}
+				OPTIONAL{
+					?expr ex:hasRhsOperand ?rhs .
+					OPTIONAL{
+						?rhs osph:hasQuantityValue ?rhslit . 
+					}
+				}
+			}				
+		}
+	}
+
+	BIND(IF(bound(?guard),?guard,URI(CONCAT(STR(?transition),"_guard")) ) AS ?guardNew ) .
+	BIND(IF(bound(?guardcond),?guardcond,URI(CONCAT(STR(?transition),"_guardcond")) ) AS ?guardcondNew ) .
+	BIND(IF(bound(?expr),?expr,URI(CONCAT(STR(?transition),"_guardCondExpr")) ) AS ?exprNew ) .
+	BIND(IF(bound(?lhs),?lhs,URI(CONCAT(STR(?transition),"_guardCondExprLhs")) ) AS ?lhsNew ) .
+	BIND(IF(bound(?rhs),?lhs,URI(CONCAT(STR(?transition),"_guardCondExprRhs")) ) AS ?rhsNew ) .
+
+	BIND(IF(bound(?setOperator) && bound(?operator),?operator,?null ) AS ?operatorOLD ) .
+	BIND(IF(bound(?setOperator) && !CONTAINS(STR(?setOperator), "*ALL*"),?setOperator,?null ) AS ?operatorNew ) .
+
+	BIND(IF(bound(?setRhs) && bound(?rhslit),?rhslit,?null ) AS ?rhslitOLD ) .
+
+
+	
+}
