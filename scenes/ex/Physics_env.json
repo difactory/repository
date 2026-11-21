@@ -119,7 +119,7 @@
 		"engine": "havok",
 		"gravity": [
 			0,
-			-9.81,
+			-50,
 			0
 		],
 		"viewer": false

@@ -159,7 +159,6 @@
 			0.13
 		],
 		"ground": {
-			"texture_": "assets/industrial_concrete_floor_4m_0p2m_hairline_veb.png",
 			"texture": "assets/industrial_concrete_floor_4m_0p2m_drawn_0p5mm_complete_veb.jpg",
 			"size": [
 				24000,
@@ -173,7 +172,7 @@
 		"engine": "havok",
 		"gravity": [
 			0,
-			-9.81,
+			-50,
 			0
 		],
 		"viewer": false
