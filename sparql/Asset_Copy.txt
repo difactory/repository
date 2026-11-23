@@ -32,6 +32,7 @@ INSERT {
 	?assetchild ifc:objectPlacement_IfcProduct ?assetchildplace .
 	?assetchildplace ifc:placementRelTo_IfcLocalPlacement ?assetchilddirparDecplace .
 	?assetchildplace ifc:relativePlacement_IfcLocalPlacement ?assetchildrelplace .	
+	?assetchildplace ifc:placementRelTo_IfcLocalPlacement ?itsRelToPlaceCopy .
 	?assetchildrelplace a owl:NamedIndividual , ifc:IfcAxis2Placement3D .
 	?assetchildrelplace ifcext:hasRotationMatrix ?itsRotMat .
 	?assetchildrelplace ifcext:hasEulerAnglesYXZ ?itsRotEul .
@@ -144,7 +145,13 @@ WHERE {
 				OPTIONAL{ ?childrelplace ifcext:hasQuaternion ?itsRotQuat . }
 				OPTIONAL{ ?childrelplace ifcext:hasLocation ?itsPos . }
 			}
-		}
+			OPTIONAL{ 
+				?childplace ifc:placementRelTo_IfcLocalPlacement ?itsRelToPlace .
+				OPTIONAL{
+					GRAPH ?reltoGraph {?itsRelToPlace a ?reltoplaceclass .}
+				}
+			}
+		}		
 		# Connection
 		OPTIONAL{
 			?child ifcext:isConnectedToElement|^ifcext:isConnectedFromElement ?childconn .
@@ -334,7 +341,10 @@ WHERE {
 	
 	BIND(IF(bound(?childclassprod),URI(CONCAT(STR(?assetchild),"_objplace")),?null ) AS ?assetchildplace ) . 
 	BIND(IF(bound(?assetchilddirparDec),URI(CONCAT(STR(?assetchilddirparDec),"_objplace")),?null ) AS ?assetchilddirparDecplace ) . 
-	BIND(IF(bound(?childrelplace),URI(CONCAT(STR(?assetchild),"_relplace")),?null ) AS ?assetchildrelplace ) . 	
+	BIND(IF(bound(?childrelplace),URI(CONCAT(STR(?assetchild),"_relplace")),?null ) AS ?assetchildrelplace ) .
+	BIND(IF(bound(?itsRelToPlace) && STR(?reltoGraph)=STR(?graphDst),?itsRelToPlace,?null ) AS ?itsRelToPlaceCopy ) .
+
+ 	
 	
 	BIND( IF( bound(?childprop), URI(CONCAT(STR(?assetchild),"_",STRAFTER(STR(?propclass),"#"))), ?null ) AS ?assetchildprop ) .
 	
